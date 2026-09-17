@@ -1,4 +1,3 @@
-$ErrorActionPreference = "Stop"
 $SiteDir = "C:\Users\phc220001\OneDrive\alpha\site"
 $Python  = "C:\Users\phc220001\AppData\Local\Programs\Python\Python312\python.exe"
 $LogFile = "C:\Users\phc220001\OneDrive\alpha\logs\daily_publish.log"
@@ -10,20 +9,25 @@ function Log($msg) {
 Set-Location $SiteDir
 Log "=== Run started ==="
 
-try {
-    & $Python "publish_site.py" 2>&1 | ForEach-Object { Log $_ }
+& $Python "publish_site.py" *>> $LogFile
+if ($LASTEXITCODE -ne 0) {
+    Log "ERROR: publish_site.py failed (exit $LASTEXITCODE)"
+    Log "=== Run finished ==="
+    exit 1
+}
 
-    git add -A
-    $changes = git status --porcelain
-    if ($changes) {
-        git commit -m "Daily update $(Get-Date -Format 'yyyy-MM-dd')" 2>&1 | ForEach-Object { Log $_ }
-        git push 2>&1 | ForEach-Object { Log $_ }
+git add -A *>> $LogFile
+$changes = git status --porcelain
+if ($changes) {
+    git commit -m "Daily update $(Get-Date -Format 'yyyy-MM-dd')" *>> $LogFile
+    git push *>> $LogFile
+    if ($LASTEXITCODE -eq 0) {
         Log "Pushed changes."
     } else {
-        Log "No changes to commit."
+        Log "ERROR: git push failed (exit $LASTEXITCODE)"
     }
-} catch {
-    Log "ERROR: $_"
+} else {
+    Log "No changes to commit."
 }
 
 Log "=== Run finished ==="
