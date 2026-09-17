@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Alpha Research Reports</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e6e8eb;
+    --muted: #9aa2ad;
+    --accent: #4f8cff;
+    --border: #262b35;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 480px;
+    width: 100%;
+  }
+  h1 { font-size: 1.25rem; margin: 0 0 8px; }
+  p.note { color: var(--muted); font-size: 0.85rem; margin: 0 0 24px; line-height: 1.5; }
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #0c0e12;
+    color: var(--text);
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  button {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  button:hover { opacity: 0.9; }
+  #error { color: #ff6b6b; font-size: 0.85rem; margin-top: 8px; display: none; }
+  #reports { display: none; }
+  #reports ul { list-style: none; padding: 0; margin: 0; }
+  #reports li {
+    border-top: 1px solid var(--border);
+    padding: 12px 0;
+  }
+  #reports li:first-child { border-top: none; }
+  #reports a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  #reports a:hover { text-decoration: underline; }
+  #reports .empty { color: var(--muted); font-size: 0.9rem; }
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.5;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div id="gate">
+      <h1>Alpha Research Reports</h1>
+      <p class="note">
+        This page is a lightweight speed bump, not real security — anyone who
+        views the page source or requests a report file directly can still
+        read it. Don't rely on this for anything sensitive.
+      </p>
+      <input type="password" id="pw" placeholder="Enter password" autofocus>
+      <button onclick="tryUnlock()">Unlock</button>
+      <div id="error">Incorrect password.</div>
+    </div>
+    <div id="reports">
+      <h1>Recent Reports</h1>
+      <p class="note">Showing the most recent reports (older ones are pruned from this page; full history is kept privately elsewhere).</p>
+      <ul id="report-list"><li class="empty">Loading…</li></ul>
+      <div class="disclaimer">
+        Generated automatically for informational and research purposes only.
+        Not personalized investment advice. Nothing here is a recommendation
+        to buy or sell any security. Do your own due diligence and consult a
+        licensed financial advisor before making investment decisions.
+      </div>
+    </div>
+  </div>
+
+<script>
+  const PASSWORD = "123456"; // client-side only — not real protection, see note above
+
+  function tryUnlock() {
+    const val = document.getElementById("pw").value;
+    if (val === PASSWORD) {
+      document.getElementById("gate").style.display = "none";
+      document.getElementById("reports").style.display = "block";
+      try { sessionStorage.setItem("unlocked", "1"); } catch (e) {}
+      loadReports();
+    } else {
+      document.getElementById("error").style.display = "block";
+    }
+  }
+
+  document.getElementById("pw").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") tryUnlock();
+  });
+
+  function loadReports() {
+    fetch("manifest.json", { cache: "no-store" })
+      .then(r => r.json())
+      .then(list => {
+        const ul = document.getElementById("report-list");
+        if (!list.length) {
+          ul.innerHTML = '<li class="empty">No reports yet.</li>';
+          return;
+        }
+        ul.innerHTML = list
+          .sort((a, b) => b.date.localeCompare(a.date))
+          .map(r => `<li><a href="reports/${r.filename}" target="_blank">${r.date}</a></li>`)
+          .join("");
+      })
+      .catch(() => {
+        document.getElementById("report-list").innerHTML =
+          '<li class="empty">Could not load report list.</li>';
+      });
+  }
+
+  try {
+    if (sessionStorage.getItem("unlocked") === "1") {
+      document.getElementById("gate").style.display = "none";
+      document.getElementById("reports").style.display = "block";
+      loadReports();
+    }
+  } catch (e) {}
+</script>
+</body>
+</html>
