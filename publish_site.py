@@ -1,12 +1,13 @@
 """
 publish_site.py
 ================
-Maintenance script for the public "site" mirror of the daily alpha reports.
+Maintenance script for the public "site" mirror of the alpha reports.
 
 What it does each run:
   1. Looks at the full report history in C:\\Users\\phc220001\\OneDrive\\alpha
-     (files named alpha_report_YYYY-MM-DD.html) — that folder is NEVER pruned,
-     it's your permanent local archive.
+     (files named alpha_report_YYYY-MM-DD.html, or alpha_report_YYYY-MM-DD_
+     {premarket,open,midday,afternoon,close}.html for the 5x/day schedule) —
+     that folder is NEVER pruned, it's your permanent local archive.
   2. Copies any reports from the last KEEP_DAYS days into site/reports/,
      which is the folder that actually gets pushed to GitHub Pages.
   3. Deletes any report files inside site/reports/ that are OLDER than
@@ -33,7 +34,19 @@ ALPHA_DIR = Path(r"C:\Users\phc220001\OneDrive\alpha")
 SITE_DIR = ALPHA_DIR / "site"
 REPORTS_DIR = SITE_DIR / "reports"
 
-FILENAME_RE = re.compile(r"alpha_report_(\d{4}-\d{2}-\d{2})\.html$")
+# Session suffix is optional so older single-report-per-day archives (before
+# the 3x/day premarket/midday/close schedule) still match.
+FILENAME_RE = re.compile(
+    r"alpha_report_(\d{4}-\d{2}-\d{2})(?:_(premarket|open|midday|afternoon|close))?\.html$"
+)
+SESSION_ORDER = {
+    "close": 0,
+    "afternoon": 1,
+    "midday": 2,
+    "open": 3,
+    "premarket": 4,
+    None: 0,
+}
 
 
 def main():
@@ -69,8 +82,15 @@ def main():
     for f in REPORTS_DIR.glob("alpha_report_*.html"):
         m = FILENAME_RE.match(f.name)
         if m:
-            manifest.append({"date": m.group(1), "filename": f.name})
-    manifest.sort(key=lambda r: r["date"], reverse=True)
+            manifest.append({
+                "date": m.group(1),
+                "session": m.group(2),
+                "filename": f.name,
+            })
+    manifest.sort(
+        key=lambda r: (r["date"], -SESSION_ORDER.get(r["session"], 0)),
+        reverse=True,
+    )
 
     with open(SITE_DIR / "manifest.json", "w", encoding="utf-8") as fh:
         json.dump(manifest, fh, indent=2)

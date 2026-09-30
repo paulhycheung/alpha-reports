@@ -132,9 +132,18 @@
           ul.innerHTML = '<li class="empty">No reports yet.</li>';
           return;
         }
+        const SESSION_LABEL = { premarket: "Pre-Market", midday: "Midday", close: "Close" };
+        const SESSION_ORDER = { close: 0, midday: 1, premarket: 2 };
         ul.innerHTML = list
-          .sort((a, b) => b.date.localeCompare(a.date))
-          .map(r => `<li><a href="reports/${r.filename}" target="_blank">${r.date}</a></li>`)
+          .sort((a, b) => {
+            const d = b.date.localeCompare(a.date);
+            if (d !== 0) return d;
+            return (SESSION_ORDER[a.session] ?? 0) - (SESSION_ORDER[b.session] ?? 0);
+          })
+          .map(r => {
+            const label = SESSION_LABEL[r.session];
+            return `<li><a href="reports/${r.filename}" target="_blank">${r.date}${label ? " · " + label : ""}</a></li>`;
+          })
           .join("");
       })
       .catch(() => {

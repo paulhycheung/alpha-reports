@@ -1,6 +1,102 @@
 [
   {
+    "date": "2026-09-30",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-09-30_afternoon.html"
+  },
+  {
+    "date": "2026-09-30",
+    "session": "midday",
+    "filename": "alpha_report_2026-09-30_midday.html"
+  },
+  {
+    "date": "2026-09-30",
+    "session": "open",
+    "filename": "alpha_report_2026-09-30_open.html"
+  },
+  {
+    "date": "2026-09-30",
+    "session": "premarket",
+    "filename": "alpha_report_2026-09-30_premarket.html"
+  },
+  {
+    "date": "2026-09-29",
+    "session": "close",
+    "filename": "alpha_report_2026-09-29_close.html"
+  },
+  {
+    "date": "2026-09-29",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-09-29_afternoon.html"
+  },
+  {
+    "date": "2026-09-29",
+    "session": "midday",
+    "filename": "alpha_report_2026-09-29_midday.html"
+  },
+  {
+    "date": "2026-09-29",
+    "session": "open",
+    "filename": "alpha_report_2026-09-29_open.html"
+  },
+  {
+    "date": "2026-09-29",
+    "session": "premarket",
+    "filename": "alpha_report_2026-09-29_premarket.html"
+  },
+  {
+    "date": "2026-09-28",
+    "session": "close",
+    "filename": "alpha_report_2026-09-28_close.html"
+  },
+  {
+    "date": "2026-09-28",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-09-28_afternoon.html"
+  },
+  {
+    "date": "2026-09-28",
+    "session": "midday",
+    "filename": "alpha_report_2026-09-28_midday.html"
+  },
+  {
+    "date": "2026-09-28",
+    "session": "open",
+    "filename": "alpha_report_2026-09-28_open.html"
+  },
+  {
+    "date": "2026-09-28",
+    "session": "premarket",
+    "filename": "alpha_report_2026-09-28_premarket.html"
+  },
+  {
+    "date": "2026-09-25",
+    "session": "close",
+    "filename": "alpha_report_2026-09-25_close.html"
+  },
+  {
+    "date": "2026-09-25",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-09-25_afternoon.html"
+  },
+  {
+    "date": "2026-09-25",
+    "session": "midday",
+    "filename": "alpha_report_2026-09-25_midday.html"
+  },
+  {
+    "date": "2026-09-25",
+    "session": "open",
+    "filename": "alpha_report_2026-09-25_open.html"
+  },
+  {
+    "date": "2026-09-25",
+    "session": "premarket",
+    "filename": "alpha_report_2026-09-25_premarket.html"
+  },
+  {
     "date": "2026-09-17",
+    "session": null,
     "filename": "alpha_report_2026-09-17.html"
   }
 ]
