@@ -34,6 +34,7 @@
     max-width: 480px;
     width: 100%;
   }
+  .card.wide { max-width: 760px; }
   h1 { font-size: 1.25rem; margin: 0 0 8px; }
   p.note { color: var(--muted); font-size: 0.85rem; margin: 0 0 24px; line-height: 1.5; }
   input[type="password"] {
@@ -59,15 +60,36 @@
   button:hover { opacity: 0.9; }
   #error { color: #ff6b6b; font-size: 0.85rem; margin-top: 8px; display: none; }
   #reports { display: none; }
-  #reports ul { list-style: none; padding: 0; margin: 0; }
-  #reports li {
-    border-top: 1px solid var(--border);
-    padding: 12px 0;
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  thead th {
+    text-align: center;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 8px 6px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
   }
-  #reports li:first-child { border-top: none; }
-  #reports a { color: var(--accent); text-decoration: none; font-weight: 500; }
-  #reports a:hover { text-decoration: underline; }
-  #reports .empty { color: var(--muted); font-size: 0.9rem; }
+  thead th.date-col { text-align: left; }
+  tbody td {
+    text-align: center;
+    padding: 8px 6px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  tbody td.date-col { text-align: left; color: var(--text); font-weight: 500; }
+  tbody tr:last-child td { border-bottom: none; }
+  table a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  table a:hover { text-decoration: underline; }
+  .dash { color: var(--border); }
+  .empty { color: var(--muted); font-size: 0.9rem; }
   .disclaimer {
     margin-top: 20px;
     font-size: 0.75rem;
@@ -79,7 +101,7 @@
 </style>
 </head>
 <body>
-  <div class="card">
+  <div class="card" id="card">
     <div id="gate">
       <h1>Alpha Research Reports</h1>
       <p class="note">
@@ -94,7 +116,12 @@
     <div id="reports">
       <h1>Recent Reports</h1>
       <p class="note">Showing the most recent reports (older ones are pruned from this page; full history is kept privately elsewhere).</p>
-      <ul id="report-list"><li class="empty">Loading…</li></ul>
+      <div class="table-wrap">
+        <table id="report-table">
+          <thead><tr><th class="date-col">Date</th></tr></thead>
+          <tbody><tr><td class="empty">Loading…</td></tr></tbody>
+        </table>
+      </div>
       <div class="disclaimer">
         Generated automatically for informational and research purposes only.
         Not personalized investment advice. Nothing here is a recommendation
@@ -112,6 +139,7 @@
     if (val === PASSWORD) {
       document.getElementById("gate").style.display = "none";
       document.getElementById("reports").style.display = "block";
+      document.getElementById("card").classList.add("wide");
       try { sessionStorage.setItem("unlocked", "1"); } catch (e) {}
       loadReports();
     } else {
@@ -123,32 +151,60 @@
     if (e.key === "Enter") tryUnlock();
   });
 
+  // Ordered left-to-right as columns. "other" catches legacy single-report
+  // days (session === null) from before the 5x/day schedule existed.
+  const SESSIONS = ["premarket", "open", "midday", "afternoon", "close", "other"];
+  const SESSION_LABEL = {
+    premarket: "Pre-Market",
+    open: "Open",
+    midday: "Midday",
+    afternoon: "Afternoon",
+    close: "Close",
+    other: "Other",
+  };
+
   function loadReports() {
     fetch("manifest.json", { cache: "no-store" })
       .then(r => r.json())
       .then(list => {
-        const ul = document.getElementById("report-list");
+        const table = document.getElementById("report-table");
         if (!list.length) {
-          ul.innerHTML = '<li class="empty">No reports yet.</li>';
+          table.querySelector("tbody").innerHTML = '<tr><td class="empty">No reports yet.</td></tr>';
           return;
         }
-        const SESSION_LABEL = { premarket: "Pre-Market", midday: "Midday", close: "Close" };
-        const SESSION_ORDER = { close: 0, midday: 1, premarket: 2 };
-        ul.innerHTML = list
-          .sort((a, b) => {
-            const d = b.date.localeCompare(a.date);
-            if (d !== 0) return d;
-            return (SESSION_ORDER[a.session] ?? 0) - (SESSION_ORDER[b.session] ?? 0);
-          })
-          .map(r => {
-            const label = SESSION_LABEL[r.session];
-            return `<li><a href="reports/${r.filename}" target="_blank">${r.date}${label ? " · " + label : ""}</a></li>`;
-          })
-          .join("");
+
+        // Build date -> { session: filename } map
+        const byDate = {};
+        for (const r of list) {
+          const session = r.session || "other";
+          if (!byDate[r.date]) byDate[r.date] = {};
+          byDate[r.date][session] = r.filename;
+        }
+        const dates = Object.keys(byDate).sort((a, b) => b.localeCompare(a));
+
+        // Only show columns that actually have at least one report, so the
+        // "Other" column disappears once no legacy reports remain.
+        const activeSessions = SESSIONS.filter(s => dates.some(d => byDate[d][s]));
+
+        const thead = table.querySelector("thead");
+        thead.innerHTML = "<tr><th class=\"date-col\">Date</th>" +
+          activeSessions.map(s => `<th>${SESSION_LABEL[s]}</th>`).join("") +
+          "</tr>";
+
+        const tbody = table.querySelector("tbody");
+        tbody.innerHTML = dates.map(date => {
+          const cells = activeSessions.map(s => {
+            const filename = byDate[date][s];
+            return filename
+              ? `<td><a href="reports/${filename}" target="_blank" title="${SESSION_LABEL[s]}">&check;</a></td>`
+              : `<td><span class="dash">–</span></td>`;
+          }).join("");
+          return `<tr><td class="date-col">${date}</td>${cells}</tr>`;
+        }).join("");
       })
       .catch(() => {
-        document.getElementById("report-list").innerHTML =
-          '<li class="empty">Could not load report list.</li>';
+        document.getElementById("report-table").querySelector("tbody").innerHTML =
+          '<tr><td class="empty">Could not load report list.</td></tr>';
       });
   }
 
@@ -156,6 +212,7 @@
     if (sessionStorage.getItem("unlocked") === "1") {
       document.getElementById("gate").style.display = "none";
       document.getElementById("reports").style.display = "block";
+      document.getElementById("card").classList.add("wide");
       loadReports();
     }
   } catch (e) {}
