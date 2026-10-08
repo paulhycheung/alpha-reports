@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-10-08",
+    "session": "open",
+    "filename": "alpha_report_2026-10-08_open.html"
+  },
+  {
+    "date": "2026-10-08",
     "session": "premarket",
     "filename": "alpha_report_2026-10-08_premarket.html"
   },
