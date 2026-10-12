@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Alpha Report 2026-10-12 – Open Edition</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;max-width:960px;margin:24px auto;padding:0 16px;color:#1a1a1a;line-height:1.5}
+h1{margin-bottom:0}h2{border-bottom:2px solid #ddd;padding-bottom:4px;margin-top:32px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #ccc;padding:6px 8px;text-align:left}th{background:#f2f2f2}
+.card{border:1px solid #ccc;border-radius:6px;padding:10px 14px;margin:12px 0;background:#fafafa}
+.warn{background:#fff6e0;border:1px solid #e6c36a;padding:10px;border-radius:6px}
+.disc{font-size:12px;color:#555;margin-top:32px;border-top:1px solid #ccc;padding-top:10px}
+</style></head><body>
+<h1>Alpha Report — Monday, October 12, 2026</h1>
+<div><strong>Open Edition</strong></div>
+
+<h2>1. First 30 Minutes</h2>
+<div class="warn"><strong>Data limitation:</strong> Live opening-period quotes, movers lists and volume data were not retrievable in this automated run (the CNBC live blog returned no content to the fetch tool, and movers sites had no Oct 12 data). Only a search-result snapshot from the open is available; no per-stock percentage moves are stated.</div>
+<p>Per a CNBC live-blog headline and snippet, US equities were roughly flat at the open: S&amp;P 500 about +0.1%, Dow about +83 points (+0.2%), Nasdaq Composite about −0.1%, with Micron cited as leading tech lower. This follows a winning week for the major averages driven by a tech rally despite higher oil prices and yields. Equities trade today on Columbus Day while the US bond market is closed. The snapshot is from the opening minutes and may have changed.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p>This morning's pre-market report had no live pre-market mover data, so there were no gap sizes to compare. Names it flagged: AVGO, AMD, NVDA, GOOGL, TSM. The only opening datapoint found is that Micron (MU, a fixed-watchlist name) led tech lower, which hints that memory/semis were soft at the open; this is unverified and not quantified. Whether the flagged names held or reversed could not be determined.</p>
+
+<h2>3. Opening Movers</h2>
+<table><tr><th>Ticker</th><th>% since open</th><th>Volume note</th></tr>
+<tr><td>MU</td><td>Lower (size not retrieved)</td><td>Not available</td></tr>
+<tr><td colspan="3">No other opening mover data was retrievable. Check finance.yahoo.com/most-active or a broker scanner.</td></tr></table>
+
+<h2>4. Alpha Candidates (worth investigating further)</h2>
+<p><em>Not recommendations. Given missing live data, confidence is Low across the board.</em></p>
+
+<div class="card"><h3>MU — Micron</h3>
+<p><strong>Move:</strong> Reported as leading tech lower at the open (size unknown). <strong>Thesis:</strong> Could be a fade or a sector-wide semis pullback after a strong tech week; worth checking whether weakness spreads to AMD/NVDA/AVGO. <strong>Evidence:</strong> CNBC live-blog headline only. <strong>Risks:</strong> single headline from the opening minutes; may have reversed. <strong>Confidence:</strong> Low.</p></div>
+
+<div class="card"><h3>AVGO — Broadcom</h3>
+<p><strong>Move:</strong> Not retrieved. <strong>Thesis:</strong> Highest WRDS 21d momentum (+43%) and ~105% realized vol (as of 2026-09-17, stale); most prone to sharp intraday swings if semis weaken. <strong>Risks:</strong> mean reversion, rising yields. <strong>Confidence:</strong> Low.</p></div>
+
+<div class="card"><h3>AMD — Advanced Micro Devices</h3>
+<p><strong>Move:</strong> Not retrieved. <strong>Thesis:</strong> Downtrending (WRDS 63d −24%) with bullish CEO demand commentary earlier in the month; a reaction to Micron weakness would be informative. <strong>Risks:</strong> persistent downtrend. <strong>Confidence:</strong> Low.</p></div>
+
+<div class="card"><h3>NVDA — Nvidia</h3>
+<p><strong>Move:</strong> Not retrieved. <strong>Thesis:</strong> Bellwether; Nasdaq's slight early dip suggests tech was not leading. Worth watching whether it holds Friday's 229.28 close. <strong>Risks:</strong> yield spikes, rotation. <strong>Confidence:</strong> Low.</p></div>
+
+<h2>5. WRDS Quant Signals (as of 2026-09-17)</h2>
+<p>WRDS data as of 2026-09-17 — 25 days old, beyond the ~14-day threshold; reference only.</p>
+<table><tr><th>Ticker</th><th>Mom 21d</th><th>Mom 63d</th><th>Vol ratio 5d/63d</th><th>Realized vol</th><th>Earn. surprise mean</th></tr>
+<tr><td>AAPL</td><td>+5.5%</td><td>+10.8%</td><td>0.77</td><td>16.3%</td><td>0.09</td></tr>
+<tr><td>AMD</td><td>−11.9%</td><td>−24.4%</td><td>0.79</td><td>36.8%</td><td>0.19</td></tr>
+<tr><td>AMZN</td><td>+5.5%</td><td>+18.5%</td><td>0.60</td><td>27.7%</td><td>0.03</td></tr>
+<tr><td>AVGO</td><td>+43.4%</td><td>+38.8%</td><td>0.92</td><td>104.9%</td><td>0.15</td></tr>
+<tr><td>GOOGL</td><td>+12.2%</td><td>+13.5%</td><td>0.54</td><td>36.1%</td><td>0.23</td></tr>
+<tr><td>META</td><td>+2.0%</td><td>+1.6%</td><td>0.53</td><td>29.5%</td><td>−1.11</td></tr>
+<tr><td>MSFT</td><td>−0.5%</td><td>+0.4%</td><td>0.58</td><td>19.8%</td><td>0.48</td></tr>
+<tr><td>NVDA</td><td>−2.9%</td><td>+14.8%</td><td>0.65</td><td>33.3%</td><td>0.09</td></tr>
+<tr><td>ORCL</td><td>−9.8%</td><td>−0.1%</td><td>0.54</td><td>33.0%</td><td>0.08</td></tr>
+<tr><td>TSM</td><td>+7.3%</td><td>+15.1%</td><td>0.66</td><td>39.1%</td><td>0.30</td></tr></table>
+
+<h2>6. Sources</h2>
+<ul>
+<li>https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html (search snippet; page fetch returned no content)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/stock-market-open-monday-columbus-150100007.html (search result)</li>
+<li>https://tapeboard.com/blog/market-pulse-2026-10-07 (search result, earlier session)</li>
+<li>Local: alpha_report_2026-10-12_premarket.html; alpha_wrds_signals.csv (as of 2026-09-17)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</body></html>
