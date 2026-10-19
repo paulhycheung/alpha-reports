@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Alpha Report 2026-10-19 Open</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;max-width:900px;margin:24px auto;padding:0 16px;color:#1a1a1a;line-height:1.5}
+h1{margin-bottom:0}h2{border-bottom:2px solid #ddd;padding-bottom:4px;margin-top:32px}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px 8px;text-align:left;font-size:14px}th{background:#f2f2f2}
+.card{border:1px solid #ccc;border-radius:6px;padding:10px 14px;margin:12px 0}.note{background:#fff8e1;padding:8px 12px;border-radius:6px;font-size:14px}
+.disc{font-size:12px;color:#555;margin-top:32px;border-top:1px solid #ccc;padding-top:10px}</style></head><body>
+<h1>Alpha Research Brief</h1>
+<p><b>Monday, October 19, 2026 &mdash; Open Edition</b></p>
+<div class="note">Data-quality note: this automated run could not retrieve a live movers screen (Yahoo most-active/gainers pages were not fetchable) and found no stock-level coverage of the first 30 minutes. Index figures come from Reuters-based open reports; per-stock figures are pre-market (~7:05 AM ET) values from Reuters. Treat all numbers as approximate and verify on a live quote screen.</div>
+
+<h2>1. Summary: First 30 Minutes</h2>
+<p>US stocks opened with a tech-led bounce after last week's worst weekly drop since late June (S&amp;P 500 about -2%, Nasdaq about -4.5%). Reuters reported at the open: S&amp;P 500 +0.57% to ~7,702.77, Nasdaq Composite +0.98% to ~26,395, Dow -23.8 pts to ~51,979 (the Dow's direction was inconsistent across sources). Drivers cited: an AI-stock rebound, lower oil and Treasury yields (10-yr ~5.08%), ahead of a heavy earnings week (Meta and Tesla Wednesday, SpaceX Tuesday, plus Netflix, GM, GE Aerospace). Tone: relief bounce, narrow and tech-led, with sentiment still fragile on AI-financing worries. Futures VIX was ~18.8 pre-open.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p>Index-level: the pre-market setup (Nasdaq futures +1.0&ndash;1.2%, S&amp;P +0.4&ndash;0.5%, Dow flat to lower) was <b>broadly confirmed</b> at the open: Nasdaq ~+1%, S&amp;P ~+0.6%, Dow flat/slightly lower.</p>
+<p>Single names flagged this morning (AVGO ~+2.3%, NVDA ~+1.1%, META ~-0.3%, TSLA ~-0.4%): I could not retrieve reliable post-open prices, so whether these gaps held, filled or reversed is <b>unverified</b>. One unverified caution: quote tags on the fetched Yahoo page displayed AVGO -4.52%, MU -5.63% and Nasdaq -2.14%, but the page carried no timestamp for those tags and they may reflect a prior session; they should be checked on a live screen.</p>
+
+<h2>3. Opening Movers</h2>
+<table><tr><th>Ticker</th><th>Move</th><th>Volume / note</th></tr>
+<tr><td>Nasdaq Composite</td><td>~+1.0% at open</td><td>Reuters open report</td></tr>
+<tr><td>S&amp;P 500</td><td>~+0.57% at open</td><td>Reuters open report</td></tr>
+<tr><td>AVGO</td><td>~+2.9% pre-mkt</td><td>No opening volume data retrieved</td></tr>
+<tr><td>MU</td><td>~+3.3% pre-mkt</td><td>No opening volume data retrieved</td></tr>
+<tr><td>INTC</td><td>~+4.4% pre-mkt</td><td>J.P. Morgan upgrade to "neutral" from "underweight"</td></tr>
+<tr><td>NVDA, AMZN</td><td>&gt;+1% pre-mkt</td><td>Megacap rebound</td></tr>
+<tr><td>AAPL, META</td><td>marginally lower pre-mkt</td><td>META reports Wednesday</td></tr>
+<tr><td>CRWV (non-watchlist)</td><td>~+3.4% pre-mkt</td><td>Fell &gt;25% last week; AI-infrastructure rebound</td></tr>
+<tr><td>CLF (non-watchlist)</td><td>~+13.8% pre-mkt</td><td>Q3 profit beat</td></tr>
+<tr><td colspan="3">Other watchlist names (MSFT, GOOGL, AMD, TSM, ORCL, CRM, ASML, QCOM, TSLA): no reliable figures retrieved.</td></tr></table>
+
+<h2>4. Alpha Candidates (worth investigating further)</h2>
+<div class="card"><b>AVGO &mdash; Broadcom</b> (pre-mkt ~+2.9%; open move not confirmed)<br>
+Thesis: Test of whether the AI-semis rebound has legs or fades into midday; the high-beta name in the group. Evidence: Reuters pre-market data; the (stale) Sep-17 WRDS file showed AVGO as the strongest 21d momentum name (+43%) with ~105% annualized realized vol. Risks: Extreme volatility; rate/AI-financing worries could return; conflicting quote tag (-4.5%) unresolved. Confidence: Low.</div>
+<div class="card"><b>INTC &mdash; Intel</b> (pre-mkt ~+4.4%)<br>
+Thesis: Analyst-driven gap; worth watching whether it holds on volume or fades as upgrade-driven pops often do. Evidence: Reuters reports J.P. Morgan upgrade to neutral from underweight. Risks: A move to "neutral" is a modest change; no fundamental catalyst identified. Confidence: Low.</div>
+<div class="card"><b>MU &mdash; Micron</b> (pre-mkt ~+3.3%)<br>
+Thesis: Memory/AI-hardware beta bouncing with the sector; worth checking if the bounce sustains. Evidence: Reuters pre-market data. Risks: Sector-wide rebound after a sharp drop can reverse quickly; open data missing. Confidence: Low.</div>
+<div class="card"><b>META &mdash; Meta Platforms</b> (marginally lower pre-mkt)<br>
+Thesis: Lagging a rising tape ahead of Wednesday earnings; Reuters notes it is expected to beat. Worth watching AI capex commentary given the market's focus on AI financing. Risks: Binary earnings event. Confidence: Low.</div>
+<div class="card"><b>NVDA &mdash; Nvidia</b> (pre-mkt &gt;+1%)<br>
+Thesis: Bellwether for whether last week's AI selloff was a pause or a trend change. Evidence: Reuters. Risks: Dead-cat-bounce dynamics; rates near 5.1% on the 10-yr. Confidence: Low.</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p>alpha_wrds_signals.csv has as_of_date 2026-09-17 (~32 days old, beyond the ~14-day window). Not used for analysis; only the AVGO momentum observation above is mentioned for context, flagged as stale.</p>
+
+<h2>6. Sources</h2>
+<ul>
+<li>https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-futures-rise-113805730.html (Reuters via Yahoo Finance; fetched)</li>
+<li>https://www.marketscreener.com/news/s-p-500-nasdaq-open-higher-as-ai-stocks-rebound-ahead-of-major-earnings-ce785cdbda8bf124 (search snippet; fetched but not fully read)</li>
+<li>https://www.investing.com/news/stock-market-news/us-stock-futures-climb-as-investors-return-to-ai-trade-after-selloff-4956195 (search snippet)</li>
+<li>https://www.proactiveinvestors.com/companies/news/1100279/markets-live-sage-leads-london-as-ftse-100-decline-passes-100-points-1100279.html (search snippet)</li>
+<li>Local: alpha_report_2026-10-19_premarket.html; alpha_wrds_signals.csv</li>
+</ul>
+
+<p class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</p>
+</body></html>
