@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-26 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Monday, October 26, 2026</div>
+<p class="note">Automated run. The schedule fires at 10:00 AM local Central time, so this edition ran at about 11:05–11:50 AM ET, roughly 95–140 minutes after the 9:30 open rather than 30. "Opening" figures therefore cover the first ~1¾ hours of trading. Quotes are snapshots stamped 9:51–11:15 AM ET from StockAnalysis.com (real-time CBOE feed) and Yahoo Finance, plus an Investing.com market sidebar with no timestamp (it read about 11:20 based on index levels). Figures differ by source and timestamp. "From open" = last price vs. that day's opening print. <b>WRDS signals were not used:</b> the only local file (alpha_wrds_signals.csv) is dated 2026-09-17, 39 days old and outside the ~14-day window.</p>
+
+<h2>1. How the Open Traded</h2>
+<p><b>Stocks opened modestly higher, then broadened into a tech-led advance.</b> At 9:32 ET the S&amp;P 500 was +0.33%, the Dow +0.47%, the Nasdaq Composite +0.24% and the Russell 2000 −0.29% (TheStreet). After a soft patch around 9:51 (S&amp;P +0.44%, Russell +0.08%), buyers stepped in steadily. By ~11:15 the S&amp;P 500 was 7,695.59 (<span class="up">+0.94%</span>), the Nasdaq 26,273.78 (<span class="up">+1.23%</span>), the Russell 2000 2,798.74 (<span class="up">+0.82%</span>) and the Dow 52,451.58 (<span class="up">+0.45%</span>). A later Investing.com print showed the S&amp;P at +1.02% and the Nasdaq at +1.34%. The VIX fell about 8% to ~17.9. The 10-year yield eased to ~4.97–4.98%, and the 2s10s curve steepened about 4 bp to ~31 bp. WTI (Dec) was −2.2% near $101, Brent −1.4% near $110 (Investing.com), gold +0.8% near $4,038, and the dollar index +0.2% (~101.85). <b>New since the pre-market edition:</b> Anthropic publicly filed its S-1 before the bell (TheStreet flagged it at 9:22; Nasdaq: ANT). Press summaries of the filing cite H1 2026 revenue of $16.3B (vs. $4.6B in all of 2025), $9B of H1 AI-infrastructure spending and an $80.7B H1 net loss, mostly accounting charges. Surgery Partners also agreed to a definitive $23.50-per-share cash sale. <b>Brazil stayed the epicenter of stress.</b> B3 triggered its first circuit breaker since March 2020, and Brazilian ADRs hold six of the top eight spots on Yahoo's most-active list, but the most liquid ones have bounced off their opening prints as the real pared its slide. <b>Tone:</b> risk-on and broadening. Chips, memory, Tesla and even the neoclouds that Musk savaged overnight trade above their opens. The Dow lags, with Verizon's beat-and-raise sold (−2%). Megacap volume is light, though (NVDA ~0.27× its average daily volume by 11:15), and Wednesday's FOMC plus Microsoft and Alphabet earnings loom.</p>
+<div class="tbl"><table>
+<tr><th>Snapshot</th><th>Fri close</th><th>~9:32 ET</th><th>~10:28 ET</th><th>~10:59 ET</th><th>~11:15 ET</th></tr>
+<tr><td>S&amp;P 500</td><td>7,623.68</td><td class="up">+0.33%</td><td class="up">7,672.26 (+0.64%)</td><td class="up">7,697.59 (+0.97%)</td><td class="up">7,695.59 (+0.94%)</td></tr>
+<tr><td>Dow</td><td>52,215.16</td><td class="up">+0.47%</td><td class="up">52,531.50 (+0.61%)</td><td class="up">52,488.13 (+0.52%)</td><td class="up">52,451.58 (+0.45%)</td></tr>
+<tr><td>Nasdaq Composite</td><td>25,955.34</td><td class="up">+0.24%</td><td class="up">26,134.96 (+0.69%)</td><td class="up">26,277.60 (+1.24%)</td><td class="up">26,273.78 (+1.23%)</td></tr>
+<tr><td>Russell 2000</td><td>2,775.90</td><td class="dn">−0.29%</td><td class="up">2,793.39 (+0.63%)</td><td class="up">2,793.35 (+0.63%)</td><td class="up">2,798.74 (+0.82%)</td></tr>
+<tr><td>10-yr yield / VIX</td><td>4.988% / 19.45</td><td>—</td><td>4.966% / 18.40</td><td>4.966% / 18.09</td><td>4.980% / 17.92</td></tr>
+<tr><td>WTI (Dec) / Gold</td><td>$103.27 / $4,007.90</td><td>—</td><td>$100.80 / $4,022.50</td><td>$101.10 / $4,032.00</td><td>$101.02 / $4,038.40</td></tr>
+</table></div>
+<p class="note">Sources: TheStreet live blog (9:32); Yahoo Finance page headers (10:28, 10:59, 11:15; times inferred from each page's "markets close in" counter). Friday closes are derived from Yahoo's change figures. SPY was 766.97 (+0.92%) at 11:12, +0.62% above its 762.25 open and near the day's high (StockAnalysis). The Chicago Fed activity index (8:30) and Dallas Fed manufacturing survey (10:30) results were not captured.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Names flagged in this morning's pre-market edition. "Open" = opening print vs. Friday's close. "Latest" shows the time in ET where known.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Pre-market (AM report)</th><th>Open</th><th>Latest</th><th>Verdict</th></tr>
+<tr><td>META</td><td class="up">≈ +1% to +2.4% (after a ~4% early dip)</td><td class="dn">−0.7% (638.36)</td><td>0.00% (11:05); low −2.1%; +0.3% on Investing.com later</td><td class="dn">Gap filled; pre-market gain erased</td></tr>
+<tr><td>TSLA</td><td class="up">+1.7% to +1.8%</td><td class="up">+3.1%</td><td class="up">+5.9% (11:05) → +6.3% (11:15)</td><td class="up">Extended</td></tr>
+<tr><td>NVDA</td><td class="up">+0.4% to +1.4%</td><td class="up">+1.0%</td><td class="up">+3.1% (11:01)</td><td class="up">Extended</td></tr>
+<tr><td>AVGO / AMD</td><td class="up">+1.5% / +1.3%</td><td class="up">+0.9% / +1.2%</td><td class="up">+2.55% / +1.7% (10:57–10:58)</td><td class="up">Extended / held</td></tr>
+<tr><td>MU / SKHY / SNDK</td><td class="up">+1.4% / +2.9% / +1.3%</td><td class="up">+1.4% / +2.6% / +1.1%</td><td class="up">+3.6% (11:01) / +2.8% (10:51) / +2.4% (Investing.com)</td><td class="up">Extended / held / extended</td></tr>
+<tr><td>AAPL</td><td class="dn">−1.2% to −1.7%</td><td>n/a (≈ −1.5% early, per Investing.com)</td><td class="dn">−0.3% (Investing.com)</td><td class="am">Mostly filled; early dip bought</td></tr>
+<tr><td>CRWV / NBIS / IREN</td><td class="dn">−3.6% to −5.5% / −3.1% to −4% / −2.8%</td><td class="dn">−4.2% / −3.0% / −3.5%</td><td class="up">+5.8% (11:15) / +2.4% (11:00) / +4.7% (11:15)</td><td class="up">Reversed higher</td></tr>
+<tr><td>SPCX (SpaceX)</td><td class="up">+1.1%</td><td class="dn">−0.4%</td><td class="up">+0.9% (11:15); +1.35% on Investing.com</td><td class="am">Dipped, then held the gain</td></tr>
+<tr><td>VZ</td><td class="up">≈ +2% to +2.4%</td><td class="dn">−2.6%</td><td class="dn">−2.15% (11:15); low −4.9%</td><td class="dn">Reversed lower</td></tr>
+<tr><td>RRC / EQT</td><td class="n"><span class="up">+10% to +14%</span> / <span class="dn">−4.2% to −4.6%</span></td><td class="n"><span class="up">+11.6%</span> / <span class="dn">−5.2%</span></td><td class="n"><span class="up">+15.3% (11:02)</span> / <span class="dn">−3.7% (Investing.com)</span></td><td>Extended / partially filled</td></tr>
+<tr><td>SGRY</td><td class="up">+20.6% to +24% (~$19.00–19.50)</td><td class="up">Halted 8:16–9:55; reopened +46.4%</td><td class="up">+46.2% (11:15)</td><td class="up">Gap roughly doubled on the definitive deal</td></tr>
+<tr><td>XNCR</td><td class="up">+27% to +31%</td><td class="up">+28.3% (high +33.4%)</td><td class="up">+21.9% (10:23)</td><td class="dn">Faded</td></tr>
+<tr><td>EWZ</td><td class="dn">≈ −27%</td><td class="dn">−25.5% (low −26.3%)</td><td class="dn">−22.7% (10:56)</td><td class="am">Partially filled</td></tr>
+<tr><td>XP</td><td class="dn">−46% to −51%</td><td class="dn">−52.2%</td><td class="dn">−50.6% (11:15)</td><td class="dn">Held at the lows</td></tr>
+<tr><td>NU</td><td class="dn">−23% to −25%</td><td class="dn">−22.9%</td><td class="dn">−19.3% (11:15)</td><td class="am">Partially filled</td></tr>
+<tr><td>ITUB</td><td class="dn">−25% to −28%</td><td class="dn">−22.8%</td><td class="dn">−22.4% (11:15)</td><td class="am">Opened better than indicated, then held</td></tr>
+<tr><td>BBD</td><td class="dn">≈ −28%</td><td class="dn">−27.5%</td><td class="dn">−30.7% (11:15)</td><td class="dn">Extended lower</td></tr>
+<tr><td>PAGS / STNE</td><td class="dn">−29% to −34% / −34% to −39%</td><td class="dn">−32.3% / n/a</td><td class="dn">−27.6% (11:00) / −30.0% (StockAnalysis losers list, time n/a)</td><td class="am">Partially filled</td></tr>
+<tr><td>MELI</td><td class="dn">−11% to −14%</td><td class="dn">−12.8%</td><td class="dn">−10.6% (10:45)</td><td class="am">Partially filled</td></tr>
+<tr><td>PBR / VALE</td><td class="dn">≈ −22% / ≈ −3.6%</td><td>n/a / <span class="dn">−2.4%</span></td><td class="dn">−17.0% / −2.9% (11:15)</td><td class="am">Partially filled / held</td></tr>
+<tr><td>MRNA</td><td class="dn">−8% to −9.3%</td><td class="dn">−6.6% (low −9.2%)</td><td class="dn">−1.0% (11:03)</td><td class="up">V-reversal; nearly filled</td></tr>
+<tr><td>FICO</td><td class="dn">−4.5% to almost −10%</td><td class="dn">−8.05%</td><td class="dn">−8.2% (11:04)</td><td class="dn">Held lower</td></tr>
+<tr><td>ROST / BORR</td><td>≈ +6.5% / ≈ −10%</td><td>n/a</td><td>No intraday quote captured</td><td>Unconfirmed</td></tr>
+</table></div>
+<p><b>Takeaway:</b> The pre-market script mostly held for AI suppliers and Tesla, whose gaps extended. It broke in three places. Meta's equity-raise rally was erased at the open. Verizon's beat-and-raise flipped to a loss. And the neoclouds, sold on Musk's warning, reversed to solid gains from fresh 52-week lows. Brazil partially filled in the liquid names (EWZ, NU, PAGS, MELI) but not in XP or BBD. The two biggest event gaps diverged: SGRY roughly doubled its pre-market gain on a definitive deal, while XNCR's ESMO pop faded.</p>
+
+<h2>3. Opening Movers</h2>
+<p class="note">Volume is shares traded so far vs. 3-month average <i>full-day</i> volume (Yahoo). By ~11:15 ET a typical session has done roughly 30% of a day's volume, so ≥0.5× is a heavy pace. "ADV n/a" = no average available in sources.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Day %</th><th>From open</th><th>Volume note</th><th>Driver</th></tr>
+<tr><td>SGRY</td><td class="up n">+46.2%</td><td class="n">−0.1%</td><td>44.1M ≈ 19.6×: extreme</td><td>Definitive $23.50 cash sale to HealthSpan Partners (Bon Secours Mercy Health affiliate)</td></tr>
+<tr><td>RRC</td><td class="up n">+15.3%</td><td class="up n">+3.2%</td><td>9.9M (ADV n/a)</td><td>EQT all-stock acquisition (0.987 EQT per share)</td></tr>
+<tr><td>FIX</td><td class="up n">+7.9%</td><td class="up n">+6.6%</td><td>0.24M (ADV n/a)</td><td>Rebound after last week's CFO-retirement selloff, despite price-target cuts at Oppenheimer, KeyBanc and UBS (TheFly)</td></tr>
+<tr><td>TSLA</td><td class="up n">+6.3%</td><td class="up n">+3.1%</td><td>26.0M ≈ 0.71×: heavy</td><td>Barclays upgrade to Overweight, $450 target, citing a possible SpaceX combination (TheStreet)</td></tr>
+<tr><td>CRWV / IREN / NBIS / WULF</td><td class="up n">+5.8% / +4.7% / +2.4% / +6.3%</td><td class="up n">+10.5% / +8.5% / +5.6% / n/a</td><td>CRWV 1.00×, IREN 0.64×, WULF 0.56×: very heavy</td><td>Reversal of the Musk-driven pre-market selloff from new 52-week lows</td></tr>
+<tr><td>LITE / SNPS / ARM / NXPI</td><td class="up n">+8.4% / +6.2% / +6.0% / +4.9%</td><td>n/a</td><td>Investing.com gainers list</td><td>AI hardware and chip-design bid. Cadence unveiled Nvidia-backed chip-design AI models (Reuters headline) and reports tonight; NXPI reports Tue</td></tr>
+<tr><td>MU / INTC / NVDA</td><td class="up n">+3.6% / +3.75% / +3.1%</td><td class="up n">+2.1% / +2.6% / +2.1%</td><td>INTC 0.32×, NVDA 0.27×: normal to light</td><td>Memory strength; New Street upgrades INTC to Buy (TheFly); Anthropic S-1</td></tr>
+<tr><td>MRNA</td><td class="dn n">−1.0%</td><td class="up n">+6.0%</td><td>9.7M (ADV n/a)</td><td>Second straight V-reversal; Piper Sandler target to $230 from $167 (TheFly)</td></tr>
+<tr><td>VZ</td><td class="dn n">−2.15%</td><td class="up n">+0.5%</td><td>17.0M ≈ 0.73×: heavy</td><td>Q3 revenue miss (fewer device upgrades) overshadowed subscriber beat and raised guidance</td></tr>
+<tr><td>RDDT</td><td class="dn n">−5.0%</td><td class="dn n">−5.0%</td><td>2.7M (ADV n/a)</td><td>De-risking ahead of Oct. 29 earnings (TheStreet)</td></tr>
+<tr><td>FICO</td><td class="dn n">−8.1% to −8.4%</td><td class="dn n">−0.2% to −0.4%</td><td>0.25M ≈ 0.36× (10:44): normal</td><td>Held Preferred Program price at $10 (TheFly); Barron's says it "missed its chance" to raise prices; Wells Fargo downgrade</td></tr>
+<tr><td>MELI</td><td class="dn n">−10.2% to −10.6%</td><td class="up n">+2.6%</td><td>1.1M ≈ 2.1×: very heavy</td><td>Brazil exposure</td></tr>
+<tr><td>BMA / BBAR / GGAL / YPF / DLO</td><td class="dn n">−11.1% / −9.8% / −9.3% / −5.6% / −7.2%</td><td>n/a</td><td>BMA 0.80×, GGAL 0.78×, YPF 0.88× by 10:44: very heavy</td><td>Regional contagion: Argentine ADRs and LatAm payments (Yahoo losers)</td></tr>
+<tr><td>XP / BBD / SBS / ITUB / NU / PBR</td><td class="dn n">−50.6% / −30.7% / −25.8% / −22.4% / −19.3% / −17.0%</td><td class="n">+3.2% / −4.4% / n/a / +0.5% / +4.6% / n/a</td><td>2.3× to 7.3× (XP): extreme</td><td>Lula's runoff win; B3 circuit breaker</td></tr>
+<tr><td>XNCR</td><td class="up n">+21.9%</td><td class="dn n">−5.0%</td><td>4.4M (ADV n/a)</td><td>ESMO data; gap fading</td></tr>
+</table></div>
+
+<h3>Fixed watchlist snapshot</h3>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Last</th><th>Day %</th><th>From open</th><th>Time (ET)</th><th>Note</th></tr>
+<tr><td>AAPL</td><td>346.61</td><td class="dn">−0.32%</td><td>n/a</td><td>Investing.com (n/a)</td><td>Down ~1.5% early on bearish analyst calls; Apple reportedly asked suppliers for ~30% more iPhone Duo output; reports Nov 2</td></tr>
+<tr><td>MSFT</td><td>529.95</td><td class="up">+1.04%</td><td class="up">+0.48%</td><td>10:52</td><td>Scotiabank target raised to $625 from $615 (TheFly); reports Wed</td></tr>
+<tr><td>NVDA</td><td>217.48</td><td class="up">+3.09%</td><td class="up">+2.05%</td><td>11:01</td><td>217.68 (+3.19%) on Investing.com later; volume light (~0.27× by 11:15)</td></tr>
+<tr><td>GOOGL</td><td>320.98</td><td class="up">+0.24%</td><td class="n">+0.03%</td><td>Investing.com (n/a)</td><td>Was 318.25 (−0.61%) at 9:58; reports Wed</td></tr>
+<tr><td>AMZN</td><td>250.15</td><td class="up">+0.87%</td><td class="up">+0.27%</td><td>11:04</td><td>S-1: Amazon bought 19.3M Anthropic Series G-2 non-voting shares (TheFly); AWS–Verizon deal</td></tr>
+<tr><td>META</td><td>642.59</td><td>0.00%</td><td class="up">+0.66%</td><td>11:05</td><td>Pre-market gain erased; low 629.02 (−2.1%); +0.32% on Investing.com later</td></tr>
+<tr><td>AVGO</td><td>329.87</td><td class="up">+2.55%</td><td class="up">+1.65%</td><td>10:58</td><td>Potential Meta-stock buyer</td></tr>
+<tr><td>AMD</td><td>525.64</td><td class="up">+1.71%</td><td class="up">+0.55%</td><td>10:57</td><td>Potential Meta-stock buyer; reports Nov 3</td></tr>
+<tr><td>TSM</td><td>427.26</td><td class="up">+2.09%</td><td class="up">+2.20%</td><td>11:00</td><td>Taiwan market closed for a holiday; ADR opened flat</td></tr>
+<tr><td>ORCL</td><td>124.40</td><td class="dn">−1.40%</td><td class="dn">−1.32%</td><td>10:07</td><td>Wells Fargo target cut to $250 from $280 (TheFly); batch of Fusion agentic-AI launches</td></tr>
+<tr><td>CRM</td><td>247.28</td><td class="dn">−0.52%</td><td class="dn">−0.19%</td><td>10:01</td><td>No catalyst found</td></tr>
+<tr><td>ASML</td><td>1,606.98</td><td class="up">+2.24%</td><td class="up">+1.19%</td><td>10:59</td><td>Ex-dividend in Amsterdam today</td></tr>
+<tr><td>MU</td><td>908.88</td><td class="up">+3.57%</td><td class="up">+2.14%</td><td>11:01</td><td>Barron's: "finds its footing" as it pushes back on China memory threat</td></tr>
+<tr><td>QCOM</td><td>179.19</td><td class="up">+1.86%</td><td class="up">+1.39%</td><td>10:58</td><td>—</td></tr>
+<tr><td>INTC</td><td>89.57</td><td class="up">+3.00%</td><td class="up">+1.85%</td><td>11:05</td><td>New Street upgrade to Buy (TheFly); 90.22 (+3.75%) at 11:15 (Yahoo); reports Thu</td></tr>
+<tr><td>TSLA</td><td>394.30</td><td class="up">+5.93%</td><td class="up">+2.73%</td><td>11:05</td><td>395.53 (+6.26%) at 11:15 (Yahoo)</td></tr>
+</table></div>
+<p class="note">13 of the 15 watchlist names with an opening print are trading above it (GOOGL only marginally, using Investing.com's later print). ORCL and CRM are below. No AAPL opening print was available. Quotes are from StockAnalysis.com unless noted. Its day-range fields lag the real-time price, and several last prices (NVDA, MSFT, AVGO, TSM, MU, INTC, QCOM, ASML) sat above the listed day's high.</p>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">Worth investigating further only. These are not recommendations to buy or sell.</p>
+
+<div class="card"><b>1. Neocloud washout reversal: CoreWeave, IREN, Nebius (plus WULF)</b><br>
+<b>Move:</b> CRWV opened −4.2% at $51.96 and traded to $51.24 (−5.5%), below the $53.50 52-week low on Yahoo. By ~11:15 it was $57.40 (<span class="up">+5.8%</span>), +10.5% from the open and +12% off the low. IREN opened −3.5% and hit $23.72, below the $23.83 52-week low on StockAnalysis, then rose to $26.08 (+4.7%; +8.5% from open). NBIS went from −3.0% at the open to +2.4% (11:00), and WULF was +6.3%.<br>
+<b>Thesis:</b> Musk's "guppy-level death" post set up a gap down into fresh 52-week lows that found buyers almost at once. CRWV traded ~1.0× its average <i>full-day</i> volume in the first ~105 minutes, about 3× a normal pace. That makes this a high-participation failed breakdown, not a drift. Reversals off new lows on heavy volume often follow through into midday as shorts cover. The session's AI tailwind also helps: Anthropic's S-1 shows fast-rising compute demand ($9B of H1 AI-infrastructure spending). This looks like a sentiment flush worth investigating, not a resolved credit story.<br>
+<b>Evidence:</b> StockAnalysis real-time quotes and day ranges; Yahoo most-active (volume, 52-week ranges); TheStreet and CNBC on Musk's post ("debt markets have almost entirely shut off access to money" for AI-only borrowers); Investopedia and TipRanks headlines; Yahoo's summary of the S-1.<br>
+<b>Risks:</b> No company-specific catalyst was found for the reversal. Musk's core point stands unrebutted, and a search summary of recent coverage says CoreWeave's CDS costs have risen to levels associated with financial stress. Losing the opening prints (~$52 CRWV, ~$24 IREN) would flip the read. Microsoft and Alphabet capex commentary and the FOMC (both Wed) are binary events.<br>
+<span class="conf">Confidence: Low–Medium</span></div>
+
+<div class="card"><b>2. AI suppliers extend while Meta's raise fades: NVDA, AVGO, MU, INTC, TSM, ASML vs. META</b><br>
+<b>Move:</b> NVDA +3.1% (+2.1% from open), AVGO +2.55% (+1.65%), MU +3.6% (+2.1%), INTC +3.0% to +3.75% (+1.9% to +2.6%), TSM +2.1% (+2.2%), ASML +2.2% (+1.2%). Outside the watchlist, LITE +8.4%, SNPS +6.2%, ARM +6.0% and NXPI +4.9% (Investing.com). META went from ≈ +1% to +2.4% pre-market to −0.7% at the open, a −2.1% low, and flat to +0.3% now.<br>
+<b>Thesis:</b> The market is paying for who receives AI dollars rather than who spends them. Meta's $95B plan was cheered pre-market, but the supply overhang erased the gain at the open. That overhang includes forward-sale common, likely hedging by mandatory-convertible buyers, and a ~$60B at-the-market program from Q1 2027. Meanwhile the would-be buyers of Meta stock (NVDA, AMD, AVGO) and the wider supply chain extended. Breadth within tech supports continuation into midday. 13 of 15 watchlist names are above their opens, the Nasdaq went from +0.24% at the open to +1.2–1.3% by 11:15, and the VIX is down ~8%. Those are trend-day characteristics.<br>
+<b>Evidence:</b> StockAnalysis quotes (10:51–11:05) and the Investing.com sidebar; TheStreet (META −1.7% early; offering terms; S-1 timing); Yahoo S-1 summary (H1 revenue $16.3B; $9B H1 AI-infrastructure spend); TheFly headline on New Street's INTC upgrade; Barron's and TipRanks on MU.<br>
+<b>Risks:</b> Participation is thin. By 11:15 NVDA had traded ~0.27× and INTC ~0.32× of average daily volume, at or below a normal pace, so this is not a high-conviction volume move. Swing factors are near: the $69B 2-year auction (1 PM), the FOMC and MSFT/GOOGL results (Wed), and possible CTA supply (Goldman est. ~$11.6B, per the pre-market edition). A wide discount when Meta prices its offering (pricing time not confirmed) could weigh on the group.<br>
+<span class="conf">Confidence: Medium</span></div>
+
+<div class="card"><b>3. Brazil: circuit breaker, then partial relief (EWZ, NU, PAGS, MELI vs. XP, BBD; contagion to Argentina)</b><br>
+<b>Move:</b> EWZ was −22.7% at 10:56 vs. ≈ −27% indicated. It opened −25.5%, hit a −26.3% low, and is +3.9% from the open. NU −19.3% (+4.6% from open, on 182.6M shares, 2.5× its average full-day volume), PAGS −27.6% (+6.8% from open), MELI −10.6% (+2.6%). XP (−50.6%) and BBD (−30.7%, −4.4% from open) have not bounced. Contagion: BMA −11.1%, BBAR −9.8%, GGAL −9.3%, YPF −5.6%, DLO −7.2% (10:44).<br>
+<b>Local market:</b> B3 halted cash trading for 30 minutes at 9:57 Brasília (8:57 ET), its first circuit breaker since March 2020. It also widened Ibovespa-futures limits to 20% and dollar-futures limits to 8.4%. The Ibovespa hit 169,516 (−17.3% vs. Friday's 205,082.56) and was last seen at 173,338 (−15.5%). USD/BRL peaked +12.25% at R$5.605 and eased to +9.54% at R$5.469. The central bank's PTAX partials fell from 5.6052 to 5.4968 to 5.4503 through the morning. Exporters such as Vale, Suzano and WEG rose locally (InfoMoney).<br>
+<b>Thesis:</b> The ADR overshoot flagged pre-market has closed. <i>Our arithmetic:</i> −15.5% in local terms with the real down ~9.5% is ≈ −22.8% in dollars, matching EWZ's −22.7%. At the worst (−17.3% local, +12.25% USD/BRL) it is ≈ −26.3%, matching EWZ's low. From here the trade is about the real. The bounce in liquid names has tracked BRL's retracement, so the PTAX/USD-BRL path is the midday tell. The dispersion matters too: XP and BBD are still on their lows while NU, PAGS and MELI bounce. Investors appear to be separating fiscal- and rate-exposed balance sheets from growth platforms.<br>
+<b>Evidence:</b> StockAnalysis and Yahoo quotes and volumes; InfoMoney live blog (key lines extracted); Money Times headline (Ibovespa in dollar terms down "nearly 30%"); pre-market edition.<br>
+<b>Risks:</b> Another B3 halt is possible. Fiscal or political headlines (Bolsonaro has called for the vote to be annulled, per the pre-market edition; the finance-minister choice) could re-accelerate the selloff. ADR liquidity varies widely, and Argentina's slide shows regional de-risking that may not stop at Brazil.<br>
+<span class="conf">Confidence: Medium for volatility; Low for direction</span></div>
+
+<div class="card"><b>4. Surgery Partners (SGRY): from takeover report to a ~2% deal spread</b><br>
+<b>Move:</b> SGRY was +21% to +24% pre-market on the FT's ~$20/share report. It was halted from 8:16 to 9:55 ET, reopened at $23.06 (+46.4%), and was $23.03 (<span class="up">+46.2%</span>) at ~11:15 on 44.1M shares, ≈19.6× its average full-day volume.<br>
+<b>Thesis:</b> The definitive deal is ~17% above the FT's indicated price, so the pre-market range understated the outcome. The buyer is HealthSpan Partners, a Bon Secours Mercy Health affiliate, paying $23.50 cash. Enterprise value is ~$5.7B, the premium is more than 49%, Bain rolls its ~39% stake, and closing is expected in Q1 2027. The stock is now pinned to deal value. <i>Our arithmetic:</i> at $23.03 the gross spread is ~2.0%, about 4.5–4.8% annualized for a ~5-month close, close to 3-month T-bill yields (~4.15%). The market is pricing low deal risk. Upside is limited to spread compression, so from here this is a merger-arbitrage question rather than a momentum one.<br>
+<b>Evidence:</b> Deal terms from GuruFocus, Becker's Hospital Review, Seeking Alpha, Quartz and Stocktwits (search summaries); TheFly halt and resume headlines (via StockAnalysis); Yahoo most-active volume; pre-market edition (FT report).<br>
+<b>Risks:</b> Financing relies on cash plus new debt while credit is stressed (CCC yields topped 16% on Friday). Regulatory and shareholder approvals are pending. Bain's rollover gives it different incentives from public holders, and whether a minority-holder vote is required was not confirmed. Bain previously walked away from an agreement valuing the company at $6.7B (Bloomberg citing the FT, per a search summary).<br>
+<span class="conf">Confidence: Medium</span></div>
+
+<div class="card"><b>5. Tesla (TSLA): upgrade gap extended into the session</b><br>
+<b>Move:</b> TSLA went from +1.7% to +1.8% pre-market to +3.1% at the open ($383.83) and $395.53–396.02 (<span class="up">+6.3% to +6.4%</span>) by ~11:15, +3.1% from the open. Its day low (383.73) is essentially the opening print. Volume was 26.0M by 11:15, 0.71× average daily volume or roughly 2× a normal pace.<br>
+<b>Thesis:</b> Barclays upgraded the stock to Overweight with a $450 target, citing a possible SpaceX combination (TheStreet). Friday's BNP Paribas and CLSA upgrades faded into a down close; this one has become a trend move. The stock has not revisited its open, a sign of persistent demand. Holding above ~$384 keeps the move intact into midday.<br>
+<b>Evidence:</b> StockAnalysis and Yahoo quotes; TheStreet live blog; TheFly ("Tesla upgraded…") and Invezz ("Why is Tesla stock gaining 5% today?") headlines; pre-market edition (Bloomberg via ZeroHedge).<br>
+<b>Risks:</b> There are no agreed merger terms. SPCX is only +0.9% to +1.4%, so SpaceX's own stock is not confirming a "SpaceX premium." TSLA is high-beta into the FOMC and megacap earnings. A web search did not locate the Barclays note itself.<br>
+<span class="conf">Confidence: Low–Medium</span></div>
+
+<div class="card"><b>6. Verizon (VZ): beat-and-raise sold</b><br>
+<b>Move:</b> VZ was +2% to +2.4% pre-market, opened at $43.49 (−2.6%), fell to a $42.47 low (−4.9%), and was $43.70 (<span class="dn">−2.15%</span>) at ~11:15. Volume was 17.0M, 0.73× average daily volume. T is +0.9%.<br>
+<b>Thesis:</b> The market is paying for revenue, not subscriber adds. Q3 revenue of $34.3B missed (~$34.74B per LSEG) because device-upgrade volumes fell after subsidy cuts. That came even as postpaid phone adds (406K) nearly doubled estimates and Verizon raised its FY adjusted-EPS and phone-add guidance. The reversal happened between the 8:30 call and the bell. Since then VZ has stabilized just above its open (+0.5% from open, +2.9% off the low), so the fade looks done for now rather than gathering momentum. Into midday, watch whether it holds the ~$43.50 opening print; failing that, a retest of ~$42.5 is possible.<br>
+<b>Evidence:</b> TheStreet (results, LSEG consensus, subsidy explanation, raised guidance); TipRanks headline ("Verizon Stock (VZ) Falls on Q3 Revenue Miss…"); StockAnalysis and Yahoo quotes; pre-market edition.<br>
+<b>Risks:</b> <i>Counter-view (our inference):</i> lower device volumes after subsidy cuts can help margins, and the raised EPS guide and free-cash-flow record may win out over the session. The SpaceX fourth-carrier debate adds headline risk in both directions. AMT (Tue) and TMUS (Wed) report next.<br>
+<span class="conf">Confidence: Low–Medium</span></div>
+
+<div class="card"><b>7. Moderna (MRNA): a second straight V-reversal</b><br>
+<b>Move:</b> MRNA was −8% to −9.3% pre-market. It opened at $186.90 (−6.6%), hit a $181.65 low (−9.2%) and a $203.82 high (+1.9%), and was $198.04 (−1.0%) at 11:03, +6.0% from the open and +9% off the low.<br>
+<b>Thesis:</b> For a second session, an early flush was bought almost in full. Friday's −9.7% low recovered to about −0.9% by late morning, per the Oct. 23 open edition. That came after Thursday's −17.6% drop on leaked Phase 3 cancer-vaccine data. Piper Sandler raised its target to $230 from $167 (TheFly). Repeated failure to hold the lows hints at seller exhaustion. Reclaiming Friday's $200.10 close would turn the day green.<br>
+<b>Evidence:</b> StockAnalysis quote and day range; TheFly, MarketWatch and TipRanks headlines (via StockAnalysis); Oct. 23 open edition.<br>
+<b>Risks:</b> There is no new data, and MarketWatch reports cooling excitement around the vaccine. Today's intraday range is ~11% of Friday's close, so moves are noisy. Both-way pipeline and regulatory headline risk remains.<br>
+<span class="conf">Confidence: Low</span></div>
+
+<p class="note"><b>Also on the radar:</b> <b>FICO</b> (−8.1% to −8.4%) is holding its gap with no bounce after keeping Preferred Program pricing at $10. <b>RRC/EQT:</b> RRC extended to +15.3% while EQT recovered to −3.7% from −6.7% pre-market. <i>Our arithmetic:</i> at EQT $53.56 the 0.987 ratio implies ~$52.86 for RRC, a spread of only ~0.8%, so RRC trades as an EQT proxy. <b>XNCR</b> is fading (−5% from the open). <b>AAPL</b> went from ≈ −1.5% early to −0.3% as reports that Apple asked suppliers for ~30% more iPhone Duo output offset bearish analyst calls. Investing.com also cites a Loop Capital downgrade to Hold and a MoffettNathanson target cut to $283; neither was confirmed elsewhere. <b>RDDT</b> is −5% ahead of Oct. 29 earnings. <b>ORCL</b> is −1.4% on a Wells Fargo target cut. <b>SPCX</b> is +0.9% to +1.4% on plans to add Starlink internet to easyJet flights (TipRanks headline). After the close: <b>CDNS</b> (which unveiled Nvidia-backed chip-design AI models today; SNPS +6.2%), <b>CLS</b>, <b>AMKR</b>, <b>RMBS</b> and <b>WELL</b>.</p>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note"><b>Not used.</b> The only local file (alpha_wrds_signals.csv) has as_of_date 2026-09-17, 39 days old and outside the ~14-day freshness window. The table is omitted, and this edition relies on public research only. Re-running wrds_alpha_screen.py would restore this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-26-2026 (open levels at 9:32; Anthropic S-1 at 9:22; META −1.7% early; SpaceX financing; movers; Verizon results and LSEG consensus; Iran, oil)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (snapshots ~10:59 and ~11:15 ET: index header, prices, volume vs. 3-month average, 52-week ranges)</li>
+<li>https://finance.yahoo.com/markets/stocks/losers/ (~10:44 ET: Brazil, Argentina, FICO, MELI)</li>
+<li>https://finance.yahoo.com/technology/live/anthropic-ipo-live-updates-frontier-ai-lab-discloses-revenue-and-risks-in-highly-anticipated-s-1-filing-141702607.html (S-1 key figures; ~10:28 index header)</li>
+<li>https://finance.yahoo.com/quote/GOOGL/ (9:51 GOOGL quote and index header)</li>
+<li>https://www.investing.com/news/stock-market-news/why-is-apple-stock-sliding-today-93CH-4972942 (AAPL morning decline and analyst calls; market sidebar with AAPL, GOOGL, META, NVDA, TSLA, AMZN, MU, SNDK, SPCX, EQT, FICO, MELI, Brent, DXY, yields and the gainers list. AI-assisted article, per Investing.com)</li>
+<li>https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-26102026/ (Ibovespa levels, circuit breaker, USD/BRL, PTAX, B3 limits; key lines extracted by text search, page not read in full)</li>
+<li>StockAnalysis.com real-time quote pages (CBOE feed), e.g. https://stockanalysis.com/stocks/nvda/, plus /stocks/ pages for AAPL, MSFT, GOOGL, AMZN, META, AVGO, AMD, TSM, CRM, ASML, MU, QCOM, INTC, TSLA, SKHY, SNDK, XP, STNE, PAGS, NU, ITUB, BBD, PBR, MELI, VALE, SGRY, XNCR, RRC, EQT, VZ, T, TMUS, MRNA, FICO, CRWV, NBIS, IREN, SPCX, ROST, BORR, FIX, RDDT and NTNX; /history/ pages for AAPL, ORCL, EQT and ITUB; https://stockanalysis.com/etf/spy/ and /etf/ewz/; https://stockanalysis.com/markets/losers/. News headlines on these pages cite TheFly, Barron's, MarketWatch, TipRanks, Invezz, Investopedia and Reuters</li>
+<li>Search-result summaries only (page not opened or returned no text): https://www.gurufocus.com/news/9142412/healthspan-partners-to-acquire-surgery-partners-sgry-in-57b-deal · https://www.beckershospitalreview.com/asc-transactions-and-valuation-issues/bon-secours-mercy-health-affiliate-to-acquire-surgery-partners-for-5-7b/ · https://seekingalpha.com/news/4657155-surgery-partners-to-be-acquired-by-bon-secours-for-57b · https://qz.com/bon-secours-affiliate-surgery-partners-acquisition-102626 · https://stocktwits.com/news-articles/markets/equity/sgry-stock-heads-for-best-day-in-more-than-6-years-after-health-span-partners-acquisition-offer/cZU3PnlRByt · https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html · https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html · https://www.tipranks.com/news/meta-launches-95-billion-stock-offering-plan-to-fund-ai-expansion-nvidia-amd-and-broadcom-weigh-5-billion-purchase · https://247wallst.com/investing/2026/10/26/coreweave-drops-5-as-musk-warns-of-neocloud-guppy-level-death-iren-slides-3-nebius-slips-2/ · https://finance.yahoo.com/markets/stocks/articles/coreweave-rout-sends-warning-sign-092443918.html · https://www.moneytimes.com.br/mercado-repercute-vitoria-de-lula-na-eleicao-de-2026-ibovespa-em-dolar-despenca-quase-30-nesta-segunda-feira-26-rens/ · https://www.tipranks.com/news/apple-increases-supply-targets-by-30-as-iphone-duo-demand-explodes · https://www.dallasfed.org/research/surveys/tmos/2026/2609 (September release; October not found) · https://tradingeconomics.com/united-states/chicago-fed-national-activity-index/news/585328 (August release; September not found)</li>
+<li>Local: alpha_report_2026-10-26_premarket.html (this morning's flags); alpha_report_2026-10-23_open.html (Friday's MRNA pattern, format); alpha_wrds_signals.csv (as of 2026-09-17; stale, not used)</li>
+</ul>
+<p class="note">Limitations: automated run, executed about an hour later than the ~10:00 ET slot. Intraday quotes are snapshots from 9:51 to ~11:20 ET and will have moved. The fetch tool cached some pages for up to an hour, so a few quotes are older: CRM 10:01, ORCL 10:07, XNCR 10:23 and the EQT history page 9:59. Fresher Investing.com sidebar prices, with no timestamp, were used where available. No regular-session quotes were captured for ROST, BORR or TMUS, and no opening print for AAPL, PBR or STNE. StockAnalysis day-range fields lag its real-time price. Analyst actions (New Street on INTC, Scotiabank on MSFT, Wells Fargo on ORCL, Piper Sandler on MRNA, Barclays' $450 TSLA target) come from headlines or a live blog; the underlying notes were not seen. The Loop Capital and MoffettNathanson AAPL calls appear only in an AI-assisted Investing.com article. SGRY deal terms come from search summaries of press coverage, not the merger agreement. Brazilian figures come from InfoMoney's live blog, read by extracting key lines. The Chicago Fed and Dallas Fed releases were not captured. Arithmetic on the Brazil dollar-terms move, the SGRY spread and the RRC/EQT spread is our own. Disclosure: this brief is generated by Claude, an AI model made by Anthropic. The Anthropic S-1 figures come solely from third-party press summaries of the filing and were not checked against the SEC document.</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
