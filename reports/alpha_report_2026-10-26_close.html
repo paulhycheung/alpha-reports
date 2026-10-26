@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-26 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Monday, October 26, 2026</div>
+<p class="note">Automated run. The schedule targets ~3:20 PM ET, but this run executed after the bell (research ~4:25–4:45 PM ET). Prices are therefore official 4:00 PM closing prints where available: StockAnalysis.com pages stamped "At close: Oct 26, 2026, 4:00 PM EDT" (collected by two sub-agents) and Yahoo Finance's post-close most-active list and index strip. Figures marked <b>*</b> are intraday snapshots (time shown) because no post-close page could be fetched for that name. After-hours (AH) quotes are 4:00–4:36 PM ET snapshots. AH reactions to tonight's earnings were <b>not</b> captured. <b>WRDS signals were not used:</b> the only local file (alpha_wrds_signals.csv) has as_of_date 2026-09-17. That is 39 days old, outside the ~14-day window, so this edition relies on public research only.</p>
+
+<h2>1. How the Session Closed</h2>
+<p><b>Stocks held most of the morning's gain and closed near the afternoon range, but leadership stayed narrow.</b> The S&amp;P 500 closed at 7,676.77 (<span class="up">+53.09, +0.70%</span>), the Nasdaq Composite at 26,169.38 (<span class="up">+0.82%</span>), the Dow at 52,361.58 (<span class="up">+0.28%</span>) and the Russell 2000 at 2,786.42 (<span class="up">+0.38%</span>). That breaks a run of two straight weekly losses for the S&amp;P and Nasdaq (Yahoo). Neither index retested its ~11 AM peak: the S&amp;P finished 0.28% below 7,698 and the Nasdaq 0.42% below 26,281. Small caps leaked all afternoon, from +0.76% at midday to +0.38%. The VIX fell to 18.39 (−5.45%), and the 10-year yield was flat at 4.986% (−0.2 bp). December WTI settled at $101.76 (−1.46%) and December Brent at $115.81 (−0.78%) (InfoMoney). Gold ended at $4,028 (+0.5%) and Bitcoin near $79.8K (−0.8%).</p>
+<p><b>What drove it:</b></p>
+<ul>
+<li>Tech (XLK) led after Anthropic's public S-1, which showed more than $16B of first-half revenue (Yahoo).</li>
+<li>Chips and memory held near their highs: MU +2.98%, AMD +2.80%, NVDA +2.40%, AVGO +2.38%, INTC +4.11%. Bloomberg reported a chip gauge up 3.3% (search summary; time not stated).</li>
+<li>Tesla rose 5.2% on Barclays' upgrade, and Microsoft 1.6% on its buyout offer.</li>
+</ul>
+<p><b>Laggards:</b></p>
+<ul>
+<li>Meta −1.9%, closing 0.4% above its low as it waits for offering pricing.</li>
+<li>Alphabet −1.1%, closing at its low.</li>
+<li>Apple −1.1%, Verizon −3.5% and Netflix −3.0%.</li>
+<li>Fair Isaac −13.2%.</li>
+<li>Brazil: EWZ −19.8%, while the Ibovespa fell 13.88% after the first B3 circuit breaker since March 2020.</li>
+</ul>
+<p><b>Macro:</b> The Chicago Fed's three-month activity average (CFNAI-MA3) rose to +0.03 for September. The Dallas Fed's Texas production index fell 14 points to 15.8 (EconCurrents). Fed officials are in blackout. The two-day FOMC meeting starts Tuesday, with the decision Wednesday at 2 PM ET. Experts expect a hold, and many see Chair Kevin Warsh tilting toward a "hawkish pause" (Yahoo).</p>
+<p><b>Tone:</b> constructive but narrow going into the densest stretch of the month. Tonight brings AI-hardware earnings and Meta's offering pricing. Tuesday brings the start of the FOMC meeting and about 90 earnings reports. MSFT and GOOGL report Wednesday.</p>
+<div class="tbl"><table>
+<tr><th>Snapshot</th><th>Fri close</th><th>~11:04 ET (high)</th><th>~12:42 ET (midday ed.)</th><th>~3:10 ET (afternoon ed.)</th><th>Close</th></tr>
+<tr><td>S&amp;P 500</td><td class="n">7,623.68</td><td class="n">7,698.26 (+0.98%)</td><td class="n">7,673.29 (+0.65%)</td><td class="n">7,674.93 (+0.67%)</td><td class="n"><b>7,676.77 (+0.70%)</b></td></tr>
+<tr><td>Dow</td><td class="n">52,215.16</td><td class="n">52,493.41 (+0.53%)</td><td class="n">52,318.96 (+0.20%)</td><td class="n">52,302.79 (+0.17%)</td><td class="n"><b>52,361.58 (+0.28%)</b></td></tr>
+<tr><td>Nasdaq Composite</td><td class="n">25,955.34</td><td class="n">26,280.99 (+1.25%)</td><td class="n">26,183.85 (+0.88%)</td><td class="n">26,183.66 (+0.88%)</td><td class="n"><b>26,169.38 (+0.82%)</b></td></tr>
+<tr><td>Russell 2000</td><td class="n">2,775.90</td><td class="n">2,796.34 (+0.74%)</td><td class="n">2,797.00 (+0.76%)</td><td class="n">2,787.83 (+0.43%)</td><td class="n"><b>2,786.42 (+0.38%)</b></td></tr>
+<tr><td>10-yr yield / VIX</td><td class="n">4.988% / 19.45</td><td class="n">4.974% / 17.98</td><td class="n">4.976% / 18.34</td><td class="n">4.982% / 18.45</td><td class="n"><b>4.986% / 18.39</b></td></tr>
+<tr><td>WTI (Dec) / Gold</td><td class="n">$103.27 / $4,007.90</td><td class="n">$100.98 / $4,036.40</td><td class="n">$103.02 / $4,033.30</td><td class="n">$102.30 / $4,025.70</td><td class="n"><b>$101.41 / $4,028.00</b></td></tr>
+</table></div>
+<p class="note">Sources: the close column is from Yahoo Finance's post-close index strip. The Yahoo live blog confirms the Dow at 52,361.58 "at close." Earlier columns are carried from today's midday and afternoon editions. The WTI close column is Yahoo's post-settle quote; InfoMoney reports the official settle as $101.76.</p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Names flagged in today's pre-market (PM), open, midday and afternoon (aft.) editions, marked to the 4:00 PM close.</p>
+<div class="tbl"><table>
+<tr><th>Name (where flagged)</th><th>Earlier read</th><th>Close</th><th>Verdict</th></tr>
+<tr><td>META (PM #1; open #2; aft. #4)</td><td>PM +1% to +2.4%; midday −0.04%; aft. −1.26%</td><td class="dn">630.56 (−1.88%), 0.4% above the 627.80 low</td><td><b>Reversed.</b> The pre-market's top idea closed near its low</td></tr>
+<tr><td>Chips and memory (PM #3; open #2; midday #1; aft. #3)</td><td>Aft.: MU +3.65%, AMD +2.87%, AVGO +2.69%, NVDA +2.47%, TSM +2.38%</td><td class="up">MU +2.98%, AMD +2.80%, NVDA +2.40%, AVGO +2.38%, QCOM +2.10%, TSM +1.40%, ASML +1.15%</td><td><b>Played out.</b> The group held most of its gain. TSM and ASML faded ~1–1.4% off their highs</td></tr>
+<tr><td>AI hardware and optics (midday #1; aft. #3)</td><td>TTMI, LITE, AXTI, VICR, TSEM +9.6% to +10.7% (~1:41)</td><td>Closes not captured. CLS, CDNS and RMBS beat and raised after the bell; AMKR was in line</td><td>Extended as far as observed. Tonight's prints mostly support the trade (see candidate #1)</td></tr>
+<tr><td>INTC (aft. #2)</td><td class="up">+5.63% (2:44 PM)</td><td class="up">90.53 (+4.11%), 1.7% below the 92.08 high</td><td>Held most of the gain but faded in the last hour</td></tr>
+<tr><td>TSLA (PM #7; open #5; midday #5)</td><td class="up">+6.00% (~3:10)</td><td class="up">391.62 (+5.21%), 1.44× average volume</td><td><b>Played out.</b> A trend day with a small late fade</td></tr>
+<tr><td>MSFT (aft. #6)</td><td class="up">+1.37% (3:07)</td><td class="up">532.74 (+1.57%), 0.09% below the high</td><td><b>Accelerated</b> into the bell</td></tr>
+<tr><td>AAPL (PM #4; midday #6; aft. #5)</td><td class="dn">−1.23% (2:02)</td><td class="dn">343.91 (−1.10%); the 341.05 low held</td><td>The failed bounce persisted, but the iPhone Duo headline caused no breakdown</td></tr>
+<tr><td>Brazil (PM #2; open #3; midday #3; aft. #7)</td><td>EWZ ≈ −27% pre-market; −20.45% at 2:51</td><td class="dn">EWZ 34.14 (−19.84%), 1.2% below the 34.54 high; Ibovespa −13.88%</td><td>Relief extended into the close in the liquid names. XP, BBD and SBS stayed repriced</td></tr>
+<tr><td>Neoclouds (open #1; midday #4)</td><td>CRWV +3.63%, WULF +8.52%, IREN +4.0%, CIFR −1.07% (~3:10)</td><td>CRWV +1.73%, WULF +5.83%, IREN +2.11%, CIFR −2.90%</td><td><b>Faded</b> into the close. CIFR (7.71) is below its prior 52-week low of 7.90</td></tr>
+<tr><td>FICO (aft. #1)</td><td class="dn">−14.32% (3:09); low −17.7%</td><td class="dn">708.07 (−13.15%), 5.5% above the 671.19 low</td><td>Bounced late. The event risk is unresolved (candidate #3)</td></tr>
+<tr><td>JBLU (midday #2)</td><td class="dn">−11.81% (2:51)</td><td>Close not captured</td><td>Reports Tuesday before the open (candidate #7)</td></tr>
+<tr><td>SGRY (open #4)</td><td>+47.33%; 1.29% spread (~3:10)</td><td class="up">23.25 (+47.62%); 1.08% spread to $23.50</td><td>Pinned; the spread tightened again</td></tr>
+<tr><td>RRC / EQT (PM #6)</td><td>RRC +16.89% (~1:41); EQT −4.2% to −4.6% pre-market</td><td>RRC 53.32* (+17.14%, 3:36 PM); EQT 54.85 (−1.40%)</td><td>EQT's acquirer discount narrowed through the day. Gross spread ≈1.5%</td></tr>
+<tr><td>VZ (PM #5; open #6)</td><td>Beat-and-raise sold at the open</td><td class="dn">43.10 (−3.49%) on 1.9× average volume</td><td>Faded all day</td></tr>
+<tr><td>MRNA (open #7)</td><td>V-reversal off the lows</td><td>198.85 (−0.62%) after a 181.65 low (−9.2%)</td><td>The second straight V held</td></tr>
+<tr><td>NFLX / XNCR (radar)</td><td>−3.96% (~3:10) / +19.64% (~1:41)</td><td>NFLX 63.90 (−2.96%) / XNCR close not captured</td><td>NFLX pared its loss slightly but sits below its prior 52-week low</td></tr>
+</table></div>
+<p><b>Takeaway:</b> The most durable calls of the day were the AI-supplier trade, Tesla and Microsoft. All three closed within ~1.5% of their session highs, and tonight's Celestica, Cadence and Rambus numbers add support for the supplier trade. Meta was the clearest reversal. It went from the pre-market's top idea (+2.4% indicated) to a close 0.4% above its low, ahead of pricing. Brazil's relief kept grinding in the liquid ADRs. By the close, EWZ (−19.8%) was roughly level with the dollar-adjusted Ibovespa (≈ −20.4%, our arithmetic), so the pre-market overshoot has closed. The neocloud reversal faded late, and CIFR finished at a new low.</p>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">Volume ratios are full-day volume vs. Yahoo's 3-month average, unless noted (our arithmetic). * = intraday snapshot; the time is shown.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Day % (close)</th><th>Volume note</th><th>Driver</th></tr>
+<tr><td>SGRY</td><td class="up n">+47.62% (23.25)</td><td>58.8M ≈ 26×</td><td>$23.50 all-cash takeover by HealthSpan Partners ($5.7B, per a TheFly headline); RBC downgrade to Sector Perform</td></tr>
+<tr><td>NN</td><td class="up n">+22.72%* (~1:41 PM)</td><td>7.8M ≈ 2.7×</td><td>NextNav: no catalyst found</td></tr>
+<tr><td>XNCR</td><td class="up n">+19.64%* (~1:41 PM)</td><td>6.8M ≈ 5.1×</td><td>ESMO data on XmAb819</td></tr>
+<tr><td>RRC</td><td class="up n">+17.14%* (53.32, 3:36 PM)</td><td>12.9M by 12:10 PM vs. 3.5M 20-day average</td><td>EQT all-stock deal (0.987 EQT per share)</td></tr>
+<tr><td>TTMI / LITE / AXTI / VICR / TSEM</td><td class="up n">+10.70% / +10.30% / +10.00% / +9.84% / +9.60%* (~1:41 PM)</td><td>0.6–1.6× at ~1:41</td><td>AI hardware. StoneX started LITE at Buy, noting it is "sold out into 2029" (TheFly)</td></tr>
+<tr><td>NOK / WULF</td><td class="up n">+6.14% (8.64) / +5.83% (11.98)</td><td>≈1.0× / 1.5×</td><td>NOK: no company catalyst found. WULF: neocloud rebound</td></tr>
+<tr><td>TSLA</td><td class="up n">+5.21% (391.62)</td><td>52.7M ≈ 1.44×</td><td>Barclays upgrade to Overweight, $450 target (Benzinga); three-month high (TipRanks)</td></tr>
+<tr><td>INTC</td><td class="up n">+4.11% (90.53)</td><td>97.6M ≈ 0.93×</td><td>Report of Intel–AMD cooperation talks; New Street upgrade</td></tr>
+<tr><td>XP</td><td class="dn n">−48.36% (15.70)</td><td>130.4M ≈ 16×</td><td>Lula's re-election: fiscal and rates repricing</td></tr>
+<tr><td>INTR / BBD / SBS</td><td class="dn n">−34.91% (4.68) / −28.01% (2.93) / −26.33% (4.72)</td><td>8.1× / 5.7× / 5.6×</td><td>Same driver</td></tr>
+<tr><td>PAGS</td><td class="dn n">−27.84%* (~1:46 PM)</td><td>4.1× at ~1:46</td><td>Same driver</td></tr>
+<tr><td>ITUB / NU / EWZ</td><td class="dn n">−20.37% (7.70) / −16.95% (12.59) / −19.84% (34.14)</td><td>5.0× / 4.7× / EWZ 298M shares</td><td>Same driver. NU was the day's most-traded US stock (338M shares)</td></tr>
+<tr><td>ABEV / PBR / VALE</td><td class="dn n">−14.09% (2.84) / −13.99% (22.50) / −3.23% (12.00)</td><td>2.3× / 4.9× / 3.3×</td><td>Same driver. The Petrobras CEO called the selloff "speculative" (Reuters headline)</td></tr>
+<tr><td>FICO</td><td class="dn n">−13.15% (708.07)</td><td>2.46M ≈ 3.6×</td><td>FHFA said "more action this week"; Preferred Program price held at $10; downgrade and target cuts</td></tr>
+<tr><td>JBLU</td><td class="dn n">−11.81%* (2.315, 2:51 PM)</td><td>≈50M by 2:51 vs. a 26.9M 20-day average</td><td>Creditors organizing ahead of Tuesday's Q3 report</td></tr>
+<tr><td>MELI</td><td class="dn n">−7.82% (1,668.65)</td><td>2.41M ≈ 4.7×</td><td>Brazil exposure</td></tr>
+<tr><td>VZ / NFLX / CIFR</td><td class="dn n">−3.49% (43.10) / −2.96% (63.90) / −2.90% (7.71)</td><td>1.9× / 1.5× / 1.1×</td><td>VZ: beat-and-raise sold. NFLX: below its prior 52-week low; a Bloomberg report (via TheFly, Oct 25) said users are watching and opening the app less. CIFR: new 52-week low</td></tr>
+<tr><td>META</td><td class="dn n">−1.88% (630.56)</td><td>30.8M</td><td>$35B offering prices tonight (expected)</td></tr>
+</table></div>
+<p class="note"><b>Most active by volume (Yahoo, post-close):</b> NU 338.1M · BBD 203.9M · ITUB 137.0M · XP 130.4M · PBR 102.4M · SPCX 102.4M (−0.40%) · INTC 97.7M · VALE 96.0M · NVDA 89.3M · NOK 78.3M. Seven of the top ten are Brazil names.</p>
+
+<h3>Fixed watchlist at the close</h3>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Close</th><th>Day %</th><th>Day range</th><th>Volume</th><th>Aft. ed. (~3:10)</th><th>After hours (ET)</th><th>Note</th></tr>
+<tr><td>AAPL</td><td class="n">343.91</td><td class="dn n">−1.10%</td><td class="n">341.05–347.09</td><td class="n">41.2M</td><td class="n">−1.23% (2:02)</td><td class="n">344.12 (+0.06%, 4:03)</td><td>iPhone Duo screen reports; Jefferies bear note. Reports Nov 2</td></tr>
+<tr><td>MSFT</td><td class="n">532.74</td><td class="up n">+1.57%</td><td class="n">521.93–533.22</td><td class="n">17.9M</td><td class="n">+1.37%</td><td class="n">532.99 (+0.05%, 4:04)</td><td>Closed at its high. Buyouts; Oppenheimer and Truist target raises (TipRanks). Reports Wed</td></tr>
+<tr><td>NVDA</td><td class="n">216.03</td><td class="up n">+2.40%</td><td class="n">212.67–217.74</td><td class="n">89.2M (0.76×)</td><td class="n">+2.47%</td><td class="n">216.27 (+0.13%, 4:35 Yahoo)</td><td>Anthropic S-1 read-through; Meta cornerstone</td></tr>
+<tr><td>GOOGL</td><td class="n">316.80</td><td class="dn n">−1.06%</td><td class="n">316.60–321.48</td><td class="n">23.8M</td><td class="n">−0.64% (2:04)</td><td class="n">317.20 (+0.13%, 4:20)</td><td>Closed at its low. Reports Wed (see calendar note)</td></tr>
+<tr><td>AMZN</td><td class="n">249.09</td><td class="up n">+0.44%</td><td class="n">247.23–250.79</td><td class="n">31.6M</td><td class="n">+0.17%</td><td class="n">248.93 (−0.06%, 4:19)</td><td>UBS target to $348; bought 19.3M Anthropic series G-2 shares (TheFly). Reports Thu</td></tr>
+<tr><td>META</td><td class="n">630.56</td><td class="dn n">−1.88%</td><td class="n">627.80–647.69</td><td class="n">30.8M</td><td class="n">−1.26%</td><td class="n">630.69 (+0.02%, 4:19)</td><td>Offering pricing pending</td></tr>
+<tr><td>AVGO</td><td class="n">329.33</td><td class="up n">+2.38%</td><td class="n">323.25–332.10</td><td class="n">18.2M</td><td class="n">+2.69%</td><td class="n">329.01 (−0.10%, 4:04)</td><td>Meta cornerstone</td></tr>
+<tr><td>AMD</td><td class="n">531.28</td><td class="up n">+2.80%</td><td class="n">514.01–533.50</td><td class="n">16.6M</td><td class="n">+2.87% (3:02)</td><td class="n">530.90 (−0.07%, 4:16)</td><td>Intel cooperation report. Reports Nov 3</td></tr>
+<tr><td>TSM</td><td class="n">424.37</td><td class="up n">+1.40%</td><td class="n">417.72–428.85</td><td class="n">9.5M†</td><td class="n">+2.38% (2:20)</td><td class="n">425.00 (+0.15%, 4:16)</td><td>Faded 1% from its high</td></tr>
+<tr><td>ORCL</td><td class="n">126.08†</td><td class="dn n">−0.06%</td><td class="n">123.81–127.98</td><td class="n">19.3–21.3M†</td><td class="n">−0.26% (2:41)</td><td class="n">126.07 (−0.01%, 4:00)</td><td>Wells Fargo target cut to $250 (TheFly). Investor Day Wed</td></tr>
+<tr><td>CRM</td><td class="n">247.61</td><td class="dn n">−0.39%</td><td class="n">243.43–250.99</td><td class="n">3.4–5.6M†</td><td class="n">−1.28%</td><td class="n">246.27 (−0.54%, 4:05)</td><td>Pared losses late; no Oct 26 headline</td></tr>
+<tr><td>ASML</td><td class="n">1,589.88</td><td class="up n">+1.15%</td><td class="n">1,583.91–1,611.65</td><td class="n">1.25M</td><td class="n">+1.47% (2:31)</td><td class="n">1,585.26 (−0.29%, 4:00)</td><td>Faded from its high; ex-dividend in Amsterdam</td></tr>
+<tr><td>MU</td><td class="n">903.70</td><td class="up n">+2.98%</td><td class="n">882.77–915.75</td><td class="n">22.6M</td><td class="n">+3.65%</td><td class="n">905.72 (+0.22%, 4:22)</td><td>BofA reiteration; Barron's: "pushes back on Chinese memory threat"</td></tr>
+<tr><td>QCOM</td><td class="n">179.60</td><td class="up n">+2.10%</td><td class="n">175.57–180.99</td><td class="n">9.5M</td><td class="n">+1.43% (2:23)</td><td class="n">179.33 (−0.15%, 4:09)</td><td>Reports Nov 4</td></tr>
+<tr><td>INTC</td><td class="n">90.53</td><td class="up n">+4.11%</td><td class="n">86.48–92.08</td><td class="n">97.6M (0.93×)</td><td class="n">+5.20%</td><td class="n">90.67 (+0.15%, 4:06)</td><td>Reports Thu after the close (StockTi)</td></tr>
+<tr><td>TSLA</td><td class="n">391.62</td><td class="up n">+5.21%</td><td class="n">383.73–397.27</td><td class="n">52.7M (1.44×)</td><td class="n">+6.00%</td><td class="n">391.00 (−0.16%, 4:21)</td><td>Barclays upgrade</td></tr>
+</table></div>
+<p class="note">11 of 16 closed higher; AAPL, GOOGL, META, ORCL and CRM closed lower. Closes and after-hours quotes are from StockAnalysis "At close" pages. The GOOGL close is from its history page and Yahoo, which agree, and NVDA's after-hours quote is from Yahoo. † StockAnalysis' overview and history pages disagree. For ORCL, the history page shows 126.06 and 21.3M shares. For CRM, it shows 5.6M shares. TSM's volume is within 200 shares of Friday's, a possible data glitch. Yahoo's closing prints differ by a few cents for some names (e.g., INTC 90.47, NVDA 216.00).</p>
+
+<h2>4. Alpha Candidates / What to Watch Tomorrow</h2>
+<p class="note">Worth investigating further only. These are not recommendations to buy or sell.</p>
+
+<div class="card"><b>1. AI-hardware earnings after the bell: Celestica (CLS), Cadence (CDNS) and Rambus (RMBS) beat and raise, while Amkor (AMKR) is in line with a softer Q4</b><br>
+<b>Move:</b> The supplier complex held its gains into the prints. MU closed +2.98%, AMD +2.80%, NVDA +2.40%, AVGO +2.38%, QCOM +2.10%, TSM +1.40% and ASML +1.15%, each within ~0.4–1.4% of its session high. The four reporters' regular-session closes and after-hours reactions were not captured at writing.<br>
+<b>Results</b> (company releases filed with the SEC today):<br>
+• <b>CLS:</b> Q3 revenue was $5.83B (+83% y/y), above the $5.25–5.55B guide. Adjusted EPS was $3.30 vs. a $2.88–3.08 guide and ≈$2.99–3.01 consensus.
+<ul>
+<li>Q4 guide: revenue $6.275–6.575B, adjusted EPS $3.37–3.57.</li>
+<li>2026 outlook raised to $21.0B revenue and $11.55 EPS, from $20.5B and $11.30.</li>
+<li>First 2027 outlook: <b>$40.0B revenue (+90%)</b>, $21.50 adjusted EPS, a 9.0% adjusted operating margin and $1.5–2.0B of capex. Customers' 2028 demand forecasts are "meaningfully higher."</li>
+<li>The offset: the 2026 free-cash-flow outlook was cut to $460M from $600M, and inventories rose $1.1B in Q3.</li>
+</ul>
+• <b>CDNS:</b> Q3 revenue was $1.633B (+22%) vs. a $1.595–1.625B guide, and non-GAAP EPS was $2.11 vs. a $2.01–2.07 guide.
+<ul>
+<li>FY26 revenue guidance rose to $6.387–6.417B from $6.26–6.34B, and non-GAAP EPS guidance to $8.37–8.43.</li>
+<li>Backlog hit a record $8.2B, and the board added $2.5B to the buyback.</li>
+<li>The non-GAAP operating margin fell to 44.1% from 47.6% a year earlier.</li>
+</ul>
+• <b>RMBS:</b> Record revenue of $218.3M (+22%) beat the $210–216M guide, with non-GAAP EPS of $0.84.
+<ul>
+<li>Q4 guide: revenue $227–233M (+5% q/q at the midpoint) and non-GAAP EPS of $0.84–0.92.</li>
+<li>Royalties are guided to $68–74M, down from $77.0M in Q3.</li>
+</ul>
+• <b>AMKR:</b> Sales were $1.991B (flat y/y) and EPS was $0.76. That is mid-guide ($0.72–0.82) but below the ≈$0.79–0.80 consensus.
+<ul>
+<li>Q4 guide: sales $1.9–2.0B and EPS $0.65–0.75, about −8% q/q at the midpoint. 2026 capex was raised to ~$2.5B.</li>
+<li>Computing rose to 26% of sales (from 19% a year ago), while Communications fell to 37% (from 51%).</li>
+</ul>
+<b>Thesis:</b> Today's AI-supplier bid was a bet on demand visibility, and tonight brought hard numbers. Celestica's first 2027 outlook (revenue nearly doubling) and Cadence's record backlog are the strongest read-throughs for AI-infrastructure spending. Amkor's flat sales and lower Q4 guide show that the smartphone-heavy end is still soft. Tuesday's open tests whether beats are enough after a day in which the group had already rallied. Options were pricing large moves (TipRanks, search summary):
+<ul>
+<li>RMBS ±18.1%</li>
+<li>CLS ±13.5%</li>
+<li>AMKR ±13.3%</li>
+<li>CDNS ±7.5%</li>
+</ul>
+Celestica's call and Investor Day (8:00 AM ET Tuesday) are the next information event. After that come NXPI and TER after Tuesday's close and Microsoft and Alphabet capex commentary on Wednesday.<br>
+<b>Evidence:</b> CLS, CDNS, AMKR and RMBS earnings releases (SEC 8-K exhibits, Oct 26); StockTi earnings calendar (consensus); TipRanks implied moves (search summary); StockAnalysis closes for the chip names.<br>
+<b>Risks:</b> After-hours prices were not observed, and large implied moves mean beats can still "sell the news." Celestica's lower FCF outlook and inventory build may draw scrutiny, as may Cadence's margin compression. Amkor's guide could weigh on packaging and test peers. The FOMC and hyperscaler capex comments on Wednesday can override single-company news.<br>
+<span class="conf">Confidence: Medium (strong fundamental data; price reaction unknown)</span></div>
+
+<div class="card"><b>2. Meta (META): closed near the low ahead of pricing, with the "METAM" terms as the overnight event</b><br>
+<b>Move:</b> <span class="dn">−1.88%</span> (630.56) in a 627.80–647.69 range, closing 0.44% above the low and 2.6% below the high on 30.8M shares. After hours it was flat (630.69 at 4:19 PM).<br>
+<b>Thesis:</b> The pre-market's top idea fully reversed, and pricing of the ~$35B package is the overnight catalyst. Per the free-writing prospectus filed with the SEC:
+<ul>
+<li>$22.5B of Class A stock is sold via forward sale agreements with Morgan Stanley and Goldman Sachs, so Meta receives the cash later (by Nov. 19, 2027).</li>
+<li>250M depositary shares (1/20th of a $1,000 mandatory convertible preferred, i.e., $50 each, or $12.5B) are to list as "METAM" and convert around Aug. 15, 2029. The dividend rate and conversion terms are set at pricing.</li>
+<li>The underwriters have 30-day options for 37.5M more depositary shares and $3.375B more common.</li>
+<li>A ~$60B Class C at-the-market program is planned from Q1 2027.</li>
+<li>Nvidia, AMD and Broadcom have expressed non-binding interest in buying up to $5B of the common.</li>
+</ul>
+A Barron's headline says the convertible "could yield more than 6%." Tomorrow's tells are the common's pricing discount to 630.56, the preferred coupon and whether the cornerstone orders were filled. Our inference: hedging by convertible buyers likely added to the slide into the close, and that pressure usually eases once the deal is priced.<br>
+<b>Evidence:</b> Meta FWP (SEC, Oct 26); StockAnalysis quote and headlines (Barron's, WSJ, CNBC); today's earlier editions. Pricing had not been reported at writing.<br>
+<b>Risks:</b> A wide discount or weak demand could extend losses, and the planned at-the-market program is a multi-year overhang. Wednesday's FOMC and the MSFT/GOOGL capex commentary could reset the AI-funding narrative either way.<br>
+<span class="conf">Confidence: Low–Medium</span></div>
+
+<div class="card"><b>3. Fair Isaac (FICO): a 5.5% bounce off the low, but the regulator promised "more action this week," and TransUnion reports before the open</b><br>
+<b>Move:</b> <span class="dn">−13.15%</span> (708.07). The low was 671.19 (−17.7%), and the stock closed 5.5% above it. Volume was 2.46M shares, ≈3.6× the 684,575 3-month average. After hours: 704.47 (−0.51%, 4:18 PM).<br>
+<b>Thesis:</b> The selloff combined a pricing disappointment with dated regulatory risk.
+<ul>
+<li>Pricing: FICO held its Preferred Program score price at $10. Barron's headline: "FICO Missed Its Chance to Raise Prices."</li>
+<li>Regulation: FHFA Director Pulte said the agency is "taking more action this week" on credit-score competition.</li>
+<li>Analysts: Wells Fargo downgraded the stock to Equal Weight ($735 target). Target cuts came from JPMorgan ($1,530 → $900), BMO ($1,150 → $897), Mizuho ($1,063 → $986) and UBS ($1,100 → $942) (TheFly headlines).</li>
+<li>Background (search results; dates not confirmed): Fannie Mae and Freddie Mac already accept VantageScore 4.0, and Pulte has called the bureaus "cartel-like" and studied "bi-merge" reporting, which would require two credit reports instead of three.</li>
+</ul>
+<b>Tomorrow:</b> TransUnion (TRU) reports before the open (StockTi). VantageScore is jointly owned by TransUnion, Equifax and Experian, so TRU's commentary on FHFA, mortgage-score pricing and bi-merge cuts both ways for FICO and the bureaus. A formal FHFA announcement this week is the binary.<br>
+<b>Evidence:</b> StockAnalysis history page (close, range, volume) and headlines (TheFly, Barron's); Yahoo losers list (average volume); HousingWire and National Mortgage News (search summaries); afternoon edition (Newsquawk headline, 2025 precedent).<br>
+<b>Risks:</b> Rhetoric without a rule could fuel a relief rally, and the late bounce shows dip buyers are active. A concrete step could extend losses: a mandated alternative score, fee changes or bi-merge. Bi-merge would also hit the bureaus (TRU, EFX).<br>
+<span class="conf">Confidence: Medium for volatility; Low for direction</span></div>
+
+<div class="card"><b>4. Brazil after the circuit breaker: the local close sets up Tuesday's ADR open (EWZ, NU, ITUB, PBR vs. XP, BBD, SBS)</b><br>
+<b>Move:</b> EWZ closed at 34.14 (<span class="dn">−19.84%</span>) on 298M shares. That is +7.7% from its 31.71 open and 1.2% below its 34.54 high.
+<ul>
+<li>Liquid names: NU −16.95%, ITUB −20.37%, PBR −13.99%, ABEV −14.09%, VALE −3.23%.</li>
+<li>Repriced names: XP −48.36% (16× volume), INTR −34.91%, BBD −28.01%, SBS −26.33%.</li>
+</ul>
+<b>Local close</b> (InfoMoney):
+<ul>
+<li>The Ibovespa closed <b>−13.88% at 176,608.23</b>, down 28,474 points from Friday's 205,082.56. It hit −17.3% intraday and triggered the first circuit breaker since March 2020.</li>
+<li>The small-cap index fell 26.92%.</li>
+<li>The dollar rose 8.25% to R$5.403 (high R$5.605).</li>
+<li>The 2032 fixed-rate Treasury yield reached 15.78% despite Treasury buybacks, and the market is pricing a Selic hike in November.</li>
+<li>Magazine Luiza fell 56%.</li>
+</ul>
+<b>Thesis:</b> Our arithmetic: a −13.88% local move and the real's 8.25% drop imply ≈ −20.4% in dollars. That is about where EWZ closed. The pre-market ADR overshoot (EWZ ≈ −27%) has therefore closed, and the next leg needs new information. Watch the real overnight, any signal on the economic team or fiscal framework, central-bank communication and B3's 10:00 local open (9:00 AM ET). The Petrobras CEO called the selloff speculative (Reuters headline). Dispersion persisted to the bell: platforms and exporters recovered, while the broker, bank and utility names did not.<br>
+<b>Evidence:</b> StockAnalysis EWZ, NU and ITUB closes; Yahoo post-close most-active list (prices, volume ratios); InfoMoney live blog (Ibovespa, BRL, rates, circuit breaker).<br>
+<b>Risks:</b> Political escalation, such as Bolsonaro's call to annul the result; a disorderly real; contagion to Argentine ADRs (BBAR −8.3%, BMA −7.5%, GGAL −7.0% intraday); thin trading in smaller ADRs.<br>
+<span class="conf">Confidence: Medium for volatility; Low for direction</span></div>
+
+<div class="card"><b>5. Microsoft vs. Alphabet: the market split the two hyperscalers two days before both report</b><br>
+<b>Move:</b> MSFT <span class="up">+1.57%</span> (532.74) closed 0.09% below its high on 17.9M shares. GOOGL <span class="dn">−1.06%</span> (316.80) closed 0.06% above its low.<br>
+<b>Thesis:</b> Both report Wednesday after the close (Yahoo), on FOMC day.
+<ul>
+<li>Microsoft has a cost-discipline story: voluntary buyouts offered to ~60,000 employees, per Chief People Officer Amy Coleman's memo. It also has target raises from Oppenheimer and Truist and a BNP Paribas buy call (TipRanks headlines).</li>
+<li>Alphabet drifted lower with no specific negative headline found. Investopedia flagged options pricing for its post-earnings move.</li>
+</ul>
+Into the prints, MSFT's strength raises its bar while GOOGL's weakness lowers its own. Anthropic's S-1 is an added read-through, since Alphabet and Amazon are investors. A Barron's headline says they are "betting even more on its IPO."<br>
+<b>Evidence:</b> StockAnalysis quotes and headlines; Yahoo live blog (Microsoft memo, earnings timing).<br>
+<b>Risks:</b> One afternoon of relative strength often reverses. Microsoft may book buyout charges. Calendar conflict: StockTi lists GOOGL for Tuesday after the close, while Yahoo and our earlier editions say Wednesday. Verify on Alphabet's IR page.<br>
+<span class="conf">Confidence: Low–Medium</span></div>
+
+<div class="card"><b>6. Tesla (TSLA): a three-month high on merger optionality, while SpaceX itself slipped</b><br>
+<b>Move:</b> <span class="up">+5.21%</span> (391.62), 1.4% below the 397.27 high, on 52.7M shares (1.44× average). After hours: 391.00 (−0.16%, 4:21 PM).<br>
+<b>Thesis:</b> Barclays upgraded the stock to Overweight with a $450 target (Benzinga), citing the SpaceX M&amp;A opportunity, and TipRanks flags a three-month high. SPCX, however, slipped 0.40% (146.90) on ~1.0× volume. That was despite Anthropic's S-1 disclosing SpaceXAI compute arrangements of up to $120.5B through 2029 (~$3.1B/month once capacity is delivered, expected in December 2026; Yahoo). TSLA's move therefore looks like merger optionality being repriced, not a SpaceX re-rating. Tomorrow tests follow-through. Friday's BNP Paribas and CLSA upgrades faded into a −0.6% close.<br>
+<b>Evidence:</b> StockAnalysis quote and headlines (TheFly, Barron's, TipRanks); Yahoo most-active list (SPCX, volume); Yahoo live blog (S-1 excerpt).<br>
+<b>Risks:</b> No deal terms or committee agreement; high beta into the FOMC; a single-analyst catalyst.<br>
+<span class="conf">Confidence: Low</span></div>
+
+<div class="card"><b>7. JetBlue (JBLU): Q3 results Tuesday before the open, at a record low, with creditors organizing</b><br>
+<b>Move:</b> <span class="dn">−11.81%*</span> (2.315 at 2:51 PM; record low 2.16). Volume was ≈50M shares by 2:51, ≈1.9× its 26.9M 20-day average (StockAnalysis; our arithmetic). The close was not captured.<br>
+<b>Thesis:</b> Ahead of the print:
+<ul>
+<li>Bloomberg (via TheFly) reports creditors organizing, and Fox Business says they have hired advisers.</li>
+<li>The WSJ says high fuel prices threaten the turnaround.</li>
+</ul>
+Liquidity commentary (cash, financing access, covenant headroom) is likely to matter more than EPS. At record lows, both tails are open: reassurance could squeeze shorts, while confirmation of restructuring talks could extend the slide.<br>
+<b>Evidence:</b> StockAnalysis quote, statistics page (earnings timing: Tuesday before market open) and headlines (WSJ, TheFly, Fox Business).<br>
+<b>Risks:</b> The binary event outcome; restructuring headlines; fuel (WTI ≈ $102). Our quote is stale by more than an hour.<br>
+<span class="conf">Confidence: Medium for volatility; Low for direction</span></div>
+
+<p><b>Also on the radar:</b></p>
+<ul>
+<li><b>Intel / AMD:</b> INTC closed +4.11% (90.53) but gave back 1.7% from its high in the last hour. AMD closed +2.80% near its high. Intel reports Thursday after the close (consensus EPS $0.40, StockTi), and the cooperation talks remain unconfirmed.</li>
+<li><b>RRC / EQT:</b> Both report Tuesday after the close. EQT recovered from a −4.6% pre-market low to close −1.40% (54.85), so parity is 0.987 × 54.85 ≈ $54.14 and RRC at 53.32 (3:36 PM) implies a ≈1.5% gross spread.</li>
+<li><b>SGRY:</b> The 23.25 close leaves a 1.08% gross spread to the $23.50 cash price. RBC downgraded the stock to Sector Perform after the deal.</li>
+<li><b>Neoclouds:</b> CRWV +1.73% (55.18, 1.84× volume) faded from +5.8% at 11:15 and is 4.5% below its 57.78 high. CIFR closed at a new low.</li>
+<li><b>VZ:</b> −3.49% on 1.9× volume as the beat-and-raise sold off all day. T was −0.38%. TMUS reports Wednesday (StockTi).</li>
+<li><b>MRNA:</b> a second straight V. It closed −0.62% after a −9.2% intraday low.</li>
+<li><b>Tonight, not reviewed:</b> NUE (implied move ±9.4%), BRO, PFG, UHS, CFLT, OKE, PSMT (StockTi) and WELL, ARE and WHR (earlier editions).</li>
+</ul>
+
+<h2>5. Tomorrow's Calendar (Tuesday, Oct. 27; times ET)</h2>
+<div class="tbl"><table>
+<tr><th>Time</th><th>Event</th><th>Note</th></tr>
+<tr><td>Tonight</td><td>Meta offering pricing (expected)</td><td>Common discount; "METAM" preferred coupon and conversion terms. Not reported at writing (~4:45 PM)</td></tr>
+<tr><td>Tonight (reported)</td><td>CLS, CDNS, AMKR, RMBS (candidate #1). Also on the after-close list: NUE, BRO, PFG, UHS, CFLT, OKE, PSMT (StockTi); WELL, ARE, WHR (earlier editions)</td><td>After-hours reactions not captured. Results for the second group were not reviewed</td></tr>
+<tr><td>All day</td><td>FOMC two-day meeting begins</td><td>Decision Wed 2:00 PM, press conference 2:30 PM. A hold is expected, with focus on hawkish signals for December (Yahoo; IFC Markets)</td></tr>
+<tr><td>8:00 AM</td><td>Celestica Q3 call and 2026 Investor &amp; Analyst Day</td><td>Detail behind the $40B 2027 outlook</td></tr>
+<tr><td>8:30 AM</td><td>Durable goods orders (Sep)</td><td>Forecast +0.7% m/m vs. 0.0% prior (IFC Markets, search summary)</td></tr>
+<tr><td>9:00 AM</td><td>S&amp;P Case-Shiller home prices</td><td>Listed in the pre-market edition; time is the usual slot</td></tr>
+<tr><td>10:00 AM</td><td>Conference Board consumer confidence (Oct); new home sales</td><td>Confidence forecast 81.5 vs. 81.9 prior (IFC Markets). New home sales per the pre-market edition</td></tr>
+<tr><td>Afternoon</td><td>$70B 5-year note auction</td><td>Per the pre-market edition (Bloomberg via ZeroHedge); 1:00 PM is the usual time</td></tr>
+<tr><td>Before the open</td><td>KO, BA, UPS, SPGI, HCA, GLW, RCL, SHW, ITW, ECL, HLT, PCAR, IQV, XYL, SOFI, CNC, <b>TRU</b>, IVZ (StockTi); <b>JBLU</b> (StockAnalysis)</td><td>Consensus EPS: KO $0.90, BA −$0.16, UPS $1.65, SPGI $4.52, HCA $6.76, TRU $1.22. TRU is a FICO read-across (candidate #3)</td></tr>
+<tr><td>After the close</td><td>V, <b>NXPI</b>, PYPL, <b>TER</b>, HOOD, WM, JCI, FFIV, ENPH, <b>EQT</b>, <b>RRC</b>, LPLA, PPG, CZR, CAKE, RHI (StockTi)</td><td>Consensus EPS: V $3.50, NXPI $4.17, TER $2.06, PYPL $1.34, HOOD $0.53. NXPI and TER are semiconductor read-throughs</td></tr>
+<tr><td>Date conflicts</td><td>StockTi lists GOOGL for Tuesday after the close. Yahoo and our earlier editions say Wednesday, alongside MSFT. The pre-market edition listed AMT and STX for Tuesday, but StockTi omits AMT and shows STX on Wednesday</td><td>Verify on company IR pages</td></tr>
+<tr><td>Rest of week</td><td>Wed: FOMC decision; MSFT and GOOGL after the close; Bank of Canada and RBNZ. Thu: Q3 GDP, September PCE, jobless claims; ECB; BoJ (Thu–Fri); AMZN, INTC (after the close), SNDK. Fri: employment cost index, Chicago PMI; XOM, CVX</td><td>Pre-market edition; Yahoo; StockTi</td></tr>
+</table></div>
+
+<h2>6. WRDS Quant Signals</h2>
+<p><b>Not used.</b> The only local file (alpha_wrds_signals.csv) has as_of_date 2026-09-17, 39 days old and outside the ~14-day freshness window, so the table is omitted. Re-running the WRDS screen would restore this section.</p>
+
+<h2>7. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/most-active → https://finance.yahoo.com/markets/stocks/most-active/ (post-close: index strip, most-active list, 3-month average volumes, 52-week ranges)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html (Yahoo live blog, closing update. Read: header, the closing update and the Anthropic/SpaceX and Microsoft entries; other entries via keyword search)</li>
+<li>https://finance.yahoo.com/markets/stocks/gainers/ and https://finance.yahoo.com/markets/stocks/losers/ (served as cached ~1:41/1:46 PM ET snapshots; used only for * figures)</li>
+<li>https://econcurrents.substack.com/p/26-october-2026-market-close-and (closing wrap; CFNAI and Dallas Fed data)</li>
+<li>https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-26102026/ (Ibovespa close, BRL, rates, circuit breaker, oil settlements; key closing updates read via keyword search)</li>
+<li>https://www.sec.gov/Archives/edgar/data/1326801/000119312526431036/d116268dfwp.htm (Meta free-writing prospectus, Oct 26)</li>
+<li>https://www.sec.gov/Archives/edgar/data/1030894/000103089426000049/cls-20260930prcondensedfs.htm (Celestica Q3 2026 release)</li>
+<li>https://www.sec.gov/Archives/edgar/data/813672/000081367226000116/cdns10262026ex9901.htm (Cadence Q3 2026 release)</li>
+<li>https://www.sec.gov/Archives/edgar/data/1047127/000104712726000049/amkr9302026erex-991.htm (Amkor Q3 2026 release)</li>
+<li>https://www.sec.gov/Archives/edgar/data/917273/000119312526431918/rmbs-ex99_1.htm (Rambus Q3 2026 release)</li>
+<li>https://stockti.com/earnings-calendar/oct-26-30-2026 (earnings dates, BMO/AMC timing, consensus EPS)</li>
+<li>StockAnalysis.com quote and history pages, collected by sub-agents: https://stockanalysis.com/stocks/aapl/, /msft/, /nvda/, /googl/history/, /amzn/, /meta/, /avgo/, /amd/, /tsm/, /orcl/ (+ /history/), /crm/ (+ /history/), /asml/, /mu/, /qcom/, /intc/, /tsla/, /fico/history/, /nu/, /itub/history/, /xp/, /bbd/, /pbr/, /meli/, /jblu/ (+ /statistics/), /sgry/, /rrc/ (+ /statistics/), /eqt/, /lite/statistics/, /crwv/, /nflx/, /vz/, /mrna/history/, https://stockanalysis.com/etf/ewz/; also https://finance.yahoo.com/quote/GOOGL/. Headlines on these pages cite TheFly, TipRanks, Barron's, WSJ, CNBC, Reuters, Investopedia and Fox Business</li>
+<li>Search-result summaries only: https://www.tipranks.com/news/options-volatility-and-implied-earnings-moves-today-october-26-2026 · https://www.ifcmarkets.com/ru/next-week-calendar/usdidx-economic-calendar-20-10-2026 · https://www.bloomberg.com/news/articles/2026-10-25/us-equity-futures-climb-as-crude-oil-price-dips-markets-wrap · https://www.benzinga.com/markets/equities/26/10/62598326/nasdaq-100-chip-rebound-brazil-etf-ewz-stock-market-today · https://www.housingwire.com/articles/pulte-says-gses-will-accept-vantagescore-4-0-immediately/ · https://www.housingwire.com/articles/gses-broaden-vantagescore-4-0-access-rocket-uwm-dominate-volume/ · https://www.nationalmortgagenews.com/news/pulte-cartel-like-bureaus-should-cut-costs-eyes-bi-merge</li>
+<li>Checked but stale or empty, not used: https://finance.yahoo.com/research-hub/screener/losers (an older session) · https://finance.yahoo.com/quote/LITE/ (Oct 23 close) · https://www.investing.com/equities/after-hours (an older session) · https://stockti.com/economic-calendar (no events listed)</li>
+<li>Local: alpha_report_2026-10-26_premarket.html, _open.html, _midday.html and _afternoon.html (earlier calls, intraday index levels, catalysts); alpha_wrds_signals.csv (as of 2026-09-17; stale, not used)</li>
+</ul>
+<p class="note">Limitations:</p>
+<ul class="note">
+<li>This run executed after the 4:00 PM close rather than at ~3:20 PM ET, so it is a post-close review.</li>
+<li>After-hours reactions to CLS, CDNS, AMKR, RMBS and the other after-close reporters were not captured. The fetch tool hit rate limits, and several after-hours pages were stale.</li>
+<li>Yahoo's gainers and losers pages were served as ~1:41/1:46 PM caches.</li>
+<li>Closes for NN, XNCR, TTMI, LITE, AXTI, VICR, TSEM, PAGS and JBLU were not captured, and the RRC figure is a 3:36 PM print.</li>
+<li>XP, BBD, PBR, VZ and SGRY closes come from Yahoo's post-close most-active list, because their StockAnalysis pages were intraday.</li>
+<li>Consensus estimates come from StockTi and a TipRanks search summary and differ slightly. Implied moves come from TipRanks (search summary).</li>
+<li>Tuesday's economic-data forecasts come from an IFC Markets search summary. The Case-Shiller, new home sales and auction timing come from the pre-market edition. None was independently confirmed.</li>
+<li>The FHFA background, Bloomberg's chip-gauge figure and Benzinga's Tesla target come from search summaries.</li>
+<li>The Meta offering had not priced at writing.</li>
+<li>Our own work: arithmetic on spreads, distance from highs and lows, the dollar-adjusted Ibovespa, quarter-over-quarter guide changes and volume ratios, plus the inference about convertible hedging.</li>
+</ul>
+<p class="note">Disclosure: this brief is generated by Claude, an AI model made by Anthropic. The Anthropic IPO items come solely from third-party press reports and the public S-1 as quoted by Yahoo Finance.</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
