@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-27 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Tuesday, October 27, 2026</div>
+<p class="note">Automated run. This edition is scheduled for about 10:00 AM ET, but it ran from about 11:05 to 11:20 AM ET, so "the open" here covers roughly the first 95 minutes of trading instead of 30. Each quote shows the ET time printed on its source page. Yahoo Finance served several pages from caches of different ages; we kept only pages that match today's session and dropped the rest. Moves are measured against Monday's close unless noted. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 40 days old and outside the ~14-day freshness window, so this edition relies on public research only.</p>
+
+<h2>1. How the Open Traded</h2>
+<p><b>Stocks opened a little higher, slipped back, then climbed to session highs after a big beat on consumer confidence. Tech and AI hardware led, while Boeing, refiners and Xylem fell hard.</b> At the 9:31 bell the S&amp;P 500 was +0.31%, the Nasdaq +0.48%, the Dow +0.04% and the Russell 2000 +0.38% (TheStreet). By about 9:54 the gains had narrowed to S&amp;P +0.12% and Dow −0.16%. They rebuilt steadily after the 10:00 release, which showed Conference Board consumer confidence jumping to <b>91.7</b> against ~80.5–81 expected. September was revised up to 84.2 and the Present Situation index rose 8.6 points to 120.4; the Conference Board's economist credited easing gasoline prices for most of the gain. By 11:00–11:07 the S&amp;P 500 was at 7,714–7,716 (+0.5%), the Nasdaq at ~26,419 (+0.95%), the Russell 2000 at 2,801–2,804 (+0.5% to +0.6%) and the Dow was flat (−0.03% to +0.09%). The VIX fell ~4% to ~17.6. The 10-year held near 4.99% ahead of the 1 PM $70B 5-year auction. December WTI slid 1.4% to ~$100.3 on Iran diplomacy, gold rose 0.6% to ~$4,064 and bitcoin was near $80.3K. The Philadelphia Semiconductor Index was up more than 2% by about 9:48 (PANews). <b>Tone:</b> risk-on but selective. Companies that beat and raised guidance added to their gaps (SOFI, RCL, PNR, BE), while misses and guidance cuts fell further (XYL, BA). The Iran-peace trade hit refiners. AAPL and MSFT, both red pre-market, turned green a day before Microsoft and Alphabet report and the Fed announces its decision.</p>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>S&amp;P 500</th><th>Nasdaq Comp.</th><th>Dow</th><th>Russell 2000</th><th>Source</th></tr>
+<tr><td>9:31</td><td class="up">+0.31%</td><td class="up">+0.48%</td><td class="up">+0.04%</td><td class="up">+0.38%</td><td>TheStreet</td></tr>
+<tr><td>~9:42</td><td class="up n">7,705.40 (+0.37%)</td><td class="up n">26,360.95 (+0.73%)</td><td class="n">52,364.06 (0.00%)</td><td>—</td><td>Yahoo (gainers page)</td></tr>
+<tr><td>~9:54</td><td class="up n">7,686.33 (+0.12%)</td><td class="up n">26,254.84 (+0.33%)</td><td class="dn n">52,277.45 (−0.16%)</td><td class="up n">2,799.33 (+0.46%)</td><td>Yahoo (earnings blog)</td></tr>
+<tr><td>~10:38</td><td class="up n">7,695.73 (+0.25%)</td><td class="up n">26,327.06 (+0.60%)</td><td class="dn n">52,293.47 (−0.13%)</td><td class="up n">2,792.07 (+0.20%)</td><td>Yahoo (most active)</td></tr>
+<tr><td>~10:57</td><td class="up n">7,709.37 (+0.42%)</td><td class="up n">26,394.29 (+0.86%)</td><td class="dn n">52,351.44 (−0.02%)</td><td class="up n">2,800.06 (+0.49%)</td><td>Yahoo (losers page)</td></tr>
+<tr><td>~11:00</td><td class="up n">7,716.12 (+0.51%)</td><td class="up n">26,418.24 (+0.95%)</td><td class="up n">52,409.51 (+0.09%)</td><td class="up n">2,801.05 (+0.52%)</td><td>Yahoo (AAPL quote page)</td></tr>
+<tr><td>~11:07</td><td class="up n">7,713.70 (+0.48%)</td><td class="up n">26,419.12 (+0.95%)</td><td class="dn n">52,344.58 (−0.03%)</td><td class="up n">2,804.18 (+0.64%)</td><td>Yahoo (most active)</td></tr>
+</table></div>
+<p class="note">Monday closes: S&amp;P 500 7,676.77, Dow 52,361.58, Nasdaq 26,169.38. The Russell 2000 field on the 9:42 page still showed Monday's value, so it is left blank. September new home sales and the Richmond Fed survey, both due at 10:00, were not captured.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<div class="tbl"><table>
+<tr><th>Name (pre-market flag)</th><th>Pre-market read (this morning's edition)</th><th>Since the open (latest, ET)</th><th>Verdict</th></tr>
+<tr><td>AVGO (candidate #1)</td><td class="n">+2.2% to +2.4% ($336.71)</td><td>+4.0% at ~9:48 (tokenized quote via PANews); no later quote captured</td><td class="up">Extended early</td></tr>
+<tr><td>CLS (candidate #2)</td><td>+15.5–17% early, then +12.2% ($276.63) at 8:14</td><td>+12.9% ($277.95) at 9:42, with 1.56M shares traded in the first 12 minutes; no later quote captured</td><td class="am">Held</td></tr>
+<tr><td>META (candidate #3)</td><td class="n">−0.3% to −0.5% ($627.42–628.58)</td><td>Low print of $624.41 (−0.98%) at 10:38, just below the $625 offer price; back to $627.81 (−0.44%) at ~11:01 and $626.92 (−0.58%) at 11:07</td><td class="am">Broke $625 briefly, then reclaimed it</td></tr>
+<tr><td>MU / memory (candidate #4)</td><td class="n">MU +2.2% to +2.4% ($923.79)</td><td>MU $921.58 (+1.98%) at 9:43 and +1.7% at ~9:48. No SKHY or SNDK quotes captured; WDC was +7.6% (time not stamped)</td><td class="am">Held, slight fade</td></tr>
+<tr><td>SOFI (candidate #5)</td><td class="n">+10% to +11% (~$16.00)</td><td>$15.89 (+9.9%) at 9:42, $16.12 (+11.4%) at 9:56, $16.39 (+13.3%) at 11:07 on 82.8M shares</td><td class="up">Extended</td></tr>
+<tr><td>JBLU (candidate #6)</td><td>+7.2% to +12% (~$2.65); Investing.com had +14%</td><td>No reliable intraday quote captured (Yahoo's quote page was a cached copy from September 25)</td><td>Not captured</td></tr>
+<tr><td>WHR (candidate #7)</td><td class="n">−5.5% to −8.8%</td><td>No reliable intraday quote captured</td><td>Not captured</td></tr>
+<tr><td>BA (in the earnings list)</td><td>+0.4% ($188.94) at 7:58 (TheStreet); roughly flat</td><td>−1.35% ($185.70) at 9:56, then −9.7% ($170.05) at 11:07, below its $176.77 52-week low</td><td class="dn">Reversed sharply lower</td></tr>
+<tr><td>XYL</td><td class="n">−8.3% to −8.8%</td><td>−10.4% ($97.03) at 10:57, below its $98.58 52-week low</td><td class="dn">Extended lower</td></tr>
+<tr><td>HSBC (ADR)</td><td class="n">−6.4% to −6.9%</td><td>−6.0% ($85.79) at 10:57</td><td class="am">Held</td></tr>
+<tr><td>GM</td><td class="n">+2.8% to +3%</td><td>"Nearly 5%" at 10:00 (TheStreet)</td><td class="up">Extended</td></tr>
+<tr><td>RCL</td><td>+6.1% at 8:49 (TheStreet)</td><td>+8.0% ($303.13) at 9:42</td><td class="up">Extended</td></tr>
+<tr><td>TSLA</td><td class="n">+1.0% to +1.1% ($395.43)</td><td>$402.61 (+2.8%) at 11:07</td><td class="up">Extended above $400</td></tr>
+<tr><td>AAPL / MSFT</td><td class="n">−0.3% / −0.6%</td><td>AAPL +0.83% ($346.77) at 11:01. MSFT −0.63% at 9:56, then +0.22% ($533.78) at ~11:01</td><td class="up">Reversed higher</td></tr>
+<tr><td>KNSA</td><td class="n">+15% to +18%</td><td>+18.5% ($86.46) at 9:42; catalyst still not found</td><td class="up">Held</td></tr>
+<tr><td>MFIC, CDNS, UPS, HLT, KO</td><td>See the pre-market edition</td><td>No reliable post-open quotes captured</td><td>Not captured</td></tr>
+</table></div>
+<p class="note"><b>Takeaway:</b> beat-and-raise gaps held or grew (SOFI, CLS, RCL, GM, TSLA), and misses and guidance cuts fell further (XYL). The exception was Boeing, which went from flat pre-market to one of the session's worst large caps. Meta's $625 offer price was tested once and held through the ~11:07 snapshot.</p>
+
+<h2>3. Opening Movers</h2>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move vs. Monday close (time ET)</th><th>vs. pre-market</th><th>Volume note</th><th>Catalyst</th></tr>
+<tr><td>SOFI</td><td class="up n">+13.3% ($16.39, 11:07)</td><td>Extended</td><td>82.8M shares, ~1.7× its 3-month full-day average</td><td>Q3 beat; 2026 guidance raised; first 2027 EPS guide of $0.90 vs. $0.82 consensus</td></tr>
+<tr><td>CLS</td><td class="up n">+12.9% ($277.95, 9:42)</td><td>Held</td><td>1.56M in 12 minutes, ~0.6× full-day average</td><td>Q3 beat; first 2027 outlook of $40B revenue; Investor Day</td></tr>
+<tr><td>PNR</td><td class="up n">+8.8% (9:42); +10.4% ($60.94, later)</td><td>—</td><td>—</td><td>Q3 beat; TheStreet says it "signaled a major operational turnaround"</td></tr>
+<tr><td>NBIS</td><td class="up n">+9.1% (9:42); ~+11% (~9:48, PANews)</td><td>—</td><td>3.0M early</td><td>AI-cloud rebound</td></tr>
+<tr><td>BE</td><td class="up n">+8.7% ($221.50, 9:42)</td><td>—</td><td>4.1M early</td><td>Q3 beat; 2026 revenue guidance raised</td></tr>
+<tr><td>RCL</td><td class="up n">+8.0% ($303.13, 9:42)</td><td>Extended</td><td>0.77M early</td><td>Q3 beat; full-year adjusted EPS guidance raised</td></tr>
+<tr><td>CIFR / IREN / CRWV / WULF</td><td class="up n">+7.3% / +6.3% / +4.9% / +3.3% (11:07)</td><td>Off their early highs</td><td>CRWV 22.4M, ~0.6× full-day average</td><td>AI-infrastructure rebound (candidate #6)</td></tr>
+<tr><td>GM</td><td class="up n">~+5% (10:00)</td><td>Extended</td><td>—</td><td>Moving its listing to Nasdaq; possible Nasdaq-100 eligibility</td></tr>
+<tr><td>AMD / AVGO</td><td class="up n">+4.1% / +4.0% (~9:48, tokenized)</td><td>Extended</td><td>—</td><td>Chips up more than 2%; AMD reportedly taking $1B of Meta's offering</td></tr>
+<tr><td>TSLA / INTC</td><td class="up n">+2.8% / +2.7% (11:07)</td><td>Extended</td><td>TSLA ~0.5× and INTC ~0.4× full-day average</td><td>Barclays-upgrade follow-through; chip bid ahead of Intel's Thursday report</td></tr>
+<tr><td>BA</td><td class="dn n">−9.7% ($170.05, 11:07)</td><td>Reversed (from ~flat)</td><td>14.5M, ~2.1× full-day average</td><td>Q3 miss; commercial-jet margin fell to −6.5% (candidate #1)</td></tr>
+<tr><td>XYL</td><td class="dn n">−10.4% ($97.03, 10:57)</td><td>Extended</td><td>2.2M, ~1.0× full-day average</td><td>Q3 miss and guidance cut; at a new 52-week low (candidate #4)</td></tr>
+<tr><td>UNF / CTAS</td><td class="dn n">−7.9% / −5.9% (10:57)</td><td>—</td><td>UNF ~3.7×, CTAS ~1.2× full-day average</td><td>Reports that the FTC intends to sue to block the $5.5B Cintas–UniFirst deal (TheStreet)</td></tr>
+<tr><td>Refiners</td><td class="dn n">PARR −7.8%, VLO −6.3%, PBF −6.2%, MPC −5.4%, PSX −5.0% (10:57)</td><td>—</td><td>VLO ~0.4× full-day average</td><td>Oil −1.4%; Iran diplomacy (candidate #5)</td></tr>
+<tr><td>HSBC</td><td class="dn n">−6.0% ($85.79, 10:57)</td><td>Held</td><td>~1.3× full-day average</td><td>Revenue miss; slower wealth growth</td></tr>
+<tr><td>HCA / UHS</td><td class="dn n">−4.9% / −5.1% (10:57)</td><td>—</td><td>HCA ~0.8× full-day average</td><td>HCA: ~$400M pretax hit from a shift in payer mix; outpatient surgeries −3.7%</td></tr>
+<tr><td>META</td><td class="dn n">−0.6% ($626.92, 11:07)</td><td>Dipped below $625, then reclaimed it</td><td>17.9M, ~0.9× full-day average</td><td>Share supply from the offering (candidate #3)</td></tr>
+</table></div>
+<p class="note">"Full-day average" means volume so far ÷ Yahoo's 3-month average daily volume (our arithmetic); by 11:07 about 25% of the session had elapsed. Yahoo's gainers and losers screens only cover larger companies (roughly ≥$2B market cap), so small caps such as JBLU and MFIC never appear on them. PNR's later quote and the WDC +7.6%, DELL +6.4%, SMCI +6.3% and CTRA −8.6% figures come from a 24/7 Wall St. sidebar with no timestamp.</p>
+
+<h3>Fixed watchlist</h3>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Mon close</th><th>Pre-market</th><th>Latest (time ET)</th><th>Read</th></tr>
+<tr><td>AAPL</td><td>343.91</td><td class="dn">−0.3%</td><td class="up">$346.77, +0.83% (11:01); opened at $343.17, so +1.0% since the open</td><td>Reversed higher; at the top of its 342.39–346.76 range. Reports Nov 2</td></tr>
+<tr><td>MSFT</td><td>532.74</td><td class="dn">−0.6%</td><td class="up">$533.78, +0.22% (~11:01); −0.63% at 9:56</td><td>Reversed higher; reports Wed after the close</td></tr>
+<tr><td>NVDA</td><td>216.03</td><td class="up">+0.5% to +1%</td><td class="up">$217.75, +0.81% (11:07)</td><td>Held; 28.7M shares, light for NVDA</td></tr>
+<tr><td>GOOGL</td><td>316.80</td><td class="up">+0.4%</td><td class="up">GOOG (Class C) $316.91, +0.87% (~11:01); no GOOGL quote captured</td><td>Firm into Wed's report</td></tr>
+<tr><td>AMZN</td><td>249.09</td><td class="up">+0.3%</td><td class="up">$252.07, +1.19% (~11:01)</td><td>Extended; reports Thu</td></tr>
+<tr><td>META</td><td>630.56</td><td class="dn">−0.3% to −0.5%</td><td class="dn">$626.92, −0.58% (11:07); low print $624.41</td><td>Tested the $625 offer price (candidate #3)</td></tr>
+<tr><td>AVGO</td><td>329.33</td><td class="up">+2.2% to +2.4%</td><td class="up">+4.0% (~9:48)*</td><td>Extended early; no later quote</td></tr>
+<tr><td>AMD</td><td>531.28</td><td class="up">+1.5%</td><td class="up">+4.1% (~9:48)*</td><td>Report of a $1B stake in Meta's offering</td></tr>
+<tr><td>TSM</td><td>424.37</td><td>—</td><td class="up">+1.5% (~9:48)*</td><td>—</td></tr>
+<tr><td>ORCL</td><td>126.08</td><td>—</td><td>Not captured</td><td>Investor Day Wed</td></tr>
+<tr><td>CRM</td><td>247.61</td><td>—</td><td>Not captured</td><td>—</td></tr>
+<tr><td>ASML</td><td>1,589.88</td><td>—</td><td class="up">+1.2% (~9:48)*</td><td>—</td></tr>
+<tr><td>MU</td><td>903.70</td><td class="up">+2.2% to +2.4%</td><td class="up">$921.58, +1.98% (9:43); opened at $921.31; +1.7% (~9:48)*</td><td>Held; slight fade from pre-market</td></tr>
+<tr><td>QCOM</td><td>179.60</td><td>—</td><td class="up">+1.5% (~9:48)*</td><td>—</td></tr>
+<tr><td>INTC</td><td>90.53</td><td class="up">+1.2% to +1.5%</td><td class="up">$92.93, +2.71% (11:07); 37.9M shares</td><td>Extended; reports Thu</td></tr>
+<tr><td>TSLA</td><td>391.62</td><td class="up">+1.0% to +1.1%</td><td class="up">$402.61, +2.81% (11:07)</td><td>Extended above $400</td></tr>
+</table></div>
+<p class="note">* PANews, citing Binance tokenized-stock quotes at ~9:48 ET. Treat these as lower-reliability indications. Monday closes are from the pre-market edition.</p>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">These are worth investigating further, not recommendations to buy or sell. "Legs" or "fade" describes how the move looked into midday from the snapshots above.</p>
+
+<div class="card"><b>1. Boeing (BA): from flat pre-market to −9.7% and through its 52-week low, the morning's biggest pre-market-to-open reversal</b><br>
+<b>Move:</b> +0.4% pre-market ($188.94 at 7:58, TheStreet), −1.35% ($185.70) at 9:56, about −9% by 10:52 ($171.23, 24/7 Wall St.) and −9.7% ($170.05) at 11:07. Volume was 14.5M shares, ~2.1× its average full day. The stock is ~3.8% below its prior 52-week low of $176.77 (our arithmetic).<br>
+<b>Thesis:</b> Into midday this looks more like a continuing repricing than a quick fade, and it is specific to Boeing: GE Aerospace was +2%, RTX was roughly flat and the ITA ETF was only −0.4% to −1%. The headline numbers were mixed. Revenue was $24.19B (+4%), ahead of the ~$23.84B consensus most outlets cite, and the core loss was $0.34 against ~$0.20–0.21 expected, a second straight quarterly EPS miss. The damage is in Commercial Airplanes: segment revenue fell 3% to $10.72B and operating margin dropped to −6.5% from −2.7% in Q2. Boeing blamed delivery mix, higher supply-chain cost estimates and higher projected costs for future production-rate changes, and engine delivery problems are slowing the MAX and 787 ramps. CFRA says the margin deterioration "introduces uncertainty around the recovery pace." The selling accelerated after ~10:00, but we found no specific new headline in that window.<br>
+<b>Evidence:</b> Benzinga (segment detail; 161 deliveries; 300 net orders; 737 still working toward a stable 47/month; first 777X delivery in 2027; CEO Kelly Ortberg told CNBC uncertainty is "narrowing"). 24/7 Wall St. (−9%, peer moves, engine-supply commentary). Yahoo earnings blog (9:56 quote, CFRA note). Yahoo most active (11:07 price and volume).<br>
+<b>Risks / what could flip it:</b> Free cash flow was positive at $464M, even after ~$700M of DOJ settlement payments. The backlog is a record $745B (more than 6,300 commercial jets), the defense margin rose to 6.2% and Boeing won the F/A-XX fighter award. Climactic volume often marks a short-term low, and a move back above ~$176.77 would argue the selloff was overdone. Sources also disagree on 777X: Yahoo cites a ~$700M charge, while the release table (StockTitan search summary) shows $86M of 777X/767 losses. That remains unreconciled.<br>
+<span class="conf">Confidence: Medium for continuation into midday; Low for direction over several days</span></div>
+
+<div class="card"><b>2. SoFi (SOFI): the beat-and-raise gap kept widening after the open on very heavy volume</b><br>
+<b>Move:</b> +10% to +11% pre-market (~$16.00), then $15.89 (+9.9%) at 9:42, $16.12 (+11.4%) at 9:56 and $16.38–16.39 (+13.2% to +13.3%) from 10:38 to 11:07. By 11:07, 82.8M shares had traded, ~1.7× its average full day.<br>
+<b>Thesis:</b> This looks like it has legs into midday: buyers absorbed the early dip and the stock has held near session highs for the past half hour. Q3 revenue was $1.39B (+45.9%) against $1.26B expected, and adjusted EPS was $0.18 against $0.17. SoFi raised 2026 guidance to $5.04B of net revenue (+40%), $1.66B of adjusted EBITDA and $0.61 of EPS (Street $0.59), and introduced a 2027 EPS outlook of $0.90 (Street $0.82). At $16.39 the stock is ~9% above KBW's $15 Underperform target from Oct 12 (our arithmetic), a setup that tends to force estimate and target revisions.<br>
+<b>Evidence:</b> Yahoo earnings blog (S&amp;P Market Intelligence estimates, guidance and CEO Anthony Noto's quote). Yahoo gainers and most-active pages (quotes and volume). TheStreet (+11.3% at 10:34).<br>
+<b>Risks:</b> The stock is still ~50% below its 52-week high of $32.73, so many earlier buyers may sell into the rally. Wednesday's Fed decision matters for a lender: the hike odds were ~10% this week and above 80% for December, per CME FedWatch via Quartz cited in the pre-market edition. Retail-heavy ownership and a 13% intraday move leave room for a sharp reversal on any macro wobble.<br>
+<span class="conf">Confidence: Medium</span></div>
+
+<div class="card"><b>3. Meta (META): the $625 offer price broke briefly and held, and a report says AMD is taking $1B of the deal</b><br>
+<b>Move:</b> −0.3% to −0.5% pre-market, then a low print of $624.41 (−0.98%) at 10:38, 0.09% below the $625 offer (our arithmetic). It then recovered to $627.81 (−0.44%) at ~11:01 and $626.92 (−0.58%) at 11:07. Volume was 17.9M by 11:07, ~0.9× its average full day, so the new deal shares are clearly changing hands.<br>
+<b>Thesis:</b> So far this is constructive for the offer price as a floor: the first break below $625 was bought. New since the pre-market check, PANews reports from "market sources" that AMD will invest $1B in the offering, alongside Nvidia's $3B. Meta had said its chip suppliers Nvidia, AMD and Broadcom expressed interest in buying up to $5B of shares in total (Yahoo). PANews also carried a headline that the $25B common offering was about five times oversubscribed; we did not open it. Against that, META is trailing the Nasdaq by ~1.5 points, so the extra share supply is weighing on it.<br>
+<b>Evidence:</b> Yahoo most-active snapshots at 10:38 and 11:07 and the AAPL page's "People also watch" panel at ~11:01. PANews (AMD report). Yahoo live blog (suppliers' $5B indication, Nvidia's $3B). Pre-market edition (deal terms).<br>
+<b>Risks:</b> Repeated tests of $625 would weaken it as support. More supply is coming from forward sales and a planned ~$60B at-the-market share-sale program starting in 2027. The AMD and oversubscription items are unverified. Critics of suppliers funding their own customers have a growing list of examples. Microsoft's and Alphabet's capex comments after Wednesday's close can move the whole AI-spending complex.<br>
+<span class="conf">Confidence: Low–Medium</span></div>
+
+<div class="card"><b>4. Water technology splits: Xylem (XYL) falls further below its 52-week low while Pentair (PNR) jumps</b><br>
+<b>Move:</b> XYL went from −8.3% to −8.8% pre-market to −10.4% ($97.03) at 10:57, with a low near $96.5 per a 24/7 Wall St. sidebar. That is below its $98.58 52-week low, on 2.2M shares, about a full day's average volume in ~90 minutes. Badger Meter (BMI) fell 5.7% in sympathy. PNR was +8.8% ($60.11) at 9:42 and +10.4% ($60.94) later; TheStreet had +11.8% at 10:34.<br>
+<b>Thesis:</b> XYL looks likely to keep falling into midday: the gap widened instead of filling, the stock is at a new 52-week low on heavy volume, and stocks that cut guidance have historically tended to keep drifting lower afterward. PNR shows investors are not abandoning the theme but are paying up for execution. TheStreet says PNR beat and "signaled a major operational turnaround."<br>
+<b>Evidence:</b> Pre-market edition (XYL Q3 revenue missed by ~$80M; full-year guidance cut). TheStreet movers posts at 8:49 and 10:34. Yahoo gainers and losers pages.<br>
+<b>Risks:</b> A deep guidance cut can reset expectations low enough to set up a rebound. PNR (−49% over 52 weeks) may give back part of a 10% short-covering move. Neither name had fresh news after the open.<br>
+<span class="conf">Confidence: Medium</span></div>
+
+<div class="card"><b>5. Refiners sell off on Iran diplomacy: VLO −6.3%, MPC −5.4%, PSX −5.0%, PBF −6.2%, PARR −7.8%</b><br>
+<b>Move (10:57):</b> PARR −7.8%, VLO −6.3% ($400.08), PBF −6.2%, DK −5.9%, MPC −5.4% ($445.05), CVI −5.3%, PSX −5.0% ($274.33) and CLMT −4.9%. Coterra (CTRA) was −8.6% (24/7 sidebar, no timestamp; catalyst not checked). Volume was moderate, with VLO at ~0.4× its full-day average.<br>
+<b>Thesis:</b> This looks like profit-taking in a very crowded winner. Over 52 weeks VLO is +152%, PBF +146%, MPC +145% and PSX +116% (Yahoo), driven by war-inflated refining margins, and today's news cuts the other way. WTI is down 1.4% to ~$100.3. Iranian officials held talks in Tehran with Saudi Arabia, Turkey and Pakistan. Oman outlined a temporary arrangement to restore free navigation through the Strait of Hormuz (Arab News, search summary). Saudi Arabia says the Ras Tanura refinery fire is contained. The selloff could continue into midday if oil keeps sliding. We found no refiner-specific headline; TheStreet attributes VLO's drop to crude's pullback and better diplomatic signals.<br>
+<b>Evidence:</b> Yahoo losers page (prices and 52-week changes). TheStreet (VLO −6.55% at 10:34). Yahoo quote strip (WTI). Pre-market edition (Ras Tanura, diesel prices).<br>
+<b>Risks:</b> The peace is fragile. The Houthis called Egypt's military support for Saudi Arabia a "declaration of war," and any new strike on Gulf refining could reverse this quickly. Diesel prices ~74% above a year ago keep refining margins high in the near term.<br>
+<span class="conf">Confidence: Low–Medium</span></div>
+
+<div class="card"><b>6. AI-infrastructure rebound (IREN, CIFR, NBIS, CRWV, WULF): a strong open, but early gains are being trimmed</b><br>
+<b>Move:</b> Early in the session, NBIS was +9.1% at 9:42 (+11% at ~9:48 per PANews), CRWV +6.7% and IREN +7.7% at ~9:48, and CIFR ~+8% and WULF ~+5% at the open (24/7 Wall St.). By 11:07: CIFR +7.3%, IREN +6.3%, CRWV +4.9% and WULF +3.3%. The WGMI ETF was +6% at ~10:56. Storage and server makers also rose: WDC +7.6%, DELL +6.4% and SMCI +6.3% (no timestamp).<br>
+<b>Thesis:</b> This leans toward fading into midday. Most of the group is off its early highs (WULF from +5% to +3.3%, CRWV from +6.7% to +4.9%), which looks like a relief bounce after a brutal month rather than a new trend: WULF is −20% over one month, and CRWV and IREN are each −59% over 52 weeks. The backdrop is supportive. TeraWulf's CEO pushed back on stranded-asset fears ("we don't build on spec"). The sector has signed long-term AI leases, including TeraWulf's 20-year, 401 MW lease with Anthropic (≈$19B of contracted revenue, per 24/7 Wall St.), the $63B Broadcom/Anthropic chip financing and Meta's capital raise. Chips were also up more than 2% early.<br>
+<b>Evidence:</b> 24/7 Wall St. (moves, WGMI, CEO quote, lease terms). PANews (~9:48 quotes). Yahoo gainers and most-active pages.<br>
+<b>Risks:</b> Doubts over financing and half-built sites remain, CalPERS has cut its Big Tech holdings, and neocloud stocks slid on Monday (CoinDesk). CIFR and IREN missed revenue estimates last quarter (24/7). The group is highly sensitive to the Nasdaq and to Microsoft's and Alphabet's capex comments on Wednesday.<br>
+<span class="conf">Confidence: Low</span></div>
+
+<p><b>Also on the radar:</b></p>
+<ul>
+<li><b>Cintas (CTAS) −5.9% and UniFirst (UNF) −7.9%</b>, with UNF at ~3.7× its full-day average volume. TheStreet cites reports that the FTC intends to sue to block the $5.5B deal. A Cintas 10-Q (search summary) shows a timing agreement under which the deal cannot close before Dec. 11 without FTC notice. UNF's drop means the arbitrage spread is widening.</li>
+<li><b>HCA −4.9% and UHS −5.1%</b>. HCA's Q3 revenue was $19.85B (vs. $19.16B) and EPS $7.27 (vs. $6.96), but it estimates a ~$400M pretax hit from a shift in payer mix, and outpatient surgeries fell 3.7% (8-K).</li>
+<li><b>Celestica (CLS)</b> held its gap in the first 12 minutes: +12.9% at 9:42 vs. +12.2% at 8:14, on 1.56M shares. No later quote was captured, so its Investor Day reaction is still open (pre-market candidate #2).</li>
+<li><b>GM ~+5%</b> on its move to a Nasdaq listing, <b>TSLA +2.8%</b> back above $400, and Ford +1.6%. <b>RCL +8.0%</b> beat and raised its full-year adjusted EPS guidance. <b>BE +8.7%</b> beat and raised its 2026 revenue guidance.</li>
+<li><b>Hilton (HLT)</b>: revenue was $3.33B vs. $3.37B expected, and it warned that the midterms and the Middle East could weigh on Q4. It also raised its 2026 RevPAR growth forecast to 4–4.5%, and adjusted EPS was $2.45 vs. $2.36 (Reuters via TheStreet). No intraday % change was captured.</li>
+<li><b>Megacaps ahead of earnings:</b> AAPL (+0.8%) and MSFT (+0.2%) recovered their pre-market losses; AMZN +1.2% and GOOG +0.9%. MSFT and GOOGL report Wednesday after the close, AMZN and INTC Thursday, and AAPL on Nov. 2.</li>
+</ul>
+
+<h2>5. Sources</h2>
+<ul class="src">
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026 (opening-bell index moves at 9:31; GM at 10:00; movers at 8:49 and 10:34; Hilton; Boeing at 7:58; KO; oil; SpaceX)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (snapshots at ~10:38 and ~11:07 ET: SOFI, INTC, NVDA, TSLA, META, BA, CRWV, IREN, CIFR, WULF, index strip)</li>
+<li>https://finance.yahoo.com/markets/stocks/gainers/ (snapshot at ~9:42 ET: KNSA, CLS, SOFI, NBIS, PNR, BE, RCL and others)</li>
+<li>https://finance.yahoo.com/markets/stocks/losers/ (snapshot at ~10:57 ET: XYL, BA, UNF, refiners, HSBC, CTAS, HCA, UHS and others)</li>
+<li>https://finance.yahoo.com/quote/AAPL/ (AAPL at 11:01 ET with open and day range; "People also watch" panel for AMZN, TSLA, GOOG, META and MSFT; index strip)</li>
+<li>https://finance.yahoo.com/quote/MU/ (MU at 9:43 ET with open and day range)</li>
+<li>https://finance.yahoo.com/markets/stocks/live/earnings-live-updates-boeing-stock-falls-on-mixed-q3-turnaround-picture-sofi-surges-135427408.html (BA and SOFI at ~9:56; CFRA note; SoFi guidance vs. estimates; JetBlue pre-market +14% via Investing.com; Whirlpool CFO comments)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html (cached pre-open version: Nvidia's $3B in Meta; Meta's chip suppliers indicating up to $5B; data calendar and consensus)</li>
+<li>https://247wallst.com/investing/2026/10/27/boeing-drops-9-as-commercial-jet-losses-overshadow-positive-cash-flow-ge-aerospace-ticks-up-rtx-holds-steady/ (BA −9% at 10:52; GE, RTX and ITA moves; commercial-jet details; sidebar movers)</li>
+<li>https://www.benzinga.com/markets/earnings/26/10/62623312/boeing-ceo-says-financial-uncertainty-is-narrowing-despite-wider-than-expected-loss (Boeing segment results, cash flow, backlog, Ortberg on CNBC)</li>
+<li>https://247wallst.com/investing/2026/10/27/ai-infrastructure-stocks-rise-as-rebound-from-steep-selloff-extends-cipher-digital-jumps-8-iren-climbs-7-terawulf-gains-5/ (CIFR, IREN, WULF and WGMI moves; TeraWulf CEO quote; Anthropic lease)</li>
+<li>https://panews.io/articles/01a17d9e-eda7-7233-b930-c37780b4fb71 (Philadelphia Semiconductor Index up more than 2%; chip and neocloud moves at ~9:48 ET via Binance tokenized quotes)</li>
+<li>https://panews.io/articles/01a17d89-68fd-76f4-81ef-a9e34214e467 (AMD to invest $1B in Meta's offering, per "market sources")</li>
+<li>Search-result summaries only (page not opened, or it returned no text): https://fxstreet.com/news/us-cb-consumer-confidence-index-improves-to-917-in-october-202610271412 · https://www.prnewswire.com/news-releases/us-consumer-confidence-increased-in-october-302920731.html · https://www.wsls.com/business/2026/10/27/us-consumer-confidence-recovers-in-october-as-gas-prices-eased-a-bit/ (AP) · https://www.sec.gov/Archives/edgar/data/0000860730/000119312526432665/hca-ex99_1.htm (HCA Q3) · https://www.arabnews.com/energy/oil-slips-1-as-iran-diplomacy-eases-supply-fears-3008471 · https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html (fetch returned no text) · https://www.tikr.com/blog/boeing-misses-earnings-estimates-as-737-production-remains-below-stable-47-a-month-rate · https://www.stocktitan.net/news/BA/boeing-reports-third-quarter-9vgnsenhgf74.html · https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000047/ctas-20260831.htm (Cintas 10-Q, FTC timing agreement) · https://coindesk.com/markets/2026/10/26/calpers-pulls-back-from-big-tech-as-ai-jitters-deepen-neocloud-sell-off</li>
+<li>Checked but discarded as stale or from another session: Yahoo quote pages for AVGO (cached Oct 23), CLS (cached Oct 26 intraday) and JBLU (cached Sept 25), plus Yahoo's technology sector and largest-companies screener pages (earlier sessions)</li>
+<li>Local: alpha_report_2026-10-27_premarket.html (pre-market reads, Monday closes, deal terms and catalysts); alpha_wrds_signals.csv (as of 2026-09-17; stale, not used)</li>
+</ul>
+<p class="note">Limitations:</p>
+<ul class="note">
+<li>This run was late (~11:05 AM ET vs. the ~10:00 target). Snapshots run from 9:31 to 11:07 AM ET, and levels moved between them.</li>
+<li>"Since the open" is mostly approximated from the change vs. Monday's close and vs. the pre-market read. Opening prints were captured only for AAPL ($343.17) and MU ($921.31).</li>
+<li>The ~9:48 chip quotes (AVGO, AMD, TSM, ASML, QCOM) come from PANews citing Binance tokenized stocks and are lower-reliability.</li>
+<li>No intraday quotes were captured for ORCL, CRM, GOOGL (Class A), JBLU, WHR, MFIC, SKHY, SNDK, CDNS, UPS, KO or HLT. September new home sales and the Richmond Fed survey were also not captured.</li>
+<li>Unverified: the AMD $1B Meta stake, the "5× oversubscribed" headline, the CTRA catalyst and the reason Boeing's slide accelerated after 10:00. The size of Boeing's 777X charge conflicts across sources.</li>
+<li>Our own arithmetic: volume as a multiple of the full-day average, distance from the Meta offer price and 52-week lows, AAPL's move since the open, and SOFI's premium to KBW's target.</li>
+</ul>
+<p class="note">Disclosure: this brief is generated by Claude, an AI model made by Anthropic. The Anthropic-related items (the TeraWulf lease and the Broadcom financing) come solely from third-party press reports.</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
