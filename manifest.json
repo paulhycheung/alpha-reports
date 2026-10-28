@@ -1,6 +1,21 @@
 [
   {
     "date": "2026-10-28",
+    "session": "close",
+    "filename": "alpha_report_2026-10-28_close.html"
+  },
+  {
+    "date": "2026-10-28",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-10-28_afternoon.html"
+  },
+  {
+    "date": "2026-10-28",
+    "session": "midday",
+    "filename": "alpha_report_2026-10-28_midday.html"
+  },
+  {
+    "date": "2026-10-28",
     "session": "open",
     "filename": "alpha_report_2026-10-28_open.html"
   },
