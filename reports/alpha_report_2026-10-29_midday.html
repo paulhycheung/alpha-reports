@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-29 – Midday Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Midday Edition</span> &nbsp; Thursday, October 29, 2026</div>
+<p class="note">Automated run, researched about 1:20–1:40 PM ET. The schedule fires at 12:00 PM local Central time (1:00 PM ET), so this edition covers the first ~3.5 hours of trading and lands just after the 1:00 PM 7-year note auction. Quotes come from snapshots taken at different times: Yahoo Finance's index strip (~1:07 PM ET), StockMarketWatch quote pages (11:40 AM–12:42 PM ET, each row says which), StockMarketWatch's live "Actives / Gainers / Losers" boards and 24/7 Wall St. quote chips (both read at ~1:25–1:35 PM ET; boards carry no timestamp of their own). Moves are vs. Wednesday's close. Three pages served stale data and were discarded: StockMarketWatch's Nasdaq-100 board (dated Oct. 27), StockTitan's regular-session board (dated Oct. 14) and StockMarketWatch's Intel quote (pre-market cache). CNBC and Benzinga pages returned empty. Figures marked "search summary" come from search-result excerpts, not page text. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, 42 days old and outside the ~14-day window, so this edition relies on public research only.</p>
+
+<h2>1. How the Session Has Traded So Far</h2>
+<p><b>Flat since mid-morning: the indexes are almost exactly where they were at 10:47 AM, after a brief noon bounce faded.</b> At ~1:07 PM ET (Yahoo): S&amp;P 500 <b>7,713.37</b> (<span class="dn">−0.40%</span>), Dow <b>52,279.19</b> (<span class="dn">−0.37%</span>), Nasdaq Composite <b>26,186.93</b> (<span class="dn">−1.37%</span>), Russell 2000 <b>2,859.05</b> (<span class="up">+1.01%</span>). That compares with −0.38% / −0.24% / −1.42% / +1.00% at 10:47 AM in the Open Edition. Around noon the losses had narrowed (24/7 Wall St. at 12:00 PM: S&amp;P and Dow −0.27%, Nasdaq −1.17%; Benzinga at ~11:50 AM had the Nasdaq-100 about −1%, search summary), and that improvement has since been given back. The 10-year is at <b>5.00%</b> (−4 bp on Yahoo; 4.99%, −6 bp on Investing.com), and the 2-year is down ~7 bp to 4.66% (Investing.com), a mild bull steepening. VIX <b>16.31</b> (−3.6%), WTI <b>$101.34</b> (−1.4%), Brent ~$110 (−1.4%), gold $4,028 (−0.6%), bitcoin ~$81,000 (+0.3%).</p>
+<p>The <b>1:00 PM $44B 7-year auction</b>, flagged in both earlier editions as the afternoon rates test, came in line: high yield 4.894%, stopped "on the screws" (no tail), bid-to-cover 2.46 vs. a 2.49 average. Indirects took 57.8% (avg 63.7%), directs 32.8% (avg 24.2%) and dealers 9.4% (avg 12.1%) (Helious). That removes one risk to the small-cap rally into the close. The ECB left rates unchanged (Investing.com headline), alongside Lagarde's early-exit announcement.</p>
+<p><b>Tone:</b> a two-track tape. The S&amp;P 500's loss is concentrated in Alphabet and software; AP noted at 10:15 AM that most stocks were rising and the S&amp;P would be higher without Alphabet. Equal-weight RSP was <span class="up">+0.94%</span> vs. QQQ <span class="dn">−1.35%</span> (Yahoo quote chips, ~1:00 PM), a ~2.3-point gap. Leaders: health care (XLV ~+2.1%), retail (XRT ~+2.2%), homebuilders (~+2.3%), real estate (~+1.7%) and financials (~+1.5%). Laggards: communication services (XLC ~−1.7%), tech (XLK ~−1.4%), semis (SMH ~−1.3%), software (IGV −4% at ~12:02 PM, Yahoo) and gold miners (~−2.9%) (StockMarketWatch sector strip, time not shown).</p>
+
+<h2>2. Follow-Up on Earlier Calls</h2>
+<p class="note">Comparing the Pre-Market (≈8:37 AM) and Open (≈9:47–10:47 AM) Editions with the midday readings.</p>
+<div class="tbl"><table>
+<tr><th>Flagged name / call</th><th>Pre-market → Open</th><th>Midday</th><th>Verdict</th></tr>
+<tr><td>GOOGL: record post-earnings drop (#1 in both)</td><td class="n">−11.5% → −12.9%</td><td><span class="dn">−11.9%</span> ($286.12, 11:53); <span class="dn">−12.4%</span> ($284.63, ~1:30). Day range $280.52–$292.42</td><td><b>Held, range-bound.</b> No bounce and no new low. Even the intraday high (−10.0%) is below the −9.77% record threshold</td></tr>
+<tr><td>MSFT: green-to-red reversal (#2 open)</td><td class="n">+1.6% → −1.5%</td><td><span class="dn">−1.2%</span> ($524.70)</td><td><b>Reversal held</b>, slightly narrower. The ≥$25B bond-sale report is still unconfirmed by this run's searches</td></tr>
+<tr><td>AI semis (#3)</td><td>NVDA −0.7% → −1.1%; AVGO −2.7% → −2.8%; AMD −2.6% (pre)</td><td>NVDA <span class="dn">−0.9%</span>; AVGO <span class="dn">−2.2%</span> (12:42); AMD <span class="dn">−0.85%</span> (11:40); MU <span class="dn">−4.6%</span></td><td><b>Split.</b> AMD mostly filled its gap and NVDA held up. MU extended (−3.0% pre-market → −4.6%)</td></tr>
+<tr><td>MRVL / LITE deal spread (#4 open)</td><td class="n">MRVL −12.4% → −12.4%</td><td>MRVL <span class="dn">−13%</span> ($219.30). LITE: no reliable midday print</td><td><b>MRVL held</b> (slightly worse). Neither company has confirmed the talks</td></tr>
+<tr><td>Software: NOW extending vs. cyber filling (#3 open)</td><td>NOW −18% → −23.3%; FTNT −27.5% → −22.3%</td><td>NOW <span class="dn">−26.3%</span> ($110.64); FTNT <span class="dn">−22.9%</span> ($134.16); PANW <span class="dn">−4.7%</span>; CRM <span class="dn">−4.5%</span></td><td><b>NOW extended again</b> (another 3 points). FTNT held after an opening bounce faded. The cyber-peer "fill" <b>partly reversed</b> (PANW −3.5% at 9:47 → −4.7%)</td></tr>
+<tr><td>Small-cap rotation (#5 open)</td><td class="n">R2K fut +0.24% → +1.00%</td><td>R2K <span class="up">+1.01%</span>; IWM ~+1.2%</td><td><b>Held</b>, flat since 10:47. Survived the 7-year auction</td></tr>
+<tr><td>CAT: possible washout (#6 open)</td><td class="n">−11.4% → as much as −12%</td><td>~<span class="dn">−8.1%</span> (search summary)</td><td><b>Bounce held</b>, ~4 points off the low (single-source figure)</td></tr>
+<tr><td>AMZN: into tonight's print (#7 pre)</td><td class="n">−2.1% → n/a</td><td><span class="dn">−3.3%</span> ($246.12)</td><td><b>Extended</b>: pre-earnings de-risking</td></tr>
+<tr><td>ORCL: direction unconfirmed (pre)</td><td>Conflicting</td><td>~<span class="dn">−3.4%</span> (~$139.56; Robinhood quote, search summary)</td><td><b>Resolved lower.</b> Giving back part of Wednesday's +10.7% Investor Day gain</td></tr>
+<tr><td>LLY: beat-and-raise (pre)</td><td class="n">+5.6% → +7.7% (9:50)</td><td><span class="up">+6.3% to +6.5%</span></td><td><b>Held</b>, choppy (+4.05% at 10:20)</td></tr>
+</table></div>
+
+<h2>3. Midday Movers</h2>
+<p class="note">"SMW" = StockMarketWatch: live Actives/Gainers/Losers boards (read ~1:25 PM) or a quote page (time shown). "24/7" = 24/7 Wall St. quote chip (~1:30 PM). Volume is shares traded so far today.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move (source)</th><th>Volume / catalyst note</th></tr>
+<tr><td>NOW</td><td class="n dn">−26.3% ($110.64, 24/7)</td><td>46.0M shares (SMW). Q4 guide and cRPO slowdown to 18.5%. On track for its worst day since its 2012 IPO (Benzinga headline)</td></tr>
+<tr><td>FTNT</td><td class="n dn">−22.9% ($134.16, 24/7)</td><td>10.5M (SMW). Bounced ~9% off the $127.80 open by 10:20 on a $1.2B buyback authorization (24/7 card), then gave half of it back</td></tr>
+<tr><td>SFM</td><td class="n dn">−22% ($48.27, SMW)</td><td>12.9M. Price cuts; Q4 EPS guide $0.47–0.51 vs. $1.21 consensus</td></tr>
+<tr><td>GOOGL / GOOG</td><td class="n dn">−12.4% / −12.2% (24/7)</td><td>GOOGL 73.9M by 11:53 (~2.8× avg daily, SMW); GOOG 51.6M. Most active mega-cap</td></tr>
+<tr><td>MRVL</td><td class="n dn">−13% ($219.30, SMW)</td><td>22.7M. Lumentum deal talks (Bloomberg); unconfirmed</td></tr>
+<tr><td>CAT</td><td class="n dn">~−8.1% (search summary)</td><td>Recovered from −12% low. "Moderate" Q4 outlook; record $78B backlog</td></tr>
+<tr><td>MU</td><td class="n dn">−4.6% ($938.36, SMW)</td><td>10.3M. Worse than pre-market (−3.0%). SanDisk reports tonight</td></tr>
+<tr><td>CRM / WDAY / PANW</td><td class="n dn">−4.5% / −5.2% / −4.7%</td><td>NOW read-through (24/7; Investing.com). IGV −4% (Yahoo, ~12:02 PM)</td></tr>
+<tr><td>ORCL</td><td class="n dn">~−3.4% (~$139.56)</td><td>Day-two giveback after the Investor Day rally (Robinhood via search summary)</td></tr>
+<tr><td>AMZN</td><td class="n dn">−3.3% ($246.12, SMW)</td><td>29.8M. Reports after the close; AWS ~$45B (+37–38%) expected; 2026 capex ~$220B is the concern</td></tr>
+<tr><td>AVGO</td><td class="n dn">−2.2% ($344.03, 12:42)</td><td>7.1M, light (0.31× avg daily by 12:42). Google TPU supplier</td></tr>
+<tr><td>MSFT</td><td class="n dn">−1.2% ($524.70, SMW)</td><td>21.2M. Still red after the pre-market Azure pop</td></tr>
+<tr><td>TSM</td><td class="n dn">−1.1% ($434.82, ~12:08)</td><td>INDmoney quote via search summary</td></tr>
+<tr><td>NVDA</td><td class="n dn">−0.9% ($213.37, SMW)</td><td>35.2M. Holding up vs. the semis group</td></tr>
+<tr><td>AMD</td><td class="n dn">−0.85% ($573.54, 11:40)</td><td>6.6M, light. Filled most of a −2.6% pre-market gap. Reports Nov. 3</td></tr>
+<tr><td>TSLA</td><td class="n">+0.1% ($404.56, SMW)</td><td>13.2M. Flat</td></tr>
+<tr><td>AAPL</td><td class="n up">+1.7% ($349.75, SMW)</td><td>16.9M. No catalyst found; defensive mega-cap bid (our read). Reports Nov. 2</td></tr>
+<tr><td>META</td><td class="n up">+3.0% ($630.83, SMW)</td><td>17.0M. Ackman on CNBC: "incredibly undervalued." Snapped a 5-session slide; trading just above its $625 offering price</td></tr>
+<tr><td>LLY / MRK / MA</td><td class="n up">+6.5% / ~+4.6% / ~+4.9%</td><td>Earnings beats. MRK and MA figures are AP at 10:15 AM</td></tr>
+<tr><td>TXT / HII / NCLH</td><td class="n up">+12% to +14% / +13.7% / +13.4%</td><td>TXT beat and raised guidance (Investing.com). HII and NCLH catalysts not verified</td></tr>
+<tr><td>CVNA</td><td class="n up">~+15% (Yahoo, ~11:06 AM)</td><td>Q3 revenue $8.04B (+42%); record 217K retail units</td></tr>
+<tr><td>ADT</td><td class="n up">+34% ($9.93, SMW)</td><td>101.5M. Thrive Holdings take-private at $10.00 cash (45.6% premium; $15.3B EV); go-shop to Nov. 28 (SEC 8-K)</td></tr>
+<tr><td>GKOS / TDOC / CROX</td><td class="n up">+31% / +23–29% / +26%</td><td>Earnings-driven (StockTitan, Investing.com)</td></tr>
+<tr><td>IOVA / XRX / ALNY</td><td class="n dn">−30–36% / −35–39% / −24%</td><td>IOVA updated trial results; XRX weak guidance plus a debt exchange; ALNY catalyst not verified</td></tr>
+<tr><td>INTC / QCOM / ASML</td><td class="n">Not captured</td><td>No reliable intraday print (INTC was −3.4% pre-market at 8:17). Intel reports after the close</td></tr>
+</table></div>
+
+<h2>4. Midday Alpha Candidates</h2>
+<p class="note">These are names worth investigating further into the afternoon, not recommendations to buy or sell. Midday levels often shift in the last hour, especially ahead of after-hours earnings (Amazon, Intel, SanDisk, Coinbase, Roblox).</p>
+
+<div class="card"><h3>1. Alphabet (GOOGL): a record drop that has stopped moving</h3>
+<p><b>Move:</b> <span class="dn">−11.9%</span> ($286.12 at 11:53, SMW) and <span class="dn">−12.4%</span> ($284.63, ~1:30 PM, 24/7). The session range is $280.52–$292.42 (−13.7% to −10.0%), with 73.9M shares by 11:53. That compares with −11.5% pre-market and −12.9% early in the session.</p>
+<p><b>Thesis:</b> After two editions of extension, the stock has spent the late morning in an ~$12 range. That is neither a capitulation low nor a reflex bounce. Two thresholds matter into the close. First, the percentage record: the prior worst post-earnings day was −9.77% (≈$293, our arithmetic from SMW's $324.89 prior close). The stock has not traded above that level all session, so a record close looks likely barring a late surge. Second, the dollar record: Yahoo puts the level that would pass Nvidia's $593B DeepSeek-day loss at ~$274.75 (≈−15%). That is ~$6 below today's low. One search summary cited an intraday drop of "as much as 15.8%", which conflicts with SMW's $280.52 low; we treat it as unverified. Amazon's print tonight is the next test of the "capex vs. cash" story behind this drop.</p>
+<p><b>Evidence:</b> SMW GOOGL quote (11:53 range, volume, prior close); 24/7 Wall St. chip (~1:30 PM); Yahoo live blog and "$500 billion" item (record thresholds); 24/7/Yahoo ETF piece (EPS $2.12 vs. $2.97, capex $51.36B, FCF −$9.07B, $28.7B of new notes, $27.6B left in its share-sale program).</p>
+<p><b>Risks into the close:</b> A late-day squeeze or dip-buying into a −12% mega-cap could lift it back toward the $292 high. Index and ETF rebalancing flows (XLC holds ~23% in the two share classes) can distort the final print. A strong AWS print after the bell would reframe this as Alphabet-specific.</p>
+<p><span class="conf">Confidence: Medium that it closes as its worst post-earnings day; Low on the direction of the final hours</span></p></div>
+
+<div class="card"><h3>2. ServiceNow and enterprise software: still no floor</h3>
+<p><b>Move:</b> NOW <span class="dn">−26.3%</span> ($110.64; 24/7 ~1:30 PM). It was −18% to −19% pre-market and −23.3% at 9:47; on a 46.0M-share day it is ~8.5% below its $120.97 open. Peers: CRM <span class="dn">−4.5%</span>, WDAY <span class="dn">−5.2%</span>, PANW <span class="dn">−4.7%</span>, ADBE <span class="dn">−1.3%</span>; IGV ~−4% to −5%.</p>
+<p><b>Thesis:</b> This is the cleanest momentum continuation on the board. Every snapshot since 8:30 AM has been lower. The issue is forward visibility, not the quarter: cRPO growth is guided to 18.5% from 21%, and the Q4 revenue guide is $4.25–4.26B vs. ~$4.36B expected. Management's explanations (renewals pulled into Q3; AI deployment work booked as services, a ~50 bp drag) are not stopping the selling. The ~5% read-through to CRM and WDAY says the market is applying the cRPO slowdown sector-wide (24/7 Wall St.). FTNT is the contrast. It stabilized around −23% after a $1.2B buyback bounce faded, which points to a one-off reset rather than a trend.</p>
+<p><b>Evidence:</b> 24/7 Wall St. (guidance, cRPO, AI ACV target raised to $1.7B, FCF margin target 36%, peer quotes); SMW losers board (volume); Yahoo live blog (IGV −4%, software entry ~12:02 PM); Benzinga headline (worst day in its history, search summary).</p>
+<p><b>Risks:</b> A −26% day in a ~$115B software name often draws value buyers within a day or two. Any sell-side upgrade or insider buying could trigger a sharp snapback. A falling 10-year (now ~5.00%) helps long-duration software at the margin.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>3. Rotation: small caps and equal-weight held through the auction</h3>
+<p><b>Move:</b> Russell 2000 <span class="up">+1.01%</span> vs. Nasdaq <span class="dn">−1.37%</span> (~1:07 PM), a ~2.4-point gap, unchanged from 10:47. RSP <span class="up">+0.94%</span> vs. QQQ <span class="dn">−1.35%</span>. Health care, financials, real estate, retail and homebuilders lead.</p>
+<p><b>Thesis:</b> The Open Edition flagged the 1:00 PM 7-year auction as the main threat to this rotation. It cleared on the screws with an in-line bid-to-cover. The front end is rallying slightly more than the long end (2-year −7 bp vs. 10-year −4 to −6 bp), which typically favors rate-sensitive small caps and homebuilders (our read). With VIX at 16.3 and falling, this still looks like dispersion rather than de-risking. The last three hours will show whether the rotation closes near the highs or fades into Amazon and Intel.</p>
+<p><b>Evidence:</b> Yahoo index strip (~1:07 PM) and ETF chips; Helious (auction results); Investing.com rate ticker (2Y/5Y/10Y); SMW sector strip; AP via Newslooks (breadth comment).</p>
+<p><b>Risks:</b> After-hours prints from AMZN and INTC could swing futures and flip the rotation overnight. Friday brings the Employment Cost Index and the BoJ decision. Next Tuesday's midterms carry an Iran/oil tail risk.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>4. Meta (META): the counter-trend mega-cap</h3>
+<p><b>Move:</b> <span class="up">+3.0%</span> ($630.83, SMW; Investing.com chip +2.94%) with XLC <span class="dn">−1.7%</span>. Pre-market it was +0.9%; it was +1.7% to $622.81 in the morning (Investing.com) and +2.7% at 12:14 PM (CNBC quote via search summary). It has strengthened all day.</p>
+<p><b>Thesis:</b> On a day when the market is punishing hyperscalers that burn cash, Meta is being bid as one that can fund itself. Bill Ackman called it "incredibly undervalued" on CNBC, citing ~$80B of cash and no net leverage. The stock is now ~0.9% above the $625 price of its five-times-oversubscribed $25B common-stock offering (our arithmetic). If it holds above that level, the offering price may start acting as support. The broader question for the afternoon is whether the market keeps separating Meta from Alphabet (two ad-funded AI spenders) or treats them alike again after Amazon reports.</p>
+<p><b>Evidence:</b> Investing.com (Ackman, offering terms, Nvidia's $3B commitment, 2026 capex guide $135–145B); SMW actives board; StockMarketWatch pre-market levels in the Pre-Market Edition.</p>
+<p><b>Risks:</b> The planned $60B at-the-market program means steady supply on rallies. A weak AWS/capex reaction tonight could pull all AI spenders lower together. The catalyst is an investor's comment, not new company information.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>5. Inside semis: memory weaker, AMD and Nvidia recovering</h3>
+<p><b>Move:</b> MU <span class="dn">−4.6%</span> (−3.0% pre-market). AMD <span class="dn">−0.85%</span> at 11:40 (−2.6% pre-market). NVDA <span class="dn">−0.9%</span>. AVGO <span class="dn">−2.2%</span> (12:42; −2.7% pre-market). TSM ~<span class="dn">−1.1%</span>. SMH ~−1.3%.</p>
+<p><b>Thesis:</b> The morning's broad "AI-capex read-through" selling has become selective. Memory, which led Wednesday's rally (SOX +3.6%, MU +2.8%), is giving back the most. AMD and Nvidia recovered most of their overnight losses on light volume (AMD 0.31× its average by 11:40). Two after-hours reports bear directly on this split: SanDisk (memory pricing) and Intel (foundry and PC/server demand). AVGO, the most direct Alphabet supplier (TPUs), is still down ~2%.</p>
+<p><b>Evidence:</b> SMW quote pages (AMD, AVGO, with times) and actives board (MU, NVDA); TipRanks (overnight moves and the Alphabet link); Yahoo Oct. 28 wrap via search summary (SOX +3.6%).</p>
+<p><b>Risks:</b> Light volume makes the AMD/NVDA recovery fragile. A bad Intel or SanDisk print would likely hit the whole group after hours. INTC, QCOM and ASML have no reliable intraday print in this run.</p>
+<p><span class="conf">Confidence: Low</span></p></div>
+
+<div class="card"><h3>6. Amazon (AMZN): de-risking ahead of the print</h3>
+<p><b>Move:</b> <span class="dn">−3.3%</span> ($246.12, SMW; 29.8M shares), down from −2.1% pre-market.</p>
+<p><b>Thesis:</b> Amazon is the last hyperscaler test this week, and Alphabet set the bar: the market punished a cloud beat (+103%) because free cash flow went negative. Consensus is revenue ~$202B (+12%), EPS ~$1.96–2.01, and AWS ~$45B (+37–38%). The focus is 2026 capex of ~$220B, up from $132B in 2025 (Benzinga; CoinCentral; TradingKey). The stock has drifted lower into the print, so some caution is already priced. The Pre-Market Edition cited an implied move of ~6–7.4%.</p>
+<p><b>Evidence:</b> SMW actives board; earnings previews via search summary (Benzinga, CoinCentral, MoneyCheck, TradingKey); stockanalysis.com morning quote (−3.5%, search summary).</p>
+<p><b>Risks:</b> The outcome is binary. Strong AWS growth with stable free cash flow could spark a relief rally across GOOGL, META and semis. Another negative-FCF quarter could extend today's selling into Friday.</p>
+<p><span class="conf">Confidence: Low (event-driven)</span></p></div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used this edition. alpha_wrds_signals.csv carries as_of_date 2026-09-17 (42 days old), outside the ~14-day freshness window. Re-running wrds_alpha_screen.py would restore this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>Yahoo Finance live blog (index strip ~1:07 PM ET; MSFT/FTNT chips; software, Carvana, CAT, SFM, PCE/GDP, Alphabet record entries): https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html (reached via https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-081708101.html)</li>
+<li>Yahoo Finance / 24/7 Wall St., "Alphabet Is Having Its Worst Earnings Day Ever" (index strip; GOOG/QQQ/RSP/XLC chips; EPS, capex, FCF, debt and share-sale figures; XLC weights): https://finance.yahoo.com/markets/stocks/articles/alphabet-having-worst-earnings-day-144817524.html</li>
+<li>24/7 Wall St., midday market card (12:00 PM index moves; LHX, DE, NOW, LLY, FTNT, RBRK cards; 9:50 AM movers): https://247wallst.com/cards/megacap-tech-is-carrying-the-damage-alone-at-midday-the-nas-gspc-market-bell-01m646be3vasmnk34je8yexsgf</li>
+<li>24/7 Wall St., ServiceNow / Salesforce / Workday (guidance, cRPO; live quote chips for NOW, FTNT, GOOGL, CRM, WDAY, ADBE, TXT, HII, NCLH): https://247wallst.com/investing/2026/10/29/servicenow-tumbles-19-as-slower-contract-growth-overshadows-raised-ai-target-salesforce-slides-6-workday-drops-5/</li>
+<li>StockMarketWatch live page (Actives/Gainers/Losers boards; sector strip): https://stockmarketwatch.com/live/stock-market-today</li>
+<li>StockMarketWatch quotes: https://stockmarketwatch.com/stock/GOOGL (11:53 AM) ; https://stockmarketwatch.com/stock/AVGO (12:42 PM) ; https://stockmarketwatch.com/stock/AMD (11:40 AM) ; https://stockmarketwatch.com/stock/INTC (pre-market cache, not used for intraday)</li>
+<li>Helious, 7-year note auction results (1:03 PM ET): https://helious.io/news/auc-91282CRV5-2026-10-29/7-year-note-auction-in-line</li>
+<li>Newslooks (AP copy), "Alphabet Stock Plunges 12.5%" (10:15 AM levels; breadth; KLAC, LLY, MA, MRK, DASH): https://www.newslooks.com/alphabet-stock-plunges-12-5-dragging-wall-street-lower/</li>
+<li>Investing.com, market-cap movers (ticker strip and headlines: LLY, TXT, XRX, PANW, TDOC, SFM): https://www.investing.com/news/stock-market-news/eli-lilly-fortinet-among-market-cap-stock-movers-on-thursday-93CH-4984376</li>
+<li>Investing.com UK, "Why is Meta Platforms stock climbing today?" (Ackman; offering terms; rate and commodity ticker): https://uk.investing.com/news/stock-market-news/why-is-meta-platforms-stock-climbing-today-93CH-4942686</li>
+<li>StockTitan movers board (10:22 AM snapshot; relative volume; ADT, IOVA, XRX, GKOS, TDOC): https://www.stocktitan.net/rankings/stock-movers-today</li>
+<li>TipRanks, AI chip stocks (overnight INTC/AMD/AVGO moves): https://www.tipranks.com/news/why-ai-chip-stocks-intel-amd-and-broadcom-are-tumbling-today-october-29-and-what-wall-street-expects-next</li>
+<li>Search summaries only (pages not fetched or empty): ADT 8-K https://www.sec.gov/Archives/edgar/data/0001703056/000119312526437123/d572133dex991.htm ; Benzinga midday https://benzinga.com/markets/equities/26/10/62706774/stock-market-today-alphabet-sinks-small-caps-rally-gdp-rotation ; Benzinga NOW https://www.benzinga.com/markets/earnings/26/10/62702000/servicenow-stock-worst-day-history-bookings-slowdown ; Robinhood ORCL https://robinhood.com/us/en/stocks/ORCL/ ; INDmoney TSM https://www.indmoney.com/us-stocks/taiwan-semiconductor-manufacturing-co-share-price-tsm ; Amazon previews https://www.benzinga.com/markets/prediction-markets/26/10/62702577/amazon-earnings-preview , https://coincentral.com/amazon-amzn-stock-what-wall-street-expects-from-earnings-today , https://stockanalysis.com/stocks/amzn/ ; CNBC premarket movers https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html</li>
+<li>Discarded as stale or empty: https://stockmarketwatch.com/indices/nasdaq100/today (Oct. 27 data) ; https://www.stocktitan.net/rankings/stock-movers-today/regular (Oct. 14 data) ; https://www.cnbc.com/2026/10/28/stock-market-today-live-updates.html (empty)</li>
+<li>Local: alpha_report_2026-10-29_premarket.html and alpha_report_2026-10-29_open.html (earlier levels and flagged names); alpha_wrds_signals.csv (checked; stale)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>

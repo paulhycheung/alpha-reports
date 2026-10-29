@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-29 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Thursday, October 29, 2026</div>
+<p class="note">Automated run. The task targets ~10:00 AM ET, but this session started at about <b>11:05 AM ET</b> (the schedule appears to fire at 10:00 local Central time). Intraday figures come from Yahoo Finance index headers and quote chips stamped between <b>~9:47 and ~10:47 AM ET</b>; each row gives its time. Moves are vs. Wednesday's close. Yahoo's quote pages and most-active board served stale (prior-day) data on this run and were discarded. Volume data for the open were not available from any reachable source. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (42 days old, outside the ~14-day window), so this edition relies on public research only.</p>
+
+<h2>1. How the First Hour Traded</h2>
+<p><b>Alphabet's selloff deepened after the bell, but the rest of the market held up.</b> U.S. stocks opened lower (Dow <span class="dn">−0.6%</span>, S&amp;P 500 <span class="dn">−0.5%</span>, Nasdaq <span class="dn">−1.4%</span> just after 9:30, Yahoo) and then traded in a tight range. At ~10:47 AM ET: S&amp;P 500 <b>7,714.76</b> (<span class="dn">−0.38%</span>), Dow <b>52,347.84</b> (<span class="dn">−0.24%</span>), Nasdaq Composite <b>26,173.56</b> (<span class="dn">−1.42%</span>), and Russell 2000 <b>2,858.94</b> (<span class="up">+1.00%</span>). Small caps have <i>strengthened</i> through the morning (+0.51% at 9:47, +0.96% at 10:07, +1.00% at 10:47). The 10-year yield eased to ~4.98% from Wednesday's 5.05% close. The VIX slipped to 16.58, and WTI fell ~2% to ~$100.7. <b>The 8:30 data held no surprises.</b> Q3 GDP grew <b>3.4%</b> annualized vs. ~3.1–3.2% expected, with business investment +12.7% on the AI build-out. September PCE was <b>3.6% y/y</b> and core PCE <b>3.1% y/y / 0.3% m/m</b>, all in line. That keeps a December hike priced without adding to it. Separately, ECB President Lagarde said she will step down early on Feb. 7, 2027 (the ECB rate decision itself was not captured). <b>Tone: a narrow, mega-cap-led selloff in AI "spenders" and software, while breadth, small caps and volatility look calm.</b> Pre-market, Reuters estimated that Alphabet made up most of the ~$660B the Nasdaq-100 was on track to lose.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Names flagged in this morning's Pre-Market Edition, comparing the ~8:37 AM pre-market level with the first post-open readings.</p>
+<div class="tbl"><table>
+<tr><th>Flagged name</th><th>Pre-market</th><th>After the open</th><th>Verdict</th></tr>
+<tr><td>GOOGL (#1)</td><td class="n"><span class="dn">−11.5%</span></td><td class="n"><span class="dn">−12.9%</span> ($282.94, early trade); GOOG <span class="dn">−12.6%</span> (~9:53)</td><td><b>Gap extended.</b> Now past the −9.77% post-earnings record; on track for its worst day since its 2004 IPO</td></tr>
+<tr><td>MSFT (#2)</td><td class="n"><span class="up">+1.6%</span> (+1.8% at 8:48)</td><td class="n"><span class="dn">−1.5%</span> (~10:47)</td><td><b>Reversed.</b> The fading pre-market gain flagged this morning turned into an outright loss</td></tr>
+<tr><td>AI semis (#3)</td><td class="n">NVDA <span class="dn">−0.7%</span>, AVGO <span class="dn">−2.7%</span></td><td class="n">NVDA <span class="dn">−1.1%</span>, AVGO <span class="dn">−2.8%</span> (~10:07)</td><td><b>Held</b>, with no meaningful fill. AMD, INTC and MU post-open levels not captured</td></tr>
+<tr><td>MRVL / LITE (#4)</td><td class="n"><span class="dn">−12.4%</span> / <span class="up">+5.7%</span></td><td class="n"><span class="dn">−12.4%</span> / <span class="up">+2.3%</span> (~10:07)</td><td>MRVL <b>held</b>; LITE <b>faded</b> by more than half (it was +7.1% at 8:48)</td></tr>
+<tr><td>NOW / FTNT (#5)</td><td class="n"><span class="dn">−18% to −19%</span> / <span class="dn">−25% to −27.5%</span></td><td class="n"><span class="dn">−23.3%</span> / <span class="dn">−23.0%</span> (9:47); FTNT <span class="dn">−22.3%</span> (~10:47)</td><td><b>Split:</b> NOW extended about 4–5 points; FTNT partly filled. Cyber peers recovered from about −6% overnight to −2% to −4%</td></tr>
+<tr><td>CAT (#6)</td><td class="n"><span class="dn">−6% to −9%</span> (−11.4% at 8:48)</td><td class="n">As much as <span class="dn">−12%</span>, then "trimmed losses" (Yahoo, ~10:15)</td><td><b>Extended, then bounced</b>; current level not captured</td></tr>
+<tr><td>AMZN (#7)</td><td class="n"><span class="dn">−2.1%</span></td><td class="n">Not captured</td><td>Reports after the close</td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">Moves are vs. Wednesday's close at the time shown, not vs. the 9:30 opening print. The "vs. pre-market" column shows how each move changed after the open. Volume: no reachable source carried reliable opening-volume data, so notes are qualitative.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move (time ET)</th><th>vs. pre-market</th><th>Volume / catalyst note</th></tr>
+<tr><td>NOW</td><td class="n"><span class="dn">−23.3%</span> (9:47)</td><td>Extended (from −18% to −19%)</td><td>Q4 revenue guide of $4.25–4.26B vs. ~$4.36B expected; AI-disruption fears in software</td></tr>
+<tr><td>FTNT</td><td class="n"><span class="dn">−23.0%</span> ($134.04, 9:47); <span class="dn">−22.3%</span> (~10:47)</td><td>Partly filled (from −25% to −27.5%)</td><td>Service-revenue guide cut to $5.15–5.17B; BofA cut to Neutral (PT $140); Mizuho PT $118; Piper PT $140</td></tr>
+<tr><td>SFM</td><td class="n"><span class="dn">~−18%</span> (~10:05)</td><td>Partly filled (from −22% to −24%)</td><td>Price cuts; Q4 EPS guide $0.47–0.51 vs. $1.21 consensus; JPMorgan stays Overweight</td></tr>
+<tr><td>GOOGL / GOOG</td><td class="n"><span class="dn">−12.9%</span> (early); GOOG <span class="dn">−12.6%</span> (~9:53)</td><td>Extended (from −11.5%)</td><td>Heaviest Nasdaq-100 pre-market volume (5.3M by 8:37); about $496B of market value at risk</td></tr>
+<tr><td>MRVL</td><td class="n"><span class="dn">−12.4%</span> (~10:07)</td><td>Held</td><td>Bloomberg: advanced talks to buy Lumentum; no company confirmation</td></tr>
+<tr><td>CAT</td><td class="n">As much as <span class="dn">−12%</span>, then trimmed</td><td>Extended, then bounced</td><td>"Moderate" Q4 sales outlook; record $78B backlog; stock ~40% off its June peak</td></tr>
+<tr><td>PANW / OKTA / CRWD</td><td class="n"><span class="dn">−3.5% / −3.7% / −2.4%</span> (9:47)</td><td>Partly filled (about −5.5% to −6% overnight)</td><td>Fortinet sympathy is fading</td></tr>
+<tr><td>AVGO</td><td class="n"><span class="dn">−2.8%</span> (~10:07)</td><td>Held</td><td>Builds Google's TPUs; read-through from Alphabet's capex</td></tr>
+<tr><td>SPCX</td><td class="n"><span class="dn">−1.7%</span> (~9:53)</td><td>—</td><td>Alphabet's SpaceX mark; T-Mobile CEO again rejected a network deal (Nexus)</td></tr>
+<tr><td>MSFT</td><td class="n"><span class="dn">−1.5%</span> (~10:47; ~$523, our arithmetic)</td><td><b>Reversed</b> (from +1.6% to +1.8%)</td><td>Reuters: gains pared on media reports of a ≥$25B investment-grade bond sale</td></tr>
+<tr><td>NVDA</td><td class="n"><span class="dn">−1.2%</span> (~9:53); <span class="dn">−1.1%</span> (~10:07)</td><td>Slightly worse (from −0.7% to −0.8%)</td><td>Still holding up better than the Nasdaq</td></tr>
+<tr><td>LITE</td><td class="n"><span class="up">+2.3%</span> ($935, ~10:07)</td><td>Faded (from +5.7% to +7.1%)</td><td>Takeover target; "surged as much as 5% before trimming gains" (Yahoo)</td></tr>
+<tr><td>Russell 2000 (index)</td><td class="n"><span class="up">+1.0%</span> (~10:47)</td><td>Strengthened (futures +0.24% at ~8:04)</td><td>Rotation away from mega-cap tech; 10-year back below 5%</td></tr>
+<tr><td>LLY</td><td class="n"><span class="up">+5.6%</span> (pre-market, 8:48)</td><td>Post-open not captured</td><td>Beat; 2026 revenue outlook raised; Mounjaro and Zepbound drove 39% growth (StockTitan headline)</td></tr>
+<tr><td>DASH / CART</td><td class="n"><span class="up">+6.2%</span> / <span class="up">+4.4% to +4.8%</span> (pre-market)</td><td>Post-open not captured</td><td><b>New since pre-market:</b> DoorDash to buy Instacart for $65/share (~$17B; 75% cash; 26% premium to Oct. 22 close). CART was briefly halted</td></tr>
+<tr><td>HLN</td><td class="n"><span class="dn">−15.4%</span> (pre-market, 6:30)</td><td>Post-open not captured</td><td>Reuters headline: CEO memo warns staff of "difficult choices" after a sales miss</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">These are names worth investigating further, not recommendations to buy or sell. A move's direction in the first hour often reverses by midday.</p>
+
+<div class="card"><h3>1. Alphabet (GOOGL): the gap extended instead of filling</h3>
+<p><b>Move:</b> <span class="dn">−12.9%</span> to $282.94 in early trade (Benzinga via search summary); GOOG <span class="dn">−12.6%</span> at ~9:53 (Yahoo). That is <b>~1.4 points worse</b> than the −11.5% pre-market level.</p>
+<p><b>Thesis (momentum, not yet a fade):</b> The open brought sellers, not dip-buyers. The stock is now on track for its worst session since its 2004 listing and its steepest post-earnings drop on record (the prior worst was nearly −10% in July 2008, per Bespoke). About $496B of value is at stake, the second-largest one-day loss for any U.S.-listed stock. It would need to close near <b>$274.75 (≈−15%)</b> to pass Nvidia's $593B DeepSeek-day record (Yahoo calculation). That level, and whether the early low holds, are the midday markers. Sell-side views are split. KeyBanc warns of an "air pocket over the next 1–2 quarters" as search decelerates, while CFRA's Zino calls the pullback "probably a buying opportunity." Search revenue was ~$63.4B vs. ~$64.9B expected, and FCF was <b>−$9.1B vs. a −$3.5B estimate</b> (Yahoo).</p>
+<p><b>Evidence:</b> Yahoo live blog and "$500 billion" piece (record thresholds, $496B estimate, analyst quotes); Benzinga via search summary (price); Yahoo/Sozzi (search and FCF vs. estimates); Reuters (Alphabet accounts for most of the Nasdaq-100's ~$660B pre-market value loss).</p>
+<p><b>Risks / what could flip this read:</b> Amazon reports tonight. Faster AWS growth <i>without</i> cash burn would make this look Alphabet-specific and could prompt a relief bid; another cash-burning quarter would hit the whole group. Several drags are one-offs (the EC fine and the SpaceX mark), and Q3 capex was below estimates. Extreme one-day moves in mega-caps often attract late-day buyers.</p>
+<p><span class="conf">Confidence: Medium that GOOGL stays the session's main drag; Low on whether it extends to −15% or bounces</span></p></div>
+
+<div class="card"><h3>2. Microsoft (MSFT): the "quality AI" hedge reversed</h3>
+<p><b>Move:</b> <span class="dn">−1.5%</span> at ~10:47 (Yahoo quote chip; single source), down from +1.8% at 8:48 (Reuters), +2.7% at 6:30 (StockTitan) and ~+4% after hours.</p>
+<p><b>Thesis (fade with legs):</b> The fundamentals still support the stock. Azure grew 48% (~300 bp above estimates), Q2 Azure guidance of 49–50% is ~4 points above consensus, and capex came in ~$5B <i>below</i> estimates (Yahoo/Sozzi). The reversal points to <b>financing</b> as a new concern. Reuters says the stock "pared gains following media reports the company is planning to raise at least $25 billion through its first US investment-grade bond sale in more than nine years." Combined with Reuters' framing that "debt-fueled spending will be harder to justify as borrowing costs climb," the market may now be extending the AI-payer discount from cash burn to balance-sheet funding, even for the cleanest hyperscaler (our read). A green-to-red reversal of ~3 points on a beat-and-raise quarter is the kind of move that often persists into midday.</p>
+<p><b>Evidence:</b> Reuters via KFGO (bond-sale report, 8:48 prints); Yahoo live blog chip (−1.48%); Yahoo/Sozzi (Azure, guide, capex vs. estimates); StockTitan (6:30 pre-market +2.69%; $18.6B FCF by its calculation).</p>
+<p><b>Risks:</b> This run could not confirm the bond-sale report from a primary source, and the deal size and timing are unverified. A well-received deal or company comment could reverse the move. The −1.5% figure is a single quote-chip reading. A broader tech bounce would lift MSFT first.</p>
+<p><span class="conf">Confidence: Medium on the reversal itself; Low on how long it lasts</span></p></div>
+
+<div class="card"><h3>3. Software: ServiceNow extended while cybersecurity partly filled</h3>
+<p><b>Move:</b> NOW <span class="dn">−23.3%</span> (9:47) vs. −18% to −19% pre-market. FTNT went from −25% to −27.5% pre-market to <span class="dn">−23.0%</span> (9:47) and <span class="dn">−22.3%</span> (~10:47). PANW, OKTA and CRWD recovered from about −5.5% to −6% overnight to <span class="dn">−3.5%, −3.7% and −2.4%</span>.</p>
+<p><b>Thesis:</b> The open is separating two stories. ServiceNow's Q4 revenue guide of $4.25–4.26B vs. ~$4.36B expected feeds the "AI takes software seats" narrative, and sellers pressed it further after the bell. Fortinet <i>beat</i> and raised 2026 revenue; the issue was a service-revenue guide cut ($5.15–5.17B vs. a prior $5.18–5.22B), which Bloomberg Intelligence ties to lower attach rates. The cybersecurity sympathy selling is unwinding (our read: the market sees FTNT's problem as company-specific). Into midday, NOW's extension looks like continued momentum, and the cyber group's recovery looks like a fade of the overnight panic.</p>
+<p><b>Evidence:</b> Yahoo (FTNT, NOW and peer quote chips at 9:47; guidance details; BofA, Mizuho and Piper target cuts); Nexus morning note (NOW guide vs. consensus; peers' overnight moves); Reuters (pre-market levels).</p>
+<p><b>Risks:</b> 23% one-day drops on large-cap software often draw value buyers within a session or two, and NOW could snap back hard. A rise in the 10-year back above 5% (1:00 PM 7-year auction) would weigh on all long-duration software.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>4. Marvell / Lumentum: the deal spread is moving against the target</h3>
+<p><b>Move:</b> MRVL <span class="dn">−12.4%</span> (~10:07, unchanged from pre-market). LITE <span class="up">+2.3%</span> ($935, ~10:07) vs. +5.7% pre-market and +7.1% at 8:48 (Reuters). It was +9% to +11% after hours on Wednesday.</p>
+<p><b>Thesis:</b> When an acquirer holds a double-digit drop while the target gives back most of its pop, the market is usually doubting either the deal's completion or the size of the premium. Neither company has confirmed the Bloomberg report. A deal "could be announced as soon as next week." It would combine a ~$221B chip designer (MRVL +190% YTD) with an ~$83B optics supplier (LITE +140% YTD) to own an AI-cluster bottleneck (Yahoo). MRVL's drop also carries some of the general AI-capex selloff (our read).</p>
+<p><b>Evidence:</b> Yahoo (quote chips at 10:07, valuations, YTD moves); Reuters via KFGO (8:48 levels); StockTitan (no 8-K or release as of 6:30).</p>
+<p><b>Risks:</b> Headlines are binary. Confirmation with terms, or a denial, would reprice both stocks instantly. Chinese regulatory approval is a long-dated risk. LITE could be fading simply with AI hardware rather than on deal doubts.</p>
+<p><span class="conf">Confidence: Low–Medium (event-driven)</span></p></div>
+
+<div class="card"><h3>5. Small caps and rotation: Russell 2000 +1% against Nasdaq −1.4%</h3>
+<p><b>Move:</b> Russell 2000 <span class="up">+1.00%</span> vs. Nasdaq <span class="dn">−1.42%</span> at ~10:47, a ~2.4-point gap that has <i>widened</i> since the open (R2K +0.51% at 9:47). Pre-market, Russell futures were +0.24%.</p>
+<p><b>Thesis (legs into midday):</b> Three things support the rotation. The macro data were strong-but-in-line (GDP 3.4%; core PCE 3.1% as expected). The 10-year eased back below 5% (~4.97–4.98%). Oil is down ~2% on Iran diplomacy. Meanwhile the VIX <i>fell</i> to 16.58 despite a 1.4% Nasdaq drop. That points to a dispersion day concentrated in mega-cap AI spenders and software, not broad de-risking (our read). It matches the Pre-Market Edition's "rotation into the Dow, small caps and defensives" setup, which has so far held.</p>
+<p><b>Evidence:</b> Yahoo index headers at 9:47, 9:53, 10:07 and 10:47; Yahoo/BEA via live blog (GDP, PCE); Bloomberg via Yahoo (oil).</p>
+<p><b>Risks:</b> The 1:00 PM $44B 7-year auction is a rates test. A weak auction pushing the 10-year back above 5% would hit small caps hardest. Amazon and Intel after the close could swing tech either way. Next Tuesday's midterms carry an Iran/oil risk (U.S. officials have flagged possible strikes afterward).</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>6. Caterpillar (CAT): a capitulation low on the AI-power trade?</h3>
+<p><b>Move:</b> Fell "as much as 12% before trimming losses" (Yahoo, ~10:15). It was −6% to −9% early pre-market and −11.4% at 8:48. The latest level was not captured.</p>
+<p><b>Thesis:</b> Q3 was a modest beat (adj. EPS $7.20, revenue $20.68B) with a <b>record $78B backlog</b>, but the "moderate" Q4 outlook disappointed a stock priced as an AI-data-center power play. Yahoo cites rising data-center costs, project delays and political opposition to new facilities. An intraday bounce off a −12% low, in a stock already ~40% off its June peak, can mark a washout (our read). Whether the bounce holds into midday is a read on whether investors think the AI-power trade itself is breaking.</p>
+<p><b>Evidence:</b> Yahoo live blog (as much as −12%, backlog, drawdown); Reuters via KFGO (−11.4% at 8:48).</p>
+<p><b>Risks:</b> Without a current print, the size of the bounce is unknown. Read-through to Vertiv, GE Vernova and Quanta could keep pressure on the theme.</p>
+<p><span class="conf">Confidence: Low</span></p></div>
+
+<h2>5. Sources</h2>
+<ul class="src">
+<li>Yahoo Finance live blog, post-open version (index levels as of 10:46:56 AM; MSFT/FTNT chips; GDP, PCE, CAT, SFM, Alphabet, ECB/Lagarde entries): https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html</li>
+<li>Yahoo Finance live blog, pre-open version (futures; DoorDash/Instacart; Marvell/Lumentum): https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-081708101.html</li>
+<li>Yahoo Finance, "Alphabet heads for a $500 billion drop in market value" (~9:53 index header; GOOG/NVDA/SPCX chips; record thresholds): https://finance.yahoo.com/markets/article/alphabet-heads-for-a-500-billion-drop-in-market-value-the-biggest-in-its-history-134824763.html</li>
+<li>Yahoo Finance, Fortinet / cybersecurity (9:47 index header; FTNT/NOW/CRWD/PANW/OKTA chips; analyst actions): https://finance.yahoo.com/markets/stocks/article/fortinet-drags-down-cybersecurity-stocks-as-the-companys-service-revenue-forecast-misses-estimates-124146969.html</li>
+<li>Yahoo Finance, Lumentum / Marvell (10:07 index header; LITE/MRVL/NVDA/AVGO chips): https://finance.yahoo.com/markets/stocks/article/lumentum-stock-rises-on-report-of-possible-merger-with-marvell-135945155.html</li>
+<li>Yahoo Finance (Sozzi), "Why Microsoft stock isn't getting crushed" (Azure, guide, capex and FCF vs. estimates; page cached pre-open): https://finance.yahoo.com/markets/stocks/article/why-microsoft-stock-isnt-getting-crushed-like-google-stock-after-its-earnings-report-092500217.html</li>
+<li>Yahoo Finance, DoorDash to acquire Instacart (deal terms; pre-market DASH quote): https://finance.yahoo.com/markets/stocks/article/doordash-acquires-instacart-for-17-billion-doubling-down-on-hyper-local-delivery-120136515.html</li>
+<li>Reuters via KFGO, "Wall St set for lower open as Alphabet results reignite AI spending fears" (8:48 AM prints; MSFT bond-sale report; CAT, LLY, MRVL, LITE, NVDA, AMD, INTC): https://kfgo.com/2026/10/29/nasdaq-futures-slide-as-mixed-big-tech-results-test-ai-trade/</li>
+<li>StockTitan live coverage (6:30 AM pre-market board; Haleon, CART, IOVA, CVNA; MSFT FCF calculation): https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026</li>
+<li>Nexus Research, Technology Morning Note (overnight software moves, NOW guide vs. consensus, MSFT capex commentary, SpaceX/T-Mobile): https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-e01</li>
+<li>Benzinga, Alphabet worst day (search summary only; page returned empty): https://www.benzinga.com/markets/earnings/26/10/62701188/alphabet-stock-worst-day-history-500-billion</li>
+<li>Fox Business / Benzinga, GDP and PCE (search summary): https://www.foxbusiness.com/economy/september-2026-pce-inflation ; https://www.benzinga.com/markets/economic-data/26/10/62693319/us-economy-gdp-third-quarter-pce-inflation-september</li>
+<li>Discarded as stale: Yahoo most-active board and GOOGL quote page (prior-day data): https://finance.yahoo.com/markets/stocks/most-active/ ; https://finance.yahoo.com/quote/GOOGL/</li>
+<li>Local: alpha_report_2026-10-29_premarket.html (pre-market levels and flagged names); alpha_wrds_signals.csv (as of 2026-09-17; stale, not used)</li>
+</ul>
+<p class="note">Limitations:</p>
+<ul class="note">
+<li>No reliable opening-volume data. StockMarketWatch boards could not be fetched this run; CNBC, Investrade, Benzinga and the Globe and Mail pages returned empty.</li>
+<li>Post-open levels not captured for AMZN, AMD, INTC, MU, TSM, ASML, AAPL, META, TSLA, ORCL, CRM, QCOM, LLY, DASH, CART and HLN.</li>
+<li>The MSFT −1.48% reading is a single Yahoo quote chip, and the bond-sale report is sourced to "media reports" via Reuters, not confirmed from a primary source.</li>
+<li>Our own arithmetic or inference: MSFT implied price; spreads vs. pre-market; the Russell–Nasdaq gap; all "our read" interpretations.</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
