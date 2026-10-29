@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-29 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Thursday, October 29, 2026</div>
+<p class="note">Automated run. The task is scheduled for ~7:30 AM ET, but this session started at about <b>8:35 AM ET</b>, after the 8:30 AM release of Q3 GDP and September PCE. <b>Those figures were not yet indexed by any source this run could reach, so the actual prints are not in this report.</b> Check them before the open. Pre-market prices come from snapshots taken between ~1:40 AM and ~8:37 AM ET, and each row says which. Moves are vs. Wednesday's close unless noted. Several pages returned empty (CNBC, Benzinga, Globe and Mail/Reuters, Invezz, investingLive, FXStreet), the web fetcher was rate-limited twice, and one board (StockMarketWatch's S&amp;P 500 page) served stale prices and was discarded. Figures attributed to a "search summary" come from search-result excerpts, not the full page text. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 42 days old and outside the ~14-day window. This edition relies on public research only.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>Alphabet's results have split the tape: the Nasdaq is set to fall while the Dow and small caps hold up.</b> At ~8:04 AM ET, S&amp;P 500 futures were <span class="dn">−0.36%</span> (7,755), Nasdaq 100 futures <span class="dn">−1.11%</span> (29,646.50), Dow futures <span class="dn">−0.24%</span> (52,569) and Russell 2000 futures <span class="up">+0.24%</span> (Yahoo Finance). At 5:18 AM, Reuters had Dow E-minis <span class="up">+0.51%</span>. The Dow's turn negative likely reflects Caterpillar's pre-market drop (CAT <span class="dn">−6% to −9%</span>). CAT is one of the highest-priced, and so most heavily weighted, Dow components. Its release time was not confirmed (our inference). The main story is Alphabet, <span class="dn">−10% to −11.5%</span> pre-market. It would be its <b>largest post-earnings drop on record</b> if it closes worse than −9.77% (CNBC via search summary), and a ~$400B+ loss of market value (Reuters). Search ads missed, cash burn widened and 2027 capex is set to rise "significantly." Microsoft is higher (+1.6% to +3.7%) on Azure, but by ~8:35 AM it had given back much of its after-hours gain. Software sold off (ServiceNow −18%, Fortinet −25% to −28%). AI chips fell (AMD, Broadcom and Intel −2.6% to −3.6%; Micron −3%). Marvell fell <span class="dn">~−10% to −12%</span> on a Bloomberg report that it is in advanced talks to buy Lumentum.</p>
+<p><b>Asia was mixed and split along AI lines:</b> Nikkei <span class="up">+1.1%</span> (64,659.47; SoftBank +1.8%), Kospi <span class="dn">−1.2%</span> (5,937.66; Samsung <span class="dn">−4.1%</span> after chip profits missed and capex rose with no new shareholder-return plan; SK hynix +2.6%), Taiex <span class="dn">−1.4%</span>, Hang Seng <span class="dn">−0.6%</span>, Shanghai <span class="dn">−0.8%</span>, ASX <span class="up">+0.5%</span>, Sensex <span class="up">+1%</span>. <b>Europe opened higher:</b> DAX <span class="up">+0.8%</span>, CAC 40 <span class="up">+1.0%</span>, FTSE 100 <span class="up">+0.5%</span> (AP, ~5:51 AM ET); the ECB announces its decision later today. <b>Rates and commodities:</b> the 10-year eased to ~5.00% overnight after a 5.05% close (AP). CME FedWatch shows a December hike at "more than 81%" (Reuters); yesterday's ~85% came from a different source (Bloomberg data via Yahoo). WTI fell ~1% to ~$101–102 and Brent to ~$111–114 on renewed U.S.–Iran diplomacy (WSJ: a Vance letter to Iran's security chief). U.S. officials still warn that strikes could resume after the Nov. 3 midterms. Gold was −0.4% (~$4,035), bitcoin −0.8% (~$80,000) and the VIX 17.09. <b>Tone: risk-off in AI and long-duration tech, rotation into the Dow, small caps and defensives, with the macro data at 8:30 AM as the swing factor.</b></p>
+<p class="note">Versus last night's Close Edition: MSFT opening higher (Medium confidence) is on track, but the gain is shrinking. GOOGL's after-hours drop deepened from ~5–7% to ~10–11.5%. Memory/semicap ("Low on direction") is lower. Oracle is reported "extending gains" on day two (FinancialJuice), but one search summary says −1.2%, so the direction is unconfirmed.</p>
+
+<h2>2. Today's Economic Calendar / Key Events</h2>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>Event</th><th>Consensus / why it matters</th></tr>
+<tr><td class="n">8:30 AM (released; not captured)</td><td><b>Q3 GDP (advance)</b>; <b>Sept. personal income/spending, PCE and core PCE</b>; weekly jobless claims</td><td>GDP +3.2% annualized expected (prior 2.2%; range ~2.7–3.5%). PCE +0.5% m/m, 3.6% y/y; <b>core PCE +0.3% m/m, 3.1% y/y</b> (prior 3.0%). Income +0.3%, spending +0.6%, real spending +0.1%. Initial claims ~199K expected (prior 194K). With a December hike >80% priced, a hot core print could push the 10-year back above 5% (Yahoo, previews)</td></tr>
+<tr><td class="n">Before the open (reported)</td><td><b>CAT</b>, <b>LLY</b>, <b>MRK</b>, MA, BMY, LIN, SHEL, TTE, MO, BUD, TT, HWM, CARR, LHX, ICE, HSY, ARES, OWL</td><td>CAT −6% to −9% on a "moderate" Q4 sales outlook. LLY +4% to +5% after a beat and a raised 2026 revenue outlook ($91–92B). MRK +2% to +3% on raised guidance. MA not captured</td></tr>
+<tr><td class="n">Today (time not verified)</td><td>ECB policy decision and press conference</td><td>AP says markets await the outcome "later Thursday." European equities are firmer into it</td></tr>
+<tr><td class="n">10:30 AM</td><td>EIA natural gas storage; Dallas Fed PCE</td><td>From last night's calendar</td></tr>
+<tr><td class="n">1:00 PM</td><td>$44B 7-year note auction</td><td>Tests demand for Treasuries with the 10-year near 5%</td></tr>
+<tr><td class="n">After the close</td><td><b>AMZN</b>, <b>INTC</b>, <b>SNDK</b>, COIN, RDDT, PINS, RBLX, SBUX, GILD, FSLR, MSTR, TWLO, DXCM, RIVN, MDLZ, DLR</td><td>Amazon is the last hyperscaler test of "capex vs. cash" (implied move ~6–7.4%). Intel and SanDisk test the chip/memory selloff</td></tr>
+<tr><td class="n">Friday</td><td>BoJ decision (expected hold, AP); Q3 Employment Cost Index; Chicago PMI; XOM, CVX, ABBV</td><td>ECI is a wage input to the December hike debate</td></tr>
+<tr><td class="n">Next week</td><td>AAPL (Nov. 2); U.S. midterms and AMD (Nov. 3); QCOM (Nov. 4)</td><td>U.S. officials have flagged a possible resumption of Iran strikes after Nov. 3 (AP), an oil risk</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">"SMW 8:37" is StockMarketWatch's Nasdaq 100 board fetched at ~8:37 AM ET. "SMW 5:29" is its pre-market movers board (data stamped 5:29 AM). Reuters figures are as of ~5:18 AM. Pre-market volume is thin, and moves can change a lot by 9:30.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-market move</th><th>Catalyst note</th></tr>
+<tr><td>GOOGL / GOOG</td><td class="n"><span class="dn">−11.5% / −11.4%</span> (SMW 8:37); −10.2% (Reuters)</td><td>Q3 search miss, −$9.07B FCF, 2027 capex to rise "significantly" (candidate #1)</td></tr>
+<tr><td>FTNT</td><td class="n"><span class="dn">−25% to −27.5%</span></td><td>Beat and raised billings guidance for the 3rd time, but warned of service-revenue headwinds; stock was +119% YTD</td></tr>
+<tr><td>SFM</td><td class="n"><span class="dn">−22% to −23%</span> (SMW 5:29)</td><td>Cut full-year comparable-sales guidance to −1.7%; traffic softening</td></tr>
+<tr><td>NOW</td><td class="n"><span class="dn">−18% to −19%</span> (~$122–123)</td><td>Adj. EPS $1.00 vs. $1.02; Q4 cRPO growth guided to 18.5% on early-renewal pull-forward</td></tr>
+<tr><td>HLN</td><td class="n"><span class="dn">−14%</span> (SMW 5:29)</td><td>Catalyst not verified this run</td></tr>
+<tr><td>MRVL</td><td class="n"><span class="dn">−9.7% to −12.4%</span></td><td>Bloomberg: advanced talks to buy Lumentum (~$83B); a deal could come next week</td></tr>
+<tr><td>CAT</td><td class="n"><span class="dn">−6% to −9%</span></td><td>Adj. EPS $7.20 vs. $7.10; revenue $20.68B (+17%); "moderate" Q4 sales growth outlook</td></tr>
+<tr><td>INTC / AMD / AVGO</td><td class="n"><span class="dn">−3.2% / −2.6% / −2.7%</span> (SMW 8:37)</td><td>Read-through from Alphabet's cash burn. Intel reports tonight</td></tr>
+<tr><td>MU / SNDK / SKHY</td><td class="n"><span class="dn">−3.0% / −3.3% / −1.9%</span></td><td>Samsung −4.1% in Seoul; giving back part of Wednesday's memory rally. SanDisk reports tonight</td></tr>
+<tr><td>AMZN</td><td class="n"><span class="dn">−2.1%</span> (SMW 8:37)</td><td>Reports after the close; read-through from Alphabet</td></tr>
+<tr><td>QCOM / AMAT / LRCX / ASML</td><td class="n"><span class="dn">−1.4% / −1.8% / −1.7% / −0.9%</span></td><td>Chip sector weakness, smaller moves</td></tr>
+<tr><td>NVDA / TSLA</td><td class="n"><span class="dn">−0.7% / −0.3%</span> (SMW 8:37)</td><td>Holding up relative to the chip group</td></tr>
+<tr><td>META</td><td class="n"><span class="up">+0.9%</span> (SMW 8:37)</td><td>No company-specific catalyst found</td></tr>
+<tr><td>AAPL</td><td class="n"><span class="up">+1.2%</span> (SMW 8:37)</td><td>No catalyst found. Possibly a defensive mega-cap rotation (our read); reports Nov. 2</td></tr>
+<tr><td>MSFT</td><td class="n"><span class="up">+1.6%</span> (SMW 8:37); +3.4% (SMW 5:29); +3.6% (Reuters)</td><td>FQ1 beat; Azure +48%; FQ2 Azure guide 49–50% (candidate #2). <b>Fading through the morning</b></td></tr>
+<tr><td>KLAC</td><td class="n"><span class="up">+2.6%</span> (SMW 8:37)</td><td>Reported last night; the rare chip name trading higher. Release not reviewed</td></tr>
+<tr><td>MRK</td><td class="n"><span class="up">+2% to +3%</span> (~$145.40)</td><td>Raised guidance</td></tr>
+<tr><td>LLY</td><td class="n"><span class="up">+4% to +5%</span> (~$1,344)</td><td>Adj. EPS $7.48 beat; 2026 revenue outlook raised to $91–92B</td></tr>
+<tr><td>LITE</td><td class="n"><span class="up">+5.7% to +6.0%</span></td><td>Takeover target in the Marvell talks; Nvidia invested $2B earlier this year</td></tr>
+<tr><td>EBAY</td><td class="n"><span class="up">+6.2%</span> (SMW 5:29)</td><td>Q3 earnings and GMV beat (Newsquawk headline)</td></tr>
+<tr><td>CMG</td><td class="n"><span class="up">+6.7%</span> (Reuters)</td><td>Better-than-expected comparable sales</td></tr>
+<tr><td>CVNA</td><td class="n"><span class="up">+7.8% to +7.9%</span></td><td>Q3 revenue above estimates</td></tr>
+<tr><td>NCLH / TDOC / INSM / CROX</td><td class="n"><span class="up">+12% / +12% / +14% / +18%</span> (SMW live board, time unclear)</td><td>Catalysts not verified this run (likely earnings-related)</td></tr>
+<tr><td>GKOS</td><td class="n"><span class="up">+16% to +18%</span></td><td>Record Q3 sales ($211M); 2026 guidance raised; preliminary 2027 revenue target of $1B</td></tr>
+<tr><td>ORCL</td><td class="n">Conflicting: "extending gains" (FinancialJuice) vs. −1.2% (search summary)</td><td>Day two after the +10.6% Investor Day rally; Oracle's credit-risk gauge improved the most in ~9 months</td></tr>
+<tr><td>TSM / CRM</td><td class="n">Not captured</td><td>Taiex −1.4% overnight. Reuters lists Salesforce among software laggards</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">These are worth watching at the open, not recommendations to buy or sell. Pre-market gaps on thin volume often change once regular trading starts.</p>
+
+<div class="card"><h3>1. Alphabet (GOOGL): a possible record post-earnings drop</h3>
+<p><b>Pre-market move:</b> <span class="dn">−11.5%</span> (SMW 8:37; ~$288 vs. a $325.41 close, our arithmetic) and −10.2% (Reuters, 5:18 AM). Volume of 5.3M shares was the heaviest on the Nasdaq 100 board.</p>
+<p><b>Thesis:</b> The market is treating this as a change in the AI story, not just a miss. <b>Search ads grew 12% to $63.35B</b> vs. ~$65B expected and ~15% expected growth. Search growth has slowed from 19% in March to 17% in June and 12% in September. Management tied part of the slowdown to lower monetization in AI Mode (Yahoo via search summary). Revenue was $127.58B vs. $128.22B, the first top- and bottom-line miss in nearly four years (CNBC via search summary). Free cash flow was <b>−$9.07B</b>, far worse than expected (pre-report estimates cited range from about breakeven to a $2.7B figure). That figure includes a $5.2B EC fine payment and a TPU inventory build. 2026 capex guidance is unchanged at $195–205B, but management expects 2027 capex to "increase significantly" (CNBC: above $300B). The opening question is whether the stock holds below −9.77% (a record, per CNBC) or dip-buyers treat the one-off items as noise.</p>
+<p><b>Evidence:</b> Reuters via Yahoo (−10.2%, ~$400B value at risk, investor quote that hyperscalers no longer get a "free pass"); TipRanks (revenue, capex $51.36B, FCF); Investing.com transcript and CNBC via search summary (EC fine, inventory build, 2027 capex); BigGo/search summary ($8.2B unrealized SpaceX loss in other income). GAAP EPS was $2.12 vs. ~$3.02 consensus; some outlets cite $2.67, which appears to exclude the SpaceX mark (our inference). Analyst targets were cut but most ratings held: Bernstein $325 (from $385), DA Davidson $300 (from $350), Goldman $385, Cantor $350, Raymond James $350, Susquehanna $400 (search summaries).</p>
+<p><b>Risks / what could fade or reverse the move:</b> Several drags are one-offs or non-cash: the EC fine, the SpaceX mark, and Q3 capex that came in <i>below</i> the ~$55.1B estimate. Cloud more than doubled to $30.7B. A "kitchen-sink" reading could bring buyers in after the first hour. After Q2, the stock swung in after-hours trading before closing −7.1% the next day. Several new price targets sit near current levels. The macro data and Amazon tonight could move the whole group.</p>
+<p><span class="conf">Confidence: High that GOOGL drives the session; Low–Medium on whether the gap extends or partly fills</span></p></div>
+
+<div class="card"><h3>2. Microsoft (MSFT): the "capex that pays" winner, but fading</h3>
+<p><b>Pre-market move:</b> <span class="up">+1.6%</span> (~$539.5, SMW 8:37), down from +3.4% to +3.7% earlier this morning and ~+4% to +5% after hours (CNBC; last night's edition: $557.06).</p>
+<p><b>Thesis:</b> This is the cleanest beat among the hyperscalers. Revenue was $92.28B vs. $90.69B and adj. EPS $4.89 vs. $4.73. Azure grew 48% ($33.17B, disclosed in dollars for the first time). <b>FQ2 Azure guidance of 49–50%</b> in constant currency compares with the 45.1% StreetAccount consensus (CNBC via search summary). Capex was ~$45B in the quarter and is expected above $50B next quarter, ~$170B for the year (period label varies by source). CFO Hood says Microsoft will stay FCF-positive in FY27, although FCF fell 27% y/y. Reuters frames this as "a big cash-flow beat," the opposite of Alphabet. The open will show whether investors use MSFT as the AI-quality hedge or sell it alongside the group. A shrinking pre-market gain suggests the second (our read).</p>
+<p><b>Evidence:</b> Reuters via Yahoo; FinancialJuice (+3.7%); SMW boards (5:29 AM +3.4%, 8:37 AM +1.6%); CNBC, BigGo and investingLive via search summary (guidance, capex).</p>
+<p><b>Risks:</b> The fade itself. MSFT has given back roughly two-thirds of its after-hours gain (our arithmetic: from ~+4.9% to +1.6%). A ~$170B capex plan is exposed to the same "cash burn" scrutiny. A hot core PCE would hit long-duration mega-caps. Azure guidance depends on new capacity coming online.</p>
+<p><span class="conf">Confidence: Medium that it outperforms the Nasdaq 100; Low on holding a gain through the session</span></p></div>
+
+<div class="card"><h3>3. AI semiconductors and memory (NVDA, AMD, AVGO, INTC, MU, SNDK, TSM, ASML): customer capex up, stocks down</h3>
+<p><b>Pre-market moves (SMW 8:37):</b> NVDA <span class="dn">−0.7%</span>, AMD <span class="dn">−2.6%</span>, AVGO <span class="dn">−2.7%</span>, INTC <span class="dn">−3.2%</span>, MU <span class="dn">−3.0%</span>, SNDK <span class="dn">−3.3%</span>, SKHY <span class="dn">−1.9%</span>, QCOM <span class="dn">−1.4%</span>, ASML <span class="dn">−0.9%</span>; KLAC <span class="up">+2.6%</span>. TSM was not captured; the Taiex fell 1.4%.</p>
+<p><b>Thesis:</b> Read literally, Alphabet's "significant" 2027 capex increase is more revenue for chip suppliers. The market is instead pricing the risk that customers' spending is outrunning their returns. TipRanks frames the concern as investors "becoming less forgiving about the financial consequences." Samsung fell 4.1% even on record results, while SK hynix rose 2.6% in Seoul. Within memory, investors are separating shareholder-return and capex discipline (our read). Watch for relative strength. Nvidia (−0.7%) and KLA (+2.6%) are holding up far better than AMD and Broadcom, which have direct hyperscaler custom-silicon and partnership exposure (Broadcom builds Google's TPUs). Tonight, Intel and SanDisk report.</p>
+<p><b>Evidence:</b> SMW Nasdaq 100 board; Reuters via Yahoo (NVDA −0.7%, AMD −2.8%, INTC −3.7%, MU −3.3% at 5:18 AM); TipRanks (overnight INTC −4%, AMD −3.8%, AVGO −3.2%); AP and FinancialJuice (Samsung, SK hynix).</p>
+<p><b>Risks:</b> Memory had a big run Wednesday (SKHY +13%, MU ~+6%), so some of today's drop is profit-taking. Dip-buyers often step in to semis on "capex is rising" headlines. Intel and SanDisk results after the bell could reverse the move either way.</p>
+<p><span class="conf">Confidence: Medium that the group underperforms at the open; Low on the size</span></p></div>
+
+<div class="card"><h3>4. Marvell (MRVL) / Lumentum (LITE): acquirer discount vs. target premium</h3>
+<p><b>Pre-market move:</b> MRVL <span class="dn">−12.4%</span> (~$220, SMW 8:37; −9.7% at 5:29 AM). LITE <span class="up">+5.7%</span> (~$966; +9% to +11% after hours).</p>
+<p><b>Thesis:</b> Bloomberg reported Wednesday evening that Marvell is in advanced talks to buy Lumentum. A deal could be announced as soon as next week, though terms could still change. The deal would combine a ~$221B chip designer with an ~$83B laser and optics supplier. Marvell already buys Lumentum lasers, so it would vertically integrate the optical interconnect, which has become a bottleneck in AI clusters (Investing.com). A ~12% drop on a large-cap acquirer is severe. It likely combines dilution worries with the Alphabet-driven AI selloff (our read; one commenter attributed the after-hours drop mostly to Alphabet). LITE has given back about half of its after-hours gain, which suggests the market doubts the deal will close or expects a modest premium (our read).</p>
+<p><b>Evidence:</b> Investing.com (Bloomberg report, valuations, after-hours moves); Reuters via Yahoo (MRVL −9.7%, LITE +4.2% at 5:18); SMW boards; Stifel reiterated Buy on MRVL and noted the U.S. and China approvals required (search summary).</p>
+<p><b>Risks:</b> Talks can collapse or terms can change (cash/stock mix, price). Chinese regulatory approval is a long-dated risk. An official confirmation or denial before the open would reprice both stocks.</p>
+<p><span class="conf">Confidence: Medium (event-driven; headline risk is high)</span></p></div>
+
+<div class="card"><h3>5. Software sell-off (NOW, FTNT; CRM, ZS laggards): guidance details punished</h3>
+<p><b>Pre-market move:</b> NOW <span class="dn">−18% to −19%</span> (~$122–123); FTNT <span class="dn">−25% to −27.5%</span> (~$126–130).</p>
+<p><b>Thesis:</b> Both stocks are being punished for guidance details more than for the reported numbers. ServiceNow's revenue was slightly ahead and adj. EPS of $1.00 missed by $0.02. The damage is a <b>Q4 cRPO growth guide of 18.5%</b>, attributed to early renewals pulled forward, even though it raised its full-year subscription outlook. Fortinet <i>beat and raised</i> billings guidance for the third time, but warned of service-revenue headwinds from enterprise deal consolidation and longer component lead times. After a 119% YTD run, that was enough to drop the stock by a quarter. Reuters ties the moves to sector-wide "AI disruption" fears. Oracle is the counter-example: it rallied by laying out a free-cash-flow path. The first-hour test is whether large-cap software (CRM, ADBE) sells off in sympathy or stabilizes as investors separate the two cases.</p>
+<p><b>Evidence:</b> Reuters via Yahoo; StockMarketWatch pre-market analysis; Seeking Alpha, GuruFocus and TradingKey via search summary.</p>
+<p><b>Risks:</b> Drops of 18–28% on beats often draw value buyers within a day or two. Fortinet's guidance was raised, not cut. cRPO timing effects can reverse next quarter.</p>
+<p><span class="conf">Confidence: Medium that the gaps hold through the first hour; Low beyond that</span></p></div>
+
+<div class="card"><h3>6. Caterpillar (CAT): an AI-power beneficiary with a soft outlook</h3>
+<p><b>Pre-market move:</b> <span class="dn">−6%</span> (Reuters, search summary) to <span class="dn">−9%</span> (FinancialJuice).</p>
+<p><b>Thesis:</b> Q3 was solid. Adj. EPS was $7.20 vs. $7.10 and revenue $20.68B (+17%), helped by backup power, turbines and construction equipment for data centers. But Caterpillar guided to only "moderate" Q4 sales growth. With the stock priced for AI-power upside, the soft outlook is driving the drop. CAT is a large Dow weight, and its gap appears to have flipped Dow futures from +0.5% to slightly negative (our inference). Watch the read-through to Vertiv (+15–17% Wednesday), GE Vernova and Quanta. If CAT's selloff deepens, the AI-power trade may be cooling alongside the hyperscaler "cash burn" worry.</p>
+<p><b>Evidence:</b> Reuters via Investing.com and GuruFocus (search summary); FinancialJuice Europe wrap; Yahoo/Reuters futures prints.</p>
+<p><b>Risks:</b> "Moderate" could be conservative, and a beat with an AI-driven backlog often draws buyers. The range between −6% and −9% shows thin, unstable pre-market pricing.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>7. Amazon (AMZN): into tonight's report after a 2% sympathy drop</h3>
+<p><b>Pre-market move:</b> <span class="dn">−2.1%</span> (SMW 8:37, from a $254.60 close).</p>
+<p><b>Thesis:</b> Amazon reports after the close and completes the hyperscaler set. Alphabet has shown the bar is now cash conversion, not just cloud growth. Previews look for AWS growth in the mid-to-high 30s to ~41% (Q2 was 37%) and focus on the capex outlook and Anthropic-related marks. The options-implied move is ~6–7.4%, and the last four next-day moves averaged ~7.8% in absolute terms (Pepperstone, PrimeXBT via search summary). Today's sympathy drop resets the setup into the print (our read).</p>
+<p><b>Risks:</b> Event risk is binary. A capex raise without FCF reassurance could follow Alphabet's path. Q3 sales growth is distorted by about 400 bp from the Prime Day timing shift.</p>
+<p><span class="conf">Confidence: Low (pre-event)</span></p></div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Omitted. The only local file (alpha_wrds_signals.csv) has as_of_date 2026-09-17, 42 days old and outside the ~14-day freshness window. A refreshed WRDS pull would restore this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>Yahoo Finance live blog, Oct. 29 (futures strip ~8:04 AM, economic consensus, earnings calendar): https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-081708101.html</li>
+<li>Reuters via Yahoo Finance, "Nasdaq futures fall 1% as Alphabet results intensify AI spending fears" (5:18 AM prints, movers, FedWatch): https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-slide-mixed-big-083556706.html</li>
+<li>AP via BNN Bloomberg (Asia/Europe closes, oil, yields, ECB/BoJ): https://www.bnnbloomberg.ca/markets/2026/10/29/world-shares-and-us-futures-are-mixed-after-google-parent-alphabets-earnings-disappoint/</li>
+<li>TipRanks, futures at 1:40 AM ET and oil: https://www.tipranks.com/news/futures-trade-mixed-as-investors-assess-microsoft-and-alphabet-earnings</li>
+<li>TipRanks, AI chip stocks overnight (Alphabet revenue, capex, FCF): https://www.tipranks.com/news/why-ai-chip-stocks-intel-amd-and-broadcom-are-tumbling-today-october-29-and-what-wall-street-expects-next</li>
+<li>FinancialJuice Europe market wrap (MSFT +3.7%, ORCL, CAT −9%, LLY, MRK, Samsung): https://features.financialjuice.com/2026/10/29/alphabet-software-stocks-slide-as-ai-trade-wobbles-europe-market-wrap/</li>
+<li>StockMarketWatch pre-market movers (data 5:29 AM): https://stockmarketwatch.com/movers/premarket</li>
+<li>StockMarketWatch live page (actives/gainers/losers boards): https://stockmarketwatch.com/live/stock-market-today</li>
+<li>StockMarketWatch Nasdaq 100 board (~8:37 AM pre-market snapshot): https://stockmarketwatch.com/indices/nasdaq100/today</li>
+<li>Investing.com, Marvell–Lumentum (Bloomberg report): https://www.investing.com/news/stock-market-news/marvell-nears-deal-for-optical-supplier-lumentum-to-bolster-hardware-report-says-4981052</li>
+<li>CNBC, Alphabet pre-market / record-drop threshold (search summary): https://cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html</li>
+<li>CNBC, Alphabet Q3 2026 (search summary): https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html</li>
+<li>Investing.com, Alphabet Q3 call transcript (search summary): https://www.investing.com/news/transcripts/earnings-call-transcript-alphabet-q3-2026-profit-miss-sparks-10-afterhours-drop-93CH-4981037</li>
+<li>Yahoo Finance, "Alphabet misses revenue expectations" (search ads; search summary): https://finance.yahoo.com/markets/stocks/articles/alphabet-misses-revenue-expectations-shares-013333509.html</li>
+<li>Investing.com, Bernstein PT cut (search summary): https://www.investing.com/news/analyst-ratings/bernstein-cuts-alphabet-stock-price-target-to-325-on-search-miss-93CH-4981903</li>
+<li>TipRanks, DA Davidson on Alphabet (search summary): https://www.tipranks.com/news/is-this-the-quarter-we-feared-da-davidson-reacts-as-alphabet-stock-falls-after-q3-miss</li>
+<li>BigGo Finance, Alphabet call (SpaceX loss; search summary): https://finance.biggo.com/news/US_GOOGL_2026-10-28</li>
+<li>CNBC, Microsoft FQ1 2027 (search summary): https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html</li>
+<li>investingLive, Microsoft capex (search summary; page returned empty): https://investinglive.com/stocks/microsoft-sees-170bn-capex-in-fiscal-2027-but-says-it-will-stay-cash-flow-positive/</li>
+<li>BigGo Finance, Microsoft call (Azure guide; search summary): https://finance.biggo.com/news/US_MSFT_2026-10-28</li>
+<li>Reuters via Investing.com, Caterpillar Q3 (search summary): https://www.investing.com/news/stock-market-news/caterpillar-thirdquarter-profit-rises-on-power-equipment-demand-4982548</li>
+<li>GuruFocus, Caterpillar Q3 (search summary): https://www.gurufocus.com/news/9150511/caterpillar-inc-cat-q3-earnings-beat-estimates-amid-strong-revenue-growth</li>
+<li>CoinCentral, Eli Lilly / Merck pre-market (search summary): https://coincentral.com/eli-lilly-lly-stock-jumps-4-after-q3-earnings-beat-and-higher-revenue-outlook</li>
+<li>Seeking Alpha, Fortinet (search summary): https://seekingalpha.com/news/4659184-fortinet-falls-despite-strong-q3-results-and-higher-guidance</li>
+<li>TradingKey, ServiceNow (search summary): https://www.tradingkey.com/analysis/stocks/us-stocks/262250932-servicenow-now-ai-us-tradingkey</li>
+<li>Investing.com (in), Stifel on Marvell (search summary): https://in.investing.com/news/stock-market-news/stifel-reiterates-marvell-stock-buy-rating-on-lumentum-deal-talks-93CH-5663077</li>
+<li>Pepperstone, Amazon Q3 preview (search summary): https://pepperstone.com/en/insights/market-analysis/equities/amazon-q3-2026-earnings-preview</li>
+<li>PrimeXBT, Amazon earnings date and implied move (search summary): https://primexbt.com/for-traders/amazon-earnings-date/</li>
+<li>Stocktitan / FatTail, Q3 GDP and PCE previews (search summary): https://www.stocktitan.net/articles/q3-2026-gdp-report ; https://fattail.ai/q3-gdp-2026-preview/</li>
+<li>Newsquawk opening-news headline (title only; page not fetchable): https://www.newsquawk.com/headlines/</li>
+<li>Local: alpha_report_2026-10-28_close.html (prior closes, after-hours context, calendar); alpha_wrds_signals.csv (as of 2026-09-17; stale, not used)</li>
+</ul>
+<p class="note">Limitations:</p>
+<ul class="note">
+<li><b>8:30 AM GDP/PCE/claims results not captured.</b> The session started after the release, and no indexed source had the prints yet.</li>
+<li>Not captured: TSM, CRM and ASML catalysts; MA results; KLA release details; ECB decision time; catalysts for HLN, CROX, INSM, NCLH and TDOC. Iovance showed conflicting signs (+13% early, −31% on a later board) and is omitted.</li>
+<li>Pre-market prices are thin and time-sensitive. Ranges reflect different snapshot times. ORCL's direction is unconfirmed.</li>
+<li>Our own arithmetic or inference: implied pre-market prices from % moves; MSFT's give-back; the CAT/Dow futures link; the GAAP vs. ex-SpaceX EPS reading; all "our read" interpretations.</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
