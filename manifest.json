@@ -248,20 +248,5 @@
     "date": "2026-10-15",
     "session": "premarket",
     "filename": "alpha_report_2026-10-15_premarket.html"
-  },
-  {
-    "date": "2026-10-14",
-    "session": "midday",
-    "filename": "alpha_report_2026-10-14_midday.html"
-  },
-  {
-    "date": "2026-10-14",
-    "session": "open",
-    "filename": "alpha_report_2026-10-14_open.html"
-  },
-  {
-    "date": "2026-10-14",
-    "session": "premarket",
-    "filename": "alpha_report_2026-10-14_premarket.html"
   }
 ]
