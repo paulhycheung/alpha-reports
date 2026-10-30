@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-30 – Midday Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Midday Edition</span> &nbsp; Friday, October 30, 2026 &middot; last trading day of October</div>
+<p class="note">Automated run. The task is scheduled for ~12:00 PM ET, but this session started at about <b>1:10 PM ET</b>. Price data comes from snapshots taken between ~11:45 AM and ~1:15 PM ET, and each row says which. All % moves are <b>vs. Thursday's close</b>. Several live sources were stale or paywalled: Yahoo's most-active screener and MarketScreener's NVDA quote page returned old cached data (not used), and CNBC and Benzinga articles returned empty pages, so their figures come from search-result summaries. No fresh midday prints were found for AAPL, CRM, QCOM, TSM, ASML or RIVN. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 43 days old and outside the ~14-day window. This edition relies on public research only.</p>
+
+<h2>1. How the Session Has Traded</h2>
+<p><b>The tech sell-off did not stabilize at midday. It deepened, and the S&amp;P 500 is at or near its session low.</b> At 1:14 PM ET the S&amp;P 500 was <span class="dn">−1.87%</span> (7,575.94; MarketScreener real-time). Yahoo's ~12:49 PM strip: Nasdaq Composite 25,428.99 (<span class="dn">−2.89%</span>), Dow 51,898.93 (<span class="dn">−0.85%</span>), Russell 2000 2,809.88 (<span class="dn">−1.73%</span>). The VIX was 20.67 (<span class="dn">+14%</span>) at 1:13 PM. The selling has built steadily: the Nasdaq was −2.24% at 11:05 AM, −2.42% at noon (24/7 Wall St.) and −2.89% by 12:49 PM. At 12:36 PM only ~240 S&amp;P 500 members were higher (TheStreet). Chips are the center of the selling. The SOX/semiconductor ETF is down about 7% (CNBC and other reports via search summaries). Reuters had the S&amp;P tech sector −3.4% early, on track for its worst day since June 23. Benzinga estimates chip stocks have lost about $1 trillion in value. Reuters says the Nasdaq-100 is on pace to erase more than $1 trillion today and more than $2 trillion for the month, ending a two-month winning streak.</p>
+<p><b>Money is rotating into defensives and bonds, but gold and crypto are falling too.</b> Consumer staples (+1.9%) and health care (+1.7%) led early (Reuters), and energy was +1.6% at 10:30 AM (24/7 Wall St.). The 10-year yield is ~4.95% (−4 bp). Gold is <span class="dn">−3.0%</span> (~$3,910), so this is not a classic flight to safety. Bitcoin is <span class="dn">−5%</span> (~$77,100) after the Binance hack. WTI is <span class="up">+2.1%</span> (~$104), driven by headlines about Hormuz mines and a possible Iran blockade, against Trump's remark that the war is "going to end soon." Markets are pricing more than 50 bp of Fed hikes by mid-2027 (LSEG via Reuters). That makes debt-funded AI capex harder to justify, a theme in today's selling. <b>Catalyst gap:</b> the Fed's Daly (12:00) and Musalem (12:30) were scheduled, but this run found no coverage of their remarks. The Chicago PMI print was also not captured. <b>Tone: decisively risk-off in tech/AI hardware into the afternoon, with month-end rebalancing adding noise.</b></p>
+
+<h2>2. Follow-up on Earlier Calls</h2>
+<p class="note">Compares today's Pre-Market (5:30–8:15 AM ET) and Open (10:00–11:05 AM ET) editions with midday prints.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Pre-market</th><th>Open edition</th><th>Midday</th><th>Read</th></tr>
+<tr><td>Nasdaq Comp.</td><td class="n dn">NQ fut. −2.6%</td><td class="n dn">−2.24% (11:05)</td><td class="n dn">−2.89% (12:49)</td><td><b class="dn">Worsened.</b> No midday stabilization.</td></tr>
+<tr><td>INTC</td><td class="n dn">−23% to −26%</td><td class="n dn">−27.9% to −28.8%</td><td class="n dn">−29.0% (11:58) → −30.2% (~1:14)</td><td><b class="dn">Open call played out</b> ("momentum stays negative into midday"). Now beyond the record-loss threshold (see §4).</td></tr>
+<tr><td>AMZN</td><td class="n dn">−6.5% to −7.1%</td><td class="n dn">−1.5% to −2.0%</td><td class="n dn">−2.3% (~1:13, $238.29)</td><td><b class="am">Gap fill mostly held, with a slow fade.</b> Still ~5 points above the pre-market low.</td></tr>
+<tr><td>MU vs. SNDK</td><td class="n dn">−4.2% / −5% to −8.5%</td><td class="n dn">−4.2% to −4.5% / −9.8%</td><td class="n dn">−6.0% / −12.2% (12:49); SNDK −13.4% (~1:14)</td><td><b class="am">Relative read held; absolute level faded.</b> MU is still falling about half as much as SNDK, but both slid further.</td></tr>
+<tr><td>NVDA</td><td class="n dn">−2.5% to −2.9%</td><td class="n dn">−3.2% to −3.5%</td><td class="n dn">−3.8% (11:44) → −4.1% (12:49)</td><td><b class="dn">Faded.</b> The "suppliers recover after spenders stabilize" idea has not materialized.</td></tr>
+<tr><td>AVGO / AMD</td><td class="n dn">−3.8% / −8.3%</td><td class="n dn">~−5.0% / −9.2%</td><td class="n dn">~−5.5% / ~−9.7% (late morning, Benzinga)</td><td>Held near lows. No fresher print found.</td></tr>
+<tr><td>GOOGL / MSFT</td><td class="n dn">~−1.0% / ~−0.5%</td><td class="n dn">−0.7% to −0.9% / n/a</td><td class="n dn">−1.7% / −1.65% (~1:13)</td><td>Slipped with the tape, still outperforming.</td></tr>
+<tr><td>RDDT</td><td class="n dn">−21% to −23%</td><td class="n dn">−24%</td><td class="n dn">−28.0% (11:58)</td><td>Extended.</td></tr>
+<tr><td>COIN</td><td class="n dn">−5.2%</td><td class="n">n/a</td><td class="n dn">−12% (CNBC midday) → −13.5% (~1:14)</td><td><b class="dn">Extended sharply</b> after Binance confirmed the hack.</td></tr>
+<tr><td>RIVN</td><td class="n up">+7% to +9%</td><td class="n up">~+6%</td><td class="n">n/a</td><td>No midday print captured; status unknown.</td></tr>
+</table></div>
+
+<h2>3. Midday Movers</h2>
+<p class="note">% vs. Thursday's close. "~1:14" = MarketScreener S&amp;P 500 ranking / indicative quotes; "12:49" and "11:44" = Yahoo Finance quote chips at fetch time; "11:58" = TheStreet; "CNBC midday" = search summary of CNBC's midday movers. Volume is shown only where a source gave it.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move</th><th>Volume / note</th></tr>
+<tr><td>INTC</td><td class="n dn">−30.2% (~1:14; ≈$64.24)</td><td>Worst S&amp;P 500 performer. ~197M shares by late morning (Investing.com, per Open edition). Five-year CDS at a record high (Reuters headline, 1:02 PM).</td></tr>
+<tr><td>RDDT (off-list)</td><td class="n dn">−28.0% (11:58)</td><td>Q4 revenue guidance miss; DAU warning; logged-in-only plan.</td></tr>
+<tr><td>TWLO (off-list)</td><td class="n dn">~−17% (CNBC midday)</td><td>Q4 organic growth guided down to 11–12%.</td></tr>
+<tr><td>COIN / HOOD (off-list)</td><td class="n dn">−13.5% (~1:14) / ~−8% (CNBC)</td><td>Binance's ~$6.3B hack; Bitcoin −5%.</td></tr>
+<tr><td>SNDK (off-list)</td><td class="n dn">−13.4% (~1:14)</td><td>Third-worst in the S&amp;P despite a beat-and-raise and an 8-for-1 split.</td></tr>
+<tr><td>DELL (off-list)</td><td class="n dn">−12.5% (~1:14)</td><td>Extended from −9% at the open on Intel's PC warning.</td></tr>
+<tr><td>DDOG (off-list)</td><td class="n dn">−12.3% (~1:14)</td><td>Was −9% at 12:20 PM (24/7 Wall St.). Software caught in the AI de-risking. No company catalyst verified.</td></tr>
+<tr><td>LITE / ANET (off-list)</td><td class="n dn">&gt;−10% / ~−8% (CNBC)</td><td>AI networking names hit alongside chips.</td></tr>
+<tr><td>AMD</td><td class="n dn">~−9.7% (late morning)</td><td>Benzinga: ~$90B of market value erased. Reports Nov 3.</td></tr>
+<tr><td>MU</td><td class="n dn">−6.0% (12:49)</td><td>Fell as much as 5.9% early and was −4.7% at 11:28 (Motley Fool), so it has made new lows since.</td></tr>
+<tr><td>AVGO</td><td class="n dn">~−5.5% (late morning)</td><td>Benzinga: ~$90B erased.</td></tr>
+<tr><td>ORCL</td><td class="n dn">−5.3% (time not stated)</td><td>TradingKey: profit-taking after Investor Day; capex/leverage scrutiny (~$169B debt and leases, BBB−).</td></tr>
+<tr><td>NVDA</td><td class="n dn">−4.1% (12:49)</td><td>No company-specific news; read-through selling.</td></tr>
+<tr><td>QCOM / TSM / ASML</td><td class="n dn">~−10% / −3% to −4% / ~−5%</td><td>Late-morning levels carried from the Open edition; no fresh midday print.</td></tr>
+<tr><td>AMZN</td><td class="n dn">−2.3% (~1:13, $238.29)</td><td>Below the ~$243 200-day average cited this morning.</td></tr>
+<tr><td>GOOGL / MSFT / META</td><td class="n dn">−1.7% / −1.65% / −0.7% (~1:13)</td><td>$278.98 / $521.39 / $620.32 (indicative).</td></tr>
+<tr><td>TSLA</td><td class="n dn">−0.9% (11:44)</td><td>Steady relative to tech.</td></tr>
+<tr><td>AAPL / CRM</td><td class="n">n/a</td><td>No reliable intraday print this run. Yahoo (Sozzi) describes Apple and Microsoft as the only Mag 7 names "hanging tough."</td></tr>
+<tr><td>GPN (off-list)</td><td class="n up">+12.1% (~1:14)</td><td>Top S&amp;P gainer. Catalyst not verified this run.</td></tr>
+<tr><td>REGN (off-list)</td><td class="n up">+11.3% (~1:14)</td><td>Q3 beat, outlook raised.</td></tr>
+<tr><td>VLTO / CBOE / TMUS (off-list)</td><td class="n up">+10.4% / +8.0% / +7.8% (~1:14)</td><td>VLTO beat and raised (TheStreet). CBOE and TMUS catalysts not verified.</td></tr>
+</table></div>
+
+<h2>4. Midday Alpha Candidates</h2>
+<p class="note">These are worth investigating further, not recommendations to buy or sell. Confidence reflects the strength of evidence for the stated read, not a forecast of returns.</p>
+
+<div class="card"><h3>1. Intel (INTC): <span class="dn">−30.2%</span> (~$64.24 at ~1:14 PM), vs. −28.8% at 10:00 AM</h3>
+<p><b>Thesis:</b> Intel has now crossed into record territory. Yahoo Finance (Blikre, using Norgate closing data back to 1973) put the line for the worst day in Intel's history at about $64.50, below the −29.9% of July 5, 1974. The ~1:14 PM print (−30.23%) is under that line. Where Intel closes, above or below ~$64.50, is the main thing to watch into 4 PM. A record-setting close could mark capitulation, or it could start a de-rating. The credit market is now involved too: Reuters reports that the cost of insuring Intel's debt (five-year CDS) hit an all-time high after the company warned it will burn cash this year. That makes this a balance-sheet story as well as an earnings miss. Sell-side notes keep coming: Bernstein's Rasgon called the outlook "(in a word) terrible" and cut his PT to $75 from $110; BofA says the turnaround is delayed by PC weakness and foundry problems; Morgan Stanley says Intel needs to show a "leadership roadmap" in server CPUs. The stock is still well above where it started 2026 (~$37 on Yahoo's chart) after nearly quadrupling to a ~$141 record on June 22, so long holders who have not sold may still be sitting on gains.</p>
+<p><b>Evidence:</b> MarketScreener S&amp;P 500 ranking (−30.23%). TheStreet (−29.04% at 11:58). Yahoo/Blikre (record thresholds, Rasgon, YTD context, data center +~80% y/y to $7.3B). MarketScreener headline list (Reuters CDS story; MT Newswires BofA and Morgan Stanley headlines; article bodies paywalled, so only the headline/summary was read).</p>
+<p><b>Risks / what could reverse it into the close:</b> Late-day short covering after a record move is common. A constructive headline on Foundry or a customer (e.g., the reported Google TPU order) could trigger a sharp bounce. Month-end and index flows could exaggerate the last hour in either direction. If CDS keeps widening, any bounce may be hard to hold.</p>
+<p><span class="conf">Confidence: High that the ~$64.50 line is the key close-watch / Low on direction</span></p></div>
+
+<div class="card"><h3>2. Micron (MU) vs. Sandisk (SNDK): <span class="dn">−6.0%</span> vs. <span class="dn">−12.2% to −13.4%</span></h3>
+<p><b>Thesis:</b> The relative call from the Open edition still holds: the market treats HBM/data-center DRAM (MU) as safer than NAND/consumer exposure (SNDK). Both have fallen further, though. MU went from −4.5% to −6.0%, and SNDK is now the third-worst S&amp;P 500 stock despite a large beat-and-raise. Underneath, pricing and volume are moving in opposite directions. TrendForce data relayed on 24/7 Wall St.'s feed shows PC DRAM contract prices rising 13–18% q/q in Q4 while notebook shipments fall another ~9% after −14% in Q3. Counterpoint (same feed) shows smartphone processor shipments −21% y/y in Q3 as memory costs pushed OEMs to cut cheaper models. That is pricing power on shrinking end-unit volume, exactly the mix that has investors calling a peak. The Motley Fool notes MU trades at ~12x earnings after a ~293% one-year gain.</p>
+<p><b>Evidence:</b> Yahoo quote chips at ~12:49 PM (MU −6.03%, SNDK −12.17%). MarketScreener S&amp;P ranking (SNDK −13.44%). Motley Fool via Yahoo (MU intraday path, valuation). TrendForce and Counterpoint figures via 24/7 Wall St. feed (relayed social posts, not primary reports).</p>
+<p><b>Risks:</b> If "peak memory pricing" spreads from NAND to HBM, MU's relative cushion could disappear quickly. The two stocks tend to move together with SK hynix, which fell ~7% in Seoul overnight. One session is a thin sample for a regime change.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>3. Amazon (AMZN): <span class="dn">−2.3%</span> (~$238.29), vs. −7.1% pre-market and −1.5% to −2.0% after the open</h3>
+<p><b>Thesis:</b> Amazon is still the day's clearest case of buyers stepping in on a miss. It has held most of a ~5-point recovery while the Nasdaq fell another ~0.65 percentage points from late morning. The midday fade is small, but the direction matters. The stock sits below the ~$243 200-day average it held at Thursday's close, and TheStreet Pro flagged an Amazon "support level" it is watching (headline only). The afternoon question: does the gap fill hold through month-end flows, or does a weak close re-open part of it? A close near the highs would suggest that the strong AWS print (+39%) outweighs the record −$42.4B trailing free-cash-flow burn for now.</p>
+<p><b>Evidence:</b> MarketScreener indicative quote (−2.26%, $238.29, ~1:13 PM). Reuters ~9:53 AM (down 2% after paring premarket losses). Open edition prints. Yahoo/Blikre (record cash burn).</p>
+<p><b>Risks:</b> Q4 sales guidance was also below consensus, and 2027 capex will be "meaningfully more." Reuters says investors are punishing debt-reliant AI spenders. Another leg down in the Nasdaq would test this bid. TradingKey cites ~$226 (the pre-market low area) as downside support.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>4. Nvidia (NVDA) and Broadcom (AVGO): <span class="dn">−4.1%</span> and <span class="dn">~−5.5%</span></h3>
+<p><b>Thesis:</b> This morning's idea was that AI suppliers might recover once the spenders stabilized. Amazon did stabilize; the suppliers did not. NVDA has slid steadily (−2.5% pre-market → −3.2% at the open → −4.1% at 12:49) with no company news, and the semiconductor ETF is down ~7%. Yahoo's Sozzi gives the market's reasoning: fear that hyperscalers are overspending and will have to cut back in 2027. Reuters adds that the market is rewarding self-funded spenders and punishing those tapping debt. That hits suppliers' 2027 order books whichever spender pulls back. NVDA is still falling less than the group (SOX ~−7%), which keeps it the relative outperformer. Into the close, watch whether that gap holds or NVDA catches down to the group.</p>
+<p><b>Evidence:</b> Yahoo quote chips (NVDA −3.77% at ~11:44, −4.13% at ~12:49). Benzinga via search summary (AVGO −5.5%, AMD −9.7%, ~$1T sector loss, NVDA largest in dollar terms). CNBC midday via search summary (semiconductor ETF ~−7%). Yahoo/Sozzi. Reuters (MarketScreener video transcript).</p>
+<p><b>Risks:</b> If the market prices >50 bp of hikes by mid-2027, long-duration growth keeps getting de-rated. The circular-financing worries (Nvidia's reported credit-guarantee talks for Nscale, from this morning's brief) could come back. A late-day squeeze is possible after a ~7% sector drop.</p>
+<p><span class="conf">Confidence: Low</span></p></div>
+
+<div class="card"><h3>5. Coinbase (COIN): <span class="dn">−13.5%</span>, vs. −5.2% pre-market (off watchlist)</h3>
+<p><b>Thesis:</b> This is the largest pre-market-to-midday deterioration among today's flagged names. Coinbase was not the venue that was hacked. Binance says the ~$6.3B breach (TRM Labs and Elliptic link it to North Korea) will be covered in full from its SAFU fund and reserves, that ~$3B has been frozen on-chain with help from Tether and Circle, and that withdrawals should resume by Sunday. The question is whether COIN's drop reflects real contagion (crypto prices, volumes, regulation) or a sentiment overshoot in a listed proxy. If customers move from Binance toward regulated U.S. venues, the effect could even be positive. Bitcoin is about −5% (~$77,100). Watch whether it holds that level into the close, since COIN has been trading as a leveraged version of it.</p>
+<p><b>Evidence:</b> MarketScreener S&amp;P ranking (COIN −13.52%). CNBC midday via search summary (COIN −12%, HOOD −8%). Yahoo live blog (Binance co-CEO Teng: "complex attack," self-destruct mechanism; coverage of losses; ~$3B frozen; withdrawals by Sunday). TheStreet (Binance investigation: compromised DevOps engineer's laptop).</p>
+<p><b>Risks:</b> Further disclosures (a larger loss, slower withdrawals) or a regulatory response could hit the whole sector. A break in Bitcoin below recent lows would likely drag COIN further. The drop is also happening inside a broad high-beta de-risking, so it is not only about crypto.</p>
+<p><span class="conf">Confidence: Low</span></p></div>
+
+<div class="card"><h3>6. Regeneron (REGN) and the defensive rotation: <span class="up">+11.3%</span> (off watchlist)</h3>
+<p><b>Thesis:</b> On a day when ~240 S&amp;P names are up, the leaders are almost all non-tech. Regeneron (+11.3%) beat Q3 estimates (adj. EPS $20.07 on $5.12B revenue, +36%) and raised its full-year outlook. Veralto (+10.4%) beat and raised. Global Payments (+12.1%), Cboe (+8.0%) and T-Mobile (+7.8%) round out the top five, though their catalysts were not verified this run. B. Riley's Art Hogan calls this "a rotation out of an extremely popular technology trade and into safer havens," not "a broader reset." With staples and health care up ~1.7–1.9%, REGN is the cleanest test of whether the rotation is driven by fundamentals. Into the close, see whether these gains hold or month-end rebalancing pulls money back to beaten-down tech.</p>
+<p><b>Evidence:</b> MarketScreener S&amp;P ranking (~1:14 PM). TheStreet (REGN and VLTO catalysts). CNBC midday via search summary (REGN EPS and revenue). Reuters ~9:53 AM via Lufkin Daily News (sector moves, Hogan quote). 24/7 Wall St. (sector board at 10:30).</p>
+<p><b>Risks:</b> Rotation trades on a single day often reverse when the sold-off group bounces. REGN's move is fundamentals-driven, but the size of today's sector rotation may be inflated by month-end flows. GPN, CBOE and TMUS moves are unexplained here and deserve separate checks.</p>
+<p><span class="conf">Confidence: Medium (REGN) / Low (broader rotation persistence)</span></p></div>
+
+<h2>5. Sources</h2>
+<p class="note">Pages fetched this run:</p>
+<ul class="src">
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026 (S&amp;P at day lows at 12:36 PM, ~240 advancers; midday losers 11:58 AM; REGN/VLTO/CSGP/TWLO; Iran and Binance updates)</li>
+<li>https://247wallst.com/cards/the-nasdaq-is-down-2-4-at-midday-four-times-the-dow-s-decl-gspc-market-bell-01m66rqzdpdn9nn4067845kn5z (noon index levels; sector board at 10:30; DDOG; TrendForce and Counterpoint posts; Iran blockade post)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/why-micron-stock-dove-today-155648098.html (Motley Fool on MU; Yahoo index strip at ~12:49 PM; MU/NVDA/SNDK quote chips)</li>
+<li>https://finance.yahoo.com/markets/article/intel-stock-plunges-nearly-30-on-pace-for-its-worst-day-since-1974-135850305.html (Intel record thresholds, Bernstein, YTD context)</li>
+<li>https://finance.yahoo.com/markets/article/the-magnificent-7-stocks-are-seeing-stunning-declines-092719792.html (Mag 7 context; quote chips at ~11:44 AM)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html (Binance co-CEO comments; index strip at ~11:32 AM)</li>
+<li>https://finance.yahoo.com/technology/article/intel-and-sandisk-have-very-different-views-about-whats-going-on-in-memory-chips-114638641.html</li>
+<li>https://lufkindailynews.com/news_reuters/business/nasdaq-hits-near-three-month-low-as-amazon-intel-deepen-ai-capex-concerns/article_a9360e82-0465-596a-aa41-c475ee3d1699.html (Reuters, ~9:53 AM version: sectors, Hogan quote, Nasdaq-100 value loss, Fed pricing)</li>
+<li>https://www.marketscreener.com/news/us-equity-indexes-slide-as-mega-cap-chipmakers-sink-following-intel-s-results-ce785fdbde8eff2d (S&amp;P 500 real-time at 1:14 PM; S&amp;P top/bottom five; article body paywalled)</li>
+<li>https://www.marketscreener.com/news/spooked-at-halloween-tumbling-tech-stocks-give-markets-a-fright-ce785fdbda8df423 (Reuters video transcript; VIX, GOOGL, MSFT, AMZN, META quotes at ~1:13 PM)</li>
+<li>https://www.marketscreener.com/news/intel-credit-risk-gauge-hits-record-high-after-results-ce785fdbde81f422 (Reuters; summary only, body paywalled)</li>
+<li>https://www.marketscreener.com/news/nasdaq-hits-near-three-month-low-as-amazon-intel-deepen-ai-capex-concerns-ce785fdbde80f726 (paywalled; used for the Intel headline list incl. BofA and Morgan Stanley notes)</li>
+<li>https://www.tradingkey.com/news/market-movers/262261064-market-movers-orcl-20261030 (ORCL −5.34%)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026 (11:00 AM board; QQQ/DIA moves)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-sink-amazon-intel-114737736.html (Reuters pre-market version; context)</li>
+<li>https://www.ctvnews.ca/business/article/us-futures-fall-as-amazon-intel-and-alphabet-weigh-on-wall-street/ (AP pre-market version only; not used for figures)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (returned a stale cached page; <b>not used</b>)</li>
+<li>https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/ (returned an Oct 23 cached quote; <b>not used</b>)</li>
+</ul>
+<p class="note">Used via search-result summaries only (fetch returned empty or not fetched):</p>
+<ul class="src">
+<li>https://www.cnbc.com/2026/10/30/stocks-making-the-biggest-moves-midday-intc-lite-sndk-twlo-coin.html (fetch returned empty)</li>
+<li>https://www.benzinga.com/markets/tech/26/10/62749985/chip-stocks-1-trillion-wipeout-intel-nvidia-amd-tsmc-broadcom (fetch returned empty)</li>
+<li>Prior context: alpha_report_2026-10-30_premarket.html and alpha_report_2026-10-30_open.html (local archive)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
