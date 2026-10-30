@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-30 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Friday, October 30, 2026 &middot; last trading day of October</div>
+<p class="note">Automated run. The task is scheduled for ~10:00 AM ET, but this session started at about <b>11:05 AM ET</b>, roughly 95 minutes after the open. So "the open" here covers three snapshots: the 9:30 AM opening prints (Reuters), StockTitan's 10:00 AM board, and live quote widgets on Yahoo Finance and Investing.com at ~11:05 AM. Each row says which. All % moves are <b>vs. Thursday's close</b>, not vs. the opening print, because no source gave reliable opening-print prices for each stock. Yahoo's most-active screener returned a stale cached page (it showed INTC <i>up</i> 2.8% at $93), so it was not used. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 43 days old and outside the ~14-day window.</p>
+
+<h2>1. How the Open Traded</h2>
+<p><b>The tech sell-off carried straight through the opening bell, but it rotated inside the group. Intel and the PC/handset chip complex got worse, and Amazon recovered most of its pre-market loss.</b> At the 9:30 AM open (Reuters), the Nasdaq Composite was <span class="dn">−2.26%</span> (25,592.49), its lowest level in more than two months. The S&amp;P 500 was <span class="dn">−1.16%</span> (7,631.07), and the Dow was slightly up at <span class="up">+0.08%</span> (52,383.9). The Dow then slipped into the red, and the Yahoo live blog had it at about −0.7% around 10:27 AM ET. By ~11:05 AM ET (Yahoo): S&amp;P 500 7,614.15 (<span class="dn">−1.38%</span>), Nasdaq 25,596.93 (<span class="dn">−2.24%</span>), Dow 52,078 (<span class="dn">−0.51%</span>), Russell 2000 <span class="dn">−1.30%</span>, VIX 19.04 (<span class="dn">+10.7%</span>). Defensive flows were visible: the 10-year yield fell ~4 bp to ~4.95%. Gold, however, fell <span class="dn">−2.7%</span> (~$3,924), and Bitcoin fell <span class="dn">−5.3%</span> (~$77,340) after Binance confirmed the hack. WTI is <span class="up">+2.3%</span> (~$104.3) on Iran-strike risk. <b>Macro was not the driver:</b> the Q3 Employment Cost Index came in at +0.8% q/q, exactly in line (BLS, via StockTitan). That removed the "hot ECI" risk flagged this morning. The 9:45 AM Chicago PMI was not captured this run.</p>
+<p><b>Tone: risk-off and concentrated in tech.</b> Reuters quotes Hargreaves Lansdown: "sell first, ask questions later." Intel is on pace for its worst day on record (−28% to −29%, more than $120–137B of market value lost). The sell-off spread from the companies that reported to many that reported nothing: AMD, Arm, Qualcomm, Dell, HP, HPE, Super Micro, Applied Materials and Lam Research. Non-tech earnings winners are trading on their own news: Regeneron +12.5%, Capri +15.8%, OneSpan +34.6%.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Compares this morning's Pre-Market Edition (snapshots 5:30–8:15 AM ET) with regular-session prints at 10:00–11:05 AM ET.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Pre-market</th><th>After the open</th><th>Read</th></tr>
+<tr><td>AMZN</td><td class="n dn">−6.5% to −7.1%</td><td class="n dn">−2.0% (10:00); −1.5% to −1.95% (~10:30–11:05)</td><td><b class="up">Gap mostly filled.</b> Buyers absorbed the miss right after the bell.</td></tr>
+<tr><td>INTC</td><td class="n dn">−23% to −26%</td><td class="n dn">−28.8% (10:00); −27.9% to −28.5% (~11:05)</td><td><b class="dn">Extended.</b> No two-way trade emerged at the open.</td></tr>
+<tr><td>AMD</td><td class="n dn">−8.1% to −8.3%</td><td class="n dn">−8.5% (10:00); −9.2% to −9.3% (~11:05)</td><td><b class="dn">Extended.</b></td></tr>
+<tr><td>AVGO</td><td class="n dn">−3.7% to −3.9%</td><td class="n dn">~−5.0%</td><td><b class="dn">Extended.</b></td></tr>
+<tr><td>NVDA</td><td class="n dn">−2.5% to −2.9%</td><td class="n dn">−3.2% to −3.5%</td><td>Held, slightly worse.</td></tr>
+<tr><td>MU</td><td class="n dn">−4.2% to −4.9%</td><td class="n dn">−4.2% to −4.5%</td><td>Held, no worse. (SNDK extended to −9.8%.)</td></tr>
+<tr><td>ASML</td><td class="n dn">~−5% (Amsterdam)</td><td class="n dn">~−5.0%</td><td>Held.</td></tr>
+<tr><td>GOOGL</td><td class="n dn">~−1.0%</td><td class="n dn">−0.7% to −0.9%</td><td>Held. Steady on day 2 after −12.6%.</td></tr>
+<tr><td>RDDT</td><td class="n dn">−21% to −23%</td><td class="n dn">−24%</td><td>Held / extended.</td></tr>
+<tr><td>RBLX</td><td class="n dn">−17% to −19%</td><td class="n dn">−16% to −16.7%</td><td>Held, pared slightly.</td></tr>
+<tr><td>TWLO</td><td class="n dn">−17.5% to −19%</td><td class="n dn">−17.4% (10:00)</td><td>Held.</td></tr>
+<tr><td>DELL / HPQ</td><td class="n dn">−9.5% / −7% to −10%</td><td class="n dn">−7.7% to −9.0% / −9.5%</td><td>Held.</td></tr>
+<tr><td>RIVN</td><td class="n up">+7% to +9%</td><td class="n up">~+6%</td><td><b>Held most of the gain</b> against a falling tape.</td></tr>
+<tr><td>COIN / MSTR / HOOD</td><td class="n dn">−5% to −6%</td><td class="n">n/a</td><td>No regular-session quotes captured. Bitcoin extended to −5.3%. <b>The Binance hack is now confirmed:</b> Binance put the impact at ~$6.3B, with ~$3B frozen, and says it will cover losses. TRM Labs and Elliptic link it to North Korea (Yahoo).</td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">% vs. Thursday's close. "10:00" = StockTitan board; "~11:05" = Investing.com/Yahoo quote widgets at fetch time. Volume is shown where a source gave it.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move</th><th>Volume / note</th></tr>
+<tr><td>INTC</td><td class="n dn">−27.9% to −28.8% (~$65.8–66.6)</td><td>~197M shares by late morning (Investing.com), far ahead of every other name. Reuters: on track for its worst day on record.</td></tr>
+<tr><td>QCOM</td><td class="n dn">−9.7% to −10.0%</td><td>5.3M shares. No company news; sympathy on handset and enterprise-hardware demand (Dow Jones).</td></tr>
+<tr><td>AMD</td><td class="n dn">−9.2% to −9.3% (~$513.5)</td><td>12.3M shares. No news; reports Nov 3.</td></tr>
+<tr><td>ARM (off-list)</td><td class="n dn">−10.3% to −10.4%</td><td>3.3M shares. No news.</td></tr>
+<tr><td>SNDK (off-list)</td><td class="n dn">−9.8%</td><td>5.6M shares. Extended after a beat and an 8-for-1 split.</td></tr>
+<tr><td>AVGO</td><td class="n dn">~−5.0%</td><td>Dow Jones: "down nearly 5% in morning trading."</td></tr>
+<tr><td>ASML</td><td class="n dn">~−5.0%</td><td>STOXX Europe 600 Tech was −2% (Reuters).</td></tr>
+<tr><td>MU</td><td class="n dn">−4.2% to −4.5% (~$892.5)</td><td>10.6M shares.</td></tr>
+<tr><td>TSM</td><td class="n dn">−3.3% to −4.3%</td><td>Contract-chipmaker sympathy.</td></tr>
+<tr><td>NVDA</td><td class="n dn">−3.2% to −3.5% (~$206.6)</td><td>38.6M shares.</td></tr>
+<tr><td>ORCL</td><td class="n dn">&gt; −3%</td><td>Dow Jones (no exact figure).</td></tr>
+<tr><td>AMZN</td><td class="n dn">−1.5% to −2.0% (~$239.3)</td><td>44.7M shares, second only to INTC on Investing.com's most-active list. Recovered from −7.1% pre-market.</td></tr>
+<tr><td>GOOGL</td><td class="n dn">−0.7% to −0.9% (~$281.4)</td><td>23.3M shares.</td></tr>
+<tr><td>TSLA / AAPL / META</td><td class="n">−0.3% / −0.1% / +0.1%</td><td>Steady. Apple reports Monday after the close.</td></tr>
+<tr><td>MSFT / CRM</td><td class="n">n/a</td><td>No reliable intraday print captured.</td></tr>
+<tr><td>DELL / HPE / SMCI</td><td class="n dn">−9.0% / −6.1% / −5.1%</td><td>Server and PC hardware contagion (Reuters).</td></tr>
+<tr><td>LITE / ALAB / CRWV</td><td class="n dn">−10.2% / −10.3% / −8.9%</td><td>AI networking and neocloud names hit as hard as PC names.</td></tr>
+<tr><td>AMAT / LRCX</td><td class="n dn">&gt; −5% / −5.3%</td><td>Wafer-fab equipment (Dow Jones).</td></tr>
+<tr><td>RDDT / RBLX / PINS</td><td class="n dn">−24% / −16% / −6%</td><td>Post-earnings (Yahoo). PINS missed on revenue and EPS.</td></tr>
+<tr><td>ATEC / ABR</td><td class="n dn">−32.7% / −24.2%</td><td>Revenue shortfall / net loss and dividend suspended (10:00).</td></tr>
+<tr><td>REGN</td><td class="n up">+12.5% to +12.7%</td><td>Q3 revenue +36%. Largest company on the gainers board.</td></tr>
+<tr><td>OSPN / CDNA / GDYN</td><td class="n up">+34.6% / +25.4% / +24.1%</td><td>Beat-and-raise results (10:00).</td></tr>
+<tr><td>FMC</td><td class="n up">+17.7% to +19.9%</td><td>Rising despite a $2.07B loss and a guidance cut. <b>No catalyst identified</b>; treat with caution.</td></tr>
+<tr><td>CPRI / RIVN</td><td class="n up">+15.8% / ~+6%</td><td>Guidance raise / Jefferies upgrade plus higher delivery outlook.</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">These are worth investigating further, not recommendations to buy or sell. Confidence reflects the strength of evidence for the stated read, not a forecast of returns.</p>
+
+<div class="card"><h3>1. Amazon (AMZN): <span class="dn">~−1.5% to −2.0%</span>, vs. <span class="dn">−7.1%</span> pre-market (gap mostly filled)</h3>
+<p><b>Thesis:</b> This is the clearest opening divergence of the day. In a tape where the Nasdaq is −2.2% and nearly every AI-linked name extended its pre-market loss, Amazon recovered about 5 points of a 7-point gap within 30 minutes. That suggests buyers treated the print as an expectations miss, not a broken story. AWS grew +39% to ~$46B, its fastest in nearly five years. The Street backed the stock right away: Deutsche Bank Buy with a $325 PT, Maxim Buy with a $350 PT, and Morgan Stanley's "mostly an expectations miss" from this morning. If the relative strength holds into midday while tech stays weak, that is a meaningful sign of where dip buyers are willing to step in. Note that the stock (~$239) is still below the ~$243 200-day average cited this morning, so it has not fully repaired.</p>
+<p><b>Evidence:</b> Reuters/Investing.com (AMZN −1.84% on 44.7M shares, ~11:05 AM). StockTitan (−2.02% at 10:00 after −7.14% pre-market). Dow Jones/MarketScreener (~−1.5%). Search summaries of GuruFocus and CNBC (analyst targets; the Deutsche Bank note that buy-side wanted AWS at 40%+).</p>
+<p><b>Risks / what could flip it:</b> Q4 sales guidance was also below consensus, and TTM free cash flow of −$42.4B with "meaningfully more" capex in 2027 is unresolved. Gene Munster argues the retail weakness is real. A second leg lower in the Nasdaq would test whether this was real demand or month-end/short-covering flow. Gap fills that happen early can partly re-open into the afternoon.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>2. Intel (INTC): <span class="dn">−27.9% to −28.8%</span>, vs. −23% to −26% pre-market (gap extended)</h3>
+<p><b>Thesis:</b> This morning's question was whether a ~25% gap would draw two-way trade. It did not. The stock opened lower and kept going, on very heavy volume (~197M shares by late morning). Reuters added a fresh detail that sharpens the bear case. PC chips were ~half of Q3 revenue, and Intel expects that segment to fall <b>more than 20% sequentially</b> in Q4. Finance chief Zinsner said Intel does not expect positive cash flow this year. That fits a persistent de-risking trade more than an early fade. The bull points remain: data center and AI revenue +78% y/y (StockTitan), a Foundry beat, and the KGI upgrade. But those have not drawn buyers so far.</p>
+<p><b>Evidence:</b> Reuters via Investing.com ("on course for worst day ever," PC segment guidance, Hargreaves and Zacks quotes). StockTitan (−28.78% at 10:00; Q4 gross margin guided to 38.0% from 44.1%). Dow Jones/MarketScreener (−28.3%, more than $120B of market value erased).</p>
+<p><b>Risks / what could flip it:</b> Record-volume, record-percentage drops often find a range by afternoon as forced selling is absorbed, so a midday stabilization would not be surprising. Any constructive Foundry or customer headline (e.g., the reported Google TPU order) could spark a sharp short-covering bounce.</p>
+<p><span class="conf">Confidence: Medium that momentum stays negative into midday / Low on the closing level</span></p></div>
+
+<div class="card"><h3>3. AMD, Arm and Qualcomm: <span class="dn">−9% to −10%</span>, all extended from pre-market</h3>
+<p><b>Thesis:</b> The market is selling PC and handset silicon much harder than AI data-center silicon. AMD (−9.2%), Arm (−10.3%) and Qualcomm (−9.7% to −10%) all fell further after the open with no company news. Nvidia is only about −3%. This morning's question for AMD was whether it trades like Intel's PC business or like the AI group. So far it is trading like the PC business. That makes Tuesday's AMD earnings (Nov 3) a direct test. If AMD's client segment holds up and data-center guidance is strong, the gap between AMD's ~−9% and Nvidia's ~−3% looks worth investigating.</p>
+<p><b>Evidence:</b> Investing.com movers (QCOM −9.95%, ARM −10.38%, AMD −9.34%). Reuters (chip names −2% to −10%). Dow Jones (Qualcomm moving in sympathy with wireless and handset demand). StockTitan (AMD −8.53% at 10:00; no release since Thursday's close).</p>
+<p><b>Risks / what could flip it:</b> Intel blamed memory-driven PC price hikes, which hit all x86 and Arm client vendors, so the selling may be justified rather than indiscriminate. Arm still carries the Oct. 16 Delaware jury verdict in the Qualcomm licensing case (24/7 Wall St., search summary). Positioning into AMD's print could keep pressure on through Tuesday.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>4. Micron (MU) vs. SanDisk (SNDK): <span class="dn">−4.2% to −4.5%</span> vs. <span class="dn">−9.8%</span></h3>
+<p><b>Thesis:</b> This morning's brief flagged whether MU would hold up better than SNDK, which would mean the market separates HBM/data-center memory from NAND/consumer exposure. The first 90 minutes say it does. MU is roughly flat vs. its pre-market level (−4.2% then, −4.2% to −4.5% now). SNDK extended from −5% to −8.5% pre-market to −9.8%, despite a strong beat and an 8-for-1 split. The open has reinforced the gap between the two memory names.</p>
+<p><b>Evidence:</b> Investing.com movers (MU −4.47% on 10.6M shares; SNDK −9.84% on 5.6M). Dow Jones/MarketScreener (MU −4.4%). Yahoo/Sozzi on Intel and SanDisk's opposite views of memory pricing.</p>
+<p><b>Risks / what could flip it:</b> MU is still down ~4.5% on a second straight losing day. If the "memory pricing has peaked" narrative spreads to HBM, the relative-strength read fails quickly. One session's divergence is a thin sample.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>5. Nvidia (NVDA) and Broadcom (AVGO): <span class="dn">−3.2% to −3.5%</span> and <span class="dn">~−5%</span></h3>
+<p><b>Thesis:</b> The pre-market idea was that "spenders" (AMZN, GOOGL) and "suppliers" (NVDA, AVGO) might separate. That is only half true. The spenders recovered (AMZN mostly filled its gap, and GOOGL is −0.8%), but the suppliers did not: AVGO extended from −3.8% to ~−5%, and AI-network names (Lumentum −10%, Astera −10%, CoreWeave −9%) fell sharply. NVDA's move is modest and close to its pre-market level, so it is the relative outperformer among AI hardware. Watch whether the market starts reading Amazon's recovery as confidence in its capex plan. That would be supportive for suppliers later in the session.</p>
+<p><b>Evidence:</b> Reuters ticker data (NVDA −3.16%, AVGO −4.96%, TSM −4.29%). Dow Jones/MarketScreener (Broadcom down nearly 5%; CoreWeave −8.9%; NVDA and ORCL each down more than 3%). Investing.com movers (LITE, ALAB).</p>
+<p><b>Risks / what could flip it:</b> Reuters frames the broader worry as "the vast spending required to build out AI infrastructure" and its payoff. If that framing wins, suppliers stay pressured no matter how Amazon trades. Rising VIX (19+) and month-end rebalancing add noise.</p>
+<p><span class="conf">Confidence: Low</span></p></div>
+
+<div class="card"><h3>6. Rivian (RIVN): <span class="up">~+6%</span>, vs. +7% to +9% pre-market (off watchlist)</h3>
+<p><b>Thesis:</b> This morning's test was whether a fundamentals-driven up-gap could survive a Nasdaq down 2%+. It mostly has, giving back only a point or two. The quarter: record deliveries of 19,248 (+46% y/y), revenue of ~$2.2B vs. a ~$2.0B consensus, and 2026 deliveries guided to 67–70k. R2 was the best-selling model in Q3, and Jefferies says R2 volume is running ~2x R1 in Q4 (Buy, $17 PT; "new entry point" after a 32% three-month drop).</p>
+<p><b>Evidence:</b> Search summaries of TipRanks, GuruFocus (shares +6%), CNBC (Jefferies call) and MarketBeat.</p>
+<p><b>Risks / what could flip it:</b> Mizuho cut its PT to $10 from $13. The stock is high-beta and retail-heavy, so an afternoon Nasdaq leg lower could close the gap. The large EBITDA loss persists. Regular-session price data here is from search summaries, not a fetched quote page.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used this run. The only file, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (43 days old), outside the ~14-day freshness window. Refreshing it would bring momentum, volume and earnings-surprise factors back into these briefs.</p>
+
+<h2>6. Sources</h2>
+<p class="note">Pages fetched this run:</p>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html (index strip and quotes at ~11:05 AM ET; open; RDDT, RBLX, PINS; Binance confirmation; Intel and SanDisk on memory)</li>
+<li>https://www.investing.com/news/stock-market-news/nasdaq-tumbles-at-open-as-amazon-intel-add-to-ai-spending-woes-4988016 (Reuters opening levels; most-active, gainers and losers tables)</li>
+<li>https://www.investing.com/news/stock-market-news/intel-warning-sparks-chip-rout-as-pc-weakness-clouds-turnaround-4987123 (Reuters: Intel on course for its worst day; chip and server moves; PC segment guidance)</li>
+<li>https://www.marketscreener.com/news/semiconductor-stocks-fall-as-intel-earnings-trigger-broad-tech-selloff-update-ce785fdbdc80f521 (Dow Jones: AVGO, AMD, MU, AMAT, LRCX, CRWV, NVDA, ORCL, AMZN)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026 (10:00 AM board; ECI print; Intel and Amazon detail; gainers and losers)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (returned a stale cached page; <b>not used</b>)</li>
+<li>https://invezz.com/news/2026/10/30/amazon-stock-falls-why-analysts-are-saying-its-a-buying-opportunity/ (fetch returned empty)</li>
+</ul>
+<p class="note">Used via search-result summaries only:</p>
+<ul class="src">
+<li>https://www.cnbc.com/2026/10/30/amazon-earnings-analysts-stock.html</li>
+<li>https://www.gurufocus.com/news/9158620/amazon-stock-falls-despite-40plus-aws-growth-outlook-through-2028</li>
+<li>https://www.tipranks.com/news/rivian-stock-rivn-jumps-on-jefferies-buy-upgrade-as-r2-demand-fuels-q3-revenue-growth</li>
+<li>https://www.gurufocus.com/news/9159034/rivian-rivn-shares-climb-6-after-jefferies-upgrade-amid-production-and-margin-progress</li>
+<li>https://www.cnbc.com/2026/10/30/rivians-stock-correction-allows-an-entry-point-following-q3-earnings-jefferies-says-.html</li>
+<li>https://www.marketbeat.com/instant-alerts/analyst-rivian-automotive-nasdaq-rivn-upgraded-to-buy-at-jefferies-financial-group-2026-10-30/</li>
+<li>https://247wallst.com/investing/2026/10/16/arm-and-amd-fall-5-as-qualcomm-verdict-adds-to-chip-selloff-taiwan-semiconductor-slips/</li>
+<li>https://www.tipranks.com/news/stock-market-today-oct-30-nasdaq-futures-fall-as-amazon-and-intel-earnings-raise-ai-trade-concerns</li>
+<li>https://www.bls.gov/news.release/eci.nr0.htm (ECI, cited via StockTitan)</li>
+<li>Prior context: alpha_report_2026-10-30_premarket.html (local archive)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
