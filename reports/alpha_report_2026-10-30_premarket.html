@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-10-30 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Friday, October 30, 2026 &middot; last trading day of October</div>
+<p class="note">Automated run. The task is scheduled for ~7:30 AM ET, but this session started at about <b>8:35 AM ET</b>, after the 8:30 AM Employment Cost Index release. <b>The ECI print had not appeared on the BLS page or in any source this run could reach, so the actual figure is not in this report.</b> Check it before the open. Pre-market prices come from snapshots taken between ~5:30 AM and ~8:15 AM ET, and each row says which. Moves are vs. Thursday's close unless noted. CNBC and Bloomberg pages returned empty, and figures marked "search summary" come from search-result excerpts, not the full article text. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 43 days old and outside the ~14-day window. This edition relies on public research only.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>A second straight hyperscaler miss, plus Intel's guidance cut, has turned Thursday's Alphabet sell-off into a broad AI and semiconductor de-risking.</b> At ~8:03 AM ET, Nasdaq 100 futures were <span class="dn">−2.62%</span> (28,788.75), S&amp;P 500 futures <span class="dn">−1.13%</span> (7,666.25), Russell 2000 futures <span class="dn">−0.58%</span> and Dow futures flat at <span class="am">+0.02%</span> (52,521) (Yahoo Finance). The VIX was 18.60 (<span class="dn">+8.1%</span>). Amazon is <span class="dn">−6% to −7%</span> after missing on EPS and revenue and posting record trailing free-cash outflow of $42.4B. Intel is <span class="dn">−23% to −26%</span> after guiding Q4 revenue to $15–16B vs. ~$17B expected. Chip sympathy is heavy: AMD <span class="dn">−8.3%</span>, Broadcom <span class="dn">−3.8%</span>, Nvidia <span class="dn">−2.5% to −2.9%</span>, Micron <span class="dn">−4.2%</span>. PC makers (Dell <span class="dn">−9.5%</span>, HP <span class="dn">−7%</span>) are falling on Intel's warning that PC shipments drop 12% this year and 10% in 2027. The flat Dow reflects energy and defensives: Exxon (<span class="up">+1.4%</span>; profit doubled to $15.4B) and Chevron beat on refining margins.</p>
+<p><b>Asia sold the AI trade hard:</b> Kospi <span class="dn">−3.48%</span> (5,730.74) after falling more than 5% intraday and triggering a sidecar; SK hynix and Kioxia fell ~7% and SoftBank ~6% (CNBC; TradingKey via search summary). Nikkei <span class="dn">−2.1%</span> (~63,290). Hang Seng <span class="up">+1.5% to +1.7%</span>, CSI 300 <span class="dn">−1.4%</span>, ASX <span class="up">+0.2%</span>. The BOJ held at 1.25% but raised its inflation forecast; the yen firmed to ~157.1/$ (Reuters via Yahoo). <b>Europe is only slightly lower:</b> STOXX 600 <span class="dn">−0.25%</span> (647.49) at 08:09 GMT, still on track for weekly and monthly gains. Tech is −2%: ASML ~−5%, Infineon −4%, STMicro −3.8% (Reuters via search summary). BP +1.1%, Puma +4% and Bayer +4.1% are cushioning. <b>Rates and commodities:</b> the 10-year closed Thursday at ~4.99% after a ~6 bp rally. Oil is up again on signs the U.S. may resume strikes on Iran after next week's midterms: WTI ~$104 (<span class="up">+2%</span>); Brent ~$113–117 depending on time and source. Gold is <span class="dn">−1.3%</span> (~$3,977). Bitcoin is <span class="dn">−3.3%</span> (~$77,350), with crypto stocks lower on a reported $6.3B Binance theft (see §3). <b>Tone: risk-off in AI hardware and mega-cap tech, with relative support in energy, staples and the Dow. Month-end flows add noise.</b></p>
+<p class="note">Versus last night's Close Edition: AMZN's after-hours drop (~−5%) and INTC's (−16% to −20%) both <b>deepened overnight</b> to ~−7% and ~−25%. AVGO's ~−3% after-hours drop held at ~−3.8%. The "second hyperscaler disappointment" risk flagged for Friday played out. GOOGL is only ~−1% pre-market after Thursday's −12.64%.</p>
+
+<h2>2. Today's Economic Calendar / Key Events</h2>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>Event</th><th>Notes</th></tr>
+<tr><td class="n">8:30 AM</td><td>Employment Cost Index, Q3</td><td>Consensus +0.8% q/q (prior +0.9%; 3.4% y/y prior). <b>Released before this run; print not captured.</b> A hot reading would add to bets on a December Fed hike.</td></tr>
+<tr><td class="n">9:45 AM</td><td>MNI Chicago PMI, October</td><td>54.6 expected vs. 58.8 prior (Yahoo).</td></tr>
+<tr><td class="n">12:00 PM</td><td>Fed's Daly, introductory remarks</td><td>Per TD Economics calendar.</td></tr>
+<tr><td class="n">12:30 PM</td><td>Fed's Musalem, keynote</td><td>First Fed speakers since Wednesday's hold at 3.75%–4.00%, which drew two dissents in favor of a hike (Hammack, Cook).</td></tr>
+<tr><td class="n">Today</td><td>Euro-zone Q3 GDP flash</td><td>France's Q3 GDP unexpectedly contracted (Reuters headline). The ECB held Thursday and signaled a possible December hike.</td></tr>
+<tr><td class="n">Pre-open</td><td>Earnings: XOM, CVX, ABBV, AZN, BP, SNY, GD, MDLZ (out)</td><td>XOM and CVX beat on refining margins, AZN beat, MDLZ beat (+6%).</td></tr>
+<tr><td class="n">Next week</td><td>AAPL (Mon Nov 2, after close); AMD (Tue Nov 3); U.S. midterms (Nov 3)</td><td>Apple's fiscal Q4 date is confirmed by Apple IR via MacRumors and others. It is John Ternus's first call as CEO.</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt move</th><th>Catalyst note</th><th>Snapshot / source</th></tr>
+<tr><td>INTC</td><td class="n dn">−23% to −26% (~$68–69 vs. $92.07)</td><td>Q3 EPS $0.52 beat ($0.41 est.); revenue in line at $16.5B. Q4 revenue guidance of $15–16B vs. ~$17B, and Q4 EPS guidance of $0.25 vs. $0.43. Warned of cash burn and a PC slowdown through 1H27; an Israel fab explosion costs ~$300M of Q4 revenue. BofA cut to Neutral (PT $145→$100); KGI upgraded to Outperform ($95).</td><td class="n">8:03–8:14 AM; Yahoo, 24/7 Wall St.</td></tr>
+<tr><td>AMZN</td><td class="n dn">−6.5% to −7% (~$227.25)</td><td>Q3 EPS $1.89 vs. $1.96; revenue $201.94B vs. $202.31B. Q4 sales guidance below consensus. AWS +39% to $46.0B. Q3 capex $77.3B; TTM FCF −$42.4B; 2026 capex held at $220B, with 2027 "meaningfully more."</td><td class="n">8:14 AM; 24/7, Yahoo, CNBC</td></tr>
+<tr><td>AMD</td><td class="n dn">−8.3%</td><td>Read-through from Intel's PC warning and the AI-capex worries. Reports Nov 3.</td><td class="n">~6:55 AM; TipRanks</td></tr>
+<tr><td>AVGO</td><td class="n dn">−3.8% to −3.9%</td><td>AI-infrastructure sympathy; extends Thursday's after-hours weakness.</td><td class="n">~6:55 AM; TipRanks</td></tr>
+<tr><td>NVDA</td><td class="n dn">−2.5% to −2.9%</td><td>AI-capex sympathy. Also: Bloomberg reports Nvidia is in talks to give credit guarantees for an Nscale data center that Anthropic plans to use. A report that a suspected Chinese intelligence asset at customer Megaspeed got close to Jensen Huang drew congressional criticism. Thursday close $213.66.</td><td class="n">6:00–6:55 AM; Stocktwits, TipRanks, 24/7</td></tr>
+<tr><td>MU</td><td class="n dn">−4.2%</td><td>Memory sympathy. SanDisk beat and guided above estimates, with an 8-for-1 split, yet SNDK is <span class="dn">−5% to −8.5%</span>. Intel blamed high memory prices for the PC slump. SK hynix fell ~7% in Seoul.</td><td class="n">~5:30 AM; TipRanks</td></tr>
+<tr><td>ASML</td><td class="n dn">~−5% (Amsterdam)</td><td>European tech sell-off; the U.S. ADR likely tracks it.</td><td class="n">~4:10 AM ET; Reuters via search summary</td></tr>
+<tr><td>GOOGL</td><td class="n dn">~−1.0% ($281.10)</td><td>Day 2 after −12.64%, its worst session since the 2004 IPO. Goldman still calls it a top AI pick.</td><td class="n">8:14 AM; 24/7</td></tr>
+<tr><td>MSFT</td><td class="n dn">~−0.5% ($527.52)</td><td>Holding up relatively well after cutting its capex guide to $170B (from $175B) on third-party GPU delays.</td><td class="n">8:14 AM; 24/7</td></tr>
+<tr><td>AAPL, META, TSM, ORCL, CRM, QCOM, TSLA</td><td class="n">n/a</td><td>No reliable pre-market print found for these names this run. Expect the tape to pull them lower; TSM especially is exposed to the chip complex.</td><td class="n">—</td></tr>
+<tr><td>RDDT</td><td class="n dn">−21% to −23% (~$102.82)</td><td>Beat Q3 (EPS $1.40, revenue $895M), but Q4 guidance of $1.00–1.03B is below the $1.05B consensus. Accelerating search-referral declines; moving to logged-in-only access. Oppenheimer cut to Perform.</td><td class="n">7:28–8:14 AM; Investing.com, 24/7</td></tr>
+<tr><td>RBLX</td><td class="n dn">−17% to −19%</td><td>DAUs −9% y/y to 138M (first annual decline). Q4 bookings guidance of $1.89–2.0B vs. ~$2.02B, and adj. EBITDA to turn negative.</td><td class="n">Investing.com, Stocktwits</td></tr>
+<tr><td>TWLO</td><td class="n dn">−17.5%</td><td>Beat Q3, but sees Q4 organic growth slowing to 11–12% from 16%.</td><td class="n">Investing.com</td></tr>
+<tr><td>DELL / HPQ</td><td class="n dn">−9.5% / −7%</td><td>Intel says PC shipments fall 12% in 2026 and 10% in 2027.</td><td class="n">~6:05 AM; TipRanks</td></tr>
+<tr><td>COIN / MSTR / HOOD</td><td class="n dn">−5.2% / −5.1% / −5.7%</td><td>Reported $6.3B Binance theft (Investing.com, TipRanks). <b>Not independently confirmed this run</b>; a general search found no corroboration. Bitcoin −3.3%.</td><td class="n">Investing.com</td></tr>
+<tr><td>RIVN</td><td class="n up">+7% to +9%</td><td>Q3 revenue $2.16B (+38%) beat; 2026 delivery guidance raised to 67–70k on R2 demand. Jefferies upgraded to Buy ($17 PT).</td><td class="n">6:00–8:14 AM; Stocktwits, Investing.com, 24/7</td></tr>
+<tr><td>MDLZ</td><td class="n up">+6.1%</td><td>EPS $0.78 vs. $0.71; gross margin +380 bp; 2026 outlook kept.</td><td class="n">Investing.com</td></tr>
+<tr><td>XOM</td><td class="n up">~+1.4%</td><td>Q3 profit doubled to $15.4B on refining margins amid the Middle East war.</td><td class="n">Search summary; Yahoo</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">These are things worth watching at the open, not recommendations to buy or sell. Confidence reflects how strong the evidence is for the stated thesis, not a forecast of returns.</p>
+
+<div class="card"><h3>1. Intel (INTC): <span class="dn">−23% to −26%</span> pre-market (~$68–69)</h3>
+<p><b>Thesis:</b> This is the day's epicenter and the stock driving the semiconductor tape. The guidance cut is large (Q4 revenue ~$1–2B below the Street, EPS about half), and management stretched the PC weakness into 1H27. But the business mix underneath is not uniformly weak. Data-center CPUs ($7.3B vs. $6.6B est.) and Foundry ($6.7B, +58% y/y) beat, and The Information reports a Google order for 3M TPUs. Analysts split right away (KGI upgrade vs. BofA downgrade). The question at the open is whether a ~25% gap gets two-way trade, with buyers focusing on foundry and data center, or keeps extending as funds de-risk PC exposure.</p>
+<p><b>Evidence:</b> Yahoo Finance (Howley) for the results, guidance and segment detail. Yahoo live blog (Sozzi): CEO Lip-Bu Tan said the "PC correction has accelerated over the last two months." 24/7 Wall St. for the rating changes. Investing.com: Intel expects to burn cash this year.</p>
+<p><b>Risks / what could reverse it:</b> A cash-burn warning plus a supply hit (the Israel fab) is a bad mix for a balance-sheet-sensitive name. Gaps this large on record volume often set a range rather than reverse. Further PC-OEM cuts (Dell, HP) would reinforce the bear case.</p>
+<p><span class="conf">Confidence: High that it dominates the open / Low on direction</span></p></div>
+
+<div class="card"><h3>2. Amazon (AMZN): <span class="dn">−6.5% to −7%</span> pre-market (~$227)</h3>
+<p><b>Thesis:</b> The market is weighing a cash-flow problem against a growth story. AWS grew 39% to $46.0B, its fastest in almost five years, with a record 13.9% operating margin. Core online retail grew only 2% and ads +11% missed. Q3 capex of $77.3B drove TTM free cash flow to −$42.4B, nearly double the 2022 record, and Jassy says 2027 capex will be "meaningfully more." The stock is now well below its 200-day average (~$243.4), which it had held at Thursday's close. Watch whether "buy the dip" sell-side commentary (CNBC: Morgan Stanley calls it "mostly an expectations miss") finds buyers after the open, or whether the stock trades with the Nasdaq.</p>
+<p><b>Evidence:</b> CNBC Q3 report (search summary), Yahoo (Blikre) cash-burn chart, Quartz (AWS +39%), Investing.com (Q4 sales guidance below consensus), 24/7 Wall St. pre-market price.</p>
+<p><b>Risks:</b> Q4 guidance is soft as well, so this is not only a capex story. Another leg lower in NDX futures would likely dominate any stock-specific bid. Higher memory prices also pressure consumer devices.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>3. AMD (AMD): <span class="dn">−8.3%</span> pre-market</h3>
+<p><b>Thesis:</b> A sympathy move on a rival's guidance, larger than the move in Nvidia or Broadcom. AMD shares the PC exposure Intel flagged. But its bull case rests on data-center CPU/GPU demand, which Intel's own data-center beat suggests is still strong. AMD reports Nov 3. Susquehanna raised its PT to $650 ahead of the print, expecting "better" results and guidance. Watch whether AMD trades more like Intel's PC business or like the AI-infrastructure group.</p>
+<p><b>Evidence:</b> TipRanks (pre-market moves, Q4 Intel guidance, AMD consensus EPS $1.95 on $13.09B revenue). Yahoo/Intel commentary on agentic-AI-driven CPU demand.</p>
+<p><b>Risks:</b> AMD's client segment is exposed to the same memory-cost-driven PC slump. Positioning into earnings could make investors quick to cut risk, and the broader AI-capex debate weighs on its GPU narrative too.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>4. Nvidia (NVDA) and Broadcom (AVGO): <span class="dn">−2.5% to −3.9%</span> pre-market</h3>
+<p><b>Thesis:</b> The hyperscaler numbers that are hurting AMZN and GOOGL are revenue for AI suppliers. Amazon held its $220B 2026 capex plan and signaled more in 2027, and Alphabet kept $195–205B. Microsoft trimmed to $170B, but because of GPU-provider delays, not lower demand. If the market starts to tell "spenders" apart from "suppliers," NVDA and AVGO could show relative strength after the open. If it treats the whole AI complex as one trade, they keep falling with Seoul (SK hynix −7%, Kospi −3.5%).</p>
+<p><b>Evidence:</b> TipRanks (capex figures, pre-market moves). Stocktwits (Bloomberg report on Nvidia credit-guarantee talks for Nscale/Anthropic). 24/7 Wall St. (Megaspeed/Alice Huang report; NVDA guides $108B ±2% for FQ3, already excluding China data-center compute).</p>
+<p><b>Risks:</b> Supplier credit guarantees (Nscale) can be read as Nvidia financing its own demand, which feeds the "circular AI spending" worry. Political risk around China and export controls is rising (Sen. Warren's call for answers). A hot ECI or hawkish Fed speakers would hit long-duration growth again.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>5. Micron (MU): <span class="dn">−4.2%</span> pre-market</h3>
+<p><b>Thesis:</b> The memory-cycle debate is now in the open. SanDisk printed revenue +378% y/y to $11.03B, guided Q2 to $12.2–12.6B and announced an 8-for-1 split, and its stock still fell (−5% to −8.5% pre-market). Intel says high memory prices are destroying PC demand, the classic sign of a peak. SanDisk's CEO says every NAND segment grows next year. Micron sits in the middle, with the second day of losses after Thursday's −4.98%. Watch whether MU holds better than SNDK, which would suggest the market is separating HBM/data-center memory from PC/consumer exposure.</p>
+<p><b>Evidence:</b> TipRanks (moves, SNDK results). Yahoo live blog (Intel vs. SanDisk on memory). 24/7 Wall St. (SNDK pre-market price). Stocktwits (analyst says memory pricing peak is "on the horizon").</p>
+<p><b>Risks:</b> If the pricing-peak narrative takes hold, memory names can fall well past what fundamentals justify. Korea's memory sell-off (Samsung −3%, SK hynix −7%) suggests global funds are cutting the whole group.</p>
+<p><span class="conf">Confidence: Low</span></p></div>
+
+<div class="card"><h3>6. Rivian (RIVN): <span class="up">+7% to +9%</span> pre-market (outside watchlist)</h3>
+<p><b>Thesis:</b> One of the few notable upside gappers on a risk-off morning. It beat on revenue ($2.16B vs. ~$1.99B), gross profit ($176M vs. ~$110M) and EPS. It raised 2026 deliveries to 67–70k on R2 demand, narrowed its EBITDA-loss outlook to ~$1.8B, and got a Jefferies upgrade to Buy ($17). Whether a fundamentals-driven gap holds while the Nasdaq is down 2%+ is a useful read on how willing buyers are to take risk at the open.</p>
+<p><b>Evidence:</b> Investing.com (results and guidance), Stocktwits (VW partnership reaffirmed), 24/7 Wall St. (Jefferies upgrade).</p>
+<p><b>Risks:</b> This is a high-beta, retail-heavy stock in a falling tape, so gap-fill risk is high if NDX extends lower. The EBITDA loss is still large.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>7. Reddit (RDDT): <span class="dn">−21% to −23%</span> pre-market (outside watchlist)</h3>
+<p><b>Thesis:</b> This is about the business model, not one quarter. Reddit beat Q3 (revenue +53%), but warned that search-referral declines are accelerating and is moving to a logged-in-only experience. That reads as a direct effect of AI-driven search changes on traffic-dependent platforms. It is also a test of how the market prices "AI disintermediation" losers alongside the AI-capex sell-off.</p>
+<p><b>Evidence:</b> Investing.com (EPS $1.40 vs. $1.33; Q4 guidance of $1.00–1.03B vs. $1.05B), Stocktwits (CEO comments), 24/7 Wall St. (Oppenheimer downgrade).</p>
+<p><b>Risks:</b> A logged-in strategy could help monetization over time, and a gap of more than 20% on a beat can attract short-covering. The guidance miss is modest (~3% at the midpoint) compared with the price move.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used this run. The only file, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (43 days old), outside the ~14-day freshness window. Refreshing it would bring momentum, volume and earnings-surprise factors back into these briefs.</p>
+
+<h2>6. Sources</h2>
+<p class="note">Pages actually fetched:</p>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html (futures strip ~8:03 AM ET, oil, BOJ, calendar, Intel/SanDisk, Amazon cash burn)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-fall-amzn-100738749.html (Stocktwits: 6 AM futures, NVDA, RDDT, RBLX, RIVN, oil)</li>
+<li>https://finance.yahoo.com/technology/article/intel-tops-q3-earnings-estimates-but-falls-short-of-q4-outlook-on-sluggish-pc-sales-as-stock-plunges-20-200949548.html (Intel results and guidance; Thursday closing index levels)</li>
+<li>https://www.investing.com/news/stock-market-news/premarket-movers-intel-amazon-drop-crypto-stocks-slide-after-binance-theft-4987099 (pre-market movers)</li>
+<li>https://247wallst.com/investing/2026/10/30/buy-sell-or-hold-todays-top-upgrades-and-downgrades-boston-scientific-doordash-ge-vernova-honeywell-aerospace-incyte-intel-reddit-rivian-automotive-and-more/ (pre-market prices, rating changes)</li>
+<li>https://247wallst.com/investing/2026/10/30/nvidia-facing-questions-as-suspected-chinese-intelligence-asset-got-close-to-jensen-huang/</li>
+<li>https://www.tipranks.com/news/why-are-chip-stocks-amd-nvda-and-avgo-falling-in-premarket-trading-today-oct-30</li>
+<li>https://www.tipranks.com/news/why-are-micron-sandisk-and-sk-hynix-stocks-falling-again-today-despite-strong-sndk-earnings-october-30</li>
+<li>https://www.tipranks.com/news/why-are-dell-and-hpq-stocks-plunging-in-premarket-trading-today-october-30</li>
+<li>https://www.globalbankingandfinance.com/european-shares-ease-ai-driven-tech-selloff-deepens/ (Reuters: STOXX 600)</li>
+<li>https://www.bls.gov/eci/ (ECI schedule; Q3 print not yet posted when fetched)</li>
+</ul>
+<p class="note">Used via search-result summaries only (full page not fetched or returned empty):</p>
+<ul class="src">
+<li>https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html</li>
+<li>https://www.cnbc.com/2026/10/30/amazon-earnings-analysts-stock.html (fetch returned empty)</li>
+<li>https://www.cnbc.com/2026/10/30/stocks-making-the-biggest-moves-premarket-intc-amzn-rddt-cvx.html (fetch returned empty)</li>
+<li>https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html (Asia closes)</li>
+<li>https://www.bloomberg.com/news/articles/2026-10-30/us-stock-futures-today-amazon-intel-mondelez-reddit-stryker (fetch returned empty)</li>
+<li>https://www.tradingkey.com/analysis/stocks/more/262258740-japan-korea-stocks-skhy-kospi-nikkei-samsung-kioxia-ai-softbank-fomc-hbm-google-amzn-tradingkey</li>
+<li>https://www.tradingview.com/news/te_news:596714:0-european-stocks-fall-as-tech-weighs/</li>
+<li>https://qz.com/amazon-aws-cloud-growth-fastest-earnings-102926</li>
+<li>https://economics.td.com/domains/economics.td.com/documents/reports/bottom-line/tables/2026-10-23/upcoming.htm (Fed speaker times)</li>
+<li>https://macrumors.com/2026/10/06/apple-q4-2026-earnings-nov-2</li>
+<li>Prior context: alpha_report_2026-10-29_close.html (local archive)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
