@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-02 – Afternoon Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Afternoon Edition</span> &nbsp; Monday, November 2, 2026 &middot; Apple &amp; Palantir report after the close &middot; midterm elections tomorrow &middot; October payrolls Friday</div>
+<p class="note">Automated run. The task is scheduled for ~2:00 PM ET, but this session started at about <b>3:09 PM ET</b>, so the "afternoon" picture is a set of timestamped snapshots: Yahoo Finance's Dow print at 2:08 PM, CNBC's 1:56 PM levels (via a search summary of StockTitan), Investing.com's market wrap at 2:34 PM, and two live quote panels read at time of fetch, about <b>3:10 PM ET</b> (Investing.com's index/rates/commodities strip and most-active/gainers/losers tables, and 24/7 Wall St.'s index ticker and quote chips). All % moves are <b>vs. Friday's (Oct. 30) close</b>. Volumes are cumulative intraday share counts from Investing.com's tables at ~3:10 PM. Yahoo's most-active page served cached data from an earlier session (e.g., Intel at $93) and was discarded. No live afternoon quotes were found for AVGO, TSM, ASML or CRM, or for Tempus AI and the airlines after ~1:15 PM. Figures marked "search summary" come from search-result excerpts, not a fetched page. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 46 days old and outside the ~14-day window, so there is no WRDS section in this edition.</p>
+
+<h2>1. How the Afternoon Has Traded</h2>
+<p><b>The rebound is gone on the S&amp;P 500 and has reversed on the Nasdaq. Only the Dow is holding, on oil and rotation.</b> At 2:34 PM (Investing.com) the S&amp;P 500 was 7,572.54 (<span class="dn">−0.1%</span>) after being up as much as 1.1%; the Nasdaq Composite was 25,329.99 (<span class="dn">−0.4%</span>) after being up as much as 1.4%; the Dow was 52,115.90 (<span class="up">+0.7%</span>). At ~3:10 PM the S&amp;P was 7,575.18 (<span class="dn">−0.06%</span>), the Nasdaq 100 28,172 (<span class="dn">−0.75%</span>), the Dow 52,146.30 (<span class="up">+0.73%</span>) and the Russell 2000 ~2,820 (<span class="up">~+0.2%</span>, 24/7 Wall St.; it was +0.86% at 12:37). <b>Volatility is being bid:</b> the VIX was 20.73 (<span class="dn">+6.75%</span>) at ~3:10, up from 18.64 at 10:35 and 19.61 at 1:15. <b>Oil has not moved:</b> Brent $104.33 (<span class="up">−8.0%</span>), WTI $96.23 (<span class="up">−7.6%</span>). Treasuries gave back part of their rally: the 10-year was 4.897% (−3.1 bp, vs. −5.7 bp at 1:15), the 30-year 5.275%, and the 10s–2s spread stayed ~31 bp (+4 bp). Gold was +1.45% (~$3,955) and silver +2.95%.</p>
+<p><b>What drove the afternoon leg down:</b> Investing.com attributes it to "yet another debt raise from an artificial intelligence hyperscaler" (Oracle's $10B stock + $10B bonds) plus Anthropic's amended S-1 showing ~$895.4B of committed compute and data-center spend. Jones Trading's Michael O'Rourke: the mega-cap debt sales "triggered a new round of selling in the neoclouds because they make it that much harder for those companies to raise the capital they need." At 2:54 PM, Applied Digital's CEO said ~800 MW of its planned capacity still needs financing (24/7 Wall St.). The selling then spread from the deal- and raise-specific names (ORCL, MRVL/LITE) into semis (AMD −6.2%, MU −5.2%, Astera Labs −10.6%), storage (STX −7.7%) and even Microsoft (−1.6%). Nvidia went from +1.95% at 10:46 to slightly negative.</p>
+<p><b>Fed:</b> No FOMC statement today; the last meeting was the week of Oct. 26, and the target range is 3.75%–4.00% (Yahoo). The Fed's 2:00 PM item was the <b>October 2026 Senior Loan Officer Opinion Survey</b> (the Fed's SLOOS page shows it posted, last updated Nov. 2). Per a search summary of the release (the release page itself came back empty when fetched), banks tightened standards on net across all three commercial real estate loan categories, and CRE loan demand weakened. That reverses the July survey's CRE easing (KPMG summary). No market reaction tied to it was found, and no Fed-speaker headlines were found for today. Rate pricing is unchanged in direction: 76% (CME via Yahoo) to 78% (Investing.com) odds of a 25 bp <i>hike</i> in December. <b>Tone: a rotation day that turned risk-off for anything tied to AI capital spending. Cyclicals, staples, health care winners and the oil-relief trade held, and hedging demand rose into tonight's Apple report and tomorrow's vote.</b></p>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>S&amp;P 500</th><th>Nasdaq</th><th>Dow</th><th>Source</th></tr>
+<tr><td class="n">~10:30–10:42</td><td class="up">+1.0% (session high ~+1.1%)</td><td class="up">Comp. +1.3% (high ~+1.4%)</td><td class="up">+1.1%</td><td>CNBC via StockTitan; Investing.com (highs)</td></tr>
+<tr><td class="n">12:37</td><td class="up">+0.38% (7,609.11)</td><td class="up">Comp. +0.35%</td><td class="up">+0.99%</td><td>Yahoo (midday edition)</td></tr>
+<tr><td class="n">1:56</td><td class="up">+0.2%</td><td class="up">Comp. +0.1%</td><td class="up">+0.9% (+481 pts)</td><td>CNBC via StockTitan (search summary)</td></tr>
+<tr><td class="n">~2:08</td><td class="up">+0.09% (chip)</td><td class="dn">Comp. −0.16% (chip)</td><td class="up">+0.83% (52,200.75)</td><td>Yahoo Finance live blog</td></tr>
+<tr><td class="n">2:34</td><td class="dn">−0.1% (7,572.54)</td><td class="dn">Comp. −0.4% (25,329.99)</td><td class="up">+0.7% (52,115.90)</td><td>Investing.com market wrap</td></tr>
+<tr><td class="n">~3:10</td><td class="dn">−0.06% (7,575.18)</td><td class="dn">NDX −0.75% (28,172.30)</td><td class="up">+0.73% (52,146.30)</td><td>Investing.com live strip</td></tr>
+<tr><td class="n">~3:10</td><td>7,579.20 (ticker shows −0.11%)</td><td class="dn">NDX −0.79% (28,186.40)</td><td class="up">+0.69% (52,152.60)</td><td>24/7 Wall St. ticker</td></tr>
+</table></div>
+<p class="note">The 24/7 ticker's S&amp;P level (7,579.20) is only −0.01% vs. Friday's 7,580.07 close, which does not match its −0.11% label. Treat the S&amp;P as roughly flat at ~3:10 PM.</p>
+
+<h2>2. Follow-Up on Earlier Calls</h2>
+<p class="note">Grades today's Pre-Market, Open and Midday editions against the afternoon prints above. "Played out" means the move continued in the direction the earlier edition expected. "Faded" means it gave back a meaningful part of the move. "Reversed" means it flipped sign.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Earlier read</th><th>Midday print</th><th>Afternoon print</th><th>Grade</th></tr>
+<tr><td>MRVL / LITE</td><td>Midday: the selling has moved to the acquirer; spread ~10–12%; the tell is whether MRVL finds a floor</td><td>MRVL −8.73%, LITE −14.07% (11:29); −9.48% / −15.19% (1:01)</td><td>MRVL <span class="dn">−13.42%</span> ($170.05), LITE <span class="dn">−17.15%</span> ($696.48)</td><td class="up">Played out. MRVL found no floor; the spread narrowed to ~9.9% (see §4)</td></tr>
+<tr><td>INTC</td><td>Midday: day-two selling accelerating, not exhausting</td><td>−5.19% (~$62.35)</td><td><span class="dn">−8.58%</span> ($60.12), 173.8M shares</td><td class="up">Played out (extended)</td></tr>
+<tr><td>ORCL</td><td>Midday: the overhang is still being worked through</td><td>−6.06% (~1:15)</td><td><span class="dn">−8.62%</span> ($119.40), below its 10:01 AM low</td><td class="up">Played out (extended)</td></tr>
+<tr><td>AAPL</td><td>Midday: de-risking ahead of the report</td><td>−1.87% ($338.19)</td><td><span class="dn">−1.67%</span> to <span class="dn">−2.17%</span> ($337.16–338.86)</td><td class="am">Held</td></tr>
+<tr><td>IDXX</td><td>Midday: beat-and-raise names keep running</td><td>+20.4% to +20.8%</td><td><span class="up">+21.12%</span> ($667.60)</td><td class="up">Played out (held into late afternoon)</td></tr>
+<tr><td>TEM</td><td>Midday: same as IDXX</td><td>+15.5% (~1:15)</td><td>No afternoon print found</td><td>Not graded</td></tr>
+<tr><td>Oil trade</td><td>Open/Midday: more likely to hold than fade</td><td>Brent −8.25%</td><td>Brent <span class="up">−8.0%</span>; producers CTRA <span class="dn">−8.62%</span>, APA <span class="dn">−7.19%</span></td><td class="up">Held. No afternoon airline prints found</td></tr>
+<tr><td>NVDA</td><td>Open: data-center leader's strength may hold</td><td>+1.08% ($206.84)</td><td><span class="dn">−0.26%</span> ($204.10) to <span class="dn">−0.57%</span> ($203.47)</td><td class="dn">Reversed</td></tr>
+<tr><td>AMZN</td><td>Open: post-earnings recovery may have legs</td><td>+4.29% ($250.65)</td><td><span class="up">+3.33%</span> ($248.37)</td><td class="am">Held, still fading</td></tr>
+<tr><td>AMD</td><td>Pre-market: chip rebound (~+2.2%); not graded at midday</td><td>−3% ($489.03, 12:49)</td><td><span class="dn">−6.19%</span> ($473.58)</td><td class="dn">Reversed</td></tr>
+</table></div>
+<p><b>Scorecard:</b> the midday edition's three "selling continues" calls (Marvell, Intel, Oracle) all extended, and IDEXX held. The miss was the broader midday read that the Nasdaq's fade looked like a stall. It was the start of a reversal: the Composite went from +0.35% at 12:37 to −0.4% at 2:34. The two long-side chip reads from earlier in the day (Nvidia at the open, AMD pre-market) both flipped negative. Microsoft did too (+0.5% late morning → −1.58%).</p>
+
+<h2>3. Afternoon Movers</h2>
+<p class="note">% vs. Friday's close at ~3:10 PM ET (Investing.com tables and strip) unless noted. A second print from 24/7 Wall St.'s quote chips (also ~3:10) is given where it differs. Volume is cumulative intraday shares. "Not verified" means no catalyst was confirmed this run.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move</th><th>Volume / catalyst note</th></tr>
+<tr><th colspan="3">Fixed watchlist</th></tr>
+<tr><td>AMZN</td><td class="up n">+3.33% ($248.37)</td><td>Peaked at +5.3% around 10:35–11:10. Still the strongest megacap</td></tr>
+<tr><td>TSLA</td><td class="up n">+1.11% ($404.23)</td><td>24/7: +0.91% ($403.45). Held above $400</td></tr>
+<tr><td>GOOGL</td><td class="up n">+1.04% ($282.74)</td><td>Its €6B bond sale has been received better than Oracle's raise (Yahoo)</td></tr>
+<tr><td>NVDA</td><td class="dn n">−0.26% ($204.10)</td><td>71.05M shares. 24/7: −0.57% ($203.47). Was +1.95% at 10:46</td></tr>
+<tr><td>META</td><td class="dn n">−0.61% ($611.26)</td><td>Small loss all day. No catalyst found</td></tr>
+<tr><td>QCOM</td><td class="dn n">−1.37% ($162.53)</td><td>24/7 chip. Reports Wednesday</td></tr>
+<tr><td>MSFT</td><td class="dn n">−1.58% ($513.66)</td><td>19.97M shares. Was +0.5% late morning. Not verified; consistent with AI-spend selling</td></tr>
+<tr><td>AAPL</td><td class="dn n">−1.67% ($338.86)</td><td>33.30M shares. 24/7: −2.17% ($337.16). Reports at 4:30 PM ET</td></tr>
+<tr><td>MU</td><td class="dn n">−5.19% ($838.85)</td><td>21.26M shares. Was +2.35% pre-market (Benzinga) and −3.42% at 1:02 PM (Fool), both via search summary</td></tr>
+<tr><td>AMD</td><td class="dn n">−6.19% ($473.58)</td><td>22.26M shares. 24/7: −6.47%. Reports Tuesday after the close; options implied ~8.4–9% (search summary)</td></tr>
+<tr><td>INTC</td><td class="dn n">−8.58% ($60.12)</td><td><b>173.83M shares</b> vs. a 107.7M three-month average (Fool), already ~1.6× a full day</td></tr>
+<tr><td>ORCL</td><td class="dn n">−8.62% ($119.40)</td><td>41.63M shares. $10B stock + $10B bond offering, not yet priced as of this run</td></tr>
+<tr><td>AVGO, TSM, ASML, CRM</td><td>n/a</td><td>No reliable afternoon quote found</td></tr>
+<tr><th colspan="3">Outside the watchlist: losers</th></tr>
+<tr><td>LITE / MRVL</td><td class="dn n">−17.15% / −13.42%</td><td>12.11M / 45.75M shares. $115B all-stock deal; spread ~9.9% (§4)</td></tr>
+<tr><td>ALAB</td><td class="dn n">−10.60% ($231.29)</td><td>Not verified. AI-connectivity peer of MRVL</td></tr>
+<tr><td>CRWV</td><td class="dn n">−8.40% ($50.26)</td><td>36.84M shares. Neocloud financing worries (see APLD)</td></tr>
+<tr><td>APLD / IREN / NBIS</td><td class="dn n">−8.22% / −7.85% / −7.76%</td><td>24/7 chips. Applied Digital's CEO said ~800 MW still needs financing</td></tr>
+<tr><td>STX / SNDK</td><td class="dn n">−7.69% / −5.56%</td><td>UBS cut Seagate's price target and pushed its $1B run-rate goal to 2028 (Investing.com). SanDisk not verified</td></tr>
+<tr><td>CTRA / APA</td><td class="dn n">−8.62% / −7.19%</td><td>Oil −8%</td></tr>
+<tr><td>OFRM / KOS</td><td class="dn n">−38.2% / −13.5% (1:00)</td><td>Toddler-snack recall; Q3 miss and lower Q4 production guidance (StockTitan)</td></tr>
+<tr><th colspan="3">Outside the watchlist: gainers</th></tr>
+<tr><td>IDXX</td><td class="up n">+21.12% ($667.60)</td><td>1.49M shares. Q3 beat and raised 2026 guidance. Leads the S&amp;P 500</td></tr>
+<tr><td>ENPH</td><td class="up n">+9.36%</td><td>6.07M shares. Not verified</td></tr>
+<tr><td>CBRE / HWM / TAP / PNR / FMC</td><td class="up n">+7.03% / +6.84% / +6.68% / +6.57% / +6.53%</td><td>Top S&amp;P gainers. Not verified; consistent with the rotation into non-tech</td></tr>
+<tr><td>SPCX</td><td class="up n">+2.72% ($138.39)</td><td>70.90M shares. Report of talks over EchoStar's Boost Mobile</td></tr>
+<tr><td>EVGO / PERI</td><td class="up n">+45.6% / +31.3% (1:00)</td><td>$2.00/sh cash proposal from LS Power; Affle cash deal at $11.70 (StockTitan)</td></tr>
+</table></div>
+<p class="note">24/7 Wall St.'s winners panel also listed "PSKY / New Pluto Global" at +105.79% ($9.78). That could not be verified and may be a data artifact, so it is left out of the table.</p>
+
+<h2>4. Afternoon Alpha Candidates</h2>
+<p class="note">These are research observations only: names where the afternoon move is worth investigating further into the close and after hours. They are not recommendations to buy or sell.</p>
+
+<div class="card">
+<h3>1. Oracle (ORCL) −8.6% and the AI-financing cluster (CRWV, APLD, NBIS, IREN −7.8% to −8.4%): "who can fund AI capex" is now the market's main question</h3>
+<p><b>Move:</b> ORCL went from −6.06% at ~1:15 to −8.30% ($119.83, 24/7) and <b>−8.62%</b> ($119.40) at ~3:10, on 41.6M shares. That is a new session low, below the 10:01 AM low. Neoclouds were ~−6% in 24/7's 2:54 PM story and −7.8% to −8.4% on the ~3:10 quote chips.</p>
+<p><b>Thesis:</b> At midday, Oracle looked like a single-stock overhang. By mid-afternoon the same concern had spread to every company that needs outside capital to build AI capacity. O'Rourke (Jones Trading, via Investing.com) put it directly: hyperscaler debt sales make it "that much harder" for neoclouds to raise money. Applied Digital's CEO added a concrete data point. About 800 MW of its 1.4 GW plan is still unfinanced, and he said higher Treasury yields and wider credit spreads have raised borrowing costs. Its Q1 FY27 interest expense ($77.4M) was larger than its base rent ($65.8M). For Oracle, the reference price for the $10B common offering has moved: at Friday's $130.67 close it would be ~76.5M shares; at $119.40 it is ~83.8M, about 9% more dilution for the same dollars. Things to check into the close and overnight: the pricing level and discount, whether the neocloud group closes at its lows, and whether Alphabet's and Microsoft's better-received bond deals keep the gap between "balance-sheet-funded" and "market-funded" AI names widening.</p>
+<p><b>Evidence:</b> Investing.com wrap (2:34 PM; O'Rourke quote; Anthropic ~$895.4B committed spend). Investing.com losers table (ORCL, CRWV). 24/7 Wall St. (APLD CEO comments, interest vs. rent, APLD/NBIS/IREN/CRWV quotes). Yahoo (Oracle seen as more leveraged than Alphabet; Microsoft's $25B bond deal). Share counts are this report's arithmetic ($10B ÷ price).</p>
+<p><b>Risks / what flips it:</b> Once an offering is priced, uncertainty about size and discount goes away, and stocks often get relief. Oracle frequently moves more than 5% in a day. A strong Apple or Palantir print after the close could lift AI sentiment. The neoclouds are high-beta, and 41% monthly drops (CRWV, per 24/7) invite sharp short-covering.</p>
+<p><span class="conf">Confidence: Medium (theme persists into the close) · Low (single-name direction after pricing)</span></p>
+</div>
+
+<div class="card">
+<h3>2. AMD (AMD) −6.2% the day before earnings: the pre-market rebound fully reversed</h3>
+<p><b>Move:</b> ~$516 pre-market (+2.2%, FX Leaders via search summary), then $489.03 (−3%) at 12:49 PM (24/7), then <b>$473.58 (−6.19%)</b> at ~3:10 on 22.3M shares. That is after an 11% drop on Friday.</p>
+<p><b>Thesis:</b> Options were pricing an ~8.4–9% move (≈$45) for Tuesday's report (search summary). Today's slide has already used a large part of that range before the print. The debate (24/7): Intel's warning that the PC slowdown lasts at least through H1 2027 hits AMD's Client segment ($3.06B in Q2). But Data Center (+107% to $6.72B, 58% of sales) is the larger driver, and a 45× forward P/E (vs. a 35× five-year average) leaves little room for a soft data-center outlook. The test is the Q4 guide against the ~$16.2B implied by full-year consensus. The afternoon timing is telling: AMD's drop went from −3% to −6% alongside Micron, Astera Labs and the neoclouds, not alongside Intel's morning slide. That suggests it is trading with the AI-infrastructure basket, not just on the PC read. Worth investigating: whether pre-earnings de-risking has lowered the bar enough that an in-line guide is received better than Friday's tape would imply.</p>
+<p><b>Evidence:</b> 24/7 Wall St. (12:49 PM price; segment data; valuation; Intel guidance and CEO/CFO quotes). Investing.com most-active table (~3:10). FX Leaders and FinanceFeeds via search summary (pre-market price; options-implied move).</p>
+<p><b>Risks / what flips it:</b> The outcome depends on the report, either way. A strong data-center guide could set off a sharp short-covering rally, while any hedging on the timing of customers' capacity ramps (Helios racks) could extend the slide.</p>
+<p><span class="conf">Confidence: Low (pre-report)</span></p>
+</div>
+
+<div class="card">
+<h3>3. Marvell (MRVL) −13.4% / Lumentum (LITE) −17.2%: the acquirer kept sliding, but the deal spread is narrowing</h3>
+<p><b>Move:</b> MRVL went from −8.73% (11:29) to −9.48% ($177.78, 1:01 PM, StockTitan) and <b>−13.42%</b> ($170.05, ~3:10) on 45.75M shares. LITE went from −14.07% to −15.19% ($712.995, 1:01) and <b>−17.15%</b> ($696.48).</p>
+<p><b>Thesis:</b> The midday edition said the tell was whether Marvell found a floor. It did not: MRVL fell another ~4.3% between 1:01 and ~3:10. Over the same span, Lumentum fell only ~2.3%. At the exchange ratio, 4.5 × $170.05 = <b>$765.2</b> of implied value vs. LITE at $696.48, a gross spread of <b>~9.9%</b>. That is down from ~12.2% at 1:01 (StockTitan's figures) and ~11.7% at 11:29. A spread that narrows while the acquirer falls is consistent with merger-arbitrage buyers stepping into Lumentum. The usual hedge is shorting Marvell, which would itself add pressure to MRVL. The implied value is now ~32% below the $1,132 headline. So the selling has become a referendum on Marvell's own valuation and its issuance of roughly a third of the combined company in stock, at a time when the market is punishing AI names that need capital (candidate 1).</p>
+<p><b>Evidence:</b> Investing.com losers table (~3:10 prints and volumes). StockTitan "Our numbers" (1:01 PM prints and the ~$800 implied value). Midday edition (11:29 prints; $1,132 headline; 4.5 ratio; H1 2028 expected close).</p>
+<p><b>Risks / what flips it:</b> Quotes from one table may still not be perfectly synchronous (±0.5 pt on the spread). A late bounce in semis would lift both legs. If arb buying fades, the spread could widen again quickly.</p>
+<p><span class="conf">Confidence: Medium (spread stays ~9–12%) · Low (direction)</span></p>
+</div>
+
+<div class="card">
+<h3>4. Intel (INTC) −8.6%: the three-day slide reaches ~35% on very heavy volume</h3>
+<p><b>Move:</b> −0.9% pre-market, −2.9% at 10:39, −5.19% at 11:29, then −8.17% ($60.39, 24/7) and <b>−8.58%</b> ($60.12) at ~3:10, on <b>173.8M shares</b>. From Thursday's ~$92.07 close, that is ~−35%.</p>
+<p><b>Thesis:</b> The midday "accelerating, not exhausting" read played out. The stock got no reflex bounce even when the S&amp;P was up 1% this morning, and its afternoon leg lined up with AMD and Micron. That suggests the market is treating Intel's memory-cost PC warning as a read-through for the whole PC and memory complex, not only an Intel problem. Volume is already ~1.6× a normal full day with the final hour still to trade. Worth watching into the close: a volume spike with a reversal off the lows would look like capitulation, while a close near the lows would point to continued distribution. October was Intel's worst month on record (−45%, 24/7).</p>
+<p><b>Evidence:</b> Investing.com tables (price, volume). 24/7 Wall St. chips and "worst month" piece. Motley Fool quote page via midday edition (Friday close $65.76; 107.7M average volume). Intel's Q4 guide of $15–16B vs. ~$17B consensus and its 38% gross-margin guide (24/7).</p>
+<p><b>Risks / what flips it:</b> After a ~35% three-day drop, short-covering rallies can be violent, and some analysts call the sell-off overdone (midday edition). A good AMD print tomorrow could lift the whole CPU group.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p>
+</div>
+
+<div class="card">
+<h3>5. Memory and storage reversal: Micron (MU) −5.2%, Seagate (STX) −7.7%, SanDisk (SNDK) −5.6%</h3>
+<p><b>Move:</b> MU went from +2.35% pre-market ($905.49) to −3.42% ($854.44) at 1:02 PM (both via search summary) and <b>−5.19%</b> ($838.85) at ~3:10, on 21.3M shares. STX went from −3.7% ($620.48) in the morning to <b>−7.69%</b> ($595.00). SNDK is <b>−5.56%</b>.</p>
+<p><b>Thesis:</b> Memory names led this morning's chip rebound and are now among the weakest large caps. Seagate has a specific catalyst: UBS cut its target and pushed the $1B run-rate goal to 2028, after a post-earnings round of target cuts and a Summit downgrade, and Toshiba plans to add HDD capacity (Investing.com). For Micron the catalyst is less clear. One search summary ties memory weakness to a cautious December-quarter forecast from Kioxia, but its date could not be confirmed. The bigger framing is a paradox the market is wrestling with: high memory prices help Micron's margins, but Intel blamed them for the PC slowdown, and Apple called them a "100-year flood." That makes <b>tonight's Apple commentary on memory costs a direct read-through for MU</b> before Tuesday's open.</p>
+<p><b>Evidence:</b> Investing.com (Seagate article; most-active and trending tables). Benzinga and Motley Fool via search summary (MU pre-market and 1:02 PM prints). 24/7 Wall St. (Apple's memory comments; Intel CEO/CFO quotes).</p>
+<p><b>Risks / what flips it:</b> Memory stocks are high-beta in both directions. Apple could describe memory costs as easing, which would help device demand but could be read either way for MU. Micron's catalyst is unverified, so this may simply be part of the AI-basket selling.</p>
+<p><span class="conf">Confidence: Low</span></p>
+</div>
+
+<div class="card">
+<h3>6. Apple (AAPL) −1.7% to −2.2% into the 4:30 PM report: called a "haven," not trading like one</h3>
+<p><b>Move:</b> −1.87% ($338.19) at ~1:15, −2.06% ($337.53) at ~2:16 (24/7), and −1.67% ($338.86, Investing.com) to −2.17% ($337.16, 24/7 chip) at ~3:10, on 33.3M shares.</p>
+<p><b>Thesis:</b> Investing.com reports that trading desks see Apple as "an oasis of capital restraint," a shelter from the AI-spending rout. Yet it is down ~2% on a day the AI rout resumed, so it is not acting as a shelter today. That fits event de-risking. Consensus is revenue ~$113.4B (+10.6% y/y) and EPS ~$1.98–2.00 (24/7; Bloomberg via Yahoo). This is John Ternus's first call as CEO. Things to watch: the gross-margin guide against memory costs (Tim Cook's "100-year flood"), the December-quarter outlook, Services (Polymarket puts &gt;$31B at 78.5%, per 24/7) and Siri AI. Over the past year Apple's earnings-day moves have been modest, averaging ±3.15% over the following week (24/7).</p>
+<p><b>Evidence:</b> 24/7 Wall St. live blog (2:16 PM price; estimates; history; what to watch). Investing.com (haven framing; quote; volume). Yahoo/Bloomberg consensus via midday edition.</p>
+<p><b>Risks / what flips it:</b> The report decides everything after 4 PM. The memory-cost commentary cuts two ways and matters for MU, AMD and the PC chain as well (candidates 2, 4 and 5).</p>
+<p><span class="conf">Confidence: Low (pre-report)</span></p>
+</div>
+
+<h2>5. Sources</h2>
+<p class="note">Pages fetched this run:</p>
+<ul class="src">
+<li>https://www.investing.com/news/stock-market-news/us-stock-futures-edge-high-after-bruising-oct-earnings-elections-in-focus-4989789 (2:34 PM index levels and intraday highs; O'Rourke quote; Apple "haven" framing; 78% December hike odds; Brent)</li>
+<li>https://investing.com/news/stock-market-news/why-is-seagate-technology-stock-sliding-today-93CH-4992246 (Seagate catalyst; live index/rates/commodities strip, megacap quotes, and most-active, gainers and losers tables with volumes at ~3:10 PM)</li>
+<li>https://247wallst.com/investing/2026/11/02/amd-slides-3-ahead-of-earnings-as-pc-worries-linger-intel-drops-5-nvidia-edges-higher/ (AMD at 12:49 PM; segment data and valuation; Intel guidance and quotes; index ticker; winners/losers panel; AMD/INTC/NVDA/QCOM chips)</li>
+<li>https://247wallst.com/investing/2026/11/02/live-will-apple-crush-q4-earnings-tonight-in-new-ceo-john-ternuss-first-quarter/ (Apple at 2:16 PM; consensus; earnings-reaction history; items to watch)</li>
+<li>https://247wallst.com/investing/2026/11/02/applied-digital-slumps-8-as-ceo-says-800-mw-still-needs-financing-nebius-and-coreweave-fall-6/ (2:54 PM; APLD CEO financing comments; interest vs. rent; APLD/CRWV/NBIS/IREN/TSLA chips)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html (Dow at 2:08 PM and index chips; CME December odds; fed funds range; Sløk; Oracle/Alphabet/Microsoft bond issuance)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-2-2026 (1:01–1:03 PM prints for MRVL, LITE, ORCL; implied deal value; EVGO, PERI, OFRM, KOS; payrolls consensus)</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-02-2026 (no updates after 12:55 PM; used only for morning context)</li>
+<li>https://www.federalreserve.gov/data/sloos.htm (confirms the October 2026 SLOOS posted; page last updated Nov. 2, 2026)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (served cached data from an earlier session; discarded)</li>
+</ul>
+<p class="note">Fetched but empty: https://www.federalreserve.gov/data/sloos/sloos-202610.htm</p>
+<p class="note">Used via search-result summaries only:</p>
+<ul class="src">
+<li>https://www.federalreserve.gov/data/sloos/sloos-202610.htm (CRE standards tightened across all three categories; CRE demand weaker) and https://kpmg.com/us/en/articles/2026/q2-2026-fed-sloos.html (July survey's CRE easing)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html and https://stocktitan.net/articles/stock-market-today-live-november-2-2026 (2:41 PM Yahoo headline; CNBC's 1:56 PM levels)</li>
+<li>https://www.fxleaders.com/news/2026/11/02/amd-stock-rises-to-516-in-premarket-ahead-of-tuesdays-earnings/ and https://financefeeds.com/amd-stock-511-monday-day-before-3-november-results-options-move-after-intel-warning-bull-557-bear-465/ (AMD pre-market price; options-implied move)</li>
+<li>https://benzinga.com/markets/tech/26/11/62772505/whats-going-on-with-micron-technology-stock-monday-8 and https://www.fool.com/investing/2026/11/02/4-stocks-to-buy-in-november/ (MU pre-market and 1:02 PM prints)</li>
+<li>https://pluang.com/en/news-feed/micron-turun-kiosia-perkiraan-hati-hati-pengaruhi-saham-memory-western-digital (Kioxia's cautious forecast; date not confirmed)</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026 (headline places the last FOMC meeting in the week of Oct. 26)</li>
+</ul>
+<p class="note">Prior context: alpha_report_2026-11-02_premarket.html, alpha_report_2026-11-02_open.html and alpha_report_2026-11-02_midday.html (local archive).</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
