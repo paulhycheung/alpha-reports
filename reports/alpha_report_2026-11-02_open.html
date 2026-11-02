@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-02 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Monday, November 2, 2026 &middot; first session of November &middot; midterm elections tomorrow</div>
+<p class="note">Automated run. The task is scheduled for ~10:00 AM ET, but this session started at about <b>11:05 AM ET</b>, roughly 95 minutes after the open. So "the open" here is a set of timestamped snapshots: AP at ~9:35 AM, Yahoo Finance's index strip at ~9:54 AM, Investing.com's movers list at 10:35 AM, single-stock quotes between ~10:00 and 11:02 AM, and the 24/7 Wall St. ticker at ~11:10 AM. Each row says which. All % moves are <b>vs. Friday's (Oct. 30) close</b>, not vs. the opening print, because no source gave reliable opening-print prices for each stock. Several live sources failed: Yahoo's most-active screener served a stale cached page (it again showed INTC <i>up</i> 2.8% at $93), a Google Finance quote page was stale (dated Oct. 26), and the StockTitan and CNBC live pages returned empty. None of these were used. The in-app browser was not used either, because it needed a site approval and no one was present to give it. Figures marked "search summary" come from search-result excerpts, not a fetched page. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 46 days old and outside the ~14-day window.</p>
+
+<h2>1. How the Open Traded</h2>
+<p><b>The rebound held through the opening bell, but oil led it, not chips.</b> At ~9:35 AM ET (AP) the S&amp;P 500 was <span class="up">+0.5%</span>, the Dow <span class="up">+391 pts (+0.8%)</span> and the Nasdaq Composite <span class="up">+0.7%</span>. By ~9:54 AM (Yahoo): S&amp;P 500 7,622.45 (<span class="up">+0.56%</span>), Dow 52,275.42 (<span class="up">+0.98%</span>), Nasdaq 25,626.92 (<span class="up">+0.75%</span>), Russell 2000 2,829.32 (<span class="up">+0.62%</span>), VIX 19.02 (<span class="up">−2.1%</span>). At 10:35 AM (Investing.com): S&amp;P 500 7,634.50 (<span class="up">+0.72%</span>), Dow 52,284 (<span class="up">+0.99%</span>), VIX 18.64 (<span class="up">−4.0%</span>). Around 11:10 AM the 24/7 Wall St. ticker read S&amp;P 500 7,652.80 (<span class="up">+0.86%</span>), Dow 52,332 (<span class="up">+1.04%</span>), Nasdaq 100 28,615 (<span class="up">+0.72%</span>) and Russell 2000 2,840.76 (<span class="up">+0.95%</span>). In other words, the gains built steadily after the bell. At 9:35 AM, AP had the S&amp;P within 2.6% of its record after three straight losing weeks.</p>
+<p><b>The two morning risks resolved in the market's favor.</b> (1) <b>Oil fell further after the open.</b> Iran said it had a two-day plan to reopen the Strait of Hormuz and resume nuclear talks with Washington (AP). Brent fell <span class="up">−5.9% to −6.5%</span> (~$106) and WTI <span class="up">−6.45%</span> (~$97.40), from −4.2% to −4.5% pre-market. (2) <b>ISM did not run hot.</b> October ISM Manufacturing came in at <b>55.5</b>, above consensus (54.5–54.7 depending on source; prior 54.5). Production was 59.0, its highest since late 2021. Prices paid eased to <b>75.2</b> vs. 77.5 expected (77.9 prior), the 25th straight month of rising input prices but below forecast (ISM / Reuters via search summary). Rates barely reacted: the 10-year was ~4.90–4.91% (−2 to −3 bp) and the 30-year 5.27%. Gold rose <span class="up">+1.75% to +1.85%</span> (~$3,970), silver <span class="up">+3.6%</span>, Bitcoin was flat at ~$77.8k.</p>
+<p><b>Tone: a broad, oil-led relief rally with the Dow ahead of the Nasdaq. This is rotation, not a tech squeeze.</b> Leaders: fuel-sensitive names (United +5% to +6.7%, Alaska Air +9.3%, Frontier +16.5%, Southwest +3.2%, Carnival +3.4%); the hardest-hit AI-capex megacaps (Amazon +4% to +5%, Alphabet +1.7% to +2.1%); and earnings winners (IDEXX +16%, Marriott +5.5%, Tempus AI +8.5% to +10%). Laggards: energy producers (Coterra −8.6%, APA −5.1%, Kosmos −12% to −13.5%), Oracle (−5% to −6% on a $20B financing filing), the Marvell–Lumentum pair, Intel and Apple. Within semis the bounce is <b>uneven</b>: Nvidia is bid, while Intel, Marvell and (on mixed evidence) AMD are not.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Compares this morning's Pre-Market Edition (snapshots ~5:30–8:30 AM ET) with regular-session prints from ~9:35 to ~11:10 AM ET.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Pre-market</th><th>After the open</th><th>Read</th></tr>
+<tr><td>MRVL</td><td class="n dn">−3.6% (SMW); +0.6% to +1.2% earlier</td><td class="n dn">−3% (~9:00, 24/7 WS); −5.7% (AP)</td><td><b class="dn">Extended lower.</b> The acquirer kept sliding.</td></tr>
+<tr><td>LITE</td><td class="n dn">−6.8%</td><td class="n dn">−11% (AP); −10.55%, $751.98 (~11:10)</td><td><b class="dn">Extended.</b> The target is falling faster than the acquirer, and the deal spread has widened (see §4).</td></tr>
+<tr><td>AMZN</td><td class="n up">&gt;+1%</td><td class="n up">+4.18% (~9:54); +5.1% to +5.3% (10:35–11:10)</td><td><b class="up">Extended higher.</b> Second straight day of buyers absorbing the earnings miss.</td></tr>
+<tr><td>GOOGL</td><td class="n up">+0.8%</td><td class="n up">+1.7% (AP); GOOG +2.10% (~9:54)</td><td><b class="up">Extended.</b> The euro bond sale was received well.</td></tr>
+<tr><td>NVDA</td><td class="n up">+0.8% to +1%</td><td class="n up">+1.4% (AP); +1.95%, $208.64 (10:46, range $206.73–209.98)</td><td><b class="up">Held / extended.</b></td></tr>
+<tr><td>AMD</td><td class="n up">~+2.2%</td><td class="n am">Conflicting: +1.2% (one report) vs. −2.1%, $494.25 (11:02, stockanalysis via search summary)</td><td><b class="am">Possibly faded.</b> Not confirmed. Reports tomorrow after the close.</td></tr>
+<tr><td>INTC</td><td class="n dn">−0.85% to −0.9%</td><td class="n dn">−2.9%, $63.85 (10:39, range $63.74–65.72); later ~−1.8%</td><td><b class="dn">Extended lower.</b> Still not joining the chip bounce on day two.</td></tr>
+<tr><td>AAPL</td><td class="n dn">slightly lower</td><td class="n dn">−1.31% (~9:54)</td><td><b class="dn">Extended lower.</b> Money is leaving the "AI hedge" on a risk-on day, ahead of tonight's report.</td></tr>
+<tr><td>TSLA</td><td class="n up">+0.9%</td><td class="n up">+2.25%, $408.80 (shortly after the open; search summary)</td><td><b class="up">Extended.</b> Back above $400.</td></tr>
+<tr><td>IDXX</td><td class="n up">+2.5% to +7.0%</td><td class="n up">+15.6% to +16.8% (10:35–11:10); $639.16 (~11:10)</td><td><b class="up">Extended sharply.</b> Buyers kept coming after the earnings call.</td></tr>
+<tr><td>MAR</td><td class="n up">+5.5%</td><td class="n up">+5.5% (AP)</td><td>Held.</td></tr>
+<tr><td>RIVN</td><td class="n up">+3.1% to +3.2%</td><td class="n up">+10.4% to +11.8%</td><td><b class="up">Extended</b> on the UBS upgrade (R2 demand, margins).</td></tr>
+<tr><td>TEM</td><td class="n up">+2.6%</td><td class="n up">+8.5% to +10%</td><td><b class="up">Extended</b> (earnings beat and raised guidance).</td></tr>
+<tr><td>SPCX</td><td class="n up">+1.3% to +3%</td><td class="n up">+4.6% to +5.2%</td><td><b class="up">Extended</b> (Boost Mobile talks report).</td></tr>
+<tr><td>KOS</td><td class="n dn">−9%</td><td class="n dn">−12.1% to −13.5%</td><td><b class="dn">Extended</b>. Q3 miss, made worse by the oil drop.</td></tr>
+<tr><td>CHKP, EL, MU, TSM, AVGO, OKTA, MSFT, META, QCOM, ASML, CRM</td><td colspan="2">No reliable post-open quote found this run (live pages stale or empty)</td><td>Not graded.</td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">% vs. Friday's close. Most figures come from Investing.com's movers list (10:35 AM text, plus the live chips on the same page at ~11:10 AM) and the 24/7 Wall St. S&amp;P 500 winners and losers widget (~11:10 AM). Ranges show the spread between those snapshots. No reliable share-volume data was available this run (Yahoo's most-active page was stale), so the last column is catalyst-focused. "Not verified" means no catalyst was confirmed this run.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move</th><th>Catalyst / volume note</th></tr>
+<tr><td colspan="3"><b>Gainers</b></td></tr>
+<tr><td>IDXX</td><td class="n up">+15.6% to +16.8%</td><td>Q3 beat and guidance raise (see §4)</td></tr>
+<tr><td>ULCC</td><td class="n up">+16.3% to +16.6%</td><td>Oil −6%. Frontier is a high-beta airline that benefits from cheaper fuel</td></tr>
+<tr><td>NXT</td><td class="n up">+15.4%</td><td>Not verified</td></tr>
+<tr><td>ENPH</td><td class="n up">+11.7% to +11.9%</td><td>Not verified</td></tr>
+<tr><td>RIVN</td><td class="n up">+10.4% to +11.8%</td><td>UBS upgrade to Buy, PT $17</td></tr>
+<tr><td>TEM</td><td class="n up">+8.5% to +10%</td><td>Q3 beat, raised guidance</td></tr>
+<tr><td>ALK / UAL</td><td class="n up">+9.3% / +5% to +6.7%</td><td>Oil drop. Southwest +3.2%, Carnival +3.4% (AP)</td></tr>
+<tr><td>LOAR / FTAI</td><td class="n up">+8.9% to +9.3% / +6.7% to +9.4%</td><td>Not verified</td></tr>
+<tr><td>MHK</td><td class="n up">+6.8% to +7.7%</td><td>Evercore ISI upgrade on its buyback plan</td></tr>
+<tr><td>MPWR</td><td class="n up">+6.6%</td><td>Not verified. Strength in a power-management chip while PC-exposed chips lag</td></tr>
+<tr><td>BABA / BILI</td><td class="n up">+5.8% / +7.9% to +8.2%</td><td>China support: PBOC said ~¥100B (~$15B) would go through a new program that could support the market (AP)</td></tr>
+<tr><td>AMZN</td><td class="n up">+4.2% to +5.3%</td><td>Phillip Securities upgrade (AWS strength). Leads the megacaps</td></tr>
+<tr><td>SPCX</td><td class="n up">+4.6% to +5.2%</td><td>WaPo: talks to buy EchoStar's Boost Mobile or gain access to its network</td></tr>
+<tr><td colspan="3"><b>Losers</b></td></tr>
+<tr><td>OFRM</td><td class="n dn">−28.6% to −35.2%</td><td>Once Upon a Farm. Not verified (a Benzinga headline listed it among pre-market decliners)</td></tr>
+<tr><td>KRYS</td><td class="n dn">−14.6% to −14.7%</td><td>Falling despite a Q3 earnings beat</td></tr>
+<tr><td>AXSM</td><td class="n dn">−12.9% to −14.7%</td><td>Q3 beat, but concerns about the Auvelity rollout and price-target cuts</td></tr>
+<tr><td>KOS</td><td class="n dn">−12.1% to −13.5%</td><td>Q3 sales $409.9M vs. $455.3M est., plus the oil drop</td></tr>
+<tr><td>LITE / MRVL</td><td class="n dn">−10.6% to −11% / −5.7%</td><td>$115B all-stock merger (see §4)</td></tr>
+<tr><td>CTRA / APA</td><td class="n dn">−8.6% / −5.1%</td><td>Oil −6% on the Iran Hormuz plan</td></tr>
+<tr><td>ORCL</td><td class="n dn">−4.8% to −6.2%</td><td>Filed to sell $10B of stock and $10B of senior notes</td></tr>
+<tr><td>DDOG</td><td class="n dn">−5.1%</td><td>Not verified. Reports Wednesday</td></tr>
+<tr><td>RBRK / CNC</td><td class="n dn">−2.3% to −4.8% / −4.5%</td><td>Not verified</td></tr>
+<tr><td>INTC</td><td class="n dn">−1.8% to −2.9%</td><td>Day two after −28.6%. Barclays PT cut to $75. Analysts are split (some downgrades, a New Street upgrade, per search summary)</td></tr>
+<tr><td>AAPL</td><td class="n dn">−1.3%</td><td>Fiscal Q4 report after the close</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">These are research observations only: names where the opening reaction is worth investigating further. They are not recommendations to buy or sell.</p>
+
+<div class="card">
+<h3>1. Marvell (MRVL) −5.7% / Lumentum (LITE) −10.6% to −11%: the deal spread blew out after the bell</h3>
+<p><b>Move:</b> MRVL went from −3.6% pre-market to −5.7% (AP), about $185. LITE went from −6.8% to −11% (AP) and −10.55% at $751.98 (~11:10). Both moves extended after the open.</p>
+<p><b>Thesis:</b> The <b>deal spread is the signal</b>, and it is getting wider. At 4.5 MRVL shares per LITE share, the implied value is now ~4.5 × $185.2 ≈ <b>$833</b>, against LITE at ~$748–752. That is a gap of <b>~11%</b>, up from ~5% at Friday's close and ~8.7% at the pre-market snapshot. The implied value is also ~26% below the $1,132 headline price, because MRVL has fallen ~26% since the Oct. 28 unaffected date. Merger-arb trading usually pushes the acquirer down and the target up. Here the <i>target</i> is falling faster, which looks like Lumentum holders selling rather than accepting long-dated Marvell stock (closing is not expected until H1 2028). As of mid-morning the move looks like it has <b>legs, not a fade</b>: both names extended from pre-market into 11 AM, and nothing appeared to stop the selling. A narrowing spread later in the session would be the first sign that arbitrage capital is stepping in.</p>
+<p><b>Evidence:</b> AP via NewsLooks (MRVL −5.7%, LITE −11%). 24/7 Wall St. (MRVL $190.43 −3% and LITE $788.51 −6% early; terms; Lumentum FQ1 revenue $1.26B vs. $1.25B; a co-packaged optics win backed by purchase commitments of more than $5B; Marvell held its Q3 revenue midpoint at $3.15B). Search summary of Benzinga and rallies.ai (Bernstein: the strategy fits but synergies are not yet clear; Morningstar: Marvell may be overpaying; termination fees of $5.8B owed by Marvell and $2.9B owed by Lumentum). Spread arithmetic uses Friday's MRVL close of $196.40 and a LITE close of ~$841, backed out of the −10.55% / $751.98 quote.</p>
+<p><b>Risks / what flips it:</b> The implied value moves with every MRVL tick, so a semiconductor rally could narrow the spread fast. The large termination fee Marvell would owe gives the deal some support. Snapshot timing differs between sources, so the spread estimate is approximate (~10.8–11.4%).</p>
+<p><span class="conf">Confidence: Medium (spread stays wide / volatile) · Low (direction)</span></p>
+</div>
+
+<div class="card">
+<h3>2. Oracle (ORCL) −4.8% to −6.2%: a $20B financing filing in an AI-capex-skeptical tape</h3>
+<p><b>Move:</b> No pre-market read this morning. −6.22% at 10:01 AM (StockTitan via search summary), then a bounce to $124.54 (−4.8%) (StockStory). Back to −5.6% to −5.7% by ~11:10 (24/7 Wall St. $123.33; Investing.com).</p>
+<p><b>Thesis:</b> Oracle registered offerings of <b>$10B of common stock and $10B of senior notes</b> to fund its AI build-out. It is one of the biggest losers in the S&amp;P 500 on a day the index is up. The contrast with Alphabet, which also sold debt today (a euro bond) and is <i>up</i> ~2%, suggests the market objects to the <b>equity dilution</b> more than to borrowing. A Stephens upgrade did not offset it. The early bounce from −6.2% to −4.8% faded again, so the overhang is still being worked through. That points to <b>more pressure into midday</b> rather than a clean reversal, unless the offering is priced or sized quickly.</p>
+<p><b>Evidence:</b> StockStory (filing details, as reported by CNBC; −36.4% YTD; 51.7% below its 52-week high of $257.85; 37 moves of more than 5% in the past year; Oracle had flagged the funding target at its investor day the previous week). Invezz via search summary (dilution, leverage and free-cash-flow worries). Investing.com (Stephens upgrade, −4.78% at 10:35 AM).</p>
+<p><b>Risks / what flips it:</b> Because the target was already disclosed, part of the reaction may be mechanical and short-lived. A quick, well-received pricing would remove the overhang. A broader rotation back into AI infrastructure would also lift ORCL. The stock is extremely volatile (37 moves of more than 5% in a year), which cuts both ways.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p>
+</div>
+
+<div class="card">
+<h3>3. Amazon (AMZN) +4.2% to +5.3%: the post-earnings recovery is still running</h3>
+<p><b>Move:</b> &gt;+1% pre-market, then +4.18% at ~9:54, then +5.1% to +5.3% by 10:35–11:10. It is the strongest megacap so far.</p>
+<p><b>Thesis:</b> This is the second session in a row in which buyers absorbed Amazon's earnings miss. On Friday the stock went from −6.5% to −7.1% pre-market to only ~−2% after the open (Oct. 30 Open Edition). Today it extended a small pre-market gain to about 5%, helped by a Phillip Securities upgrade citing AWS strength and plausibly by lower oil, given Amazon's large logistics fuel bill. A pattern of opens that steadily improve suggests real demand rather than a reflex bounce, so the move <b>may have legs into midday</b>. The test is whether it holds once Apple reports tonight.</p>
+<p><b>Evidence:</b> Yahoo index strip (+4.18%). Investing.com (+5.13% in the 10:35 text, +5.31% on the live chip; Phillip Securities upgrade). Pre-market Edition (Phillip upgrade). Oct. 30 Open Edition (Friday's gap fill). Yahoo/Jake Conley (the earnings double miss alongside strong AWS growth).</p>
+<p><b>Risks / what flips it:</b> The AI-capex skepticism that caused October's sell-off has not gone away. A move driven by oil and short covering could reverse if the Iran talks stall. Apple's results tonight and AMD's tomorrow could change the mood across megacaps.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>4. The chip bounce is uneven: Nvidia is bid, Intel and AMD are not</h3>
+<p><b>Move:</b> NVDA went from +0.8% to +1% pre-market to +1.4% (9:35) and +1.95% at $208.64 (10:46). INTC went from −0.9% to −2.9% ($63.85, 10:39) and later ~−1.8%. AMD was ~+2.2% pre-market; after the open, sources disagree (+1.2% vs. −2.1% at $494.25, 11:02). MRVL −5.7%.</p>
+<p><b>Thesis:</b> This morning asked whether the chip rebound would be a reflex bounce or a recovery. So far it is a <b>sorting</b>. Data-center leader Nvidia is holding its gains. Names exposed to the PC cycle (Intel, and AMD going into tomorrow's report) are not joining in. Intel's continued slide on day two, after a 28.6% drop, suggests holders are still exiting, with no sign yet of a bottom. If AMD's fade is confirmed, the market is positioning defensively before AMD's PC commentary tomorrow, after Intel blamed memory costs for weak PC demand. Read: <b>Nvidia's strength may hold; Intel looks more likely to keep falling than to rebound sharply</b>, until AMD reports.</p>
+<p><b>Evidence:</b> AP via NewsLooks (NVDA +1.4%; Apple passed Nvidia as the most valuable company after Friday). CNBC quote via search summary (NVDA $208.64, +$4.00). Yahoo via search summary (INTC $63.85, −2.9%, range $63.74–65.72). Search summaries of stockanalysis and a news report (AMD, conflicting). TipRanks/FastCompany via search summary (memory names up ~2–3% pre-market).</p>
+<p><b>Risks / what flips it:</b> AMD data is unconfirmed. Heavy short interest in Intel after a 28% drop can set off sharp covering rallies. A strong AMD data-center print tomorrow could lift the whole group. Midterm-related volatility also hits on Tuesday.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p>
+</div>
+
+<div class="card">
+<h3>5. IDEXX Laboratories (IDXX) +15.6% to +16.8%: a quality-growth beat and raise that extended after the open (outside watchlist)</h3>
+<p><b>Move:</b> +2.5% to +7.0% pre-market, then +15.6% at 10:35, +16.8% on the live chip, and $639.16 (+16%) at ~11:10. The previous close was $551.21.</p>
+<p><b>Thesis:</b> This was the clearest fundamental surprise of the morning, and it grew bigger as the earnings call went on. Q3 EPS was $3.96 vs. $3.72 expected; revenue was $1.21B vs. $1.19B. Organic growth was 10%. CAG Diagnostics recurring revenue grew <b>+11% organically (U.S. +9.6%, international ~+14%)</b>, even though U.S. same-store clinic visits fell ~1.8%. That is a growth premium of about 1,100 bp, the <b>fourth straight quarter above 1,000 bp</b>. Full-year revenue guidance rose to $4.741–4.767B and EPS guidance to $14.96–15.16 (+$0.25 at the midpoint). Because growth comes from more testing per visit rather than more visits, it holds up even in a weak-traffic economy. In a market wary of AI spending, that kind of non-AI quality growth is getting paid. A gap that keeps <i>widening</i> through the call is more often followed by continued drift than by a fade, so the move <b>may have legs</b>, though at +16% a pause would be normal.</p>
+<p><b>Evidence:</b> Investing.com earnings-call transcript and summary (all figures above; 5,780 premium instrument placements, including 1,904 inVue Dx; Q3 operating margin 33.1%; operating-margin guidance trimmed to 32.1–32.3%, with ~30 bp of the cut from the CoVet acquisition). Investing.com movers list and the 24/7 Wall St. widget (price moves).</p>
+<p><b>Risks / what flips it:</b> The valuation re-rated in a single session. The margin guidance cut and CoVet dilution (~$0.13 per share) are what sellers could focus on. The stock is still below its 52-week high of $769.98, so overhead supply from earlier holders is possible. U.S. vet-visit softness is ongoing.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>6. The oil-drop trade: airlines up, energy producers down</h3>
+<p><b>Move:</b> UAL +5% to +6.7%, ALK +9.3%, ULCC +16.3% to +16.6%, LUV +3.2%, CCL +3.4%. CTRA −8.6%, APA −5.1%, KOS −12% to −13.5%. Brent −5.9% to −6.5% (~$106), WTI −6.45% (~$97.40).</p>
+<p><b>Thesis:</b> The oil drop doubled after the open, from about −4% pre-market to about −6%, once Iran said it had a two-day plan to reopen Hormuz. It is now the main driver of sector rotation today. The trade is <b>headline-driven and easy to reverse</b>. The President's pledge of no new strikes covers only the period before Tuesday's vote, ships were attacked near Hormuz over the weekend, and Brent has swung between ~$70 and ~$120 since the war began (AP). Into midday, this looks <b>more likely to hold than to fade</b> unless Tehran or Washington pushes back on the plan, but the risk of a reversal after the election is high.</p>
+<p><b>Evidence:</b> AP via NewsLooks (Hormuz plan, Brent −5.9% to $106.65, airline and cruise moves). Investing.com (Brent $106.06 −6.5%, WTI $97.40 −6.45%, ALK and ULCC). 24/7 Wall St. (UAL +6.68%, CTRA −8.62%, APA −5.08%). Pre-market Edition (strike pledge, weekend ship attacks).</p>
+<p><b>Risks / what flips it:</b> Any setback in the talks, renewed attacks on shipping, or an escalation after the midterms. Airline gains of 5–16% in a day already price in a lot of fuel relief.</p>
+<p><span class="conf">Confidence: Low</span></p>
+</div>
+
+<div class="card">
+<h3>7. Apple (AAPL) −1.3%: money leaving the "AI hedge" ahead of tonight's report</h3>
+<p><b>Move:</b> Slightly lower pre-market, then −1.31% at ~9:54.</p>
+<p><b>Thesis:</b> This morning's edition flagged one thing to watch: whether Apple would lag on a chip-rebound day. It did. That fits Apple's record-negative correlation with semiconductors this year: Apple rose on 30 of the 46 days the SOX fell 2% or more. Today the reverse is happening, as money returns to beaten-down AI names (Amazon, Alphabet, Nvidia) and comes out of the "hedge." Friday's Nvidia drop let Apple overtake it as the most valuable company (AP), so some of today's selling may be that relative trade unwinding. The session move is about <b>positioning</b>. The real catalyst comes after 4 PM (consensus EPS ~$2.00 on ~$113.5B revenue; first call under CEO John Ternus; iPhone 18 and iPhone Duo demand; memory-cost commentary).</p>
+<p><b>Evidence:</b> Yahoo index strip (−1.31%). Yahoo chart of the day (Apple vs. the SOX). AP via NewsLooks (market-cap ranking). Yahoo/Bloomberg consensus (in the pre-market edition).</p>
+<p><b>Risks / what flips it:</b> The earnings report dominates everything. Any session read could be irrelevant by 4:30 PM.</p>
+<p><span class="conf">Confidence: Low (pre-report)</span></p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p>Not used this run. The only file, <code>alpha_wrds_signals.csv</code>, has as_of_date <b>2026-09-17</b> (46 days old), outside the ~14-day freshness window. Running <code>wrds_alpha_screen.py</code> again would bring momentum, volume-ratio and earnings-surprise factors back into these briefs. That matters most this week, with AMD, QCOM and others reporting.</p>
+
+<h2>6. Sources</h2>
+<p class="note">Pages actually fetched this run:</p>
+<ul class="src">
+<li>https://www.newslooks.com/wall-street-recovers-as-tech-stocks-regain-ground-after-sell-off-oil-retreats/ (AP copy: 9:35 AM index levels, Brent, Iran Hormuz plan, GOOGL/NVDA/MAR/airlines/MRVL/LITE moves, PBOC program)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-2-144446387.html (Yahoo index strip ~9:54 AM ET; AAPL/AMZN/GOOG chips; TheStreet text)</li>
+<li>https://investing.com/news/stock-market-news/oracle-alibaba-among-market-cap-stock-movers-on-monday-93CH-4992279 (10:35 AM movers list by market cap; live index/commodity/rates strip)</li>
+<li>https://247wallst.com/investing/2026/11/02/marvell-slides-3-lumentum-drops-6-on-115-billion-all-stock-merger-deal-coherent-climbs-2/ (deal terms, early MRVL/LITE quotes, S&amp;P winners/losers widget, ~11:10 AM index ticker)</li>
+<li>https://stockstory.org/us/stocks/nyse/orcl/news/why-up-down/why-oracle-orcl-shares-are-getting-obliterated-today (Oracle $20B filing, price action, YTD context)</li>
+<li>https://www.investing.com/news/transcripts/earnings-call-transcript-idexx-beats-q3-2026-estimates-and-raises-outlook-93CH-4992064 (IDEXX Q3 results, guidance, call commentary)</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-02-2026 (pre-open movers: ECHO, COHR, AXSM, TMUS, LNG; oil; Binance outflows)</li>
+<li>https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/02/global-shares-are-mixed-and-us-futures-advance-while-oil-prices-fall-nearly-4/ (AP pre-open: futures, oil, Iran, September payrolls context)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html (Yahoo live blog, served as a pre-open cache: Apple preview and chart of the day, SpaceX/Boost)</li>
+<li>Fetched but not used (stale or empty): https://finance.yahoo.com/markets/stocks/most-active/ (stale cache), https://www.google.com/finance/quote/NVDA:NASDAQ (dated Oct. 26), https://stockanalysis.com/stocks/amd/ (showed Oct. 30 close), https://stocktitan.net/articles/stock-market-today-live-november-2-2026 (empty), https://cnbc.com/2026/11/01/stock-market-today-live-updates.html (empty), https://www.cnbc.com/quotes/MU (empty), https://investinglive.com/news/us-ism-manufacturing-pmi-for-october-55-5-versus-54-5-estimate/ (empty), https://www.stocktitan.net/rankings/stock-movers-today (empty board), https://benzinga.com/trading-ideas/movers/26/11/62781525/idexx-laboratories-perion-network-tat-technologies-and-other-big-stocks-moving-higher-on-monday (empty)</li>
+</ul>
+<p class="note">Used via search-result summaries only (full page not fetched, or fetch returned empty):</p>
+<ul class="src">
+<li>https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html (ISM October: 55.5, prices 75.2, production 59.0, supplier deliveries 59.1)</li>
+<li>https://www.933thedrive.com/2026/11/02/us-manufacturing-picks-up-in-october-input-prices-stay-high/ (Reuters ISM write-up; prices-paid consensus 77.5)</li>
+<li>https://www.cnbc.com/quotes/NVDA (NVDA $208.64, +1.95%, 10:46 AM)</li>
+<li>https://stockanalysis.com/stocks/amd/ (AMD $494.25, −2.09%, 11:02 AM, per search snippet; conflicts with a +1.2% report)</li>
+<li>https://finance.yahoo.com/quote/INTC/ and https://robinhood.com/us/en/stocks/INTC/ (INTC $63.85 at 10:39 AM; ~$64.93 later)</li>
+<li>https://financefeeds.com/intel-intc-stock-65-09-monday-first-session-after-28-6-percent-drop-amd-results-3-november-bull-72-bear-58/ (Intel pre-market context)</li>
+<li>https://invezz.com/news/2026/11/02/why-is-oracle-stock-falling-nearly-6-on-monday/ and https://www.benzinga.com/trading-ideas/movers/26/11/62779087/oracle-shares-dip-monday-whats-happening (Oracle)</li>
+<li>https://stocktitan.net/articles/stock-market-today-live-november-2-2026 (ORCL −6.22% at 10:01 AM, per search snippet)</li>
+<li>https://www.benzinga.com/m-a/26/11/62780578/marvell-lumentum-deal-115-billion-stock-analyst-ratings and https://rallies.ai/news/marvell-lumentum-drop-after-115-billion-deal-stokes-investor-unease-cb8968c1144a8db6 (analyst views, termination fees, alternative MRVL/LITE quotes)</li>
+<li>https://ibtimes.com.au/tesla-shares-rise-above-400-tech-stock-rebound-1877772 (TSLA +2.25% to $408.80)</li>
+<li>https://www.tipranks.com/news/why-are-micron-sandisk-and-sk-hynix-stocks-rising-in-premarket-today-after-fridays-chip-rout and https://www.fastcompany.com/91631313/memory-chip-stocks-today-why-micron-sandisk-sk-hynix-rising (memory pre-market; BofA top pick for MU)</li>
+<li>https://stocktitan.net/news/IDXX/idexx-laboratories-announces-third-quarter-7eu65ppqvhy2.html (IDEXX release headline)</li>
+</ul>
+<p class="note">Prior context: alpha_report_2026-11-02_premarket.html and alpha_report_2026-10-30_open.html (local archive).</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
