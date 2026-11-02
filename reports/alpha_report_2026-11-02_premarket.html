@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-02 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Monday, November 2, 2026 &middot; first session of November &middot; midterm elections tomorrow</div>
+<p class="note">Automated run. The task is scheduled for ~7:30 AM ET, but this session started at about <b>8:20 AM ET</b> (US clocks moved to EST on Nov. 1, so ET = UTC−5). Pre-market prices come from snapshots taken between ~5:30 AM and ~8:30 AM ET, and sources often disagree. Where they do, this report gives a range. Moves are vs. Friday's (Oct. 30) close unless noted. Figures marked "search summary" come from search-result excerpts, not the full article. Several fetches were rate-limited or returned empty (Benzinga, Bloomberg). <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 46 days old and outside the ~14-day window. This edition relies on public research only.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>Futures are recovering part of Friday's AI-led rout. A $115B Marvell–Lumentum merger and a 4% drop in crude are the main overnight stories.</b> At ~8:18 AM ET, Nasdaq 100 futures were <span class="up">+0.58%</span> (28,699), S&amp;P 500 futures <span class="up">+0.34%</span> (7,640), Dow futures <span class="up">+0.44%</span> (52,148) and Russell 2000 futures <span class="up">+0.49%</span> (Yahoo Finance). Earlier, at 5:38 AM ET, the bounce was a little stronger: NQ <span class="up">+0.84%</span>, ES <span class="up">+0.51%</span>, YM <span class="up">+0.55%</span> (TipRanks). The VIX was 19.35. Friday was Wall Street's worst session since June: S&amp;P 500 <span class="dn">−1.8%</span>, Nasdaq 100 <span class="dn">−3.5%</span>, chips (SOXX) <span class="dn">−8.25%</span>, Intel <span class="dn">−28.6%</span>, Reddit <span class="dn">−29.2%</span> (Saxo; Current Logic). The Nasdaq Composite lost 5.2% in October, its worst month since March 2025, as Microsoft and Alphabet capex figures and Amazon's negative free cash flow revived doubts about AI returns. Tech (XLK) is <span class="up">+1.1%</span> pre-market. Energy (XLE, <span class="dn">−0.96%</span>) is the weakest sector.</p>
+<p><b>Asia:</b> Korea led. The KOSPI closed <span class="up">+2.24%</span> after opening 1.6% lower, helped by October chip exports up <b>259% y/y to $56.4B</b>. SK hynix rose <span class="up">+3.8% to +4.7%</span> (also on long-term customer supply agreements) and Samsung <span class="up">+1.8% to +2%</span>. Japan lagged: Nikkei <span class="dn">−0.33%</span>, Topix <span class="dn">−0.88%</span>, and Kioxia fell ~17% on a weak profit forecast. China rose on expectations of regulatory support for capital markets (Shanghai <span class="up">+1.08%</span>, Shenzhen <span class="up">+2.38%</span>, Hang Seng <span class="up">+0.4% to +0.6%</span>), even though the official October manufacturing PMI fell back into contraction at 49.3. ASX 200 <span class="dn">−0.6%</span>. <b>Europe</b> opened mixed to slightly higher. Eurozone manufacturing PMIs held in expansion, and UK factory activity grew at its fastest pace in more than two years (TipRanks), but one CNBC reading had the STOXX 600 <span class="dn">−0.24%</span> just after the open (search summary). Alstom fell ~27% after cutting its margin guidance to ~1%.</p>
+<p><b>Rates, commodities, crypto:</b> WTI is <span class="dn">−4.2% to −4.5%</span> at ~$99.4–99.8, below $100, and Brent ~$108.5–109. Qatar-mediated US–Iran talks continue, and President Trump pledged no new strikes before Tuesday's vote but left later action open. Ships were still attacked near Hormuz over the weekend. The 10-year is ~4.93% and the 2-year ~4.60%. High-yield spreads widened to ~340 bp on Friday, an ~18-month high (Saxo). Gold is up ~0.3–1% to ~$3,910 after a one-year low on Friday (October −6.8%). Bitcoin is ~$77.5–78.8k after the record $6.3B Binance hack; Binance has restored withdrawals. <b>Tone: a tentative relief bid led by chips, in a week packed with events</b> (Apple and Palantir tonight, midterms and AMD Tuesday, payrolls Friday). The VIX futures curve is inverted at the front, and options price ~0.85% for today and ~1.84% through Nov. 6 (Saxo).</p>
+<p class="note">Versus Friday's editions: Intel's drop has not reversed (still −0.9% pre-market after −28.6%). The "Apple as a hedge against the AI trade" pattern is still in place: on 30 of the 46 days this year when the SOX fell ≥2%, Apple rose (Yahoo Finance chart of the day). Marvell–Lumentum talks, which hit both stocks Thursday and Friday, became a signed deal this morning.</p>
+
+<h2>2. Today's Economic Calendar / Key Events</h2>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>Event</th><th>Notes</th></tr>
+<tr><td class="n">9:45 AM</td><td>S&amp;P Global US Manufacturing PMI, Oct (final)</td><td>Prior 56.0</td></tr>
+<tr><td class="n">10:00 AM</td><td>ISM Manufacturing, Oct</td><td>Consensus 54.7 (prior 54.5). Prices paid 77.5 exp. (77.9). New orders 54.9 exp. (55.3). Employment 52.0 exp. (52.7). With oil near $100, a hot prices-paid reading would be the risk.</td></tr>
+<tr><td class="n">10:00 AM</td><td>Construction Spending, Sep</td><td>+0.5% m/m exp. (prior +0.9%)</td></tr>
+<tr><td class="n">Before open</td><td>Earnings already out</td><td>Estée Lauder, IDEXX, Marriott, Check Point, Kosmos Energy, Lumentum (FQ1, released with the deal). Tower Semi and Tempus AI were due before the open.</td></tr>
+<tr><td class="n">After close</td><td><b>Apple (AAPL)</b>: fiscal Q4</td><td>Consensus EPS ~$2.00 on ~$113.46B revenue (Bloomberg via Yahoo). First call with CEO John Ternus. iPhone 18 / iPhone Duo demand, memory-cost commentary.</td></tr>
+<tr><td class="n">After close</td><td><b>Palantir (PLTR)</b>: Q3</td><td>Guided Q3 revenue $2.160–2.164B. Options imply ~±13% (search summary). +1.9% pre-market.</td></tr>
+<tr><td class="n">Today (timing varies)</td><td>Other reports</td><td>Vertex, Williams, Diamondback, Realty Income, Entergy, ON Semi, Ryanair, Fox, Roku, Loews, Lattice Semi</td></tr>
+<tr><td class="n">Fed</td><td>Fed speakers</td><td>None found in the sources checked this run</td></tr>
+<tr class="sec"><td colspan="3">Rest of the week</td></tr>
+<tr><td class="n">Tue Nov 3</td><td>US midterm elections. RBA decision (~87% priced for a hike to 4.85%). <b>AMD</b> earnings after close, plus Arista, Shopify, Pfizer, Eaton, Amgen</td><td>AMD consensus Q3 revenue $13.01B (+42%), EPS $1.94 (TipRanks)</td></tr>
+<tr><td class="n">Wed Nov 4</td><td>Treasury quarterly refunding. <b>Qualcomm</b>, Uber, McDonald's, AppLovin, Datadog</td><td>Okta joins the S&amp;P 500 before the open, replacing Kenvue</td></tr>
+<tr><td class="n">Thu Nov 5</td><td>Bank of England and Norges Bank decisions. Airbnb, Cloudflare, ConocoPhillips</td><td></td></tr>
+<tr><td class="n">Fri Nov 6</td><td><b>October nonfarm payrolls</b></td><td>Labor data builds through the week</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">Snapshots ~6:45–8:30 AM ET from several sources. StockMarketWatch (SMW) is the latest snapshot. Ranges show disagreement between sources.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt move</th><th>Catalyst / note</th></tr>
+<tr class="sec"><td colspan="3">Fixed watchlist</td></tr>
+<tr><td class="n">AMD</td><td class="n up">~+2.2%</td><td>Chip rebound. Reports Tue after close (TipRanks / search summary)</td></tr>
+<tr><td class="n">TSM</td><td class="n up">&gt;+2%</td><td>Chip rebound. DigiTimes reports Musk has reopened Terafab talks with TSMC (search summary; TipRanks)</td></tr>
+<tr><td class="n">MU</td><td class="n up">+1.2% to +2.35%</td><td>$895–905. Korea memory exports, SK hynix +4% (SMW; Benzinga via search summary)</td></tr>
+<tr><td class="n">NVDA</td><td class="n up">+0.8% to +1%</td><td>$206.19 (SMW). Musk says Colossus 2 is on track for ~1.2M Blackwell chips by year-end</td></tr>
+<tr><td class="n">AVGO</td><td class="n up">&gt;+1%</td><td>Rebound. Marvell–Lumentum creates a larger rival in AI connectivity</td></tr>
+<tr><td class="n">AMZN</td><td class="n up">&gt;+1%</td><td>Rebound after its earnings sell-off. Phillip Securities upgraded to Buy (search summary)</td></tr>
+<tr><td class="n">QCOM</td><td class="n up">&gt;+1%</td><td>Rebound. Reports Wed (search summary)</td></tr>
+<tr><td class="n">TSLA</td><td class="n up">+0.9%</td><td>$403.32 (SMW). Terafab/TSMC report. Mixed Europe/China sales headlines</td></tr>
+<tr><td class="n">GOOGL</td><td class="n up">+0.8%</td><td>$282.14 (SMW). Launched second euro bond sale of the year (Bloomberg headline)</td></tr>
+<tr><td class="n">META</td><td class="n am">−0.1%</td><td>$614.10 (SMW). No specific catalyst found</td></tr>
+<tr><td class="n">AAPL</td><td class="n am">slightly lower</td><td>Ahead of fiscal Q4 report after close (Yahoo Finance)</td></tr>
+<tr><td class="n">INTC</td><td class="n dn">−0.85% to −0.9%</td><td>$65.16, most active NDX name pre-market. Barclays cut PT to $75 from $100</td></tr>
+<tr><td class="n">MSFT, ORCL, CRM, ASML</td><td class="n">n/a</td><td>No reliable pre-market quote found this run. ASML fell 6.1% in Europe on Friday</td></tr>
+<tr class="sec"><td colspan="3">Notable gappers outside the watchlist</td></tr>
+<tr><td class="n">LITE</td><td class="n dn">−6.8%</td><td>$783.80 (SMW). Being acquired by Marvell for 4.5 MRVL shares each. FQ1 revenue $1.26B vs. $1.25B est.</td></tr>
+<tr><td class="n">MRVL</td><td class="n dn">−3.6% (SMW) / +0.6% earlier</td><td>Acquirer in the $115B all-stock Lumentum deal. Already −22% since talks were reported</td></tr>
+<tr><td class="n">CHKP</td><td class="n dn">−6.3% to −9.9%</td><td>Q3 revenue $669.8M (−1% y/y), weak Q4 revenue forecast</td></tr>
+<tr><td class="n">IDXX</td><td class="n up">+2.5% to +7.0%</td><td>Q3 results filed this morning (Current Logic; SMW)</td></tr>
+<tr><td class="n">MAR</td><td class="n up">+5.5%</td><td>Raised FY26 outlook after a higher Q3 (RTTNews headline; SMW)</td></tr>
+<tr><td class="n">EL</td><td class="n up">+2.4% to +3.2%</td><td>Raised annual sales and profit forecasts. Sales +7% to $3.72B vs. $3.65B est.</td></tr>
+<tr><td class="n">RIVN</td><td class="n up">+3.1% to +3.2%</td><td>UBS upgraded to Buy from Neutral, PT $17</td></tr>
+<tr><td class="n">OKTA</td><td class="n up">+2.7%</td><td>Joins the S&amp;P 500 before Wednesday's open</td></tr>
+<tr><td class="n">SATS / SPCX</td><td class="n up">+4% / +1.4% to +3%</td><td>WaPo: SpaceX is in talks to buy EchoStar's Boost Mobile or gain access to its network</td></tr>
+<tr><td class="n">PLTR</td><td class="n up">+1.9%</td><td>Reports after close</td></tr>
+<tr><td class="n">TSEM / TEM</td><td class="n up">+3.3% / +2.6%</td><td>Reporting today, after Friday drops of −11.4% and −7.2%</td></tr>
+<tr><td class="n">PERI</td><td class="n up">+31%</td><td>$11.38 (RTTNews). Catalyst not verified this run</td></tr>
+<tr><td class="n">KOS</td><td class="n dn">−9%</td><td>Q3 sales $409.9M vs. $455.3M est. (Benzinga via search summary)</td></tr>
+<tr><td class="n">PGEN / NSSC</td><td class="n dn">−30% / −15%</td><td>Small and mid caps (RTTNews). Catalysts not checked</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">These are research observations only: names whose overnight developments may matter once regular trading starts. They are not recommendations to buy or sell.</p>
+
+<div class="card"><h3>1. Marvell (MRVL) / Lumentum (LITE): $115B all-stock merger. MRVL <span class="dn">−3.6%</span> (SMW; +0.6% in an earlier snapshot), LITE <span class="dn">−6.8%</span></h3>
+<p><b>Thesis:</b> This is the largest AI-hardware deal of the cycle, announced on the first trading day after the AI rout. Both stocks are falling pre-market, which says the market sees Marvell overpaying in stock at a time when AI multiples are under pressure. The tell is the deal spread. At the SMW snapshot, 4.5 × $189.28 = ~$852 of implied value per LITE share, vs. LITE at $783.80, a gap of ~8.7%. By the same math the gap was ~5% at Friday's close. A wider spread means the market is pricing in more completion or financing-value risk: the close is not expected until H1 2028, and both shareholder votes plus antitrust approvals are required. Watch two things at the open: whether the acquirer keeps sliding (Marvell holders will own ~67% of the combined company), and how Broadcom trades, since the deal builds a larger rival in AI optical and connectivity.</p>
+<p><b>Evidence:</b> Marvell press release / Business Wire (exchange ratio 4.500, ~$1,132 per LITE share or a 23.9% premium to the Oct. 28 unaffected close, ~67/33 ownership, &gt;$1B cost synergies, accretive to non-GAAP EPS in year one, TAM $550B). CoinCentral (Friday close $196.40, −10.05%; −22% since talks; Nvidia invested $2B in each company this year). SMW pre-market quotes. Investing.com (LITE FQ1 revenue $1.26B).</p>
+<p><b>Risks:</b> The implied value moves with MRVL every tick, so the spread can swing quickly. A broader chip rally could lift both. Regulatory review, including China, could stretch the timeline. Merger-arb selling and hedging can put mechanical pressure on MRVL that has nothing to do with fundamentals.</p>
+<p><span class="conf">Confidence: Medium (for elevated volatility). Low (for direction)</span></p></div>
+
+<div class="card"><h3>2. AI chip rebound: AMD (~+2.2%), TSM (&gt;+2%), NVDA (+0.8% to +1%), AVGO (&gt;+1%)</h3>
+<p><b>Thesis:</b> After an ~8% one-day drop in chips, the question at the open is whether this is a reflex bounce or the start of a recovery. One new data point arrived overnight: Korea's October chip exports up 259% y/y to $56.4B, a hard number that cuts against the "AI demand is rolling over" story behind Friday's sale. Musk's Colossus 2 update (~1.2M Blackwell chips by year-end) adds to it for NVDA, and a revived Terafab/TSMC talks report adds to it for TSM. Watch whether gains hold past the 10:00 AM ISM print and into AMD's report Tuesday night, which is the next test of PC weakness (Intel) against data-center strength.</p>
+<p><b>Evidence:</b> TipRanks (pre-market moves; AMD Q3 consensus $13.01B / $1.94; MSFT lowered its capex forecast, GOOGL's spending missed, AMZN held its $220B plan). Current Logic (Korea exports, SOXX −8.25% Friday, XLK +1.10% pre-market). TipRanks (Colossus 2, Terafab). SMW (NVDA quote).</p>
+<p><b>Risks:</b> Bounces after capitulation days often fade. Pre-market gains are small relative to Friday's losses, and the VIX curve is still inverted. Another AI-capex wobble, a hot ISM prices-paid reading, or a cautious Apple memory-cost comment tonight could restart selling. Midterm-related volatility on Tuesday overlaps AMD's report.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>3. Micron (MU): <span class="up">+1.2% to +2.35%</span> pre-market (~$895–905)</h3>
+<p><b>Thesis:</b> Memory is where the clearest cross-market signal arrived overnight. SK hynix rose ~4% on long-term supply agreements, and Korea's export surge is largely memory price and volume. Intel blamed high memory costs for its weak guidance, which puts memory makers on the selling side of the same pricing that hurts PC OEMs. Kioxia's −17% shows the group is not moving as one. Watch whether MU tracks SK hynix (strength from HBM and data-center contracts) or Kioxia and Friday's SanDisk reaction (fear of a pricing peak).</p>
+<p><b>Evidence:</b> Saxo (SK hynix +4.7%, Kioxia −17%). Current Logic (Korea exports, SK hynix +3.81%, Intel–memory link). SMW (+1.2%, $895.25). Benzinga headline via search summary (+2.35%, $905.49).</p>
+<p><b>Risks:</b> If the "memory pricing peak" story takes hold, memory stocks overshoot on the way down. MU's high price and recent volatility mean even a small change in sentiment produces large dollar moves. Apple's comments tonight on component costs could shift the view.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>4. Intel (INTC): <span class="dn">−0.85% to −0.9%</span> pre-market ($65.16) after −28.6% Friday</h3>
+<p><b>Thesis:</b> Intel is not taking part in the chip bounce. It is the most active Nasdaq 100 name pre-market (~5.8M shares on SMW), and Barclays cut its price target to $75 from $100. Day two after a guidance-driven collapse often decides whether the stock forms a base or keeps falling as funds that cap losses or rebalance finish selling. Relative strength or weakness against the SOX today is a useful read on how deep the PC-cycle damage is believed to go.</p>
+<p><b>Evidence:</b> TipRanks (Q4 revenue guide $15–16B vs. $17.1B est.; adj. EPS $0.25 vs. $0.43; PC weakness may last through H1 2027; Barclays PT cut). Current Logic (−0.85% pre-market). SMW (volume, price).</p>
+<p><b>Risks:</b> Heavy short interest after a 28% drop can drive sharp short-covering rallies. More downgrades or PT cuts could extend the slide. AMD's PC commentary Tuesday is a direct read-through either way.</p>
+<p><span class="conf">Confidence: Low</span></p></div>
+
+<div class="card"><h3>5. Apple (AAPL): slightly lower pre-market, fiscal Q4 report after the close</h3>
+<p><b>Thesis:</b> Apple has become the market's hedge against the AI trade. Its correlation with the SOX turned negative in July and hit a record low in September. That makes tonight's print matter for positioning on both sides. During the session, watch whether AAPL keeps lagging on a chip-rebound day, which would mean rotation out of the hedge. After the close, the key items are the first call under CEO John Ternus, early color on the iPhone Duo (on sale Oct. 23, after the quarter ended), and any comment on memory costs, a direct read-through to Intel's PC-margin thesis.</p>
+<p><b>Evidence:</b> Yahoo Finance live blog (consensus EPS $2.00 on $113.46B revenue vs. $1.85 / $102.46B a year ago; Ternus took over Sept. 1; Apple rose on 30 of 46 days the SOX fell ≥2% this year).</p>
+<p><b>Risks:</b> Most of the move happens after hours, so the open is about positioning, not news. A rotation back into AI hardware could weigh on AAPL during the session whatever the fundamentals.</p>
+<p><span class="conf">Confidence: Low (pre-report)</span></p></div>
+
+<div class="card"><h3>6. Check Point (CHKP): <span class="dn">−6.3% to −9.9%</span> pre-market (outside watchlist)</h3>
+<p><b>Thesis:</b> This is the second straight quarter of soft revenue guidance. Q3 revenue fell 1% y/y to $669.8M, inside the $655–685M range it gave in July. That range had already been below consensus and cost the stock 8–12% at the time. Today's Q4 forecast disappointed again. Other cybersecurity names are green (CRWD +2.7%, OKTA +2.7% on S&amp;P 500 inclusion), so the market is treating this as company-specific share loss, not a sector problem. Watch whether the gap holds or narrows once value-oriented holders start absorbing supply.</p>
+<p><b>Evidence:</b> Investing.com (Q3 revenue, non-GAAP EPS $2.49 vs. $2.48 est., weak Q4 forecast). Current Logic (−7.96%). PremarketPrice (−6.3%). MarketBeat via search summary (July guidance and reaction). SMW (CRWD).</p>
+<p><b>Risks:</b> The in-line EPS and Check Point's long record of share buybacks could limit downside (current buyback size not verified this run). Low-growth software after a guide-down can keep de-rating for several sessions.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>7. Estée Lauder (EL): <span class="up">+2.4% to +3.2%</span> pre-market (outside watchlist)</h3>
+<p><b>Thesis:</b> The guidance raise suggests the turnaround is working. Sales grew +7% to $3.72B vs. $3.65B expected, and the company raised full-year sales and profit forecasts ahead of the holiday season. It also fits the shift toward non-AI, consumer and defensive names that kept the Dow up ~2% in October while the Nasdaq fell. Watch whether a beat-and-raise outside tech gets paid on a day when money may rotate back into chips.</p>
+<p><b>Evidence:</b> Investing.com (sales, LSEG consensus, raised outlook). Current Logic (+2.98%). PremarketPrice (+3.22%).</p>
+<p><b>Risks:</b> The stock has had false starts before. Exposure to China and travel retail is still a swing factor. If money rotates back into tech, defensive and consumer gainers could fade.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used this run. The only file, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (46 days old), outside the ~14-day freshness window. Refreshing it (wrds_alpha_screen.py) would bring momentum, volume and earnings-surprise factors back into these briefs.</p>
+
+<h2>6. Sources</h2>
+<p class="note">Pages actually fetched:</p>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html (futures strip ~8:18 AM ET, oil, calendar, Apple preview, Apple/SOX chart of the day)</li>
+<li>https://www.tipranks.com/news/stock-market-today-nov-2-futures-rise-ahead-of-earnings-and-midterm-elections-oil-prices-fall (5:38 AM futures, oil, Asia closes, Europe open)</li>
+<li>https://home.saxo/en-gb/content/articles/macro/market-quick-take---markets-find-calm-after-friday-turmoil----2-november-2026-02112026 (Friday recap, Asia, macro, volatility, rates, commodities, week ahead)</li>
+<li>https://currentlogic.substack.com/p/the-morning-brief-november-2-2026 (Korea exports, sector pre-market, CHKP/EL/IDXX/TSEM/TEM)</li>
+<li>https://www.tipranks.com/news/why-are-amd-nvidia-and-broadcom-stocks-rising-in-premarket-today-november-2 (chip rebound, Intel guidance, Barclays PT cut, AMD consensus)</li>
+<li>https://www.tipranks.com/news/musk-revives-tsmc-terafab-talks (SpaceX, Terafab/TSMC, Colossus 2)</li>
+<li>https://www.investing.com/news/stock-market-news/premarket-movers-estee-lauder-rivian-rise-premarket-check-point-falls-4991151 (EL, CHKP, RIVN, OKTA, SATS/SPCX)</li>
+<li>https://www.rttnews.com/3707196/morning-market-movers-clro-peri-pgen-svrn-see-big-swings.aspx (7:45 AM small-cap gainers and losers; Marriott headline)</li>
+<li>https://stockmarketwatch.com/indices/nasdaq100/premarket (NDX pre-market gainers, losers and most active)</li>
+<li>https://coincentral.com/marvell-mrvl-stock-falls-10-ahead-of-115b-lumentum-acquisition (deal terms, MRVL prices)</li>
+</ul>
+<p class="note">Used via search-result summaries only (full page not fetched or returned empty):</p>
+<ul class="src">
+<li>https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity (primary source for deal terms)</li>
+<li>https://www.investing.com/news/company-news/marvell-to-acquire-lumentum-for-115-billion-in-allstock-deal-93CH-4991177</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/asia-stocks-rise-tech-gains-045147433.html (Reuters Asia/Europe futures)</li>
+<li>https://cnbc.com/2026/11/01/stock-market-today-live-updates.html (STOXX 600 early read)</li>
+<li>https://benzinga.com/markets/tech/26/11/62772505/whats-going-on-with-micron-technology-stock-monday-8 (fetch returned empty; MU quote from search summary)</li>
+<li>https://benzinga.com/trading-ideas/movers/26/11/62775680/kosmos-energy-posts-downbeat-q3-results-joins-once-upon-a-farm-and-other-big-stocks-moving-lower-in-mondays-pre-market-session</li>
+<li>https://www.kucoin.com/news/flash/chip-stocks-rise-before-u-s-market-open-marvell-tech-up-2-9 (AI-chip pre-market percentages)</li>
+<li>https://premarketprice.com/premarket-movers</li>
+<li>https://dailytradealert.com/2026/11/02/analyst-upgrades-and-downgrades-for-monday-11-2/ (AMZN upgrade)</li>
+<li>https://www.marketbeat.com/instant-alerts/check-point-software-technologies-nasdaqchkp-issues-q3-2026-earnings-guidance-2026-07-30/ (July CHKP guidance)</li>
+<li>https://earnings-watcher.com/wiki/pltr-earnings-november-2026 (PLTR implied move)</li>
+<li>https://www.benzinga.com/markets/tech/26/10/62741266/marvell-rumored-to-buy-lumentum-in-major-challenge-to-broadcom-counterpoint</li>
+<li>https://bloomberg.com/news/articles/2026-11-01/stock-market-today-dow-s-p-live-updates (not fetched)</li>
+<li>Prior context: alpha_report_2026-10-30_premarket.html and alpha_report_2026-10-30_close.html (local archive)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
