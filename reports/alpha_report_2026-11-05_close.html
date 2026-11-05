@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-05 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Thursday, November 5, 2026 &middot; Day 2 after the US midterms &middot; Worst S&amp;P day since April 2025; Nasdaq closes in a correction</div>
+<p class="note">Automated run. The task targets ~3:20 PM ET, but the schedule fired at 3:20 PM Central, so this session ran at about <b>4:20–4:50 PM ET, after the closing bell</b>. That means this edition reports <b>final closing index levels</b>, plus the first after-hours earnings reactions. <b>Closing data sources:</b> index closes come from CNBC (via search summaries), Kiplinger's closing wrap and AP's 4:19 PM update, and the three agree with each other. They also reconcile with Yahoo's prior-close math (S&amp;P 7,688.62, Nasdaq 25,736.52, Dow 53,356.12 on Wednesday). Two outlets published different "closing" levels: JournalArta had S&amp;P −4.13%, and TokenPost had S&amp;P −4.65% and Nasdaq −6.83%. Those disagree with all three main sources, so they were not used for index levels. For single stocks, final closes were found only for some names. Where we only have a late-session print, the time is marked. Moves are <b>vs. Wednesday's (Nov. 4) close</b>. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, 49 days old and outside the ~14-day window.</p>
+
+<h2>1. Session Summary</h2>
+<p><b>The market fell into the close instead of stabilizing.</b> The <b>S&amp;P 500 closed at 7,353.73 (<span class="dn">−4.36%</span>)</b>, its worst day since the April 2025 "Liberation Day" tariff shock (AP), and more than erased Wednesday's post-election rally, which was its best day in three months. The <b>Nasdaq Composite fell 1,421 points to 24,315.00 (<span class="dn">−5.52%</span>)</b>, its largest one-day percentage drop since April 2025 (Kiplinger). The index is now <b>11.9% below its Oct. 6 record of 27,599.79</b>, so the correction is confirmed. The Nasdaq-100 entered a correction on Monday. The <b>Dow lost 1,833.06 points to 51,523.06 (<span class="dn">−3.44%</span>)</b>. Yahoo said the Dow was on track for its worst second session after a midterm in data going back to 1896. All 11 S&amp;P sectors fell, with technology by far the worst (Kiplinger). The last 55 minutes made it worse: at ~3:05 PM the S&amp;P was −4.04% and the Dow −3.28%, so another ~0.3 points was lost into the bell.</p>
+<p><b>Cross-asset and tone:</b> The PHLX Semiconductor Index was <span class="dn">−10.65%</span> at 3:47 PM (Yahoo). CNBC says the iShares Semiconductor ETF lost ~10.4%, its worst day since March 2020. The VIX was <b>26.95 (+62%)</b> at 3:47 PM, its highest level since March (Kiplinger). The Russell 2000 was −4.65% at that time. Treasuries rallied: the 10-year fell to <b>4.83%</b> from 4.90% (AP). Oil rose: Brent +3.9% to $98.29, and WTI was ~$90.7 (+2.9%). Gold was ~$4,111 (+0.9%) and bitcoin ~$76.1K (−5%). <b>Retail investors capitulated:</b> Vanda Research says individual investors sold a net <b>$358M</b> of US stocks by 2:58 PM, the most since March 17, 2020 ("total capitulation," Vanda's Viraj Patel). Some were still buying leveraged TQQQ/SOXL. Nomura's Charlie McElligott called the day "shooting the generals": hedge funds selling their 2026 momentum winners to lock in gains, with some trades "approaching the dreaded 'Round Trip' levels." Argent's Jed Ellerbroek told Reuters: "This feels like the capitulation phase for the data center capex beneficiary stocks… But I think the magnitude of the moves is outsized." <b>Overseas:</b> South Korea's Kospi fell 5.3% and Japan's Nikkei 1.8%. The Bank of England raised rates (8–1) for the first time since 2023.</p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Calls from today's Pre-Market, Open, Midday and Afternoon Editions, compared with closing or latest-available prints.</p>
+<div class="tbl"><table>
+<tr><th>Call (edition, confidence)</th><th>Earlier print</th><th>Close / latest</th><th>Verdict</th></tr>
+<tr><td>Memory/storage is the weakest group into the close (Midday, Medium)</td><td class="n dn">MU −14.9%, SNDK −19.2% (~3:05)</td><td class="n dn">MU −17.5%, SNDK −22.3% (close, Kiplinger)</td><td><b>Played out, and got worse.</b> Both made new lows in the last hour</td></tr>
+<tr><td>AI compute underperforms (Midday, Medium). Afternoon add-on: "forced selling in chips is slowing" (Low on direction)</td><td class="n dn">NVDA −8.6%, AMD −15.3%, SOX −10.4% (~3:05)</td><td class="n dn">NVDA −9.3% (close); AMD ≈ −17% to −18%; SOX −10.65% (3:47)</td><td><b>Underperformance played out. The "slowing" read failed.</b> NVDA had its worst day since the DeepSeek crash (Jan. 27, 2025)</td></tr>
+<tr><td>QCOM holds its gap and outperforms the SOX (Pre-Market/Open; "faded" at Midday; "back in favor" at Afternoon)</td><td class="n dn">−8.95% (~2:50)</td><td class="n dn">−9.5% (close, Kiplinger)</td><td><b>Held, just barely.</b> Closed about 1 point better than the SOX's latest print (−10.65% at 3:47)</td></tr>
+<tr><td>APP holds most of its gain (every edition, Medium to Medium–High)</td><td class="n up">+29.3% (~3:05)</td><td class="n up">+31% (close, Kiplinger)</td><td><b>Played out.</b> Its best day in two years</td></tr>
+<tr><td>TSLA political/merger discount (Open/Midday, Low–Medium)</td><td class="n dn">−11.3% (~3:05)</td><td class="n dn">~−12% (3:52, Fox Business); SPCX ~−8%</td><td><b>Played out and extended</b></td></tr>
+<tr><td>Owners of powered capacity beat the suppliers (Afternoon, Medium)</td><td class="n">Spread ~6.5–9 pts</td><td class="n">GOOGL −2.2%, MSFT −3.6%, META −4.0% vs NVDA −9.3% (close)</td><td><b>Played out.</b> The spread held at ~5–8 pts</td></tr>
+<tr><td>Platforms hold Wednesday's gains (Pre-Market, Low–Medium)</td><td class="n">MSFT ~+0.1%, AAPL ~−0.15% (pre-mkt)</td><td class="n dn">MSFT −3.6%, META −4.0%, GOOGL −2.2%</td><td><b>Faded</b></td></tr>
+<tr><td>Software de-grossing: winners sold, laggards spared (Midday, Medium)</td><td class="n dn">PLTR −9.6%, CRWD −9.1% (~1:11)</td><td class="n">PLTR and CRWD down &gt;10% at their lows; CRM and ADBE "barely moving" (Yahoo, ~1:20)</td><td><b>Played out</b> (no closing prints)</td></tr>
+<tr><td>Defensives and earnings winners outperform (Midday, Medium)</td><td class="n up">TPR +7.1%, EPAM +19.7% (~3:05)</td><td class="n up">TPR +7.4% (AP, ~3 PM)</td><td><b>Played out</b> (only partly checked at the close)</td></tr>
+<tr><td>Index into the close (Afternoon, Low). Flagged that market-on-close selling could push the close lower</td><td class="n dn">S&amp;P −4.04% (~3:05)</td><td class="n dn">S&amp;P −4.36%</td><td><b>The weaker-close risk happened</b></td></tr>
+<tr><td>LITE/IREN "into tonight's prints" (Afternoon, Low)</td><td class="n dn">LITE −16.0%, IREN −14.1%</td><td class="n">See note</td><td><b>Correction:</b> Lumentum already reported fiscal Q1 on <b>Nov. 2</b>, alongside Marvell's $115B all-stock offer for the company (candidate 7). No IREN results found as of publication</td></tr>
+</table></div>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">% vs. Wednesday's close. "Close" means a closing print from the cited source. Otherwise the time (ET) of the latest print we found is shown. Volume vs. each stock's average was not available after the close: Yahoo's most-active page served a stale cache from a different session.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move</th><th>Volume / context</th></tr>
+<tr class="sec"><td colspan="3">Fixed watchlist</td></tr>
+<tr><td>NVDA</td><td class="n dn">−9.3% (close)</td><td>Worst day since Jan. 27, 2025 (Kiplinger). ~222M shares by ~3:05, far above any other name. Broke below its 200-day moving average (Yahoo). Down nearly 25% from its Oct. 6 record close, before today's final leg lower (Motley Fool, intraday)</td></tr>
+<tr><td>AMD</td><td class="n dn">≈ −17% to −18%</td><td>Sources differ: TokenPost −17.92% (auto-generated close list), Yahoo late-session −17.16%. CEO Lisa Su: the market is "a little bit short-sighted"</td></tr>
+<tr><td>MU</td><td class="n dn">−17.5% (close)</td><td>Has roughly tripled this year (Kiplinger)</td></tr>
+<tr><td>TSLA</td><td class="n dn">~−12% (3:52)</td><td>Texas flipped blue, and Dan Ives sees "a much tougher regulatory roadmap" for a SpaceX merger in 2027</td></tr>
+<tr><td>QCOM</td><td class="n dn">−9.5% (close)</td><td>Fiscal Q4 EPS $2.17 and revenue $10.4B both beat. The fiscal Q1 EPS guide midpoint of $2.25 is below the $2.27 estimate. Oppenheimer rates it Perform</td></tr>
+<tr><td>AVGO</td><td class="n dn">~−9%</td><td>CNBC, via search summary ("Broadcom and Nvidia each fell 9%")</td></tr>
+<tr><td>ORCL</td><td class="n dn">−7% to −9%</td><td>Sources disagree on the close</td></tr>
+<tr><td>ASML / INTC / TSM</td><td class="n dn">−7.7% (~3:10) / −7.2% (~2:50) / ~−10% (~11:34)</td><td>No closing print found. These are the Afternoon/Midday figures</td></tr>
+<tr><td>META</td><td class="n dn">−4.0% (close)</td><td>Recovered from −6.0% at ~10:30</td></tr>
+<tr><td>MSFT</td><td class="n dn">−3.6% (close)</td><td>A little weaker than −3.1% at ~2:35</td></tr>
+<tr><td>AMZN</td><td class="n dn">−2.6% (~2:35)</td><td>One later report says −4.3% (time unclear)</td></tr>
+<tr><td>GOOGL</td><td class="n dn">−2.2% (close)</td><td>Best of the AI-capex megacaps</td></tr>
+<tr><td>AAPL</td><td class="n dn">−1.3% (~3:05)</td><td>No closing print. 47.9M shares at ~3:05</td></tr>
+<tr><td>CRM</td><td class="n">≈ flat (~1:20)</td><td>"Barely moving" while PLTR and CRWD fell &gt;10% (Yahoo)</td></tr>
+<tr class="sec"><td colspan="3">Notable movers outside the watchlist</td></tr>
+<tr><td>APP</td><td class="n up">+31% (close)</td><td>Best day in two years. Wedbush target raised to $600 from $560. Two-day gain ≈ +45%</td></tr>
+<tr><td>SNDK</td><td class="n dn">−22.3% (close)</td><td>Roughly quadrupled this year. WDC and STX each down more than 14% (Yahoo, intraday)</td></tr>
+<tr><td>SPCX</td><td class="n dn">~−8% (3:52)</td><td>139M shares by ~3:05. Trading about 10% below its $135 IPO price (OfficeChai, midday)</td></tr>
+<tr><td>IREN / APLD / CRWV / NBIS</td><td class="n dn">each &gt; −12% (3:52)</td><td>Neoclouds and data-center operators (Fox Business). GE Vernova and Constellation were also hit</td></tr>
+<tr><td>LITE / AAOI / COHR</td><td class="n dn">−13% to −16% / −16% / −14%</td><td>Optical names sold off even where outlooks were strong (24/7 Wall St). LITE is now tied to MRVL by the merger exchange ratio (candidate 7)</td></tr>
+<tr><td>PLTR</td><td class="n dn">&gt; −10% at the low</td><td>~$40B of market value lost. Testing its 200-day average and ~25% below its Oct. 9 record (Yahoo)</td></tr>
+<tr><td>TPR</td><td class="n up">+7.4% (~3 PM)</td><td>Profit beat, and it raised its fiscal-year outlook (AP)</td></tr>
+<tr class="sec"><td colspan="3">After hours (reported after the close)</td></tr>
+<tr><td>ABNB</td><td class="n up">+~10% AH</td><td>Raised its 2026 growth outlook and announced a $12B buyback (Reuters). Down ~5% in the regular session</td></tr>
+<tr><td>NET</td><td class="n up">+~21% AH (unconfirmed)</td><td>Revenue +39% y/y, a large beat. The after-hours move comes from a single source (24/7 Wall St). Down ~10–12% in the regular session</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates / What to Watch Tomorrow</h2>
+<p class="note">Research observations only. These are names and themes worth investigating further into Friday, not recommendations to buy or sell.</p>
+
+<div class="card">
+<h3>1. Macro: S&amp;P closes at the low (<span class="dn">−4.36%</span>, VIX ~27), and Friday's payrolls arrive at 8:30 AM</h3>
+<p><b>Thesis:</b> The index closed near its worst levels of the day, so Friday opens with no relief rally already behind it, and the first scheduled catalyst is the October jobs report. Consensus is about <b>+59K</b> (Kiplinger) to <b>+65K</b> (the Reuters poll cited in earlier editions), with unemployment at <b>4.2%</b>. Forecasts range from Barclays at +50K, with unemployment falling to 4.1%, to RSM at +95K. Barclays says its own forecast "would keep an FOMC hike in play for the December meeting." Futures put December hike odds at about 70% (Reuters, via the Afternoon Edition). That makes the setup two-sided. A hot report raises hike odds again, which hurts long-duration tech, the group already under the most pressure. A soft report supports the falling-yield move (10-year at 4.83%, from above 5.30% last month) but could add growth worries. Two things argue for big swings in both directions on Friday: today's signs of capitulation (record retail net selling since 2020, a +62% VIX jump, Nomura's "round trip" comment) and the lack of any bounce into the close.</p>
+<p><b>Evidence:</b> Kiplinger closing wrap and jobs preview (economist forecasts; ADP October +86K vs. 75K expected). AP closing update (worst day since April 2025; yields; Brent). Yahoo live blog (Vanda retail data; McElligott quotes; VIX 26.95 at 3:47 PM). CNBC closing levels (via search summaries).</p>
+<p><b>Risks / what could change overnight:</b> Asia opens after today's −5.3% Kospi. Oil and Iran headlines (Brent +3.9%). Weekend risk before the Nov. 10 CPI. Unnamed Fed speakers on Friday could repeat Hammack and Barkin's hawkish comments from today.</p>
+<p><span class="conf">Confidence: Medium (elevated volatility Friday)</span> <span class="conf">Low (direction)</span></p>
+</div>
+
+<div class="card">
+<h3>2. AI compute and memory: NVDA <span class="dn">−9.3%</span>, AMD <span class="dn">≈ −17–18%</span>, MU <span class="dn">−17.5%</span>, SNDK <span class="dn">−22.3%</span>. The selling sped up into the bell</h3>
+<p><b>Thesis:</b> The Afternoon Edition thought forced selling in chips might be slowing, because the group held flat from about 1 to 3 PM. That was wrong. Every name made new lows in the last hour, and NVDA closed at its worst day since DeepSeek. This group is now the market's main source of volatility, and two opposing arguments are clearer than they were this morning. <i>Bearish:</i> politics now matters for data-center construction. Democrats won in Texas and Ohio after campaigns that included moratorium proposals, and OpenAI has already published new data-center commitments, including paying for all electricity and infrastructure. Goldman's TMT desk warned of an "inventory correction" if power and sites lag chip deliveries, and the FT reports some AWS GB300 racks are in warehouses. <i>Capitulation case:</i> Nomura describes the selling as year-end profit protection, not a fundamental break. Argent calls the moves "outsized." Lisa Su says demand isn't slowing. Retail investors sold at a pace last seen in March 2020. Over the past month LRCX is −36%, AMAT −30%, AMD −22% and NVDA −15% (Yahoo, before today's close), so many of these positions have been heavily cut already.</p>
+<p><b>Evidence:</b> Kiplinger (NVDA and MU closes and records). Yahoo live blog (McElligott; 1-month declines; Su interview; NVDA below its 200-day average). Fox Business (Ellerbroek via Reuters; neocloud declines). ABC News (OpenAI data-center policy). Afternoon Edition (Goldman desk, FT AWS report).</p>
+<p><b>Risks / what could change overnight:</b> SK Hynix and Samsung in Seoul set the first overnight read for memory. Any state-level data-center moratorium headline would extend the selling. Payrolls hit this group hardest through rates. NVDA reports Nov. 17, which is the next real fundamental test. A sharp short-covering bounce is likely at some point, but its timing cannot be predicted.</p>
+<p><span class="conf">Confidence: Medium (group stays the main volatility source)</span> <span class="conf">Low (direction Friday)</span></p>
+</div>
+
+<div class="card">
+<h3>3. Cloudflare (NET): <span class="dn">~−10%</span> in the session, then a reported <span class="up">+~21%</span> after hours on a 39% growth quarter</h3>
+<p><b>Thesis:</b> This is the first AI-adjacent software report since the rout began, and the results were strong. <b>Q3 revenue was $782.5M, up 39% y/y</b>, versus a ~$736.8M consensus and $736–737M company guidance, a ~6% beat. Management called it the fastest growth in nearly four years. Current RPO grew 37%, and the non-GAAP operating margin rose to 17.5% from 15.3%. Q4 revenue guidance is $845–846M, and full-year 2026 guidance is $2,963–2,964M with non-GAAP EPS of $1.35. Earlier in the day the stock was sold off with the "software AI winners" (Yahoo listed NET among the steep decliners). Friday will show whether strong fundamentals can overcome sector-wide selling. If the after-hours gain holds, it adds to the day's one pattern that worked: beat-and-raise companies held up while everything else fell (APP, TPR, EPAM).</p>
+<p><b>Evidence:</b> Cloudflare Q3 2026 press release (via Stock Titan, fetched). 24/7 Wall St live blog (after-hours move and the session's ~10% drop; search-result summary only, since our fetch was rate-limited). Yahoo live blog (NET among the software decliners).</p>
+<p><b>Risks:</b> <b>The +21% figure has only one source</b> and could not be confirmed. The GAAP operating loss widened to $67.9M (8.7% of revenue). In a high-VIX market, after-hours gaps on earnings often shrink by the next morning. The company is still exposed to the same selling of crowded AI names.</p>
+<p><span class="conf">Confidence: Medium (strong results)</span> <span class="conf">Low (gap holds through Friday)</span></p>
+</div>
+
+<div class="card">
+<h3>4. Airbnb (ABNB): <span class="up">+~10%</span> after hours after raising its full-year outlook and authorizing a $12B buyback</h3>
+<p><b>Thesis:</b> Airbnb is a clean beat-and-raise with no AI-capex exposure, the kind of company that held up today. <b>Q3 revenue was $4.87B (+19%)</b>, above the ~$4.75B estimate. Diluted EPS was <b>$3.16 vs. $2.85 consensus</b>, up from $2.21 a year ago. Nights and seats booked rose 16% to 155M. 2026 revenue growth guidance went up to "high teens" from "at least mid-teens," and the board authorized a new buyback of up to <b>$12B</b>. Secondary sources put Q4 revenue guidance at $3.22–3.28B, above a ~$3.16B estimate; we could not confirm that against the company release. There is also an efficiency angle: customer-support cost per booking fell more than 17% y/y, with about 40% of issues resolved without a human agent. This stands out because hotel and online-travel peers (Hilton, Marriott, Expedia, Booking) have been cautious about Q4, citing Iran-war airfares.</p>
+<p><b>Evidence:</b> Reuters via Global Banking &amp; Finance Review (fetched: +10% extended trading, guidance, $12B buyback, booking metrics). StreetInsider headline "Tops Q3 EPS by 31c" (search result). Search-result summaries (Q4 guidance, consensus).</p>
+<p><b>Risks:</b> Oil and Iran-war travel risk (Brent ~$98). Airbnb is still watching EMEA developments. A broad sell-off on Friday could pull down even the earnings winners. The Q4 guidance figures are unverified.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>5. AppLovin (APP) <span class="up">+31%</span>: the day's clear leader in relative strength, now up ≈45% in two sessions</h3>
+<p><b>Thesis:</b> Every earlier edition expected APP to hold its gain, and it did. It closed at +31%, near the top of its roughly +29% to +32% intraday range, on the worst S&amp;P day since April 2025. Q3 EPS was $4.30 (+76% y/y) on revenue of $2.18B (+55%), and Q4 guidance of $2.37–2.40B is above the $2.25B estimate. Wedbush raised its target to $600 from $560, saying "We previewed Q3 as the test, and AppLovin passed it," and expects e-commerce to "inflate" Q4. BTIG ($450) and Needham ($475) also raised targets. For Friday, the question is whether APP becomes a funding source if money rotates back into oversold semis.</p>
+<p><b>Evidence:</b> Kiplinger closing wrap (+31%, Wedbush quote). Yahoo live blog (results, BTIG and Needham targets). AP (buyback expanded to $3.6B total).</p>
+<p><b>Risks:</b> High beta (~2.6). Profit-taking after a ≈45% two-day move. Possible ad-tech regulatory attention under a Democratic Congress.</p>
+<p><span class="conf">Confidence: Medium (stays a relative-strength leader)</span> <span class="conf">Low (extends Friday)</span></p>
+</div>
+
+<div class="card">
+<h3>6. Owners of powered capacity vs. suppliers: GOOGL <span class="dn">−2.2%</span>, MSFT <span class="dn">−3.6%</span>, META <span class="dn">−4.0%</span> vs. NVDA <span class="dn">−9.3%</span> and SOX <span class="dn">~−10.7%</span></h3>
+<p><b>Thesis:</b> The Afternoon Edition's spread trade held through the close: the hyperscalers lagged the chips by ~5–8 points. The argument (Goldman's TMT desk) is that if building new data centers gets harder, "existing, power-secured compute" becomes more valuable. Also, if hyperscaler capex slows because projects can't be built, their free cash flow rises, and the chip suppliers get no such offset. Tomorrow will show whether this is a lasting relative-value pattern or a one-day ranking that reverses when the most oversold chips bounce.</p>
+<p><b>Evidence:</b> Kiplinger closes for GOOGL, MSFT, META and NVDA. Yahoo SOX print at 3:47 PM. Afternoon Edition (Goldman desk quotes; hyperscaler recovery during the day).</p>
+<p><b>Risks:</b> A short-covering rally in semis would narrow the spread quickly. The hyperscalers have the largest index weights, so they are exposed to mechanical index selling. Microsoft's buyout offer to ~60K employees and Google's expanded exit program (OfficeChai) show AI-cost pressure on these companies too.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>7. Lumentum (LITE) <span class="dn">−13% to −16%</span>: correction to earlier editions. It is now a merger-linked stock, not a pre-earnings setup</h3>
+<p><b>Thesis:</b> Earlier editions described LITE as falling "into tonight's print." That was wrong. Lumentum reported fiscal Q1 on <b>Nov. 2</b> (EPS $4.57 vs. $4.22; revenue $1.26B, +136.5% y/y, per MarketBeat), the same day <b>Marvell agreed to buy it in an all-stock deal worth about $115B</b>. The terms are a fixed <b>4.5 MRVL shares per LITE share</b>, about $1,132 per share at announcement, closing expected in the first half of 2028, with a reported $5.8B break fee. Analysts flag Chinese regulatory approval as a risk. With a fixed exchange ratio, LITE's daily moves mostly follow MRVL and the optical group (AAOI −16%, COHR −14% even on strong guidance). The useful number to watch is the <b>gap between LITE's price and 4.5× MRVL's price</b>. A widening gap would mean the market sees more risk that the deal fails or is delayed, especially now that more regulatory scrutiny is likely after the election.</p>
+<p><b>Evidence:</b> Search-result summaries of Yahoo Finance, Bloomberg, Fox Business and SEC Form 425 filings (deal terms). MarketBeat (Nov. 2 results; call date listed as Nov. 5 at 5 PM ET). 24/7 Wall St (optical declines). Investing.com via the Afternoon Edition (LITE −16.0%).</p>
+<p><b>Risks:</b> We did not fetch the deal filings. The terms come from search summaries. We did not get a closing price for MRVL or LITE, so we could not calculate the spread.</p>
+<p><span class="conf">Confidence: Low</span></p>
+</div>
+
+<h2>5. Tomorrow's Calendar</h2>
+<div class="tbl"><table>
+<tr><th>When (ET)</th><th>Event</th><th>Notes</th></tr>
+<tr class="sec"><td colspan="3">After today's close (Thu, Nov. 5)</td></tr>
+<tr><td>Reported</td><td>Airbnb (ABNB)</td><td>Beat and raised outlook; $12B buyback; +~10% after hours (Reuters)</td></tr>
+<tr><td>Reported</td><td>Cloudflare (NET)</td><td>Revenue $782.5M (+39%); Q4 guidance $845–846M; +~21% after hours (unconfirmed)</td></tr>
+<tr><td>Scheduled</td><td>Monster Beverage, Akamai, DraftKings, Applied Optoelectronics, IREN</td><td>Per Yahoo and the Midday Edition's calendar. No results found as of publication</td></tr>
+<tr><td>Correction</td><td>DoorDash, Lumentum</td><td>Both reported earlier this week. DoorDash's IR notice lists Nov. 4, and MarketBeat cites an Oct. 29 release; Lumentum reported Nov. 2. Neither reported Thursday night, so the Midday Edition's list was wrong</td></tr>
+<tr class="sec"><td colspan="3">Friday, Nov. 6</td></tr>
+<tr><td>Before the open</td><td>Earnings: Enbridge, Canadian Utilities/ATCO, Algonquin Power; Moderna listed for Friday</td><td>Light US calendar (digrin; Newsquawk lists MRNA without a time)</td></tr>
+<tr><td>8:30 AM</td><td><b>October employment report</b></td><td>Consensus ~+59K to +65K; unemployment 4.2%. September was +29K. Deutsche Bank expects average hourly earnings +0.3%</td></tr>
+<tr><td>10:00 AM</td><td>University of Michigan consumer sentiment</td><td>Forecast 47.8 vs. 48.0 prior. This comes from a search-result summary only; not verified</td></tr>
+<tr><td>During the day</td><td>Fed speakers</td><td>Reported as scheduled, but we could not confirm names. Hammack and Barkin (today) favor gradual hikes</td></tr>
+<tr class="sec"><td colspan="3">Further out</td></tr>
+<tr><td>Tue, Nov. 10</td><td>October CPI</td><td>Seen as deciding the December hike</td></tr>
+<tr><td>Tue, Nov. 17</td><td>Nvidia earnings</td><td>The next major fundamental test for AI compute</td></tr>
+<tr><td>Dec. 8–9</td><td>FOMC</td><td>Fed funds at 3.75–4.00%. ~70% chance of a December hike priced in</td></tr>
+</table></div>
+
+<p class="note"><b>WRDS Quant Signals:</b> omitted. alpha_wrds_signals.csv has as_of_date 2026-09-17 (49 days old, outside the ~14-day window), so it was not used. This edition relies on public research only.</p>
+
+<h2>6. Sources</h2>
+<p class="note">Fetched and read unless marked otherwise.</p>
+<ul class="src">
+<li>Kiplinger, "Nasdaq Plunges 1,421 Points, Dow Slides 1,833 Points in Tech Rout: Stock Market Today" (closing levels; NVDA, MU, SNDK, GOOGL, META, MSFT, QCOM, APP closes; Bahnsen, Schafer, Reese quotes): https://www.kiplinger.com/investing/stocks/nasdaq-plunges-1-421-points-in-massive-tech-rout-stock-market-today</li>
+<li>AP via BNN Bloomberg, "A brutal sell-off for AI stocks sends Wall Street reeling, and the S&amp;P 500 tumbles 4.4%" (updated 4:19 PM; yields, Brent, AppLovin, Tapestry, Kospi, BoE): https://bnnbloomberg.ca/markets/2026/11/05/world-shares-mostly-gain-after-us-midterm-elections-as-ai-related-stocks-sink</li>
+<li>Yahoo Finance live blog, Nov. 5 (cached with index strip at ~3:46 PM; Vanda retail data, McElligott, Su, PLTR/CRWD, SpaceX/Tesla, BoE, Challenger): https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html</li>
+<li>Fox Business, "Stocks plunge as Dem midterm sweep fuels AI regulatory concerns" (3:52 PM; TSLA, SPCX, neoclouds, Ellerbroek quote): https://www.foxbusiness.com/markets/stocks-nov-5-2026</li>
+<li>Kiplinger, "What to Expect From the October Jobs Report" (consensus and bank forecasts): https://kiplinger.com/investing/economy/jobs-report-october-2026-what-to-expect</li>
+<li>Reuters via Global Banking &amp; Finance Review, "Airbnb lifts annual revenue growth forecast…" (+10% extended trading): https://www.globalbankingandfinance.com/airbnb-lifts-annual-revenue-growth-forecast-resilient-global/</li>
+<li>Cloudflare Q3 2026 results press release, via Stock Titan: https://www.stocktitan.net/news/NET/cloudflare-announces-third-quarter-2026-financial-e4dhao7zi9oi.html</li>
+<li>TokenPost, "U.S. Stocks Close Lower as SanDisk Falls 22.69% and AMD Drops 17.92%" (used only for AMD; its index levels conflict with all other sources): https://www.tokenpost.com/news/investing/49554</li>
+<li>OfficeChai, "Tech And AI Stocks Crash As NASDAQ Falls Over 5%" (11:51 AM intraday table; context only): https://officechai.com/ai/tech-and-ai-stocks-crash-as-nasdaq-falls-over-5/</li>
+<li>ABC News via ABC7 Chicago (1 PM version; OpenAI data-center policy): https://abc7chicago.com/story/dow-plunges-1200-points-nasdaq-correction-territory-midterm-results-stock-rally/20018037/</li>
+<li>Investopedia via Yahoo (pre-market version; context only): https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-mixed-130952710.html</li>
+<li>Search-result summaries only (page not fetched, or fetch empty/rate-limited): CNBC live blog (closing levels; iShares semi ETF worst since March 2020; AVGO ~−9%) https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html ; 24/7 Wall St Cloudflare live blog (+21% AH) https://247wallst.com/investing/2026/11/05/live-can-cloudflares-q3-earnings-tonight-spark-a-rebound-after-10-slide-today/ ; 24/7 Wall St optical slide https://247wallst.com/investing/2026/11/05/applied-optoelectronics-sinks-16-coherent-tumbles-14-despite-strong-outlook-lumentum-plunges-13-as-ai-optical-stocks-slide/ ; Yahoo Finance, Marvell–Lumentum deal https://finance.yahoo.com/markets/stocks/articles/marvell-acquire-lumentum-115-billion-134153803.html ; Bloomberg https://www.bloomberg.com/news/articles/2026-11-02/marvell-reaches-115-billion-deal-for-lumentum-holdings ; MarketBeat LITE results https://www.marketbeat.com/earnings/reports/2026-11-2-lumentum-holdings-inc-stock/ ; StreetInsider ABNB https://www.streetinsider.com/Earnings/Airbnb+(ABNB)+Tops+Q3+EPS+by+31c,+Beats+on+Revenue/27299676.html ; DoorDash IR https://ir.doordash.com/news/news-details/2026/DoorDash-to-Announce-Third-Quarter-2026-Results-on-November-4-2026/default.aspx ; Motley Fool, "Why Nvidia Stock Is Getting Punished Today" https://www.fool.com/investing/2026/11/05/why-nvidia-stock-is-getting-punished-today/ ; digrin earnings calendar https://www.digrin.com/stocks/earnings_calendar/2026-11-06 ; fedratecalc November calendar https://fedratecalc.com/us-economic-calendar/november-2026/</li>
+<li>Consulted but <b>not used</b> (stale or wrong date): Yahoo most-active page (stale cache from another session) https://finance.yahoo.com/markets/stocks/most-active/ ; StockAnalysis after-hours (Oct. 27 data) https://stockanalysis.com/markets/afterhours/ ; Kiplinger weekly calendar (Oct. 26–30 week) https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar ; Nasdaq.com "S&amp;P 500 Movers: APP, SNDK" (Jan. 2026) https://www.nasdaq.com/articles/sp-500-movers-app-sndk ; JournalArta (closing levels conflict) https://journalarta.com/en/2026/11/06/wall-street-plunges-nasdaq-sinks-5-27-and-sp-500-falls-4-13-in-chip-rout/</li>
+<li>Empty fetches: CNBC live blog; Stock Titan market live page https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026 ; NBC News https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650</li>
+<li>Prior editions (local archive): alpha_report_2026-11-05_premarket.html; _open.html; _midday.html; _afternoon.html (intraday prints and Goldman/FT/Reuters context referenced above)</li>
+<li>WRDS signals file checked: alpha_wrds_signals.csv (as_of_date 2026-09-17; stale, not used)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
