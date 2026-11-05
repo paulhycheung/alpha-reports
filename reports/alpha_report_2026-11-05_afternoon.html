@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-05 – Afternoon Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Afternoon Edition</span> &nbsp; Thursday, November 5, 2026 &middot; Day 2 after the US midterms &middot; The afternoon bounce fails; Fed hawks offer no cushion</div>
+<p class="note">Automated run. The task targets ~2:00 PM ET, but the schedule fired at 2:00 PM Central, so this session ran from about <b>3:08 to 3:20 PM ET</b>, inside the last hour of trading. <b>Timing of the prints:</b> afternoon quotes come from Investing.com's quote widgets (index strip, "In this article" chips and a most-active table with cumulative share volume), captured on six page loads between roughly <b>2:35 and 3:10 PM ET</b>. The widgets carry no timestamp, so we put them in order by Nvidia's cumulative volume (217.5M → 221.6M shares), and one of them is pinned by Investing.com's own text ("by 14:41 ET"). Below, "~2:35" means the earliest of those loads and "~3:05" the latest. Earlier prints are from Reuters (12:24 PM) and this morning's editions. Moves are <b>vs. Wednesday's (Nov. 4) close</b>. Investing.com warns that its widget data "is not necessarily real-time nor accurate," so treat sub-1-point differences as noise. Investing.com's QCOM and MSFT quote pages and the Yahoo live blog (index strip still at 1:01 PM) served stale caches and were not used for afternoon prices. CNBC, Benzinga and StreetInsider fetches returned empty pages. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, 49 days old and outside the ~14-day window.</p>
+
+<h2>1. Afternoon Session Summary</h2>
+<p><b>A bounce attempt in the early afternoon failed, and the market goes into the last hour back at its 1 PM lows.</b> Around ~2:35 PM the S&amp;P 500 had recovered to <b>7,416 (<span class="dn">−3.55%</span>)</b> and the VIX had eased to 24.2. By 2:41 PM it was 7,408 (−3.7%), with the Nasdaq Composite at <b>24,531 (<span class="dn">−4.7%</span>)</b> and the Dow at 51,753 (−3.0%) (Investing.com text). By ~3:05 PM the bounce was gone: <b>S&amp;P 7,378 (<span class="dn">−4.04%</span>)</b>, <b>Dow 51,607 (<span class="dn">−3.28%</span>, −1,749 pts)</b>, Nasdaq Composite <span class="dn">~−5.0% to −5.1%</span>, PHLX Semiconductor Index <span class="dn">−10.4%</span>, <b>VIX 26.2 (+58%)</b>. That is effectively the same S&amp;P level as the 1:01 PM print (7,379, −4.02%), so the afternoon has been a round trip. Reuters' 12:24 PM breadth: decliners led advancers 4.26-to-1 on the NYSE and 5.38-to-1 on the Nasdaq, every S&amp;P sector was negative, and the Nasdaq had 430 new 52-week lows. The Nasdaq Composite is trading more than 10% below its Oct. 6 record close, so it will confirm a correction if it closes there. The Nasdaq-100 already confirmed one on Monday. Reuters says the Nasdaq is on course for its worst day since the April 2025 "Liberation Day" rout.</p>
+<p><b>Fed headlines (no FOMC today):</b> there is no 2:00 PM Fed statement. The October meeting was last week, and the next one is Dec. 8–9. The Fed news today is two hawkish regional presidents, Reuters reports. <b>Cleveland's Beth Hammack</b> (Zurich): "I expect that monetary policy will need to move to a restrictive stance to bring inflation back to 2% in a timely manner," through "more frequent smaller adjustments." <b>Richmond's Thomas Barkin</b> (Charlotte): inflation is "too high," and on the pace of hikes, "gradual makes sense." Both spoke as stocks fell about 4%. Futures still price a <b>~70% chance of a December hike, down from &gt;80% on Wednesday</b>. The market trimmed hike odds, but the Fed is not offering any easing to cushion the sell-off. The fed funds range is 3.75–4.00% after September's hike. TD Securities says it is "confident" the Fed hikes a total of half a point by the start of next year. <b>Cross-asset (~3:05):</b> 10-year <b>4.83%</b> (−7 bp), Brent <b>$98.4</b> (+4.0%), WTI $90.7 (+2.9%), gold $4,115 (+1.0%), copper −3.2%. <b>Tone:</b> Truist's Keith Lerner calls it a "buyers' strike in tech" that "has broadened into a general risk-off move." Still ahead: <b>after-close earnings from Airbnb, Lumentum, Cloudflare, DoorDash, IREN and others</b> (per the Midday Edition's sources), then Friday's October payrolls (Reuters poll +65K, unemployment 4.2%).</p>
+
+<h2>2. Follow-up on Earlier Calls</h2>
+<p class="note">Calls from today's Pre-Market, Open and Midday Editions. Afternoon prints are from the ~3:05 PM Investing.com load unless marked otherwise.</p>
+<div class="tbl"><table>
+<tr><th>Call (edition, confidence)</th><th>Then</th><th>Afternoon</th><th>Verdict</th></tr>
+<tr><td>Memory/storage stays the weakest group into the close (Midday, Medium)</td><td class="n dn">MU −14.9%, SNDK −19.7% (1:08); WDC −16.8%, STX −15.3% (~1:15)</td><td class="n dn">MU −14.9%, SNDK −19.2%, WDC −14.9%, STX −15.0%</td><td><b>Played out.</b> Still among the worst large caps. No bounce and no new leg down; WDC recovered ~2 pts</td></tr>
+<tr><td>AI compute underperforms the equal-weight market (Midday, Medium)</td><td class="n dn">NVDA −8.7%, AMD −15.5% (~1:15); SOX −10.9% (1:08)</td><td class="n dn">NVDA −8.6%, AMD −15.3%; SOX −10.4%</td><td><b>Played out.</b> Flat since 1 PM and still more than twice the S&amp;P's decline</td></tr>
+<tr><td>QCOM: gap holds, then outperforms SOX (Pre-Market/Open; called "Faded" at Midday)</td><td class="n dn">−13.4% (~11:00); −11.5% (12:24, Reuters)</td><td class="n dn">−8.95% (~2:50)</td><td><b>Reversed back in favor.</b> Now slightly ahead of the SOX (−10.0% in the same load). Single source; see candidate 4</td></tr>
+<tr><td>APP holds most of its gain (Pre-Market/Open/Midday, Medium)</td><td class="n up">+30.5% (~11:00)</td><td class="n up">+29.3% to +29.7% ($351–352)</td><td><b>Played out</b></td></tr>
+<tr><td>TSLA political/merger discount (Open/Midday, Low–Medium)</td><td class="n dn">−10.66% (12:05)</td><td class="n dn">−11.3% ($341.53); SPCX −8.4%</td><td><b>Played out</b>, slightly extended</td></tr>
+<tr><td>Defensives and earnings winners outperform (Midday, Medium)</td><td class="n up">EPAM +19.4%, CPAY +7.0%, TPR +5.7%, CF +8.4%</td><td class="n up">EPAM +19.7%, CPAY +8.2%, TPR +7.1%, CF +5.5%, MSI +5.3%, VRSK +5.7%</td><td><b>Played out</b></td></tr>
+<tr><td>Software de-grossing: winners sold, laggards spared (Midday, Medium)</td><td class="n dn">PLTR −9.6%, CRWD −9.1%, OKTA −10.1% (~1:11)</td><td class="n">No afternoon print found</td><td><b>Unverified</b></td></tr>
+<tr><td>Platforms hold Wednesday's gains (Pre-Market, Low–Medium)</td><td class="n dn">META −6.0%, GOOGL −3.0%, MSFT −3.5% (~10:30)</td><td class="n dn">META −3.9%, GOOGL −1.7%, AMZN −2.6%, AAPL −1.3%; MSFT −3.1% (~2:35)</td><td><b>Faded, then partly recovered.</b> Still down, but now clearly beating the semis (candidate 5)</td></tr>
+<tr><td>Index direction into the close (Midday, Low)</td><td class="n dn">S&amp;P −4.02% (1:01)</td><td class="n dn">−3.55% (~2:35) → −4.04% (~3:05)</td><td><b>Round trip.</b> The Low confidence was warranted</td></tr>
+</table></div>
+
+<h2>3. Afternoon Movers</h2>
+<p class="note">% vs. Wednesday's close. Volume is cumulative shares traded so far today, from Investing.com's most-active, gainers and losers tables (~3:05 load unless marked). Volume relative to each stock's average was not available.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move (time ET)</th><th>Volume / context</th></tr>
+<tr class="sec"><td colspan="3">Fixed watchlist</td></tr>
+<tr><td>NVDA</td><td class="n dn">−8.6% ($182.85)</td><td><b>221.6M shares</b>, top of Investing.com's most-active list (~$40B traded). Flat since ~1:15 (−8.7%)</td></tr>
+<tr><td>AMD</td><td class="n dn">−15.3% ($414.10)</td><td>52.2M. Back near its ~10:25 AM level ($416.58)</td></tr>
+<tr><td>MU</td><td class="n dn">−14.9% ($676.45)</td><td>60.9M. Flat vs. −14.9% at 1:08</td></tr>
+<tr><td>TSLA</td><td class="n dn">−11.3% ($341.53)</td><td>60.4M. Slightly worse than −10.66% at 12:05</td></tr>
+<tr><td>QCOM</td><td class="n dn">−8.95% (~2:50)</td><td>Up from −13.4% at ~11:00. Fiscal Q4 report: weak smartphone-chip revenue, strong data-center forecast</td></tr>
+<tr><td>ASML (ADR)</td><td class="n dn">−7.7% (~3:10)</td><td>−8.8% in the morning at ~$1,365 (52-week high $1,999.96). China ~20% of 2026 revenue</td></tr>
+<tr><td>INTC</td><td class="n dn">−7.2% (~2:50)</td><td>Better than −8.3% at ~11:00</td></tr>
+<tr><td>META</td><td class="n dn">−3.9% ($605.37)</td><td>Better than −6.0% at ~10:30</td></tr>
+<tr><td>MSFT</td><td class="n dn">−3.1% (~2:35)</td><td>Better than −3.5% at ~10:30</td></tr>
+<tr><td>AMZN</td><td class="n dn">−2.6% ($259.19)</td><td>62.6M (~2:35)</td></tr>
+<tr><td>GOOGL</td><td class="n dn">−1.7% ($284.16)</td><td>Better than −3.0% at ~10:30</td></tr>
+<tr><td>AAPL</td><td class="n dn">−1.3% ($345.10)</td><td>47.9M. Still the best-holding megacap</td></tr>
+<tr><td>AVGO / TSM / ORCL</td><td class="n dn">−8.6% (~1:15) / ~−10% (~11:34) / −8.5% (~11:00)</td><td>No afternoon print found; these are the Midday Edition's figures</td></tr>
+<tr><td>CRM</td><td class="n">n/a</td><td>No verified intraday print today</td></tr>
+<tr class="sec"><td colspan="3">Notable movers outside the watchlist</td></tr>
+<tr><td>SPCX</td><td class="n dn">−8.4% ($124.46)</td><td><b>139.1M shares</b>, second only to NVDA on Investing.com's most-active list. Tesla–SpaceX merger and data-center exposure</td></tr>
+<tr><td>APP</td><td class="n up">+29.3% ($351.42)</td><td>18.9M. Top S&amp;P gainer all session</td></tr>
+<tr><td>EPAM / CPAY / TPR</td><td class="n up">+19.7% / +8.2% / +7.1%</td><td>2.6M / 1.2M / 3.4M. Earnings winners</td></tr>
+<tr><td>VRSK / CF / MSI</td><td class="n up">+5.7% / +5.5% / +5.3%</td><td>1.7M / 2.6M / 2.4M</td></tr>
+<tr><td>SNDK / WDC / STX</td><td class="n dn">−19.2% / −14.9% / −15.0%</td><td>25.0M / 13.5M / 7.6M</td></tr>
+<tr><td>ALAB</td><td class="n dn">−16.9%</td><td>7.4M. AI connectivity</td></tr>
+<tr><td>LITE</td><td class="n dn">−16.0%</td><td>7.9M. <b>Reports after today's close</b> (candidate 6)</td></tr>
+<tr><td>NBIS / CRWV / IREN</td><td class="n dn">−14.8% / −9.4% / −14.1%</td><td>NBIS 38.1M. Neoclouds; IREN reports after the close (CRWV/IREN from ~2:50 chips)</td></tr>
+<tr><td>ARM</td><td class="n dn">−12.0% (~2:50)</td><td>Current-quarter guidance failed to beat expectations, overshadowing a September-quarter beat (Investing.com)</td></tr>
+</table></div>
+
+<h2>4. Afternoon Alpha Candidates</h2>
+<p class="note">Research observations only. These are names and themes worth investigating further into the close and overnight, not recommendations to buy or sell.</p>
+
+<div class="card">
+<h3>1. Macro: S&amp;P <span class="dn">−4.0%</span>, VIX <span class="dn">26</span>. The afternoon bounce failed, and Fed speakers are still talking about hikes</h3>
+<p><b>Thesis:</b> The day's key afternoon development is a failed bounce. The S&amp;P recovered about half a point to −3.55% around 2:35 PM, then gave it all back to −4.04% by ~3:05 while the VIX rose from 24.2 back to 26.2. In earlier AI sell-offs, falling rate expectations helped cushion the drop. That support is weak today: Hammack and Barkin both argued for <i>more</i> hikes, at a gradual pace, on a −4% day, and December hike odds only slipped to ~70%. The 10-year rallied just 7 bp, and Brent is <i>up</i> 4%. With rates staying high and oil rising, a policy rescue looks unlikely, so a sustained bounce probably has to come from positioning or fundamentals: short-covering, tonight's earnings, or Friday's payrolls. The valuation case is already being made. Truist's Lerner notes tech's forward P/E has fallen to ~17.4x, <b>below the S&amp;P 500's ~18x for the first time since 2017</b>, after tech underperformed by 10.6% in a month, the most since May 2002. El-Erian (CNBC via Investing.com): "the market is overdoing it and will continue to overdo it for a while."</p>
+<p><b>Evidence:</b> Investing.com index strips (six loads, ~2:35–3:05 PM) and its 2:41 PM text. Reuters via Investing.com (Hammack and Barkin quotes, ~70% hike odds, TD Securities). Reuters via Star-Advertiser (12:24 PM levels, breadth, Nasdaq-100 correction on Monday). Investing.com market wrap (Lerner, El-Erian, Zaccarelli quotes; jobless claims 189K; Challenger October layoffs 43,994).</p>
+<p><b>Risks / what could change this into the close:</b> Market-on-close imbalances and volatility-targeting de-leveraging can push a −4% day to a weaker close, or short-covering can produce a sharp late rally. Both happen often on days like this. A strong payrolls print Friday would raise hike odds and could hurt long-duration tech further. A soft print would bring back the case for lower rates.</p>
+<p><span class="conf">Confidence: Medium (no policy relief priced in the near term)</span> <span class="conf">Low (direction of the last hour)</span></p>
+</div>
+
+<div class="card">
+<h3>2. AI compute and memory: NVDA <span class="dn">−8.6%</span> on 222M shares, AMD <span class="dn">−15.3%</span>, MU <span class="dn">−14.9%</span>, SNDK <span class="dn">−19.2%</span>. Flat since 1 PM, with a new inventory worry</h3>
+<p><b>Thesis:</b> The hardware complex stopped getting worse after ~1 PM but never bounced. NVDA, AMD and MU are all within ~0.3 pts of their early-afternoon levels, while the S&amp;P went round-trip around them. That steadiness while the index made a new low is the first sign that forced selling in chips is slowing. NVDA's volume (~221M shares, about $40B) is far above any other name. The fundamental worry has also taken a new shape. Goldman's TMT desk relayed the bearish argument that "the semis narrative flips to inventory correction if power/sites lag chip deliveries." The FT reports that AWS is taking delivery of about $3B a month of Nvidia GB300 racks but storing some in warehouses because certain sites lack power. That is a more specific risk than a slower build-out: chips could pile up while data centers wait for power. On the other side, AMD guided 2027 revenue growth above 80% (Midday Edition), and Investing.com's technical read had NVDA's RSI at 26.9 (deeply oversold) at 10:25 AM, with weekly support near $178 and $195 as the level to reclaim.</p>
+<p><b>Evidence:</b> Investing.com most-active tables (cumulative volumes; NVDA $182.85, MU $676.45, AMD $414.10, SNDK $837.77 at ~3:05). Investing.com "Massive market rotation…" (Goldman desk quotes; FT AWS report; Gerstner's 10–15 GW 2027 risk; SemiAnalysis's 16.7 GW of 2028 Texas capacity at risk). Investing.com "NVDA vs AMD" (10:25 AM technical snapshot).</p>
+<p><b>Risks / what could change this into the close:</b> The "slowing selling" read rests on about two hours of flat prints. One more leg down in the index would likely take these names with it. Lumentum and IREN report tonight and are direct reads on AI supply-chain demand. NVDA reports Nov. 17. If more evidence of warehoused GPUs appears, that would turn a political-risk story into an earnings-risk story, and earnings risk is harder to bounce from.</p>
+<p><span class="conf">Confidence: Medium (group keeps lagging the S&amp;P through the close)</span> <span class="conf">Low (direction)</span></p>
+</div>
+
+<div class="card">
+<h3>3. AppLovin (APP) <span class="up">+29.3%</span> and the earnings-winner group (EPAM <span class="up">+19.7%</span>, CPAY <span class="up">+8.2%</span>, TPR <span class="up">+7.1%</span>): gains held through a −4% session</h3>
+<p><b>Thesis:</b> This was the most reliable long-side pattern of the day, and it held in the afternoon. APP has stayed between +29% and +31% since about 11 AM (~$351–355) on ~18.9M shares, and the group of beat-and-raise names with little AI-capex exposure held their gains as the index made new lows. A stock that holds a 30% gain on a day when the VIX is up 58% suggests real buying, not a short squeeze that fades by afternoon. Fundamentals, from earlier editions: APP Q3 revenue $2.18B vs. $2.07B est., Q4 guide $2.37–2.40B vs. $2.25B, buyback raised to $3.6B. CNBC's midday list cites adjusted EBITDA of $1.84B vs. $1.73B FactSet consensus. At ~$351 APP trades at ~27x pre-Q3 trailing EPS ($13.01).</p>
+<p><b>Evidence:</b> Investing.com gainers tables (six loads, APP +29.3% to +29.7%). Investing.com "Arm and Lam Research among… movers" (APP +32.9% at ~10:36). CNBC midday-movers headline and summary (search result; the page fetch was empty). Earlier editions for the results and estimates.</p>
+<p><b>Risks / what could change this into the close:</b> High-beta names (APP beta ~2.6) are exposed if de-grossing turns into selling everything. A ~43% gain over two sessions (+10.7% Wednesday, +29% today) invites profit-taking on any market bounce, as money rotates back into beaten-down chips. Ad-tech regulatory risk under a Democratic Congress.</p>
+<p><span class="conf">Confidence: Medium–High (holds most of the gain at the close)</span> <span class="conf">Low–Medium (extends Friday)</span></p>
+</div>
+
+<div class="card">
+<h3>4. Qualcomm (QCOM): <span class="dn">−13.4%</span> at ~11 AM → <span class="dn">−8.95%</span> at ~2:50 PM. The relative-strength call comes back</h3>
+<p><b>Thesis:</b> The Midday Edition marked the Pre-Market/Open "QCOM outperforms SOX" call as faded, when the stock broke below its pre-market low to −13.4%. Since then QCOM has recovered about 4.5 points (−11.5% at 12:24 per Reuters, −8.95% at ~2:50) while the SOX barely moved (−10.9% → −10.0% in the same load). Arm, the other handset-exposed name with a guidance problem, is still −12%. One possible explanation (our inference): QCOM's selling came from its own handset miss, while its growth driver, a data-center chip forecast Investing.com calls "strong," is less tied to the US data-center construction fears behind today's sector selling. At ~$158 it trades at roughly 18x trailing EPS of ~$8.59 with a ~2.3% dividend yield (EPS and dividend from a stale Investing.com profile page), which makes it one of the cheaper large-cap semis.</p>
+<p><b>Evidence:</b> Investing.com wrap chip (QCOM −8.95%, SOX −9.98%, same page load). Reuters via Star-Advertiser (−11.5% at 12:24). Midday Edition (−13.4% at ~11:00 from Trending Topics' Yahoo data). Investing.com wrap (cause of the drop: smartphone revenue, supply-chain cost warning, strong data-center forecast). Investing.com QCOM quote page for P/E and yield (stale cache; valuation context only).</p>
+<p><b>Risks / what could change this into the close:</b> <b>The afternoon print comes from a single source with no timestamp.</b> We could not confirm it with a second quote. Handset weakness and rising supply-chain costs could persist for several quarters. If the index makes new lows, a 4-point recovery can disappear fast.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p>
+</div>
+
+<div class="card">
+<h3>5. Owners of powered capacity vs. suppliers: META <span class="dn">−3.9%</span>, GOOGL <span class="dn">−1.7%</span>, AMZN <span class="dn">−2.6%</span>, MSFT <span class="dn">−3.1%</span> vs. SOX <span class="dn">−10.4%</span></h3>
+<p><b>Thesis:</b> The hyperscalers sold off with everything else in the morning but have recovered roughly 0.4–2 points since (META from −6.0%, AMZN from −4.4%, GOOGL from −3.0%, MSFT from −3.5%), while the chips stayed near their lows. That fits the argument Goldman's TMT desk made Wednesday: a Democratic Congress makes <i>new</i> builds harder, so "existing, power-secured compute" becomes "more valuable," and "scarcer powered capacity could lift prices." The trade being tested is long the companies that already own powered data centers and short the companies selling into future capacity. Today's spread between the two is about 6.5–9 points, and the gap held through the afternoon. One more consideration (our inference): if the hyperscalers' capex has to slow because sites can't be powered, their free cash flow goes up, a direct offset to their AI risk that the suppliers don't have.</p>
+<p><b>Evidence:</b> Investing.com widgets (~2:35 and ~3:05 loads; MSFT from the ~2:35 chip). Midday Edition (10:30 AM prints from Trending Topics' Yahoo data). Reuters 12:24 (META −3.8%, AMZN −1.7%, GOOGL −1.0%). Investing.com "Massive market rotation…" (Goldman quotes; Wednesday moves: AMZN +6.1%, MSFT +6.7%, GOOGL +3.2%, META +1.4%).</p>
+<p><b>Risks / what could change this into the close:</b> If the warehoused-GPU story spreads, it hurts AWS/Amazon optics too. Hyperscalers carry the largest index weights, so a mechanical index sell-off into the close hits them directly. A broad short-covering rally would likely favor the most-oversold chips, which would narrow the spread quickly.</p>
+<p><span class="conf">Confidence: Medium (spread persists into the close)</span></p>
+</div>
+
+<div class="card">
+<h3>6. Into tonight's prints: Lumentum (LITE) <span class="dn">−16.0%</span> and IREN <span class="dn">−14.1%</span> before reporting after the close</h3>
+<p><b>Thesis:</b> Both stocks are among the day's worst performers (LITE is on Investing.com's losers list on 7.9M shares) just before they report after the bell. When a stock drops 15% into its own print because of the sector, the bar for the report usually falls. Even an in-line report and guide could produce a relief move. A soft guide, on the other hand, would confirm today's fears. For reference, LITE's last report (Aug. 11) showed fiscal Q4 revenue up 109% y/y to $1.006B with a fiscal Q1 guide of $1.225–1.275B (technews.tw, via search; not independently verified). Cloudflare (AI-adjacent software), DoorDash and Airbnb also report tonight.</p>
+<p><b>Evidence:</b> Investing.com losers tables (LITE −14.6% to −16.0% across the afternoon loads). Investing.com wrap chips (IREN −14.1%). Yahoo live blog (Lumentum and Airbnb on today's calendar). Midday Edition (full after-close list).</p>
+<p><b>Risks:</b> This is an overnight event, not a move into the close, and the after-hours reaction can go either way. The LITE guidance reference comes from a search result and was not checked against company filings. We do not have consensus estimates for tonight.</p>
+<p><span class="conf">Confidence: Low</span></p>
+</div>
+
+<p class="note"><b>WRDS Quant Signals:</b> omitted. alpha_wrds_signals.csv has as_of_date 2026-09-17 (49 days old, outside the ~14-day window), so it was not used. This edition relies on public research only.</p>
+
+<h2>5. Sources</h2>
+<p class="note">Fetched and read unless marked otherwise. Times are ET.</p>
+<ul class="src">
+<li>Investing.com, "Nasdaq in correction territory as traders dump chip stocks after Democratic sweep" (updated 2:45 PM; index levels at 14:41 ET; Lerner, Zaccarelli, El-Erian quotes; claims and Challenger data; quote widgets): https://www.investing.com/news/stock-market-news/us-stock-index-futures-steady-after-midterms-rally-5001919</li>
+<li>Reuters via Investing.com, "Fed's Hammack, Barkin favor gradual rate-hike path to lower inflation" (updated 1:13 PM; quote widgets): https://www.investing.com/news/economy-news/feds-hammack-favors-gradual-ratehike-path-to-lower-inflation-5004429</li>
+<li>Reuters via Honolulu Star-Advertiser, "Nasdaq heads for correction as AI stocks plunge after midterms" (12:24 PM levels; breadth; Hammack/Barkin mention): https://www.staradvertiser.com/2026/11/05/breaking-news/nasdaq-heads-for-correction-as-ai-stocks-plunge-after-midterms/</li>
+<li>Investing.com, "Massive market rotation raises question: Is the sell-AI trade here to stay?" (Goldman TMT desk; FT AWS GB300 report; quote widgets ~2:35 PM): https://www.investing.com/news/stock-market-news/massive-market-rotation-raises-question-is-the-sellai-trade-here-to-stay-5003152</li>
+<li>Investing.com, "Arm and Lam Research among market cap stock movers on Thursday" (10:36 AM movers; quote widgets ~3:05 PM): https://www.investing.com/news/stock-market-news/arm-and-lam-research-among-market-cap-stock-movers-on-thursday-93CH-5005081</li>
+<li>Investing.com, "NVDA vs AMD: which stock has the better bounce setup" (10:25 AM technical snapshot; quote widgets): https://www.investing.com/news/stock-market-news/nvda-vs-amd-which-stock-has-the-better-bounce-setup-93CH-5005048</li>
+<li>Investing.com, "Why is ASML stock sliding today?" (11:01 AM; quote widgets ~3:10 PM): https://www.investing.com/news/stock-market-news/why-is-asml-stock-sliding-today-93CH-5005149</li>
+<li>Yahoo Finance live blog, Nov. 5 (served a cached version with the index strip at 1:01:56 PM; used for the earnings calendar and context only): https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html</li>
+<li>Investing.com QCOM quote page (stale cache; used only for P/E and dividend yield as valuation context): https://www.investing.com/equities/qualcomm-inc</li>
+<li>Search-result summaries only (page fetch empty or not attempted): CNBC, "Stocks making the biggest moves midday: Micron, Tesla, Tripadvisor, AppLovin, Nvidia &amp; more" https://www.cnbc.com/2026/11/05/stocks-making-the-biggest-moves-midday-mu-tsla-trip-app-nvda.html ; technews.tw (Lumentum fiscal Q4 2026 results) https://finance.technews.tw/2026/08/12/lumentum-announces-fourth-quarter-and-full-fiscal-year-2026-results/</li>
+<li>Consulted but <b>not used</b>: Investing.com MSFT quote page (stale Oct. 26 cache) https://www.investing.com/equities/microsoft-corp ; Seeking Alpha 10:15 AM wrap (paywalled after the first paragraph) https://seekingalpha.com/news/4666692-sp500-nasdaq-composite-dow-jones-wall-street ; Tiger Brokers/Dow Jones item (dated Nov. 2025, wrong year) https://www.itiger.com/news/2581702071</li>
+<li>Empty fetches: CNN https://www.cnn.com/2026/11/05/investing/tech-heavy-nasdaq-plunges ; CNBC live updates https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html ; Benzinga https://www.benzinga.com/trading-ideas/technicals/26/11/62935903/nvidia-micron-ai-stocks-200-day-moving-average-break ; StreetInsider https://www.streetinsider.com/Investing/Broadcom+shares+drop+on+AI+sector+selloff/27297584.html ; Stock Titan https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026</li>
+<li>Prior editions (local archive): alpha_report_2026-11-05_premarket.html; alpha_report_2026-11-05_open.html; alpha_report_2026-11-05_midday.html</li>
+<li>WRDS signals file checked: alpha_wrds_signals.csv (as_of_date 2026-09-17; stale, not used)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>

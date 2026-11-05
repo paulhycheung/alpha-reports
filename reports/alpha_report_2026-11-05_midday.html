@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-05 – Midday Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Midday Edition</span> &nbsp; Thursday, November 5, 2026 &middot; Day 2 after the US midterms &middot; The AI sell-off broadens</div>
+<p class="note">Automated run. The task targets ~12:00 PM ET, but the schedule fired at 12:00 PM Central, so this session ran from about <b>1:10 to 1:40 PM ET</b>. The main index snapshot is Yahoo Finance's real-time strip at <b>1:01–1:08 PM ET</b> (two pages, consistent to within 0.03 pts). Single-stock moves are <b>vs. Wednesday's (Nov. 4) close</b>, and the time of each print is shown because sources update at different times: Yahoo ticker chips (~12:05–1:08 PM), 24/7 Wall St live quote widgets (fetched ~1:15–1:25 PM; the widgets show no timestamp, so "~1:15" below is approximate), and Trending Topics tables of Yahoo data (~10:30–11:00 AM ET; that outlet says its articles are "co-produced by AI"). <b>Share-volume data could not be retrieved.</b> Yahoo's most-active screener and its QCOM/APP quote pages served stale caches (Oct. 30–Nov. 4), and StockAnalysis's movers page was dated Oct. 27, so none of them were used for today's moves. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (49 days old, outside the ~14-day window), so there is no WRDS section. CNBC and Benzinga fetches returned empty pages.</p>
+
+<h2>1. How the Session Has Traded</h2>
+<p><b>No midday bounce. The sell-off has spread from AI hardware to almost everything else.</b> At ~1:01–1:08 PM ET (Yahoo): <b>S&amp;P 500 7,379 (<span class="dn">−4.03%</span>)</b>, <b>Dow 51,681 (<span class="dn">−3.14%</span>, −1,675 pts)</b>, <b>Nasdaq Composite 24,373 (<span class="dn">−5.30%</span>)</b>, <b>Russell 2000 2,733 (<span class="dn">−4.34%</span>)</b>, PHLX Semiconductor Index <span class="dn">−10.9%</span>. The <b>VIX is 25.7 (+55%)</b>. It touched 27.45 earlier, its biggest one-day jump in more than two years (Futurum's Shay Boloor via Yahoo). The Dow has now erased all of Wednesday's 1,569-point rally and is below Tuesday's close. The Nasdaq is ~11.7% below its Oct. 6 record (27,599.89), in correction. Both the S&amp;P and Nasdaq are on pace for their worst day since the April 2025 tariff crash. Yahoo says the S&amp;P is on track for its worst second session after a midterm in nearly a century (the previous low was −2.3% in 2002), and the Dow for its worst in data going back to 1896.</p>
+<p><b>Path through the morning:</b> 9:35 AM Dow +0.6%, S&amp;P −0.3%, Nasdaq −1%. 10:10 AM S&amp;P −2.0%, Nasdaq −3.6%. 11:06 AM S&amp;P −3.57%, Dow −2.47%, Nasdaq −5.32% (MarketScreener, Open Edition). Yahoo's strip shows a late-morning recovery attempt (~11:36 AM: S&amp;P −2.75%, Nasdaq −3.80%), but its own article text from the same minute says the Nasdaq was down "more than 5%," so that print is low-confidence. Any bounce had failed by 12:05 (S&amp;P −3.44%, Nasdaq −4.64%). <b>By ~1 PM the S&amp;P and Dow were below their 11 AM levels while the Nasdaq was roughly flat over the same span.</b> Selling pressure has moved from semis into the Dow, small caps, software, crypto-linked stocks and megacap platforms.</p>
+<p><b>Cross-asset:</b> 10-year yield <b>4.83%</b> (−6 bp, a modest haven bid). Gold <b>$4,113</b> (+1.0%). WTI <b>$90.3</b> (+2.5%) and Brent ~$97 on doubts that the Iran war is close to ending. Bitcoin <b>$75.7K</b> (−5.7%); Stifel's Brian Gardner says the crypto Clarity Act is "off the table for the lame duck session." The S&amp;P lost more than $2 trillion in market value by mid-morning, including Nvidia alone >$400B and TSMC ~$220B (Yahoo). <b>Tone:</b> a broad de-risking/de-grossing day, not a macro-data shock. Jobless claims fell, productivity beat, and Challenger layoffs are at the lowest since 2023. The leaders are idiosyncratic earnings winners (APP, EPAM, MSI, VRSK, CPAY, TPR) and defensives (Costco, insurers, staples).</p>
+<p class="note">Calendar check: a 24/7 Wall St pre-market piece mentioned a "Federal Reserve policy statement at 2 p.m. ET" today. No other source we read mentions one, and the Fed's 2026 calendar as we understand it has meetings on Oct. 27–28 and Dec. 8–9, so we treat that line as an error. Still ahead: <b>after-close earnings from Airbnb, Cloudflare, DoorDash, Lumentum, IREN, Applied Optoelectronics, Monster, DraftKings and Akamai</b>, and Friday's October payrolls (est. +65K).</p>
+
+<h2>2. Follow-up on Earlier Calls</h2>
+<p class="note">Names and themes from today's Pre-Market and Open Editions. "Played out" = the expected move happened or extended. "Faded" = it weakened or failed. "Reversed" = the sign flipped. Midday prints are vs. Wednesday's close.</p>
+<div class="tbl"><table>
+<tr><th>Call (edition)</th><th>Then</th><th>Midday (time ET)</th><th>Verdict</th></tr>
+<tr><td>Memory/storage stays the weakest group (Open; Medium)</td><td class="n dn">MU −16.1%, SNDK −20.6%, WDC −17.2% (11:06)</td><td class="n dn">MU −14.9%, SNDK −19.7% (1:08); WDC −16.8%, STX −15.3% (~1:15)</td><td><b>Played out.</b> Still the S&amp;P's bottom four. No reflex bounce, just ~1 pt of stabilization</td></tr>
+<tr><td>AI compute bellwethers stay under pressure (Open; Medium)</td><td class="n dn">NVDA −6.3% (10:10), AVGO −5.7%, SOX −7.1%</td><td class="n dn">NVDA −8.7%, AVGO −8.6% (~1:15); SOX −10.9% (1:08)</td><td><b>Played out and extended</b></td></tr>
+<tr><td>QCOM: gap holds, then outperforms SOX (Pre-Market Medium; Open Low–Medium)</td><td class="n dn">−9% to −9.7%; pre-market low $153.00</td><td class="n dn">−13.4% at $149.91 (~11:00)</td><td><b>Faded.</b> Broke below the pre-market low and is underperforming the SOX. The relative-strength call failed</td></tr>
+<tr><td>APP holds most of its gain (Pre-Market + Open; Medium)</td><td class="n up">+16.5% to +23% pre-market; +29.6% (11:06)</td><td class="n up">+30.5% (~11:00); "nearly 30%" (~11:34)</td><td><b>Played out</b> (no verified print after ~11:34)</td></tr>
+<tr><td>TSLA political discount extends (Open; Low–Medium)</td><td class="n dn">−2.2% pre-market; −9.5% (10:04)</td><td class="n dn">−10.66% at $344.14 (12:05)</td><td><b>Played out</b></td></tr>
+<tr><td>Platforms hold Wednesday's gains (Pre-Market; Low–Medium)</td><td class="n">MSFT ~+0.1%, AAPL ~−0.15% pre-market; AAPL ~+1% (10:00)</td><td class="n dn">MSFT −3.5%, META −6.0%, GOOGL −3.0% (~10:30); AAPL −1.25%, AMZN −1.9% to −4.4% (~10:30–1:15)</td><td><b>Faded/reversed.</b> Yahoo: "even yesterday's post-election winners, including Apple, turned lower"</td></tr>
+<tr><td>Dow beats Nasdaq (Pre-Market; Medium at the open)</td><td class="n">Dow fut +0.5–0.7%, NDX fut −0.5–1.0%</td><td class="n dn">Dow −3.1% vs. Nasdaq −5.3%</td><td><b>Held only as a spread</b> (~2.2 pts, narrowing from ~2.9 at 11:06). Reversed in absolute terms</td></tr>
+<tr><td>Watch breadth: is selling widening? (Open)</td><td class="n">Russell 3000 −3.4% (11:06)</td><td class="n dn">Russell 2000 −4.3%; software, crypto, megacaps all lower</td><td><b>Breadth deteriorated</b>, which was the risk flagged in the Open Edition</td></tr>
+<tr><td>Oil bounce (Pre-Market)</td><td class="n">Brent ~$95–96</td><td class="n up">Brent ~$97; WTI $90.3 (+2.5%)</td><td><b>Held</b></td></tr>
+</table></div>
+
+<h2>3. Midday Movers</h2>
+<p class="note">% vs. Wednesday's close at the time shown (ET). Live share volume was not available, so the third column gives market-cap impact, catalyst or flow context instead. "TT" = Trending Topics table of Yahoo data; "24/7" = 24/7 Wall St live widget.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move (time)</th><th>Volume / flow / catalyst note</th></tr>
+<tr class="sec"><td colspan="3">Fixed watchlist</td></tr>
+<tr><td>NVDA</td><td class="n dn">−8.7% ($182.65, ~1:15)</td><td>Lost >$400B of market value by mid-morning, the single largest drag on the S&amp;P (Yahoo). Down from −6.3% at 10:10. Earnings Nov. 17</td></tr>
+<tr><td>AMD</td><td class="n dn">−15.5% ($413.26, ~1:15)</td><td>Roughly flat vs. −16.1% at 11:06. Record Q3 (rev. $13.38B, +44.7%); Su guides 2027 revenue growth >80% (24/7)</td></tr>
+<tr><td>MU</td><td class="n dn">−14.9% (1:08)</td><td>S&amp;P bottom four; ~−21.7% over two days (TT). SK Hynix US line (SKHY) −11.9%</td></tr>
+<tr><td>AVGO</td><td class="n dn">−8.6% ($297.63, ~1:15)</td><td>~$150B of market value lost by mid-morning (Yahoo). Extended from −5.7% at ~10:05</td></tr>
+<tr><td>TSM (ADR)</td><td class="n dn">near −10% (~11:34)</td><td>~$220B of market value lost by mid-morning, second only to NVDA (Yahoo)</td></tr>
+<tr><td>QCOM</td><td class="n dn">−13.4% ($149.91, ~11:00, TT)</td><td>Below the $153.00 pre-market low. Handset guide plus sector beta</td></tr>
+<tr><td>TSLA</td><td class="n dn">−10.66% ($344.14, 12:05)</td><td>~$170B of market value lost by mid-morning (Yahoo). SPCX −9.1% to −10.5%</td></tr>
+<tr><td>INTC</td><td class="n dn">−8.3% ($53.44, ~11:00, TT)</td><td>Q4 guide $15–16B (sequential decline) from Oct. 29 still weighing (24/7)</td></tr>
+<tr><td>ORCL</td><td class="n dn">−8.5% ($113.22, ~11:00, TT)</td><td>AI-infrastructure leverage</td></tr>
+<tr><td>META</td><td class="n dn">−6.0% ($592.46, ~10:30, TT)</td><td>Two-day −4.6%, despite a record €9B bond this week</td></tr>
+<tr><td>MSFT</td><td class="n dn">−3.5% ($536.47, ~10:30, TT)</td><td>~$170B of market value lost by mid-morning (Yahoo). Still +3.0% over two days</td></tr>
+<tr><td>GOOGL</td><td class="n dn">−3.0% ($280.18, ~10:30, TT)</td><td>Flat over two days</td></tr>
+<tr><td>AMZN</td><td class="n dn">−4.4% (~10:30, TT) / −1.9% (~1:15, 24/7)</td><td>Conflicting prints; the later one implies some recovery. Treat as low-confidence</td></tr>
+<tr><td>AAPL</td><td class="n dn">−0.4% (~10:30, TT) / −1.25% ($345.13, ~1:15, 24/7)</td><td>Reversed from ~+1% at 10:00. Still the best-holding megacap</td></tr>
+<tr><td>ASML, CRM</td><td class="n">n/a</td><td>No verified intraday print. Lam Research is "down sharply" (Yahoo), a read-across for ASML</td></tr>
+<tr class="sec"><td colspan="3">Notable movers outside the watchlist</td></tr>
+<tr><td>APP</td><td class="n up">+30.5% ($354.69, ~11:00, TT)</td><td>Top S&amp;P gainer. Q3 beat, Q4 guide $2.37–2.40B vs. $2.25B est. Closed at $228.50 on Oct. 30 (−66% YTD then)</td></tr>
+<tr><td>EPAM</td><td class="n up">+19.4% ($164.02, 24/7)</td><td>Q3 beat (from pre-market)</td></tr>
+<tr><td>MSI / VRSK</td><td class="n up">~+10% (~11:34)</td><td>Earnings; low AI-capex exposure (Yahoo)</td></tr>
+<tr><td>CF / CPAY / TPR</td><td class="n up">+8.4% / +7.0% / +5.7% (24/7)</td><td>Fertilizer, payments, retail. No AI exposure</td></tr>
+<tr><td>COST</td><td class="n up">+3.3% (~10:30, TT)</td><td>The only top-10 Nasdaq-100 weight in the green (TT)</td></tr>
+<tr><td>SNDK / WDC / STX</td><td class="n dn">−19.7% / −16.8% / −15.3%</td><td>Memory and storage. The S&amp;P's worst performers</td></tr>
+<tr><td>PLTR / CRWD / OKTA / PANW</td><td class="n dn">−9.6% / −9.1% / −10.1% / −7.7% (~1:11)</td><td><b>New since the open:</b> software's YTD winners are being sold (CRWD +86% YTD, OKTA +98% YTD). FTNT is <span class="up">+1.0%</span></td></tr>
+<tr><td>DASH</td><td class="n dn">−14.5% ($169.79, 24/7)</td><td>Reports <b>after today's close</b>. Cause of the pre-print drop not verified</td></tr>
+<tr><td>CRWV / NBIS / IREN</td><td class="n dn">−15.2% / −18.2% / −20.1% (~11:00, TT)</td><td>Neoclouds. IREN reports after the close; down ~29% over two days</td></tr>
+<tr><td>MRVL / SMCI</td><td class="n dn">−13.8% / −11.9% (~11:00, TT)</td><td>Custom silicon and AI servers</td></tr>
+<tr><td>COIN / MSTR / HOOD</td><td class="n dn">−10.3% / −10.4% / >−10%</td><td>Bitcoin −5.7%. Clarity Act stalled (Stifel); Circle −12% (24/7 headline)</td></tr>
+</table></div>
+
+<h2>4. Midday Alpha Candidates</h2>
+<p class="note">Research observations only. These are names and themes worth investigating further into the afternoon and close, not recommendations to buy or sell.</p>
+
+<div class="card">
+<h3>1. Memory and storage: MU <span class="dn">−14.9%</span>, SNDK <span class="dn">−19.7%</span>, WDC <span class="dn">−16.8%</span>, STX <span class="dn">−15.3%</span>. Capitulation, or a close at the lows?</h3>
+<p><b>Thesis:</b> The Open Edition's highest-conviction call played out. The group is still the S&amp;P's bottom four, though it has stopped falling faster than the index: MU went from −16.1% at 11:06 to −14.9% at 1:08 while the S&amp;P went from −3.6% to −4.0%. That small relative improvement during broadening market weakness is the first sign that forced selling in this group may be slowing. The afternoon question is whether it turns into a reflex bounce into the close or a close at the lows that sets up a third day. The fundamental case and the price are pulling in opposite directions. Bloomberg's report that Micron largely suspended construction of its Taiwan fab cuts future <i>supply</i>, which is arguably supportive for memory pricing. Meanwhile the price action (MU about −22% in two sessions, "sinking to May levels") reflects positioning and policy fear.</p>
+<p><b>Evidence:</b> Yahoo, "Micron stock declines 12%…" ticker chips at ~1:08 PM: MU −14.92%, SNDK −19.74%, SKHY −11.91%, SOX −10.85%. 24/7 Wall St biggest-losers widget (~1:15): WDC −16.81%, STX −15.29%, MU −15.26%. Trending Topics (Yahoo data): MU two-day −21.7%. Open Edition (11:06 prints; fab suspension per Bloomberg via Yahoo).</p>
+<p><b>Risks / what could change this into the close:</b> If the S&amp;P makes new lows in the last hour (systematic or volatility-targeting selling with the VIX above 25), the group will likely fall with it regardless of relative stabilization. After-close prints from Lumentum and IREN will move the whole AI-supply complex tonight. Our "stabilization" read rests on two prints about two hours apart.</p>
+<p><span class="conf">Confidence: Medium (stays the weakest group into the close)</span> <span class="conf">Low (direction of the last hour)</span></p>
+</div>
+
+<div class="card">
+<h3>2. AI compute: NVDA <span class="dn">−8.7%</span>, AVGO <span class="dn">−8.6%</span>, TSM <span class="dn">~−10%</span>, AMD <span class="dn">−15.5%</span>; SOX <span class="dn">−10.9%</span></h3>
+<p><b>Thesis:</b> The bellwethers kept falling after 11 AM. NVDA went from −6.3% to −8.7% and AVGO from −5.7% to −8.6%. AMD has stopped falling (−16.1% → −15.5%), even though it posted the "largest and most profitable" quarter in its history: Q3 revenue $13.38B (+44.7%), data center +97% to $8.55B, Q4 guide ~$17B, and Lisa Su now sees 2027 revenue growth above 80%. Yahoo says the SOX is more than a third below its June record. The market is repricing the duration and political risk of AI capex, not current demand. Relevant data points: Goldman estimates moratoria could hit ~45% of planned US data-center capacity growth, and voters rejected data centers in 40 of 41 local ballot measures (CNBC via 24/7). The counterweight: Yorkville's Dan Ives still sees 2027 Big Tech capex "easily" above $1 trillion, with only the growth rate into 2028 "moderating significantly." For valuation, 24/7 puts NVDA's trailing P/E at ~40x.</p>
+<p><b>Evidence:</b> 24/7 Wall St live widgets (~1:15: NVDA $182.65 −8.74%, AMD $413.26 −15.45%, AVGO $297.63 −8.56%) and its 10:46 AM article (AMD results, Su quote, valuation). Yahoo (market cap lost by mid-morning: NVDA >$400B, TSMC ~$220B, AVGO ~$150B; SOX vs. June record). Yahoo/Ives and Goldman via the Tesla/SpaceX article.</p>
+<p><b>Risks / what could change this into the close:</b> A double-digit SOX day with no fundamental trigger in the group has historically been a candidate for short-covering into the close. Tonight's Lumentum, IREN and Applied Opto reports are the first hard demand reads since the election. Any comment from congressional leadership or the White House that a federal moratorium is not on the agenda would hit the group's main fear directly. NVDA's Nov. 17 earnings are the bigger test.</p>
+<p><span class="conf">Confidence: Medium (group underperforms the equal-weight market into the close)</span> <span class="conf">Low (absolute direction)</span></p>
+</div>
+
+<div class="card">
+<h3>3. New since the open: software's AI winners get de-grossed. PLTR <span class="dn">−9.6%</span>, CRWD <span class="dn">−9.1%</span>, OKTA <span class="dn">−10.1%</span>, PANW <span class="dn">−7.7%</span>, while FTNT is <span class="up">+1.0%</span></h3>
+<p><b>Thesis:</b> This is the clearest sign of broadening at midday. The selling has moved from AI hardware into software, but selectively: 24/7 notes that Wall Street "is selling software's AI winners and mostly leaving the year's laggards alone." CrowdStrike is still +86% YTD and Okta +98% YTD after today's drops, while names already beaten down on AI-disruption fears "are barely moving." That pattern points to de-grossing of crowded winners (selling what has worked to cut exposure or meet margin), not a change in fundamentals. Palantir's Q3 revenue rose 96% to $2.31B, U.S. commercial revenue exceeded government revenue for the first time, and guidance was raised. The stock is on pace for its worst day since February and sits ~25% below its Oct. 9 record. The dispersion itself is the signal to watch: if winners keep falling while laggards hold, the move is about positioning.</p>
+<p><b>Evidence:</b> 24/7 Wall St, "Palantir Tumbles 10%, CrowdStrike Sinks 9%…" (1:11 PM): prices and YTD figures. Its live widget: CRWD $219.09 −9.09%, OKTA $171.80 −10.08%, PANW $321.15 −7.73%, PLTR $155.23 −9.59%, FTNT $129.39 +1.00%. Trending Topics (PLTR −9.4% at ~11:00).</p>
+<p><b>Risks / what could change this into the close:</b> Cloudflare (NET) reports after the close and is the most direct read on AI-adjacent software demand tonight. De-grossing often ends abruptly once forced sellers finish, which tends to produce sharp late-day reversals. Palo Alto, CrowdStrike and Okta report in the coming weeks.</p>
+<p><span class="conf">Confidence: Medium (winner/laggard dispersion persists into the close)</span> <span class="conf">Low (direction)</span></p>
+</div>
+
+<div class="card">
+<h3>4. AppLovin (APP): <span class="up">+30.5%</span>, still the S&amp;P's top gainer in a −4% tape</h3>
+<p><b>Thesis:</b> APP fits the pattern in candidate 3, but from the other side. It was one of 2026's biggest laggards (closed $228.50 on Oct. 30, −66% YTD per Yahoo's cached quote) and is now ~55% above that level at ~$354.69 (+10.7% Wednesday, +30.5% today). The fundamentals support a re-rating: Q3 revenue $2.18B vs. $2.07B est., EPS $4.30 vs. $4.04, Q4 guide $2.37–2.40B vs. $2.25B, and total buyback authorization raised to $3.6B. At ~$355 the stock trades at ~27x the pre-Q3 trailing EPS of $13.01, up from ~17.6x on Oct. 30. BTIG's target is $450 (from $396) and Needham's $475. In a market selling YTD winners, a former laggard with a beat-and-raise is attracting buyers rather than sellers. Short covering likely adds to the move, though we have no short-interest data to confirm it.</p>
+<p><b>Evidence:</b> Trending Topics (Yahoo data ~11:00: $354.69 +30.5%, +10.7% Wednesday, two-day +44.5%). Yahoo "Chip stocks get slaughtered…" (~11:34: "up nearly 30%"; links the SEC 8-K exhibit). Yahoo live blog (results vs. estimates; BTIG, Needham). Yahoo APP quote page (stale cache, used only for the Oct. 30 close, YTD and TTM EPS).</p>
+<p><b>Risks / what could change this into the close:</b> No verified print after ~11:34, so a midday fade cannot be ruled out. A ~55% gain in four sessions is extreme for a ~$120B company. If de-grossing extends to every high-beta name, APP (beta ~2.6) is exposed. Ad-tech regulatory risk under a Democratic Congress remains.</p>
+<p><span class="conf">Confidence: Medium (holds most of the gain into the close)</span> <span class="conf">Low–Medium (extends further)</span></p>
+</div>
+
+<div class="card">
+<h3>5. Tesla (TSLA) <span class="dn">−10.7%</span> and SpaceX (SPCX) <span class="dn">−9% to −10.5%</span>: a merger discount on top of the AI-build-out discount</h3>
+<p><b>Thesis:</b> TSLA went from −2.2% pre-market to −9.5% at 10:04 and −10.66% ($344.14) at 12:05, about −13.6% over two sessions. Yahoo adds a more specific driver: the Texas results (a flipped governorship and a Senate seat won by James Talarico, with whom Musk feuded) bear directly on the <b>Tesla–SpaceX merger</b>. Musk said on SpaceX's Q3 call that both companies are exploring a deal. Ives: the merger "now faces a much tougher regulatory roadmap to get this deal done in 2027." Both companies are also exposed to the data-center theme through the planned Terafab chip complex and SpaceX's AI-compute revenue. The stock is now pricing a merger delay as well as a slower AI build-out.</p>
+<p><b>Evidence:</b> Yahoo, "SpaceX, Tesla stocks tumble…" (TSLA chip −10.66% at 12:05:53 PM; SPCX −9.09%; Ives quotes; Goldman's 45% moratorium estimate). Trending Topics (TSLA −10.6%, SPCX −10.5%). Earlier editions (pre-market and open prints).</p>
+<p><b>Risks / what could change this into the close:</b> There is no company-specific news, and retail flows into TSLA are large, so late-day reversals are common. The merger was never announced as a deal, so the "discount" is on an option, not a transaction. Any Musk comment could move the stock sharply in either direction.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p>
+</div>
+
+<div class="card">
+<h3>6. Macro: S&amp;P <span class="dn">−4.0%</span>, Dow <span class="dn">−3.1%</span>, VIX <span class="dn">+55%</span>. Defensives and earnings winners are the only safe ground</h3>
+<p><b>Thesis:</b> After 11 AM the S&amp;P and Dow kept falling while the Nasdaq held roughly flat. That is the signature of selling spreading to non-tech holdings, not a fresh leg in chips. The Russell 2000 (−4.3%) is now doing worse than the S&amp;P. The pockets of strength are narrow: earnings beats with no AI exposure (APP, EPAM, MSI, VRSK, CPAY, TPR, CF), staples and insurers (Costco +3.3%, Aflac and Allstate edging higher), gold (+1%) and Treasuries (10-year −6 bp). The macro data were benign or good. Apollo's Sløk notes S&amp;P earnings are up nearly 40% y/y, and the BoE hiked as expected. So this is a positioning, policy and volatility event, which raises the odds of mechanical flows (volatility-targeting de-leveraging, option hedging) in the last hour.</p>
+<p><b>Evidence:</b> Yahoo index strips (1:01:56 PM on the live blog; ~1:08 PM on the Micron article) and earlier strips at ~11:36 and ~12:05. Yahoo live blog (VIX spike, BoE, Challenger, history stats). Yahoo "Chip stocks get slaughtered…" (defensive gainers, $2T+ market-cap loss). 24/7 widgets (CF, CPAY, TPR, EPAM). Trending Topics (Costco +3.3%; Tandem's Jordan Watson expects more volatility; Tuesday's CPI framed as the input for a December Fed hike).</p>
+<p><b>Risks / what could change this into the close:</b> Days like this can end in either a strong late rally or a weak close. Friday's payrolls and next Tuesday's CPI (seen as deciding whether the Fed hikes in December) could matter more than politics by next week. Tonight's earnings (Airbnb, DoorDash, Cloudflare, Lumentum, IREN) give the market fresh fundamental inputs before Friday's open.</p>
+<p><span class="conf">Confidence: Medium (defensives and earnings winners outperform the index into the close)</span> <span class="conf">Low (index direction into the close)</span></p>
+</div>
+
+<p class="note"><b>WRDS Quant Signals:</b> omitted. alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 49 days old and outside the ~14-day window, so it was not used. This edition relies on public research only.</p>
+
+<h2>5. Sources</h2>
+<p class="note">Fetched and read unless marked otherwise. Times are ET.</p>
+<ul class="src">
+<li>Yahoo Finance live blog, Nov. 5 (index strip as of 1:01:56 PM; VIX spike; Tesla/SpaceX; Bitcoin and Clarity Act; BoE; Challenger; open levels): https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html</li>
+<li>Yahoo Finance, "Micron stock declines 12% as chip sell-off deepens" (ticker chips and index strip ~1:08 PM): https://finance.yahoo.com/markets/article/micron-declines-12-as-chip-sell-off-deepens-163137019.html</li>
+<li>Yahoo Finance, "Chip stocks get slaughtered as Wall Street heads for its worst post-midterm day since 1896" (market-cap losses, TSM/AVGO/NVDA near −10%, APP, defensives; index strip ~11:36 AM): https://finance.yahoo.com/markets/article/chip-stocks-get-slaughtered-as-wall-street-heads-for-its-worst-post-midterm-day-since-1896-163413900.html</li>
+<li>Yahoo Finance, "SpaceX, Tesla stocks tumble as Democratic sweep raises questions on merger prospects, AI build-out" (TSLA −10.66% at 12:05:53 PM; SPCX; Ives; Goldman; index strip ~12:05 PM): https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html</li>
+<li>24/7 Wall St, "Palantir Tumbles 10%, CrowdStrike Sinks 9%… Okta Drops 10%" (1:11 PM; live widgets): https://247wallst.com/investing/2026/11/05/palantir-tumbles-10-crowdstrike-sinks-9-as-wall-street-dumps-softwares-ai-winners-okta-drops-10/</li>
+<li>24/7 Wall St, "AMD Tumbles 13%, NVIDIA Slides 7%… Intel Sinks 8%" (10:46 AM; live widgets incl. biggest winners/losers): https://247wallst.com/investing/2026/11/05/amd-tumbles-13-nvidia-slides-7-as-ai-regulation-fears-hit-chip-stocks-intel-sinks-8/</li>
+<li>24/7 Wall St, "Stock Market Today: Rotation Away From AI Stocks Increases as Money Flows to AI Landlords" (9:06 AM; ballot-measure data; the "2 p.m. Fed statement" line treated as an error): https://247wallst.com/investing/2026/11/05/stock-market-today-dow-sp-500-and-nasdaq-in-focus-at-the-opening-bell-2/</li>
+<li>Trending Topics, "AI Stocks and Cryptocurrencies Crash Hard After Democrats' Midterm Win" (Yahoo data tables ~10:30–11:00 AM ET; outlet notes the article is AI-co-produced): https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/</li>
+<li>fvbb.com aggregation of Economic Times (AP data at 10:10 AM): https://fvbb.com/ns/micron-mu-sandisk-sndk-amd-and-qualcomm-qcom/328949</li>
+<li>Yahoo Finance APP quote page (served a stale Oct. 30 cache; used only for the Oct. 30 close, YTD and TTM EPS): https://finance.yahoo.com/quote/APP/</li>
+<li>Consulted but <b>not used</b> (stale caches): Yahoo most-active screener https://finance.yahoo.com/markets/stocks/most-active/ ; Yahoo QCOM quote page https://finance.yahoo.com/quote/QCOM/ ; StockAnalysis gainers https://stockanalysis.com/markets/gainers/</li>
+<li>Empty fetches (not used): CNBC live updates https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html ; Benzinga https://www.benzinga.com/markets/tech/26/11/62934964/us-tech-stocks-wipe-out-1-7-trillion-thursday-nvidia-amd-micron ; Stock Titan https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026</li>
+<li>Prior editions (local archive): alpha_report_2026-11-05_premarket.html; alpha_report_2026-11-05_open.html (incl. its MarketScreener 11:06 AM figures)</li>
+<li>WRDS signals file checked: alpha_wrds_signals.csv (as_of_date 2026-09-17; stale, not used)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
