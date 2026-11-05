@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-02 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Monday, November 2, 2026 &middot; Palantir out, Apple due 4:30 PM ET &middot; midterm elections &amp; AMD tomorrow &middot; October payrolls Friday</div>
+<p class="note">Automated run. The task is scheduled for ~3:20 PM ET, but because US clocks moved to EST on Nov. 1, this session started at about <b>4:20 PM ET, after the 4:00 PM close</b>. So every price below is a <b>final regular-session print</b>, not a pre-close snapshot. Index closes come from Yahoo Finance's index strip ("At close 4:19 PM EST"), Reuters (preliminary, via Virginia Business) and TradingKey's close wrap; they agree to within ~0.02%. Single-stock closes and volumes come from Investing.com's quote panel and most-active / gainers / losers tables, read at about <b>4:25 PM ET</b>, plus 24/7 Wall St.'s winners/losers widget. All % moves are <b>vs. Friday's (Oct. 30) close</b>. No closing prints were found for <b>AVGO, TSM, ASML, CRM or QCOM</b>, so those are not graded. Yahoo's most-active page served cached data from an earlier session (Intel at $93) and was discarded again. <b>Apple's results (due 4:30 PM ET) were not yet available</b> when this report was written; several result searches returned only previews, and the 24/7 Wall St. Apple live blog was rate-limited. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 46 days old and outside the ~14-day window, so there is no WRDS section in this edition.</p>
+
+<h2>1. How the Full Session Traded</h2>
+<p><b>A relief rally that failed: the Nasdaq reversed about 2.5 points from its high and closed at the lows, while oil and rotation carried the Dow.</b> The S&amp;P 500 closed at <b>7,541.40</b> (<span class="dn">−0.51%</span>) after being up as much as 1.1%. The Nasdaq Composite closed at <b>25,164.32</b> (<span class="dn">−1.07%</span>) after being up as much as 1.4%. The Nasdaq 100 was about 28,072 (<span class="dn">−1.19%</span>, 24/7 Wall St. close ticker). The Dow closed at <b>51,983.98</b> (<span class="up">+0.41%</span>) and the Russell 2000 at 2,805.88 (<span class="dn">−0.21%</span>). Reuters' preliminary figures were S&amp;P 7,542.27 (−0.50%) and Dow 51,992.19 (+0.43%). <b>The final 50 minutes did real damage:</b> at ~3:10 PM the S&amp;P was roughly flat (−0.06%) and the Nasdaq 100 −0.75%, so another half-point came off both into the bell. The <b>Philadelphia Semiconductor Index fell 3.37% to 10,328.33</b> (TradingKey). A search summary of Bloomberg says the chip gauge's three-day rout has reached ~12% and the Nasdaq 100 is now ~10% below its October peak, which is correction territory.</p>
+<p><b>Cross-asset:</b> VIX 21.17–21.35 (<span class="dn">+9% to +10%</span>), up from 18.64 at 10:35 AM. Brent $104.1 (<span class="dn">−8.2%</span>) and WTI ~$96.0–96.2 (<span class="dn">−7.6% to −7.8%</span>), the day's largest macro move, on Iranian state media saying the Supreme Leader authorized the government to pursue talks and on Qatar-mediated negotiations entering a third day (Investing.com; TradingKey). The 10-year closed ~4.89–4.91% (−2 to −3.5 bp), the 30-year 5.287%, and the 10s–2s spread steepened +4 bp to ~31 bp. Gold ~$3,955 (<span class="up">+1.45%</span>), silver <span class="up">+2.7%</span>, Bitcoin ~$76.8k (<span class="dn">−1.3%</span>), dollar index 101.65 (−0.1%). Tech (XLK) was −2.4% at 2:40 PM (Yahoo). December-hike odds are still 76% (CME via Yahoo) to 78% (Investing.com).</p>
+<p><b>What drove it:</b> the same "who can fund AI capex" theme that took over in the afternoon. Oracle launched its <b>$10B bond in six tranches</b>; the 20-year's initial price talk was ~T+360 bp and expected ratings are Baa2 / BBB− / BBB, with S&amp;P's BBB− the lowest investment-grade rung. A $10B common offering is also expected (TradingKey; Investing.com). Bloomberg reported (via TradingKey) that <b>Meta is weighing at least $20B of dollar and euro bonds</b>, its first euro deal. Jones Trading's O'Rourke said Alphabet and Meta "launched debt deals in Europe" and that the mega-cap sales "triggered a new round of selling in the neoclouds." Anthropic's amended S-1 showed ~$17B of Q3 revenue (~12× y/y) against a $23.3B net loss and ~$895B of committed spend, ~$70B of it due in the 12 months to September 2027 (TradingKey). Reuters notes the S&amp;P is now ~19× forward earnings, its lowest since 2023, while Q3 S&amp;P earnings are tracking +30% y/y (LSEG).</p>
+<p><b>Tone:</b> risk-off for anything tied to AI capital spending, alongside a real rotation bid for cyclicals, beat-and-raise earnings and the oil-relief trade. Money moved within the market rather than leaving it, but hedging demand rose into the close ahead of tonight's Apple report, tomorrow's midterms and AMD.</p>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>S&amp;P 500</th><th>Nasdaq</th><th>Dow</th><th>Source</th></tr>
+<tr><td class="n">~9:54 AM</td><td class="up">+0.56%</td><td class="up">Comp. +0.75%</td><td class="up">+0.98%</td><td>Yahoo (open edition)</td></tr>
+<tr><td class="n">~10:30–10:42</td><td class="up">+1.0% (high ~+1.1%)</td><td class="up">Comp. +1.3% (high ~+1.4%)</td><td class="up">+1.1%</td><td>CNBC via StockTitan; Investing.com</td></tr>
+<tr><td class="n">12:37 PM</td><td class="up">+0.38%</td><td class="up">Comp. +0.35%</td><td class="up">+0.99%</td><td>Yahoo (midday edition)</td></tr>
+<tr><td class="n">~3:10 PM</td><td class="dn">−0.06%</td><td class="dn">NDX −0.75%</td><td class="up">+0.73%</td><td>Investing.com (afternoon edition)</td></tr>
+<tr><td class="n"><b>Close</b></td><td class="dn"><b>−0.51% (7,541.40)</b></td><td class="dn"><b>Comp. −1.07% (25,164.32); NDX ~−1.19%</b></td><td class="up"><b>+0.41% (51,983.98)</b></td><td>Yahoo; TradingKey; Reuters; 24/7 Wall St.</td></tr>
+</table></div>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Grades today's Pre-Market (~5:30–8:30 AM), Open (~9:35–11:10 AM), Midday (~11:30 AM–1:15 PM) and Afternoon (~3:10 PM) editions against the close. "Played out" = the move continued in the direction the edition expected. "Faded" = it gave back a meaningful part. "Reversed" = it flipped sign.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Earlier read</th><th>Afternoon (~3:10)</th><th>Close</th><th>Grade</th></tr>
+<tr><td>MRVL / LITE</td><td>Pre-mkt/Open: spread widening, "legs, not a fade." Afternoon: spread narrowing to ~9.9% looked like arb buying</td><td class="dn">MRVL −13.42%, LITE −17.15%</td><td class="dn">MRVL −12.72% ($171.41, 60.5M sh); LITE −18.61% ($684.27, 14.3M sh)</td><td><b>Selling played out all day.</b> The afternoon's "narrowing spread" read <b>reversed</b> into the bell: the spread re-widened to ~12.7% (§4)</td></tr>
+<tr><td>ORCL</td><td>All editions: financing overhang still being worked through</td><td class="dn">−8.62%</td><td class="dn">−8.85% ($119.11, 53.1M sh)</td><td>Played out (closed at the lows)</td></tr>
+<tr><td>INTC</td><td>Midday/Afternoon: selling accelerating; capitulation vs. distribution was the test into the close</td><td class="dn">−8.58% (173.8M sh)</td><td class="dn">−8.80% ($59.97, 225.5M sh)</td><td>Played out. Closed below $60 near the lows with no reversal, which reads as distribution, not capitulation</td></tr>
+<tr><td>AMD</td><td>Pre-mkt: chip rebound (~+2.2%)</td><td class="dn">−6.19%</td><td class="dn">−7.52% ($466.84, 31.4M sh)</td><td>Reversed and extended into the close</td></tr>
+<tr><td>MU</td><td>Pre-mkt: memory leading the rebound (+2.35%)</td><td class="dn">−5.19%</td><td class="dn">−5.78% ($833.59, 28.3M sh)</td><td>Reversed and extended</td></tr>
+<tr><td>NVDA</td><td>Open: data-center leader's strength may hold (+1.95% at 10:46)</td><td class="dn">−0.26% to −0.57%</td><td class="dn">−1.26% ($202.06, 109.9M sh)</td><td>Reversed and extended</td></tr>
+<tr><td>MSFT</td><td>Not called. +0.5% late morning</td><td class="dn">−1.58%</td><td class="dn">−2.83% ($507.12)</td><td>Extended lower</td></tr>
+<tr><td>AMZN</td><td>Open: post-earnings recovery may have legs (peak +5.3%)</td><td class="up">+3.33%</td><td class="up">+2.20% ($245.63, 56.3M sh)</td><td>Held positive but faded steadily (gave back ~60% of the peak)</td></tr>
+<tr><td>GOOGL</td><td>Euro bond received better than Oracle's raise</td><td class="up">+1.04%</td><td class="dn">−0.29% ($279.03)</td><td><b>Reversed in the last hour</b></td></tr>
+<tr><td>AAPL</td><td>De-risking into the report</td><td class="dn">−1.67% to −2.17%</td><td class="dn">−1.83% ($338.32, 50.7M sh)</td><td>Held</td></tr>
+<tr><td>IDXX</td><td>Beat-and-raise names keep running</td><td class="up">+21.12%</td><td class="up">+21.85% ($671.64)</td><td>Played out (closed near the highs; top S&amp;P gainer)</td></tr>
+<tr><td>Oil trade</td><td>More likely to hold than fade</td><td>Brent −8.0%</td><td>Brent −8.2%; CTRA −8.62%</td><td>Held</td></tr>
+<tr><td>Neoclouds (CRWV, NBIS)</td><td>Afternoon: AI-financing worries spreading</td><td class="dn">−8.40% / −7.76%</td><td class="dn">−8.60% / −8.28%</td><td>Played out (closed at the lows)</td></tr>
+<tr><td>TSLA, SPCX</td><td>Pre-mkt/Open: Terafab report; Boost Mobile talks</td><td class="up">+1.11% / +2.72%</td><td class="up">+1.00% / +1.22%</td><td>TSLA held. SPCX faded (was +5.2% in the morning)</td></tr>
+</table></div>
+<p><b>Scorecard:</b> the day's "short-side" reads (Oracle, Intel, Marvell/Lumentum selling, the neocloud spread) all played out into the close. So did IDEXX and the oil trade on the long side. Every chip and AI-hardware long read from the morning (NVDA, AMD, MU) ended up reversing. The one afternoon call that missed was the Marvell–Lumentum <i>spread</i>. Its narrowing from ~12% to ~9.9% looked like merger-arbitrage support, but it did not survive the final hour. A late-day fade in Alphabet and Microsoft also shows the selling widened from "who needs to raise capital" to megacap AI spenders generally.</p>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">Closing % vs. Friday. Volume is full-session shares from Investing.com's tables (~4:25 PM ET), plus 24/7 Wall St.'s close widget where noted. "Not verified" = no catalyst confirmed this run.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Day move</th><th>Volume / catalyst note</th></tr>
+<tr><th colspan="3">Fixed watchlist</th></tr>
+<tr><td>AMZN</td><td class="up n">+2.20% ($245.63)</td><td>56.3M sh. Strongest megacap; peaked at +5.3% mid-morning</td></tr>
+<tr><td>TSLA</td><td class="up n">+1.00% ($403.82)</td><td>42.1M sh. Held above $400</td></tr>
+<tr><td>GOOGL</td><td class="dn n">−0.29% ($279.03)</td><td>Turned negative in the last hour (was +1.04% at ~3:10)</td></tr>
+<tr><td>NVDA</td><td class="dn n">−1.26% ($202.06)</td><td>109.9M sh, the most active megacap. Was +1.95% at 10:46</td></tr>
+<tr><td>META</td><td class="dn n">−1.34% ($606.73)</td><td>Bloomberg (via TradingKey): weighing ≥$20B of USD/EUR bonds</td></tr>
+<tr><td>AAPL</td><td class="dn n">−1.83% ($338.32)</td><td>50.7M sh. Fiscal Q4 report due 4:30 PM ET; options implied ~±4.2%</td></tr>
+<tr><td>MSFT</td><td class="dn n">−2.83% ($507.12)</td><td>31.9M sh. Not verified; consistent with selling in AI spenders</td></tr>
+<tr><td>MU</td><td class="dn n">−5.78% ($833.59)</td><td>28.3M sh. ~−8% from the pre-market high (~$905)</td></tr>
+<tr><td>AMD</td><td class="dn n">−7.52% ($466.84)</td><td>31.4M sh. Reports Tuesday after the close; options implied ~±8.8%</td></tr>
+<tr><td>ORCL</td><td class="dn n">−8.85% ($119.11)</td><td>53.1M sh. $10B 6-tranche bond launched; $10B equity sale pending</td></tr>
+<tr><td>INTC</td><td class="dn n">−8.80% ($59.97)</td><td><b>225.5M sh, ~2.1× its 107.7M 3-month average.</b> ~−35% since Thursday</td></tr>
+<tr><td>AVGO, TSM, ASML, CRM, QCOM</td><td class="n">n/a</td><td>No closing print found. QCOM was −1.37% at ~3:10 (afternoon edition); it reports Wednesday</td></tr>
+<tr><th colspan="3">Outside the watchlist: gainers</th></tr>
+<tr><td>IDXX</td><td class="up n">+21.85% ($671.64)</td><td>1.93M sh. Q3 beat and raised 2026 guidance. Top S&amp;P gainer</td></tr>
+<tr><td>ENPH</td><td class="up n">+8.89%</td><td>8.7M sh. Not verified</td></tr>
+<tr><td>TAP / LKQ</td><td class="up n">+7.75% / +7.38%</td><td>6.4M / 7.8M sh. Not verified; consistent with the rotation into non-tech</td></tr>
+<tr><td>HWM / MHK / PNR</td><td class="up n">+6.91% / +6.58% / +6.49%</td><td>MHK: Evercore ISI upgrade on its buyback plan (open edition). HWM, PNR not verified</td></tr>
+<tr><td>SPCX</td><td class="up n">+1.22% ($136.37)</td><td>87.6M sh. Boost Mobile talks report; faded from +5%</td></tr>
+<tr><th colspan="3">Outside the watchlist: losers</th></tr>
+<tr><td>LITE / MRVL</td><td class="dn n">−18.61% / −12.72%</td><td>14.3M / 60.5M sh. $115B all-stock merger; MRVL ~−32% since Oct. 28</td></tr>
+<tr><td>ALAB</td><td class="dn n">−11.22% ($229.67)</td><td>5.4M sh. AI-connectivity peer. <b>Reports Tuesday after the close</b> (implied ~±15.9%)</td></tr>
+<tr><td>CRWV / NBIS</td><td class="dn n">−8.60% / −8.28%</td><td>47.0M / 18.7M sh. Neocloud financing worries</td></tr>
+<tr><td>CTRA</td><td class="dn n">−8.62%</td><td>Oil −8%</td></tr>
+<tr><td>DDOG</td><td class="dn n">−8.06%</td><td>24/7 widget. Reports Wednesday before the open (implied ~±14.3%)</td></tr>
+<tr><td>STX / SNDK</td><td class="dn n">−7.98% / −6.59%</td><td>UBS cut Seagate's target (afternoon edition). SNDK 10.0M sh</td></tr>
+<tr><td>PLTR</td><td class="dn n">−2.63% ($179.27)</td><td>Into its report. Results beat and raised; initially flat after hours (§4)</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates / What to Watch Tomorrow</h2>
+<p class="note">These are research observations, not recommendations to buy or sell. Each is a name or theme worth investigating further going into Tuesday.</p>
+
+<div class="card">
+<h3>1. AMD (AMD) −7.52% to $466.84: most of the implied earnings move is already gone before tomorrow's print</h3>
+<p><b>Move:</b> ~$516 pre-market (+2.2%) → $489 (−3%) at 12:49 PM → $473.58 (−6.2%) at ~3:10 → <b>$466.84 (−7.52%)</b> at the close on 31.4M shares. That follows an ~11% drop on Friday. The peak-to-close swing today was ~−9.5%.</p>
+<p><b>Thesis:</b> Options priced ~±8.8% for Tuesday's after-close report (EarningsWatcher, as of Oct. 30; afternoon-edition sources had ~8.4–9%). The stock has already used about that much range on the downside in a day and a half. The afternoon edition's read was that AMD is trading with the AI-infrastructure basket (MU, ALAB, neoclouds), not just on Intel's PC warning, and the close supports that: AMD extended its drop in the final hour along with MU and NVDA while Intel barely moved. Consensus Q3 revenue is ~$13.0B (+42%) and EPS ~$1.94 (TipRanks via the pre-market edition). The swing factor is the Q4 guide against ~$16.2B implied by full-year consensus, plus data-center commentary (Data Center was $6.72B, 58% of sales, last quarter). Worth investigating: whether two days of de-risking have lowered the bar enough that an in-line guide gets a better reception than Friday's tape implies.</p>
+<p><b>Evidence:</b> Investing.com close tables; afternoon edition (24/7 Wall St. segment data and valuation; FX Leaders/FinanceFeeds pre-market price); EarningsWatcher implied moves; Yahoo (AMD reports Tuesday after the bell following Intel's weak outlook).</p>
+<p><b>Risks / what could change it overnight:</b> Apple's memory-cost and PC-demand commentary tonight; any midterm-driven moves in futures; Arista and Astera Labs report the same evening, so read-through will be noisy. A weak Q4 guide could extend the slide well past the implied move, as Intel's did.</p>
+<p><span class="conf">Confidence: Low (binary, pre-report)</span></p>
+</div>
+
+<div class="card">
+<h3>2. Marvell (MRVL) −12.72% / Lumentum (LITE) −18.61%: the deal spread blew back out to ~12.7% into the bell</h3>
+<p><b>Move:</b> MRVL closed at $171.41, slightly above its ~3:10 low ($170.05). LITE closed at $684.27, a new session low (it was $696.48 at ~3:10). At 4.5 MRVL shares per LITE share, the implied value is 4.5 × $171.41 ≈ <b>$771</b>, so the gross spread is <b>~12.7%</b>. That is up from ~5.1% at Friday's close, ~8.7% pre-market, ~11.7% at 11:29 AM, ~12.2% at 1:01 PM and ~9.9% at ~3:10 PM. The implied value is now ~32% below the $1,132 headline, and MRVL is ~−32% from its Oct. 28 close of $251.65.</p>
+<p><b>Thesis:</b> The afternoon edition read the 3 PM narrowing as merger-arbitrage buyers stepping into LITE. That support disappeared in the final hour. Lumentum holders kept selling while Marvell found a small bid, which looks like holders refusing long-dated Marvell paper (close expected in H1 2028, two shareholder votes and antitrust reviews) rather than arbitrage capital setting the price. Arb buying of LITE is normally hedged by shorting MRVL, so a spread that stays this wide also suggests arb hedging is not what is pressuring MRVL; the selling there looks like outright repricing of the acquirer. Upcoming catalysts in the optical chain: <b>Fabrinet reports tonight</b> (implied ~±21%), Coherent Wednesday after the close, and <b>Lumentum's own report Thursday after the close</b> (implied ~±13%), its first since the deal.</p>
+<p><b>Evidence:</b> Investing.com close tables (prices, volumes); TradingKey close wrap (MRVL −12.72%, LITE −18.59%, 4.5 ratio, 67/33 ownership); StockTitan (Oct. 28 MRVL close, $1,132 headline); EarningsWatcher (FN, COHR, LITE dates and implied moves). Spread math is this report's arithmetic on closing prints.</p>
+<p><b>Risks:</b> Closing prints from one table may not be perfectly synchronous (±0.5 pt on the spread). A semis rebound would lift both legs. Proxy-fight or revised-terms headlines would reset the spread entirely. Optical peers' results (FN tonight) could move LITE independently of the deal.</p>
+<p><span class="conf">Confidence: Medium (spread stays wide, 10%+) · Low (direction of either leg)</span></p>
+</div>
+
+<div class="card">
+<h3>3. Oracle (ORCL) −8.85% and the AI-funding cluster: the bond book and equity pricing are tonight's and tomorrow's tells</h3>
+<p><b>Move:</b> ORCL closed at $119.11 on 53.1M shares, at its session lows and below its 10:01 AM low. Neoclouds closed at their lows too: CoreWeave −8.60%, Nebius −8.28%. Meta −1.34% on the bond report.</p>
+<p><b>Thesis:</b> The financing story got more specific after the afternoon edition. Oracle launched a <b>$10B, six-tranche bond</b>: the 20-year's initial price talk was ~360 bp over Treasuries, and S&amp;P's expected rating is BBB−, the bottom of investment grade (TradingKey). The $10B equity sale is still "expected" (O'Rourke via Investing.com). At $119.11, $10B is ~84M shares, ~9.7% more than at Friday's $130.67. Meta's reported ≥$20B dollar/euro deal (Bloomberg via TradingKey) adds supply from a second hyperscaler. The question going into tomorrow: whether Oracle's bonds price inside talk (orderbook demand would ease credit worries) or wide, and at what discount the stock prices. Credit pricing is now as important a signal as equity for this group.</p>
+<p><b>Evidence:</b> TradingKey close wrap (bond structure, IPT, ratings; Meta report); Investing.com (O'Rourke; close tables); Reuters via Virginia Business ($20B debt and share sale). Share-count math is this report's arithmetic.</p>
+<p><b>Risks:</b> Once deals price, the overhang often lifts and the stocks get relief. A strong Apple or Palantir reaction could lift AI sentiment broadly. Neoclouds are high-beta and heavily shorted, so short-covering can be sharp.</p>
+<p><span class="conf">Confidence: Medium (theme persists) · Low (single-name direction after pricing)</span></p>
+</div>
+
+<div class="card">
+<h3>4. Intel (INTC) −8.80% to $59.97: ~−35% in three sessions on 2× normal volume, with no capitulation reversal</h3>
+<p><b>Move:</b> −0.9% pre-market → −2.9% at 10:39 → −5.19% at 11:29 → −8.58% at ~3:10 → <b>−8.80% at the close</b>. That is ~−35% from Thursday's ~$92.07 close, on 225.5M shares (~2.1× the 107.7M three-month average).</p>
+<p><b>Thesis:</b> The afternoon edition set the test as "a reversal off the lows on a volume spike = capitulation; a close near the lows = continued distribution." The close came within a few cents of the lows and broke below $60, so the second reading fits. The market is still pricing Intel's warning, a Q4 revenue guide of $15–16B vs. ~$17B consensus, a 38% gross-margin guide and no positive free cash flow this year (Reuters), as a structural reset, not a one-quarter miss. Tomorrow's AMD print is the nearest read-through. A strong AMD client/PC commentary would cut against the "whole PC chain is broken" interpretation.</p>
+<p><b>Evidence:</b> Investing.com close tables; Reuters via Virginia Business; afternoon and midday editions (volume average, guidance, intraday path).</p>
+<p><b>Risks:</b> After a ~35% three-day drop, short-covering rallies can be violent, and some analysts call the sell-off overdone (New Street upgrade per the open edition). Any government or strategic-investor headline could reverse it quickly.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p>
+</div>
+
+<div class="card">
+<h3>5. Palantir (PLTR) −2.63% into the print, then a beat-and-raise that was "initially flat" after hours</h3>
+<p><b>Results (4:05 PM):</b> Q3 revenue <b>$2.313B (+96% y/y)</b> vs. ~$2.17–2.18B expected; adjusted EPS $0.44 vs. $0.40–0.41. U.S. commercial revenue was $984M (+148%), passing U.S. government revenue for the first time. FY26 revenue guidance was raised to $8.530–8.534B vs. ~$8.2B consensus, Q4 guidance is $2.649–2.653B, and FY adjusted operating income guidance is $5.245–5.249B (24/7 Wall St.; Yahoo/Bloomberg data).</p>
+<p><b>Thesis:</b> Palantir is the cleanest test of whether the market still pays for AI <i>software</i> growth while it punishes AI <i>hardware and financing</i>. The setup was bearish: the stock fell 2.63% to $179.27 into the print, the put/call ratio was 1.50, and at-the-money implied volatility was ~120% (24/7). Options priced ~±12.4% (EarningsWatcher, Oct. 30). A flat first reaction to a large beat and raise suggests the good news was expected at ~114× FY26 earnings. Its past four earnings-day moves ranged from −7.9% to +29.5% (24/7), so tomorrow's direction is open. Worth watching: whether the stock reclaims its 50-day average (~$187) after the call, or fades as it did after its Q1 and Q3-2025 beats.</p>
+<p><b>Evidence:</b> 24/7 Wall St. live blog (4:09 PM results and "flat after hours"; options; technicals; earnings history); Yahoo live blog (Bloomberg consensus, guidance); EarningsWatcher.</p>
+<p><b>Risks:</b> The after-hours reaction was read only at 4:09 PM, and a search summary mentioned an unconfirmed "drops 3% after hours" headline. The call commentary, especially on how fast boot-camp deals convert to production spending, can move the stock either way.</p>
+<p><span class="conf">Confidence: Low (direction after the call)</span></p>
+</div>
+
+<div class="card">
+<h3>6. Apple (AAPL) −1.83% into the 4:30 PM report, and the memory complex that hangs on its commentary (MU −5.8%, SNDK −6.6%, STX −8.0%)</h3>
+<p><b>Move:</b> AAPL closed at $338.32 on 50.7M shares. It was down all day on a tape where it has been treated as the "AI hedge": it rose on 30 of the 46 days this year when the SOX fell 2% or more (Yahoo). It did not rise today, with the SOX −3.4%.</p>
+<p><b>Thesis:</b> Consensus is EPS ~$2.00 on ~$113.46B revenue; iPhone ~$56.48B (+15%), Services ~$31.58B, Mac ~$9.69B, Wearables ~$8.99B, iPad ~$6.83B (Bloomberg via Yahoo). Guided gross margin is 47–48% (one preview cites 47.5–48%). Options priced ~±4.2%. This is John Ternus's first call as CEO. The quarter includes only ~9 days of iPhone 18 Pro sales, and the iPhone Duo launched after the quarter ended. The read-through matters well beyond Apple: Yahoo reports the AI-driven memory and storage shortage has already forced Apple to raise prices on several products, including Macs and iPads. Its December-quarter margin guide and memory-cost commentary will be the first thing MU, SNDK and STX trade on at Tuesday's open, after a day when all three reversed from pre-market gains.</p>
+<p><b>Evidence:</b> Yahoo Apple live blog (consensus by segment; iPhone 18 timing; memory shortage); Yahoo chart of the day (Apple vs. SOX); Investing.com close tables; EarningsWatcher (implied move).</p>
+<p><b>Risks:</b> Results were not available at the time of writing. Check the release and the 5:00 PM ET call before relying on this thesis. Memory-cost commentary cuts both ways: easing costs help Apple's margin but hurt the "memory pricing power" case for MU.</p>
+<p><span class="conf">Confidence: Low (pre-report at time of writing)</span></p>
+</div>
+
+<div class="card">
+<h3>7. IDEXX (IDXX) +21.85% and the rotation basket: where the money went</h3>
+<p><b>Move:</b> IDXX closed at $671.64, near its highs, on 1.93M shares after a Q3 beat and raised 2026 guidance. That is more than twice its ~±9.3% implied move. Other S&amp;P leaders: Enphase +8.9%, Molson Coors +7.8%, LKQ +7.4%, Howmet +6.9%, Mohawk +6.6%, Pentair +6.5%. The Dow closed +0.41%.</p>
+<p><b>Thesis:</b> This is the other side of the AI-financing trade. In October, the equal-weight S&amp;P beat the cap-weighted index by the most since March 2009 (LPL via Investing.com), and staples, utilities and health care were the top three sectors. Today extended that pattern. IDEXX is worth watching for post-earnings drift: a gap of this size in a non-AI compounder that closes at the highs often gets follow-through or a test of the gap in the next few sessions. For the basket, the question is whether oil's drop (airlines, cyclicals) and the rotation hold if tomorrow's election results change the rates or fiscal outlook.</p>
+<p><b>Evidence:</b> Investing.com gainers table and close wrap (LPL, sector data); 24/7 Wall St. winners widget; EarningsWatcher (IDXX implied move).</p>
+<p><b>Risks:</b> Rotation trades can unwind quickly if tech bounces after AMD or Apple. Oil depends on Iran headlines (Trump reportedly prefers to give diplomacy more time, per Axios via Investing.com), so a breakdown in talks would hit the oil-relief names.</p>
+<p><span class="conf">Confidence: Medium (rotation theme) · Low (IDXX direction)</span></p>
+</div>
+
+<h2>5. Tomorrow's Calendar</h2>
+<div class="tbl"><table>
+<tr><th>When (ET)</th><th>Event</th><th>Notes</th></tr>
+<tr><td class="n">Tonight, after close</td><td><b>Apple (AAPL)</b> 4:30 PM, call 5:00 PM</td><td>Consensus EPS ~$2.00, revenue ~$113.46B. Implied ~±4.2%. Results not captured in this report</td></tr>
+<tr><td class="n">Tonight, after close</td><td>Palantir (out), <b>Fabrinet</b>, ON Semi, Clorox, Diamondback, Vertex, Williams, Realty Income</td><td>Implied: FN ~±21.4% (optical read-through for LITE/MRVL), ON ~±10.5%, CLX ~±8.1%, FANG ~±7.7%</td></tr>
+<tr><td class="n">Tonight ~10:30 PM ET</td><td>RBA decision</td><td>~87% priced for a hike to 4.85% (pre-market edition). Time is this report's conversion of the usual 2:30 PM Sydney release</td></tr>
+<tr><td class="n">Tue Nov 3, all day</td><td><b>US midterm elections</b></td><td>Morgan Stanley WM: Democrats favored to retake the House (net +3 seats needed); Senate a toss-up with a slight Democratic edge. Results arrive overnight into Wednesday</td></tr>
+<tr><td class="n">Tue, before open</td><td>Shopify, Eaton, Upstart, Gartner, Dynatrace, Marathon Petroleum, Thomson Reuters, Waters, DuPont, ADM, Apollo</td><td>Implied: SHOP ~±13.6%, UPST ~±13.1%, IT ~±12.1%, ETN ~±8.0%. Pfizer's timing not confirmed</td></tr>
+<tr><td class="n">Tue 10:00 AM</td><td>JOLTS job openings (Sep)</td><td>7.11M expected vs. 7.079M prior (Investing.com); BLS schedule confirms the date</td></tr>
+<tr><td class="n">Tue 10:00 AM</td><td>Factory orders (Sep)</td><td>+1.2% expected vs. +0.1% (Investing.com; single source)</td></tr>
+<tr><td class="n">Tue, after close</td><td><b>AMD</b>, Arista, Astera Labs, Super Micro, Duolingo, Block, Booking, Jack Henry, Itaú; Amgen (one calendar)</td><td>Implied: AMD ~±8.8%, ANET ~±10.9%, ALAB ~±15.9%, SMCI ~±14.4%. All AI-hardware names that sold off today</td></tr>
+<tr><td class="n">Fed</td><td>No speakers listed Tuesday</td><td>Goolsbee spoke today at 11:15 AM (remarks not found). Barkin and Logan Thursday; Williams and Bowman Friday. December-hike odds 76–78%</td></tr>
+<tr><td class="n">Rest of week</td><td>Wed: ADP (68K exp.), ISM Services (54.8), Treasury refunding; Qualcomm, Arm, AppLovin, Coherent; Datadog before the open; Okta joins the S&amp;P 500. Thu: BoE, claims, <b>Lumentum earnings</b>, Cloudflare, IREN. Fri: <b>October payrolls</b> (63K exp. vs. 29K; unemployment 4.2%; AHE +0.3%), Michigan sentiment</td><td>Implied moves as of Oct. 30 (EarningsWatcher)</td></tr>
+</table></div>
+
+<h2>6. Sources</h2>
+<p class="note">Pages fetched this run:</p>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html (closing index strip "At close 4:19 PM EST", VIX, 10-year, oil, gold, Bitcoin; Palantir results and guidance; CME December odds; XLK −2.4% at 2:40 PM)</li>
+<li>https://virginiabusiness.com/sp-500-lower-apple-dips-quarterly-report-midterm-elections/ (Reuters close: preliminary S&amp;P 7,542.27, Dow 51,992.19; Oracle $20B raise; Intel no positive cash flow; 19× forward P/E; Q3 earnings +30% per LSEG; midterm polling)</li>
+<li>https://www.tradingkey.com/analysis/stocks/us-stocks/262264978-us-stock-close-nasdaq-falls-dow-rises-marvell-oracle-tradingkey (index closes; SOX −3.37% to 10,328.33; MRVL/LITE/ORCL closes; Oracle bond structure, IPT and ratings; Meta ≥$20B bond report; Anthropic Q3 figures; Morgan Stanley midterm view; Iran talks)</li>
+<li>https://www.investing.com/news/stock-market-news/us-stock-futures-edge-high-after-bruising-oct-earnings-elections-in-focus-4989789 (close wrap updated 4:13 PM: intraday highs, O'Rourke and BakerAvenue quotes, LPL equal-weight stat, 78% December odds, Brent; close quote panel and movers tables)</li>
+<li>https://investing.com/news/stock-market-news/why-is-nvidia-stock-climbing-today-93CH-4992208 (morning NVDA context; closing quote panel and most-active/gainers/losers tables with full-session volumes, read ~4:25 PM ET)</li>
+<li>https://247wallst.com/investing/2026/11/02/live-will-palantir-smash-q3-earnings-tonight-after-the-bell/ (Palantir results at 4:09 PM, "initially flat"; options positioning; technicals; earnings history; close ticker and winners/losers widget)</li>
+<li>https://finance.yahoo.com/markets/stocks/live/apple-q4-earnings-live-iphone-18-sales-in-the-spotlight-183000820.html (Apple consensus by segment; iPhone 18 Pro timing; memory shortage; Apple-vs-SOX chart of the day)</li>
+<li>https://www.investing.com/news/stock-market-news/weekly-economic-outlook-payrolls-and-fed-speakers-in-focus-93CH-4992504 (week's data calendar and forecasts; Fed speaker schedule)</li>
+<li>https://earnings-watcher.com/wiki/earnings-implied-moves-2026-11-02 (earnings dates, sessions and options-implied moves for Nov. 2–6, as of Oct. 30)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-2-2026 (last updated 1:12 PM; used only for deal terms: Oct. 28 MRVL close $251.65, $1,132 headline value)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (served cached data from an earlier session; discarded)</li>
+</ul>
+<p class="note">Fetched but empty: https://www.marketscreener.com/news/s-p-500-ends-down-apple-dips-ahead-of-quarterly-report-ce785fd9da89ff2c, https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html, https://cnbc.com/2026/11/01/stock-market-today-live-updates.html, https://www.nbcnews.com/business/markets/tech-stocks-nasdaq-ai-boom-fears-deepen-rcna606512, https://www.bloomberg.com/news/articles/2026-11-01/stock-market-today-dow-s-p-live-updates. Rate-limited: https://247wallst.com/investing/2026/11/02/live-will-apple-crush-q4-earnings-tonight-in-new-ceo-john-ternuss-first-quarter/.</p>
+<p class="note">Used via search-result summaries only: https://www.bloomberg.com/news/articles/2026-11-01/stock-market-today-dow-s-p-live-updates (Nasdaq 100 ~10% below its October peak; chip gauge's three-day rout ~12%); https://www.bls.gov/schedule/news_release/jolts.htm (JOLTS date); https://www.tradingkey.com/news/market-movers/262264482-market-movers-intc-20261102 (an earlier, intraday Intel figure; superseded by closing data).</p>
+<p class="note">Prior context: alpha_report_2026-11-02_premarket.html, _open.html, _midday.html and _afternoon.html (local archive).</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>

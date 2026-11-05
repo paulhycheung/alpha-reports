@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-04 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Wednesday, November 4, 2026 &middot; First session after the US midterms &middot; Qualcomm, Arm and AppLovin reported after the bell</div>
+<p class="note">Automated run. The task is scheduled for ~3:20 PM ET, but this session ran from about <b>4:20 to 4:45 PM ET</b>, after the 4:00 PM close. So this edition uses closing or near-closing prices plus the first after-hours reactions to tonight's earnings. Index closes are from CNBC's live blog (via search summary), cross-checked against Trading Economics' close summary. Single-stock closes come mainly from Trading Economics quote tables (CFD-based, captured shortly after the close) and Investing.com's automated close wrap. <b>Where the two disagree, a range is shown.</b> Investing.com's wrap gives higher index gains (Dow +3.19%, S&amp;P +1.80%, Nasdaq +1.78%) than CNBC and Trading Economics, which suggests an earlier snapshot, so its index figures are not used. No confirmed closing print was found for QCOM, INTC, CRM, TSM (US ADR), CVS, CRWV or DDOG; their last intraday prints are labeled. Volume figures are from Yahoo's screener at ~3:10 PM (afternoon edition), not the full session. Several fetches (CNBC, Arm newsroom, Reuters syndications) returned empty pages and two were rate-limited; those items are cited from search-result summaries and labeled. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (48 days old, outside the ~14-day window), so there is no WRDS section in this edition.</p>
+
+<h2>1. How the Full Session Traded</h2>
+<p><b>A broad relief rally, led by the Dow and mega-cap platforms. Semis and the AI build-out names sold off, and tech faded slightly into the bell.</b> The Dow closed at <b>53,356.12</b>, up <span class="up">1,569.40 points (+3.03%)</span>. That is its best day since April 9, 2025, and it is back above 53,000 for the first time since Sept. 8 (CNBC). The S&amp;P 500 closed at <b>7,688.62</b> (<span class="up">+1.58%</span>) and the Nasdaq Composite at <b>25,736.51</b> (<span class="up">+1.44%</span>). The Nasdaq-100 gained only about <span class="up">+0.9% to +1.0%</span> (~28,460–28,480), and the Russell 2000 rose ~<span class="up">+1.6%</span> (Trading Economics). Compared with the afternoon edition (~3:10 PM), the S&amp;P slipped from +1.70% and the Nasdaq from ~+1.67%, while the Dow held about +3.0%. NYSE advancers beat decliners 2,098 to 705 (Investing.com).</p>
+<p><b>Macro:</b> Crude finished the regular session sharply lower but <b>bounced off its lows after the afternoon edition</b>. Trading Economics' post-close quote had WTI at ~<b>$90.1</b> (<span class="dn">−6.2%</span>), up from ~$88.50 at 3:10 PM. Brent was ~$96.1 (<span class="dn">−7.2%</span>) and gasoline hit a four-month low. The 10-year yield was ~4.91% (about −6 bp), and the VIX ~16.6. Gold rose to ~$4,052 (<span class="up">+3.1%</span>), silver <span class="up">+4.5%</span> and bitcoin ~$80.5K (<span class="up">+4.2%</span>). The dollar index was ~101.6.</p>
+<p><b>After the bell:</b> Qualcomm beat but guided EPS light, and its stock went from ~+1.8% to ~−2% after hours. Arm beat on revenue but missed on royalties, after a −4.6% regular session, and was ~−2% after hours. AppLovin jumped ~8–16% on a double beat. MercadoLibre fell ~8% on an EPS miss. <b>Tone:</b> election clarity and gridlock were read as good for cash-rich incumbents, cyclicals and rate-sensitive names. They were read as bad for the companies that build, power and finance AI capacity. Reuters' framing: a slower build-out "could ease cash demands on tech companies, while pressuring operators and suppliers."</p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Names and themes flagged in today's pre-market, open, midday and afternoon editions, checked against the close. "PM" = pre-market edition, "O" = open, "MD" = midday, "AF" = afternoon.</p>
+<div class="tbl"><table>
+<tr><th>Earlier flag</th><th>Afternoon (~3:10 PM)</th><th>Close</th><th>Verdict</th></tr>
+<tr><td>Mega-cap platforms carry the rally (O2, MD1); MSFT extends vs. META fades (AF3)</td><td class="n">MSFT +6.94%, AMZN +6.8%, AAPL +6.0–6.3%, GOOGL +4.09%, META +1.12%</td><td class="n">MSFT <span class="up">+6.7% to +7.1%</span>, AMZN <span class="up">+6.1% to +7.0%</span>, AAPL <span class="up">+5.3% to +6.1%</span>, GOOGL <span class="up">+3.2%</span>, META <span class="up">+1.4% to +1.5%</span></td><td class="up">Played out. All five closed up; MSFT led and META lagged, as the afternoon edition expected</td></tr>
+<tr><td>Rotation: Dow over Nasdaq (PM5, AF2)</td><td class="n">Dow +3.05%, NDX +1.03%</td><td class="n">Dow <span class="up">+3.03%</span>, NDX ~<span class="up">+0.9–1.0%</span>, Nasdaq Comp. <span class="up">+1.44%</span></td><td class="up">Played out, with the widest gap of the day (~2 pts) at the close</td></tr>
+<tr><td>Chip designers bid on AMD's beat (PM3)</td><td class="n">NVDA −2.13%, AVGO −1.96%</td><td class="n">NVDA <span class="dn">−2.2% to −3.2%</span>, AVGO <span class="dn">−1.9% to −2.0%</span></td><td class="dn">Reversed at the open and never recovered</td></tr>
+<tr><td>Semis weak into Arm and Qualcomm; MU weakest (O4, AF1)</td><td class="n">MU −6.94%, INTC −4.3%, QCOM +0.1%</td><td class="n">MU <span class="dn">−7.05%</span> ($794.82), ARM <span class="dn">−4.62%</span>, AMAT <span class="dn">−4.1%</span>, ADI <span class="dn">−4.0%</span>; INTC last <span class="dn">−4.3% to −4.5%</span> (no close found)</td><td class="up">Played out. Semis finished at or near the day's lows going into the prints</td></tr>
+<tr><td>AMD beat-and-raise holds (PM1) → gap fade (O1)</td><td class="n">−0.3% ($482.3)</td><td class="n"><span class="dn">−0.31%</span> ($482.41)</td><td class="dn">Reversed. A +7% pre-market gain fully erased; pinned at the prior close</td></tr>
+<tr><td>AI build-out / power / neocloud sell-off (PM3, O3, MD4, AF6)</td><td class="n">VST −14.4% to −15.1%, CRWV −9.8%, ORCL −1.0%</td><td class="n">VST <span class="dn">−13.71%</span> ($120.45), ORCL <span class="dn">−1.4% to −1.85%</span>; CRWV no close found</td><td class="up">Played out, with slight late covering in VST. Oracle closed at its weakest level of the day</td></tr>
+<tr><td>TSLA / SPCX: Musk political discount (PM2)</td><td class="n">TSLA −2.8%, SPCX −5.3%</td><td class="n">TSLA <span class="dn">−3.3% to −3.6%</span> (~$384–385), SPCX ~<span class="dn">−4.0%</span> (~$135.7)</td><td class="am">The gap partly filled at midday, then reasserted. TSLA closed near its post-open low</td></tr>
+<tr><td>Oil's war premium drains; defense lower (MD2, AF4)</td><td class="n">WTI ~$88.50 (−7.9%)</td><td class="n">WTI ~$90.1 (<span class="dn">−6.2%</span>), Brent ~$96.1; XOM <span class="dn">−4.3%</span></td><td class="am">Played out for the day, but crude bounced back above $90 after the afternoon edition. The afternoon's "WTI stays below $90" call is already in doubt</td></tr>
+<tr><td>Day-one winners fade: ANET held vs. SMCI faded (O5, MD6)</td><td class="n">ANET +4.8% to +5.0%, SMCI −5.5%</td><td class="n">ANET <span class="up">+5.29%</span> ($178.89); SMCI no close found</td><td class="up">Played out. ANET kept about half of its +10% morning gain</td></tr>
+<tr><td>CVS: no value buyers (O6, MD5); DDOG: beat overshadowed (AF5)</td><td class="n">CVS −11.55%; DDOG −13.6% to −14.6%</td><td class="n">No confirmed closes found</td><td class="am">Likely played out (both were down >10% within the last hour); unverified</td></tr>
+<tr><td>QCOM into tonight's print (PM7, AF1)</td><td class="n">+0.05% to +0.19%</td><td class="n">Regular session ~flat (no close found); after hours <span class="up">+1.8%</span> → <span class="dn">~−2%</span></td><td class="am">The pre-print drift held. The after-hours reaction is two-sided (see candidate 1)</td></tr>
+</table></div>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">% vs. Tuesday's (Nov. 3) close. "TE" = Trading Economics quote table captured shortly after the close; "INV" = Investing.com automated close wrap. A range means the two disagreed. Volume notes are cumulative to ~3:10 PM (Yahoo screener, afternoon edition) vs. 3-month average full-day volume.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Day move (close)</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Fixed watchlist</td></tr>
+<tr><td>MSFT</td><td class="n"><span class="up">+6.7% to +7.1%</span> ($556.50 TE / $558.08 INV)</td><td>Best of the platforms. TE's close summary: "Microsoft jumped 6.7%"</td></tr>
+<tr><td>AMZN</td><td class="n"><span class="up">+6.1% to +7.0%</span> ($266.03 TE / $268.28 INV)</td><td>66.0M shares by ~3:10 PM vs. 37.0M average (1.8x). Off its midday high of +7.7%</td></tr>
+<tr><td>AAPL</td><td class="n"><span class="up">+5.3% to +6.1%</span> ($349.51–351.99, TE)</td><td>59.8M by ~3:10 PM vs. 41.6M (1.4x). Down from +6.7% at midday</td></tr>
+<tr><td>GOOGL</td><td class="n"><span class="up">+3.2%</span> ($289.08, TE)</td><td>Faded from +5% at the open</td></tr>
+<tr><td>META</td><td class="n"><span class="up">+1.4% to +1.5%</span> ($630.16, TE)</td><td>Lagged the platforms on the day of its debut euro bond (~€53B of bids)</td></tr>
+<tr><td>QCOM</td><td class="n"><span class="am">~flat</span> (last +0.05% to +0.19% at ~3:10 PM; no close found)</td><td><b>After hours: +1.8% (4:03 PM, Seeking Alpha) → ~−2% (4:12 PM, investingLive)</b>; one report says >−4%. See candidate 1</td></tr>
+<tr><td>AMD</td><td class="n"><span class="dn">−0.31%</span> ($482.41, TE)</td><td>42.2M by ~3:10 PM vs. 21.3M (2.0x). Its +7% pre-market gain was fully reversed</td></tr>
+<tr><td>CRM</td><td class="n">n/a</td><td>No print after +3.66% at 11:04 AM</td></tr>
+<tr><td>TSM</td><td class="n">n/a (US ADR)</td><td>Taiwan-listed shares closed −1.53% (TE), before the US session</td></tr>
+<tr><td>ORCL</td><td class="n"><span class="dn">−1.4% to −1.85%</span> ($123.85–124.42, TE)</td><td>54.0M by ~3:10 PM vs. 31.2M (1.7x). Also cancelled a ~$7B Tencent chip-lease deal today (FT via afternoon edition)</td></tr>
+<tr><td>AVGO</td><td class="n"><span class="dn">−1.9% to −2.0%</span> ($325.48–325.78, TE)</td><td>Little changed from ~3:10 PM</td></tr>
+<tr><td>NVDA</td><td class="n"><span class="dn">−2.2% to −3.2%</span> ($200.07 TE / $202.25 INV)</td><td>98.9M by ~3:10 PM (0.9x of a full day). The worst Dow component alongside CAT and CVX (INV)</td></tr>
+<tr><td>TSLA</td><td class="n"><span class="dn">−3.3% to −3.6%</span> ($384.00–385.39, TE)</td><td>Weaker than at ~3:10 PM (−2.8%)</td></tr>
+<tr><td>ASML</td><td class="n"><span class="dn">−3.5%</span> (€1,336.40, Amsterdam close)</td><td>No US ADR close found</td></tr>
+<tr><td>INTC</td><td class="n"><span class="dn">−4.3% to −4.5%</span> (last at ~3:10 PM; no close found)</td><td><b>149.2M shares by ~3:10 PM</b> (1.35x), the most active US stock</td></tr>
+<tr><td>MU</td><td class="n"><span class="dn">−7.05%</span> ($794.82, TE)</td><td>Weakest in the watchlist; closed at the afternoon's low</td></tr>
+<tr class="sec"><td colspan="3">Notable movers outside the watchlist</td></tr>
+<tr><td>MOS / CDW / ZBH / MMM</td><td class="n"><span class="up">+16.7% / +14.7% / +14.0% / +9.7%</span> (INV)</td><td>Top of the S&amp;P 500 (MOS, CDW, ZBH) and of the Dow (MMM). XYZ (Block) was +16% earlier (Chartmill)</td></tr>
+<tr><td>ANET</td><td class="n"><span class="up">+5.29%</span> ($178.89, TE)</td><td>Post-earnings; gave back about half of its +10% morning gain</td></tr>
+<tr><td>FIS / TRMB</td><td class="n"><span class="dn">−23.75% / −17.79%</span> (INV)</td><td>Bottom of the S&amp;P 500. FIS: guidance cut and CFO exit</td></tr>
+<tr><td>VST</td><td class="n"><span class="dn">−13.71%</span> ($120.45, INV)</td><td>AI power; 52-week low. Slight late bounce from −15%</td></tr>
+<tr><td>ARM</td><td class="n"><span class="dn">−4.62%</span> ($193.40, TE)</td><td>Then ~−2% after hours on its results (see candidate 2)</td></tr>
+<tr><td>CAT / XOM</td><td class="n"><span class="dn">−5.6% to −6.4% / −4.3%</span></td><td>CAT: AI power and data-center equipment exposure (our inference). XOM: oil</td></tr>
+<tr><td>SPCX</td><td class="n"><span class="dn">~−4.0%</span> (~$135.73, TE)</td><td>109.5M shares by ~3:10 PM (1.07x)</td></tr>
+<tr><td>CVS / DDOG / CRWV</td><td class="n">no close found</td><td>Last: CVS −11.55%, DDOG −13.6% to −14.6%, CRWV −9.8% (~3:10 PM)</td></tr>
+<tr class="sec"><td colspan="3">After hours (post-4:00 PM, early prints)</td></tr>
+<tr><td>APP</td><td class="n"><span class="up">+8% to +16%</span> (~$315, Benzinga)</td><td>Q3 double beat (see candidate 6)</td></tr>
+<tr><td>MELI</td><td class="n"><span class="dn">~−7.8%</span></td><td>Adj. EPS $8.83 vs. $9.34 est.; revenue $10.75B vs. $10.69B; margin pressure (Investing.com)</td></tr>
+</table></div>
+
+<h2>4. Closing Alpha Candidates / What to Watch Tomorrow</h2>
+<p class="note">Research observations only. These are names worth investigating further going into Thursday, not recommendations to buy or sell.</p>
+
+<div class="card"><h3>1. Qualcomm (QCOM): a beat with "mixed" guidance. After hours it went from <span class="up">+1.8%</span> to <span class="dn">~−2%</span> after a flat regular session</h3>
+<p><b>Thesis:</b> This is the most important read for tomorrow's chip tape. Fiscal Q4 revenue was ~<b>$10.4B</b> vs. ~$10.1B expected, and adjusted EPS was <b>$2.17</b> vs. $2.16. Handsets were ~$5.1B, about half the total. The December-quarter outlook splits two ways. Revenue guidance of <b>$10.4–11.2B</b> (midpoint ~$10.8B) is above the ~$10.5B consensus. But adjusted EPS guidance of <b>$2.15–2.35</b> (midpoint $2.25) is below estimates in the high $2.20s to low $2.30s. Full-year capex of ~$2.5B also compares with ~$1.9B expected (investingLive). Higher sales with lower earnings points to margin or cost pressure, possibly memory costs, which pre-print previews flagged. That is our inference. Secondary coverage also says management expects non-handset revenue to fully replace Apple revenue in FY27, and two hyperscaler custom-chip programs to start generating revenue this quarter. These points are unverified against the release. The stock went into the print having given up its midday bid (+2.3% → ~flat) and was down ~9% over the past week. That lowered the bar. It also explains why the first after-hours reaction was positive before it flipped.</p>
+<p><b>Evidence:</b> Seeking Alpha (4:03 PM: +1.8% after hours, adj. EPS $2.17, "mixed guidance"). investingLive (4:12 PM: revenue, EPS, handset revenue, guidance ranges, capex, ~−2% after hours). Yahoo Finance headline via search ("tops Q4 estimates, offers better-than-anticipated outlook"). AP headline via investingLive ($10.44B revenue). Afternoon edition (pre-print positioning, options implied ±8–11%).</p>
+<p><b>Risks / what could change the picture:</b> The call (4:45 PM ET) could reframe the EPS guide, for example as a one-time cost or a mix shift to data center. Sources disagree on the after-hours move (−2% vs. >−4%). Qualcomm's last four post-earnings moves were small (−2.6% to +0.8%). Arm's royalty miss (candidate 2) adds a handset-weakness overlay. Asian handset suppliers will trade first and set the tone.</p>
+<p><span class="conf">Confidence: Medium (guidance mix dominates the reaction tomorrow). Low (direction at the open)</span></p></div>
+
+<div class="card"><h3>2. Arm (ARM): licensing beat masks a royalty miss. <span class="dn">−4.62%</span> regular session to $193.40, then <span class="dn">~−2%</span> after hours</h3>
+<p><b>Thesis:</b> Revenue was a record <b>$1.44B</b> (+27% y/y) vs. the ~$1.38B LSEG consensus, above the top of Arm's own $1.33–1.43B range. But the beat came from <b>licensing ($773M vs. ~$625M est.)</b>, which is lumpy. <b>Royalties</b>, the recurring, volume-driven line, rose only 8% to <b>$670M vs. ~$721M expected</b>, although data-center royalties reportedly doubled y/y. Q3 guidance is revenue of ~$1.54B (vs. $1.53B) and adjusted EPS of $0.52–0.60 (vs. $0.55), roughly in line. The stock closed below the ~$195 support level that pre-earnings technical coverage flagged, and it is down more than 50% from its June peak near $440. Combined with Qualcomm's handset-heavy quarter, the royalty miss raises the question of whether smartphone unit or pricing weakness is broadening. That is worth checking against Asian handset and foundry names overnight.</p>
+<p><b>Evidence:</b> Search summaries of Reuters via Investing.com and Arm's newsroom (revenue, licensing and royalty vs. estimates, Q3 guide, ~−2% after hours). Seeking Alpha headline ("slips even as Q2 results, guidance top estimates", −1.8% after hours). Trading Economics (regular-session close $193.40, −4.62%). TradingKey preview ($195 support).</p>
+<p><b>Risks / what could change the picture:</b> The 5:00 PM ET call could emphasize AI/data-center royalty growth and AGI-CPU demand, which bulls have been focused on. The after-hours move is modest, so much of the bad news may already be in today's −4.6%. The royalty consensus figures vary by source ($712–721M).</p>
+<p><span class="conf">Confidence: Medium (royalty miss is the focus). Low–Medium (follow-through tomorrow)</span></p></div>
+
+<div class="card"><h3>3. Semis and the AI build-out complex close at the lows. Day 2 is the test: MU <span class="dn">−7.05%</span>, NVDA <span class="dn">−2.2% to −3.2%</span>, AMAT <span class="dn">−4.1%</span>, VST <span class="dn">−13.7%</span>, ORCL <span class="dn">−1.4% to −1.85%</span></h3>
+<p><b>Thesis:</b> Every edition today flagged that the market was separating AI <i>users</i> (platforms) from AI <i>builders</i> (chips, memory, power, neoclouds). That held through the close, and the chip group did not recover going into the Arm and Qualcomm prints. Micron closed at $794.82, its lowest print of the day. Nvidia was ~$200–202, around a $5T market cap. Applied Materials and Analog Devices were each down ~4%. The policy driver also has a new data point after hours: CBS (via an AP/investingLive headline) reports that <b>37 anti-data-center ballot measures passed</b>, putting 800–1,000 planned builds at risk. Texas's new governor has pledged a data-center pause, and Texas holds ~27% of US data-center power capacity (Wells Fargo via CNBC). Tomorrow has direct tests of the theme. <b>Core Scientific</b> reports before the open. <b>IREN</b>, <b>Lumentum</b> and <b>Applied Optoelectronics</b> report after the close. Worth investigating: whether the hardest-hit names (VST, CRWV, CIFR, IREN) see short-covering, as VST's late bounce from −15% to −13.7% hinted, or whether day-one selling extends into suppliers.</p>
+<p><b>Evidence:</b> Trading Economics (MU, NVDA, AVGO, AMAT, ADI, ARM closes). Investing.com close wrap (NVDA, VST). Reuters close wrap via rallies.ai (IREN, Hut 8, Applied Digital, Core Scientific "tumbled"; AMD dropped despite its 2027 guide). StockTitan live blog (Texas, Wells Fargo 27% estimate via CNBC). investingLive Livebytes (CBS: 37 measures). Earnings Whispers Nov. 5 calendar.</p>
+<p><b>Risks / what could change the picture:</b> Ballot measures and a governor's pledge are not federal law. Reuters notes analysts see slim odds of federal legislation that would seriously undermine the build-out. One-day drops of 10–20% often bring a reflex bounce. NVDA's close differs by ~1 pt between sources. A strong Core Scientific or IREN backlog update could flip the narrative quickly.</p>
+<p><span class="conf">Confidence: Medium (elevated volatility in the group tomorrow). Low (direction)</span></p></div>
+
+<div class="card"><h3>4. The platforms close near records: MSFT <span class="up">+6.7% to +7.1%</span>, AMZN <span class="up">+6.1% to +7.0%</span>, AAPL <span class="up">+5.3% to +6.1%</span>, GOOGL <span class="up">+3.2%</span>, META <span class="up">+1.4%</span></h3>
+<p><b>Thesis:</b> The market read "less build-out" as good for incumbents with existing capacity and free cash flow. The ranking held to the close: Microsoft first, Meta last. Meta is the platform still borrowing for AI infrastructure; its debut euro bond drew ~€53B of bids today. Apple and Amazon gave back part of their midday gains (AAPL from +6.7%, AMZN from +7.7%), so the late fade in the Nasdaq came partly from these names. The open question for tomorrow: can 5–7% one-day moves in $3–5T companies with no company-specific news hold for a second session? Or do they partly retrace as the policy-relief trade is digested, with Arm and Qualcomm adding pressure on tech sentiment?</p>
+<p><b>Evidence:</b> Trading Economics close summary and quote tables. Investing.com close wrap (MSFT and AMZN as the top Dow performers after 3M). Earlier editions (intraday path, META bond).</p>
+<p><b>Risks / what could change the picture:</b> The two sources differ by up to ~1 pt on AMZN and AAPL closes. A risk-off move in chips after Arm and Qualcomm could spill into the platforms. Conversely, if the "capex discipline" narrative gains traction, the platform/builder spread could widen further.</p>
+<p><span class="conf">Confidence: High (all five closed up). Low–Medium (gains hold on day 2)</span></p></div>
+
+<div class="card"><h3>5. Macro set-up: Dow's best day since April 2025 (<span class="up">+3.03%</span>), oil back near $90, and jobless claims and productivity at 8:30 AM. Payrolls follow Friday</h3>
+<p><b>Thesis:</b> The rotation that began in pre-market (Dow and cyclicals over the Nasdaq-100) held to the bell. The Dow beat the NDX by about 2 pts, its widest gap of the day, and breadth was ~3:1 positive on the NYSE. The macro support was falling oil and lower yields. But crude rebounded after the afternoon edition: WTI went from ~$88.50 at 3:10 PM to ~$90.1 on Trading Economics' post-close quote. Physical tightness is still in the news: Iran's IRGC reported mine-damaged tankers in Hormuz today, and US diesel stocks are the lowest since 2003. Thursday brings <b>initial jobless claims</b> (prior 203K) and preliminary <b>Q3 productivity and unit labor costs</b> at 8:30 AM ET. Friday brings October payrolls (est. +65K, unemployment 4.2%). Secondary outlets citing FedWatch put December hike odds at ~78–79%. Our inference: a soft labor print plus sub-$95 oil could start eroding those odds, which would help the rate-sensitive leaders. ConocoPhillips and Canadian Natural report before the open and give an energy read.</p>
+<p><b>Evidence:</b> CNBC (closing levels, best day since April 9, 2025). Trading Economics (NDX, Russell, VIX, commodities, yields; close summary: "credit-sensitive stocks led"). Investing.com (NYSE breadth). StockTitan (Thursday 8:30 AM releases). financecalendar.com via search (claims prior 203K). Earlier editions (FedWatch odds, NFP consensus, Hormuz, diesel).</p>
+<p><b>Risks / what could change the picture:</b> No consensus was found for claims or productivity. One Iran or Hormuz headline could reverse oil's 6–9% move. A hot unit-labor-cost print would cut against the "less inflation" read. The FedWatch figures were not checked against CME.</p>
+<p><span class="conf">Confidence: Medium (macro data drives tomorrow's index tone). Low (persistence of the rotation)</span></p></div>
+
+<div class="card"><h3>6. AppLovin (APP): Q3 double beat, after hours <span class="up">+8% to +16%</span> (~$315), after rallying >10% into the print</h3>
+<p><b>Thesis:</b> This is the most notable after-hours gainer among large caps, and a counterpoint to today's software weakness (DDOG, FIS). Q3 revenue was <b>$2.185B (+55% y/y)</b> vs. ~$2.075–2.08B expected and the company's own $2.06–2.09B guide. EPS was <b>$4.30</b> vs. ~$4.03–4.07. Net income rose 72% to $1.44B, free cash flow was $1.4B, and the company bought back $1.4B of stock in the quarter. The stock was reportedly down ~59% YTD before the print, and the Q2 report had triggered a sell-off. The set-up was therefore "washed out" going in. The thing to investigate is whether the outlook, described as strong by Benzinga but not verified here, is enough to sustain a gap above $300.</p>
+<p><b>Evidence:</b> AppLovin Q3 release via StockTitan (revenue, net income, EPS, FCF, buyback). Benzinga (estimates; +15.9% after hours at ~$315). 24/7 Wall St. live blog (+8%; pre-print rally; FactSet consensus). Benzinga options preview (implied move ~16.5%).</p>
+<p><b>Risks / what could change the picture:</b> After-hours prints ranged widely (+8% to +16%). The options market priced a ~16.5% move, so the reaction may only match expectations. Guidance details and the call could shift sentiment. A 10%+ pre-print run-up raises the risk of "sell the news" at the open.</p>
+<p><span class="conf">Confidence: Medium (opens higher). Low (holds the full gap)</span></p></div>
+
+<h2>5. Tomorrow's Calendar (Thursday, Nov. 5)</h2>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>Event</th><th>Notes</th></tr>
+<tr class="sec"><td colspan="3">Already reported after today's close</td></tr>
+<tr><td>~4:00–4:15 PM</td><td>Qualcomm (QCOM), Arm (ARM), AppLovin (APP), MercadoLibre (MELI)</td><td>See candidates 1, 2 and 6 and the movers table. QCOM call 4:45 PM; ARM call 5:00 PM</td></tr>
+<tr><td>After close</td><td>McKesson, Motorola Solutions, Snap, Allstate, MetLife, Coherent, Zillow, TKO</td><td>From AP headlines (via investingLive): Coherent beat (adj. EPS $2.09, revenue $2.37B; Q2 EPS guide up to $2.48). Zillow missed (revenue $724M). TKO beat on EPS ($1.33), missed on revenue. Others not verified</td></tr>
+<tr class="sec"><td colspan="3">Economic data / Fed</td></tr>
+<tr><td>8:30 AM</td><td>Initial jobless claims</td><td>Prior 203K; consensus not found</td></tr>
+<tr><td>8:30 AM</td><td>Q3 productivity &amp; unit labor costs (prelim.)</td><td>Listed by StockTitan; consensus not found</td></tr>
+<tr><td>—</td><td>Fed</td><td>No FOMC meeting (next: Dec. 8–9). No Fed speakers verified for Thursday</td></tr>
+<tr><td>Fri 8:30 AM</td><td>October jobs report</td><td>NFP est. +65K; unemployment 4.2% (earlier editions)</td></tr>
+<tr class="sec"><td colspan="3">Earnings before the open (Earnings Whispers; some marked "expected", so confirm timing)</td></tr>
+<tr><td>Pre-mkt</td><td>Cigna (CI), Cardinal Health (CAH), ConocoPhillips (COP), Canadian Natural (CNQ), Cummins (CMI), Toyota (TM), Becton Dickinson (BDX), Air Products (APD), Carlyle (CG), Ralph Lauren (RL), Molson Coors (TAP)</td><td>Health care read-through after the hospital and insurer rally; energy read after oil's drop</td></tr>
+<tr><td>Pre-mkt</td><td><b>Core Scientific (CORZ)</b>, MACOM (MTSI), Celsius (CELH), Unity (U), D-Wave (QBTS), Oscar Health (OSCR), Hertz (HTZ), Shake Shack (SHAK)</td><td>CORZ is a direct test of the data-center sell-off (candidate 3)</td></tr>
+<tr class="sec"><td colspan="3">Earnings after the close</td></tr>
+<tr><td>After close</td><td><b>IREN</b>, <b>Lumentum (LITE)</b>, <b>Applied Optoelectronics (AAOI)</b>, Cloudflare (NET), Atlassian (TEAM), Airbnb (ABNB), Affirm (AFRM), DraftKings (DKNG), Axon (AXON), Instacart (CART), IonQ, MP Materials, Kratos (KTOS), Devon (DVN), Akamai (AKAM), Dropbox (DBX)</td><td>IREN, LITE and AAOI are AI-infrastructure reads (candidate 3). NET and TEAM are software reads after DDOG</td></tr>
+<tr class="sec"><td colspan="3">Other</td></tr>
+<tr><td>Ongoing</td><td>Final midterm counts</td><td>Texas governor (official count pending), Mississippi Senate seat and other uncalled House races</td></tr>
+</table></div>
+
+<h2>6. Sources</h2>
+<p class="note">Pages fetched and used:</p>
+<ul class="src">
+<li>https://thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026 (TheStreet live blog to 2:50 PM: Dow +3%, Brent below $100, movers, MCD/UBER/CVS/QCOM–SpaceX items)</li>
+<li>https://seekingalpha.com/news/4664977-qualcomm-ticks-up-as-q4-results-outweigh-mixed-guidance (4:03 PM: QCOM +1.8% after hours, adj. EPS $2.17; rest paywalled)</li>
+<li>https://investinglive.com/stocks/qualcomm-beats-q4-forecasts-shares-slip-2-as-profit-guidance-comes-in-light/ (QCOM results, guidance, capex, ~−2% after hours; Livebytes headlines: CBS 37 anti-data-center measures, Coherent, Zillow, TKO)</li>
+<li>https://tradingeconomics.com/united-states/stock-market (close summary; index and mega-cap quote tables)</li>
+<li>https://tradingeconomics.com/amd:us (AMD close; peer quotes ARM, ASML, AVGO, ANET, ADI, AMAT; commodities, yields, crypto, TSLA, SPCX, ORCL, XOM, CAT post-close)</li>
+<li>https://investing.com/news/stock-market-news/us-stocks-higher-at-close-of-trade-dow-jones-industrial-average-up-319-5001152 (automated close wrap: Dow/S&amp;P leaders and laggards, breadth; index % not used)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026 (live blog to 1:05 PM: Texas data-center context, movers, Thursday 8:30 AM releases)</li>
+<li>https://gvwire.com/2026/11/04/wall-street-rallies-after-democrats-win-congress-data-center-stocks-slide/ (Reuters morning wrap, 9:46 AM)</li>
+<li>https://rallies.ai/news/wall-street-ends-higher-after-democrats-win-congress-data-center-stocks-tumble-6188d2449e66fe7c (Reuters close wrap excerpt)</li>
+<li>https://www.earningswhispers.com/calendar/20261105 (Thursday earnings calendar, BMO/AMC)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-earnings-140752043.html (cached at ~2:11 PM; oil and energy context only)</li>
+</ul>
+<p class="note">Cited from search-result summaries (fetch empty, rate-limited, or not attempted):</p>
+<ul class="src">
+<li>https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html (closing index levels; fetch returned an empty page)</li>
+<li>https://newsroom.arm.com/news/arm-q2-fye27-results (Arm results; fetch returned empty)</li>
+<li>https://www.investing.com/news/stock-market-news/arm-beats-secondquarter-revenue-estimates-on-ai-and-datacenter-demand-5001267 (Reuters: Arm royalty/licensing vs. estimates, Q3 guide, ~−2% after hours)</li>
+<li>https://seekingalpha.com/news/4664949-arm-holdings-slips-even-as-q2-results-guidance-top-estimates</li>
+<li>https://finance.yahoo.com/technology/ai/articles/arm-forecasts-quarterly-revenue-above-200538396.html</li>
+<li>https://finance.yahoo.com/technology/article/qualcomm-tops-q4-estimates-offers-better-than-anticipated-outlook-210119306.html</li>
+<li>https://www.benzinga.com/markets/earnings/26/11/62890608/applovin-stock-surges-on-q3-double-beat-strong-outlook</li>
+<li>https://www.stocktitan.net/news/APP/app-lovin-announces-third-quarter-2026-financial-wtkwjar8nc9l.html</li>
+<li>https://247wallst.com/investing/2026/11/04/live-will-applovin-crush-tonights-q3-earnings-after-the-bell/</li>
+<li>https://www.benzinga.com/markets/options/26/11/62839656/qualcomm-could-swing-14-4-billion-in-value-after-earnings (implied moves)</li>
+<li>https://investing.com/news/earnings/mercadolibre-falls-on-earnings-miss-margin-pressure-5001271</li>
+<li>https://www.tradingkey.com/analysis/stocks/us-stocks/262274219-arm-stock-forecast-shares-ahead-earnings-tradingkey ($195 support)</li>
+<li>https://www.financecalendar.com/?p=2405 (jobless claims prior 203K)</li>
+<li>https://www.chartmill.com/news/APTV/Chartmill-57625-SP-500-Top-Movers-for-Today-Gainers-and-Losers (XYZ +16%, FIS −24.9%)</li>
+</ul>
+<p class="note">Discarded: Trading Economics INTC and QCOM pages (cached from earlier sessions), Investing.com after-hours page (stale prior-session data), Virginia Business and Detroit News Reuters syndications (empty), Yahoo most-active screener (blocked by fetch provenance rules). Earlier editions consulted: alpha_report_2026-11-04_premarket.html, _open.html, _midday.html and _afternoon.html.</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>

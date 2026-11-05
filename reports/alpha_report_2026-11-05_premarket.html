@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-05 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Thursday, November 5, 2026 &middot; Day 2 after the US midterms &middot; Qualcomm, Arm, AppLovin and Snap reported overnight</div>
+<p class="note">Automated run. The task is scheduled for ~7:30 AM ET, but this session ran from about <b>8:35 to 9:00 AM ET</b>. Pre-market quotes are snapshots taken between ~3:45 and ~8:30 AM ET by different outlets, so the same stock can show different moves; ranges are given where sources disagree. Futures levels come from Yahoo Finance's quote strip (cached ~6:36 AM ET), cross-checked against TradingKey, TipRanks (5:25 AM) and Stocktwits (3:45 AM). <b>The 8:30 AM jobless-claims and productivity figures were released during this run, but no published figure could be retrieved</b> (the DOL page still served the Oct. 29 release); only consensus is shown. <b>No verified pre-market print was found</b> for GOOGL, AMZN, META, AVGO, AMD, TSM, ASML, ORCL, CRM or INTC. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (49 days old, outside the ~14-day window), so there is no WRDS section in this edition. Several fetches (Bloomberg, Benzinga, Qz) returned empty pages; those items are cited from search-result headlines and labeled.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>The "AI users vs. AI builders" split from Wednesday went global overnight.</b> Asian chip and AI-infrastructure stocks were hit hard on fears that a Democratic Congress, plus state-level data-center moratoria, will slow the build-out. <b>South Korea's Kospi fell 5.3%</b> to 5,383.80, with <b>SK Hynix −9.4%</b> and <b>Samsung −7.6%</b>. Japan's <b>Nikkei 225 fell 1.8%</b> to 61,077.90, led by <b>Advantest −15%</b>, <b>Tokyo Electron −9.5%</b> and <b>SoftBank −6.9%</b>. Taiwan's Taiex fell <span class="dn">3.2%</span>. Markets with little AI exposure rallied: <b>Hang Seng +3.7%</b> to 24,796.98, ASX 200 <span class="up">+2.6%</span>, India's Sensex <span class="up">+2.8%</span>, Topix <span class="up">+1.2%</span> (AP; TipRanks). Swissquote's Ipek Ozkardeskaya framed the split: Europe and China are "surfing on hopes" of tariff relief, while for AI the Democratic win is "a potential obstacle to an investment story already facing questions over massive spending, future returns and financing" (AP).</p>
+<p>Europe opened higher: DAX <span class="up">+0.6%</span> (26,598), CAC 40 <span class="up">+1.2%</span> (8,277), FTSE 100 <span class="up">+1.0%</span> (10,935, its highest since Aug. 7). The Bank of England was expected to <b>raise rates 25 bp to 4.0%</b> today, its first hike in more than three years (TipRanks); the outcome was not captured.</p>
+<p><b>US futures are split, with the same rotation as Wednesday.</b> Yahoo's strip: Dow futures <b>53,886</b> (<span class="up">+0.72%</span>), S&amp;P 500 futures <b>7,733</b> (<span class="up">+0.17%</span>), Russell 2000 futures <span class="up">+0.75%</span>, Nasdaq-100 futures <b>28,421</b> (<span class="dn">−0.51%</span>). Other snapshots fall in the same range (Dow +0.4% to +0.7%, S&amp;P −0.1% to +0.2%, NDX −0.5% to −1.0%). By sector ETF, communication services (XLC <span class="up">+1.49%</span>) and financials (XLF <span class="up">+1.27%</span>) lead, while tech (XLK <span class="dn">−0.86%</span>) lags (Current Logic). A Bloomberg headline says a semiconductor ETF is down more than 3% in pre-market. The 10-year yield is ~<b>4.89%</b> (−6 bp) and the VIX ~16.8. Oil is choppy after Wednesday's ~8–9% plunge: Reuters had a fourth day of losses in Asia (WTI $86.92 at 04:26 GMT), but by the European morning <b>Brent was back at ~$95–96</b> (+1–1.8%) and WTI ~$88–89. Vice President JD Vance's post that "the reason we lost… is the war" fed hopes of an Iran deal (Yahoo/Reuters). Gold rose ~1.7% to <b>~$4,130–4,144</b>, and Bitcoin is back above <b>$80K</b>.</p>
+<p><b>Tone:</b> constructive for the broad market and cyclicals, defensive for semis and AI infrastructure. The question for the open is whether day-2 chip selling (Qualcomm's guide, the Asian rout) drags the Nasdaq enough to offset the Dow's continued bid.</p>
+
+<h2>2. Today's Economic Calendar &amp; Key Events</h2>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>Event</th><th>Consensus / prior / note</th></tr>
+<tr><td class="n">7:00 AM</td><td>Bank of England rate decision</td><td>Expected +25 bp to 4.0%, the first hike in more than three years, to address Iran-war inflation (TipRanks; Yahoo headline). Outcome not captured.</td></tr>
+<tr><td class="n">7:30 AM</td><td>Challenger job cuts, October</td><td><b>Released: 43,994</b>, up slightly from September but <b>−71% y/y</b>. Lowest layoff plans since 2023; "a low-fire environment" (Yahoo Finance).</td></tr>
+<tr><td class="n">8:30 AM</td><td>Initial jobless claims (wk ended Oct. 31)</td><td>Consensus ~196–197K; prior 194K. Continuing claims prior 1.701M. <b>Actual not captured.</b></td></tr>
+<tr><td class="n">8:30 AM</td><td>Q3 nonfarm productivity / unit labor costs (prelim.)</td><td>Productivity est. +2.8% to +3.0% (prior +1.4%); ULC est. +0.3% (prior +1.2%). <b>Actual not captured.</b></td></tr>
+<tr><td class="n">Various</td><td>Fed speakers</td><td>Newsquawk's weekly calendar lists Hammack, Barkin, Logan, Williams, Musalem and Bowman this week; <b>today's specific slate was not confirmed</b>.</td></tr>
+<tr><td class="n">Before open</td><td>Earnings</td><td>Already out: <b>Toyota</b> (operating profit +34% to ¥1.13T vs. ¥992B est.), <b>Sony</b>, Targa Resources (expects +20% 2027 dividend). Also scheduled: ConocoPhillips, Duke Energy, Southern Co., Parker-Hannifin, Cigna, National Grid, Core Scientific.</td></tr>
+<tr><td class="n">After close</td><td>Earnings</td><td><b>Airbnb, Cloudflare, DoorDash, Lumentum, IREN</b>, Applied Optoelectronics, Monster Beverage, DraftKings, Akamai, IonQ, SoundHound, Simon Property. Lumentum, IREN and Applied Opto are direct tests of the AI build-out theme.</td></tr>
+<tr><td class="n">Fri, Nov. 6</td><td>October nonfarm payrolls</td><td>Est. +65K, unemployment 4.2% (per prior editions).</td></tr>
+<tr><td class="n">Nov. 17</td><td>Nvidia Q3 FY27 earnings</td><td>The next major read on AI capex demand (Yahoo Finance).</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">% vs. Wednesday's (Nov. 4) close. Snapshots range from ~3:45 to ~8:30 AM ET, and ranges reflect different sources and times.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-market move</th><th>Catalyst / note</th></tr>
+<tr class="sec"><td colspan="3">Fixed watchlist</td></tr>
+<tr><td>QCOM</td><td class="n dn">−8.7% to −10%</td><td>FQ4 beat, but weak handset sales (−26% to $5.14B) and a light EPS guide ($2.15–2.35 vs. ~$2.27). Memory costs cited. See candidate 1</td></tr>
+<tr><td>MU</td><td class="n dn">−2.8% to −4%</td><td>Day 2 of the memory sell-off after −7.0% Wednesday. SK Hynix −9.4% and Samsung −7.6% in Seoul</td></tr>
+<tr><td>TSLA</td><td class="n dn">~−2.2%</td><td>Tesla–SpaceX merger doubts and political scrutiny of Musk; Texas governor's race flipped (Stocktwits, ~5 AM)</td></tr>
+<tr><td>NVDA</td><td class="n dn">~−0.9% to −1.0%</td><td>Closed $200.13 (−3.17%) Wednesday. Hon Hai's October sales +46% are a partial offset</td></tr>
+<tr><td>AAPL</td><td class="n">~−0.15%</td><td>Crossed a $5T valuation Wednesday; early pre-market quote (Stocktwits)</td></tr>
+<tr><td>MSFT</td><td class="n">~+0.1%</td><td>Reuters: won't exercise its option to more than double its Nscale Texas lease (decided months ago). Stocktwits retail sentiment flipped to "bearish"</td></tr>
+<tr><td>META</td><td class="n">n/a</td><td>Record debut euro bond (€9B in six tranches, ~€53B of orders) prices above par. Axios: acquired AI coding startup Conductor</td></tr>
+<tr><td>TSM / ASML</td><td class="n">n/a (US)</td><td>Taiex −3.2%. Asian equipment peers Tokyo Electron (−9.5%) and Advantest (−15%) point to pressure on ASML</td></tr>
+<tr><td>GOOGL, AMZN, AVGO, AMD, ORCL, CRM, INTC</td><td class="n">n/a</td><td>No verified pre-market print. AMD and AVGO trade in the semis group (ETF −3%+ per Bloomberg headline)</td></tr>
+<tr class="sec"><td colspan="3">Notable gappers outside the watchlist</td></tr>
+<tr><td>APP</td><td class="n up">+16.5% to +20%</td><td>Q3 revenue $2.185B (+55%); Q4 guide $2.365–2.395B above consensus; buyback expanded; Goldman raised its target. See candidate 3</td></tr>
+<tr><td>U (Unity)</td><td class="n up">~+22%</td><td>Q3 well above expectations (Investing.com, Benzinga)</td></tr>
+<tr><td>EPAM / WRBY</td><td class="n up">+13.6% to +17% / ~+22%</td><td>Q3 beats (Benzinga, Investing.com)</td></tr>
+<tr><td>TM (Toyota ADR)</td><td class="n up">~+8.7%</td><td>Operating profit +34% y/y to ¥1.13T vs. ¥992B est.; weak yen, hybrid demand</td></tr>
+<tr><td>SONY</td><td class="n up">~+4.9%</td><td>FQ2 results plus a buyback update</td></tr>
+<tr><td>EW</td><td class="n up">~+3.7%</td><td>Q3 results after Wednesday's close</td></tr>
+<tr><td>ARM</td><td class="n dn">−3.3% to −5%</td><td>Record revenue ($1.44B), but royalties grew only 8% (miss). Down ~19% in a week</td></tr>
+<tr><td>SNDK / WDC</td><td class="n dn">−3.9% to −5.5% / ~−4.6%</td><td>Memory and storage follow Korea lower</td></tr>
+<tr><td>SNAP</td><td class="n dn">−8.6% to −10%</td><td>FY26 revenue outlook $2.10B vs. $2.13B est.; ad revenue +4%; plans to phase out daily-user disclosure</td></tr>
+<tr><td>FICO</td><td class="n dn">~−8%</td><td>Revenue a touch light; no FY27 guide; mortgage-score pricing changes; ~15% workforce cut</td></tr>
+<tr><td>MELI</td><td class="n dn">~−6.4%</td><td>EPS miss ($8.83 vs. $9.34 est.), per prior edition</td></tr>
+<tr><td>MNTN</td><td class="n dn">~−42%</td><td>Q3 results worse than expected</td></tr>
+<tr><td>Z / HUBS</td><td class="n dn">lower (size n/a)</td><td>Zillow Q3 miss; HubSpot named among decliners (Benzinga and TipRanks headlines)</td></tr>
+<tr><td>GEV / FIX / PWR / VST</td><td class="n dn">−2.0% / −1.9% / −0.6% / −0.5%</td><td>AI-power builders stabilizing after −9% to −15% Wednesday (Current Logic)</td></tr>
+<tr><td>CVS</td><td class="n">n/a</td><td>8-K (Nov. 4): plans a tax-free split into a healthcare-solutions company (Aetna, Caremark, Specialty, Oak Street, Signify) and "CVS Pharmacy." Fell ~11.5% Wednesday</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">Research observations only. These are names worth investigating further at the open, not recommendations to buy or sell.</p>
+
+<div class="card">
+<h3>1. Qualcomm (QCOM): <span class="dn">−8.7% to −10%</span> pre-market on a handset-led guide, with Arm (<span class="dn">−3% to −5%</span>) adding to the handset theme</h3>
+<p><b>Thesis:</b> Last night's first after-hours reaction (+1.8%, then ~−2%) has turned into a ~9–10% gap down. The headline beat (non-GAAP revenue $10.44B vs. ~$10.14B est.; EPS $2.17) masked a <b>26% y/y drop in handset revenue to $5.14B</b>. Management tied part of that to memory costs. The December-quarter EPS guide of $2.15–2.35 (midpoint $2.25) is below the ~$2.27 consensus. Positives were in the release too: <b>automotive +89% to a record $1.99B</b>, the FY27 data-center target of <b>$5B reiterated</b> with >$650M expected in the December quarter, a new multi-year AI data-center deal with <b>Amazon</b>, a <b>SpaceX/Starlink Mobile</b> 5G network deal, and a renewed Apple patent license. If the loss holds, ~$17.5B of market value is gone (TipRanks). Sources disagree on Wednesday's regular session (~flat in our close edition vs. +5.33% per Current Logic). If the latter is right, part of today's gap is unwinding a pre-print run-up. Arm points the same way: licensing beat, but <b>royalties grew only 8%</b> (vs. ~$712–721M est.), so phone-unit weakness may be broadening.</p>
+<p><b>Evidence:</b> TradingKey (segment figures, −9% pre-market). TipRanks (handset −26%, auto +89%, SpaceX and Amazon deals, Morgan Stanley's Joseph Moore: "we lack conviction in a three-year ramp"). Current Logic (−9.38%, guide vs. consensus, $5B DC target). Stocktwits strip (−8.65% to −9.72%). Seeking Alpha summary ("mixed FQ1 guidance, handset sales decline").</p>
+<p><b>Risks / what could fade or reverse this:</b> Gaps of ~10% on an in-line revenue guide sometimes partly fill once the data-center and auto story is digested. Qualcomm's last four post-earnings moves were small, so a −10% gap is unusual. The memory-cost headwind could be temporary, and CEO Amon says Qualcomm "saw the memory shortage coming and prepared for it early" (Reuters via TipRanks). Analyst target cuts during the session could extend the move. One search summary listed gross-margin guidance of 45–46%, but we could not verify it.</p>
+<p><span class="conf">Confidence: Medium (stays weak into the open)</span> <span class="conf">Low (direction after the first hour)</span></p>
+</div>
+
+<div class="card">
+<h3>2. Memory and AI semis, day 2: MU <span class="dn">−3% to −4%</span>, NVDA <span class="dn">~−1%</span>, SNDK/WDC <span class="dn">−4% to −5.5%</span>. Read-across to AMD, AVGO, TSM, ASML</h3>
+<p><b>Thesis:</b> Asia delivered a second, larger leg of Wednesday's US chip sell-off. <b>SK Hynix −9.4%, Samsung −7.6%, Advantest −15%, Tokyo Electron −9.5%</b>, and the Taiex −3.2%. A Bloomberg headline has a semiconductor ETF down 3%+ in US futures trading. The policy drivers are stacking up. Goldman expects conditional moratoria in Texas, Georgia and Michigan, which hold ~45% of planned data-center capacity. TD Cowen cut its odds of lame-duck permitting reform to 25% from 40% (via Current Logic). Rep. Yassamin Ansari called for a pause in advanced AI development (Stocktwits). Microsoft also declined its Nscale Texas expansion option. The contrarian data point: <b>Hon Hai's October sales rose 46% to NT$1.31T</b> on Nvidia server demand, above the ~30% analysts expected for the quarter (Bloomberg via Current Logic). Five hyperscalers also carry ~$3.2T of off-balance-sheet obligations, ~60% of them purchase commitments, so near-term demand is largely contracted.</p>
+<p><b>Evidence:</b> AP via CP24 (Asian moves). TradingKey (SK Hynix US line, WDC, SNDK, MU pre-market). Current Logic (MU −2.92%, SNDK −3.87%, Hon Hai, Goldman and TD Cowen). Stocktwits (MU >−3% early, NVDA ~−1%). Yahoo quote page (NVDA $200.13 close, −3.17%; earnings Nov. 17). Bloomberg headline (semis ETF −3%+).</p>
+<p><b>Risks / what could fade or reverse this:</b> US pre-market losses in MU and NVDA are much smaller than in Korea, which suggests some of the move was priced in Wednesday. Our close edition flagged that day-1 drops of 10–20% (VST, CRWV) often bring a reflex bounce. A strong backlog print from Core Scientific (before the open) or Lumentum and IREN (after the close) could reverse sentiment. State moratoria are not federal law.</p>
+<p><span class="conf">Confidence: Medium (group under pressure at the open)</span> <span class="conf">Low (direction by the close)</span></p>
+</div>
+
+<div class="card">
+<h3>3. AppLovin (APP): <span class="up">+16.5% to +20%</span> after a double beat-and-raise</h3>
+<p><b>Thesis:</b> This is the cleanest "AI user" print of the week. Q3 revenue was <b>$2.185B (+55% y/y)</b>, net income $1.439B (+72%), adjusted EBITDA $1.842B (+59%), and free cash flow ~$1.42B. The Q4 revenue guide of $2.365–2.395B is above consensus, and the buyback was expanded. The CEO called last quarter's miss "our own foot fault" (Current Logic), so this print reads as a reset of that credibility gap. Goldman raised its target (TipRanks headline). It fits the market's current preference for companies that <i>monetize</i> AI over those that <i>build</i> it.</p>
+<p><b>Evidence:</b> TradingKey (results, guide, ~+20%). Seeking Alpha summary (55% growth, $1.42B FCF, buyback). Benzinga headline (+16.5%). Current Logic (+19.59%). Stocktwits (+~18%; also +10% in Wednesday's regular session).</p>
+<p><b>Risks / what could fade or reverse this:</b> Counting Wednesday's +10%, the stock is up ~30% in two sessions, so a gap fade is the main risk. Yesterday AMD's +7% pre-market gain on a beat was fully reversed by the close. Ad-tech is also exposed to any regulatory agenda from the new Congress.</p>
+<p><span class="conf">Confidence: Medium (holds a large gain)</span> <span class="conf">Low–Medium (extends past the opening print)</span></p>
+</div>
+
+<div class="card">
+<h3>4. The platforms on day 2: MSFT <span>~+0.1%</span>, AAPL <span>~−0.15%</span> after +5–7% moves. Microsoft drops the Nscale Texas option</h3>
+<p><b>Thesis:</b> Wednesday's rally rewarded cash-rich incumbents on a "slower build-out" read. MSFT gained ~7% and AAPL crossed $5T. Overnight, Reuters reported that Microsoft <b>will not exercise its option to more than double its Nscale lease in Texas</b>. The decision was made months ago and existing contracts are unaffected, but it supports a "capex discipline" narrative. Stocktwits quoted a trader: "the best AI news left is less AI spending." Meta's record €9B euro bond and its acquisition of AI coding startup Conductor show the other side: platforms still financing and buying AI capacity. Pre-market sector ETFs (XLC +1.49%) suggest communication services is bid again. The open question is whether 5–7% one-day moves in $3–5T companies hold, or partly retrace as tech futures fall.</p>
+<p><b>Evidence:</b> Stocktwits (MSFT +0.08%, AAPL −0.15% early; Nscale story citing Reuters). TradingKey (Nscale/FT and Reuters confirmation; Meta bond and Conductor). Current Logic (sector ETF moves). Prior close edition (MSFT +6.7% to +7.1%, AAPL +5.3% to +6.1%).</p>
+<p><b>Risks / what could fade or reverse this:</b> A semis-led Nasdaq drawdown could pull the platforms down mechanically through index and ETF flows. Retail sentiment on MSFT has already flipped to "bearish." The Nscale news is months old, so its signal value is limited.</p>
+<p><span class="conf">Confidence: Low–Medium (gains hold through the open)</span></p>
+</div>
+
+<div class="card">
+<h3>5. Tesla (TSLA): <span class="dn">~−2.2%</span>, a third straight down session on the Musk political discount</h3>
+<p><b>Thesis:</b> TSLA fell ~3.3% Wednesday and is down ~4% on the week (Stocktwits). The pressure is political. Musk, a heavy Republican donor, is cited as a possible target of investigations by a Democratic Congress (AP). Texas, home to major Tesla and SpaceX operations and the planned Terafab chip project, flipped its governor's race. Strategic Wealth Partners' Mark Tepper questioned whether a Tesla–SpaceX merger can clear the added scrutiny (Stocktwits). SpaceX (SPCX) fell ~3.8% Wednesday (AP).</p>
+<p><b>Evidence:</b> Stocktwits (−2.2% early pre-market; merger and Terafab context). AP via CP24 (Tesla −3.3%, SpaceX −3.8% Wednesday; investigation risk).</p>
+<p><b>Risks / what could fade or reverse this:</b> Political-discount moves often fade without a concrete policy action. Retail flows into TSLA are large and can reverse a gap quickly. Lower oil may help EV-relative sentiment somewhat.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p>
+</div>
+
+<div class="card">
+<h3>6. Macro rotation, day 2: Dow futures <span class="up">+0.5% to +0.7%</span> vs. NDX <span class="dn">−0.5% to −1.0%</span>; oil rebounds; jobs data now and Friday</h3>
+<p><b>Thesis:</b> The Dow-over-Nasdaq rotation (~2 pts on Wednesday) is set to continue at the open. Financials (XLF +1.27%) and small caps (Russell futures +0.75%, IWM +0.55%) lead. Two crosscurrents. First, <b>oil is bouncing</b>: Brent ~$95–96 after Wednesday's ~8.7% plunge to $94.62, which tests the "war-premium drain" trade (defense names fell 3–7% Wednesday). Second, labor data. Challenger's October layoffs were the lowest since 2023 (−71% y/y), and claims and productivity printed at 8:30 AM. A strong productivity number with soft unit labor costs would support the "growth without inflation" narrative ahead of Friday's payrolls (est. +65K). The Bank of England's expected first hike in three years is a reminder that the Iran-war inflation impulse has not fully passed.</p>
+<p><b>Evidence:</b> Yahoo Finance quote strip and live blog (futures, yields, Challenger, oil and Vance). TipRanks (BoE expectation, futures at 5:25 AM). TradingKey (Dow +0.65%, S&amp;P +0.23%, NDX −0.49%). AP via CP24 (Brent settle, defense moves).</p>
+<p><b>Risks / what could fade or reverse this:</b> The actual claims and productivity figures were not captured here and could shift rates. Oil headlines on Iran are two-way. Second-day continuation after a +3% Dow day is not the base case historically, and Yahoo ran a piece titled "History says don't trust the bounce yet."</p>
+<p><span class="conf">Confidence: Medium (Dow outperforms NDX at the open)</span> <span class="conf">Low (full-day follow-through)</span></p>
+</div>
+
+<h2>5. Sources</h2>
+<p class="note">Fetched and read unless marked "(search summary/headline only)", which means the page returned empty or was paywalled and the item is cited from search-result text.</p>
+<ul class="src">
+<li>AP via CP24, "World shares mostly gain after U.S. midterm elections as AI-related stocks sink": https://www.cp24.com/news/money/2026/11/05/world-shares-mostly-gain-after-us-midterm-elections-as-ai-related-stocks-sink/</li>
+<li>Yahoo Finance live blog, Nov. 5: https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-falls-090519607.html</li>
+<li>Yahoo Finance, NVDA quote page: https://finance.yahoo.com/quote/NVDA/</li>
+<li>TradingKey, US Pre-Market (memory stocks, QCOM, APP, ARM, SNAP, FICO, Meta, Microsoft/Nscale, Toyota): https://www.tradingkey.com/analysis/stocks/us-stocks/262282182-memory-stocks-slide-sk-hynix-sandisk-5-qualcomm-9-applovin-20-tradingkey</li>
+<li>Current Logic, "The Morning Brief — November 5, 2026": https://currentlogic.substack.com/p/the-morning-brief-november-5-2026</li>
+<li>Stocktwits, "US Futures Mixed After Rally On Wednesday": https://stocktwits.com/news-articles/markets/equity/us-futures-mixed-after-rally-on-wednesday-mu-tsla-aapl-msft-app-nvda-iren-in-focus/cNG1WKIR9EY</li>
+<li>Stocktwits, Microsoft/Nscale Texas (citing Reuters): https://stocktwits.com/news-articles/markets/equity/after-pulling-deal-for-nscale-s-uk-data-center-microsoft-rejects-texas-expansion-option/cNG1X30R9En</li>
+<li>TipRanks, "Qualcomm Stock Drops 10%…": https://www.tipranks.com/news/qualcomm-qcom-stock-drops-10-as-weak-smartphone-chip-sales-overshadow-data-center-growth</li>
+<li>TipRanks, "Stock Market Today, Nov. 5": https://www.tipranks.com/news/stock-market-today-nov-5-futures-mixed-after-democratic-victory-sparks-wall-street-rally</li>
+<li>Seeking Alpha, "Biggest stock movers Thursday: APP, QCOM, and more" (partial; paywalled): https://seekingalpha.com/news/4666310-biggest-stock-movers-thursday-app-qcom-and-more</li>
+<li>US Dept. of Labor, weekly claims release (served the Oct. 29 edition; used for prior-week figures): https://www.dol.gov/ui/data.pdf</li>
+<li>CVS Health Form 8-K, Nov. 4, 2026 (search summary only): https://www.sec.gov/Archives/edgar/data/0000064803/000119312526446150/d148827d8k.htm</li>
+<li>Bloomberg, "Semiconductor ETF Drops Over 3% as Chipmakers Extend Losses in US Futures" (headline only; empty fetch): https://www.bloomberg.com/news/articles/2026-11-05/us-stock-futures-diverge-as-chip-selloff-extends-into-second-day</li>
+<li>Benzinga, AppLovin +16% and 20 stocks moving pre-market (search summary only): https://www.benzinga.com/trading-ideas/movers/26/11/62905819/why-applovin-shares-are-trading-higher-by-over-16-here-are-20-stocks-moving-premarket</li>
+<li>Benzinga, Zillow, HubSpot, Snap lower pre-market (headline only): https://www.benzinga.com/trading-ideas/movers/26/11/62915311/zillow-posts-downbeat-q3-results-joins-hubspot-snap-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session</li>
+<li>Investing.com, "Premarket movers: Qualcomm, Snap slide; Unity surges" (search summary only): https://ca.investing.com/news/stock-market-news/premarket-movers-qualcomm-snap-slide-premarket-unity-surges-4934494</li>
+<li>Kotak Neo, Kospi/Nikkei after the US midterms (search summary only): https://www.kotakneo.com/news/global-markets/asian-market-rotation-after-us-midterms-elections/</li>
+<li>Newsquawk weekly economic calendar, Nov. 2–6, 2026 (search summary only): https://www.newsquawk.com/headlines/newsquawk-weekly-economic-calendar---2nd-6th-november-2026</li>
+<li>Tradetank morning note (claims and productivity consensus; search summary only): https://tradetank66.substack.com/p/daily-global-macro-morning-note-2f5</li>
+<li>Prior edition (local archive): alpha_report_2026-11-04_close.html</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>

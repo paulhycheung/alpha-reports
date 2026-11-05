@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-03 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Tuesday, November 3, 2026 &middot; US midterm Election Day &middot; AMD reported after the bell</div>
+<p class="note">Automated run. The task is scheduled for ~3:20 PM ET, but this session started at about <b>4:23 PM ET</b>, after the 4:00 PM close. That means this edition has <b>actual closing figures</b> and AMD's results (released ~4:15 PM ET), but only fragmentary after-hours prints. Closing index levels come from Kiplinger's closing-bell article and CNBC (via search summary). Closing stock moves come from Kiplinger, a TenData close wire (via TechFlow), and Benzinga's "Stock Market Today" wrap. Benzinga's wrap appears to be a <b>late-session snapshot, not the final print</b>: it has AMD +4.9% and Nvidia +2.9%, versus +3.6–3.7% and +2.3% at the close in the other two. Where it is the only source, that is noted. <b>No verified closing print was found</b> for AVGO, INTC, META, AMZN, GOOGL, TSLA, TSM, ASML, QCOM, CRM, SHOP, AEHR, BE or SPCX; their last verified prints (~3:10 PM ET, from the afternoon edition) are shown and labeled. Pages discarded as stale: MarketChameleon's after-hours report (Oct. 26 data), Yahoo's most-active table (cached from another session) and a Yahoo AMD article (Nov. 2025). <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (47 days old, outside the ~14-day window), so this edition relies on public research only.</p>
+
+<h2>1. How the Session Closed</h2>
+<p><b>A split close: chips and AI infrastructure lifted the Nasdaq while Apple, consumer staples and materials held the Dow down, and the late session gave back some of the gains.</b> The S&amp;P 500 closed at about <b>7,568.92</b> (<span class="up">+0.36%</span>; CNBC via search summary, Kiplinger 7,568, +0.4%). The Nasdaq Composite closed at <b>25,372</b> (<span class="up">+0.8%</span>; TenData +0.83%) and the Dow at <b>51,786</b> (<span class="dn">−0.4%</span>; TenData −0.38%) (Kiplinger). The Russell 2000 was <span class="up">+0.75%</span> at 2,827 and the Nasdaq-100 <span class="up">+0.69%</span> at 28,184 in Benzinga's late snapshot. That leaves the S&amp;P about 0.2 percentage points below its 2:07 PM gain (+0.55%), so the last two hours faded modestly. CNBC noted (via search summary) that this is the S&amp;P's <b>second straight close below its 200-day moving average</b> even with the gain. The semiconductor ETF SMH rose 2.0–2.3%, ending a three-session losing streak. Tech (XLK) gained 1.3%, industrials 1.2% and communication services 0.9%. Materials (XLB) and staples (XLP) each fell 1.6%, discretionary 1%, financials 0.6%, and homebuilders (XHB) 2% as yields rose (Benzinga). <b>Nvidia passed Apple as the world's most valuable company</b> (Benzinga, Forbes). <b>Rates:</b> the 10-year yield closed at <b>4.958%</b> (+6.4 bp), the 2-year at 4.623% and the 30-year at 5.331% (Kiplinger). Earlier data pushed yields up: September JOLTS openings were 7.5M vs. 7.1M expected, and September factory orders rose 1.8% vs. 1.2% (Benzinga). WTI was ~$96 (+0.1% per Kiplinger, −0.5% per Benzinga), gold ~$3,942 (−0.7%) and Bitcoin ~$77.5K. <b>Tone:</b> constructive for AI hardware, defensive elsewhere, with breadth thin (only 215 S&amp;P names were up at 11:45 AM, per TheStreet). Two binary events land tonight: AMD's results, and the midterm results as polls close.</p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Tracks names flagged in today's pre-market, open, midday and afternoon editions through the close. Closing prints are from Kiplinger and TenData unless marked "Bz" (Benzinga's late snapshot).</p>
+<div class="tbl"><table>
+<tr><th>Earlier flag</th><th>Pre-mkt → Open → Midday → ~3:10 PM</th><th>Close</th><th>Verdict</th></tr>
+<tr><td>ORCL: overhang squeeze (open, midday, afternoon)</td><td class="n">−0.9 to −2% → +6.04% → +7.1% → +4.8%</td><td class="n"><span class="up">+5.8%</span></td><td><b>Played out.</b> The afternoon fade partly reversed in the last hour, with a close ~9% above the $116 offer price. The new shares settle tomorrow.</td></tr>
+<tr><td>AMD: run-up into the print (all editions)</td><td class="n">+1.7–3% → +5.50% → +5.4% → +4.4%</td><td class="n"><span class="up">+3.6–3.7%</span></td><td><b>Held green but faded.</b> It lost ~1.8 points from the late-morning high before the release, then reported a beat and raise (see candidate 1).</td></tr>
+<tr><td>Chip rebound, take two: NVDA / MU / INTC</td><td class="n">NVDA +1.3–1.6% → +2.84% → +3.2% → +2.4%</td><td class="n">NVDA <span class="up">+2.3%</span>; MU <span class="up">&gt;+2%</span>; INTC n/a</td><td><b>Played out.</b> SMH ended a three-day losing streak, and Nvidia took the market-cap crown, though both finished below their morning highs. Intel's close is unverified; it was +0.7% at 3:10 PM on the day's heaviest volume.</td></tr>
+<tr><td>AAPL: beat on sales, missed on margins</td><td class="n">−3.7 to −4.5% → −2.66% → −1.8% → −2.3%</td><td class="n"><span class="dn">−1.9%</span> (Bz −2.2%, $330.97)</td><td><b>Partial gap fill held.</b> About half the pre-market loss came back, but it never got above the ~$332.5 morning high, and it lost the most-valuable title.</td></tr>
+<tr><td>PLTR: beat and raise, sold anyway</td><td class="n">−6.6 to −8.4% → −1.37% → −1.8% → −1.5%</td><td class="n"><span class="dn">−1.7%</span></td><td><b>Gap filled, then stalled.</b> No push back to green.</td></tr>
+<tr><td>SHOP: premium multiple meets a small miss</td><td class="n">−12 to −19% → −7.88% → −4.6% → −7.6%</td><td class="n">n/a</td><td><b>Afternoon reversal</b> (no verified close). The ~$150 level failed.</td></tr>
+<tr><td>LSCC: chip name with its own catalyst</td><td class="n">+9–10% → n/a → n/a → +12.11% (2 PM)</td><td class="n"><span class="up">+14.04%</span> (Bz)</td><td><b>Accelerated.</b> It was a top-3 Russell 1000 gainer and strengthened into the close.</td></tr>
+<tr><td>ETN: AI capex in power equipment (open)</td><td class="n">— → +7.26% → n/a → n/a</td><td class="n"><span class="up">+7.0%</span></td><td><b>Held</b> all day.</td></tr>
+<tr><td>Software and IT services as funding source: IT / DT / CRM (open)</td><td class="n">IT −13.32% at open</td><td class="n">IT <span class="dn">−13.17%</span>, DT <span class="dn">−11.57%</span> (Bz); CRM n/a</td><td><b>Played out.</b> No gap fill all day in Gartner or Dynatrace.</td></tr>
+<tr><td>FISV: self-help story (afternoon)</td><td class="n">+10.3% pre → +11.12% (12:51) → +13.60% (2:01)</td><td class="n"><span class="up">+12.33%</span> (Bz)</td><td><b>Held</b>, giving back about a point from the afternoon high.</td></tr>
+<tr><td>FN / NBIX / GPK: earnings winners (afternoon)</td><td class="n">+17.93% / +15.98% / +18.7–19.4% (2–3 PM)</td><td class="n"><span class="up">+13.69% / +14.84% / +17.98%</span> (Bz)</td><td><b>Held</b>, but Fabrinet faded ~4 points into the close.</td></tr>
+<tr><td>MSFT / AMZN building, META / GOOGL fading (afternoon)</td><td class="n">MSFT +0.56% → +2.7% → +3.2%</td><td class="n">MSFT <span class="up">+2.7%</span>; others n/a</td><td><b>Mostly held.</b> Microsoft was the Dow's top gainer but gave back half a point late.</td></tr>
+<tr><td>AEHR / BE / SPCX</td><td class="n">+25.0% / +9.4% / +3.4% at 3:10 PM</td><td class="n">n/a</td><td>No verified close.</td></tr>
+</table></div>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">Moves are vs. Monday's (Nov. 2) close. Final session volumes were not verified. Where noted, volume is the cumulative count at ~3:10 PM from the afternoon edition (StockMarketWatch), so treat it as a floor.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Day move</th><th>Source / timing</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="4">Fixed watchlist</td></tr>
+<tr><td>ORCL</td><td class="n"><span class="up">+5.8%</span></td><td>Close (TenData)</td><td>≥48.6M by 3:10 PM; rebounded into the close; settlement Nov. 4</td></tr>
+<tr><td>AMD</td><td class="n"><span class="up">+3.6–3.7%</span></td><td>Close (Kiplinger, TenData)</td><td>≥18.1M; beat and raise after the bell (see candidate 1)</td></tr>
+<tr><td>MSFT</td><td class="n"><span class="up">+2.7%</span></td><td>Close (Kiplinger)</td><td>Dow's top gainer; ≥10.9M</td></tr>
+<tr><td>NVDA</td><td class="n"><span class="up">+2.3%</span></td><td>Close (Kiplinger)</td><td>≥55.3M; now the world's most valuable company; broke a four-session losing streak</td></tr>
+<tr><td>MU</td><td class="n"><span class="up">&gt;+2%</span></td><td>Close (TenData)</td><td>≥14.2M; memory still bid</td></tr>
+<tr><td>AAPL</td><td class="n"><span class="dn">−1.9%</span></td><td>Close (Kiplinger); Bz −2.2%, $330.97</td><td>≥38.5M; ~$107B of market value lost (Bz)</td></tr>
+<tr><td>AVGO</td><td class="n"><span class="up">+3.1%</span></td><td>~3:10 PM (not close)</td><td>≥9.0M</td></tr>
+<tr><td>AMZN</td><td class="n"><span class="up">+2.4%</span></td><td>~3:10 PM (not close)</td><td>≥22.5M</td></tr>
+<tr><td>META</td><td class="n"><span class="up">+2.0%</span></td><td>~3:10 PM (not close)</td><td>≥9.1M</td></tr>
+<tr><td>TSM</td><td class="n"><span class="up">+1.4%</span></td><td>~3:10 PM (not close)</td><td>≥6.4M (ADR)</td></tr>
+<tr><td>INTC</td><td class="n"><span class="up">+0.7%</span></td><td>~3:10 PM (not close)</td><td>≥97.6M, the heaviest of any name checked</td></tr>
+<tr><td>GOOGL (GOOG proxy)</td><td class="n"><span class="dn">−0.4%</span></td><td>~3:10 PM (not close)</td><td>≥14.6M (GOOG)</td></tr>
+<tr><td>TSLA</td><td class="n"><span class="dn">−1.4%</span></td><td>~3:10 PM (not close)</td><td>≥18.0M</td></tr>
+<tr><td>ASML / QCOM / CRM</td><td class="n">n/a</td><td>No verified print today after midday</td><td>QCOM reports Wednesday after the close</td></tr>
+<tr class="sec"><td colspan="4">Notable movers outside the watchlist</td></tr>
+<tr><td>GPK</td><td class="n"><span class="up">+17.98%</span></td><td>Bz (R1000 top gainer)</td><td>Reaffirmed its 2026 cash-flow outlook; price increases in Q4 and into 2027</td></tr>
+<tr><td>NBIX</td><td class="n"><span class="up">+14.84%</span></td><td>Bz</td><td>Record Q3 product sales above $1.1B; Ingrezza guide raised to $2.9–2.925B</td></tr>
+<tr><td>LSCC</td><td class="n"><span class="up">+14.04%</span></td><td>Bz</td><td>Record revenue $291M (+118%); Q4 guide ~$335M</td></tr>
+<tr><td>FN</td><td class="n"><span class="up">+13.69%</span></td><td>Bz</td><td>Revenue +51% to $1.47B; current-quarter guide $1.60–1.65B vs. ~$1.48B consensus</td></tr>
+<tr><td>FISV</td><td class="n"><span class="up">+12.33%</span></td><td>Bz</td><td>Savings target doubled to $1B; $500M Q4 buyback; $6.45B goodwill impairment</td></tr>
+<tr><td>ETN</td><td class="n"><span class="up">+7.0%</span></td><td>Close (Kiplinger)</td><td>EPS $3.68 vs. $3.54; revenue +28% to $8.9B; record orders</td></tr>
+<tr><td>SMCI</td><td class="n"><span class="up">+3.1%</span></td><td>Close (Kiplinger)</td><td>Reported after the close; no after-hours print found</td></tr>
+<tr><td>PLTR</td><td class="n"><span class="dn">−1.7%</span></td><td>Close (Kiplinger)</td><td>Total contract value +6%; US commercial TCV +11%</td></tr>
+<tr><td>SHW</td><td class="n"><span class="dn">−3.3%</span></td><td>Close (Kiplinger)</td><td>Dow's biggest loser, a day after leading it</td></tr>
+<tr><td>ZBRA</td><td class="n"><span class="dn">−8.22%</span></td><td>Bz</td><td>Gross margin fell to 45.7% from 48% on <b>memory costs</b></td></tr>
+<tr><td>SYY</td><td class="n"><span class="dn">−8.25%</span></td><td>Bz</td><td>Revenue miss; guide at the low end of 6–7%; soft restaurant traffic</td></tr>
+<tr><td>MPT</td><td class="n"><span class="dn">−10.32%</span></td><td>Bz</td><td>Below $2 after last week's RBC downgrade</td></tr>
+<tr><td>DT</td><td class="n"><span class="dn">−11.57%</span></td><td>Bz</td><td>Subscription gross margin squeezed to 84% by cloud costs</td></tr>
+<tr><td>IT (Gartner)</td><td class="n"><span class="dn">−13.17%</span></td><td>Bz (R1000 top loser)</td><td>Q4 forecast disappointed despite a beat and a full-year raise</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates / What to Watch Tomorrow</h2>
+<p class="note">Research observations only: names worth investigating further going into Wednesday's session. They are not recommendations to buy or sell.</p>
+
+<div class="card"><h3>1. AMD: a beat and raise on revenue, offset by a one-point gross-margin step-down. <span class="up">+3.6–3.7%</span> into the print; after-hours direction unverified</h3>
+<p><b>Thesis:</b> AMD's report is the most important development for tomorrow's semiconductor tape. Q3 revenue was a record <b>$13.4B</b> (+45% y/y, +16% q/q), above the top of its own $12.7–13.3B guide and the ~$13.08–13.09B consensus. Non-GAAP EPS was <b>$2.09</b> (+74% y/y) vs. ~$1.95–1.97. Data Center revenue nearly doubled (<b>+97% to $8.5B</b>), and that segment's operating income was $2.88B (~34% margin) vs. $1.07B a year ago. The key number is the guide: <b>Q4 revenue of ~$17B ±3%</b>, implying ~66% y/y growth and ~27% sequential growth. Even the low end (~$16.5B) is above the ~$16.2–16.3B consensus cited in previews. The weak spot is margin: Q4 non-GAAP gross margin is guided to <b>~55%, down from 56%</b>. On a day when Apple and Zebra both blamed memory costs for margin pressure, that step-down will be read as either MI450/Helios rack mix or component inflation. The call commentary should show which. AMD also announced agreements to acquire <b>World Labs</b> (model research) and <b>Taalas</b> (inference silicon), and its release lists strategic collaborations with Anthropic, Meta, Microsoft, OpenAI, Oracle Cloud Infrastructure, HPE and Kodiak AI. Lisa Su said she expects growth "to accelerate further in the fourth quarter as we scale Helios and 'Venice' production."</p>
+<p><b>Evidence:</b> AMD Q3 2026 earnings release (via StockTitan's republished release: segment table, outlook, CEO and CFO quotes). Kiplinger and TenData closes (+3.7% / +3.6%). Benzinga (consensus $1.95). Yahoo Finance search summary (Bloomberg consensus $1.97 / $13.08B). Seeking Alpha via TradingView (~7.7% implied move). Afternoon edition (SpotGamma ±10%, $16.3B Q4 bar).</p>
+<p><b>Risks:</b> The after-hours reaction <b>could not be verified</b>. A 24/7 Wall St. live blog headline (via search summary) said shares were "initially up 6%," and one search summary cited a ~$521 quote (+7.7%). A "fell ~9% after hours" figure that also surfaced matches the <b>Q2 (August) reaction</b>, not today's. After AMD's last two reports, the stock beat estimates and then reversed lower. The gross-margin step-down and the gaming decline (−40% to $773M) give bears something to point to. Overnight liquidity will be thin and competing with election headlines.</p>
+<p><span class="conf">Confidence: High (AMD is the key semis name for tomorrow). Medium (the guide beat is verified). Low (direction at Wednesday's open)</span></p></div>
+
+<div class="card"><h3>2. Oracle (ORCL): the squeeze reasserts itself into settlement day. <span class="up">+5.8%</span> close vs. +4.8% at 3:10 PM</h3>
+<p><b>Thesis:</b> The afternoon edition worried that Oracle's fade from +7.1% to +4.8% might be early selling ahead of tomorrow's settlement of ~86.2M new shares at $116. Instead, the stock gained a point in the last hour and closed <b>+5.8%</b> (implied ~$126, using the $119.22 Nov. 2 close from search summaries), about 9% above the offer. Tomorrow (Nov. 4) both the ~$10B equity and the ~$10B senior notes (7%–8.65% coupons) are expected to close. AMD's after-hours release lists Oracle Cloud Infrastructure among its strategic collaborations, and a strong Data Center guide tends to support the MI450 build-out Oracle is financing. The question for Wednesday is whether the overhang is truly cleared or whether settlement brings a final wave of selling from allocated holders.</p>
+<p><b>Evidence:</b> TenData close wire via TechFlow (+5.8%). Afternoon edition (~3:10 PM: +4.8%, ≥48.6M shares). Search summaries of the Oracle pricing coverage (MarketScreener, Seeking Alpha via TradingView, Kucoin: $116 price, 86.2M shares, Nov. 4 close, note coupons). AMD release (OCI collaboration).</p>
+<p><b>Risks:</b> Settlement-day supply. A risk-off reaction to the election, especially if it raises worries about data-center policy or power costs. Higher yields raise Oracle's own funding costs, since the new notes already carry 7%+ coupons. Free cash flow is still negative.</p>
+<p><span class="conf">Confidence: Medium (holds above $116 through settlement). Low (extends the gain Wednesday)</span></p></div>
+
+<div class="card"><h3>3. The memory-cost squeeze is the day's cross-sector theme: MU <span class="up">&gt;+2%</span> vs. AAPL <span class="dn">−1.9%</span>, ZBRA <span class="dn">−8.2%</span>, and AMD's 55% margin guide</h3>
+<p><b>Thesis:</b> Rising memory prices showed up in at least three places today, as a margin cost for companies that buy memory and a tailwind for those that sell it. <b>Apple</b> guided December-quarter gross margin to 45–46%, below the 46.3% consensus, mainly on memory costs. CEO John Ternus said memory prices would keep rising beyond the holiday quarter (Benzinga). <b>Zebra's</b> gross margin fell to 45.7% from 48%, "mainly on higher memory component costs" (Benzinga). <b>AMD's</b> Q4 margin guide stepped down a point. On the other side, Micron closed up more than 2% and SK Hynix's US listing gained too (TenData), while Sandisk was +3.7% at 3:10 PM. If AMD's call confirms that HBM and DRAM remain tight (CFO Jean Hu flagged component tightness before the print), the spread between memory suppliers and device makers could keep widening. Qualcomm (Wednesday after the close) is the next large device-exposed report where this may come up.</p>
+<p><b>Evidence:</b> Benzinga wrap (Apple and Zebra margin details). Kiplinger (Apple −1.9%). TenData via TechFlow (MU and SK Hynix &gt;+2%). AMD release (55% vs. 56%). Afternoon edition (SNDK +3.7%; Jean Hu supply comments from previews).</p>
+<p><b>Risks:</b> Memory stocks have had a very large run. Micron was ~$850 at 3:10 PM, and Sandisk was above $1,100. Any sign of demand destruction in PCs or handsets (Intel's PC warning last week, and AMD gaming −40%) would hurt both sides of the trade. One day of evidence from three companies is suggestive, not conclusive.</p>
+<p><span class="conf">Confidence: Medium (the theme persists through Qualcomm's report)</span></p></div>
+
+<div class="card"><h3>4. Nvidia (NVDA) retakes the market-cap crown: <span class="up">+2.3%</span>, breaking a four-session losing streak</h3>
+<p><b>Thesis:</b> Nvidia ended a four-session losing streak and passed Apple as the world's most valuable company. Benzinga's late snapshot had it near $5.0T vs. Apple's ~$4.83T. The closing gain (+2.3%) was smaller than the +3.2% midday peak, consistent with the late-day de-risking seen across AI names. For tomorrow, AMD's Data Center result (+97%) and 27% sequential Q4 guide are a strong read for AI accelerator demand overall. The open question is whether investors treat AMD's gains as share taken from Nvidia or as a sign the market for both is growing. The Nasdaq-100 is still more than 10% below its Oct. 6 high (CNBC via StockTitan), so this is a rebound inside a correction, not yet a new trend.</p>
+<p><b>Evidence:</b> Kiplinger (+2.3% close; SMH +2.0%). Benzinga wrap (market-cap figures, streak). Forbes headline (via search). StockTitan live page (Nasdaq-100 correction). Afternoon edition (intraday path).</p>
+<p><b>Risks:</b> The S&amp;P 500 closed below its 200-day average for a second day. The 10-year near 4.96% is a headwind for long-duration growth. Asian chip stocks fell ~3.6% overnight and did not confirm the US rebound.</p>
+<p><span class="conf">Confidence: Medium (holds the gain if AMD's reaction is positive). Low (the "bear trap" reading survives the week)</span></p></div>
+
+<div class="card"><h3>5. AI supply-chain earnings winners into tonight's ANET and ALAB reports: LSCC <span class="up">+14.0%</span>, FN <span class="up">+13.7%</span>, ETN <span class="up">+7.0%</span></h3>
+<p><b>Thesis:</b> Companies whose own results showed AI-capex demand were rewarded again today. Lattice <b>strengthened into the close</b> (+12.1% at 2 PM to +14.0%) after record revenue of $291M (+118%) and a ~$335M Q4 guide. Fabrinet faded from +17.9% to +13.7% but held most of its gain, on a $1.60–1.65B guide vs. ~$1.48B consensus. Eaton held +7% after record orders. Tonight's reports from <b>Arista Networks</b> and <b>Astera Labs</b> extend the test. CNBC quote pages (via search summary, timestamps unclear) showed Arista ~+5.8% after hours (≈$179.70 vs. a $169.91 close) and Astera ~−4.8% (≈$222.48 vs. $233.62). If those hold, the split would echo this morning's pattern of being selective within AI hardware rather than buying the whole group.</p>
+<p><b>Evidence:</b> Benzinga wrap (LSCC, FN, ETN details; R1000 leaders). Kiplinger (ETN results vs. estimates). StockTitan live page (2 PM prints). StockTitan earnings calendar (ANET and ALAB report times). CNBC quote pages via search summary (after-hours, unverified).</p>
+<p><b>Risks:</b> The after-hours prints are unverified and may not reflect the final post-call level. Mid caps after 13–14% moves often give back gains on day two. If AMD's margin guide pulls semis down, these stocks are exposed.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>6. Fiserv (FISV): a day-two test for a self-help rally. <span class="up">+12.33%</span></h3>
+<p><b>Thesis:</b> Fiserv held most of its gain all day, peaking at +13.6% around 2 PM, on capital and cost steps, not on growth. It doubled its Project Elevate savings target to $1B, pulled a $500M buyback into Q4 and reaffirmed its $7.20–7.40 adj. EPS guide. Wednesday will show whether buyers keep adding or whether it gives back part of the move, as beaten-down names often do after a 10%+ day.</p>
+<p><b>Evidence:</b> Benzinga wrap (+12.33%; $1.75 adj. EPS; $6.45B impairment). Fiserv 8-K Exhibit 99.1 (afternoon edition). StockTitan and TheStreet intraday prints.</p>
+<p><b>Risks:</b> GAAP EPS was deeply negative after the impairment. Organic revenue was flat and merchant revenue down 2%. Leverage is high (~$27B of total debt against $545M of cash), so the buyback is a balance-sheet decision.</p>
+<p><span class="conf">Confidence: Low (follow-through Wednesday)</span></p></div>
+
+<div class="card"><h3>7. Rate-sensitive groups going into election night: the 10-year at 4.958% (<span class="dn">+6.4 bp</span>), XHB <span class="dn">−2%</span>, the Dow <span class="dn">−0.4%</span></h3>
+<p><b>Thesis:</b> Not a single stock, but the setup that could move every name above overnight. Yields rose across the curve on stronger JOLTS and factory-orders data, homebuilders fell 2%, and the Dow lagged. Election expectations are lopsided. Yahoo cited Polymarket at ~76% odds of a Democratic sweep of both chambers, and CNBC reported that a sweep is <b>not fully priced in</b> and could weigh on stocks Wednesday. JPMorgan, by contrast, puts 66% odds on a "Blue Wave" with little market impact: an S&amp;P move of −0.25% to +0.50% and <b>lower long-end yields</b> (TheStreet). If long yields fall overnight, the rate-sensitive laggards (homebuilders, small caps) and long-duration tech stand to benefit. If yields rise, today's split widens.</p>
+<p><b>Evidence:</b> Kiplinger (yield closes). Benzinga (sector moves, macro data). TheStreet live blog (JPMorgan election note, 11:08 AM). Afternoon edition (Polymarket odds via Yahoo; CNBC on sweep pricing).</p>
+<p><b>Risks:</b> Close races or delayed counts could extend uncertainty past Wednesday. Past midterm nights have moved in both directions: futures rallied in 2018 and fell in 2022.</p>
+<p><span class="conf">Confidence: Low (direction). High (above-normal overnight volatility in rates and futures)</span></p></div>
+
+<h2>5. Tomorrow's Calendar</h2>
+<div class="tbl"><table>
+<tr><th>When (ET)</th><th>Event</th><th>Why it matters</th></tr>
+<tr class="sec"><td colspan="3">Tonight (Tue, Nov. 3)</td></tr>
+<tr><td class="n">~4:15 PM / 5:00 PM call</td><td>AMD Q3 results and call (out: see candidate 1)</td><td>Gross-margin explanation, MI450/Helios ramp, memory supply</td></tr>
+<tr><td class="n">After close (4:30–5:00 PM calls)</td><td>Arista (ANET), Astera Labs (ALAB), Amgen (AMGN), Booking (BKNG), Block (XYZ), Super Micro (SMCI), Coupang (CPNG), IFF; AIG, Prudential and Suncor calls Wednesday morning</td><td>AI networking and connectivity read-through; consumer travel</td></tr>
+<tr><td class="n">From ~6:00 PM</td><td>Midterm polls close; results overnight</td><td>Control of Congress; fiscal, regulatory and yield path</td></tr>
+<tr class="sec"><td colspan="3">Wednesday, Nov. 4: before the open and economic data</td></tr>
+<tr><td class="n">Pre-market</td><td>Uber (8:00 AM call), CVS (8:00), Datadog (8:00), Emerson (8:30), Cencora (8:30), Cenovus (8:30), Medline (9:30), Grainger (11:00); McDonald's and Novo Nordisk expected (dates unconfirmed)</td><td>Consumer, health care and software read-through</td></tr>
+<tr><td class="n">Nov. 4 (time per filings)</td><td><b>Oracle's $116 share offering and $10B notes settle</b></td><td>Candidate 2</td></tr>
+<tr><td class="n">8:15 AM</td><td>ADP private payrolls (Oct.); September was 90K</td><td>Lead-in to Friday's jobs report</td></tr>
+<tr><td class="n">8:30 AM</td><td>Trade balance (Sept.); Treasury quarterly refunding statement also due Wednesday</td><td>Refunding size and mix matter with the 10-year near 4.96% and the 30-year at 5.33%</td></tr>
+<tr><td class="n">~10:00 AM</td><td>ISM Services PMI (Oct.); S&amp;P Global US services/composite PMI also due</td><td>Services inflation (prices paid) with the Fed leaning hawkish</td></tr>
+<tr class="sec"><td colspan="3">Wednesday, Nov. 4: after the close</td></tr>
+<tr><td class="n">4:45 PM call</td><td><b>Qualcomm (QCOM)</b>, fixed watchlist; consensus EPS $1.46 (StockTitan/Nasdaq)</td><td>Handset demand and memory-cost commentary (candidate 3)</td></tr>
+<tr><td class="n">After close</td><td>Arm (ARM), AppLovin (APP, 5:00), McKesson (MCK, 4:30), MercadoLibre (MELI, 5:00), Motorola Solutions (MSI, 5:00), Edwards (EW, 5:00); also Snap, Expedia, TKO</td><td>Arm is the second chip-IP read in two days</td></tr>
+<tr class="sec"><td colspan="3">Fed and later this week</td></tr>
+<tr><td class="n">No FOMC</td><td>The Fed held at 3.75–4.00% on Oct. 28 with two dissents in favor of a hike; no Fed decision this week. No Fed-speaker schedule for Wednesday was verified.</td><td>December-hike odds are elevated, per post-meeting coverage</td></tr>
+<tr><td class="n">Fri, Nov. 6, 8:30 AM</td><td>October jobs report</td><td>The week's main macro event</td></tr>
+</table></div>
+<p class="note">WRDS quant signals section omitted: alpha_wrds_signals.csv is dated 2026-09-17 (47 days old) and was not used.</p>
+
+<h2>6. Sources</h2>
+<p class="note">Pages fetched and used:</p>
+<ul class="src">
+<li>https://www.kiplinger.com/investing/stocks/nasdaq-bounces-as-chips-lead-ai-revival-stock-market-today (closing-bell levels; yields; WTI; NVDA, MSFT, SHW, AAPL, PLTR, AMD, SMCI, ETN closes; Eaton results)</li>
+<li>https://www.tradingview.com/news/benzinga:665639cb3094b:0-nasdaq-100-gets-a-lift-as-nvidia-overtakes-apple-stock-market-today/ (Benzinga wrap: index table, sectors, JOLTS and factory orders, Apple margin guide and Ternus quote, NVDA market cap, R1000 gainers and losers, LSCC/FN/FISV/GPK/NBIX/IT/DT/SYY/ZBRA/MPT details; appears to be a late-session snapshot)</li>
+<li>https://www.techflowpost.com/en-US/newsletter/142786 (TenData close wire: index % moves; ORCL +5.8%, AMD +3.6%, MU/SK Hynix/NVDA &gt;+2%, AAPL ~−2%)</li>
+<li>https://www.stocktitan.net/news/AMD/amd-reports-third-quarter-2026-financial-7j6jzo29buqw.html (AMD Q3 2026 release as republished: results, segments, outlook, acquisitions, quotes; published 4:15 PM ET)</li>
+<li>https://www.stocktitan.net/articles/earnings-calendar-week-of-november-2-2026 (after-close Nov. 3 and Nov. 4 earnings schedule, call times, consensus EPS)</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026 (live blog to 1:57 PM: JPMorgan election odds, breadth, intraday movers, Shopify GMV)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-3-2026 (live page, last updated 2:08 PM: Nasdaq-100 correction context, intraday prints)</li>
+</ul>
+<p class="note">Used via search-result summaries only (not fetched in full, or fetch failed):</p>
+<ul class="src">
+<li>https://cnbc.com/2026/11/02/stock-market-today-live-updates.html (S&amp;P 500 close 7,568.92, +0.36%; second close below the 200-day; fetch returned an empty page)</li>
+<li>https://247wallst.com/investing/2026/11/03/live-will-amd-crush-q3-earnings-tonight-after-a-4-intraday-pop/ (AMD "initially up 6%" headline; fetch was rate-limited)</li>
+<li>https://finance.yahoo.com/technology/article/amd-to-report-q3-results-as-chip-stocks-rebound-following-last-weeks-steep-selloff-150210938.html (search summary of the post-report version: Bloomberg consensus $1.97 / $13.08B; fetched copy was the pre-report version)</li>
+<li>https://www.cnbc.com/quotes/ANET ; https://www.cnbc.com/quotes/ALAB (after-hours prints, timestamps unclear)</li>
+<li>https://www.tradingview.com/news/seekingalpha:6f9fbf088094b:0-amd-expected-to-move-7-following-earnings-options-markets-indicate/ (AMD implied move)</li>
+<li>https://www.investing.com/news/transcripts/earnings-call-transcript-amd-beats-q2-2026-estimates-stock-reverses-after-hours-93CH-4836135 (the "−8.9% after hours" figure belongs to the Q2 report)</li>
+<li>https://www.forbes.com/sites/fionariley/2026/11/03/nvidia-regains-title-of-worlds-most-valuable-company-as-apple-shares-slide/ (Nvidia passes Apple)</li>
+<li>https://www.marketscreener.com/news/oracle-prices-20-billion-offerings-of-common-stock-notes-ce785fd9de8ff72d ; https://www.tradingview.com/news/seekingalpha:8b137b2af094b:0-oracle-prices-20b-stock-and-bond-offering-amid-ai-expansion-sets-share-sale-at-116/ (Oracle offering terms, Nov. 4 settlement, $119.22 Nov. 2 close)</li>
+<li>https://x.com/marketsday/status/2116579704622784634 ; https://vanderbiltreport.com/week-ahead-november-2-8-2026 ; https://techflowpost.com/en-US/newsletter/142761 (Nov. 4 economic calendar: ADP, trade balance, ISM Services, Treasury refunding)</li>
+<li>Prior context: alpha_report_2026-11-03_premarket.html, _open.html, _midday.html and _afternoon.html (local archive); alpha_wrds_signals.csv (as_of 2026-09-17, stale, not used)</li>
+</ul>
+<p class="note">Fetched but discarded as stale or empty: https://marketchameleon.com/Reports/AfterHoursTrading (Oct. 26 data); https://finance.yahoo.com/markets/stocks/most-active/ (cached table from another session); https://finance.yahoo.com/news/amd-beats-q3-estimates-on-top-and-bottom-line-offers-strong-q4-guidance-202400302.html (Nov. 2025 article); https://benzinga.com/markets/equities/26/11/62832505/stock-market-today-nvidia-overtakes-apple-chip-rally-nasdaq-jolts-yields (empty; TradingView syndication used instead).</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>

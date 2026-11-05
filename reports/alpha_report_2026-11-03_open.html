@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-03 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Tuesday, November 3, 2026 &middot; US midterm Election Day &middot; AMD after the close</div>
+<p class="note">Automated run. The task is scheduled for ~10:00 AM ET, but this session started at about <b>11:05 AM ET</b>, so this edition covers roughly the first 90–100 minutes of trading, not only the first 30. Moves are vs. Monday's (Nov. 2) close unless noted. Intraday prices come from four time-stamped snapshots: <b>9:38 AM</b> (TheStreet), <b>9:40 AM</b> (HDFC Sky, Nasdaq data), <b>~10:17 AM</b> (Yahoo Finance page header) and a <b>late-morning</b> snapshot (Investing.com market sidebar, rendered after 10:24 AM and before ~11:10 AM ET; the exact time isn't shown). Neither source gives opening prints, so "since the open" is approximated as the change between the 9:40 and late-morning snapshots. One table was <b>discarded as stale</b>: Yahoo's most-active page, whose index levels did not match Monday's close. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv still has as_of_date 2026-09-17 (47 days old, outside the ~14-day window). This edition relies on public research only.</p>
+
+<h2>1. How the Open Traded</h2>
+<p><b>The open split along the same line as pre-market: chips up, Apple down. Then the tone improved steadily through the morning.</b> At 9:38 AM the S&amp;P 500 was <span class="up">+0.28%</span>, the Nasdaq <span class="up">+0.81%</span>, the Dow <span class="dn">−0.49%</span> and the Russell 2000 <span class="dn">−0.21%</span> (TheStreet). At 9:40, the Dow was down 316 points (<span class="dn">−0.61%</span>, 51,668), held back mostly by Apple (HDFC Sky). By ~10:17 the S&amp;P was at 7,570 (<span class="up">+0.39%</span>), the Nasdaq at 25,381 (<span class="up">+0.86%</span>) and the Russell had turned <span class="up">+0.50%</span> (Yahoo). In the late-morning snapshot the S&amp;P was at ~7,586 (<span class="up">+0.59%</span>), the Dow had cut its loss to <span class="dn">−0.17%</span> (51,896) and the Nasdaq 100 was <span class="up">~+1.0%</span>. The VIX eased to ~20.3 (−4%) (Investing.com). <b>Tone: constructive but rotational.</b> Chips, AI-power hardware (Eaton, GE Vernova) and memory led. Software and IT services (Salesforce, Cadence, Accenture, Gartner) and consumer staples (Walmart, Costco, Coca-Cola and PepsiCo each down ~1.4%) lagged.</p>
+<p><b>Macro since the pre-market report:</b> September JOLTS came in strong. Openings were <b>7.523M vs. 7.10M expected</b> (August revised up to 7.19M), hires rose to 5.40M, and layoffs fell to 1.64M, the lowest since March 2025 (Reuters via Investing.com). Treasury yields rose, with the 10-year at ~4.93–4.95%. Schwab notes CME FedWatch puts December hike odds at 77%, so a firm labor market is a risk to the rate-sensitive parts of tech. Oil reversed the overnight strike premium: WTI ~$95.8 (−0.7%), Brent ~$103 (−1.6%). CNBC (via StockTitan) cites rumors of US–Iran deal progress. An Investing.com headline, not read in full, says oil turned lower after Trump said he would halt $4B in funding to Israel. Trump also said a Canada trade deal is "very soon" (Reuters via TheStreet). Gold ~$3,946, copper −2.3%.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Checks each name flagged in this morning's pre-market edition against its first ~90 minutes of trading.</p>
+<div class="tbl"><table>
+<tr><th>Pre-market flag</th><th>Pre-mkt</th><th>9:40 AM</th><th>Late AM</th><th>Verdict</th></tr>
+<tr><td>AAPL (weakness holds)</td><td class="n"><span class="dn">−3.7% to −4.5%</span></td><td class="n"><span class="dn">−2.97%</span></td><td class="n"><span class="dn">−2.66%</span> ($329.31)</td><td><b>Partly filled, then stalled.</b> It bounced to −1.73% by ~10:17 and then gave back about half of that bounce.</td></tr>
+<tr><td>PLTR (beat and raise, sold anyway)</td><td class="n"><span class="dn">−6.6% to −8.4%</span></td><td class="n"><span class="dn">−4.05%</span></td><td class="n"><span class="dn">−1.37%</span> ($175.90)</td><td><b>Gap mostly filled.</b> The pre-market's bearish read did not hold.</td></tr>
+<tr><td>SHOP (premium multiple meets small miss)</td><td class="n"><span class="dn">−12% to −19%</span></td><td class="n"><span class="dn">−9.00%</span></td><td class="n"><span class="dn">−7.88%</span> ($143.91)</td><td><b>About half of the gap filled.</b> Still the weakest large-cap tech name.</td></tr>
+<tr><td>AMD (bounce into the print)</td><td class="n"><span class="up">+1.7% to ~+3%</span></td><td class="n"><span class="up">+4.55% to +5.14%</span></td><td class="n"><span class="up">+5.50%</span> ($492.50)</td><td><b>Held and extended.</b></td></tr>
+<tr><td>Chip rebound (NVDA / MU / INTC)</td><td class="n"><span class="up">+1.3–2.6% / +3–4% / +2–4%</span></td><td class="n"><span class="up">+3.1–3.3% / +3.9–4.1% / +3.2–4.3%</span></td><td class="n"><span class="up">+2.84% / +3.29% / +2.96%</span></td><td><b>Held past 11 AM</b>, slightly below the 9:40 highs. On Monday this bounce peaked ~10:30 and reversed.</td></tr>
+<tr><td>ORCL ($116 deal overhang)</td><td class="n">−0.9% to −2% (one source +0.4%)</td><td class="n"><span class="up">+2.96%</span></td><td class="n"><span class="up">+6.04%</span> ($126.42)</td><td><b>Reversed higher.</b> Now ~9% above the $116 offer price.</td></tr>
+<tr><td>LSCC (own catalyst)</td><td class="n"><span class="up">+9% to +14%</span></td><td class="n">n/a</td><td class="n">n/a</td><td>No verified regular-session print. One unattributed search summary says +11.8%.</td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">"Since open" is approximated as the change between the 9:40 AM and late-morning snapshots. Volumes are cumulative at the late-morning snapshot (Investing.com). Three-month averages could not be verified this run, so volume notes are relative only.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>9:40 AM</th><th>Late AM</th><th>Drift since open</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="5">Fixed watchlist</td></tr>
+<tr><td>ORCL</td><td class="n"><span class="up">+2.96%</span></td><td class="n"><span class="up">+6.04%</span></td><td class="n"><span class="up">building</span></td><td>33.7M shares, the most of any large cap in the sidebar except INTC</td></tr>
+<tr><td>AMD</td><td class="n"><span class="up">+4.55–5.14%</span></td><td class="n"><span class="up">+5.50%</span></td><td class="n"><span class="up">building</span></td><td>9.5M; reports after the close</td></tr>
+<tr><td>AVGO</td><td class="n"><span class="up">+3.29–3.74%</span></td><td class="n">n/a</td><td class="n">—</td><td>A search summary also says it "rose more than 3%" early</td></tr>
+<tr><td>NVDA</td><td class="n"><span class="up">+3.11–3.26%</span></td><td class="n"><span class="up">+2.84%</span></td><td class="n">slight fade</td><td>28.3M; $207.80</td></tr>
+<tr><td>MU</td><td class="n"><span class="up">+3.86–4.07%</span></td><td class="n"><span class="up">+3.29%</span></td><td class="n">slight fade</td><td>7.9M; $861</td></tr>
+<tr><td>INTC</td><td class="n"><span class="up">+3.24–4.25%</span></td><td class="n"><span class="up">+2.96%</span></td><td class="n">slight fade</td><td><b>50.0M, the heaviest in the sidebar</b>; $61.75</td></tr>
+<tr><td>ASML</td><td class="n"><span class="up">+2.64%</span></td><td class="n">n/a</td><td class="n">—</td><td>US listing up even though Amsterdam fell ~3.4% early</td></tr>
+<tr><td>META</td><td class="n"><span class="up">+0.91%</span></td><td class="n"><span class="up">+2.44%</span></td><td class="n"><span class="up">building</span></td><td>$621.53; ≥$20B bond deal in market</td></tr>
+<tr><td>AMZN / MSFT / GOOGL</td><td class="n"><span class="up">+0.56% / +0.56% / −0.08%</span></td><td class="n"><span class="up">+0.74%</span> / n/a / <span class="up">+0.13%</span></td><td class="n">flat</td><td>No specific catalyst found</td></tr>
+<tr><td>TSLA</td><td class="n">n/a</td><td class="n"><span class="dn">−0.53%</span></td><td class="n">—</td><td>$401.66</td></tr>
+<tr><td>AAPL</td><td class="n"><span class="dn">−2.97%</span></td><td class="n"><span class="dn">−2.66%</span></td><td class="n">bounce faded</td><td>25.8M; $329.31; −1.73% at ~10:17</td></tr>
+<tr><td>CRM</td><td class="n"><span class="dn">−4.42%</span></td><td class="n">n/a</td><td class="n">—</td><td>No company-specific catalyst found; sector-wide software selling</td></tr>
+<tr><td>TSM, QCOM</td><td class="n">n/a</td><td class="n">n/a</td><td class="n">—</td><td>No reliable intraday print this run. QCOM reports Wednesday</td></tr>
+<tr class="sec"><td colspan="5">Notable movers outside the watchlist</td></tr>
+<tr><td>RVTY (Revvity)</td><td class="n">+10.1% pre</td><td class="n"><span class="up">+12.39%</span></td><td class="n"><span class="up">building</span></td><td>Beat and raised FY guide</td></tr>
+<tr><td>FISV (Fiserv)</td><td class="n">+10.3% pre</td><td class="n"><span class="up">+11.38%</span></td><td class="n"><span class="up">building</span></td><td>5.6M; cost-savings target doubled to $1B; $500M Q4 buyback</td></tr>
+<tr><td>MPWR</td><td class="n">top NDX gainer</td><td class="n"><span class="up">+8.80%</span></td><td class="n">—</td><td>Chip rebound leader</td></tr>
+<tr><td>ETN (Eaton)</td><td class="n"><span class="up">+6.35%</span></td><td class="n"><span class="up">+7.26%</span></td><td class="n"><span class="up">building</span></td><td>Record Q3; GE Vernova <span class="up">+5.40%</span> at 9:40 in sympathy</td></tr>
+<tr><td>SNDK / WDC / STX</td><td class="n"><span class="up">+6.54% / +4.96% / +4.12%</span></td><td class="n"><span class="up">+5.46%</span> / n/a / n/a</td><td class="n">holding</td><td>Memory and storage bid</td></tr>
+<tr><td>NBIS / ENPH / DD</td><td class="n">n/a</td><td class="n"><span class="up">+7.30% / +8.06% / +7.05%</span></td><td class="n">—</td><td>Catalysts not researched this run</td></tr>
+<tr><td>PLTR</td><td class="n"><span class="dn">−4.05%</span></td><td class="n"><span class="dn">−1.37%</span></td><td class="n"><span class="up">filling</span></td><td>25.4M</td></tr>
+<tr><td>SHOP</td><td class="n"><span class="dn">−9.00%</span></td><td class="n"><span class="dn">−7.88%</span></td><td class="n"><span class="up">filling</span></td><td>12.7M</td></tr>
+<tr><td>IT (Gartner)</td><td class="n">−6.5% pre</td><td class="n"><span class="dn">−13.32%</span></td><td class="n"><span class="dn">extending</span></td><td>Q3 beat, but revenue −1.3% y/y; EPS helped by a much smaller share count</td></tr>
+<tr><td>ZBRA / SYY / TRI</td><td class="n">−14.2% / −5.8% / n/a pre</td><td class="n"><span class="dn">−8.70% / −7.99% / −6.76%</span></td><td class="n">mixed</td><td>Post-earnings losers. Zebra filled part of its gap; Sysco extended</td></tr>
+<tr><td>CDNS / ACN / SNPS / ADBE / INTU</td><td class="n"><span class="dn">−4.57% / −4.16% / −3.12% / −2.89% / −2.53%</span></td><td class="n">n/a</td><td class="n">—</td><td>Software and IT-services selling (9:40 snapshot)</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">Research observations only: names whose opening behavior may be worth investigating further. They are not recommendations to buy or sell.</p>
+
+<div class="card"><h3>1. Oracle (ORCL): from overhang to squeeze. <span class="up">+6.04%</span> ($126.42) late morning vs. −0.9% to −2% pre-market</h3>
+<p><b>Thesis (legs into midday: leaning yes):</b> This is the clearest open-vs-pre-market divergence on the watchlist. Pre-market, Oracle traded slightly below Monday's $119.22 close as the $116 equity pricing (11% below the Oct. 30 close) and ~$10B of notes sank in. Once regular trading began, it went the other way: +2.96% at 9:40 and +6.04% by late morning on 33.7M shares, about 9% above the offer price. The likely mechanism (our inference) is that the overhang is gone. The deal used up Oracle's entire self-imposed $20B fiscal 2027–2030 raise cap in one move, so the market no longer has to price future equity supply. Shorts who sold ahead of the pricing may also be covering. Stephens upgraded to Overweight on Monday with a $213 target, saying Investor Day "resolved" the funding questions. Unlike Monday, the move is building through the morning instead of fading, and it lines up with the broader AI-hardware rebound.</p>
+<p><b>Evidence:</b> HDFC Sky (+2.96% at 9:40). Investing.com sidebar (+6.04%, $126.42, 33.72M). Tradingpedia (−2.0% pre-open; deal terms; Moody's Baa2 negative outlook; 52-week low $114.50; Stephens OW $213; BNP $248). Benzinga via search summary (−0.90% at $118.15 pre-market). TipRanks/The Fly via search summary (Stephens rationale).</p>
+<p><b>Risks:</b> The offering closes Nov. 4, when new holders receive their shares and any flipping would show up. Debt is ~$125B before the new notes, and Moody's outlook is negative. Oracle remains the highest-beta proxy for AI-financing worry, so a midday chip reversal like Monday's would likely hit it hard. We found no fresh Oracle-specific news after the open, so this is a positioning move.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>2. Palantir (PLTR): the gap mostly filled. <span class="dn">−1.37%</span> ($175.90) late morning vs. −6.6% to −8.4% pre-market</h3>
+<p><b>Thesis (legs: partly; the easy part is done):</b> The pre-market edition read the sell-off as a sentiment signal for AI software. The open did not confirm it. PLTR was −6.22% at 9:00, −4.05% at 9:40 and −1.37% late morning, on 25.4M shares, recovering most of an $11–15 gap within about 90 minutes. Dip buyers clearly prioritized the 96% revenue growth and the raised guide over the ~6% TCV growth. The move also stands out because most of software sold off this morning (Salesforce, Cadence, Adobe, Intuit, Gartner), which makes Palantir's recovery company-specific. The next test is whether it can reclaim Monday's close (~$178.3, computed from the late-morning print). Turning green on a "beat but sold" day would add to the case that its retail-heavy shareholder base still buys post-earnings dips.</p>
+<p><b>Evidence:</b> StockTitan (−6.22% at 9:00; TCV +6% to $2.918B; US commercial TCV +11%). HDFC Sky (−4.05% at 9:40). Investing.com sidebar (−1.37%, 25.39M). Schwab ("dropped 6.6% early"; CNBC on the bookings slowdown).</p>
+<p><b>Risks:</b> Sharp V-shaped reversals often stall around midday. The bookings slowdown has not gone away and could resurface in analyst notes. If the chip/AI bid fades, PLTR has no sector support behind it.</p>
+<p><span class="conf">Confidence: Medium (today's low is in). Low (for a green close)</span></p></div>
+
+<div class="card"><h3>3. AMD: the run-up into the print keeps building. <span class="up">+5.50%</span> ($492.50) late morning vs. +1.7% to ~+3% pre-market</h3>
+<p><b>Thesis (legs into the close: likely, but the bar rises):</b> AMD opened above its pre-market range and kept climbing (+4.55% to +5.14% at 9:40, +4.84% at ~10:17, +5.50% late morning). It has recovered most of Monday's −7.5%. It had lost nearly 20% over the three previous sessions (HDFC Sky). Positioning into a report usually works one of two ways. Holders who stay in are confident, but every dollar of run-up raises the post-print bar. Consensus is ~$13.1B revenue and $1.95 EPS. As Intel showed last week, guidance will matter more than the quarter itself. Schwab frames AMD as the read-through for Nvidia ahead of Nvidia's report later this month. Arm also reports this week.</p>
+<p><b>Evidence:</b> HDFC Sky (+4.55% Nasdaq board, +5.14% S&amp;P board at 9:40; consensus). Yahoo AlphaCheck header (+4.84%). Investing.com sidebar (+5.50%, 9.52M). Pre-market edition (implied move ~±8.8%).</p>
+<p><b>Risks:</b> The same setup on Monday reversed into a −7.5% close. Results land as polls begin closing, so after-hours liquidity will be thin and noisy. A firm JOLTS report and a ~4.95% 10-year are headwinds for long-duration growth names.</p>
+<p><span class="conf">Confidence: Low–Medium (strength into the close). High (elevated volatility after the close)</span></p></div>
+
+<div class="card"><h3>4. Chip rebound, take two, is holding so far: NVDA <span class="up">+2.84%</span>, MU <span class="up">+3.29%</span>, INTC <span class="up">+2.96%</span>, MPWR <span class="up">+8.80%</span>, SNDK <span class="up">+5.46%</span></h3>
+<p><b>Thesis (legs: watch the 10:30–noon window):</b> On Monday, the morning chip bounce peaked ~10:30 and every chip long finished lower. Today breadth is wider. At 9:40, AMAT, LRCX, TXN, ADI, ARM, KLAC, AVGO and ASML were all up 2–4% (HDFC Sky), and in the late-morning snapshot leadership had moved toward smaller, higher-beta names (MPWR +8.8%, SNDK +5.5%). The megacaps (NVDA, MU, INTC) are 0.3–1 point below their 9:40 levels, which is a mild fade rather than a reversal. Intel's 50M shares by late morning were the heaviest volume in the sidebar. Valuation support (SOX ~12× forward, per Goldman in the pre-market edition) and a Citi headline that rising shorts have "cut liquidation risk" for US large caps both point to short covering as part of the fuel.</p>
+<p><b>Evidence:</b> HDFC Sky (9:40 chip board). Investing.com sidebar (late-AM prints and volumes). Yahoo Finance (pre-market: MU +4%, AMD +4%, NVDA +2.57% at 9:19; $3.7T lost by chip and memory stocks since Oct. 6). Schwab (SNDK, MU, INTC, AMAT, AMD and ARM up ≥3% early; SOX below its 200-day). Citi headline via Investing.com (not read in full).</p>
+<p><b>Risks:</b> The strong JOLTS report and 77% December-hike odds add rate pressure. Asian chips fell hard overnight. The AMD and election results tonight are binary. If NVDA slips back toward Monday's $202 close by midday, that would be an early sign this rally is following Monday's pattern.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>5. Eaton (ETN): AI capex shows up in power equipment. <span class="up">+7.26%</span> ($392.64) late morning, up from +6.35% at 9:40</h3>
+<p><b>Thesis (legs: yes, unless the 11 AM call disappoints):</b> Eaton's results came out before the open and the stock has been climbing since. It reported record Q3 sales of $8.95B (+28%; organic +19%, above the top of its guide) and a record 25.3% segment margin. The Electrical backlog grew 46% y/y (Electrical Global +121%, including Boyd Thermal), and the 12-month electrical book-to-bill was 1.2. Eaton raised its 2026 organic growth guide to 13–15% and set adjusted EPS at $13.70–13.80. GE Vernova rose +5.4% in sympathy. This is the other side of today's rotation: money is leaving software and moving to companies that physically supply AI capex. It is also an independent data point that data-center spending is still flowing, which helps chips ahead of AMD tonight.</p>
+<p><b>Evidence:</b> StockTitan Eaton earnings summary (all results and guidance figures; call at 11:00 AM ET). HDFC Sky (+6.35%, GEV +5.40% at 9:40). Investing.com sidebar (+7.26%).</p>
+<p><b>Risks:</b> The release does not quantify data-center orders, so the call could disappoint if management is vague. Strategists flag the Texas governor's race as a data-center-policy proxy tonight. A ~7% one-day move in a mega-cap industrial often consolidates the next day.</p>
+<p><span class="conf">Confidence: Medium</span></p></div>
+
+<div class="card"><h3>6. Software and IT services as today's funding source: CRM <span class="dn">−4.42%</span>, CDNS <span class="dn">−4.57%</span>, ACN <span class="dn">−4.16%</span>, IT <span class="dn">−13.32%</span>, TRI <span class="dn">−6.76%</span></h3>
+<p><b>Thesis (relative weakness has legs today):</b> This is the clearest new theme since pre-market. Salesforce, the only watchlist name in this group, fell 4.4% at the open with no company-specific catalyst we could find, alongside Cadence, Synopsys, Adobe, Intuit and Accenture. Gartner is the extreme case. It beat on EPS ($3.59 vs. $2.84), but revenue fell 1.3% y/y, contract value grew only 2.5%, and analysts point out that a 15% smaller share count drove much of the per-share gain. The stock fell from −6.5% pre-open to −13.3% by late morning. Thomson Reuters (−6.8%) also reported this morning. The pattern fits a rotation in which AI-disruption worries for seat-based software and advisory services fund the chip and power-equipment bounce. Palantir's recovery and Shopify's partial gap fill are the exceptions.</p>
+<p><b>Evidence:</b> HDFC Sky (9:40 software and services prints). Investing.com sidebar (IT, TRI late-AM losers). Investing.com, Gartner via search summary (EPS, revenue, share-count analysis, −6.5% pre-open). Search summaries on the late-October ServiceNow-led software sell-off and AI-agent concerns.</p>
+<p><b>Risks:</b> Software is already heavily de-rated after last week's sell-off. If the chip bounce fails again, the rotation could reverse sharply. We have no late-morning prints for CRM, CDNS, ACN, ADBE or INTU, so their direction after 9:40 is unverified.</p>
+<p><span class="conf">Confidence: Medium (relative underperformance today). Low (beyond today)</span></p></div>
+
+<div class="card"><h3>7. Apple (AAPL): stuck in the middle of the gap. <span class="dn">−2.66%</span> ($329.31) late morning vs. −3.7% to −4.5% pre-market</h3>
+<p><b>Thesis (neither confirmed nor rejected):</b> Apple opened well above its pre-market low of ~$323. It was −2.97% at 9:40 and recovered to −1.73% at ~10:17, then gave back about half of that bounce by late morning on 25.8M shares. Dip buyers showed up but couldn't keep the bounce going, which is consistent with a margin-reset story (a 45–46% gross-margin guide on memory costs) that the market isn't treating as a crisis but also isn't buying aggressively. Apple is the main reason the Dow has lagged all morning, though the Dow's deficit narrowed from −0.61% to −0.17% as other sectors firmed. For the rest of the day, the levels to watch are the ~$323 pre-market low (where weakness would resume) and the −1.7% intraday high, ~$332.5 (computed; where the gap would close further).</p>
+<p><b>Evidence:</b> HDFC Sky (−2.97% at 9:40; on pace to open at its lowest since Sept. 10). Yahoo AlphaCheck header (−1.73%). Investing.com sidebar (−2.66%, 25.75M). Globe and Mail via search summary (−2.5% in early trading). Schwab (margin guide 45–46% vs. 46.5% expected; beats on iPhone, Services, EPS).</p>
+<p><b>Risks:</b> AMD's commentary on memory pricing tonight could move Apple either way. Analyst price-target trims are still arriving. A broad tech fade would likely push it back toward the lows.</p>
+<p><span class="conf">Confidence: Low</span></p></div>
+
+<h2>5. Sources</h2>
+<p class="note">Pages actually fetched:</p>
+<ul class="src">
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026 (9:38 AM opening-bell index levels; Rev Shark quote; Canada trade-deal headline; Shopify, Pfizer, pre-market movers)</li>
+<li>https://hdfcsky.com/news/nasdaq-jumps-0-61percent-to-25317-as-chip-stocks-rebound-ahead-of-amd-earnings-dow-slips-0-61percent-on-apple-margin-warning (9:40 AM index levels and individual stock moves across chips, software, staples, industrials)</li>
+<li>https://finance.yahoo.com/markets/article/apple-stock-falls-chip-stocks-rebound-as-oil-extends-decline-alphacheck-150120677.html (~10:17 AM index header strip; AAPL/SHOP/AMD ticker strip; oil)</li>
+<li>https://www.investing.com/news/economic-indicators/us-job-openings-increase-sharply-in-september-4995732 (Reuters JOLTS article, 10:21 AM; late-morning market sidebar: indices, yields, commodities, most active, gainers and losers with volumes)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-3-2026 (9:00 AM pre-market moves; Palantir TCV detail; Fiserv, Zebra, Sysco; ASML in Europe; oil and deal rumors via CNBC)</li>
+<li>https://www.stocktitan.net/articles/eaton-q3-2026-earnings-record-orders-electrical-backlog-up-46-percent (Eaton Q3 results and guidance)</li>
+<li>https://www.schwab.com/learn/story/stock-market-update-open (9:16 AM pre-open update; Apple details; FedWatch 77%; Palantir, Fiserv, Bloom, Cloudflare; SOX chart note)</li>
+<li>https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html (pre-market chip moves; NVDA $207.25 at 9:19; $3.7T chip rout figure)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-090846378.html (pre-open live blog; prediction-market Senate gap)</li>
+<li>https://www.tradingpedia.com/2026/11/03/oracle-shares-under-pressure-after-discounted-raise/ (Oracle deal terms, pre-open move, Moody's, analyst targets, technical levels)</li>
+<li>Fetched but discarded as stale: https://finance.yahoo.com/markets/stocks/most-active/ (index levels and prior closes did not match Monday's session)</li>
+<li>Fetch returned empty: https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html ; https://www.benzinga.com/trading-ideas/movers/26/11/62813712/12-information-technology-stocks-moving-tuesday-s-pre-market-session</li>
+<li>Blocked by fetch tool (URL not surfaced by search): https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html</li>
+</ul>
+<p class="note">Used via search-result summaries only (not fetched in full):</p>
+<ul class="src">
+<li>https://www.tribuneindia.com/news/business/us-job-openings-rise-to-7-52-million-in-september-quits-increase-to-3-4-million ; https://investinglive.com/news/jolts-job-openings-7-523m-vs-7-100m-estimate/</li>
+<li>https://www.tipranks.com/news/the-fly/stephens-upgrades-oracle-with-funding-questions-resolved-thefly-news ; https://www.benzinga.com/markets/offerings/26/11/62809460/oracle-turns-to-wall-street-for-20-billion-to-bankroll-its-ai-boom</li>
+<li>https://in.investing.com/news/stock-market-news/why-is-gartner-stock-sliding-today-93CH-5674877 ; https://www.gurufocus.com/news/9165583/gartner-inc-reports-q3-earnings-gaap-eps-at-335-and-revenue-of-15-billion-both-exceeding-analyst-estimates</li>
+<li>https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-premarket-stocks-slip-as-ai-jitters-us-midterms-keep-investors-on-edge/ (Apple −2.5% early; Shopify TSX −9.5%)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/servicenow-sinks-19-eps-miss-170202552.html ; https://stocktwits.com/news-articles/markets/equity/saas-stocks-stumble-as-ai-fears-trigger-selloff-retail-eyes-selective-bets/cmUu4hVR49H (software-sector context)</li>
+<li>Headlines seen in the Investing.com sidebar, not read: "Oil turns lower after Trump says he will halt $4 billion in funding to Israel"; "Rising shorts cool U.S. large-cap positioning, cutting liquidation risk: Citi"</li>
+<li>Prior context: alpha_report_2026-11-03_premarket.html (local archive); alpha_wrds_signals.csv (as_of 2026-09-17, stale, not used)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>

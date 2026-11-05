@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-11-05",
+    "session": "premarket",
+    "filename": "alpha_report_2026-11-05_premarket.html"
+  },
+  {
+    "date": "2026-11-04",
+    "session": "close",
+    "filename": "alpha_report_2026-11-04_close.html"
+  },
+  {
+    "date": "2026-11-04",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-11-04_afternoon.html"
+  },
+  {
+    "date": "2026-11-04",
+    "session": "midday",
+    "filename": "alpha_report_2026-11-04_midday.html"
+  },
+  {
+    "date": "2026-11-04",
+    "session": "open",
+    "filename": "alpha_report_2026-11-04_open.html"
+  },
+  {
+    "date": "2026-11-04",
+    "session": "premarket",
+    "filename": "alpha_report_2026-11-04_premarket.html"
+  },
+  {
+    "date": "2026-11-03",
+    "session": "close",
+    "filename": "alpha_report_2026-11-03_close.html"
+  },
+  {
+    "date": "2026-11-03",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-11-03_afternoon.html"
+  },
+  {
+    "date": "2026-11-03",
+    "session": "midday",
+    "filename": "alpha_report_2026-11-03_midday.html"
+  },
+  {
+    "date": "2026-11-03",
+    "session": "open",
+    "filename": "alpha_report_2026-11-03_open.html"
+  },
+  {
+    "date": "2026-11-03",
+    "session": "premarket",
+    "filename": "alpha_report_2026-11-03_premarket.html"
+  },
+  {
+    "date": "2026-11-02",
+    "session": "close",
+    "filename": "alpha_report_2026-11-02_close.html"
+  },
+  {
+    "date": "2026-11-02",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-11-02_afternoon.html"
+  },
+  {
+    "date": "2026-11-02",
+    "session": "midday",
+    "filename": "alpha_report_2026-11-02_midday.html"
+  },
+  {
+    "date": "2026-11-02",
+    "session": "open",
+    "filename": "alpha_report_2026-11-02_open.html"
+  },
+  {
     "date": "2026-11-02",
     "session": "premarket",
     "filename": "alpha_report_2026-11-02_premarket.html"
@@ -178,80 +253,5 @@
     "date": "2026-10-22",
     "session": "premarket",
     "filename": "alpha_report_2026-10-22_premarket.html"
-  },
-  {
-    "date": "2026-10-21",
-    "session": "close",
-    "filename": "alpha_report_2026-10-21_close.html"
-  },
-  {
-    "date": "2026-10-21",
-    "session": "afternoon",
-    "filename": "alpha_report_2026-10-21_afternoon.html"
-  },
-  {
-    "date": "2026-10-21",
-    "session": "midday",
-    "filename": "alpha_report_2026-10-21_midday.html"
-  },
-  {
-    "date": "2026-10-21",
-    "session": "open",
-    "filename": "alpha_report_2026-10-21_open.html"
-  },
-  {
-    "date": "2026-10-21",
-    "session": "premarket",
-    "filename": "alpha_report_2026-10-21_premarket.html"
-  },
-  {
-    "date": "2026-10-20",
-    "session": "close",
-    "filename": "alpha_report_2026-10-20_close.html"
-  },
-  {
-    "date": "2026-10-20",
-    "session": "afternoon",
-    "filename": "alpha_report_2026-10-20_afternoon.html"
-  },
-  {
-    "date": "2026-10-20",
-    "session": "midday",
-    "filename": "alpha_report_2026-10-20_midday.html"
-  },
-  {
-    "date": "2026-10-20",
-    "session": "open",
-    "filename": "alpha_report_2026-10-20_open.html"
-  },
-  {
-    "date": "2026-10-20",
-    "session": "premarket",
-    "filename": "alpha_report_2026-10-20_premarket.html"
-  },
-  {
-    "date": "2026-10-19",
-    "session": "close",
-    "filename": "alpha_report_2026-10-19_close.html"
-  },
-  {
-    "date": "2026-10-19",
-    "session": "afternoon",
-    "filename": "alpha_report_2026-10-19_afternoon.html"
-  },
-  {
-    "date": "2026-10-19",
-    "session": "midday",
-    "filename": "alpha_report_2026-10-19_midday.html"
-  },
-  {
-    "date": "2026-10-19",
-    "session": "open",
-    "filename": "alpha_report_2026-10-19_open.html"
-  },
-  {
-    "date": "2026-10-19",
-    "session": "premarket",
-    "filename": "alpha_report_2026-10-19_premarket.html"
   }
 ]

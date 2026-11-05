@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-04 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style></head><body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Wednesday, November 4, 2026 &middot; Day after the US midterms &middot; AMD, Arista and Super Micro reported overnight</div>
+<p class="note">Automated run. The task is scheduled for ~7:30 AM ET, but this session ran from about <b>8:35 to 8:50 AM ET</b>. Pre-market quotes below are snapshots taken between ~5:25 and ~8:40 AM ET by different outlets, so the same stock can show different moves. Ranges are given where sources disagree. Index-futures levels come from Yahoo Finance's quote strip (~7:41 AM) and Investing.com's cash-index CFDs (~8:40 AM). <b>No verified pre-market print was found</b> for AAPL, MSFT, GOOGL, AMZN, META, TSM, ASML, INTC, CRM or QCOM. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (48 days old, outside the ~14-day window), so this edition relies on public research only. Several fetches (CNBC, Benzinga, Bloomberg) returned empty pages, and the fetch tool was rate-limited twice; those items are cited from search-result summaries and labeled.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>Democrats won control of both the House and the Senate, and futures went from a sharp sell-off to a rally.</b> On the first results, Nasdaq-100 futures fell as much as <span class="dn">2.4%</span> and S&amp;P 500 futures as much as <span class="dn">1.4%</span> (Bloomberg/Reuters via search summaries). By morning both had reversed. Yahoo's quote strip (~7:41 AM) showed S&amp;P futures at <b>7,670</b> (<span class="up">+0.96%</span>), Dow futures <span class="up">+1.70%</span>, Russell 2000 futures <span class="up">+1.48%</span> and Nasdaq futures only <span class="up">+0.44%</span>. Investing.com's cash CFDs (~8:40 AM) read about the same: US 30 <span class="up">+1.87%</span>, US 500 <span class="up">+0.97%</span>, US Tech 100 <span class="up">+0.36%</span>. <b>The rebound is led by the Dow and small caps, with tech lagging.</b> Analysts cite three reasons for the recovery: President Trump's conciliatory call (paired with a warning he'd "just veto everything"), the expectation of gridlock, and the fact that the new Congress isn't seated until January (TheStreet, Capital.com). The VIX fell to ~18.3–18.5 (<span class="up">−11–12%</span>). The 10-year yield eased to ~<b>4.92%</b> (about −3 bp from Tuesday's 4.958%; TipRanks, Investing.com). The dollar index fell 0.6% to ~101.1. Gold rose ~3% to ~$4,050–4,060 and silver +4.3% (Investing.com, Yahoo). WTI fell to ~$94.5 (−1.5–1.7%) on signs of US–Iran diplomacy, even though the IRGC reported four tankers on fire after hitting mines in the Strait of Hormuz (TheStreet). Bitcoin was ~$78.2K.</p>
+<p><b>Asia:</b> Japan bore the brunt. The <b>Nikkei 225</b> was down as much as 3.6–4.8% intraday, its lowest since July 29, then recovered to close <span class="dn">−1.42%</span> at 62,188.63 (Topix −0.89%). AI supply-chain names led the decline: Advantest fell ~6–8%, Tokyo Electron ~5–6% and SoftBank ~7–9% intraday (Reuters via The Star; Capacity). China rallied: the Shanghai Composite rose <span class="up">+2.16%</span>, Shenzhen <span class="up">+3.15%</span> and the CSI 300 <span class="up">+2.31%</span>. The Hang Seng gained <span class="up">+1.67%</span>, the KOSPI <span class="up">+0.62%</span> and India's Nifty 50 <span class="up">+0.63%</span> (TipRanks, Fortune). <b>Europe:</b> the Stoxx 600 rose <span class="up">+1.05–1.14%</span> and the FTSE 100 <span class="up">+0.76–0.85%</span> in early trade, led by renewables (Fortune, TipRanks). <b>Tuesday's US close for reference:</b> S&amp;P 500 7,568.92 (+0.36%), Nasdaq +0.83%, Dow 51,786.72 (−0.38%). <b>Tone:</b> a relief rally with a clear rotation. Industrials, small caps, renewables, health care and precious metals are bid. AI-infrastructure builders (neoclouds, data-center developers) and the Musk-linked stocks are being sold on policy risk. AMD's earnings, on the other hand, are holding up chip designers.</p>
+
+<h2>2. Today's Economic Calendar &amp; Key Events</h2>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>Event</th><th>Consensus / result</th><th>Why it matters</th></tr>
+<tr class="sec"><td colspan="4">Economic data</td></tr>
+<tr><td class="n">7:00 AM</td><td>MBA mortgage applications (wk ended Oct. 30)</td><td>Prior +3.4%</td><td>Housing demand with the 10-year near 4.9%</td></tr>
+<tr><td class="n">8:15 AM</td><td><b>ADP private payrolls (Oct.)</b>: <b>released</b></td><td><span class="up">+86K</span> vs. ~65–75K est. (CNBC: Dow Jones est. 75K). Sept. revised to 86K from 90K. Pay growth: job-stayers 3.2% (base), job-changers 4.8%. Professional &amp; business services −27K; information −2K</td><td>A modest beat, consistent with the "low hire, low fire" pattern. It sets up Friday's NFP (est. +65K, unemployment 4.2%)</td></tr>
+<tr><td class="n">8:30 AM</td><td>Trade balance (Sept.)</td><td>Est. ~−$108B (Trading Economics); prior −$105.6B. Result not yet found</td><td>Q3 GDP net-export revisions</td></tr>
+<tr><td class="n">Wed. (time unverified)</td><td>Treasury quarterly refunding statement</td><td>n/a</td><td>Coupon sizes matter with the 30-year at ~5.30%</td></tr>
+<tr><td class="n">9:45 AM</td><td>S&amp;P Global US services / composite PMI (Oct. final)</td><td>Prior 57.9 / 57.6</td><td>Second read on services</td></tr>
+<tr><td class="n">10:00 AM</td><td><b>ISM Services PMI (Oct.)</b></td><td>Est. 54.7–54.8 vs. 54.9 prior. New orders est. 58.8 (prior 59.8); employment est. 50 (prior 50.1). A ~75 sub-index (likely prices paid) is listed by Yahoo.</td><td>Key intraday macro risk: prices paid vs. a Fed leaning hawkish</td></tr>
+<tr><td class="n">—</td><td>Fed</td><td>No FOMC this week (held 3.75–4.00% on Oct. 28, with two hawkish dissents). No Fed speakers verified for today</td><td>—</td></tr>
+<tr class="sec"><td colspan="4">Earnings before the open (reported)</td></tr>
+<tr><td class="n">Pre-mkt</td><td>Datadog (DDOG)</td><td>Beat ($0.81 vs. $0.64; rev. $1.20B), but Q4 rev. guide $1.19–1.20B implies flat-to-down q/q</td><td>Stock <span class="dn">−19%</span>; software sentiment</td></tr>
+<tr><td class="n">Pre-mkt</td><td>Novo Nordisk (NVO)</td><td>EPS DKK 5.79 vs. 5.10 est.; raised FY26 outlook (CNBC via search)</td><td>Stock <span class="up">+5–6%</span>; health care leading</td></tr>
+<tr><td class="n">Pre-mkt</td><td>Uber (UBER)</td><td>Q3 profit and revenue beat; gross bookings +20%; FY EPS guide midpoint below consensus</td><td>Roughly flat to slightly higher</td></tr>
+<tr><td class="n">Pre-mkt</td><td>CVS Health (CVS)</td><td>Revenue $108.4B; FY26 adj. EPS guide raised to ≥$8.20</td><td><span class="dn">−0.3% to −1.7%</span> (sources differ)</td></tr>
+<tr><td class="n">Pre-mkt</td><td>McDonald's (MCD), Emerson (EMR), Cencora, Kraft Heinz</td><td>MCD: Yahoo headline says Q3 sales growth slowed in a tough consumer environment (details not verified)</td><td>Consumer read-through</td></tr>
+<tr class="sec"><td colspan="4">After the close</td></tr>
+<tr><td class="n">~4:05 PM / 4:45 PM call</td><td><b>Qualcomm (QCOM)</b>, fixed watchlist</td><td>Consensus EPS ~$1.46 (StockTitan/Nasdaq, per yesterday's edition); options imply <b>±11%</b> (EarningsWatcher)</td><td>Handset demand and memory-cost commentary (candidate 7)</td></tr>
+<tr><td class="n">After close</td><td>Arm (ARM), AppLovin (APP), McKesson (MCK), MercadoLibre (MELI), Motorola Solutions (MSI), Snap, AMC, Allstate, MetLife, Manulife</td><td>—</td><td>Arm is a second chip-IP read after AMD</td></tr>
+<tr class="sec"><td colspan="4">Other events</td></tr>
+<tr><td class="n">Today</td><td>Oracle's ~$10B share offering ($116) and ~$10B notes expected to settle</td><td>ORCL <span class="dn">~−1.2%</span> pre-market</td><td>Candidate 3</td></tr>
+<tr><td class="n">Fri., Nov. 6, 8:30 AM</td><td>October jobs report</td><td>NFP est. +65K; private +64K; unemployment 4.2%</td><td>The week's main macro event</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">Moves are vs. Tuesday's (Nov. 3) close. Closing prices are from Investing.com's quote widgets. Different outlets captured different times between ~5:25 and ~8:40 AM ET, hence the ranges.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt move</th><th>Catalyst / note</th></tr>
+<tr class="sec"><td colspan="3">Fixed watchlist</td></tr>
+<tr><td>AMD</td><td class="n"><span class="up">+5.7% to +7.3%</span> (~$512–519 vs. $483.90)</td><td>Q3 beat; Q4 guide ~$17B ±3%; CEO Lisa Su sees 2027 revenue growth <b>above 80%</b> vs. 77% LSEG consensus. One Investing.com summary said it had slipped from its &gt;7% peak.</td></tr>
+<tr><td>TSLA</td><td class="n"><span class="dn">−4.4% to −5.9%</span> (~$379–381 vs. $398.50)</td><td>Musk's political exposure after the Democratic sweep; congressional scrutiny of a possible Tesla–SpaceX merger; Texas governor race</td></tr>
+<tr><td>NVDA</td><td class="n"><span class="up">+0.4% to +1.2%</span></td><td>Fell &gt;1% in early trading (Yahoo) before turning positive with AMD (TipRanks, KuCoin). Closed $206.69</td></tr>
+<tr><td>AVGO</td><td class="n"><span class="up">~+1.0%</span></td><td>Moved up with AI chip designers (TipRanks)</td></tr>
+<tr><td>ORCL</td><td class="n"><span class="dn">~−1.2%</span></td><td>Gives back part of Tuesday's +5.85% (close $126.19); data-center policy risk; offerings settle today</td></tr>
+<tr><td>MU</td><td class="n"><span class="dn">&gt;−1%</span> (early)</td><td>Yahoo (~7 AM) grouped it with chip names under early pressure; no later print. Closed $855.10</td></tr>
+<tr><td>MSFT / AMZN</td><td class="n">Mixed</td><td>KuCoin/Markets Today: "trading mixed"; no exact %</td></tr>
+<tr><td>AAPL, GOOGL, META, TSM, ASML, INTC, CRM, QCOM</td><td class="n">n/a</td><td>No verified print. QCOM reports after the close. Yahoo highlighted a "blue wave upside" case for Apple</td></tr>
+<tr class="sec"><td colspan="3">Notable movers outside the watchlist</td></tr>
+<tr><td>DDOG</td><td class="n"><span class="dn">−19%</span></td><td>Beat, but the Q4 revenue guide implies a sequential decline (Investing.com)</td></tr>
+<tr><td>DJT</td><td class="n"><span class="dn">−7.4% to −11%</span></td><td>Unwinding the "Trump trade" (Investing.com $5.51; CNBC −11%)</td></tr>
+<tr><td>SPCX (SpaceX)</td><td class="n"><span class="dn">−4.7% to −7%</span></td><td>Musk-linked election risk; TheStreet had $133.92 (−5.2%)</td></tr>
+<tr><td>CRWV / IREN / NBIS / APLD</td><td class="n"><span class="dn">−3 to −7% / ~−6% / −1.3 to −5% / ~−3%</span></td><td>Neoclouds and data-center developers: permitting and policy risk (CNBC, Investing.com)</td></tr>
+<tr><td>SMCI</td><td class="n"><span class="up">+7–8%</span></td><td>Sept.-quarter revenue <b>$19.9B</b> (+298% y/y) vs. $16.26B est.; next-quarter guide $19.5–21.5B vs. $17.51B; FY guide $72–82B vs. $70.27B</td></tr>
+<tr><td>ANET</td><td class="n"><span class="up">+6% to +10%</span> (after hours)</td><td>Q3 revenue $3.66B (+58.5%) vs. $3.33B; Q4 guide $3.9–4.0B vs. $3.6B; initial FY27 guide ~+39%. Pre-market print not verified</td></tr>
+<tr><td>NVO</td><td class="n"><span class="up">+5.3% to +6%</span></td><td>Beat and raised its FY26 outlook on GLP-1 sales</td></tr>
+<tr><td>FSLR / RUN / CSIQ / SEDG</td><td class="n"><span class="up">~+8% / +8.6% / +7% / +3%</span></td><td>Renewables rally on the change in congressional control</td></tr>
+<tr><td>DUOL</td><td class="n"><span class="up">+14%</span> ($146)</td><td>User growth; upbeat guidance; monetization push planned for 2027</td></tr>
+<tr><td>GEO</td><td class="n"><span class="dn">−6.3%</span></td><td>Election read-through ahead of Thursday's earnings</td></tr>
+<tr><td>UBER / CVS</td><td class="n">~flat / <span class="dn">−0.3 to −1.7%</span></td><td>Both beat; mixed guidance (see calendar)</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">Research observations only: names worth watching at the 9:30 AM open. They are not recommendations to buy or sell.</p>
+
+<div class="card"><h3>1. AMD: the beat and raise holds up through an AI-policy scare. <span class="up">+5.7% to +7.3%</span></h3>
+<p><b>Thesis:</b> AMD is the clearest idiosyncratic catalyst in the fixed watchlist. Q3 revenue was a record $13.4B (+45% y/y) vs. ~$13.1B expected. Adj. EPS was $2.09 vs. $1.95. Data Center revenue rose 97% to ~$8.5B vs. ~$8.2B expected. The Q4 guide of ~$17B ±3% is above the ~$16.2–16.3B consensus even at the low end. On the call, Lisa Su put <b>2027 revenue growth above 80%</b>, ahead of the 77% LSEG consensus (Reuters via Investing.com). What makes it notable is that it is holding a ~6–7% gain on a morning when Democratic control of Congress and a Texas governor pledging a data-center moratorium hit almost every other AI-infrastructure name. The market appears to be separating "who sells the chips" from "who builds the buildings." The key test at the open is whether AMD holds above roughly $500–505 (≈+3.5–4.5%), or whether it fades again as it did after its last two reports.</p>
+<p><b>Evidence:</b> AMD Q3 release (prior edition). Investing.com pre-market movers (+7.3%, 2027 &gt;80% vs. 77% LSEG, ~$58B of added market value if held). TheStreet live blog (+5.73% at 7:36 AM). TipRanks (+6.2%; analyst moves listed include JPMorgan PT raised to $575 from $550 and UBS PT trimmed to $700 from $730). MoneyCheck (~$518). Yahoo live blog (+6%).</p>
+<p><b>Risks:</b> AMD has reversed lower after beating on each of its last two reports. The Q4 gross-margin guide steps down to ~55% from 56%. Gaming fell 40%, and memory costs are pressuring PCs. One Investing.com summary already described the stock slipping from its &gt;7% peak. The stock is up ~126% YTD, which leaves room for "sell the news." If the 10 AM ISM prices component runs hot, long-duration semis could lose their bid.</p>
+<p><span class="conf">Confidence: Medium (stays green at the open). Low (holds the full gap through the close)</span></p></div>
+
+<div class="card"><h3>2. Tesla (TSLA): a political-risk discount on the Musk-linked stocks. <span class="dn">−4.4% to −5.9%</span>; SpaceX (SPCX) <span class="dn">−4.7% to −7%</span></h3>
+<p><b>Thesis:</b> Tesla is the largest decliner in the fixed watchlist, and the reason is political, not fundamental. Elon Musk spent a record ~$474M on the 2026 midterms (TheStreet) and more than $250M with Republican-aligned groups in Q3 alone (TipRanks). Democratic control of both chambers creates a platform for investigations of Trump's allies, and Yahoo named Musk specifically. It also adds friction to the proposed Tesla–SpaceX combination; one analyst told the WSJ Congress "could slow it down via extra scrutiny." Both companies are based in Texas, which just elected a Democratic governor. The question at the open is whether this is a one-day de-risking that buyers step into (Congress isn't seated until January, and Trump retains the veto) or the start of a longer derating of the "Musk premium." An Investing.com headline says Morgan Stanley turned bullish on SpaceX this morning (details not verified), which could limit the downside on the Musk-linked group.</p>
+<p><b>Evidence:</b> TheStreet live blog (TSLA $378.93, −4.91%; SPCX $133.92, −5.23% at 7:09 AM). Yahoo/Fast Company/CoinCentral via search (−4.4% to −5.5%). CNBC pre-market headline via search (Tesla nearly −6%, SpaceX more than −7%). TipRanks (−4.4% / −4.7%). Yahoo live blog (Democratic agenda targeting Trump's allies).</p>
+<p><b>Risks:</b> Gaps driven by political headlines often partially fill once cash trading starts, especially with the S&amp;P futures up ~1%. Tesla is heavily owned by retail investors and tends to move further than expected in both directions. Nothing in Tesla's operating outlook changed overnight.</p>
+<p><span class="conf">Confidence: Medium (underperforms the S&amp;P today). Low (direction from the open)</span></p></div>
+
+<div class="card"><h3>3. The AI build-out split: data-center developers sold, chip designers bought. CRWV <span class="dn">−3 to −7%</span>, IREN <span class="dn">~−6%</span>, ORCL <span class="dn">~−1.2%</span> vs. NVDA <span class="up">+0.4–1.2%</span>, AVGO <span class="up">+1%</span></h3>
+<p><b>Thesis:</b> The election's main market effect is a new <b>political risk premium on the physical AI build-out</b>. Texas, which accounts for more than 25% of planned US data-center capacity by 2030 (Yahoo), elected a governor who pledged a moratorium on new data-center construction. Before the vote, Reuters counted <b>41 local ballot measures in 10 states</b> aimed at curbing data centers, and Ballotpedia noted that every such measure decided earlier this year went against development. Results for those measures were not yet compiled. Investors are also weighing tighter AI regulation, changes to tech tax incentives and antitrust scrutiny (Investing.com). That hits the companies that need permits and power: neoclouds, data-center REITs and developers, and Oracle, whose $20B stock-and-debt raise settles <b>today</b>. Japan's AI supply chain (Advantest, Tokyo Electron, SoftBank) took a 5–9% hit intraday. Chip designers with fresh demand evidence (AMD, Super Micro and Arista overnight) are holding up. Watch whether the spread between developers and chip designers widens after the open or closes as investors decide policy changes are slow and mostly local.</p>
+<p><b>Evidence:</b> Investing.com pre-market movers (CRWV, APLD, NBIS, ORCL figures; regulatory concerns). CNBC pre-market headline via search (CRWV −7%, IREN −6%, NBIS ~−5%). TipRanks (NVDA +1.2%, AVGO +1.0%; Hinojosa moratorium pledge). Yahoo live blog (Texas &gt;25% of planned capacity). Reuters via bdnews24 and Axios (41 ballot measures). Capacity and The Star (Nikkei AI names).</p>
+<p><b>Risks:</b> Neoclouds closed +7% on Tuesday (CRWV, NBIS), so part of today's drop just retraces that gain. Federal policy will take months to change, and the gridlock argument cuts both ways. Nvidia was down more than 1% earlier this morning, so the chip-designer bid is not secure if Nasdaq futures slip again.</p>
+<p><span class="conf">Confidence: Medium (the theme shapes today's AI tape). Low (persistence beyond this week)</span></p></div>
+
+<div class="card"><h3>4. Hard numbers vs. political fear: Super Micro (SMCI) <span class="up">+7–8%</span> and Arista (ANET) <span class="up">+6–10%</span> after hours</h3>
+<p><b>Thesis:</b> The two overnight AI-hardware reports were both large beats with strong guides. <b>Super Micro</b> reported Sept.-quarter revenue of <b>$19.9B</b> (+298% y/y), above both the $16.26B consensus and its own $18.5–19.5B preannouncement. Adjusted gross margin rose to 12.8% from 9.5%. The next-quarter guide ($19.5–21.5B) and the full-year guide ($72–82B, up from the $65–72B it gave in July) are both well above consensus. <b>Arista</b> grew revenue 58.5%, its fastest since the IPO, guided Q4 to $3.9–4.0B vs. $3.6B, raised FY26 for the fourth time to $13.3B, and gave an initial FY27 outlook of ~39% growth. Melius raised its PT to $305 and Morgan Stanley to $230 (the latter citing an expanded TAM of more than $220B). The question for the open is whether order books like these outweigh the policy narrative in candidate 3. If SMCI and ANET hold their gaps while CRWV and IREN stay weak, it confirms the split described there.</p>
+<p><b>Evidence:</b> Investing.com pre-market movers (SMCI figures, +7%). TipRanks headline ("nearly 8%"). Investing.com and Benzinga via search (ANET results, +6% / +10.2% to $187 after hours; Melius and Morgan Stanley PTs).</p>
+<p><b>Risks:</b> SMCI's 12.8% gross margin is thin, the stock has a history of disclosure and governance problems, and it is volatile. Arista's after-hours range (+6% to +10%) suggests the reaction hasn't settled. Both depend on hyperscaler and neocloud capex, which is exactly what the election may slow.</p>
+<p><span class="conf">Confidence: Medium (both open higher). Low (both hold their full gaps)</span></p></div>
+
+<div class="card"><h3>5. The rotation: Dow futures <span class="up">+1.7–1.9%</span>, Russell <span class="up">+1.5%</span> vs. Nasdaq <span class="up">+0.1–0.4%</span>; renewables and health care leading</h3>
+<p><b>Thesis:</b> Underneath the headline rebound, investors are rotating. Dow and small-cap futures are up ~4× as much as Nasdaq futures. Renewables are surging: First Solar +8%, Sunrun +8.6% and Canadian Solar +7%, and European renewables led Europe's open. Health care is bid, led by Novo +5–6%. Gold is +3% and silver +4%. Defense stocks were reported lower (TipRanks). Long yields eased ~3 bp, which helps the rate-sensitive groups that lagged Tuesday (homebuilders −2%, the Dow −0.4%). The open will show whether this is a durable shift into "gridlock beneficiaries" or a one-session reaction to the result. The 10 AM ISM Services report and today's Treasury refunding statement are the two things that could move yields enough to reverse it.</p>
+<p><b>Evidence:</b> Yahoo quote strip (~7:41 AM). Investing.com CFDs (~8:40 AM). Bloomberg via search (S&amp;P +0.8%, NQ +0.1% at 7:57 AM). Investing.com pre-market movers (renewables). TipRanks (health care up, defense down; 10-year 4.92%). Fortune (Europe). Prior close edition (Tuesday's sector moves).</p>
+<p><b>Risks:</b> On past midterm nights, futures have reversed in both directions (2018 and 2022). If ISM prices paid is hot, yields could jump back toward 5%. Energy policy changes take time, and renewables have rallied on headlines before without follow-through.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p></div>
+
+<div class="card"><h3>6. Datadog (DDOG): a beat with a flat guide. <span class="dn">−19%</span>; read-through to CRM and software</h3>
+<p><b>Thesis:</b> Datadog beat easily: EPS $0.81 vs. $0.64, revenue $1.20B (+35%) vs. $1.14B, and adj. operating margin 28%. It also raised full-year guidance above consensus. But the Q4 revenue guide of $1.19–1.20B is <b>at or below the quarter it just reported</b>, and the market is treating that as a growth stall. That fits this week's pattern of punishing any deceleration in software or IT services: Gartner fell 13% and Dynatrace 11.6% on Tuesday on guides and margins. Salesforce (fixed watchlist; no pre-market print found) is the large-cap software name most exposed to the same "AI is eating seat-based software" worry. Watch whether DDOG finds buyers near the ~−19% level or extends lower, and whether CRM trades heavy despite a positive tape.</p>
+<p><b>Evidence:</b> Investing.com (DDOG results and guide, published 7:24 AM). Prior close edition (IT and DT moves).</p>
+<p><b>Risks:</b> Datadog has guided conservatively in the past. A 19% gap on a beat-and-raise year can attract buyers looking for value. Read-through to CRM is inference, not reported news.</p>
+<p><span class="conf">Confidence: Medium (DDOG remains a heavy name today). Low (CRM read-through)</span></p></div>
+
+<div class="card"><h3>7. Qualcomm (QCOM) into tonight's print: options imply <b>±11%</b>, with memory costs the swing factor</h3>
+<p><b>Thesis:</b> QCOM reports after the close. Options price a ±11% move, against a 10-year average peak move of ~±7.5% (EarningsWatcher). The read-across from this week is mixed. On the AI side, AMD's data-center commentary is strong. On the device side, memory cost inflation is squeezing handsets and PCs. Apple guided December-quarter gross margin below consensus on memory costs. Intel expects the PC market to shrink ~12% this year and ~10% in 2027. AMD's gaming revenue fell 40%. Expect QCOM to trade cautiously through the day, keyed to sector moves, before the binary event.</p>
+<p><b>Evidence:</b> EarningsWatcher (implied move, report timing). Prior editions (consensus EPS ~$1.46; Apple and Zebra memory-margin commentary). The Next Web via search (Intel PC outlook).</p>
+<p><b>Risks:</b> A ±11% implied move means direction is close to a coin flip, and the pre-print drift tells you little.</p>
+<p><span class="conf">Confidence: Low (direction). High (above-normal move after the print)</span></p></div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Omitted. alpha_wrds_signals.csv is dated <b>2026-09-17</b> (48 days old, outside the ~14-day freshness window) and covers only 10 tickers, so it was not used. Refreshing the WRDS export would restore this section.</p>
+
+<h2>6. Sources</h2>
+<p class="note">Pages fetched and used:</p>
+<ul class="src">
+<li>https://www.tipranks.com/news/stock-market-today-nov-4-futures-rise-after-democrats-sweep-midterm-elections (futures as of 5:25 AM; 10-year 4.92%; oil; Asia closes; Texas governor; AMD after-hours)</li>
+<li>https://ca.investing.com/news/stock-market-news/premarket-movers-trump-media-ai-infrastructure-stocks-fall-amd-jumps-4929238 (published 7:06 AM: futures at 6:02 AM; DJT, renewables, CRWV/APLD/NBIS/ORCL, AMD 2027 outlook, SMCI results and guidance, GEO)</li>
+<li>https://www.tipranks.com/news/ai-chip-stocks-nvda-amd-and-others-rise-despite-democratic-win-amds-strong-forecast-fuels-optimism (AMD +6.2%, NVDA +1.2%, AVGO +1.0%, MRVL +0.4%; TSLA/SPCX; Musk donations; AMD PT headlines)</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026 (live blog to 7:36 AM: Trump comments, Capital.com quote, AMD +5.73%, TSLA/SPCX prices, oil, Hormuz)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-091834396.html (futures quote strip ~7:41 AM; economic and earnings calendar; Texas data-center share; early NVDA/MU weakness)</li>
+<li>https://www.investing.com/news/earnings/datadog-stock-tumbles-19-despite-earnings-beat-4998913 (DDOG results and guidance; page quote widgets: cash CFDs, VIX, DXY, oil, gold, silver, yields, Nov. 3 closing prices)</li>
+<li>https://www.kucoin.com/news/insight/NVDA/6aeb15d1bbcb52000745c93c (Markets Today pre-market overview: early futures, NVDA +0.4%, MSFT/AMZN mixed, CRWV −3.5%)</li>
+</ul>
+<p class="note">Used via search-result summaries only (not fetched in full, or fetch failed / rate-limited):</p>
+<ul class="src">
+<li>https://www.bloomberg.com/news/articles/2026-11-04/us-equity-futures-inch-higher-as-investors-await-midterm-results (S&amp;P +0.8%, NQ +0.1% at 7:57 AM; overnight lows; fetch empty)</li>
+<li>https://www.cnbc.com/2026/11/04/stocks-making-the-biggest-moves-premarket-djt-tsla-crwv-nvo.html (DJT −11%, TSLA/SpaceX, CRWV/IREN/NBIS, NVO; fetch empty)</li>
+<li>https://www.cnbc.com/2026/11/04/private-companies-added-86000-jobs-in-october-slightly-higher-than-expected-adp-says.html ; https://mediacenter.adp.com/2026-11-04-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-86,000-Jobs-in-October (ADP October)</li>
+<li>https://fortune.com/2026/11/04/midterms-elections-stock-markets-stunning-rebuke-trump-accept-loss-vote ; https://fortune.com/2026/11/04/ceos-playbook-midterm-elections-trump-rebuke (Europe and Asia early levels)</li>
+<li>https://thestar.com.my/business/business-news/2026/11/04/japan039s-nikkei-drops-3-as-democratic-gains-in-us-midterms-hit-ai-stocks ; https://capacityglobal.com/news/fibre-makers-slide-as-us-midterms-rattle-tokyo-ai-supply-chain/ ; https://rallies.ai/news/nikkei-slides-to-3-month-low-as-ai-stocks-tumble-on-us-election-jitters-ee9056e8062627d5 (Nikkei intraday and close; Advantest, TEL, SoftBank)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/tesla-shares-fall-4-5-115939047.html ; https://www.fastcompany.com/91635413/spacex-tesla-stocks-fall-midterm-elections-markets-rise-why ; https://www.tipranks.com/news/why-are-elon-musks-tesla-and-spacex-stocks-falling-in-premarket-after-democrats-win-midterm-elections-november-4 (Tesla pre-market, merger scrutiny)</li>
+<li>https://www.investing.com/news/stock-market-news/spacex-tesla-slide-as-election-risks-mount-morgan-stanley-turns-bullish-4998990 (headline only; fetch rate-limited)</li>
+<li>https://www.investing.com/news/stock-market-news/us-stock-futures-steady-with-midterms-in-focus-amd-rallies-on-strong-earnings-4997029 (AMD "slipped from &gt;7%"; fetch rate-limited)</li>
+<li>https://www.theglobeandmail.com/investing/article-amd-shares-jump-as-ai-driven-data-centre-strength-fuels-growth-outlook/ ; https://moneycheck.com/amd-stock-pops-after-q3-beat-and-upbeat-2027-outlook/ (AMD pre-market, 2027 outlook, segment beats)</li>
+<li>https://www.investing.com/news/earnings/arista-networks-shares-jump-on-upbeat-q3-results-strong-guidance-4996417 ; https://www.benzinga.com/markets/earnings/26/11/62846356/arista-networks-stock-pops-on-q3-earnings-beat-strong-q4-guidance ; https://investing.com/news/analyst-ratings/melius-raises-arista-networks-stock-price-target-on-strong-growth-93CH-4998552 ; https://investing.com/news/analyst-ratings/morgan-stanley-raises-arista-networks-price-target-on-tam-expansion-93CH-4998462 (Arista)</li>
+<li>https://ca.investing.com/news/earnings/uber-q3-profit-revenue-beat-estimates-as-gross-bookings-jump-20-4929354 ; https://investing.com/news/earnings/cvs-health-beats-estimates-raises-guidance-amid-split-plans-4998598 ; https://www.chartmill.com/news/CVS/Chartmill-57737-CVS-Health-NYSECVS-Earnings-Beat-Tests-Raised-Guidance-and-Healthcare-Split (Uber, CVS)</li>
+<li>https://www.benzinga.com/trading-ideas/movers/26/11/62854845/duolingo-plans-monetization-push-in-2027-after-strong-user-growth (DUOL; fetch empty)</li>
+<li>https://bdnews24.com/world/americas/2kbx8xa3at ; https://www.axios.com/2026/10/31/ai-booms-political-reckoning (41 data-center ballot measures, pre-election)</li>
+<li>https://finviz.com/calendar/economic?dateFrom=2026-11-02 ; https://tradingeconomics.com/united-states/calendar ; https://www.bea.gov/news/schedule (ISM and trade-balance consensus, timing)</li>
+<li>https://earnings-watcher.com/wiki/qcom-earnings-november-2026 (QCOM implied move)</li>
+<li>https://thenextweb.com/news/intel-q3-2026-outlook-pc-slump-memory-shortage (Intel PC-market outlook)</li>
+<li>Prior context: alpha_report_2026-11-03_close.html (local archive); alpha_wrds_signals.csv (as_of 2026-09-17, stale, not used)</li>
+</ul>
+<p class="note">Fetched or found but discarded as stale or unverified: https://stockanalysis.com/markets/premarket/ (cached Jul. 18, 2025 data); search results for SMCI fiscal quarters (2025 and July 2026 reports, not today's); McDonald's search results (Q3 2025); an Amdocs "−40%" pre-market figure from a screener summary (no dated confirmation found).</p>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
