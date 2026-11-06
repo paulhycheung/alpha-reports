@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-06 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Friday, November 6, 2026 &middot; Day after the Nasdaq-100's worst day since 2020 &middot; Hot October payrolls</div>
+<p class="note">Automated run. The task targets ~10:00 AM ET, but this session ran from about <b>11:05 AM ET</b>, so "current" figures are snapshots from roughly <b>10:55–11:05 AM ET</b> (about 90 minutes after the open, not 30). Opening-bell figures come from Reuters (9:39 AM), TheStreet (9:36 AM) and Investing.com (~9:40 AM). Snapshots from different outlets differ slightly; ranges are shown where they disagree. <b>No verified intraday print was found</b> for MSFT, TSM (ADR), ASML (ADR) or CRM. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (50 days old, outside the ~14-day window).</p>
+
+<h2>1. How the Open Traded</h2>
+<p><b>Payrolls:</b> October nonfarm payrolls came in at <b>+165K</b>, far above the ~59K–65K consensus. September was revised up to +60K (from +29K), and August and September combined were revised up by 84K. Unemployment fell to <b>4.1%</b> (4.2% expected), and wages rose 0.4% m/m (0.3% expected). A strong labor market keeps a <b>December Fed hike</b> on the table. The 10-year yield rose to ~4.86–4.88%.</p>
+<p><b>At the bell:</b> The Dow opened <span class="dn">−0.94%</span> (51,036.69), the S&amp;P 500 <span class="up">+0.26%</span> (7,373.17) and the Nasdaq Composite <span class="up">+1.23%</span> (24,614.53). The iShares semiconductor ETF (SOXX) was up <span class="up">+4.9%</span> by 9:40 AM. <b>By ~11:00 AM</b> the indices had firmed: S&amp;P 500 ~7,410–7,415 (<span class="up">+0.8%</span>), Nasdaq ~24,660–24,690 (<span class="up">+1.4% to +1.5%</span>), and the Dow back to <b>about flat</b> (~51,520–51,545). The Russell 2000 was up about 0.3–0.5%, and the VIX was down about 12–15% to ~24. Brent was ~$97, WTI ~$90, gold ~$4,064 (−1.2%) and bitcoin ~$75.6K.</p>
+<p><b>Tone:</b> The <b>rally broadened, but chips lost some of their opening gains</b>. Semis had their biggest gains in the first 10 minutes, then gave back part of them; memory faded most. Meanwhile, the platform mega-caps that were red pre-market (AAPL, MSFT/AMZN about flat) moved higher, and the Dow recovered almost all of its opening loss. The market took the hot jobs report calmly: yields rose, but stocks barely reacted (Investing.com). This looks less like a one-sector reflex bounce and more like broad short-covering and a drop in volatility. TheStreet's Rev Shark ("Don't Confuse a Bounce With a Bottom") and the ~$50B of vol-control selling cited pre-market are reasons to doubt it will last.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Pre-market column from this morning's Pre-Market Edition. "Early" is the ~9:40 AM print (Investing.com/Reuters); "~11 AM" is Yahoo Finance most-active and Investing.com quote snapshots, 10:55–11:05 AM ET. All moves vs. Thursday's close.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt</th><th>Early (~9:40)</th><th>~11 AM</th><th>Read</th></tr>
+<tr><td>MU</td><td class="up">+7.8% to +8.9%</td><td class="up">~+8%</td><td class="am">+4.5% to +4.9%</td><td><b>Partly filled.</b> Gave back about half the gap; the weakest of the flagged chip names.</td></tr>
+<tr><td>AMD</td><td class="up">+7.1% to +8%</td><td class="up">+11.2%</td><td class="up">+9.0% to +9.4%</td><td><b>Held and extended</b> past the pre-market level, even after slipping from its early high.</td></tr>
+<tr><td>INTC</td><td class="up">+4.7% to +6%</td><td class="up">~+8%</td><td class="up">+6.0% to +6.6%</td><td><b>Held</b> at the top of the pre-market range.</td></tr>
+<tr><td>NVDA</td><td class="up">+3.9% to +5%</td><td>—</td><td class="am">+3.9% to +4.0%</td><td><b>Held, at the low end.</b> Yahoo had it at about +6% near 10:00 AM, so it faded from the high.</td></tr>
+<tr><td>AVGO</td><td class="up">+4.4%</td><td class="up">&gt;+4%</td><td class="am">~+2.1%</td><td><b>Partly filled.</b> Lagging again, as flagged pre-market.</td></tr>
+<tr><td>LRCX</td><td class="up">+10% to +11%</td><td class="up">&gt;+10%</td><td class="up">+8.3% to +9.1%</td><td><b>Mostly held.</b> The buyback gap is only slightly filled.</td></tr>
+<tr><td>TSLA</td><td class="up">+1.7%</td><td class="up">+2.05% (9:13 indic.)</td><td class="up">+3.9% to +4.3%</td><td><b>Extended.</b> Better than the pre-market move.</td></tr>
+<tr><td>AAPL</td><td class="dn">−1.1% to −1.2%</td><td>—</td><td class="up">+0.3%</td><td><b>Reversed</b> from red to green. ET Markets had it at −0.94% around 10:27.</td></tr>
+<tr><td>META</td><td>~flat</td><td>—</td><td class="up">~+3.0%</td><td><b>Extended higher.</b></td></tr>
+<tr><td>GOOGL / AMZN</td><td>−0.1% / ~flat</td><td>—</td><td class="up">+1.6% / +1.3%</td><td><b>Reversed higher.</b></td></tr>
+<tr><td>NET</td><td class="up">+12.6% to +19.6%</td><td>—</td><td class="up">+13.3% (10:19)</td><td><b>Held</b> mid-range.</td></tr>
+<tr><td>ABNB</td><td class="up">+11% to +13.9%</td><td>—</td><td class="up">~+9.3%</td><td><b>Partly filled.</b></td></tr>
+<tr><td>DKNG</td><td class="dn">−20% to −26%</td><td>—</td><td class="dn">−27.9% to −28.3%</td><td><b>Extended lower.</b> Volume is about 2× its 3-month average.</td></tr>
+<tr><td>TEAM</td><td class="dn">−15% to −19%</td><td>—</td><td class="dn">−14.4% (10:19)</td><td><b>Small bounce</b> off the lows.</td></tr>
+<tr><td>AXON</td><td class="dn">−9%</td><td>—</td><td class="dn">−16% to −16.7%</td><td><b>Extended sharply lower.</b></td></tr>
+<tr><td>NTRA</td><td class="dn">−14% to −16.7%</td><td>—</td><td class="dn">−12.4% (10:19)</td><td><b>Small bounce.</b></td></tr>
+</table></div>
+<p class="note"><b>Scorecard:</b> Of the seven alpha candidates flagged pre-market, the Lam buyback (LRCX) and the AMD/AVGO mean-reversion idea mostly held, though the AVGO half lagged. NVDA held at the low end. The memory bounce (MU) was the weakest; the Asian memory weakness flagged pre-market showed up as a fade here too. The "platforms lag if chips hold" rotation call did <b>not</b> play out: both groups rose.</p>
+
+<h2>3. Opening Movers</h2>
+<p class="note">Moves vs. Thursday's close at ~10:55–11:05 AM ET (Yahoo Finance most-active; Investing.com quote strips). Volume is shares traded by about 11 AM vs. the 3-month average daily volume, where Yahoo showed it.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move</th><th>Volume note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>AMD</td><td class="up">+9.0% to +9.4%</td><td>21.6M vs 22.0M avg: <b>about a full day's volume in 90 minutes</b></td></tr>
+<tr><td>INTC</td><td class="up">+6.0% to +6.6%</td><td>66.1M vs 114.7M avg (~58%)</td></tr>
+<tr><td>MU</td><td class="up">+4.5% to +4.9%</td><td>22.4M vs 27.6M avg (~81%), heavy</td></tr>
+<tr><td>TSLA</td><td class="up">+3.9% to +4.3%</td><td>16.0M vs 37.8M avg (~42%)</td></tr>
+<tr><td>NVDA</td><td class="up">+3.9% to +4.0%</td><td>77.2M vs 116.1M avg (~67%), the most-active stock</td></tr>
+<tr><td>META</td><td class="up">~+3.0%</td><td>n/a</td></tr>
+<tr><td>QCOM</td><td class="up">+2.6% to +5.3%</td><td>Snapshots conflict (CNBC vs Google Finance, ~10:55)</td></tr>
+<tr><td>AVGO</td><td class="up">~+2.1%</td><td>n/a</td></tr>
+<tr><td>GOOGL</td><td class="up">~+1.6%</td><td>n/a</td></tr>
+<tr><td>AMZN</td><td class="up">~+1.3%</td><td>n/a</td></tr>
+<tr><td>ORCL</td><td class="up">~+1.0%</td><td>Faded from +3.1% early</td></tr>
+<tr><td>AAPL</td><td class="up">~+0.3%</td><td>13.8M</td></tr>
+<tr><td>MSFT, CRM, TSM, ASML</td><td>n/a</td><td>No verified intraday print this run</td></tr>
+<tr class="sec"><td colspan="3">Other notable movers</td></tr>
+<tr><td>IREN</td><td class="up">+17.3% to +20.2%</td><td>55.3M vs 47.7M avg: <b>above a full day's volume</b>. Strong fiscal Q1 2027 results and AI-cloud revenue growth.</td></tr>
+<tr><td>NET</td><td class="up">~+13.3%</td><td>Q3 beat; guidance raised</td></tr>
+<tr><td>ABNB</td><td class="up">~+9.3%</td><td>4.2M; beat, raised outlook, new buyback</td></tr>
+<tr><td>VST</td><td class="up">~+8.7%</td><td>4.2M; reported pre-market (power/AI read-through; details not verified)</td></tr>
+<tr><td>AKAM / APP / RKLB</td><td class="up">+8.4% / +7.6% / +9.0%</td><td>—</td></tr>
+<tr><td>SPCX (SpaceX)</td><td class="up">+5.9% to +6.7%</td><td>44.2M; FAA plans to streamline launch licensing. Scottish Mortgage cut its stake.</td></tr>
+<tr><td>SNDK / SKHY (ADR)</td><td class="up">+4.4% to +5.2% / +2.5%</td><td>SNDK faded from +11.3% early; memory is the weakest part of the chip bounce</td></tr>
+<tr><td>HIMS</td><td class="up">~+5.4% (9:53)</td><td>Lilly will sell Zepbound and Foundayo directly on the Hims &amp; Hers platform (Reuters)</td></tr>
+<tr><td>DKNG</td><td class="dn">−27.9% to −28.3%</td><td>26.6M vs 12.9M avg (~2×)</td></tr>
+<tr><td>AXON</td><td class="dn">−16% to −16.7%</td><td>Q3 miss; full-year 2026 outlook cut</td></tr>
+<tr><td>TEAM</td><td class="dn">~−14.4%</td><td>Sharp slowdown in growth outlook</td></tr>
+<tr><td>NTRA</td><td class="dn">~−12.4%</td><td>Wider loss; CEO change effective immediately</td></tr>
+<tr><td>MCHP</td><td class="dn">~−12.1%</td><td>13.7M. Day 2 after fiscal Q2 2027 results: revenue beat, but December-quarter revenue guided down ~1% q/q and gross margin to 64–65%.</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">Names worth investigating further, not recommendations. "Legs" means whether the opening move looks likely to continue into midday.</p>
+
+<div class="card">
+<h3>1. AMD: the hardest-hit name is holding its bounce on heavy volume <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="up">+9.0% to +9.4%</span> at ~11 AM vs <span class="up">+7.1% to +8%</span> pre-market. It peaked around +11.2% early, after falling about 17% Thursday.</p>
+<p><b>Thesis (looks like it has legs):</b> AMD is the only large-cap chip name trading <i>above</i> its pre-market level after the opening rush, while MU, AVGO and SNDK gave back much of theirs. It has already traded about its full 3-month average daily volume in 90 minutes, which suggests real buying and short-covering rather than a thin gap. TheStreet ties some of the bid to lasting enthusiasm after its Q3 report.</p>
+<p><b>Evidence:</b> Yahoo most-active (21.6M vs 22.0M avg, +9.01%); Investing.com (+11.2% early, +9.35% later); TheStreet (+10.77% at 10:19).</p>
+<p><b>Risks / what flips it:</b> AMD has the highest beta to the data-center-politics story. Goldman estimates about 45% of planned US data-center capacity faces possible restrictions. Pending vol-control and CTA selling could hit into the close. Watch whether it holds above the ~+7–8% pre-market zone. Losing that level would mean the opening gap has filled.</p>
+</div>
+
+<div class="card">
+<h3>2. Micron (MU) and memory: the bounce is fading <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="am">+4.5% to +4.9%</span> vs <span class="up">+7.8% to +8.9%</span> pre-market and about +8% just after the open. SNDK has followed the same path: +11.3% early, ~+4.4–5.2% now.</p>
+<p><b>Thesis (looks like a fade or relative weakness):</b> Memory led pre-market but is now the weakest part of the chip complex. Asia did not confirm the bounce: SK Hynix fell more than 10% and Samsung more than 6% in Seoul, and the SK Hynix ADR is only +2.5%. Volume is heavy (about 81% of a full day by 11 AM), so sellers are using the bounce to exit. Memory was the most crowded long in the AI trade (MU is still up ~176% over 52 weeks), which leaves the most positioning to unwind.</p>
+<p><b>Evidence:</b> Yahoo most-active (22.4M vs 27.6M avg); Investing.com's chip rebound article (early prints; Kospi and Hynix closes); this morning's Pre-Market Edition.</p>
+<p><b>Risks / what flips it:</b> A second leg higher in SOX in the afternoon would likely lift the highest-beta names fastest. MU trades at a low trailing P/E (~11.5), which tends to attract value buyers on dips.</p>
+</div>
+
+<div class="card">
+<h3>3. Platform mega-caps reversed higher (META, GOOGL, AMZN, AAPL) <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> META <span class="up">~+3%</span> (flat pre-market), GOOGL <span class="up">+1.6%</span> (−0.1%), AMZN <span class="up">+1.3%</span> (about flat), AAPL <span class="up">+0.3%</span> (−1.1% pre-market). The Dow went from <span class="dn">−0.94%</span> at the open to about flat.</p>
+<p><b>Thesis (looks like it has legs if the VIX keeps falling):</b> The pre-market setup implied money would rotate out of Thursday's "safe" names into chips. Instead, both groups are being bought. That is what a broad drop in volatility looks like: the VIX is down 12–15%, and systematic funds may slow their selling as volatility falls. Yahoo's analysis argues hyperscalers could gain an edge if stricter rules raise barriers to entry, much as Tesla did after EV subsidies ended. Yardeni calls Thursday's selloff a "buying opportunity" because already-permitted Texas projects can proceed.</p>
+<p><b>Evidence:</b> Investing.com quote strip (~11 AM); Reuters and ET Markets opening prints; Yahoo live blog (Yardeni, VIX history: after the eight prior 70% VIX spikes, the S&amp;P was higher 1 month later in 7 of 8 cases, +3.0% on average).</p>
+<p><b>Risks / what flips it:</b> A hot payrolls print means higher yields; the 10-year rising toward ~4.9% is a valuation headwind for long-duration stocks. Any new Democratic policy statements on data centers would hit hyperscalers' capex plans directly. Mega-cap moves of 1–3% on a big reflex day can easily reverse.</p>
+</div>
+
+<div class="card">
+<h3>4. Lam Research (LRCX): the buyback gap is holding <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="up">+8.3% to +9.1%</span> vs <span class="up">+10% to +11%</span> pre-market and more than +10% early. Applied Materials is up ~4.75% (more than +7% early).</p>
+<p><b>Thesis (looks like it has legs):</b> The $25B buyback (about 10% of market cap) gives the stock its own source of demand that doesn't depend on the broader tape. LRCX has given back only about 1–2 points of its gap, a better hold than most chip names. Volume (5.65M by about 11 AM) is notable for a stock that rarely makes the movers lists.</p>
+<p><b>Evidence:</b> Investing.com top gainers and chip article; Pre-Market Edition (buyback size, not yet confirmed against the company's 8-K).</p>
+<p><b>Risks / what flips it:</b> A buyback authorization isn't execution, and semi-equipment demand depends on the same AI-capex outlook. Peer AMAT is fading faster, which may weigh on LRCX if the whole group comes under pressure.</p>
+</div>
+
+<div class="card">
+<h3>5. AI infrastructure earnings are being rewarded: IREN, VST <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Move:</b> IREN <span class="up">+17% to +20%</span> (was +15% pre-market) on <b>more than a full day's volume</b>. Vistra <span class="up">~+8.7%</span>. CoreWeave <span class="up">+4.2%</span> (+7.5% early).</p>
+<p><b>Thesis (has legs for IREN; mixed elsewhere):</b> One day after a selloff driven by data-center politics, companies reporting real AI-cloud and power demand are being rewarded, and IREN has extended its gain since the open. That suggests the market is separating companies with demand in hand from those that only have plans. The pre-market edition flagged VST, OKLO and WULF as AI-infrastructure read-throughs. WULF is up only ~2.8% on heavy volume, which suggests the market is picking individual names rather than buying the group.</p>
+<p><b>Evidence:</b> TheStreet movers (IREN results); Yahoo most-active (IREN 55.3M vs 47.7M avg; WULF and CRWV); Investing.com top gainers (VST). <i>VST's and OKLO's actual results were not verified this run.</i></p>
+<p><b>Risks / what flips it:</b> IREN is down ~71% over 52 weeks, so part of this is a short squeeze in a crowded short. These are the stocks most exposed to permitting and local-opposition headlines. They also depend on capital markets for funding, and higher rates after payrolls raise their funding costs.</p>
+</div>
+
+<div class="card">
+<h3>6. Guidance-miss gaps are extending: DKNG, AXON (and MCHP on day two) <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> DKNG <span class="dn">−28%</span> (−20% to −26% pre-market) on about 2× its average daily volume. AXON <span class="dn">−16% to −16.7%</span> (−9% pre-market). MCHP <span class="dn">~−12%</span> on the second day after its guidance.</p>
+<p><b>Thesis (looks like it has legs):</b> On a day when the indices bounced, these gaps <i>widened</i> after the open. That is the opposite of the usual pattern where gaps fill, and it points to institutions selling rather than retail capitulation. Guidance cuts are being punished hardest: DKNG on 2027 EBITDA, AXON on its full-year 2026 outlook, MCHP on a December-quarter revenue guide of −1% q/q and lower gross margin (64–65%) despite beating revenue. In MCHP's case, it is falling while almost every other chip name is rising.</p>
+<p><b>Evidence:</b> Yahoo most-active (DKNG 26.6M vs 12.9M avg); TheStreet and Investing.com movers; MarketBeat and Microchip's 8-K (SEC) via search summaries for MCHP guidance.</p>
+<p><b>Risks / what flips it:</b> Moves of −15% to −30% on guidance often find buyers at round-number support by midday. MCHP's decline is now two days old and may be running out of sellers. Treat these as "monitor for exhaustion," not continuation.</p>
+</div>
+
+<div class="card">
+<h3>7. Tesla (TSLA): rose more after the open than before it <span class="conf">Confidence: Low</span></h3>
+<p><b>Move:</b> <span class="up">+3.9% to +4.3%</span> vs <span class="up">+1.7%</span> pre-market and +2.05% in the early indication.</p>
+<p><b>Thesis:</b> Tesla is one of the few flagged names trading better than its pre-market level. The Cybertruck wind-down at Giga Texas (to make room for Cybercab) is being read as moving capacity toward robotaxis. SpaceX is up ~6% after the FAA said it would streamline launch licensing, which may be helping Musk-linked sentiment.</p>
+<p><b>Evidence:</b> TheStreet (CNBC on Musk's post); Yahoo most-active (16.0M vs 37.8M avg, a moderate pace).</p>
+<p><b>Risks / what flips it:</b> Volume is only moderate, so conviction is limited. Scottish Mortgage (Baillie Gifford) disclosed that it sold its remaining Tesla shares. There are still no Cybercab volume figures.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used this edition. The only file, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (50 days old, outside the ~14-day window). Refresh the WRDS extract to bring momentum, volume and earnings-surprise factors back into this brief.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://www.investing.com/news/stock-market-news/nasdaq-opens-higher-as-chips-pare-losses-ratehike-fears-linger-5008634 (Reuters opening bell; page quote strips and movers lists ~11 AM)</li>
+<li>https://www.investing.com/news/stock-market-news/us-chip-stocks-rebound-sharply-after-thursdays-brutal-selloff-5007137 (early chip prints, Asia memory closes)</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-06-2026 (payrolls, opening bell, movers at 10:19, SpaceX, HIMS, TSLA)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html (index levels ~11:03 AM, payroll details, Yardeni, VIX history, chip moves)</li>
+<li>https://finance.yahoo.com/most-active (redirected to /markets/stocks/most-active/; prices and volume ~11:05 AM)</li>
+<li>https://fvbb.com/ns/us-stock-market-today-why-is-the-nasdaq-up-1/329137 (Economic Times syndication; ~10:27 AM index and NVDA/AAPL prints)</li>
+<li>https://www.marketbeat.com/instant-alerts/earnings-microchip-technology-nasdaq-mchp-announces-quarterly-earnings-results-2026-11-05/ (search summary)</li>
+<li>https://www.sec.gov/Archives/edgar/data/0000827054/000082705426000061/exhibit991q2fy27.htm (Microchip fiscal Q2 2027 release; search summary)</li>
+<li>https://www.google.com/finance/quote/QCOM:NASDAQ and https://www.cnbc.com/quotes/QCOM (QCOM snapshots; search summary, conflicting)</li>
+<li>Local archive: alpha_report_2026-11-06_premarket.html (pre-market levels and flagged names)</li>
+<li>Not retrievable this run: CNBC multi-quote page (returned empty); Yahoo large-cap screener (redirected to most-active); no dated Nov. 6 prints found for MSFT, CRM, TSM or ASML.</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
