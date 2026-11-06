@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-06 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Friday, November 6, 2026 &middot; Day 3 after the US midterms &middot; Morning after the Nasdaq-100's worst day since March 2020 &middot; October jobs report day</div>
+<p class="note">Automated run. The task targets ~7:30 AM ET, but this session ran from about <b>8:15 to 8:50 AM ET</b>. Pre-market quotes are snapshots from different outlets taken between ~5:35 and ~8:05 AM ET, so ranges are shown where they disagree. Futures come from Yahoo Finance's quote strip (~7:10 AM ET), checked against TipRanks (5:35 AM) and ZeroHedge/Bloomberg (8:05 AM). <b>The 8:30 AM October jobs report was released during this run, but no published figure could be retrieved</b> (searches returned only previews, and the BLS page could not be fetched), so only consensus is shown. <b>No verified pre-market print was found</b> for TSM (ADR), ASML (ADR), ORCL, CRM or QCOM; home-market moves are shown for TSMC and ASML. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (50 days old, outside the ~14-day window), so this edition has no WRDS section.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>Setup:</b> On Thursday the S&amp;P 500 closed at 7,353.73 (<span class="dn">−4.36%</span>), its worst day since April 2025. The Nasdaq Composite closed at 24,315.00 (<span class="dn">−5.52%</span>) and is now in a correction. The Nasdaq-100 fell <span class="dn">−6.4%</span>, its worst day since March 2020. The Dow fell to 51,523.06 (<span class="dn">−3.44%</span>), and the Philly semis index fell about <span class="dn">−10.7% to −12%</span>. About $2.3T of tech market value was erased. The trigger was fear that the Democrats' midterm sweep (House and Senate) would mean regulation that slows the AI data-center buildout. Voters rejected data centers in 40 of 41 local ballot measures. JPMorgan says levered ETFs sold about $60B into the close, and vol-control funds still have about $50B to sell over the next few days. Cboe printed its largest put-volume day on record.</p>
+<p><b>Asia was hit hardest overnight:</b> Japan's Nikkei 225 fell about <span class="dn">−6%</span> and is now in a bear market (Tokyo Electron, SoftBank and Kioxia opened with double-digit losses). Korea's Kospi fell as much as 8.8%, which triggered a 20-minute halt and briefly took it below 5,000; it closed about <span class="dn">−6%</span> at 5,059.69 (−11.7% for the week), with SK Hynix down more than 10%. Taiwan's Taiex fell as much as 9% and entered a bear market. TSMC fell <span class="dn">−4.7%</span>, and authorities imposed short-selling curbs and activated the national stabilization fund. China held up better: the CSI 300 fell about 1.6% and the Hang Seng 1.3%. <b>Europe:</b> The Stoxx 600 was down about <span class="dn">−1.3%</span> (−1.7% at the low). The DAX was down about 2.1% and the FTSE 100 about 2.0%. Tech was among the better groups as selling eased, and <b>ASML was up about +3%</b> after falling 6.6% Thursday.</p>
+<p><b>US futures are split:</b> Nasdaq-100 futures are <span class="up">+1.3% to +1.5%</span> (~27,100–27,144), S&amp;P futures are <span class="up">+0.1% to +0.3%</span> (~7,390–7,396), and Dow futures are <span class="dn">−0.8% to −1.1%</span> (~51,040). Thursday's rotation out of tech and into everything else is partly reversing. Chip and memory names have retraced roughly 30–40% of Thursday's losses (JPM), while Apple, Amazon and Microsoft are slightly lower. The VIX is ~26.8 (−5%) after Thursday's 11.6-point jump to 28.18. The 10-year yield is ~4.84–4.86%. Swaps price about a 72% chance of a December Fed <i>hike</i>, down from ~80% on Tuesday. Brent briefly rose above $100 after Iran said two tankers hit mines in Hormuz, then fell to ~$97.5–98 after a Trump–Qatar call about de-escalation. WTI is ~$90–91. Gold is ~$4,070 (−1%), bitcoin ~$76K (−4.5%), and the dollar is up against every G10 currency.</p>
+<p><b>Tone:</b> This looks like a fragile, tech-led relief bounce going into a jobs report with downside risk. The open will likely be decided by two things: the payrolls number, and whether systematic selling (vol-control and CTA funds; Goldman sees about $7.5B of S&amp;P for sale over the next week) overwhelms dip buyers. Goldman's Rich Privorotsky leans toward "1998-style liquidity crisis" rather than "March 2000." BTIG and others warn that Thursday may be "just the opening act."</p>
+
+<h2>2. Today's Economic Calendar / Key Events (ET)</h2>
+<div class="tbl"><table>
+<tr><th>Time</th><th>Event</th><th>Consensus / Prior</th><th>Why it matters today</th></tr>
+<tr><td class="n">8:30 AM</td><td><b>October nonfarm payrolls</b></td><td>+55K–65K est. (Dow Jones 59K; Bloomberg whisper 81K) vs +29K prior. Unemployment 4.2% (prior 4.2%). Avg hourly earnings +0.3% m/m (prior +0.1%), +2.9% y/y. ADP showed +86K.</td><td>JPM's desk sees <b>asymmetric downside</b>: a beat is backward-looking, but a miss adds recession fear to an AI-capex scare. A hot wage number would revive pricing for a December hike (72% now). <i>Released during this run; figure not retrieved.</i></td></tr>
+<tr><td class="n">9:10 AM</td><td>Fed's Musalem speaks</td><td>—</td><td>First Fed comments after the rout; watch for any "financial conditions" language.</td></tr>
+<tr><td class="n">10:00 AM</td><td>UMich sentiment (Nov. prelim)</td><td>47.3 est. vs 48.0. 1-yr inflation expectations prior 4.7%; 5–10 yr prior 3.5%.</td><td>Inflation expectations matter for whether the Fed keeps hiking.</td></tr>
+<tr><td class="n">12:15 PM</td><td>Fed Governor Bowman</td><td>—</td><td>Regulatory and policy commentary.</td></tr>
+<tr><td class="n">1:00 PM</td><td>SF Fed's Daly</td><td>—</td><td>Tech-region Fed president, likely to be asked about AI-capex risk.</td></tr>
+<tr><td class="n">3:00 PM</td><td>Consumer credit (Sept.)</td><td>—</td><td>Low impact.</td></tr>
+<tr><td class="n">Pre-mkt</td><td>Earnings</td><td>Moderna (MRNA), Enbridge (ENB), Brookfield AM (BAM), Humana (HUM), Vistra (VST), Franklin Templeton (BEN), Charter (CHTR), Oklo (OKLO), TeraWulf (WULF), Ubiquiti (UI)</td><td><b>VST, OKLO and WULF</b> are power/AI-infrastructure readthroughs: commentary on data-center demand will be scrutinized.</td></tr>
+<tr><td class="n">All day</td><td>Policy &amp; geopolitics</td><td>—</td><td>Comments from Democratic leaders on data centers and tariffs; Iran/Hormuz headlines (oil). Texas Gov.-elect Hinojosa says she is "not opposed" to data centers, only to looser rules, which is one reason given for the chip bounce.</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">Moves are vs. Thursday's (Nov. 5) close. Snapshots come from ZeroHedge/Bloomberg (8:05 AM), Yahoo's quote strip (~7:10 AM), Investing.com/Benzinga and CNBC; ranges are shown where they differ. Thursday's closing moves come from yesterday's Close Edition and TipRanks.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt</th><th>Thu. close</th><th>Catalyst note</th></tr>
+<tr class="sec"><td colspan="4">Watchlist</td></tr>
+<tr><td>MU</td><td class="up">+7.8% to +8.9%</td><td class="dn">−17.5%</td><td>Memory leads the rebound. SNDK and WDC are also up 7–10%.</td></tr>
+<tr><td>AMD</td><td class="up">+7.1% to +8%</td><td class="dn">~−17%</td><td>Dip buying after its worst drop of the group. ARK was reported adding.</td></tr>
+<tr><td>INTC</td><td class="up">+4.7% to +6%</td><td class="dn">&gt;−9%</td><td>Bouncing from its lowest level since April.</td></tr>
+<tr><td>NVDA</td><td class="up">+3.9% to +5%</td><td class="dn">−9.3%</td><td>Leads the Mag 7. Worst day Thursday since DeepSeek (Jan. 2025). Is boosting chip tracking in Southeast Asia against smuggling.</td></tr>
+<tr><td>AVGO</td><td class="up">+4.4%</td><td class="dn">~−15%</td><td>Custom-silicon names are bouncing with the group.</td></tr>
+<tr><td>TSLA</td><td class="up">+1.7%</td><td class="dn">~−12%</td><td>Musk: Cybertruck production at Giga Texas to wind down by about mid-2027 to make room for Cybercab.</td></tr>
+<tr><td>META</td><td>~flat</td><td class="dn">−4.0%</td><td>No company-specific news.</td></tr>
+<tr><td>GOOGL</td><td>−0.1%</td><td class="dn">−2.2%</td><td>Planning Hong Kong and Singapore dollar bond deals (hyperscaler debt supply theme).</td></tr>
+<tr><td>MSFT</td><td class="dn">−0.7% to −0.9%</td><td class="dn">−3.6%</td><td>Rotation back toward chips weighs on the "platform owner" names.</td></tr>
+<tr><td>AMZN</td><td class="am">−0.8% to +0.7%</td><td>—</td><td>Sources conflict on direction; treat it as flat.</td></tr>
+<tr><td>AAPL</td><td class="dn">−1.1% to −1.2%</td><td>—</td><td>Raised $7.5B in an investment-grade bond sale Thursday.</td></tr>
+<tr><td>ASML</td><td class="up">~+3% (Amsterdam)</td><td class="dn">−6.6%</td><td>European semis are being bought; Lam's buyback adds support for chip-equipment names. No ADR print found.</td></tr>
+<tr><td>TSM</td><td class="dn">TSMC −4.7% (Taipei)</td><td>—</td><td>Taiex is in a bear market; short-sale curbs and the stabilization fund are active. No ADR print found.</td></tr>
+<tr><td>ORCL, CRM, QCOM</td><td>n/a</td><td>QCOM −9.5%</td><td>No verified pre-market print. ORCL: ING was reported as the seller of about $500M of data-center loans, including a slice backing the Stargate New Mexico site.</td></tr>
+<tr class="sec"><td colspan="4">Other notable gappers</td></tr>
+<tr><td>LRCX</td><td class="up">+10% to +11%</td><td>—</td><td>Board authorized a <b>$25B buyback</b>, about 10% of market cap.</td></tr>
+<tr><td>NET</td><td class="up">+12.6% to +18%</td><td>—</td><td>Q3 beat; full-year guidance raised across key metrics.</td></tr>
+<tr><td>ABNB</td><td class="up">+11% to +13%</td><td>—</td><td>Q3 EPS $3.16 vs $2.85 est.; revenue +19% to $4.87B; Q4 guidance above consensus. "Back in growth mode."</td></tr>
+<tr><td>FROG</td><td class="up">+23%</td><td>—</td><td>Raised full-year guidance; fastest revenue growth in four years.</td></tr>
+<tr><td>IONQ / AKAM</td><td class="up">+8% / +7%</td><td>—</td><td>Results and guidance; Akamai's cloud trends were positive.</td></tr>
+<tr><td>MRNA</td><td class="up">+3% to +10%</td><td>—</td><td>Q3 beat; 2026 revenue-growth guidance raised to 15–25% (from ≤10%). Quotes vary widely.</td></tr>
+<tr><td>DKNG</td><td class="dn">−20%</td><td>—</td><td>2027 adjusted EBITDA guidance missed.</td></tr>
+<tr><td>TEAM</td><td class="dn">−16% to −19%</td><td>—</td><td>Weak outlook despite an earnings beat; software de-rating continues.</td></tr>
+<tr><td>WK / FIVN</td><td class="dn">−18% / −17%</td><td>—</td><td>Growth concerns (WK); EPS guidance cut (FIVN).</td></tr>
+<tr><td>NTRA / XRAY / UAA</td><td class="dn">−14% / −14% / −13%</td><td>—</td><td>Surprise CEO change (NTRA); profit guidance cut (XRAY); gross-margin guidance cut (UAA).</td></tr>
+<tr><td>AXON / LYFT / MNST / AFRM</td><td class="dn">−9% / −7% / −6% / −4%</td><td>—</td><td>Guidance shortfalls (AXON, LYFT); gross-margin miss (MNST); loan delinquencies (AFRM).</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">Framed as names worth watching, not recommendations. Each one depends on the 8:30 AM payrolls print, which this run could not retrieve.</p>
+
+<div class="card">
+<h3>1. Micron (MU): memory leads the reflex bounce <span class="conf">Confidence: Medium</span></h3>
+<p><b>Pre-market:</b> <span class="up">+7.8% to +8.9%</span> after <span class="dn">−17.5%</span> Thursday. Peers SNDK and WDC are up 7–10%.</p>
+<p><b>Thesis:</b> Memory was the weakest group into Thursday's close, so it has the most room for a short-covering and de-grossing reversal. JPM sees chips retracing 30–40% of the drop, and MU's bounce is at the top of that range. A real stabilization would likely show up first in the highest-beta part of the group.</p>
+<p><b>Evidence:</b> ZeroHedge/Bloomberg pre-market list; Yahoo quote strip (MU +8.92%); CNBC lists MU, SNDK, MRVL, AMD, NBIS and CRWV as higher. Korea's SK Hynix fell more than 10% overnight, which is worth watching as a possible divergence.</p>
+<p><b>Risks / fade:</b> About $50B of vol-control selling is still pending, and SOX's six-standard-deviation move suggests forced selling may not be finished. Asia memory (Hynix, Kioxia) did <i>not</i> bounce. A weak payrolls number could turn this into a "sell the rip." Watch whether MU holds above its opening print through the first 30 minutes.</p>
+</div>
+
+<div class="card">
+<h3>2. Nvidia (NVDA): bellwether for "capitulation or opening act" <span class="conf">Confidence: Medium</span></h3>
+<p><b>Pre-market:</b> <span class="up">+3.9% to +5%</span> (~$188.6–190.7 vs a $181.60 close) after <span class="dn">−9.3%</span>, its worst day since January 2025.</p>
+<p><b>Thesis:</b> NVDA is the largest-weight AI name and sets the tone for NQ futures. Texas Gov.-elect Hinojosa's "not opposed to data centers" comment softens the worst-case read on the election, and the WSJ reports Anthropic's ARR topped $80B (vs. mid-$70B expectations), which supports demand. Both give dip buyers a story.</p>
+<p><b>Evidence:</b> TipRanks on the chip rebound and the Hinojosa comment; ZeroHedge/Bloomberg (Mag 7 list, Anthropic ARR); Yahoo quote strip.</p>
+<p><b>Risks / fade:</b> NVDA is bouncing less than MU and AMD, so dip buyers may favor the hardest-hit names over the leader. Data-center opposition at the ballot box (40 of 41 measures) is a structural headline, not a one-day one. GS TMT desk says the most leveraged AI-infrastructure credit is distressed (CDS implies more than 60% five-year default odds), which hurts customer funding.</p>
+</div>
+
+<div class="card">
+<h3>3. AMD / Broadcom (AVGO): biggest losers, biggest bounces <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Pre-market:</b> AMD <span class="up">+7.1% to +8%</span> (Thursday about −17%); AVGO <span class="up">+4.4%</span> (Thursday about −15%).</p>
+<p><b>Thesis:</b> These were the worst performers among large-cap AI names, so they have the most mean-reversion potential. JPM's tactical work shows that when NDX drops 3.5% or more from within about 6% of its high, it tends to rebound about 3% the following week.</p>
+<p><b>Evidence:</b> TipRanks (Thursday's drops); ZeroHedge/Bloomberg pre-market; JPM Market Intel via ZeroHedge.</p>
+<p><b>Risks / fade:</b> This pair has the highest beta to the AI-capex narrative. If Fed speakers or politicians add to the regulatory worry, these give back the most. AVGO's bounce is notably weaker than AMD's.</p>
+</div>
+
+<div class="card">
+<h3>4. Lam Research (LRCX): a $25B buyback in a falling tape <span class="conf">Confidence: Medium</span></h3>
+<p><b>Pre-market:</b> <span class="up">+10% to +11%</span>.</p>
+<p><b>Thesis:</b> A buyback worth about 10% of market cap, announced right after a capex scare, signals management confidence and gives the stock its own source of demand. It's a fundamental catalyst rather than just a reflex bounce, and could support semi-equipment peers (ASML is +3% in Amsterdam; Tokyo Electron fell overnight).</p>
+<p><b>Evidence:</b> CNBC and ZeroHedge/Bloomberg pre-market coverage. <i>This run could not open the company's press release or 8-K; confirm the size on LRCX IR.</i></p>
+<p><b>Risks / fade:</b> A buyback authorization isn't execution. Semi-equipment demand depends on the same AI-capex outlook that is in question, and if the group fades the buyback gap could fill partly.</p>
+</div>
+
+<div class="card">
+<h3>5. Tesla (TSLA): Cybertruck wind-down for Cybercab <span class="conf">Confidence: Low</span></h3>
+<p><b>Pre-market:</b> <span class="up">+1.7%</span> after about <span class="dn">−12%</span> Thursday.</p>
+<p><b>Thesis:</b> Musk says Cybertruck production at Giga Texas winds down around mid-2027 to make room for Cybercab. That drops a weak product line and moves the story further toward robotaxi/autonomy. Its pre-market gain is small next to the semis, which suggests the market is treating this as a reallocation, not new demand.</p>
+<p><b>Evidence:</b> Reuters (via Global Banking &amp; Finance), Engadget, Benzinga and Yahoo all reported Musk's post; ZeroHedge's Mag 7 list.</p>
+<p><b>Risks / fade:</b> There are no volumes, firm date or Cybercab capacity numbers. Thursday's "political/merger discount" (SpaceX-linked) is unresolved, and TSLA is high-beta to any renewed risk-off move.</p>
+</div>
+
+<div class="card">
+<h3>6. Rotation check: platforms (AAPL, MSFT, AMZN) vs. chips <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Pre-market:</b> AAPL <span class="dn">−1.1% to −1.2%</span>, MSFT <span class="dn">−0.7% to −0.9%</span>, AMZN about flat (sources conflict), GOOGL −0.1%, META flat. Dow futures are <span class="dn">about −1%</span> while NQ is <span class="up">+1.4%</span>.</p>
+<p><b>Thesis:</b> On Thursday, owners of powered capacity (GOOGL, MSFT, META) beat the chip suppliers by about 5–8 points. This morning that spread is reversing, and Dow futures' weakness shows money leaving Thursday's "safe" names. If chips hold their gains past 10 AM, the platform names could lag again today.</p>
+<p><b>Evidence:</b> Yesterday's Close Edition; ZeroHedge/Bloomberg Mag 7 list; Yahoo futures strip. Heavy hyperscaler bond issuance (Apple $7.5B, Alphabet's HKD/SGD deals) is also a supply theme.</p>
+<p><b>Risks / fade:</b> If the chip bounce fails, money likely rotates straight back into the platforms, as it did Thursday. Pre-market moves of about 1% in mega-caps are small and can easily be noise.</p>
+</div>
+
+<div class="card">
+<h3>7. Cloudflare (NET): a software beat while software is being sold <span class="conf">Confidence: Medium</span></h3>
+<p><b>Pre-market:</b> <span class="up">+12.6% to +18%</span>. Peers FROG +23% and AKAM +7%, while TEAM, WK and FIVN are down 16–19%.</p>
+<p><b>Thesis:</b> The market is sharply separating software names by guidance. NET's raised full-year outlook comes while the group is being de-grossed, which points to stock-specific demand. Watch CRM for whether this split helps or hurts large-cap software.</p>
+<p><b>Evidence:</b> CNBC, ZeroHedge/Bloomberg and Investing.com pre-market lists.</p>
+<p><b>Risks / fade:</b> High-multiple stocks gapping into a VIX near 27 often give back part of the gap in the first hour. A weak tape for the group (TEAM, WK) may cap follow-through.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. The only file, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (50 days old, outside the ~14-day window). Refresh the WRDS extract to bring momentum, volume and earnings-surprise factors back into this brief.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-091927729.html</li>
+<li>https://www.tipranks.com/news/stock-market-today-nov-6-futures-mixed-as-nasdaq-futures-rebound-after-tech-selloff</li>
+<li>https://www.tipranks.com/news/ai-chip-stocks-nvidia-intel-amd-rebound-in-premarket-after-thursdays-bloodbath-whats-behind-the-recovery</li>
+<li>https://www.zerohedge.com/markets/nasdaq-futures-bounce-dip-buyers-pick-through-ai-wreckage-ahead-payrolls</li>
+<li>https://www.bloomberg.com/news/articles/2026-11-06/us-stock-futures-rise-as-dip-buyers-emerge-after-ai-selloff (search summary)</li>
+<li>https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html (search summary; page fetch returned empty)</li>
+<li>https://www.investing.com/news/stock-market-news/premarket-movers-airbnb-cloudflare-iren-rally-atlassian-five9-tumble-5007530 (search summary)</li>
+<li>https://www.benzinga.com/markets/tech/26/11/62968934/ai-bubble-about-to-burst-top-tech-investor-warns-most-neocloud-players-could-go-to-zero (search summary: MSFT/AMZN pre-market)</li>
+<li>https://www.investing.com/equities/pre-market (search summary)</li>
+<li>https://fourweekmba.com/ai-nvidia-up-5-premarket-as-ai-stocks-regain-662b-of-1-45t/ (search summary)</li>
+<li>https://uk.finance.yahoo.com/news/european-stocks-fall-technology-sell-100031092.html (search summary)</li>
+<li>https://www.globalbankingandfinance.com/tesla-wind-down-cybertruck-production-years-poor-sales/ (Reuters; search summary)</li>
+<li>https://www.engadget.com/2308875/tesla-is-winding-down-cybertruck-production-at-its-texas-gigafactory/ (search summary)</li>
+<li>https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/ (background; search summary)</li>
+<li>https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html (search summary)</li>
+<li>https://www.kiplinger.com/investing/economy/jobs-report-october-2026-what-to-expect (search summary)</li>
+<li>Local archive: alpha_report_2026-11-05_close.html (Thursday closing levels)</li>
+<li>Not retrievable this run: BLS Employment Situation release (fetch blocked); Investing.com fetch rate-limited; StockAnalysis pre-market page served stale July 2025 data and was not used.</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
