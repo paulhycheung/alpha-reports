@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-06 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Friday, November 6, 2026 &middot; Rebound day after the AI-chip rout &middot; Final-hour fade &middot; Next session: Monday, Nov 9</div>
+<p class="note">Automated run. The task targets ~3:20 PM ET, but this session ran at about <b>4:23 PM ET, after the closing bell</b>, so the prices below are <b>final closing prints</b> from Yahoo Finance, whose index strip read "U.S. markets closed". The closing index levels match CNBC's reported close. Today is Friday, so "tomorrow" in this edition means the <b>Monday, Nov 9</b> session. No major after-the-bell earnings were found for today. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (50 days old, outside the ~14-day window). Yahoo's losers page and AVGO quote page returned <b>stale cached data</b> (index levels inconsistent with today's close), so they were not used. As a result, there is no verified closing print for AAPL, MSFT, GOOGL, META, AVGO, TSM, ASML, CRM, QCOM, MU or TSLA.</p>
+
+<h2>1. How the Session Traded</h2>
+<p><b>The rebound held, but the final hour gave back about half of it.</b> At the close, the <b>S&amp;P 500 was +0.31%</b> (7,376.86), the <b>Nasdaq Composite +1.09%</b> (24,579.42), the <b>Dow −0.46%</b> (51,285.73) and the <b>Russell 2000 +0.89%</b> (2,754.11). At ~3:08 PM, the afternoon edition had the S&amp;P +0.80%, the Nasdaq +1.58% and the Dow −0.08%, so roughly <b>0.5 points of the S&amp;P gain faded in the last 50 minutes</b>. The <b>VIX</b> closed at ~25.5 (−9.5%), up from 24.60 at 3:08 PM. The <b>10-year yield</b> finished at ~4.86% (+2.2 bp). WTI was flat at ~$90.5, gold was −0.9% at ~$4,075 and bitcoin was ~$75.8K. The macro backdrop was hawkish all day: <b>165K October payrolls</b> (vs ~65–70K expected), 4.1% unemployment, +0.4% wages and 84K of upward revisions. This pushed December-hike odds to roughly 73–85%, depending on the source and time of day. The notable point about the fade: <b>the AI-rebound leaders mostly held or extended into the close</b> (AMD, ORCL, IREN, WULF, CRWV and SPCX all closed above their 3:08 PM levels). The give-back was concentrated in <b>the Dow and the broader index</b> (AMZN closed −0.31%). The cause of the late fade was not identified in any source checked, but it is consistent with de-risking ahead of the weekend while rates and hike odds stay high. Yahoo says both the S&amp;P and the Nasdaq still posted their <b>worst week since early June</b>.</p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Compares today's Pre-Market, Open, Midday and Afternoon editions with final closing prints (Yahoo most-active, after the close).</p>
+<div class="tbl"><table>
+<tr><th>Name / call (edition)</th><th>~3:08 PM</th><th>Close</th><th>Verdict</th></tr>
+<tr><td>AMD: hardest-hit name holding its bounce (Pre-Market / Open / Midday / Afternoon)</td><td class="up">+10.64%</td><td class="up">+10.72%</td><td><b>Played out and accelerated.</b> Closed near the day's high on 1.9× average volume. Recovered ~51% of Thursday's −17.3%.</td></tr>
+<tr><td>INTC: leading the bounce (Midday / Afternoon)</td><td class="up">+8.65%</td><td class="up">+8.15%</td><td><b>Played out.</b> Slight late give-back. 1.5× volume; recovered ~70% of Thursday's ~10% slide.</td></tr>
+<tr><td>NVDA: "capitulation or opening act" (Pre-Market); "keeps giving back gains" (Midday); "fade reversed" (Afternoon)</td><td class="up">+3.51%</td><td class="up">+3.07%</td><td><b>Mixed.</b> The midday fade call was wrong at 3 PM but partly right at the close: NVDA finished well below its ~+6% morning high. It recovered ~30% of Thursday's −9.3%.</td></tr>
+<tr><td>ORCL: turned negative on the Microsoft capacity report (Midday)</td><td class="am">0.00%</td><td class="up">+0.73%</td><td><b>Reversed.</b> Closed green at $116.00 after trading down ~4% intraday. The 52-week low ($111.66) held.</td></tr>
+<tr><td>MU and memory: bounce fading (Open); "memory leads" (Pre-Market)</td><td class="up">+5.56%</td><td>n/a</td><td>No verified close. Last print at 3:08 PM was +5.6%, which still makes MU the laggard relative to Thursday's −17.5%.</td></tr>
+<tr><td>AI-hosting miners vs. neoclouds (Open / Midday / Afternoon)</td><td>IREN +19.6%; WULF +11.6%; CRWV +6.3%</td><td class="up">IREN +20.7%; WULF +12.6%; CRWV +6.6%</td><td><b>Played out and extended into the close.</b> The whole group finished at or near its highs.</td></tr>
+<tr><td>Platform mega-caps reversed higher: META, GOOGL, AMZN, AAPL (Open)</td><td>n/a</td><td class="dn">AMZN −0.31%</td><td><b>Faded (AMZN).</b> No verified closing prints for the others. The index-level fade suggests the platform names did not hold early gains.</td></tr>
+<tr><td>MCHP / DKNG guidance gaps extending (Open / Midday)</td><td class="dn">MCHP −10.4%; DKNG −22.1%</td><td class="dn">MCHP −10.0%; DKNG −21.4%</td><td><b>Extension call faded.</b> Both closed off their lows on 4.7× and 5.4× average volume.</td></tr>
+<tr><td>TSLA: Cybertruck wind-down for Cybercab (Pre-Market / Open / Afternoon)</td><td>+4.71% (2:46 PM, search snippet)</td><td>n/a</td><td>Held ~+4% most of the day per earlier editions. No verified close.</td></tr>
+<tr><td>LRCX: $25B buyback gap (Pre-Market / Open)</td><td>n/a</td><td>n/a</td><td>Held ~+7.6% through 1 PM per the afternoon edition. No close found.</td></tr>
+</table></div>
+<p class="note"><b>Scorecard:</b> The day's strongest call was the cross-edition view that the <i>hardest-hit, company-specific</i> names (AMD, INTC, IREN) would lead the bounce. The weakest was the open's "platform mega-caps reversed higher". The afternoon edition's risk flag ("Higher yields... buyers may not want to hold over a weekend") turned out to be the right read for the index in the final hour.</p>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">Change vs. Thursday's close. Volume is the full session vs. the 3-month average daily volume (Yahoo most-active, final).</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move (close)</th><th>Volume note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>AMD</td><td class="up">+10.72% ($447.75)</td><td>41.8M vs 22.0M avg (1.9×)</td></tr>
+<tr><td>INTC</td><td class="up">+8.15% ($56.51)</td><td>172.5M vs 114.7M avg (1.5×); most active stock of the day</td></tr>
+<tr><td>NVDA</td><td class="up">+3.07% ($187.18)</td><td>154.6M vs 116.1M avg (1.3×)</td></tr>
+<tr><td>ORCL</td><td class="up">+0.73% ($116.00)</td><td>41.8M vs 33.2M avg (1.3×)</td></tr>
+<tr><td>AMZN</td><td class="dn">−0.31% ($259.40)</td><td>41.0M vs 38.6M avg (1.06×)</td></tr>
+<tr><td>MU / TSLA / QCOM / AVGO</td><td>n/a at close</td><td>Last verified: MU +5.6% (3:08 PM), TSLA +4.7% (2:46 PM), QCOM +4.1% and AVGO +0.1% (1:01 PM)</td></tr>
+<tr><td>AAPL, MSFT, GOOGL, META, TSM, ASML, CRM</td><td>n/a</td><td>No verified print today (quote pages stale)</td></tr>
+<tr class="sec"><td colspan="3">Other notable movers</td></tr>
+<tr><td>IREN</td><td class="up">+20.74%</td><td>104.7M vs 47.7M avg (2.2×); AI cloud revenue $200M (vs $71M q/q)</td></tr>
+<tr><td>ONDS</td><td class="up">+18.14%</td><td>44.6M vs 59.7M avg (0.75×); cause not verified</td></tr>
+<tr><td>CIFR</td><td class="up">+17.48%</td><td>78.1M vs 42.2M avg (1.9×)</td></tr>
+<tr><td>RIOT</td><td class="up">+13.47%</td><td>44.6M vs 20.4M avg (2.2×)</td></tr>
+<tr><td>WULF</td><td class="up">+12.60%</td><td>105.6M vs 36.0M avg (2.9×)</td></tr>
+<tr><td>SPCX (SpaceX)</td><td class="up">+9.52%</td><td>109.2M vs 99.9M avg (1.1×)</td></tr>
+<tr><td>PLUG</td><td class="up">+8.15%</td><td>86.8M vs 55.1M avg (1.6×)</td></tr>
+<tr><td>CRWV</td><td class="up">+6.62%</td><td>58.5M vs 40.6M avg (1.4×); reports Tuesday after the close</td></tr>
+<tr><td>NIO / CDE</td><td class="up">+6.25% / +6.02%</td><td>46.1M (1.4×) / 42.0M (1.2×)</td></tr>
+<tr><td>KVUE</td><td>0.00%</td><td>66.6M vs 22.3M avg. <b>Same price and volume as at 1:11 PM and 3:08 PM</b>, which suggests a halt or a stuck quote. Not verified</td></tr>
+<tr><td>MCHP</td><td class="dn">−10.02%</td><td>46.6M vs 9.9M avg (4.7×); December-quarter guidance cut</td></tr>
+<tr><td>DKNG</td><td class="dn">−21.43% ($18.48)</td><td>69.7M vs 12.9M avg (5.4×); 52-week low $18.35</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates / What to Watch Monday</h2>
+<p class="note">Names worth investigating further, not recommendations. The weekend carries headline risk (data-center policy from the incoming Congress and governors, Middle East and oil, any Fed commentary), and <b>Tuesday's October CPI</b> is the next hard catalyst before the Dec 8–9 FOMC.</p>
+
+<div class="card">
+<h3>1. AMD and Intel: the leaders closed at or near their highs <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> AMD <span class="up">+10.72%</span> to $447.75 on 1.9× volume. INTC <span class="up">+8.15%</span> to $56.51 on 1.5× volume and was the most active stock in the market.</p>
+<p><b>Why it matters Monday:</b> These were the only large chip names that strengthened through every edition today. AMD even edged up in the final hour while the S&amp;P gave back ~0.5 points. Strength during a broad late fade on heavy volume is the strongest evidence today of real buying rather than short-covering. The pattern seen all day still holds: recovery strength tracks <i>a company-specific catalyst</i> (AMD's Q3 results) or <i>low hyperscaler-capex exposure</i> (INTC). AVGO and MRVL, the purest custom-AI-silicon names, lagged badly per midday data.</p>
+<p><b>Evidence:</b> Yahoo most-active (final); Yahoo live blog (SOX +4% early after −12% Thursday); Schwab (AMD +8% premarket; semis down ~30% from peak).</p>
+<p><b>Risks:</b> AMD is the highest-beta large chip stock (−17.3% Thursday) and trades at ~103× trailing earnings. Schwab notes that selloffs like Thursday's "don't often end up one and done". A hot CPI on Tuesday would hit long-duration chip stocks first.</p>
+</div>
+
+<div class="card">
+<h3>2. Nvidia (NVDA): the bellwether recovered only ~30% of Thursday's fall <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="up">+3.07%</span> to $187.18 (154.6M shares, 1.3× average). It was ~+6% near 10 AM, +2.7% at midday and +3.5% at 3:08 PM.</p>
+<p><b>Why it matters Monday:</b> NVDA has given back about half of its morning gain. With its index weight, that largely explains why the Nasdaq closed +1.09% rather than ~+1.6%. Measured against Thursday's −9.3%, it recovered roughly 30%, versus ~51% for AMD and ~70% for INTC. The market is still discounting the most direct data-center-capex play the most. Monday's open will show whether buyers return after a weekend of policy headlines.</p>
+<p><b>Evidence:</b> Yahoo most-active (final); Yahoo live blog (intraday path; Thursday was the worst day since the January 2025 DeepSeek scare); Yardeni (via Yahoo) argues data-center restrictions are "speed bumps, not roadblocks". Goldman estimates ~45% of planned US data-center capacity faces possible restrictions.</p>
+<p><b>Risks:</b> NVDA reports later in November, so guidance on hyperscaler demand is still weeks away. A 10-year yield near 4.86% and ~75–85% December-hike odds weigh on growth valuations.</p>
+</div>
+
+<div class="card">
+<h3>3. Oracle (ORCL): closed green after a −4% intraday low <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="up">+0.73%</span> to $116.00 on 1.3× volume, after trading down ~4% intraday on Bloomberg's report that Microsoft is winding down compute capacity it rents from Oracle.</p>
+<p><b>Why it matters Monday:</b> A negative company-specific headline was fully absorbed, and the stock closed at the day's best levels, so the $111.66 52-week low is now a tested floor. With the stock down ~52% over 52 weeks, positioning appears very light. Monday will show whether any follow-up detail emerges, such as the size of the capacity involved or other customers affected.</p>
+<p><b>Evidence:</b> Yahoo most-active (final); Investing.com (Bloomberg-sourced report and Oracle's response, via the midday edition).</p>
+<p><b>Risks:</b> Microsoft has not confirmed the Bloomberg report. Oracle's debt-funded capex and negative trailing free cash flow keep it sensitive to any AI-demand doubt. Monday's OXY and CEG reports are not direct read-throughs, but CoreWeave's results on Tuesday are.</p>
+</div>
+
+<div class="card">
+<h3>4. AI-hosting miners and CoreWeave: rallied into the close, with CRWV earnings Tuesday <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Move:</b> IREN <span class="up">+20.7%</span>, CIFR <span class="up">+17.5%</span>, RIOT <span class="up">+13.5%</span>, WULF <span class="up">+12.6%</span> (2.9× volume), CRWV <span class="up">+6.6%</span>. All closed above their 3:08 PM levels.</p>
+<p><b>Why it matters Monday:</b> This group did not fade in the final hour, unlike the broader market. IREN gives the group a fundamental anchor: AI cloud revenue rose to $200M from $71M the prior quarter, and Microsoft is a customer. The next hard test is <b>CoreWeave's Q3 report after Tuesday's close</b>, with <b>Nebius on Thursday morning</b>. Those will be the first neocloud results since the election-driven selloff and will show whether contracted backlog is translating into revenue.</p>
+<p><b>Evidence:</b> Yahoo most-active (final); Yahoo live blog (IREN results, $263M loss wider than expected); Schwab week-ahead calendar (CRWV Tue PM, NBIS Thu AM).</p>
+<p><b>Risks:</b> These are deeply oversold, high-short-interest names (IREN −71% and CIFR −73% over 52 weeks), so part of the move is short-covering. Data-center permitting and power headlines hit this group first. Schwab flagged that high-yield credit spreads widened sharply on Thursday, and this group depends on credit financing.</p>
+</div>
+
+<div class="card">
+<h3>5. DKNG and MCHP: capitulation-level volume after guidance resets <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Move:</b> DKNG <span class="dn">−21.4%</span> to $18.48 on <b>5.4×</b> average volume (low ~−28%). MCHP <span class="dn">−10.0%</span> on <b>4.7×</b> (−13% at midday).</p>
+<p><b>Why it matters Monday:</b> Both stocks traded about five days' worth of volume and closed well off their lows, which often indicates that forced selling has run its course. The question for Monday is whether value buyers step in or analyst target cuts drive a second leg down. DKNG closed just above its new $18.35 52-week low, which makes that the line to watch.</p>
+<p><b>Evidence:</b> Yahoo most-active (final); Schwab (DKNG missed on earnings, revenue and Sportsbook revenue); Open and Midday editions (MCHP 8-K guidance: December-quarter revenue −1% q/q, gross margin 64–65%).</p>
+<p><b>Risks:</b> After a guidance reset, analyst cuts usually come over the following week. MCHP's industrial and auto exposure gets no help from an AI rebound.</p>
+</div>
+
+<div class="card">
+<h3>6. Macro setup: the final-hour fade and Tuesday's CPI <span class="conf">Confidence: Medium</span></h3>
+<p><b>What happened:</b> The S&amp;P went from +0.80% to +0.31% and the Dow from −0.08% to −0.46% in the last ~50 minutes, while the VIX ticked back up and the 10-year held ~4.86%.</p>
+<p><b>Why it matters Monday:</b> The jobs report means the next inflation print matters even more. Early FactSet-based estimates (via search summary) put <b>October headline CPI near 3.9% y/y</b>, up from 3.7%. A hot print on Tuesday would make a December hike close to certain and pressure the long-duration AI names that bounced today. A softer core reading would test the "Thursday was an overreaction" view (Jefferies, Yardeni). Yahoo/CBOE history provides some context: after the eight prior 70% VIX spikes since 1991, the S&amp;P was higher one month later 7 of 8 times. That is a small sample and not a forecast.</p>
+<p><b>Evidence:</b> Yahoo index strip (final) vs. the afternoon edition's 3:08 PM prints; Schwab (hike odds ~73% after payrolls; CPI Tuesday); Yahoo live blog (Sozzi VIX study; worst week since June).</p>
+<p><b>Risks:</b> The cause of the late fade is not confirmed. It may simply be weekend de-risking rather than a new signal.</p>
+</div>
+
+<h2>5. Calendar: Next Session and Week Ahead</h2>
+<div class="tbl"><table>
+<tr><th>When</th><th>Event</th></tr>
+<tr><td>Fri Nov 6, after close</td><td>No major after-the-bell earnings found. Weekend headline risk: data-center policy (new Congress and governors), Middle East and oil, Anthropic IPO valuation (reportedly cut to ~$1.0–1.3T; IPO possibly before month-end).</td></tr>
+<tr><td><b>Mon Nov 9</b>, before open</td><td>Constellation Energy (CEG), Barrick Mining (B)</td></tr>
+<tr><td>Mon Nov 9, after close</td><td>Occidental Petroleum (OXY), Rocket Lab (RKLB). Take-Two (TTWO) also on CNBC's list</td></tr>
+<tr><td><b>Tue Nov 10</b>, 8:30 AM ET</td><td><b>October CPI and core CPI</b> (headline estimate ~3.9% y/y vs 3.7% prior, early FactSet-based estimate)</td></tr>
+<tr><td>Tue Nov 10, after close</td><td><b>CoreWeave (CRWV)</b>, Rigetti Computing (RGTI)</td></tr>
+<tr><td>Wed Nov 11</td><td>Veterans Day: US bond market closed; stock market open</td></tr>
+<tr><td>Thu Nov 12</td><td>Existing home sales. Before open: Brookfield (BN), <b>Nebius (NBIS)</b>. After close: <b>Cisco (CSCO)</b>, <b>Applied Materials (AMAT)</b></td></tr>
+<tr><td>Fri Nov 13</td><td>October PPI and core PPI</td></tr>
+<tr><td>Fed</td><td>No FOMC meeting next week. The next decision is <b>Dec 8–9</b>. Odds of a December hike are ~73–85% after payrolls (Schwab/CME; Reuters via earlier editions)</td></tr>
+<tr><td>Later in November</td><td>Nvidia earnings (date not confirmed in sources checked). Earnings Whispers also flags Cerebras, AST SpaceMobile and Zeta Global among next week's most-watched reports</td></tr>
+</table></div>
+
+<h2>6. WRDS Quant Signals</h2>
+<p class="note">Not used this run. alpha_wrds_signals.csv has as_of_date <b>2026-09-17</b> (50 days old), outside the ~14-day freshness window, so its momentum, volume and earnings-surprise factors would be misleading after this week's moves. Refreshing the WRDS extract would bring back the quant overlay.</p>
+
+<h2>7. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/most-active (redirected to /markets/stocks/most-active/; "U.S. markets closed" index strip and final most-active table, fetched ~4:23 PM ET; fetched twice for consistency)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html (worst week since June; IREN; Tesla Cybertruck; Anthropic IPO valuation; jobs report and December hike; White House/Hassett)</li>
+<li>https://ca.finance.yahoo.com/news/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html (earlier snapshot: Yardeni note, Goldman 45% data-center capacity estimate, Sozzi VIX-spike study)</li>
+<li>https://www.schwab.com/learn/story/stock-market-update-open (jobs detail, hike odds ~73%, premarket movers, DKNG/LRCX, credit spreads, week-ahead calendar)</li>
+<li>https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html (search summary: Friday close S&amp;P 7,376.86 +0.31%, Nasdaq 24,579.42 +1.09%, Dow −237.33; direct fetch returned no content)</li>
+<li>https://www.cnbc.com/2026/11/06/stock-market-next-week-outlook-for-nov-9-13-2026.html (search summary: week ahead, Take-Two, PPI; direct fetch returned no content)</li>
+<li>https://www.stocktitan.net/articles/earnings-calendar-week-of-november-9-2026 and https://www.earningswhispers.com/calweek/20261109 (search summaries: Cisco largest reporter; Nebius, Cerebras, AST SpaceMobile, Zeta)</li>
+<li>https://www.tbsnews.net/world/global-economy/nasdaq-rebounds-chips-stocks-recover-steep-losses-1595056 and https://beinsure.com/news/us-stock-market-nasdaq-rebounds-as-dow-falls/ (search summaries: SOX +4.6%, Reuters-based recap)</li>
+<li>Earlier today's editions (local archive): alpha_report_2026-11-06_premarket.html, _open.html, _midday.html, _afternoon.html; alpha_wrds_signals.csv (stale, not used)</li>
+<li><b>Fetched but excluded as stale:</b> https://finance.yahoo.com/markets/stocks/losers/ (S&amp;P 7,709, inconsistent with today); https://finance.yahoo.com/quote/AVGO/ (data as of Oct 30). <b>Empty fetch:</b> Benzinga "Nasdaq 100 Rebounds 2%" article. <b>Blocked:</b> StockTitan Nov 6 live page (URL not reachable from this run).</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
