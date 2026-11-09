@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-09 – Midday Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Midday Edition</span> &nbsp; Monday, November 9, 2026 &middot; Day 1 of the Nvidia CEO probe &middot; October CPI Tuesday 8:30 AM ET (consensus 2.7% y/y)</div>
+<p class="note">Automated run. The task targets ~12:00 PM ET, but this session ran from about <b>1:10 to 1:25 PM ET</b>. Index levels come from Yahoo Finance's quote strip at about <b>12:47 PM ET</b> ("markets close in 3h 13m"). Single-stock figures come from Yahoo, TipRanks (~12:35–1:10 PM), Investing.com (article snapshot plus a later live ticker strip) and CNBC's midday-movers headline (via search). Where sources disagree, the table shows a range. <b>No reliable volume data:</b> StockAnalysis.com's movers page was still showing Nov. 6 data, and CNBC pages fetched empty, so volume notes are qualitative. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (53 days old, outside the ~14-day window).</p>
+
+<h2>1. How the Session Has Traded</h2>
+<p><b>The rally kept building through midday. It did not fade.</b> At ~12:47 PM ET the S&amp;P 500 was at <b>7,545.72</b> (<span class="up">+2.29%</span>), the Nasdaq Composite at <b>25,209.95</b> (<span class="up">+2.57%</span>), the Dow at <b>52,352.28</b> (<span class="up">+2.08%</span>, +1,067 pts) and the Russell 2000 at <b>2,829.84</b> (<span class="up">+2.75%</span>). All four are above the ~10:40 AM levels in the Open Edition (S&amp;P +1.91%, Nasdaq +2.42%, Dow +1.6%). TipRanks has the Nasdaq-100 up more than 3% and the semiconductor ETF (SOXX) up <b>6.8%</b>. The VIX is down 21% to <b>20.22</b>. WTI crude is down 3.6% to ~$87.6 after Trump said further strikes on Iran were unlikely while talks progress (Reuters, via TipRanks). The 10-year yield is roughly flat at ~4.88%, gold is ~$4,114 (+1%) and bitcoin is ~$74.6K (−1.3%). Morgan Stanley and UBS both argued last week's post-election AI selloff went too far.</p>
+<p><b>The big change since the open is Nvidia.</b> Its morning bounce has faded: NVDA is back to about <span class="dn">−5%</span> ($177.33), close to its pre-market level, after recovering to about −3.9% by 10:22 AM. Meanwhile the rest of the chip complex kept rising (AMD ~+12%, AVGO ~+9–10%, AMAT ~+11%, MU ~+5.7%). The spread between Nvidia and its peers is now <b>15 to 17 points</b>, and that gap, not the index level, is the main story of the session. Rotation within AI hardware is getting stronger into the afternoon, not unwinding.</p>
+
+<h2>2. Follow-Up on Earlier Calls</h2>
+<p class="note">Compares this morning's Pre-Market Edition (~4:20–8:30 AM) and Open Edition (~10:20–11:00 AM) with midday (~12:35–1:10 PM).</p>
+<div class="tbl"><table>
+<tr><th>Earlier call</th><th>Earlier read</th><th>Midday</th><th>Verdict</th></tr>
+<tr><td>NVDA: governance gap gets bought (Open #2)</td><td>Pre-mkt −4.5% to −5.4%; ~−3.9% at 10:22 AM after a $170.24 low</td><td class="dn">−4.94% to −4.99% ($177.33–177.42)</td><td><b>Reversed.</b> The gap-fill stalled below the $180.62 April low, the level the Open Edition flagged as resistance, and the stock slipped back to about its pre-market level. Yahoo says it is now negative for the year.</td></tr>
+<tr><td>AMD: upgrade extends (Pre #2, Open #1)</td><td>+3–4% pre-mkt; +10–11% at the open</td><td class="up">~+12% (+12.15% on Investing.com's ticker; TipRanks "roughly 12%")</td><td><b>Played out and extended.</b> It is well above the ~$480 level the Open Edition flagged (implied ~$503).</td></tr>
+<tr><td>AI hardware outside Nvidia (Open #4)</td><td>AVGO +5–7%, AMAT +10.3%, MPWR +12.8%, COHR +13%, LITE +11%</td><td class="up">AVGO +8.9% to ~+10%; AMAT +11.2%; COHR ~+18%; MPWR &gt;+13%; LITE +11–12%; MU +5.7%</td><td><b>Extended.</b> This did not behave like the early-session short-covering spike that usually fades.</td></tr>
+<tr><td>META / AMZN on the JPM focus-list change (Pre #3, Open #3)</td><td>META +4.6–5%, AMZN +4–5%</td><td class="up">META ~+5%, AMZN ~+3.5–5% (no fresh afternoon quote)</td><td><b>Held</b>, as far as can be confirmed. No later quote was verified.</td></tr>
+<tr><td>GOOGL: new TPUs (Pre #4)</td><td>~+3%</td><td class="up">~+3% (~$294)</td><td><b>Held</b>, despite being dropped from JPM's list.</td></tr>
+<tr><td>CEG: beat and raise (Open #5)</td><td>~+6%</td><td>n/a</td><td><b>Not re-verified</b> at midday.</td></tr>
+<tr><td>Airlines on falling oil (Open #6)</td><td>JBLU/UAL +7%, AAL +6%</td><td class="up">AAL, UAL &gt;+6%; DAL +4.6%; CCL ~+4% (CNBC)</td><td><b>Held.</b> WTI is still down ~3.6%.</td></tr>
+<tr><td>AI cloud (CRWV/NBIS/IREN) and NVR (Pre #5, #6)</td><td>Weak pre-mkt; NVR +26% (single source)</td><td>n/a</td><td><b>Still unverified.</b> No reliable intraday quote was found.</td></tr>
+</table></div>
+
+<h2>3. Midday Movers</h2>
+<p class="note">% change vs. Friday's (Nov. 6) close, as reported between ~12:35 and 1:10 PM ET unless noted. Volume notes are qualitative.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move</th><th>Volume / catalyst note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>AMD</td><td class="up">~+12%</td><td>Oppenheimer upgrade to Outperform. Biggest mover by market cap on Investing.com's list. Very heavy trading is likely.</td></tr>
+<tr><td>AVGO</td><td class="up">+8.9% to ~+10%</td><td>TipRanks: "up 10% as dip buyers rush into the market." Up from +5–7% at the open.</td></tr>
+<tr><td>MU</td><td class="up">+5.7% to +5.9%</td><td>Memory joins the chip rebound. Up from ~+1% at the open.</td></tr>
+<tr><td>TSLA</td><td class="up">+5.3% to +5.7%</td><td>Austin robotaxi service area expanded 62.5%, and San Antonio added. Cboe flagged mixed options sentiment.</td></tr>
+<tr><td>META</td><td class="up">~+5%</td><td>Added to JPMorgan's Analyst Focus List (morning quotes $637.77–640.78).</td></tr>
+<tr><td>AMZN</td><td class="up">~+3.5% to +5%</td><td>Kept on JPM's list. AWS +39%, with a $578B backlog.</td></tr>
+<tr><td>GOOGL</td><td class="up">~+3%</td><td>Unveiled two new TPUs. Removed from JPM's list.</td></tr>
+<tr><td>AAPL</td><td class="up">~+2.1% (11:39 AM, single source)</td><td>Lagging the rest of mega-cap tech. Unconfirmed.</td></tr>
+<tr><td>NVDA</td><td class="dn">−4.9% to −5.0% ($177.33)</td><td>Board probe of the CEO. The morning bounce faded. Very heavy trading is likely, but no volume figure was verified.</td></tr>
+<tr><td>ASML / TSM / MSFT / INTC</td><td class="up">Higher (no fresh midday %)</td><td>Yahoo says the chip group "surged." Open-time reads: ASML ~+3%, TSM ~+2%, MSFT +2–3%, INTC +2–3.7%.</td></tr>
+<tr><td>ORCL</td><td>n/a (one quote ~$116)</td><td>Bloomberg reported Nov. 6 that Microsoft is winding down a 2023 AI capacity rental deal with Oracle. Today's % move is not verified.</td></tr>
+<tr><td>CRM, QCOM</td><td>n/a</td><td>No verified intraday quote.</td></tr>
+<tr class="sec"><td colspan="3">Other notable movers</td></tr>
+<tr><td>COHR</td><td class="up">~+18%</td><td>Optical rally (CNBC midday headline). Up from +13% at the open.</td></tr>
+<tr><td>BE / MPWR</td><td class="up">+12.6% to +13.9% / &gt;+13%</td><td>"Power plays" for AI data centers (CNBC). BE also has fuel-cell contract news.</td></tr>
+<tr><td>LITE / FLEX / UI</td><td class="up">+11–12% / +12–13% / +10–11.5%</td><td>AI networking and hardware supply chain.</td></tr>
+<tr><td>AMAT</td><td class="up">+9% to +11.2%</td><td>Chip equipment. Reports Thursday.</td></tr>
+<tr><td>TTD</td><td class="up">+12.7% to +17.4%</td><td>Reports after today's close. The cause of the run-up wasn't verified.</td></tr>
+<tr><td>ASTS</td><td class="up">~+14%</td><td>$1B Rakuten satellite JV. Also reports today.</td></tr>
+<tr><td>VSAT / STRL</td><td class="up">+13.6–14.6% / +12.4–13.8%</td><td>Satellite and data-center construction names.</td></tr>
+<tr><td>AAL / UAL / DAL</td><td class="up">&gt;+6% / &gt;+6% / +4.6%</td><td>Falling oil.</td></tr>
+<tr><td>SAP (ADR)</td><td class="up">~+3%</td><td>JPMorgan upgrade to Overweight.</td></tr>
+<tr><td>IONS</td><td class="dn">−24.5% to −28.4%</td><td>Cut Tryngolza sales guidance roughly in half. The drop has worsened from −18.8% pre-market.</td></tr>
+<tr><td>FSLR</td><td class="dn">Lower</td><td>Piper Sandler cut its price target and 2026 revenue estimate (−2.6%).</td></tr>
+</table></div>
+
+<h2>4. Midday Alpha Candidates</h2>
+<p class="note">Names worth investigating further, not recommendations to buy or sell. Every one of these sits ahead of Tuesday's 8:30 AM CPI, which could reverse any of them.</p>
+
+<div class="card">
+<h3>1. Nvidia (NVDA): the bounce failed at resistance <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="dn">−4.94% to −4.99%</span> ($177.33) vs. about −3.9% at 10:22 AM and the $170.24 morning low. Previous close was ~$186.64.</p>
+<p><b>Thesis (worth watching into the close):</b> The Open Edition expected the gap to keep filling. Instead the stock gave back most of its recovery while the index and every other chip name made new highs for the day. That pattern suggests investors are actively selling NVDA to fund AMD and AVGO, rather than just staying out. The narrative shifted from "personal scandal" toward Washington and China. Wedbush's Matt Bryson says Huang will likely lose "power/credibility" with US officials regardless of what the probe finds. Moor Insights' Patrick Moorhead says the story puts Huang's role as "the face of the company in Washington and Beijing" at risk. Yahoo also resurfaced Culper Research's May short report, which alleged that up to ~20% of fiscal 2026 data-center revenue was tied to China through Southeast Asian diversion and named Megaspeed and Alice Huang. Nvidia says its audits found no export violations.</p>
+<p><b>Evidence:</b> Yahoo quote cards ($177.33, −4.99%); Yahoo Nvidia live blog (analyst quotes, Culper background, "negative return for the year"); House Republicans asked Huang to appear for a closed-door briefing and confirm a date by <b>Wednesday, Nov. 11</b>, and outgoing Sen. Cornyn called for an oversight investigation; Trump and Musk have publicly backed Huang.</p>
+<p><b>Risks / what could flip it:</b> A board statement with a timeline or interim governance steps, or Huang agreeing to the briefing quickly, could set off a sharp relief rally, because the discount to peers is now very large. On the downside, a subpoena, any finding tied to Megaspeed's chip purchases, or a weak close below ~$175 would mean the morning low is likely to be tested again. Treat the Nov. 11 briefing deadline as the next catalyst.</p>
+</div>
+
+<div class="card">
+<h3>2. AMD and Broadcom: rotation within AI chips is accelerating <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> AMD <span class="up">~+12%</span> (vs. +10–11% at the open; ~+24% over two sessions). AVGO <span class="up">+8.9% to ~+10%</span> (vs. +5–7%). SOXX <span class="up">+6.8%</span>.</p>
+<p><b>Thesis (still has legs into the close, but very extended):</b> Both names added to their gains through midday, while Nvidia lost ground. That is the opposite of what usually happens after an early short-covering burst. AMD has a fundamental reason (Oppenheimer's Outperform with a $600 target; Q3 data-center revenue +97%). AVGO is the main custom-ASIC alternative to Nvidia. Investors who want AI exposure without key-person risk are choosing these two. Citi's same-day downgrade of US tech also hints that crowded short or underweight positions are being covered.</p>
+<p><b>Evidence:</b> TipRanks (AMD ~+12%, AVGO ~+9.2%, SOXX +6.8%; separate headline "Broadcom up 10%"); Investing.com live ticker strip (AMD +12.15%, AVGO +8.85%); Investing.com market-cap movers article (earlier snapshot AMD +9.53%, AVGO +7.95%); Open Edition (Oppenheimer details).</p>
+<p><b>Risks / what could flip it:</b> AMD's trailing P/E is about 180, and a two-day gain of more than 20% invites profit-taking in the last hour. A hot CPI would hit high-multiple chips hardest. If Nvidia's governance overhang clears quickly, the pair trade could unwind sharply. AMAT (Thursday) and Cisco (Thursday) results are the next fundamental checks.</p>
+</div>
+
+<div class="card">
+<h3>3. AI data-center supply chain (COHR, LITE, MPWR, BE, FLEX): the strongest group of the session <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Move:</b> COHR ~+18% (from +13% at the open), MPWR &gt;+13%, BE +12.6–13.9%, FLEX +12–13%, LITE +11–12%, STRL +12–14%.</p>
+<p><b>Thesis (broad-based, but a bounce in a downtrend):</b> The gains spread from chips into optical networking, power delivery, on-site power and data-center construction. That breadth fits the "last week's selloff over data-center regulation was overdone" view from Morgan Stanley and UBS. These are the names hit hardest by post-election fears that a Democratic Congress would slow data-center permitting, so they rebound with the highest beta.</p>
+<p><b>Evidence:</b> CNBC midday-movers headline via search ("Coherent surged 18% in midday trading. Power plays Bloom Energy and Monolithic Power Systems advanced more than 13%"); Investing.com movers list and ticker strip; TipRanks (Morgan Stanley/UBS view).</p>
+<p><b>Risks / what could flip it:</b> No company-specific catalyst was found for most of these names, which makes the move fragile. The SOX just had its worst week since March 2025, and relief rallies in a correction often reverse within days. Any new policy headline on data-center permitting or power prices would hit this group first.</p>
+</div>
+
+<div class="card">
+<h3>4. Tesla (TSLA): a robotaxi catalyst on top of beta <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Move:</b> <span class="up">+5.3% to +5.7%</span>, about where it was in the morning (~+5%).</p>
+<p><b>Thesis:</b> The Open Edition labeled this a pure beta move with no catalyst. A catalyst has now surfaced: Tesla expanded its Austin robotaxi service area by 62.5% and launched San Antonio. It follows last week's announcement that Cybertruck production will end mid-2027 to focus on Cybercab. The stock is holding its gain instead of fading, consistent with a story-driven bid. Musk's public support for Huang is noise here.</p>
+<p><b>Evidence:</b> TipRanks (geofence expansion; "jumped over 5% in Monday afternoon's trading"; consensus target $409.49, ~8% upside; stock −19.5% over 12 months); TipRanks/The Fly (Cboe options, shares +5.51%); Yahoo live blog (Cybertruck deposit refunds; Cybertruck wind-down).</p>
+<p><b>Risks / what could flip it:</b> Refunds of Cybertruck deposits and the end of a product line are near-term negatives. Mercedes is rolling out a competing driver-assist system. Robotaxi geofence expansions have produced one-day pops before without lasting follow-through.</p>
+</div>
+
+<div class="card">
+<h3>5. Earnings-tonight runners (TTD, ASTS): event risk is building <span class="conf">Confidence: Low</span></h3>
+<p><b>Move:</b> TTD <span class="up">+12.7% to +17.4%</span>; ASTS <span class="up">~+14%</span>.</p>
+<p><b>Thesis:</b> Both report after the close and are rallying hard into the print. ASTS has a concrete catalyst (a $1B Rakuten satellite JV in Japan). TTD's run-up has no verified catalyst, and it looks like positioning and short covering in a heavily shorted ad-tech name on a high-beta day. Either way, they are worth watching for how much good news is already priced in by 4 PM.</p>
+<p><b>Evidence:</b> Investing.com movers list and ticker strip (TTD); TipRanks and CNBC (ASTS/Rakuten); Open Edition (both reporting tonight; RKLB also reports).</p>
+<p><b>Risks / what could flip it:</b> A double-digit run into earnings raises the bar. An in-line report can still send the stock down sharply after hours. Low confidence on direction; the point is that the setup is crowded.</p>
+</div>
+
+<div class="card">
+<h3>6. Ionis (IONS): guidance cut, and the drop is getting worse <span class="conf">Confidence: Low</span></h3>
+<p><b>Move:</b> <span class="dn">−24.5% to −28.4%</span> vs. −18.8% pre-market.</p>
+<p><b>Thesis:</b> Unlike most big pre-market drops on a strong-market day, this one widened after the open, even as the Russell 2000 rose 2.75%. That suggests institutions are exiting rather than buying the dip, after the company cut its sales guidance for Tryngolza roughly in half. Worth watching whether it closes near the lows, which would point to more selling ahead, or bounces into the bell.</p>
+<p><b>Evidence:</b> Investing.com (−28.41% in the article snapshot; −24.53% on the later ticker strip, so it has bounced slightly off the low); TheStreet via the Open Edition (guidance cut).</p>
+<p><b>Risks / what could flip it:</b> Biotech drops on a single launch-guidance cut sometimes overshoot, especially when the rest of the pipeline is unchanged. The details of the call weren't reviewed for this report.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. alpha_wrds_signals.csv has as_of_date <b>2026-09-17</b> (53 days old, outside the ~14-day window). Refresh the WRDS extract to bring momentum, volume and earnings-surprise factors back into this brief.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html (index strip at ~12:47 PM ET; NVDA $177.42 −4.94%; Tesla Cybertruck item; chip surge)</li>
+<li>https://finance.yahoo.com/technology/live/nvidia-scandal-live-updates-nvidia-stock--board-investigates-ceo-jensen-huang-affair-alleged-chinese-spy-163130372.html (NVDA $177.33 −4.99%; Bryson and Moorhead quotes; Culper short report; House Republican briefing request; Cornyn; Musk)</li>
+<li>https://www.tipranks.com/news/u-s-stocks-rebound-as-oil-prices-fall-and-nvidia-sinks (updated 17:40 UTC: S&amp;P/Dow &gt;+2%, NDX &gt;+3%; AMD ~+12%, AVGO ~+9.2%, SOXX +6.8%; oil; CPI consensus; MS/UBS view)</li>
+<li>https://www.tipranks.com/news/tesla-stock-nasdaqtsla-jumps-with-62-5-increase-in-austin-robotaxi-geofence (TSLA robotaxi geofence; +5% afternoon; related headlines: Broadcom +10%, ASTS/Rakuten, QXO)</li>
+<li>https://www.investing.com/news/stock-market-news/amd-tesla-among-market-cap-stock-movers-on-monday-93CH-5012779 (movers list and live ticker strip: AMD, AVGO, AMAT, MU, TSLA, BE, LITE, FLEX, UI, IONS, VSAT, TTD, STRL)</li>
+<li>https://www.cnbc.com/2026/11/09/stock-market-movers-live-updates.html (search summary only; page fetch returned empty: ASTS +14%, COHR +18%, BE/MPWR &gt;+13%, FSLR PT cut, airlines/cruise, SAP upgrade)</li>
+<li>https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html (search summary; fetch empty)</li>
+<li>https://247wallst.com/investing/2026/11/09/meta-and-amazon-rise-5-as-jpmorgan-names-them-top-internet-picks-alphabet-gains-3-despite-losing-its-spot/ (search summary: META/AMZN/GOOGL levels)</li>
+<li>https://www.tikr.com/blog/meta-soars-5-as-jpmorgan-picks-it-over-alphabet-for-its-analyst-focus-list (search summary: META $640.78, $940 PT)</li>
+<li>https://invezz.com/news/2026/11/09/why-amazon-shares-are-up-over-3-on-monday (search summary)</li>
+<li>https://www.marketbeat.com/stocks/sectors/technology/ (search summary: AAPL +2.12% at 11:39 AM; undated, unconfirmed)</li>
+<li>https://thenextweb.com/news/microsoft-winds-down-oracle-ai-cloud-capacity-deal and https://financefeeds.com/oracle-orcl-stock-116-50-monday-after-microsoft-ai-rental-wind-down-bull-130-bear-106/ (search summaries: Microsoft–Oracle story dated Nov. 6; ORCL ~$116)</li>
+<li>https://stockanalysis.com/markets/gainers/ (fetched; stale Nov. 6 data, not used)</li>
+<li>Local archive: alpha_report_2026-11-09_premarket.html, alpha_report_2026-11-09_open.html (earlier calls and levels); alpha_wrds_signals.csv (stale, not used)</li>
+<li>Not retrievable this run: CNBC live pages (empty fetch); Benzinga Oracle article (empty fetch); reliable midday quotes for ORCL, CRM, QCOM, CEG, CRWV, NBIS, IREN, NVR; any live volume screen.</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
