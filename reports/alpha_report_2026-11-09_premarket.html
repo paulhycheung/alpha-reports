@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-09 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Monday, November 9, 2026 &middot; Nvidia CEO probe day &middot; Week of October CPI (Tue) and PPI (Fri)</div>
+<p class="note">Automated run. The task targets ~7:30 AM ET, but this session ran from about <b>8:15 to 8:45 AM ET</b>. Pre-market quotes are snapshots from different outlets taken between ~4:20 and ~8:30 AM ET, so ranges are shown where they disagree. Futures come from Yahoo Finance's quote strip (~8:30 AM ET), checked against Reuters (5:10 AM), Investing.com (~6:36 AM) and TradingKey. <b>No verified Monday pre-market print was found</b> for AAPL, MU, TSLA, ORCL, CRM, ASML (ADR) or QCOM beyond Reuters' note that QCOM and INTC were down 0.5–1.2% early. Friday closing prices differ slightly between sources (NVDA $186.64 per Yahoo vs $187.18 in Friday's Close Edition; AMD $449.04 per CNBC vs $447.75), so moves here are as each outlet reported them. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (53 days old, outside the ~14-day window), so this edition has no WRDS data.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>Setup:</b> On Friday the rebound from Thursday's AI rout held only partly. The S&amp;P 500 closed at 7,376.86 (<span class="up">+0.31%</span>), the Nasdaq Composite at 24,579.42 (<span class="up">+1.09%</span>) and the Dow at 51,285.73 (<span class="dn">−0.46%</span>). Yahoo calls it the worst week for the S&amp;P and Nasdaq since early June; Bloomberg says the S&amp;P's worst since April 2025. The SOX posted its biggest weekly loss since March 2025 (Reuters). A hot October payrolls print (165K vs ~65K expected, wages +0.4%) left December <i>hike</i> odds around 73–85%. The Fed held at 3.75–4.00% in October with two dissents in favor of a hike.</p>
+<p><b>Weekend shock: Nvidia.</b> On Sunday, Nvidia's board opened an independent investigation into whether CEO Jensen Huang was the target of a foreign intelligence effort, after reports that US officials believe a woman he had a relationship with (Alice Huang, a former Megaspeed executive) worked for China's Ministry of State Security. In a memo to staff, Huang admitted to an affair. Nvidia says it has no reason to believe trade secrets or US national security were compromised, and Huang stays CEO during the probe. President Trump publicly backed Huang, and China's Foreign Ministry called the spy allegation a smear. Yahoo notes NVDA is about 7% of the S&amp;P 500, with no named successor.</p>
+<p><b>Asia shrugged it off and rallied:</b> Japan's Nikkei rose about <span class="up">+3.3% to +3.4%</span> (above 59,300). Taiwan's Taiex jumped about <span class="up">+5.7%</span> after its steepest weekly drop in two decades. Korea's Kospi rose <span class="up">+1.4% to +1.7%</span> and held 5,000, with Samsung and SK Hynix higher. MSCI Asia-Pacific ex-Japan rose 0.8% after falling 4.6% last week, and the Hang Seng rose modestly. <b>Europe:</b> The Stoxx 600 was up about <span class="up">+0.4% to +0.5%</span> (651.38 at 09:26 GMT), led by banks (UniCredit's beat; Crédit Agricole's bid for Banco BPM). Some snapshots showed it flat. SAP rose about 3% on a JPMorgan upgrade, while Nvidia's Frankfurt listing fell about 6%.</p>
+<p><b>US futures are higher, led by the Dow and small caps:</b> S&amp;P futures <span class="up">+0.7%</span> (7,454.50), Dow futures <span class="up">+1.05%</span> (51,923), Nasdaq-100 futures <span class="up">+0.4% to +0.6%</span> (27,247) and Russell 2000 futures <span class="up">+1.3%</span>. Nasdaq futures had been <i>down</i> 0.3% around 3:40 AM before turning up. The VIX is ~23.4 (−8.6%) and the 10-year yield ~4.86% (flat). Oil fell after Trump told CNN renewed strikes on Iran were "highly unlikely" if talks progress (WTI ~$87.5, −3.6%; Brent ~$94–98 depending on source and time; it briefly recovered when Rubio called the talks unproductive). Gold is ~$4,137 (+1.5%) and bitcoin ~$74.7K (−1.5%).</p>
+<p><b>Tone:</b> This is a broad relief bid with the AI-chip complex as the exception. The gap between Dow futures (+1%) and Nasdaq (+0.5%), together with NVDA −5% and AI-cloud names lower, points to the market continuing last week's rotation: money is favoring AI <i>users</i> (AMZN, META, GOOGL) and cyclicals over AI <i>builders</i>. Reuters quotes Zaye Capital: "investors remain selective." Capital Economics warns the AI correction "could have much further to run," with any sign of hyperscaler capex cuts the key risk. Tuesday's CPI is the next macro test.</p>
+
+<h2>2. Today's Economic Calendar / Key Events (ET)</h2>
+<div class="tbl"><table>
+<tr><th>When</th><th>Event</th><th>Consensus / Prior</th><th>Why it matters</th></tr>
+<tr><td class="n">10:00 AM</td><td>Wholesale inventories (Sept.)</td><td>—</td><td>Low impact. It is the only scheduled US data today.</td></tr>
+<tr><td class="n">Today</td><td>NY Fed consumer inflation expectations (Oct.)</td><td>Prior 3.9% (1-yr)</td><td>With the Fed leaning toward a hike, an uptick in expectations would add to pressure on long-duration tech before CPI.</td></tr>
+<tr><td class="n">Pre-mkt / 10 AM call</td><td>Earnings: <b>KKR</b> (call 10:00 AM), <b>Constellation Energy (CEG)</b></td><td>—</td><td>KKR was +3.7% ahead of results (Reuters, 5:10 AM). CEG is an AI-power bellwether, so its data-center demand commentary will be read across to VST, NRG and the AI-power trade.</td></tr>
+<tr><td class="n">After close</td><td>Earnings: Rocket Lab (RKLB), Take-Two (TTWO), NRG Energy, Skydance, Trump Media (DJT)</td><td>—</td><td>TTWO: GTA VI timing and bookings guidance. NRG: data-center power contracts.</td></tr>
+<tr><td class="n">Today (timing not verified)</td><td>Other reporters</td><td>Barrick (B), Occidental (OXY), Hims &amp; Hers (HIMS), monday.com (MNDY), The Trade Desk (TTD), Plug Power (PLUG), Lucid (LCID), Archer (ACHR), Sanmina (SANM), Qualys (QLYS), USA Rare Earth (USAR)</td><td>MNDY and TTD test whether the software split (beats rewarded, misses crushed) continues.</td></tr>
+<tr><td class="n">All day</td><td>Nvidia / Huang headlines</td><td>—</td><td>Any update on the probe's scope or timeline, board statements, or congressional reaction (Dan Ives expects "multiple congressional investigations").</td></tr>
+<tr class="sec"><td colspan="4">Rest of the week</td></tr>
+<tr><td class="n">Tue 8:30 AM</td><td><b>October CPI</b> and real earnings</td><td>—</td><td>The key macro print before the Dec 8–9 FOMC. A hot core reading would likely hit high-multiple chips first.</td></tr>
+<tr><td class="n">Tue after close</td><td><b>CoreWeave (CRWV)</b> Q3</td><td>—</td><td>Backlog conversion, capex and financing. A direct test of the AI-cloud credit worries.</td></tr>
+<tr><td class="n">Wed</td><td>Veterans Day</td><td>—</td><td>Stocks open; bond market closed (SIFMA).</td></tr>
+<tr><td class="n">Thu</td><td>Nebius (pre-mkt); <b>Cisco, Applied Materials</b>, Cerebras (after close)</td><td>—</td><td>AI networking and chip-equipment demand. AMAT is a key read for the semicap group after LRCX's buyback.</td></tr>
+<tr><td class="n">Fri 8:30 AM</td><td>October PPI</td><td>—</td><td>Second inflation test of the week.</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">Moves are vs. Friday's (Nov. 6) close. Snapshots come from Yahoo's quote card (NVDA, 8:30 AM), Investing.com via Yahoo (~6:36 AM), Reuters (5:10 AM), CNBC, TradingKey and a Nasdaq-sourced 4:20 AM snapshot. Ranges are shown where they differ.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt</th><th>Catalyst note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="dn">−4.5% to −5.4% (~$176.5)</td><td>Board probe into whether Huang was targeted by foreign intelligence; Huang admits an affair. Trading below the April 9 intraday low of $180.62, the lowest since April. Partner news (SK Telecom/Rebellions NVLink Fusion deal) is being ignored.</td></tr>
+<tr><td>AMD</td><td class="up">+3.2% to +4%</td><td><b>Oppenheimer upgrade</b> to Outperform from Perform, $600 PT (~34% upside). Sees data-center revenue +135% in 2027.</td></tr>
+<tr><td>AMZN</td><td class="up">~+3%</td><td>CNBC: JPMorgan named Amazon and Meta top AI picks in a Monday note. <i>The note itself could not be retrieved.</i></td></tr>
+<tr><td>META</td><td class="up">~+2.5%</td><td>Same JPMorgan note.</td></tr>
+<tr><td>GOOGL</td><td class="up">+1% to ~+3%</td><td>Announced two new TPUs (8tx and 8i Max) aimed at Nvidia, per Bloomberg. Also exploring up to $3B of HKD/SGD bonds. Reuters had it up less than 1% at 5:10 AM, before the chip news.</td></tr>
+<tr><td>MSFT</td><td class="up">&lt;+1%</td><td>Reuters: up slightly. No company-specific news.</td></tr>
+<tr><td>AVGO</td><td class="up">+1.4% (4:20 AM)</td><td>Early snapshot only.</td></tr>
+<tr><td>TSM (ADR)</td><td class="up">+0.6% (4:20 AM)</td><td>Taiex +5.7% overnight. The ADR's small move suggests the Taipei rebound was largely already priced in after Friday's US session.</td></tr>
+<tr><td>INTC / QCOM</td><td class="dn">−0.5% to −1.2%</td><td>Reuters: chips subdued (with MRVL). INTC led Friday's bounce (+8%).</td></tr>
+<tr><td>AAPL, MU, TSLA, ORCL, CRM, ASML</td><td>n/a</td><td>No verified Monday pre-market print. TradingKey: AAPL closed Friday at $342.37 (+26% YTD, leading the Mag 7).</td></tr>
+<tr class="sec"><td colspan="3">Other notable gappers</td></tr>
+<tr><td>NVR</td><td class="up">+26%</td><td>Homebuilders extend their post-midterm rally. UBS: Democratic control raises odds of lower tariffs on building materials (~$7,500 per home) and a wider SALT deduction.</td></tr>
+<tr><td>VIR</td><td class="up">+15%</td><td>Phase 3 ECLIPSE-1 in hepatitis D met its primary endpoint (79% undetectable at week 48).</td></tr>
+<tr><td>KKR</td><td class="up">+3.7%</td><td>Ahead of Q3 results this morning.</td></tr>
+<tr><td>SAP (ADR)</td><td class="up">~+3%</td><td>JPMorgan upgrade to Overweight: enterprise AI is moving to large-scale deployment, which favors incumbent platforms.</td></tr>
+<tr><td>LLY</td><td class="up">~+2%</td><td>Canada's Drug Agency recommended reimbursement for Kisunla (early Alzheimer's).</td></tr>
+<tr><td>ARGX</td><td class="up">+2.2%</td><td>Acquiring Unnatural Products for up to ~$1.15B ($550M upfront).</td></tr>
+<tr><td>BRK.B</td><td class="dn">−0.4%</td><td>Q3 operating earnings −5.8% y/y (insurance underwriting down); $9.6B of buybacks; ~$377B cash.</td></tr>
+<tr><td>CRWV / NBIS / IREN</td><td class="dn">−3.8% / −2.9% / −4.8%</td><td>AI-cloud names are lower on ROI and financing worries, reversing Friday's leadership (IREN was +20.7% Friday). CoreWeave wrote to Texas Gov.-elect Hinojosa seeking clear data-center approval standards. CRWV reports Tuesday.</td></tr>
+</table></div>
+<p class="note">Investing.com's movers table also listed LRCX +14.6%, ABNB +12.3%, AMD +9.4%, AXON −11.9%, MNST −8.4% and CHTR −7.9%. These match <b>Friday's</b> moves (see Friday's Pre-Market and Close editions), so they were treated as stale and left out of the table.</p>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">Names worth watching, not recommendations. All of these sit ahead of Tuesday's CPI, so a strong close today matters less than how these names trade into that print.</p>
+
+<div class="card">
+<h3>1. Nvidia (NVDA): pricing key-person risk at a $4.5T company <span class="conf">Confidence: Medium</span></h3>
+<p><b>Pre-market:</b> <span class="dn">−4.5% to −5.4%</span> (~$176.5 vs $186.64 Friday close), below the April 9 intraday low of $180.62.</p>
+<p><b>Thesis:</b> This is a governance shock, not a fundamental one. The open will show whether the market treats it as headline noise (Ives expects "no interruption" in Huang's role; Trump backs him; Nvidia says no secrets were compromised) or as the start of a longer overhang (congressional probes, a Democratic Congress likely to tighten China export scrutiny, no named successor). It lands on a stock already hurt by last week's AI-capex scare. Because NVDA is ~7% of the S&amp;P, it explains why Nasdaq futures lag the Dow.</p>
+<p><b>Evidence:</b> Yahoo live blog (board probe, Huang memo, Ives note, 8:30 AM quote $176.50); Reuters via Yahoo ("raised questions about his future"); Investing.com (no evidence of compromise); TradingKey (below April low; SK Telecom/Rebellions partnership).</p>
+<p><b>Risks / what could reverse it:</b> Gaps on non-fundamental news often partly fill once a board signals continuity, and dip buyers have treated NVDA as a "buy the drop" name all year. On the other side, any detail showing the relationship touched business dealings (Megaspeed was an Nvidia chip customer) or a congressional subpoena could extend the drop. Watch $180.62 (old April low, now resistance) and the morning's volume.</p>
+</div>
+
+<div class="card">
+<h3>2. AMD: an upgrade that sharpens the divergence from Nvidia <span class="conf">Confidence: Medium</span></h3>
+<p><b>Pre-market:</b> <span class="up">+3.2% to +4%</span> (~$463–468) after Friday's +10.7%.</p>
+<p><b>Thesis:</b> Oppenheimer's Rick Schafer upgraded AMD to Outperform with a $600 target, forecasting +135% data-center growth in 2027 and GPU (DCAI) sales overtaking EPYC CPUs. That comes as NVDA has a CEO-specific problem, giving funds a reason to rotate <i>within</i> AI chips rather than out of them. AMD was the strongest large chip name through every edition on Friday and closed near its high.</p>
+<p><b>Evidence:</b> CNBC (upgrade and pre-market move); Benzinga (+3.15% to $463.18); Blockonomi (later quote $468.01); FourWeekMBA (135% DC forecast); Friday's Close Edition (closed +10.72% on 1.9× volume).</p>
+<p><b>Risks / fade:</b> AMD is up ~15% in two sessions and still down ~26% over the month, so it remains high-beta to any renewed AI-capex worry. A hot CPI on Tuesday would hit it hard. Watch whether it holds the gap after the first 30 minutes, given that sell-side upgrades after big bounces often draw profit-taking.</p>
+</div>
+
+<div class="card">
+<h3>3. Amazon / Meta: "AI users over AI builders" <span class="conf">Confidence: Medium</span></h3>
+<p><b>Pre-market:</b> AMZN <span class="up">~+3%</span>, META <span class="up">~+2.5%</span>. MSFT up less than 1%.</p>
+<p><b>Thesis:</b> CNBC reports JPMorgan named AMZN and META its top AI picks in a Monday note. That fits the rotation Yahoo's Morning Brief and DataTrek describe: a data-center slowdown is bad for chip suppliers but <i>good</i> for platform profits, because capex falls while AI monetization continues. Both names have held up since the election. These moves are large for mega-caps and are the clearest sign of where money is going this morning.</p>
+<p><b>Evidence:</b> CNBC pre-market live blog (JPM note, AMZN +3%, META +2.5%); Yahoo Morning Brief ("2 big AI narratives"); Reuters (MSFT, GOOGL and META up less than 1% at 5:10 AM, so the gains built later).</p>
+<p><b>Risks / fade:</b> The JPM note itself was not retrieved. On Friday, the "platform reversal" call from the open faded (AMZN closed −0.31%), so similar pre-market strength didn't hold last week. If chips rebound hard after the open, money could rotate back the other way.</p>
+</div>
+
+<div class="card">
+<h3>4. Alphabet (GOOGL): new TPUs as Nvidia stumbles <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Pre-market:</b> <span class="up">+1% to ~+3%</span> (sources differ by time).</p>
+<p><b>Thesis:</b> Google announced two new TPUs (8tx and 8i Max) designed for confidential workloads and long-context AI apps, according to Bloomberg. The timing matters: on a day buyers are questioning Nvidia's leadership, a credible in-house alternative strengthens Google's position as both an AI platform and a chip supplier (Anthropic is a major TPU customer). It also fits the "platforms over suppliers" rotation.</p>
+<p><b>Evidence:</b> Yahoo live blog (Bloomberg TPU report, "nearly 3%"); TradingKey (+1% with the up to $3B Asia bond plan); Reuters (up less than 1% early).</p>
+<p><b>Risks / fade:</b> The TPU product details are single-sourced (Bloomberg via Yahoo) and couldn't be confirmed. Ongoing heavy bond issuance by hyperscalers is a supply concern for credit markets. If the market reads new TPUs as <i>more</i> capex, the platform-profits argument weakens.</p>
+</div>
+
+<div class="card">
+<h3>5. AI cloud (CRWV, NBIS, IREN): Friday's leaders turn lower before CoreWeave reports <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Pre-market:</b> CRWV <span class="dn">−3.8%</span>, NBIS <span class="dn">−2.9%</span>, IREN <span class="dn">−4.8%</span>, after Friday's gains (IREN +20.7%, CRWV +6.6%).</p>
+<p><b>Thesis:</b> These are the most leveraged plays on AI-compute demand, and they need GPU financing. Nvidia governance risk, a Democratic Congress and Texas's governor-elect (who has backed pausing new data-center approvals) all hit this group harder than the platforms. CoreWeave reporting Tuesday and Nebius on Thursday make this the group to watch for whether Friday's bounce was short-covering.</p>
+<p><b>Evidence:</b> TradingKey (moves and the CoreWeave letter to Hinojosa); Friday's Close Edition (Friday's closes); Capital Economics via Reuters (capex-cut risk).</p>
+<p><b>Risks / fade:</b> The Anthropic $3.4B Caterpillar power-equipment deal (FT) and Anthropic's reported ARR growth show compute demand is still strong, which could limit downside. Pre-earnings short-covering is also possible.</p>
+</div>
+
+<div class="card">
+<h3>6. NVR and homebuilders: a midterm policy trade <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Pre-market:</b> NVR <span class="up">+26%</span> (Investing.com, ~6:36 AM).</p>
+<p><b>Thesis:</b> This is the clearest non-tech beneficiary of the Democratic sweep. UBS says lower building-material tariffs could cut about $7,500 from the cost of a new home, and a bigger SALT deduction would help buyers in high-tax states. It also fits the Dow and Russell leading futures, with money moving into rate- and policy-sensitive cyclicals as oil falls.</p>
+<p><b>Evidence:</b> Investing.com via Yahoo (NVR +26%, UBS reasoning); Yahoo futures strip (Russell +1.3%).</p>
+<p><b>Risks / fade:</b> A 26% gap in a very high-priced, low-float stock on a broker note, not earnings, is unusual. The size couldn't be confirmed with a second source and should be checked at the open. Mortgage rates depend on the 10-year (~4.86%) and December hike odds, both of which a hot CPI on Tuesday could push higher.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. The only file, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (53 days old, outside the ~14-day window). Refresh the WRDS extract to bring momentum, volume and earnings-surprise factors back into this brief.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html (futures strip ~8:30 AM; Nvidia probe; Huang memo; Ives note; Google TPUs; calendar; Asia)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/premarket-movers-nvidia-slides-huang-113609873.html (Investing.com: NVDA, NVR/UBS, SAP/JPM, argenx)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-rough-103539344.html (Reuters 5:10 AM futures; chips; KKR, CEG; Capital Economics)</li>
+<li>https://www.tradingkey.com/analysis/stocks/us-stocks/262296219-us-premarket-futures-rise-nvidia-down-5-huang-probe-ai-cloud-coreweave-tradingkey (VIR, CRWV/NBIS/IREN, SK Telecom, Anthropic power deal, Berkshire, after-close earnings)</li>
+<li>https://www.tradingkey.com/analysis/stocks/us-stocks/262294759-week-ahead-october-cpi-ppi-coreweave-cisco-applied-materials-tradingkey (week-ahead calendar; Fed October decision)</li>
+<li>https://www.cnbc.com/2026/11/09/stock-market-movers-live-updates.html (search summary; page fetch returned empty: AMD, AMZN/META JPM note, LLY, BRK)</li>
+<li>https://www.cnbc.com/2026/11/09/amd-oppenheimer-upgrade-outperform.html (search summary)</li>
+<li>https://www.benzinga.com/markets/tech/26/11/63025964/whats-going-on-with-amd-stock-monday-12 (search summary)</li>
+<li>https://fourweekmba.com/ai-oppenheimer-upgrades-amd-sees-data-center-up-135-in-2027/ (search summary)</li>
+<li>https://blockonomi.com/why-oppenheimer-thinks-amd-stock-can-gain-34 (search summary)</li>
+<li>https://hdfcsky.com/news/global-markets-today-november-9-2026-asia-rises-us-futures-higher-oil-slips-to-98-as-easing-iran-tensions-lift-sentiment (Asia: Nikkei, Taiex, Kospi, MSCI APxJ; Brent)</li>
+<li>https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Trump-Signals-No-New-Attacks-on-Iran.html (search summary)</li>
+<li>https://investinglive.com/news/investinglive-asia-pacific-market-news-asia-shrugs-off-nvidia-scandal-oil-steadies/ (search summary; fetch returned empty)</li>
+<li>https://www.marketscreener.com/news/europe-shares-tread-water-as-investors-weigh-ai-trade-banks-in-focus-ce785fd3db88fe2c (search summary: Stoxx 600, banks, Nvidia Frankfurt)</li>
+<li>https://bloomberg.com/news/articles/2026-11-09/european-stocks-rise-as-banks-technology-shares-advance (search summary)</li>
+<li>https://www.bloomberg.com/news/articles/2026-11-09/us-stock-futures-today-dole-greenfire-jetblue-kkr-nrg-nvidia (search summary: S&amp;P futures +0.7% at 7:39 AM)</li>
+<li>https://www.tokenpost.com/news/investing/52309 (search summary: ~8 AM futures)</li>
+<li>Nasdaq-sourced 4:20 AM snapshot via search summary (AVGO, TSM ADR, NVDA)</li>
+<li>https://www.tradingkey.com/analysis/stocks/us-stocks/262295944-nvidia-premarket-drop-5-7-month-low-jensen-huang-extramarital-affair-tradingkey (headline/summary: April-low reference)</li>
+<li>Local archive: alpha_report_2026-11-06_close.html (Friday closing levels and moves)</li>
+<li>Not retrievable this run: CNBC pages (empty fetch); the JPMorgan AMZN/META note; KKR and CEG Q3 releases (not yet indexed); Bloomberg's TPU article (paywalled; used via Yahoo).</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
