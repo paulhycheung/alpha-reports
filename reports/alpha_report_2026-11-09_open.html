@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-09 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Monday, November 9, 2026 &middot; Day 1 of the Nvidia CEO probe &middot; October CPI Tuesday 8:30 AM ET</div>
+<p class="note">Automated run. The task targets ~10:00 AM ET, but this session ran from about <b>10:45 to 11:05 AM ET</b>, so most quotes here are from roughly 75–90 minutes into the session, not 30. Quotes come from Yahoo Finance (index strip ~10:36–10:45 AM; ticker cards ~10:22 AM), 24/7 Wall St. (quote widgets ~10:50–11:00 AM) and early-session snapshots cited by CNBC, TheStreet and others. <b>No reliable volume data:</b> Yahoo's Most Active page served stale data (it showed Nov. 4 events and NVDA at $203), so it was not used. JournalArta's "open" movers list (AXON −18%, ABNB +12%, AMD +11.04% to $449.04) repeats <b>Friday's</b> moves and closing prices, so its single-stock figures were left out; its index levels were used only as an open-time cross-check. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (53 days old, outside the ~14-day window).</p>
+
+<h2>1. How the First Hour Traded</h2>
+<p><b>The relief rally broadened, and tech took over leadership from the Dow.</b> Stocks opened higher as expected (Yahoo, at the open: Dow +1.0%, S&amp;P 500 +0.9%, Nasdaq +0.8%) and kept building. By ~10:36–10:45 AM ET the S&amp;P 500 was at <b>7,518.02</b> (<span class="up">+1.91%</span>), the Nasdaq Composite at <b>25,173.15</b> (<span class="up">+2.42%</span>), the Dow at <b>52,106–52,118</b> (<span class="up">+1.6%</span>) and the Russell 2000 at <span class="up">+2.05%</span>. A later 24/7 Wall St. strip (~11:00 AM) had the S&amp;P <span class="up">+2.11%</span> (7,540.90), the Nasdaq-100 <span class="up">+3.20%</span> and the Russell <span class="up">+2.53%</span>. The VIX fell to ~21.1 (−17.6%), the 10-year yield was ~4.86% (flat), and WTI was ~$87.7 (−3.5%) as oil kept sliding on hopes for Iran talks. Gold was ~$4,127 and bitcoin ~$75.1K.</p>
+<p><b>The key change from pre-market:</b> the morning's "AI users over AI builders" read (Dow futures +1%, Nasdaq +0.5%) <b>did not survive the open</b>. Chipmakers <i>other than</i> Nvidia became the strongest group. AMD (+10–11%), Applied Materials (+10%), Monolithic Power (+13%), Broadcom (+5–7%) and the optical names (Coherent +13%, Lumentum +11%) all moved far beyond their pre-market levels. The Nasdaq-100 is now beating the Dow by about 1.5 points. Nvidia itself opened worse than pre-market (about −7%, low $170.24) and was then bought back to about −4%. In short, the money is rotating <i>within</i> AI hardware, away from Nvidia's key-person risk, rather than out of AI. Platforms (META, AMZN) also extended their gains on JPMorgan's focus-list change. Oil-sensitive cyclicals (airlines +6–7%) rallied while energy producers lagged.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Compared with this morning's Pre-Market Edition (snapshots ~4:20–8:30 AM ET). "Now" means ~10:20–11:00 AM ET.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Pre-market</th><th>Now</th><th>Verdict</th></tr>
+<tr><td>NVDA</td><td class="dn">−4.5% to −5.4% (~$176.5)</td><td class="dn">−3.9% to −4.4% (~$178.4–179.1)</td><td><b>Extended, then partly filled.</b> Opened about −7.3% and hit $170.24 (~−8.8%) before buyers stepped in. Now above the pre-market price but still below the old April low of $180.62.</td></tr>
+<tr><td>AMD</td><td class="up">+3.2% to +4%</td><td class="up">+10% to +11% (~$494–498)</td><td><b>Held and extended sharply.</b> It is the session's standout large cap.</td></tr>
+<tr><td>AMZN</td><td class="up">~+3%</td><td class="up">+4% to +5% (~$270–272)</td><td><b>Held and extended.</b></td></tr>
+<tr><td>META</td><td class="up">~+2.5%</td><td class="up">+4.6% to +5% (~$638)</td><td><b>Extended.</b> The JPM note turned out to be a focus-list addition.</td></tr>
+<tr><td>GOOGL</td><td class="up">+1% to ~+3%</td><td class="up">~+3.1% (~$294)</td><td><b>Held</b>, even though JPMorgan dropped it from its focus list.</td></tr>
+<tr><td>MSFT</td><td class="up">&lt;+1%</td><td class="up">+2.2% to +3% (~$542–545)</td><td><b>Extended.</b></td></tr>
+<tr><td>AVGO</td><td class="up">+1.4% to +2.9%</td><td class="up">~+5% to +7%</td><td><b>Extended.</b></td></tr>
+<tr><td>INTC / QCOM</td><td class="dn">−0.5% to −1.2%</td><td class="up">INTC +2% to +3.7%</td><td><b>INTC reversed higher.</b> No verified QCOM quote.</td></tr>
+<tr><td>TSM (ADR)</td><td class="up">+0.6%</td><td class="up">~+2% (one report: +6%)</td><td><b>Held or extended.</b> Sources disagree on the size.</td></tr>
+<tr><td>CRWV / NBIS / IREN</td><td class="dn">−2.9% to −4.8%</td><td>n/a</td><td><b>Not verified.</b> No reliable intraday quote was found.</td></tr>
+<tr><td>NVR</td><td class="up">+26% (single source)</td><td>n/a</td><td><b>Still unverified.</b> No second source confirmed the gap, and the Investing.com page's own ticker showed NVR <i>down</i> ~1.8%. Treat the +26% figure as suspect.</td></tr>
+<tr><td>SAP (ADR)</td><td class="up">~+3%</td><td class="up">~+3% (CNBC)</td><td><b>Held.</b></td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">Moves are vs. Friday's (Nov. 6) close, as reported at the time noted. Volume notes are qualitative because no reliable live volume screen was available.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move</th><th>Volume / catalyst note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>AMD</td><td class="up">+10% to +11%</td><td>Oppenheimer upgrade to Outperform ($600 PT). Third straight strong session after Friday's +10.7%. Trending #1 on Yahoo.</td></tr>
+<tr><td>TSLA</td><td class="up">~+5%</td><td>Led the Mag 7 excluding NVDA (Yahoo). No single-stock catalyst found, so this looks like a beta move.</td></tr>
+<tr><td>AVGO</td><td class="up">+5% to +7%</td><td>Part of the chip rebound outside Nvidia.</td></tr>
+<tr><td>META</td><td class="up">+4.6% to +5%</td><td>Added to JPMorgan's Analyst Focus List.</td></tr>
+<tr><td>AMZN</td><td class="up">+4% to +5%</td><td>Kept on JPM's focus list. AWS grew 39% in Q3.</td></tr>
+<tr><td>INTC</td><td class="up">+2% to +3.7%</td><td>Reversed its pre-market dip.</td></tr>
+<tr><td>GOOGL</td><td class="up">~+3%</td><td>Removed from JPM's focus list but still up (new TPUs, beta).</td></tr>
+<tr><td>MSFT</td><td class="up">+2% to +3%</td><td>Broad mega-cap bid.</td></tr>
+<tr><td>ASML / MU / TSM</td><td class="up">ASML ~+3%, MU +1% or more, TSM ~+2%</td><td>Yahoo says the group "surged." Exact figures are from early snapshots.</td></tr>
+<tr><td>AAPL</td><td class="up">~+1.3% (~$347)</td><td>Lagging the rest of mega-cap tech.</td></tr>
+<tr><td>NVDA</td><td class="dn">−3.9% to −4.4%</td><td>Board probe of CEO Huang. Intraday low $170.24 (~−8.8%), then recovered. Very heavy trading is likely given the headline, but no volume figure was verified.</td></tr>
+<tr><td>CRM</td><td class="dn">−3.9% (single source; may be Friday's move)</td><td>Software continues to lag. Unconfirmed.</td></tr>
+<tr><td>ORCL, QCOM</td><td>n/a</td><td>No verified intraday quote.</td></tr>
+<tr class="sec"><td colspan="3">Other notable movers</td></tr>
+<tr><td>MPWR</td><td class="up">+12.8%</td><td>Power semis join the chip rally (24/7 Wall St. winners list).</td></tr>
+<tr><td>COHR / LITE</td><td class="up">+13% / +11%</td><td>Optical names extend their AI rebound.</td></tr>
+<tr><td>AMAT</td><td class="up">+10.3%</td><td>Chip equipment. Reports Thursday after the close.</td></tr>
+<tr><td>TTD</td><td class="up">+15.4%</td><td>Reports after today's close. The cause of the pre-earnings jump wasn't verified.</td></tr>
+<tr><td>CEG</td><td class="up">~+6%</td><td>Q3 beat and raised guidance (see candidates).</td></tr>
+<tr><td>JBLU / UAL / AAL</td><td class="up">+7% / +7% / +6%</td><td>Falling oil (WTI −3.5%, Brent −4% to −5%).</td></tr>
+<tr><td>ASTS / RKLB</td><td class="up">+11% / +9%</td><td>ASTS: Japan satellite venture with Rakuten. RKLB: ahead of earnings tonight.</td></tr>
+<tr><td>BE</td><td class="up">~+13.5%</td><td>Fuel-cell contract wins (single source).</td></tr>
+<tr><td>IONS</td><td class="dn">−18.8% (pre-mkt)</td><td>Cut its Tryngolza sales guidance by about 50%.</td></tr>
+<tr><td>AKAM</td><td class="dn">−5.3% (pre-mkt)</td><td>$2.2B convertible notes offering.</td></tr>
+<tr><td>CTRA / FSLR</td><td class="dn">−8.6% / −5.4%</td><td>Energy and solar lag as oil falls and money rotates back into tech.</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">Names worth investigating further, not recommendations to buy or sell. Every read here sits ahead of Tuesday's 8:30 AM CPI, which could reverse any of them.</p>
+
+<div class="card">
+<h3>1. AMD: the pre-market gap tripled after the open <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="up">+10% to +11%</span> (~$494–498) vs. <span class="up">+3–4%</span> pre-market. That is about +22% over two sessions.</p>
+<p><b>Thesis (has legs into midday, though stretched):</b> AMD is the clearest beneficiary of money rotating out of Nvidia and into other AI chips. Oppenheimer's upgrade ($600 PT; +135% data-center growth forecast for 2027) gave a fundamental reason. Nvidia's CEO-specific problem gave a reason to switch out of NVDA rather than leave the sector. The move kept extending well after the open instead of fading, and the whole group (AVGO, AMAT, MPWR, optical) confirms it. That makes it look more like a sector re-rating than a single-stock squeeze.</p>
+<p><b>Evidence:</b> Yahoo AlphaCheck (+9.5% at ~10:22 AM, "AMD jumping 9%"); 24/7 Wall St. widgets ($493.82 +9.97%; winners list $498.42 +11.00%); TheStreet (pre-market +3.35% on the Schafer upgrade); Q3 data-center revenue +97% to $8.55B, Q4 guide ~$17B (24/7 Wall St., citing the company and Reuters).</p>
+<p><b>Risks / what could flip it:</b> AMD's trailing P/E is ~180, and it is still ~25% below its 52-week high of $658.52. After a two-day gain of 20%+, it is exposed to profit-taking in the afternoon and to a hot CPI. If NVDA keeps recovering toward unchanged, the pair-trade money could unwind. Watch whether it holds above ~$480 into midday.</p>
+</div>
+
+<div class="card">
+<h3>2. Nvidia (NVDA): a governance gap that was bought back <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="dn">−3.9% to −4.4%</span> (~$178.4–179.1) vs. <span class="dn">−4.5% to −5.4%</span> pre-market. It opened about −7.3% and bottomed at $170.24 before recovering about 5%.</p>
+<p><b>Thesis (gap filling, but capped):</b> The classic pattern for a non-fundamental shock played out. A capitulation open was followed by dip-buying once it became clear the damage stayed with Nvidia (the rest of the sector rallied hard). The stock has recovered more than half of its intraday loss. But it is trailing AMD and Broadcom by 10 to 15 points, which shows the market is charging an ongoing key-person discount. The next test is the $180.62 old April low, now acting as resistance.</p>
+<p><b>Evidence:</b> Yahoo AlphaCheck ("recovered from early-morning losses of as much as 8%"; −3.91% at ~10:22 AM); Yahoo live blog (−6% at the open); NBC/FourWeekMBA via search (opened −7.3%, low $170.24); 24/7 Wall St. ($178.36, −4.44%); Dan Ives: "Jensen is not replaceable"; Trump says Huang should stay CEO; Capital.com's Hathorn: the controversy "does not necessarily change the company's underlying demand outlook."</p>
+<p><b>Risks / what could flip it:</b> Any detail linking the relationship to Megaspeed's chip purchases, a congressional letter or subpoena, or board language that hedges on Huang's role could send it back to the lows. On the upside, a fast-moving probe or a named interim succession plan would likely close the discount to peers.</p>
+</div>
+
+<div class="card">
+<h3>3. Meta and Amazon: JPMorgan's focus-list change carried through the open <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> META <span class="up">+4.6% to +5%</span> (~$638) vs. +2.5% pre-market. AMZN <span class="up">+4% to +5%</span> (~$270–272) vs. +3%.</p>
+<p><b>Thesis (has legs, but the driver is now shared):</b> The JPM note retrieved after the pre-market report turns out to be a focus-list change: Doug Anmuth <b>added META and dropped GOOGL</b>, and kept AMZN. He cites Meta's Q3 ad revenue +26% (North America +33%) and about $13B of new ad revenue, roughly double Google Search's gain, and expects Meta's app ad revenue to pass Google Search in Q4. For Amazon he cites AWS +39% and management's "north of 40%" growth outlook for 2027–28. Unlike Friday, when the platform names faded, these gaps extended after the open. However, the platforms are no longer the <i>relative</i> winners; semis are. That makes this read more about broad beta than about rotation.</p>
+<p><b>Evidence:</b> 24/7 Wall St. (JPM note details; META $637.77 +5% shortly after the open; widgets META +4.62%, AMZN +3.97%); Investing.com/Yahoo ("JPMorgan drops Alphabet from focus list, adds Meta"); CNBC movers blog (via search).</p>
+<p><b>Risks / what could flip it:</b> If the market goes back to treating hyperscaler capex as a cost (higher capex plus negative FCF, which Anmuth flags for Alphabet), the "users" argument weakens. Meta faces legal and regulatory pressure from a Democratic Congress. Watch whether GOOGL keeps pace despite losing its spot. That would suggest the move is beta, not the note.</p>
+</div>
+
+<div class="card">
+<h3>4. AI hardware outside Nvidia (AVGO, AMAT, MPWR, COHR, LITE) <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Move:</b> AVGO +5% to +7%, AMAT +10.3%, MPWR +12.8%, COHR +13%, LITE +11%. Nasdaq-100 +3.2%.</p>
+<p><b>Thesis (rebound with momentum, still a bounce in a downtrend):</b> These moves are far larger than the index's. It looks like buyers are picking up oversold AI suppliers (the SOX had its worst week since March 2025; SOXX fell 33% in October) and choosing names without key-person risk. A Nasdaq-100 gain of 3% while its largest weight is down 4% shows how broad the buying is. Citi's same-day downgrade of US tech to neutral, warning that Nasdaq positioning could reset toward net-short, cuts both ways: short covering could be adding fuel here.</p>
+<p><b>Evidence:</b> 24/7 Wall St. (winners list; optical-stocks article headline); Yahoo live blog ("Chip-related stocks, including AMD, Micron, and ASML, surged"); TheStreet (Citi downgrade via Bloomberg); JournalArta (SOXX October flows).</p>
+<p><b>Risks / what could flip it:</b> Short-covering rallies in a correction often fade by the afternoon. AMAT (Thursday) and Cisco (Thursday) results, and CoreWeave (Tuesday) as a read on AI-cloud credit, are the next checks. A hot CPI would hit these high-multiple names hardest.</p>
+</div>
+
+<div class="card">
+<h3>5. Constellation Energy (CEG): beat and raise in AI power <span class="conf">Confidence: Medium</span></h3>
+<p><b>Move:</b> <span class="up">~+6%</span> (+6.09% on Yahoo ~10:22 AM; a separate report: +5.95% to $264.83). That is up from ~+3% pre-market.</p>
+<p><b>Thesis (has legs on fundamentals):</b> This is a clean, fresh earnings catalyst rather than a sentiment trade. Adjusted operating EPS was <b>$5.06 vs. ~$3.7–3.9 consensus</b> (and $3.04 a year ago). Revenue rose 45% to $9.55B. Full-year guidance was raised and narrowed to <b>$12.50–$12.80</b>. The company has bought back ~$3.0B of stock year to date. Coming after last week's fear that a Democratic Congress and Texas's governor-elect would slow data-center approvals, a strong report from the nuclear-power bellwether is a direct counterpoint. It is also a read-across for NRG (+4.8% pre-market on its own beat and a $4B asset sale) and VST.</p>
+<p><b>Evidence:</b> Constellation Q3 2026 release and 8-K (SEC filing dated Nov. 9); Yahoo/Benzinga (guidance raise; call transcript); Investing.com (slides: "nuclear reliability drives guidance raise"); Yahoo AlphaCheck ticker card.</p>
+<p><b>Risks / what could flip it:</b> Consensus figures vary by source. The stock is still far below its 52-week high of $380.78, so there is plenty of overhead supply. Policy risk on data-center permitting and power-price regulation under the new Congress remains.</p>
+</div>
+
+<div class="card">
+<h3>6. Airlines (JBLU, UAL, AAL): an oil-headline trade <span class="conf">Confidence: Low</span></h3>
+<p><b>Move:</b> JBLU +7%, UAL +7%, AAL +6%. Brent −4% to −5% (~$93–94), WTI ~$87–88.</p>
+<p><b>Thesis (works only while oil keeps falling):</b> Trump told 60 Minutes he sees no "reason" to escalate with Iran, and Qatar's PM is meeting Trump and Vance. That pushed Brent below $95, and airlines are the most direct equity lever on jet fuel. The move is extending a multi-day run, and energy producers (CTRA −8.6%) are the mirror image.</p>
+<p><b>Evidence:</b> 24/7 Wall St. (airline article headline); CNBC movers blog via search (cruise lines and airlines up); TheStreet (Iran/Qatar meeting; Rubio: talks not "at the verge of a breakthrough"); Yahoo/JournalArta (oil levels).</p>
+<p><b>Risks / what could flip it:</b> This is entirely headline-driven. Rubio and Tehran both pushed back on a deal (Iran wants the blockade lifted and sanctions removed), and shipping near Hormuz is still being hit. A single escalation headline would reverse the move. Low confidence that it lasts beyond today.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. alpha_wrds_signals.csv has as_of_date <b>2026-09-17</b> (53 days old, outside the ~14-day window). Refresh the WRDS extract to bring momentum, volume and earnings-surprise factors back into this brief.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html (opening index moves; Dow 52,117.87 +1.62% at 10:44:57 AM; chips surge; TSLA +5%; NVDA −6% at the open)</li>
+<li>https://finance.yahoo.com/markets/article/tech-stocks-rally-as-nvidia-stock-and-oil-prices-fall-alphacheck-152208023.html (index strip ~10:36 AM; NVDA recovered from −8%; AMD +9.5%; CEG +6.09%; oil and 10-year)</li>
+<li>https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html (pre-market NVDA $176.49 at 8:13 AM; Ives quote; sector containment)</li>
+<li>https://247wallst.com/investing/2026/11/09/meta-and-amazon-rise-5-as-jpmorgan-names-them-top-internet-picks-alphabet-gains-3-despite-losing-its-spot/ (JPM focus-list details; META/AMZN/GOOGL/MSFT/AAPL/NVDA quotes; index strip ~11 AM; winners/losers list)</li>
+<li>https://247wallst.com/investing/2026/11/09/amd-just-eased-wall-streets-ai-spending-scare-heres-what-it-means-for-the-stock/ (AMD Q3 figures; widget quotes AMD +9.97%, INTC +3.74%; headlines on airlines, optical, ASTS/RKLB). Note: its "$518.69 before the bell" price conflicts with every other quote and was not used.</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-09-202 (pre-market movers NRG, ASTS, AMD, IONS, AKAM; Citi downgrade of US equities; Iran/Qatar; Trump on Huang; Hathorn quotes)</li>
+<li>https://journalarta.com/en/2026/11/09/stock-market-today-sp-500-rises-1-3-and-nasdaq-1-6-at-the-open-as-oil-slides-and-amd-jumps/ (index levels near the open; oil; SOXX flows. Single-stock movers judged stale and not used.)</li>
+<li>https://www.constellationenergy.com/news/2026/11/constellation-reports-third-quarter-2026-results.html (search summary: CEG Q3 results and guidance)</li>
+<li>https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000116/ceg-20261109991.htm (CEG 8-K exhibit, search listing)</li>
+<li>https://finance.yahoo.com/energy/articles/constellation-energy-raises-2026-earnings-140049405.html (search summary)</li>
+<li>https://uk.investing.com/news/stock-market-news/constellation-q3-2026-slides-nuclear-reliability-drives-guidance-raise-93CH-4969126 (search summary)</li>
+<li>https://www.investing.com/news/stock-market-news/jpmorgan-drops-alphabet-from-focus-list-adds-meta-on-ai-advertising-gains-5012087 (search summary)</li>
+<li>https://www.cnbc.com/2026/11/09/stock-market-movers-live-updates.html (search summary only; page fetch returned empty: airlines, cruise lines, SAP, Bloom, Edesa, Molson Coors)</li>
+<li>https://www.nbcnews.com/business/markets/nvidia-stock-falls-probe-ceos-relationship-chinese-spy-rcna608290 (search summary: NVDA opened −7.3%, low $170.24)</li>
+<li>https://fourweekmba.com/ai-nvidia-lost-184b-early-as-four-ai-chip-rivals-added-376b/ (search summary; fetch empty)</li>
+<li>https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html (search summary: TSM ~+2%, ASML +3%, MU +1%)</li>
+<li>https://investing.com/news/stock-market-news/premarket-movers-nvidia-slides-on-huang-probe-nvr-extends-rally-5011241 (search summary: NVR +26% claim vs. page ticker −1.8%)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (fetched; stale data, not used)</li>
+<li>Local archive: alpha_report_2026-11-09_premarket.html (pre-market flags and levels); alpha_wrds_signals.csv (stale, not used)</li>
+<li>Not retrievable this run: CNBC live pages (empty fetch); Investrade mid-morning note (empty fetch); StockTitan live page (empty fetch); reliable intraday quotes for CRWV, NBIS, IREN, NVR, ORCL, QCOM.</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
