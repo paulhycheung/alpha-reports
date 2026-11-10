@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpha Report 2026-11-10 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Tuesday, November 10, 2026 &middot; Hot October CPI &middot; Nvidia −5.5% on record volume &middot; CoreWeave beats and raises after the bell</div>
+<p class="note">Automated run. The task targets ~3:20 PM ET, but this session ran at about <b>4:20–4:45 PM ET, after the closing bell</b>. Index levels and most watchlist figures are <b>closing values</b> from Investing.com's closing wrap and ticker strip, which match Kiplinger and Yahoo Finance closing coverage. CoreWeave's after-hours reaction is an early single-source reading, so treat it as provisional. No closing quotes were found for <b>AVGO, TSM (ADR), ORCL, CRM, ASML, QCOM or INTC</b>; their last intraday readings are labelled. Yahoo's Most Active page served stale data from another session (e.g., NVDA $187.90, −0.04%) and was not used. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, 54 days old and outside the ~14-day window, so this edition uses public research only.</p>
+
+<h2>1. How the Session Closed</h2>
+<p><b>A hot-CPI down day that ended far better than it traded at midday.</b> The S&amp;P 500 closed at <b>7,522.82</b> (<span class="dn">−0.36%</span>), the Dow at <b>52,233.32</b> (<span class="dn">−0.30%</span>) and the Nasdaq Composite at <b>25,065.87</b> (<span class="dn">−0.74%</span>). At 1:07 PM the S&amp;P had been −0.89% and the Nasdaq −1.45%, so indexes recovered roughly 60% of the intraday loss. The VIX closed <b>lower</b> at 19.47 (−2.3%), so options traders did not treat the drop as a reason to buy more protection.</p>
+<p><b>Rates drove the shape of the day.</b> October CPI rose +0.4% m/m (consensus +0.3%) and core rose +0.3% (consensus +0.2%). The 2-year yield jumped <b>18.4 bp to 4.731%</b> and the 10-year rose <b>12.9 bp to 4.992%</b>. The 10-year briefly topped 5% for the first time since late October, and the 1 PM 10-year auction cleared at a 5.02% high yield, which roughly coincided with the midday equity low. Stocks then recovered as the 10-year drifted back under 5%. CME FedWatch prices a 25 bp December hike as near-certain, with roughly 10% odds of 50 bp (Kiplinger/Investing.com). Governor Waller said this morning that 50 bp "should be considered." The dollar index rose 0.6%, gold fell 1.8% (~$4,040) and silver 2.2%. WTI eased to ~$86.35.</p>
+<p><b>Tone:</b> This was mostly an Nvidia-led decline, not a broad one. Nvidia fell <span class="dn">−5.47%</span> on <b>415M shares</b>. It was the worst Dow stock for a second straight session and is down nearly 30% since early October (Kiplinger). Yahoo reports its RSI fell to 23, its most oversold reading since June 2019, while the equal-weight S&amp;P was down only ~0.2% at midday. AMD (+1.3%), Amazon (+1.5%) and Tesla (+0.5%) closed green. Microsoft (−2.2%) and memory names (MU −1.1%, SNDK −3.0%) pared their losses. The ongoing themes were Anthropic's IPO terms (825M shares at $70–78; ~$1.3–1.45T fully diluted, below the ~$2T talk of a few weeks ago) and rate-sensitive groups (solar, homebuilders, AI-hosting) staying weak. <b>Tomorrow, Wednesday Nov. 11, is Veterans Day: stocks trade normally but the cash bond market is closed.</b></p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Compares today's pre-market, open (~10:00 AM), midday (~1:07 PM) and afternoon (~3:09 PM) editions with closing values. "n/a" = no quote found at that checkpoint.</p>
+<div class="tbl"><table>
+<tr><th>Name / earlier call</th><th>Open</th><th>Midday</th><th>3:09 PM</th><th>Close</th><th>Verdict</th></tr>
+<tr><td><b>NVDA</b>: continued selling, not a fade</td><td class="dn">−5.25%</td><td class="dn">−6.54%</td><td class="dn">−7.00%</td><td class="dn">−5.47% ($168.89)</td><td><b>Played out, with a late bounce.</b> The afternoon report flagged closing-auction flows and short covering as the risk. That partly happened: the stock rose ~1.5 points off a fresh 52-week low (~$164.27) in the final 50 minutes, and volume rose from 339M to 415M.</td></tr>
+<tr><td><b>AMD</b>: relative strength (open), lost it (midday), back (afternoon)</td><td class="up">+3.56%</td><td class="dn">−0.79%</td><td class="up">+1.20%</td><td class="up">+1.30% ($515.21)</td><td><b>The open call held at the close</b>, after two reversals. Investing.com ties the rally to AMD agreeing to invest up to $5B in Anthropic, linked to Anthropic deploying up to 2 GW of MI450 GPUs. AMD closed green on a red Nasdaq for a second session.</td></tr>
+<tr><td><b>TTWO</b>: GTA VI move has legs</td><td class="up">+7.77%</td><td class="up">+6.65%</td><td>n/a</td><td class="up">+8.31% ($224.64)</td><td><b>Played out and accelerated</b> into the close on 8.07M shares. It was the #2 S&amp;P gainer.</td></tr>
+<tr><td><b>RKLB</b>: gap fill shows strong demand</td><td>−0.08%</td><td class="up">+2.14%</td><td>n/a</td><td class="up">+6.54% ($62.71)</td><td><b>Played out strongly.</b> It went from a −6% to −9% pre-market gap (Neutron delay) to +6.5% on 31.4M shares, a full reversal.</td></tr>
+<tr><td><b>MSFT</b>: −2.9% on Anthropic's Office-rival tools</td><td>−0.46%</td><td class="dn">−2.88%</td><td>n/a</td><td class="dn">−2.20% ($533.16)</td><td><b>Pared but held most of the loss.</b> No follow-up coverage found.</td></tr>
+<tr><td><b>MU / memory</b>: weak</td><td class="dn">−2.8% to −3.0%</td><td class="dn">−3.94%</td><td>n/a</td><td class="dn">−1.10% ($725.11)</td><td><b>Faded.</b> Most of the loss was recovered as yields eased.</td></tr>
+<tr><td><b>GEV / AI-power complex</b>: continuation</td><td class="dn">−6.88%</td><td class="dn">−7.63%</td><td>n/a</td><td class="dn">~−5.1%*</td><td><b>Pared.</b> NBIS still closed −5.27%. *GEV close from Investing.com's movers article, time not stamped.</td></tr>
+<tr><td><b>HIMS</b>: Q4 guide miss</td><td>—</td><td class="dn">to −15%</td><td class="dn">−18.24%</td><td>n/a</td><td><b>Extended into the afternoon</b>; no closing quote found. Reuters (via MarketScreener) says HIMS will offer an unapproved peptide after US regulators eased curbs, a regulatory angle to watch.</td></tr>
+<tr><td><b>CRWV</b>: binary into the print</td><td>—</td><td>—</td><td class="dn">−3.74%</td><td class="dn">~−3% (~$47.5)</td><td><b>Beat and raised after the bell</b>; early after-hours reading +6% (single source). See Section 4.</td></tr>
+<tr><td><b>Macro: "rates are the trigger"</b></td><td>10Y ~4.96%</td><td>10Y 5.01%</td><td>10Y 4.979%</td><td>10Y 4.992%</td><td><b>Confirmed all day.</b> The equity low matched the 5.02% auction; the recovery matched yields slipping back under 5%.</td></tr>
+</table></div>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">Closing values vs. Monday's close from Investing.com's ticker strip and S&amp;P movers tables, unless marked. Volume is Investing.com's reported session volume.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Day move</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="dn">−5.47% ($168.89)</td><td><b>415.4M</b>, about 3.4× the 122.7M 3-month average Yahoo showed this afternoon. Lowest close since late March/early April.</td></tr>
+<tr><td>MSFT</td><td class="dn">−2.20% ($533.16)</td><td>23.7M; Anthropic product-launch overhang</td></tr>
+<tr><td>MU</td><td class="dn">−1.10% ($725.11)</td><td>26.8M; pared from −3.9% at midday</td></tr>
+<tr><td>AAPL</td><td class="dn">−0.62% ($348.51)</td><td>No company news found</td></tr>
+<tr><td>GOOGL</td><td class="dn">−0.27% ($287.38)</td><td>Anthropic cornerstone investor</td></tr>
+<tr><td>META</td><td>0.00% ($641.39)</td><td>Flat</td></tr>
+<tr><td>TSLA</td><td class="up">+0.46% ($379.78)</td><td>Up from −0.78% at midday</td></tr>
+<tr><td>AMD</td><td class="up">+1.30% ($515.21)</td><td>46.2M (~2× the 22.8M average); Anthropic $5B / 2 GW deal</td></tr>
+<tr><td>AMZN</td><td class="up">+1.48% ($270.87)</td><td>37.0M; the strongest megacap</td></tr>
+<tr><td>INTC</td><td class="dn">−3.01% (3:09 PM)</td><td>74.5M by 3 PM (0.6× average). No close found.</td></tr>
+<tr><td>TSM</td><td>n/a (ADR)</td><td>Taiwan-listed shares reportedly +2.24% (search summary, unverified); October revenue +59.7% y/y</td></tr>
+<tr><td>AVGO</td><td>+1.94% (midday)</td><td>No close found. Goldman's top pick alongside NVDA and AMD.</td></tr>
+<tr><td>QCOM</td><td>n/a</td><td>Reuters exclusive: Qualcomm has begun job cuts (India, California). Price reaction not verified.</td></tr>
+<tr><td>ORCL / CRM / ASML</td><td>n/a</td><td>No quotes found from usable sources today</td></tr>
+<tr class="sec"><td colspan="3">Other notable names</td></tr>
+<tr><td>CHTR</td><td class="up">+10.61%</td><td>4.27M; top S&amp;P gainer, up from +7.8% at midday. <b>No catalyst found.</b></td></tr>
+<tr><td>TTWO</td><td class="up">+8.31%</td><td>8.07M; GTA VI pre-orders / raised FY2027 guidance (MarketScreener)</td></tr>
+<tr><td>RKLB</td><td class="up">+6.54%</td><td>31.4M; full reversal of the pre-market Neutron-delay gap</td></tr>
+<tr><td>EPAM / CVS / AKAM</td><td class="up">+4.69% / +4.42% / +4.26%</td><td>AKAM on heavy 22.0M shares; no catalysts verified</td></tr>
+<tr><td>SKYD</td><td class="dn">−7.64%</td><td>21.6M; weak Q3/outlook, post-merger debt (TheStreet, midday)</td></tr>
+<tr><td>MRNA</td><td class="dn">−6.75%</td><td>11.0M; no catalyst verified</td></tr>
+<tr><td>FSLR / ENPH</td><td class="dn">−5.55% / −4.95%</td><td>Rate-sensitive solar</td></tr>
+<tr><td>LEN</td><td class="dn">−5.37%</td><td>Homebuilders hit by the 2-year +18 bp move</td></tr>
+<tr><td>NBIS</td><td class="dn">−5.27%</td><td>18.3M; AI-hosting complex</td></tr>
+<tr><td>HIMS</td><td class="dn">−18.24% (3:09 PM)</td><td>48.6M by 3 PM (4.3×); close not found</td></tr>
+<tr><td>CRWV</td><td class="dn">~−3% (regular session)</td><td>~$47.5 before the print; after hours initially +6% (single source)</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates / What to Watch Tomorrow</h2>
+<p class="note">These are research observations worth investigating further, not recommendations to buy or sell.</p>
+
+<div class="card">
+<h3>1. CoreWeave (CRWV): beat and raise after a ~45% drawdown &nbsp;<span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Day move:</b> about −3% in the regular session (~$47.5, TheStreet) on below-average volume; one early after-hours report had it up ~6%.</p>
+<p><b>Thesis:</b> This is the first fundamental data point on AI-infrastructure demand since last week's AI selloff and this week's Nvidia governance shock. The release is clearly strong on demand. <b>Revenue was $3.661B</b> (vs. ~$3.54B consensus and $1.365B a year ago). <b>Backlog reached ~$132.5B.</b> FY2026 revenue guidance rose to <b>$13.0–13.3B</b>, adjusted operating income guidance rose 26% at the midpoint to $1.275–1.375B, and the exit-2026 run-rate revenue target rose to $20–21B. Capex guidance is $37–39B (low end raised) because infrastructure is being deployed "sooner than planned." The bear points are in the same release: GAAP net loss widened to $709M (−$1.27/share), the adjusted operating margin fell to 10% from 16%, and the company set up its first at-the-market equity program for up to 35M shares, which means dilution. Tomorrow will show whether the market rewards the growth or penalizes the financing. The answer matters for NVDA, ORCL, MSFT and AI-credit sentiment more broadly.</p>
+<p><b>Evidence:</b> CoreWeave Q3 2026 press release (via StockTitan/Business Wire). 24/7 Wall St. live blog (initial +6%). TheStreet and CNBC previews (debt and capex focus; options implied a ~15–18% move). <span class="am">Note:</span> some outlets reported "adjusted EPS $1.27 vs $1.27 expected"; the release shows −$1.27 as <i>GAAP</i> diluted loss per share, so treat that headline comparison with caution.</p>
+<p><b>Key risks:</b> The 5 PM ET call (financing costs, ATM usage, customer concentration) can reverse an initial after-hours pop. Previews note the stock has fallen after nearly every report since its IPO. Gap risk runs both ways.</p>
+</div>
+
+<div class="card">
+<h3>2. Nvidia (NVDA): record-volume washout with a late bounce &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Day move:</b> <span class="dn">−5.47%</span> to $168.89 on ~415M shares (−4.2% Monday). It traded as low as about $164 and recovered ~1.5 points in the last 50 minutes.</p>
+<p><b>Thesis:</b> Two signals point in opposite directions. Fundamentally, the news is still deteriorating: The Information's $7.5B China-shipments report, a federal securities complaint, congressional demands for answers, and Investing.com's "odds rise Jensen Huang could be forced out" headline. Technically, the selling looks exhausted: an RSI of 23 (most oversold since June 2019, Yahoo), Goldman calling semis "clearly oversold" (NVDA at ~12× a no-growth 2028 baseline), and a late-session bounce on the heaviest volume of the week. Wedbush thinks Huang's removal is unlikely but says the episode weakens his standing in Washington. Worth watching: whether the late bounce holds overnight after CoreWeave's beat (a GPU-demand positive) or whether a new governance headline breaks the ~$164 low.</p>
+<p><b>Evidence:</b> Investing.com closing data. Kiplinger (worst Dow stock again; ~−30% since early October; Wedbush quote). Yahoo live blog (RSI, Goldman). Afternoon edition (52-week low $164.27 at ~3 PM).</p>
+<p><b>Key risks:</b> Board, FBI or congressional news can arrive at any time and outweighs the technical picture. Leadership uncertainty can stretch out the decline. A bounce in a stock falling on governance news can fail quickly.</p>
+</div>
+
+<div class="card">
+<h3>3. AMD (AMD): Anthropic deal plus rotation away from Nvidia &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Day move:</b> <span class="up">+1.30%</span> to $515.21 on 46.2M shares (~2× average), after trading as high as $539.25 and briefly turning negative at midday. That follows Monday's +13%.</p>
+<p><b>Thesis:</b> Today added a company-specific catalyst to what had looked like a rate-driven, rotation-only move. Investing.com reports AMD agreed to invest up to $5B in Anthropic, structured around Anthropic deploying up to 2 GW of MI450 GPUs in Helios racks. That makes AMD a direct compute supplier to a frontier lab just as the lab's IPO roadshow starts. It comes alongside Oppenheimer's upgrade ($600 PT, 135% data-center growth projected for 2027) and the EPYC win in Google Cloud's TPU 8tx system. With a TTM P/E around 96, AMD has tracked the 10-year yield in both directions today. A bond-market holiday tomorrow removes one source of intraday rate shocks.</p>
+<p><b>Evidence:</b> Investing.com ("Why is AMD stock rallying today?", 10:23 AM). Afternoon edition (Yahoo P/E, volume). Goldman's top-pick list (Yahoo). Anthropic's S-1/A names AMD as a cornerstone placement investor.</p>
+<p><b>Key risks:</b> Up ~15% in two sessions with two intraday reversals today, so positioning is crowded. The Anthropic link cuts both ways if the IPO prices weakly (trading expected Nov. 19–20). The stock is still sensitive to rates once Treasuries reopen Thursday.</p>
+</div>
+
+<div class="card">
+<h3>4. Take-Two (TTWO): strength built through the day &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Day move:</b> <span class="up">+8.31%</span> to $224.64 on 8.07M shares; it closed at the day's strongest level after +7.8% at the open and +6.7% at midday.</p>
+<p><b>Thesis:</b> A name that rallied on a hot-CPI, risk-off day and closed near its highs has a catalyst unrelated to rates or AI. MarketScreener attributes the move to a narrower net loss, a raised FY2027 outlook and GTA VI launch momentum (pre-orders). Strong closes after earnings often see follow-through over the next few sessions, which makes this worth tracking for continuation.</p>
+<p><b>Evidence:</b> Investing.com S&amp;P gainers table (close). MarketScreener "Today's Top Movers." Open and midday editions.</p>
+<p><b>Key risks:</b> Any GTA VI timing headline can move the stock sharply. Analyst price-target changes over the next day or two will show whether the guide raise is being built into estimates. A gap up tomorrow could invite profit-taking.</p>
+</div>
+
+<div class="card">
+<h3>5. Rocket Lab (RKLB): full reversal of a bad-news gap &nbsp;<span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Day move:</b> <span class="up">+6.54%</span> to $62.71 on 31.4M shares, after a −6% to −9% pre-market gap on a reported Neutron delay.</p>
+<p><b>Thesis:</b> A stock that opens sharply lower on bad news and closes sharply higher, on heavy volume and against a weak tape, is a classic strong-demand reversal. Buyers appear to be looking past the Neutron schedule toward backlog and launch cadence.</p>
+<p><b>Evidence:</b> Investing.com S&amp;P movers table (close). Open and midday editions (pre-market gap, intraday path).</p>
+<p><b>Key risks:</b> The delay detail came from a single source in the open edition and should be verified. High-beta space names can give back reversal gains quickly. No new positive catalyst was identified today.</p>
+</div>
+
+<div class="card">
+<h3>6. Charter (CHTR): +10.6% with no identified catalyst &nbsp;<span class="conf">Confidence: Low</span></h3>
+<p><b>Day move:</b> <span class="up">+10.61%</span> to $134.06 on 4.27M shares. It was the top S&amp;P 500 gainer and strengthened from +7.8% at midday.</p>
+<p><b>Thesis:</b> A double-digit gain in a large-cap cable name on a risk-off day, with no headline found, is an anomaly worth checking before tomorrow's open. Possibilities include a deal or partnership report (past spikes came on SpaceX mobile-partnership talk in June 2026), a short squeeze in a heavily de-rated stock, or an analyst action not yet indexed.</p>
+<p><b>Evidence:</b> Investing.com S&amp;P gainers table (close) and midday edition. Searches found no Nov. 10 coverage.</p>
+<p><b>Key risks:</b> With no known driver, the move could reverse quickly. Cable is rate-sensitive and heavily indebted.</p>
+</div>
+
+<h2>5. Tomorrow's Calendar</h2>
+<div class="tbl"><table>
+<tr><th>When (ET)</th><th>Event</th><th>Why it matters</th></tr>
+<tr><td>Tonight (5:00 PM)</td><td>CoreWeave Q3 call</td><td>Financing, ATM usage and capex timing; read-through to NVDA, ORCL, MSFT and AI credit</td></tr>
+<tr><td>Tonight</td><td>D-Wave (QBTS), Rigetti (RGTI) Q3, plus Wix, StubHub, Sonos, Firefly Aerospace (per this morning's calendar)</td><td>Quantum names' results were not found at publication. One preview said D-Wave was scheduled pre-market today, so timing is unclear.</td></tr>
+<tr><td><b>Wed Nov 11, all day</b></td><td><b>Veterans Day: stock market open, regular hours; cash bond market closed</b> (SIFMA); banks and federal offices closed</td><td>No cash Treasury trading, so rate-driven equity moves depend on futures. Volume may be lighter. Federal data releases are unlikely.</td></tr>
+<tr><td>Wed, pre-market</td><td>Earnings: Rumble (RUM), Sigma Lithium (SGML), Innoviz (INVZ), Riskified (RSKD), CGI (GIB), ICL, Moog (MOG.A), InMode (INMD)</td><td>Mostly small and mid caps; calendars differ, so confirm timing</td></tr>
+<tr><td>Wed, after close</td><td>Earnings: Corteva (CTVA), Franco-Nevada (FNV), Osisko (OR), CAE, Digi Intl (DGII), AEVEX (AVEX)</td><td>FNV and OR are gold-royalty names after gold's −1.8% day; CTVA is an ag bellwether</td></tr>
+<tr><td>Thu Nov 12, after close</td><td>Cisco (CSCO) FQ1 2027</td><td>AI-networking demand check. Consensus ~$1.32 EPS / $18.11B revenue (MarketBeat); Earnings Whispers shows $1.15, so figures conflict. Applied Materials is also cited as reporting this week (date not verified).</td></tr>
+<tr><td>Fri Nov 13</td><td>October PPI</td><td>Next inflation input before the Dec. 8–9 FOMC; RSM's Brusuelas expects PPI and PCE to support a 50 bp debate</td></tr>
+<tr><td>Nov 19–20 (expected)</td><td>Anthropic IPO trading debut (WSJ via Yahoo)</td><td>825M shares at $70–78 plus a $26B cornerstone placement (GOOGL, NVDA, AMD, AVGO, MU, MSFT, TSMC). Roadshow is underway.</td></tr>
+<tr><td>Fed</td><td>No FOMC this week; next meeting Dec. 8–9</td><td>Fed-speaker schedule for Wednesday not verified. Waller's 50 bp comment remains the main Fed input.</td></tr>
+</table></div>
+
+<h2>6. WRDS Quant Signals</h2>
+<p class="note">Not used. alpha_wrds_signals.csv has as_of_date 2026-09-17, 54 days before today and outside the ~14-day freshness window. Re-running the WRDS screen would restore this section.</p>
+
+<h2>7. Sources</h2>
+<ul class="src">
+<li>https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763 (closing wrap: index closes, yields, FedWatch, Anthropic terms, RSM quote)</li>
+<li>https://investing.com/news/stock-market-news/why-is-advanced-micro-devices-stock-rallying-today-93CH-5016132 (AMD–Anthropic deal; closing ticker strip and S&amp;P movers tables)</li>
+<li>https://www.kiplinger.com/investing/stocks/stocks-drop-as-rate-hike-worries-rise-stock-market-today (closes, yields, NVDA −5.5%, Wedbush, bond-market holiday)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html (Yahoo live blog: NVDA RSI, Goldman, Anthropic IPO timing, HIMS)</li>
+<li>https://www.stocktitan.net/news/CRWV/core-weave-reports-strong-third-quarter-2026-y9sd4v037r0b.html (CoreWeave Q3 2026 press release)</li>
+<li>https://247wallst.com/investing/2026/11/10/live-can-coreweaves-q3-earnings-tonight-spark-a-recovery-after-42-selloff/ (CRWV initial after-hours reaction, via search)</li>
+<li>https://www.thestreet.com/latest-news/coreweave-inc-crwv-q3-2026-earnings-call-stock-forecast-updates and https://cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html (CRWV previews, via search)</li>
+<li>https://www.marketscreener.com/news/today-s-top-movers-take-two-stock-surges-ahead-of-gta-vi-launch-nvidia-plunges-further-amid-spy-s-ce785edade8cf525 (TTWO; 10-year auction 5.02%; HIMS peptide headline)</li>
+<li>https://www.investing.com/news/stock-market-news/nvidia-ge-vernova-among-market-cap-stock-movers-on-tuesday-93CH-5016157 (GEV, via search; direct fetch was rate-limited)</li>
+<li>https://www.investing.com/news/stock-market-news/odds-rise-jensen-huang-could-be-forced-out-after-being-honeypotted-by-alleged-spy-5016187 (headline only; fetch was rate-limited)</li>
+<li>https://www.investing.com/news/stock-market-news/exclusive-qualcomm-begins-job-cuts-india-and-california-among-regions-impacted-5016480 (headline only; fetch was rate-limited)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/us-stock-markets-ciosed-veterans-175359425.html and https://www.quantvps.com/market-hours/veterans-day (Veterans Day hours, via search)</li>
+<li>https://www.earningswhispers.com/calendar/20261111/1 and https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks (Nov. 11 earnings, via search)</li>
+<li>https://www.marketbeat.com/earnings/reports/2026-11-12-cisco-systems-inc-stock/ and https://www.earningswhispers.com/stocks/CSCO (Cisco date and consensus, via search)</li>
+<li>https://finance.yahoo.com/most-active (fetched; rejected as stale)</li>
+<li>https://www.marketalleys.com/post/marketalleys-closing-tape-2026-11-10 (fetch failed: client error)</li>
+<li>Earlier editions today: alpha_report_2026-11-10_premarket.html, _open.html, _midday.html, _afternoon.html</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body>
+</html>
