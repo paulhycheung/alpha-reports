@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-10 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Tuesday, November 10, 2026 &middot; Hot October CPI &middot; Nvidia probe day 2 &middot; Anthropic IPO terms set</div>
+<p class="note">Automated run. The task targets ~10:00 AM ET, but this session ran from about <b>11:05 to 11:25 AM ET</b>. Quotes come from Reuters' opening print (9:34 AM), an Investing.com market-movers table and ticker strip (captured with that Reuters page, roughly 9:35–10:45 AM; the exact time isn't stamped), and Investing.com's 10:01 AM market update. Where these disagree, both are shown. <b>No live per-ticker quotes were available for SANM, AAON, ORCL, CRM, ASML, QCOM or INTC after the open</b>: Yahoo's Most Active page served stale Nov. 4 data, and the in-app browser needed a site approval that couldn't be given in an unattended run. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (54 days old, outside the ~14-day window).</p>
+
+<h2>1. How the First 30 Minutes Traded</h2>
+<p><b>A hot CPI print caused a gap down that was largely bought back within half an hour. The rates market did not recover.</b> October CPI rose <b>+0.4% m/m</b> (consensus +0.3%) and core rose <b>+0.3%</b> (consensus +0.2%), the third straight 0.3% core print. That is the level at which Gov. Waller said this morning a 50 bp December hike "should be considered." Reuters had the open at <b>Dow −0.43% (52,163)</b>, <b>S&amp;P 500 −0.49% (7,513)</b> and <b>Nasdaq −0.81% (25,047)</b>. The Nasdaq was down as much as 1.2% early. By <b>10:01 AM</b> it was little changed (25,254.85), the S&amp;P was −0.1% (7,542.96) and the Dow −0.3% (52,169.93), per Investing.com. Other snapshots in the same window showed deeper losses (S&amp;P −0.72%, Dow −0.66%, Nasdaq −0.88%), so the tape was choppy.</p>
+<p><b>Rates are where the move held.</b> The 2-year yield rose about <b>+19 bp to 4.74%</b>, the 5-year about +16 bp and the 10-year about <b>+13 bp to ~4.99%</b>. The dollar index gained +0.4–0.7% and the VIX was ~20.8. CME FedWatch shows odds of a 50 bp December hike jumping from ~0% to <b>~15%</b>, with ~84% for 25 bp. Gold (−1.6%) and silver (−2.3%) fell with the stronger dollar, and WTI (~$85.6) kept sliding on Iran de-escalation.</p>
+<p><b>Tone:</b> Beneath fairly calm index levels, there was a lot of dispersion inside AI semis. <b>Nvidia fell ~5.3% on heavy volume</b> on a new report linking the Huang affair to $7.5B of China chip shipments. Meanwhile <b>AMD (+3.6%), Broadcom (+2.6–2.7%) and TSM (+1.8%) rose</b>, and Micron (−3.0%), SanDisk (−3.9%) and the SOX (−0.7%) fell. Rate-sensitive groups were hit: homebuilders (LEN −5.1%, BLDR −4.9%), solar (ENPH −6.2%, FSLR −5.6%) and AI-power infrastructure (GEV −6.9%). <span class="note">TheStreet's 9:33 AM opening note shows the Russell 2000 at +3.15%. That doesn't fit Russell futures at −0.87% shortly before the bell, so it is treated as a data error.</span></p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-market (this morning's report)</th><th>After the open</th><th>Read</th></tr>
+<tr><td>NVDA</td><td class="n">−0.1% to +1.8%</td><td class="n dn">−5.25% ($169.29)</td><td><b>Reversed.</b> The tentative rebound gave way after The Information's report that Alice Huang's network helped move ~240K H100/H200/A100 chips (~$7.5B) into China. Volume was ~174M shares early.</td></tr>
+<tr><td>AMD</td><td class="n">~−0.6%</td><td class="n up">+3.56% ($526.70)</td><td><b>Reversed higher.</b> Monday's +13% extended rather than mean-reverting.</td></tr>
+<tr><td>TSM</td><td class="n">~+0.4%</td><td class="n up">+1.81%</td><td><b>Held and extended</b> on October revenue (+59.7% y/y).</td></tr>
+<tr><td>TTWO</td><td class="n">+3% to +3.8%</td><td class="n up">+7.77% ($223.51)</td><td><b>Extended.</b> The gain roughly doubled in cash trading.</td></tr>
+<tr><td>RKLB</td><td class="n">−5.7% to −8.8%</td><td class="n">−0.08% ($58.81)</td><td><b>Gap filled.</b> Dip buyers absorbed the Neutron delay (single-source quote; verify).</td></tr>
+<tr><td>SANM</td><td class="n">+19% to +21% (early); +8.9% by 9:03 AM</td><td class="n am">not verified</td><td><b>Gap narrowed before the bell.</b> It fell from ~+20% to ~+9–14% as CPI hit futures. No reliable post-open quote; CNBC's headline still lists it among early-trading leaders.</td></tr>
+<tr><td>AAON</td><td class="n">+13.6% to +21.5%</td><td class="n am">not verified</td><td>Pre-market quotes ranged widely. No post-open quote found.</td></tr>
+<tr><td>META / GOOGL / AMZN</td><td class="n">n/a</td><td class="n">+0.15% / −0.03% / <span class="up">+1.09%</span></td><td>Megacap internet held up well against the rate shock.</td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">Moves are vs. Monday's close, per Investing.com's movers table and ticker strip unless noted. Volume is from the same source where shown.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="n dn">−5.25%</td><td>~173.5M early, by far the most active name. Lowest levels since April.</td></tr>
+<tr><td>AMD</td><td class="n up">+3.56%</td><td>~21.9M; also on the top-gainers list</td></tr>
+<tr><td>AVGO</td><td class="n up">+2.64% to +2.72%</td><td>~11.1M</td></tr>
+<tr><td>TSM</td><td class="n up">+1.81%</td><td>Ticker strip only</td></tr>
+<tr><td>MU</td><td class="n dn">−2.82% to −3.02%</td><td>~12.3M; memory names are weak (SNDK −3.9%)</td></tr>
+<tr><td>INTC</td><td class="n dn">~−3% (pre-open, CNBC)</td><td>No post-open quote</td></tr>
+<tr><td>AMZN</td><td class="n up">+1.09%</td><td>No company news found</td></tr>
+<tr><td>AAPL</td><td class="n dn">−0.96% ($347.34)</td><td>No company news found</td></tr>
+<tr><td>MSFT</td><td class="n dn">−0.46%</td><td>Anthropic private-placement investor</td></tr>
+<tr><td>TSLA</td><td class="n">−0.28% to −0.74%</td><td>~9.5M; consolidating after Monday's +5.5%</td></tr>
+<tr><td>META / GOOGL</td><td class="n">+0.15% / −0.03%</td><td>Flat</td></tr>
+<tr><td>ORCL, CRM, ASML, QCOM</td><td class="n">n/a</td><td>No verified post-open quotes</td></tr>
+<tr class="sec"><td colspan="3">Other notable names</td></tr>
+<tr><td>TTWO</td><td class="n up">+7.77%</td><td>~4.1M; top S&amp;P gainer in the table</td></tr>
+<tr><td>GPN</td><td class="n up">+4.46%</td><td>No catalyst verified</td></tr>
+<tr><td>STLD / NUE</td><td class="n up">+3.77% / +3.19%</td><td>Steel bid; no catalyst verified</td></tr>
+<tr><td>GEV</td><td class="n dn">−6.88%</td><td>~3.0M; CNBC had it near −7% at 10:35 AM</td></tr>
+<tr><td>ENPH / FSLR</td><td class="n dn">−6.16% / −5.57%</td><td>Rate-sensitive solar</td></tr>
+<tr><td>LEN / BLDR</td><td class="n dn">−5.10% / −4.87%</td><td>Housing hit by the jump in yields</td></tr>
+<tr><td>SKYD</td><td class="n dn">−8.91%</td><td>~10.6M; no catalyst verified</td></tr>
+<tr><td>PEPG</td><td class="n up">+119% to +122% (pre-mkt)</td><td>Positive Phase 2 DM1 data (StockTitan); no post-open quote</td></tr>
+<tr><td>GRPN / APPS / GILT / JBI / ETD</td><td class="n dn">−16% to −24% (pre-mkt)</td><td>Post-earnings or CEO-exit drops (StockTitan); no post-open quotes</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">These are research observations worth investigating further, not recommendations to buy or sell. All of them sit on top of a rates shock that is still developing. Friday's PPI and CoreWeave's results tonight are the next catalysts.</p>
+
+<div class="card">
+<h3>1. Nvidia (NVDA): −5.25% at ~$169, reversing a flat-to-green pre-market <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> The selling looks more like <b>continuing momentum than a fade</b>. Two things support that. First, the catalyst is new information, not more coverage of the same story: The Information reports the Alice Huang network secured ~240K export-restricted GPUs (~$7.5B) for Chinese buyers through a "preferred cloud partner." That moves the story from a personal scandal toward possible export-control exposure. Second, volume is very heavy (~174M shares early). Prediction markets now price ~14% odds that Huang leaves before end-2026, rising to 22% by Mar. 31, 2027 (Polymarket), and Dan Ives estimates a 25–30% value hit if he is removed. NVDA is now underperforming the SOX by ~4.5 points for a second session, so the market is treating this as a single-name problem rather than an AI-demand problem.</p>
+<p><b>Evidence:</b> Investing.com movers and price strip; Investing.com's 10:45 AM prediction-market piece; TheStreet's summary of The Information report; Reuters' opening print.</p>
+<p><b>Risks / what flips it:</b> A board or White House statement could trigger short covering (Trump backed Huang publicly on Monday). The stock is at its lowest since April, near levels where value buyers stepped in before. A strong CoreWeave report after the close could shift the focus back to demand. NVDA is ~7% of the S&amp;P, so index flows can amplify moves either way.</p>
+</div>
+
+<div class="card">
+<h3>2. AMD (AMD) and Broadcom (AVGO): +3.6% and +2.7%, rising against a hot CPI and a red SOX <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> Money is rotating inside AI semis toward Nvidia's alternatives. AMD reversed a −0.6% pre-market into a +3.6% gain one day after a +13% session, and Broadcom added ~2.7% after +8.8% Monday. Both did this while rates jumped and MU, SNDK and the SOX fell. That kind of relative strength on a risk-off morning often <b>carries into midday</b>. Holding gains through a rates shock suggests buyers who are building positions, not just trading short-term momentum. BofA's view that AMD, AVGO and MRVL benefit from Nvidia distraction, plus both names' new status as Anthropic cornerstone investors, supports the story.</p>
+<p><b>Evidence:</b> Investing.com top-gainers and most-active tables; Investing.com's 10:01 AM update (AMD +3.58%, AVGO +2.72%, SOX −0.73%); Monday's closes from the same source.</p>
+<p><b>Risks / what flips it:</b> After a two-day gain of ~17%, AMD is stretched. If the 2-year keeps rising, high-multiple semis could fall together. Note that Marvell (another named "Nvidia-distraction" beneficiary) was −5% before the open, so the rotation is selective. Any sign that Nvidia's issues spread to supply-chain partners would hit all AI chips.</p>
+</div>
+
+<div class="card">
+<h3>3. Take-Two (TTWO): +7.8%, about double its pre-market gain <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> This move <b>has legs</b>. It is a stock-specific catalyst that has little to do with rates or AI. Zelnick said GTA VI pre-orders are "tracking far in excess" of initial expectations, and the annual outlook was raised, which outweighs a ~15% y/y revenue decline. The gain grew from ~+3.7% pre-market to ~+7.8% in cash trading, which points to institutional demand rather than only retail. With launch on Nov. 19, pre-order and review headlines are positive catalysts for the next nine days.</p>
+<p><b>Evidence:</b> Investing.com top gainers (TTWO $223.51, +7.77%, ~4.1M shares); TheStreet pre-market recap (+3.66%) with the Zelnick quote.</p>
+<p><b>Risks / what flips it:</b> Selling once the launch arrives is a well-known pattern. A review embargo surprise or launch-day server problems would hurt. Part of today's gain recovers Monday's −3.5%.</p>
+</div>
+
+<div class="card">
+<h3>4. Rocket Lab (RKLB): pre-market loss of up to 9% filled to ~flat <span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Thesis:</b> Buyers absorbed the whole post-earnings gap (record revenue of $268M and backlog of ~$3.6B, offset by a wider loss and the Neutron debut slipping to 2027). They are treating the delay as a <b>timing issue rather than a thesis break</b>. Filling a gap on a risk-off morning shows strong demand. The question for midday is whether RKLB can turn green and hold Monday's +10.9%.</p>
+<p><b>Evidence:</b> Investing.com trending table (RKLB $58.81, −0.08%, ~14.7M shares); StockTitan pre-market (−8.82% at 9:03 AM); TheStreet (−7.87%).</p>
+<p><b>Risks / what flips it:</b> The post-open price rests on a single source. As a high-retail, high-beta name, RKLB reverses quickly, and SpaceX (SPCX) trading may pull space names around. More detail on the Neutron tank timeline could reopen the gap.</p>
+</div>
+
+<div class="card">
+<h3>5. GE Vernova (GEV): −6.9%, a crack in the "physical AI build-out" trade <span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Thesis:</b> This morning's pre-market report favored power, cooling and rack names (SANM, AAON) over chip multiples. GEV falling ~7% after the open challenges that view. A search summary of TheStreet's coverage attributes the drop to SoftBank disclosing a ~$3.7B charge and modifying contracts for U.S. AI-data-center power equipment. That raises the risk that developers delay turbine orders. Higher long-end yields add pressure on a long-duration capex story. This one <b>looks more like continuation than a fade</b>: GEV already fell ~9% last week on data-center backlash fears after the midterms.</p>
+<p><b>Evidence:</b> Investing.com top losers (GEV $772.25, −6.88%); CNBC (~−7% at 10:35 AM, via search); TheStreet (−5.42%, via search). <b>The SoftBank detail was not confirmed in a primary source</b>, and a direct search found no SoftBank filing.</p>
+<p><b>Risks / what flips it:</b> If the SoftBank detail proves minor or mischaracterized, the drop could reverse quickly. GEV's backlog extends years out and isn't tied to one customer. 24/7 Wall St. argues the recent de-risking is overdone.</p>
+</div>
+
+<div class="card">
+<h3>6. Sanmina (SANM) and AAON (AAON): large AI-infrastructure gappers, unverified after the open <span class="conf">Confidence: Low</span></h3>
+<p><b>Thesis:</b> SANM's gap shrank from ~+20% in early pre-market to ~+9–14% around the CPI release. That shows how sensitive even fundamentally backed AI-hardware gaps are to rates. The fundamentals still stand: FQ4 EPS of $4.43 vs $3.27, an FY27 revenue guide of $17.5–19.5B (~27% growth at the midpoint) and a $7.5–9B AI-systems target. AAON (+84% sales, BASX data-center cooling +218%) is in the same position. With GEV falling, it matters whether these names hold their gaps into midday. Holding would mean the market distinguishes companies whose guidance just rose from those exposed to customer capex cuts.</p>
+<p><b>Evidence:</b> StockTitan (SANM +8.93% at 9:03 AM; AAON +13.58% at 9:02 AM); TheStreet (SANM +13.95%, AAON +14.86% at ~8:28 AM); Investing.com (+19–21.5% early); CNBC headline lists SANM among early-trading leaders.</p>
+<p><b>Risks / what flips it:</b> No verified post-open quotes. AAON also restated first-half results for accounting errors, a governance flag the market may weigh more later. A GEV-style capex scare or further rate jumps could squeeze both.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p>Not used in this edition. The only file found, <code>alpha_wrds_signals.csv</code>, has as_of_date <b>2026-09-17</b> (54 days old), outside the ~14-day freshness window. Refreshing the WRDS extract would bring the momentum, volume-ratio and earnings-surprise factors back into these reports.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://www.investing.com/news/stock-market-news/wall-st-opens-lower-after-octobers-hot-inflation-print-5015986 (Reuters opening print; movers table and ticker strip)</li>
+<li>https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763 (10:01 AM ET update: indices, yields, FedWatch)</li>
+<li>https://www.investing.com/news/stock-market-news/odds-rise-jensen-huang-could-be-forced-out-after-being-honeypotted-by-alleged-spy-5016187 (10:45 AM ET)</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026 (opening bell, CPI, pre-market movers, The Information summary)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-10-2026 (pre-market movers table, ~9:03 AM ET)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html (CPI details, yields, FedWatch)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-rises-president-trump-114938423.html (pre-market NVDA, Trump support)</li>
+<li>https://www.morningstar.com/economy/october-cpi-report-shows-inflation-04-monthly-rate-above-forecasts (via search)</li>
+<li>https://www.cnbc.com/2026/11/10/stock-market-movers-live-updates.html (headline only; body not retrievable)</li>
+<li>https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html (headline only; body not retrievable)</li>
+<li>https://www.theglobeandmail.com/investing/markets/stocks/GEV/pressreleases/8509647/why-ge-vernova-stock-is-sinking-today/ (headline only; GEV/SoftBank detail via search summary)</li>
+<li>https://247wallst.com/investing/2026/11/09/buy-the-markets-knee-jerk-derisking-of-ge-vernova-while-you-can/ (via search)</li>
+<li>alpha_report_2026-11-10_premarket.html (local, this morning's pre-market edition)</li>
+<li>Not usable: https://finance.yahoo.com/markets/stocks/most-active/ (stale Nov. 4 data); Yahoo/Finviz quote pages via the in-app browser (site approval not available in an unattended run)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
