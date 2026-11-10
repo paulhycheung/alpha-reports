@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpha Report 2026-11-10 – Afternoon Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Afternoon Edition</span> &nbsp; Tuesday, November 10, 2026 &middot; Indexes pare losses as 10-year slips back under 5% &middot; Nvidia −7.0% at a new low</div>
+<p class="note">Automated run. The task targets ~2:00 PM ET, but this session ran at about <b>3:10 PM ET</b>. Index levels and per-stock quotes come from Yahoo Finance's Most Active page, captured with "markets close in 51m" (~3:09 PM ET). Yahoo's Day Gainers and Day Losers pages served <b>stale data from other sessions</b> (e.g., the losers page showed the S&amp;P at 7,709 and crude at $100; the gainers page showed TTD +18.6% while the live Most Active table shows +2.6%), so neither was used. <b>No afternoon quotes were found for AAPL, MSFT, GOOGL, AMZN, META, AVGO, TSM, ORCL, CRM, ASML, MU, QCOM or TSLA</b>; for those, the midday (~1:07 PM) values are carried forward and labelled as such. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (54 days old, outside the ~14-day window), so this edition uses public research only.</p>
+
+<h2>1. Afternoon Session Summary</h2>
+<p><b>Indexes clawed back about a third of the midday loss as yields eased.</b> At ~3:09 PM ET the <b>S&amp;P 500 was 7,506.90 (−0.57%)</b>, up from −0.89% at 1:07 PM. The <b>Nasdaq Composite was 24,986.06 (−1.06%)</b>, from −1.45%. The <b>Dow was 52,199.33 (−0.36%)</b>, from −0.62%. The <b>Russell 2000 was 2,819.05 (−0.77%)</b>, from −1.02%. The trigger was rates again, this time in reverse. The <b>10-year yield slipped back below 5% to 4.979%</b> (still +11.5 bp on the day, vs. 5.01% / +14 bp at midday). The <b>VIX was 19.85, slightly lower on the day</b>, which suggests hedging demand is not rising despite the index drop.</p>
+<p><b>Most of the remaining index loss is Nvidia.</b> NVDA fell to <b>$166.16 (−7.00%) on 339M shares</b>, about 2.8× its 3-month average, and did not join the afternoon recovery. That is roughly $300B of market value lost in one session. At the ~7% S&amp;P weight cited earlier today, Nvidia alone accounts for roughly 0.45–0.5 points of the S&amp;P's 0.57% decline <span class="note">(rough estimate, not a published figure)</span>. Excluding Nvidia, the index is close to flat. Meanwhile <b>AMD flipped back to +1.2%</b>, its second reversal of the day.</p>
+<p><b>Fed:</b> There was <b>no FOMC statement today</b>; the next meeting is Dec. 8–9. No new Fed-speaker headlines around 2:00 PM ET were found. The dominant Fed input is still Governor Waller's morning remarks in London: he backs a 25 bp December hike even if inflation had cooled and said a 50 bp hike "should be considered" if core CPI was 0.3% or higher. It was 0.3%. Markets price a 25 bp December hike as near-certain, with roughly 12.5–15% odds of 50 bp (Reuters/CoinDesk). Other risk assets stayed soft: <b>gold $4,037.70 (−1.9%)</b>, <b>bitcoin ~$73.3K (−2.0%)</b>, <b>WTI $86.26 (−0.7%)</b>.</p>
+<p><b>After the bell:</b> CoreWeave (CRWV), D-Wave (QBTS) and Rigetti (RGTI) report. CoreWeave gives a direct read on GPU demand and AI-infrastructure financing, and it lands on Nvidia's worst day of the week.</p>
+
+<h2>2. Follow-Up on Earlier Calls</h2>
+<p class="note">Compares the pre-market, open (10:00 AM) and midday (~1:07 PM) reports with Yahoo's ~3:09 PM quotes. Where no afternoon quote was found, the verdict is marked "unverified."</p>
+<div class="tbl"><table>
+<tr><th>Name / earlier call</th><th>Open</th><th>Midday</th><th>~3:09 PM</th><th>Verdict</th></tr>
+<tr><td><b>NVDA</b>: continued selling, not a fade (open + midday)</td><td class="n dn">−5.25%</td><td class="n dn">−6.54% ($166.99)</td><td class="n dn">−7.00% ($166.16)</td><td><b>Played out again.</b> Yahoo now shows the 52-week low at $164.27, below the ~$166.5 midday low, so a fresh low appears to have printed this afternoon. Volume rose from 264M to 339M. The midday risk case (a late short-covering rally) has not happened.</td></tr>
+<tr><td><b>AMD</b>: open said relative strength would hold; midday said AMD had lost it while AVGO held</td><td class="n up">+3.56%</td><td class="n dn">−0.79% ($504.56)</td><td class="n up">+1.20% ($514.70)</td><td><b>Reversed again, back toward the open call.</b> The gain returned as the 10-year fell back below 5%. Midday's read that AMD trades as a rate-sensitive, high-multiple name holds up: it has tracked yields in both directions.</td></tr>
+<tr><td><b>AVGO</b>: relative strength by earnings visibility</td><td class="n up">+2.6–2.7%</td><td class="n up">+1.94%</td><td class="n">n/a</td><td>Unverified (no afternoon quote).</td></tr>
+<tr><td><b>MSFT</b>: −2.9% on Anthropic's Office-competitive tools</td><td class="n">—</td><td class="n dn">−2.88%</td><td class="n">n/a</td><td>Unverified. No follow-up coverage found.</td></tr>
+<tr><td><b>TTWO</b>: GTA VI pre-orders; move has legs</td><td class="n up">+7.77%</td><td class="n up">+6.65%</td><td class="n">n/a</td><td>Unverified this afternoon; held through midday.</td></tr>
+<tr><td><b>GEV / AI-infrastructure complex</b>: continuation</td><td class="n dn">−6.88%</td><td class="n dn">−7.63%</td><td class="n">n/a</td><td>GEV unverified. Within the complex, <b>SMCI −4.0%</b> and <b>IREN −10.1%</b> were still weak at 3:09 PM, consistent with continued pressure.</td></tr>
+<tr><td><b>HIMS</b>: Q4 guide miss (flagged in midday movers)</td><td class="n">—</td><td class="n dn">down as much as −15%</td><td class="n dn">−18.24%</td><td><b>Extended.</b> It made new lows into the afternoon on 4.3× average volume.</td></tr>
+<tr><td><b>Macro: "rates are the trigger"</b> (midday)</td><td class="n">10Y ~4.96%</td><td class="n">10Y 5.01%</td><td class="n">10Y 4.979%</td><td><b>Confirmed in both directions.</b> Indexes fell to session lows when the 10-year crossed 5% and recovered part of the loss as it slipped back under.</td></tr>
+</table></div>
+
+<h2>3. Afternoon Movers</h2>
+<p class="note">Change vs. Monday's close. Yahoo Finance Most Active at ~3:09 PM ET unless marked "midday" (Investing.com, ~1:07 PM). Volume multiple = today's volume ÷ 3-month average volume.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="n dn">−7.00% ($166.16)</td><td>339.3M vs 122.7M avg (<b>2.8×</b>); #1 most active. Market cap ~$4.01T; TTM P/E 23.6</td></tr>
+<tr><td>INTC</td><td class="n dn">−3.01% ($57.58)</td><td>74.5M vs 117.0M avg (0.6×); #2 most active but on below-average volume. No company catalyst found</td></tr>
+<tr><td>AMD</td><td class="n up">+1.20% ($514.70)</td><td>39.3M vs 22.8M avg (<b>1.7×</b>); reversed from −0.79% midday. TTM P/E 96</td></tr>
+<tr><td>MSFT</td><td class="n dn">−2.88% (midday)</td><td>No afternoon quote; Anthropic product-launch headline</td></tr>
+<tr><td>MU</td><td class="n dn">−3.94% (midday)</td><td>No afternoon quote</td></tr>
+<tr><td>AVGO / AMZN</td><td class="n up">+1.94% / +0.50% (midday)</td><td>No afternoon quotes</td></tr>
+<tr><td>AAPL / GOOGL / META / TSLA</td><td class="n dn">−0.92% / −0.71% / −0.41% / −0.78% (midday)</td><td>No afternoon quotes</td></tr>
+<tr><td>TSM, ORCL, CRM, ASML, QCOM</td><td class="n">n/a</td><td>No quotes found today from usable sources</td></tr>
+<tr class="sec"><td colspan="3">Other notable names</td></tr>
+<tr><td>HIMS</td><td class="n dn">−18.24% ($18.75)</td><td>48.6M vs 11.4M avg (<b>4.3×</b>); Q3 gross margin 57% vs 74% a year ago; Q4 revenue guide below estimates</td></tr>
+<tr><td>CRWV</td><td class="n dn">−3.74% ($47.15)</td><td>39.3M (0.9×); reports after the close</td></tr>
+<tr><td>TTD</td><td class="n up">+2.55% ($15.31)</td><td>51.2M vs 20.9M avg (<b>2.4×</b>); no catalyst found</td></tr>
+<tr><td>SMCI</td><td class="n dn">−3.97% ($27.47)</td><td>36.0M (0.8×); AI-server read-through from NVDA</td></tr>
+<tr><td>IREN / CIFR</td><td class="n dn">−10.07% / −6.24%</td><td>54.8M (1.1×) / 27.2M (0.6×); AI-hosting / bitcoin-miner names under pressure</td></tr>
+<tr><td>MARA</td><td class="n up">+6.85% ($7.09)</td><td>53.2M (1.2×); up despite bitcoin −2%. No catalyst verified</td></tr>
+<tr><td>CDE</td><td class="n dn">−6.93%</td><td>27.4M; gold −1.9%</td></tr>
+<tr><td>SOFI / NU</td><td class="n dn">−3.82% / −3.36%</td><td>Rate-sensitive fintech</td></tr>
+<tr><td>SPCX</td><td class="n dn">−0.65% ($141.14)</td><td>65.1M (0.7×)</td></tr>
+</table></div>
+
+<h2>4. Afternoon Alpha Candidates</h2>
+<p class="note">These are research observations worth investigating further, not recommendations to buy or sell.</p>
+
+<div class="card">
+<h3>1. Nvidia (NVDA): −7.0% at $166.16, diverging from the afternoon index recovery &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Afternoon move:</b> −5.25% at the open, −6.54% at midday, −7.00% at ~3:09 PM. It is still falling while the S&amp;P recovered about 0.3 points.</p>
+<p><b>Thesis:</b> The <b>afternoon split between Nvidia and the index</b> is today's clearest signal. When yields eased, the rest of the market and AMD bounced, but Nvidia did not. That points to <b>stock-specific selling tied to governance, legal and regulatory risk</b> rather than rates or the AI trade broadly. The selling also hasn't eased: volume reached 339M (2.8× average) by 3 PM, up 75M since 1 PM. Worth watching into the close: whether it finishes near the low (~$164–166) or recovers some of the loss. The last 45 minutes include index rebalancing and closing-auction flows, which at Nvidia's ~7% weight can move the stock sharply either way.</p>
+<p><b>Evidence:</b> Yahoo Most Active (~3:09 PM: $166.16, −7.00%, 339.3M vs 122.7M avg; 52-week low $164.27). Yahoo live blog: "Nvidia extends declines to 6% amid CEO drama, broader market sell-off". TheStreet: federal securities complaint (10:55 AM), Rep. Moolenaar's demand for answers (10:16 AM), and The Information's $7.5B China-shipments report (7:25 AM). Goldman's Schneider (Yahoo, ~11:55 AM ET) calls semis "clearly oversold" and puts NVDA at ~12× a no-growth 2028 baseline. Yahoo shows a TTM P/E of 23.6.</p>
+<p><b>Key risks / what could reverse this into the close:</b> A board statement, a Goldman-style "oversold" call or short covering could lift it in the final hour. CoreWeave's results after the bell are a direct read on GPU demand: a strong print could shift attention back to fundamentals, and a weak one would add a demand worry to the governance worry. Legal and regulatory news (FBI, congressional) can arrive at any time.</p>
+</div>
+
+<div class="card">
+<h3>2. AMD (AMD): +1.2%, its second reversal of the day &nbsp;<span class="conf">Confidence: Medium-Low</span></h3>
+<p><b>Afternoon move:</b> +3.56% at the open, −0.79% at midday, +1.20% ($514.70) at ~3:09 PM on 39.3M shares (1.7× average).</p>
+<p><b>Thesis:</b> AMD's path today has followed the 10-year yield. It fell as the yield crossed 5% and recovered as it slipped back under. With a TTM P/E of ~96 (Yahoo), AMD is far more rate-sensitive than Nvidia (~24×). So <b>AMD looks like the market's preferred non-Nvidia way to own AI semis when rates ease</b>, while Nvidia's own problems keep it out of the rebound. Above-average volume supports the idea of rotation rather than drift. Worth investigating: whether AMD closes green on a red Nasdaq for a second straight session after Monday's +13%.</p>
+<p><b>Evidence:</b> Yahoo Most Active (~3:09 PM). Midday report (Investing.com, −0.79% at 1:07 PM). Goldman (Yahoo) names AMD a top pick but calls its valuation "less compelling." AMD is also an Anthropic private-placement investor (TheStreet, from the S-1/A).</p>
+<p><b>Key risks / what could reverse this:</b> Two full reversals in one day show how unsettled the positioning is; a move in the 10-year in the last hour could flip it again. After +17% in two sessions, profit-taking risk is high. A weak CoreWeave read-through would hit all AI compute names.</p>
+</div>
+
+<div class="card">
+<h3>3. CoreWeave (CRWV): −3.7% into after-hours earnings &nbsp;<span class="conf">Confidence: Low (binary event)</span></h3>
+<p><b>Afternoon move:</b> $47.15 (−3.74%) on 39.3M shares (~0.9× average). It is falling into the print but not on unusual volume.</p>
+<p><b>Thesis:</b> CoreWeave is the bellwether for "neocloud" GPU capacity. Tonight's report lands on the day Nvidia fell ~7% on governance issues and GEV fell on SoftBank's data-center charge. Watch backlog conversion, capacity delivered, capex and financing (Zacks frames the question as whether it "can afford to deliver" ~$99B in contracts). The stock is down about 45% over 52 weeks, so the bar is low. But one prior-quarter preview noted the stock had fallen after every report since its IPO despite revenue beats.</p>
+<p><b>Evidence:</b> Yahoo Most Active (~3:09 PM). Earnings Whispers (via search): report after the close, consensus EPS −$1.57 on $3.52B revenue. <span class="am">Note: this morning's report cited EPS est. −1.18, so consensus figures conflict between sources; verify before relying on either.</span> Earnings Whispers puts the post-earnings drift at −17.8% since the Aug. 11 report. Zacks: "CoreWeave has $99 billion in contracts; Tuesday is about whether it can afford to deliver them."</p>
+<p><b>Key risks:</b> This is a binary event, and a historical intraday range of about 8% plus a ~15% next-day move (prior-quarter preview) means gap risk in both directions. Read-through to NVDA, ORCL, MSFT and AI-infrastructure credit.</p>
+</div>
+
+<div class="card">
+<h3>4. Hims &amp; Hers (HIMS): −18.2%, extending its post-earnings drop &nbsp;<span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Afternoon move:</b> "As much as −15%" in late morning (Yahoo, ~11:25 AM ET), now <b>−18.24% ($18.75) on 48.6M shares (4.3× average)</b>.</p>
+<p><b>Thesis:</b> The stock is <b>falling further through the afternoon instead of stabilizing</b>, on heavy volume. That pattern usually means investors are cutting positions after the report, not one-day noise. The fundamental issue is margins: Q3 revenue rose 49% to $890.4M (in line), but gross margin fell to 57% from 74% a year ago, subscriber growth missed, and the Q4 revenue guide came in below estimates. This is unrelated to the day's rates and AI themes.</p>
+<p><b>Evidence:</b> Yahoo Most Active (~3:09 PM). Yahoo live blog (Ines Ferré, "Hims &amp; Hers stock sinks after Q3 results, outlook disappoints").</p>
+<p><b>Key risks:</b> Heavily shorted consumer-health names can rebound sharply on oversold bounces or any product or regulatory headline. A −18% day already prices in a lot. Sell-side estimate revisions over the next few days will show whether the margin reset is seen as temporary.</p>
+</div>
+
+<div class="card">
+<h3>5. The Trade Desk (TTD): +2.6% on 2.4× average volume, no catalyst identified &nbsp;<span class="conf">Confidence: Low</span></h3>
+<p><b>Afternoon move:</b> $15.31 (+2.55%) on 51.2M shares vs a 20.9M average. It is the #7 most active U.S. stock.</p>
+<p><b>Thesis:</b> <b>Heavy volume on a small price gain, with no headline found</b>, is the kind of anomaly worth a closer look. TTD is down about 66% over 52 weeks at roughly $7.2B market cap with a TTM P/E around 15. The volume could reflect repositioning, index or ETF flows, or a pending catalyst that hasn't been reported yet.</p>
+<p><b>Evidence:</b> Yahoo Most Active only. <span class="am">Yahoo's (stale) gainers page showed TTD +18.6% on 57.9M shares with a different price base. That figure conflicts with the live table and was not used, but it suggests a large TTD move on another recent day; check whether today's volume is follow-through from that.</span></p>
+<p><b>Key risks:</b> No identified driver, so this could be noise. Small-cap adtech is sensitive to rates and the consumer.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. alpha_wrds_signals.csv has as_of_date 2026-09-17, 54 days before today and outside the ~14-day freshness window. Re-running wrds_alpha_screen.py would restore this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/most-active (→ /markets/stocks/most-active/) — index levels, 10Y, VIX, gold, BTC, WTI and per-stock quotes, ~3:09 PM ET</li>
+<li>https://finance.yahoo.com/markets/stocks/gainers/ and https://finance.yahoo.com/markets/stocks/losers/ — fetched but rejected as stale (data from other sessions)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html — Yahoo live blog (2:08 PM index snapshot; NVDA, HIMS, bitcoin, Goldman, Anthropic IPO entries)</li>
+<li>https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026 — TheStreet live blog (CPI, Waller, NVDA lawsuit/Moolenaar, movers)</li>
+<li>https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html — via search</li>
+<li>https://www.investing.com/news/economy-news/feds-waller-plans-to-support-at-least-a-quarterpoint-rate-hike-in-december-5014429 — Reuters via Investing.com, via search</li>
+<li>https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat — rate-hike odds, via search</li>
+<li>https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763 — morning pare-losses context, via search</li>
+<li>https://beta.earningswhispers.com/go/x/CRWV — CRWV consensus, via search</li>
+<li>https://www.zacks.com/commentary/2972829/coreweave-has-99-billion-in-contracts-tuesday-is-about-whether-it-can-afford-to-deliver-them — via search</li>
+<li>Earlier editions today: alpha_report_2026-11-10_premarket.html, alpha_report_2026-11-10_open.html, alpha_report_2026-11-10_midday.html</li>
+<li>Searched without usable Nov. 10 results: afternoon Fed-speaker remarks (Logan/Barkin/Kashkari/Goolsbee); AMD-specific afternoon catalyst; Microsoft/Anthropic follow-up</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body>
+</html>
