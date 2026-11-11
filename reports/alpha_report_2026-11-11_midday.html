@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-11 – Midday Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Midday Edition</span> &nbsp; Wednesday, November 11, 2026 &middot; Veterans Day (stocks open, cash Treasuries closed) &middot; chip index +7% &middot; CoreWeave +26%</div>
+<p class="note">Automated run. The task targets ~12:00 PM ET, but this session ran from about <b>1:10 to 1:35 PM ET</b>. Quotes come from four time-stamped snapshots: 24/7 Wall St.'s <b>12:00 PM</b> index card, Investing.com's market wrap at <b>11:51 AM</b>, TokenPost at <b>12:04 PM</b> (sector and chip moves), and Yahoo Finance's live blog plus quote strip at <b>1:11 PM</b>. The Investing.com ticker strip and movers tables were captured at about <b>1:15 PM</b>. Where they differ, the time is shown. <b>Yahoo's Most Active page was not used</b>: it carried a "data delayed" warning and showed NVDA at $203, which does not match today's trading, so its ORCL print (+2.6%) is not relied on. CNBC's movers page could not be fetched. <b>No verified intraday quotes were found for CRM or ORCL.</b> <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17 (55 days old, outside the ~14-day window).</p>
+
+<h2>1. How the Session Has Traded</h2>
+<p><b>The rally has extended through midday. Tech is doing nearly all the work.</b> At <b>12:00 PM</b> the S&amp;P 500 was <b>+1.32% (~7,620)</b>, the Nasdaq Composite <b>+1.98%</b> and the Dow <b>+0.10%</b> (24/7 Wall St.). By <b>1:11 PM</b> gains had widened: S&amp;P <b>7,635.60 (+1.52%)</b>, Nasdaq <b>25,601.99 (+2.14%)</b>, Dow <b>52,423.66 (+0.37%)</b>, Russell 2000 <b>2,851.74 (+1.08%)</b> and VIX <b>17.54 (−9.9%)</b> (Yahoo). The Nasdaq-100 was about <b>+2.8%</b> (~28,513, Investing.com ~1:15 PM). The S&amp;P has climbed steadily from +0.74% at 10:21 AM and is trading at session highs. The Philadelphia Semiconductor Index was up about <b>7%</b> at noon (TokenPost).</p>
+<p><b>Tone: strong, but narrow.</b> TheStreet counted only <b>240</b> S&amp;P 500 members advancing at 11:57 AM, and 18 of the top 20 performers were tech names. At 10:30 AM technology led the sectors (+3.0%), followed by energy (+1.6%), while health care (−0.7%), staples (−0.5%) and discretionary (−0.4%) lagged (24/7 Wall St.). Staples are still being sold to fund the move: Campbell's, Clorox and Conagra are each down about 3.3%. Inside megacaps, Microsoft (−2.3%) and Amazon (−1.9%) are still the drags. <b>Macro:</b> there has been no new data. Cash Treasuries are closed, and the 10-year quote is stale near 5.0%. The dollar index is up 0.7% (102.8), gold is down 0.7–0.8% (~$4,000), and Brent is up about 2% ($93.4). At 11:42 AM, Iran's Qalibaf said the Strait of Hormuz "will not return to pre-war state," which keeps a floor under crude. CME FedWatch puts the odds of a 50 bp December hike at about <b>13%</b>. Anthropic's IPO is reported to be multiple times oversubscribed at up to a $1.4T valuation, and Vanda estimates a record ~$250M of net retail buying on its first day.</p>
+
+<h2>2. Follow-up on Earlier Calls</h2>
+<p class="note">Compared with today's Pre-Market and Open Editions. "Played out" means the stock is at or above the level flagged earlier. "Faded" means it gave back ground.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Earlier flag (time)</th><th>Midday</th><th>Verdict</th></tr>
+<tr><td>CRWV</td><td>Pre-mkt +13.7–17% (~$55–57); Open +23.0% $59.93 (~11:10). Line to hold: ~$57.</td><td class="n">$61.14 <span class="up">+25.5%</span> (~1:15) / $61.44 <span class="up">+26.1%</span> (1:11)</td><td><span class="up">Played out; new highs, far above $57</span></td></tr>
+<tr><td>MU</td><td>Pre-mkt ~+6.5%; Open +12.2% $813.64</td><td class="n">$822.29 <span class="up">+13.4%</span>, 23.5M sh</td><td><span class="up">Played out, still extending</span></td></tr>
+<tr><td>AMD</td><td>Pre-mkt +6.4–7.5%; Open +6.9% $550.83</td><td class="n">$560.70 <span class="up">+8.8%</span>, 27.0M sh</td><td><span class="up">Played out; above the pre-market range</span></td></tr>
+<tr><td>NVDA</td><td>Pre-mkt +3.5–4.9% (~$175–177); Open +4.0% $175.58. Line to hold: $175.</td><td class="n">$176.44–176.66 <span class="up">+4.5–4.7%</span>, 178.5M sh</td><td><span class="am">Held $175, but lags the SOX (+7%)</span></td></tr>
+<tr><td>AVGO</td><td>Pre-mkt ~+4.2%; Open "over 5%"</td><td class="n"><span class="up">"Over 6%"</span> (12:04); +6.5% (Investing tag)</td><td><span class="up">Played out</span></td></tr>
+<tr><td>INTC</td><td>Pre-mkt +5–6.2%; Open "surged" (no figure)</td><td class="n">$62.68–63.42 <span class="up">+8–9%</span></td><td><span class="up">Played out; one of the strongest megacap chip names</span></td></tr>
+<tr><td>TSM (ADR)</td><td>Open +4% (10:21)</td><td class="n"><span class="up">+2.2%</span> (CNBC live blog; time unclear)</td><td><span class="am">Possibly faded; unconfirmed</span></td></tr>
+<tr><td>MSFT</td><td>Open −2.4% $520.55 (relative-weakness setup)</td><td class="n">$521.08 <span class="dn">−2.3%</span>, 15.1M sh</td><td><span class="dn">Weakness held; no bounce with the tape</span></td></tr>
+<tr><td>FOSL</td><td>Pre-mkt +17–26%; Open +28.1%</td><td class="n"><span class="up">+25–28%</span> (~$9.84, SMW 9:52; Investing tag +26.6%)</td><td><span class="up">Held</span></td></tr>
+<tr><td>SPCX</td><td>Pre-mkt pop; Open −0.3%</td><td class="n">$141.94 <span class="dn">−0.8%</span>, 77.5M sh</td><td><span class="dn">Faded</span>; Starship Flight 15 targets Nov. 13</td></tr>
+</table></div>
+<p class="note">Scorecard: every AI-beta name the morning editions flagged has played out or extended. The only "fade" names were the ones flagged as weak (MSFT) or were not part of the AI trade (SPCX). The open-edition test for NVDA ("hold $175") was passed, but it is still the laggard of the chip group.</p>
+
+<h2>3. Midday Movers</h2>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move vs. Tue close (time)</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="n"><span class="up">+4.5%</span> $176.44 (~1:15)</td><td>178.5M shares, the most active US stock. Baird downgrade and MS Top Pick removal absorbed.</td></tr>
+<tr><td>MU</td><td class="n"><span class="up">+13.4%</span> $822.29 (~1:15)</td><td>23.5M shares. Memory leads (SNDK +16.7%).</td></tr>
+<tr><td>AMD</td><td class="n"><span class="up">+8.8%</span> $560.70 (~1:15)</td><td>27.0M shares. ~$39 below Oppenheimer's $600 PT.</td></tr>
+<tr><td>INTC</td><td class="n"><span class="up">+8–9%</span> ~$62.7–63.4</td><td>Rebound after a ~43% one-month drop on weak Q4 guidance (Benzinga, StreetInsider). No Intel-specific news.</td></tr>
+<tr><td>AVGO</td><td class="n"><span class="up">+6–6.5%</span> (12:04)</td><td>Fourth straight up day.</td></tr>
+<tr><td>ASML</td><td class="n"><span class="up">&gt;+3%</span> (12:04)</td><td>Semicap; AMAT and LRCX (+8%) read-through. AMAT reports Thursday after the close.</td></tr>
+<tr><td>TSLA</td><td class="n"><span class="up">+3.4%</span> $392.57 (~1:15)</td><td>High-beta flow; no catalyst found.</td></tr>
+<tr><td>GOOGL</td><td class="n"><span class="up">+2.5%</span> $294.45 (~1:15)</td><td>Up from +1.5% at 11:10.</td></tr>
+<tr><td>TSM</td><td class="n"><span class="up">+2.2%</span> (CNBC, time unclear)</td><td>Board approved up to $1B of investments in OpenAI and Anthropic.</td></tr>
+<tr><td>QCOM</td><td class="n"><span class="up">&gt;+2%</span> (12:04)</td><td>Lags the chip group.</td></tr>
+<tr><td>AAPL</td><td class="n"><span class="up">+1.8%</span> $354.79 (~1:15)</td><td>—</td></tr>
+<tr><td>META</td><td class="n">−0.3% $639.46 (~1:15)</td><td>Flat for a third straight check.</td></tr>
+<tr><td>AMZN</td><td class="n"><span class="dn">−1.9%</span> $265.82 (~1:15)</td><td>Weaker than at 11:10 (−1.6%). No catalyst found.</td></tr>
+<tr><td>MSFT</td><td class="n"><span class="dn">−2.3%</span> $521.08 (~1:15)</td><td>15.1M shares. Still below the $525 support level.</td></tr>
+<tr><td>ORCL, CRM</td><td class="n">n/a</td><td>No verified intraday quote. A pre-market report had ORCL +5.4%.</td></tr>
+<tr class="sec"><td colspan="3">Outside the watchlist</td></tr>
+<tr><td>CRWV</td><td class="n"><span class="up">+25.5–26.1%</span> $61.14–61.44</td><td>112.4M shares. Up as much as ~26%, its largest one-day gain since June 2025.</td></tr>
+<tr><td>NBIS</td><td class="n"><span class="up">+18.2%</span> $158.44</td><td>23.6M shares. <b>Reports before the bell Thursday.</b></td></tr>
+<tr><td>SNDK</td><td class="n"><span class="up">+16.7%</span> $1,003.20</td><td>11.1M shares. Crossed $1,000.</td></tr>
+<tr><td>DELL / LITE / ARM</td><td class="n"><span class="up">+14.4% / +14.1% / +13.6%</span></td><td>AI servers, optics, IP. ARM is new to the leaders list since 11:10.</td></tr>
+<tr><td>BE / CRDO</td><td class="n"><span class="up">+14% / +12.3%</span></td><td>AI power and connectivity.</td></tr>
+<tr><td>MRVL</td><td class="n">n/a</td><td>Acquirer in the all-stock LITE deal (4.5 MRVL per LITE).</td></tr>
+<tr><td>GEVO / BGS / RSKD</td><td class="n"><span class="up">+29–47% / +29–32% / +28%</span></td><td>Earnings: GEVO record revenue and first profit; BGS beat and raised guidance.</td></tr>
+<tr><td>QBTS / RGTI</td><td class="n">QBTS up / RGTI down</td><td>Split quantum earnings: RGTI revenue $1.4M vs. ~$3.5M expected; QBTS bookings +611%.</td></tr>
+<tr><td>CPB, CLX, CAG, BF.B</td><td class="n"><span class="dn">−3.2% to −3.4%</span></td><td>Money moving out of defensives.</td></tr>
+<tr><td>LULU / ABNB</td><td class="n"><span class="dn">−2.8% / −3.4%</span></td><td>ABNB: OpenAI bought Odessia (AI travel planner).</td></tr>
+<tr><td>LWLG</td><td class="n"><span class="dn">−13% to −22%</span></td><td>Moved volume production to 2028.</td></tr>
+</table></div>
+
+<h2>4. Midday Alpha Candidates</h2>
+<p class="note">Worth investigating further for research purposes only. None of these is a recommendation to buy or sell.</p>
+
+<div class="card">
+<h3>1. CoreWeave (CRWV): +25.5–26.1% to ~$61.1–61.4, a new session high <span class="conf">Confidence: Medium</span></h3>
+<p><b>Change since the open:</b> up from +23.0% ($59.93) at 11:10 to ~$61.4 at 1:11 PM. It is now ~$4 above the ~$57 pre-market high the Open Edition named as the line to hold. Volume is <b>112M+</b> shares.</p>
+<p><b>Thesis (into the close):</b> The stock has not pulled back since the early fade to $53.85, which points to sustained buying and short covering rather than a one-time reaction to the news. The key funding points from the quarter are ~$9B of expected prepayments in the next three months and no plans to take on more expensive debt through 2027 (Yahoo). Those address the main bear case, which is financing a ~$50B debt load with some bonds yielding above 15%. Nebius reports Thursday morning, a direct test of whether neocloud demand holds up.</p>
+<p><b>Evidence:</b> Yahoo live blog (up as much as 25%; $61.44 +26.08% at 1:11 PM). Investing.com (11:51 wrap "nearly 26%"; $61.14 at ~1:15). TokenPost (largest one-day gain since June 2025). Q3 revenue was $3.66B (+168%), FY revenue guidance $13.0–13.3B, and backlog $132.5B (+138% y/y). The CEO canceled his 10b5-1 sale plan (CNBC via 24/7 Wall St.).</p>
+<p><b>Risks into the close:</b> After +26% in one day, following a −40% month, profit-taking into the close is common. Rates are the main macro risk: the bond market reopens Thursday with jobless claims and a 30-year auction after Tuesday's weak 10-year auction, and PPI follows on Friday. The net loss was $709M. If Nebius disappoints, the whole neocloud group could reverse.</p>
+</div>
+
+<div class="card">
+<h3>2. Memory: Micron (MU) +13.4%, SanDisk (SNDK) +16.7% <span class="conf">Confidence: Medium</span></h3>
+<p><b>Change since the open:</b> MU rose from +12.2% to +13.4%, and SNDK from +15.9% to +16.7% and above $1,000. Both are still near session highs.</p>
+<p><b>Thesis:</b> Memory remains the strongest part of the "AI ex-Nvidia" rotation. That fits CoreWeave's comment that demand is outrunning capacity, and SK Hynix's +5.5–7.9% move overnight. MU has run nearly 2x the SOX's percentage move. Holding through midday instead of fading suggests institutions are adding, not just covering shorts. SMW noted NVDA and MU were leading the tape by dollar volume from the open.</p>
+<p><b>Evidence:</b> Investing.com (~1:15). TokenPost ("Micron shares gained more than 13%" at 12:04). Seeking Alpha via TradingView (pre-market moves in WDC, STX and SK Hynix).</p>
+<p><b>Risks:</b> These are the highest-volatility names in the group, and a +13–17% day is mostly a reversal of the recent drawdown, not new information. Applied Materials (Thursday after the close) is the next semis read-through. A rate shock on Thursday or Friday would likely hit this group hardest.</p>
+</div>
+
+<div class="card">
+<h3>3. Intel (INTC): +8–9% to ~$62.7–63.4 <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>New to the candidate list.</b> The Open Edition had no figure for INTC. It is now one of the strongest megacap chip stocks (+8.4% on Investing.com's tag; "over 9%" per TokenPost at 12:04).</p>
+<p><b>Thesis:</b> This is an oversold rebound, not an Intel-specific story. The stock fell ~43% in a month after weak Q4 guidance and went into today oversold (Benzinga, StreetInsider). Names sold hardest in the drawdown (INTC, SNDK, NBIS) are bouncing hardest, which is how short covering usually looks. Whether INTC holds most of its gain into the close tests whether buyers are coming back or this is a one-day squeeze.</p>
+<p><b>Evidence:</b> Benzinga ($62.68 at publication), StreetInsider ($63.42), Investing.com (+6.92% at 10:37, +8.44% later), TokenPost.</p>
+<p><b>Risks:</b> No new fundamental catalyst. The Q4 guidance cut still stands, and these rebounds often fade. Intel has the least direct exposure to AI accelerators of the group, so it would be the most vulnerable if the market rotates back into the direct AI beneficiaries.</p>
+</div>
+
+<div class="card">
+<h3>4. AMD (AMD): +8.8% to $560.70 <span class="conf">Confidence: Medium</span></h3>
+<p><b>Change since the open:</b> up from +6.9% ($550.83) to +8.8% ($560.70) on 27.0M shares. That is about +25% over Monday–Wednesday.</p>
+<p><b>Thesis:</b> AMD is the most direct listed alternative to NVDA for AI accelerators. Its relative strength is widening: AMD +8.8% vs. NVDA +4.5% today. It is an Anthropic cornerstone investor, and the Oppenheimer upgrade ($600 PT) on Monday started this run. It is now ~7% below that target.</p>
+<p><b>Evidence:</b> Investing.com (~1:15), TokenPost ("more than 7%" at 12:04), Investing.com mega-cap movers (+5.33% at 10:37).</p>
+<p><b>Risks:</b> A three-day, ~25% run invites profit-taking, especially as it nears a widely cited price target. If NVDA's CEO probe resolves cleanly, money could rotate back from AMD to NVDA. Rate sensitivity is the same as for the rest of the group.</p>
+</div>
+
+<div class="card">
+<h3>5. Nvidia (NVDA): +4.5–4.7% to ~$176.5; held $175 but still lags <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Change since the open:</b> up from $175.58 (+4.0%) to $176.44–176.66, so the $175 line from the morning editions held. Volume is 178.5M, the most of any US stock.</p>
+<p><b>Thesis (mixed):</b> NVDA has absorbed two negative sell-side actions (Baird to Neutral with a $200 PT; Morgan Stanley's Top Pick removal) and is up for the first time since the CEO story broke. Trade Nation attributes the move to dip-buying. But a +4.5% gain in a +7% SOX tape is still relative weakness. The CEO overhang keeps a discount on NVDA versus peers. It is down ~14% in November and has lost ~$700B in market value (Yahoo).</p>
+<p><b>Evidence:</b> Yahoo ($176.66 +4.66% at 1:11), Investing.com ($176.44 +4.47%), TheStreet (Baird and MS details; Wachtell, Lipton internal review).</p>
+<p><b>Risks:</b> Baird flagged an upcoming congressional hearing, government investigations, and possible "risk channel" revenue adjustments or charges. Any of these could hit without warning. Earnings next week add event risk. Watch whether it closes above $175.</p>
+</div>
+
+<div class="card">
+<h3>6. Microsoft (MSFT) and Amazon (AMZN): negative outliers in a +2% Nasdaq <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Change since the open:</b> MSFT is unchanged at about −2.3% ($521.08, 15.1M shares). AMZN slipped further, from −1.6% to −1.9% ($265.82). Neither joined the afternoon extension.</p>
+<p><b>Thesis (relative weakness):</b> Two hyperscalers falling while their AI suppliers rise 5–26% points to a split: the market is rewarding the companies selling AI capacity and questioning the returns of those paying for it. That split widened through midday. MSFT also carries the overhang of Anthropic's new office-productivity tools. Its next catalyst is Ignite (Nov. 17–20).</p>
+<p><b>Evidence:</b> Investing.com ticker strip (~11:10 and ~1:15), Open Edition (MSFT below the $525 support level TradingKey flagged). No AMZN-specific catalyst was found.</p>
+<p><b>Risks:</b> Fundamentals are strong (MSFT FQ2 Azure guidance +49–50%). A late-day rotation from chips back into megacaps, which often happens after a +7% semis day, could lift both. MSFT and AMZN are also Anthropic investors, so a strong IPO partly benefits them.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. The only file found, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (55 days old), outside the ~14-day window. A refreshed WRDS pull would restore this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>Yahoo Finance live blog (1:11 PM quotes; CRWV, NVDA, Anthropic/Vanda, quantum earnings): https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html</li>
+<li>TheStreet live blog (breadth at 11:57, market movers, Baird/MS on NVDA): https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026</li>
+<li>24/7 Wall St. midday card (12:00 PM indexes, sector leaders, Hormuz headline, CRWV CEO): https://247wallst.com/cards/the-nasdaq-is-up-nearly-2-at-midday-while-the-dow-sits-esse-gspc-market-bell-01m75ryqzvfnqaxj8qn8yw7tr9</li>
+<li>Investing.com, "Nasdaq soars 2% as upbeat CoreWeave outlook reignites AI trade" (11:51 AM levels, FedWatch, Anthropic IPO): https://www.investing.com/news/stock-market-news/us-stock-futures-tick-higher-after-wall-st-slips-on-hot-cpi-nvidia-losses-5017417</li>
+<li>Investing.com, "AMD, Intel among market cap stock movers on Wednesday" (plus ticker strip and movers tables ~1:15 PM): https://www.investing.com/news/stock-market-news/amd-intel-among-market-cap-stock-movers-on-wednesday-93CH-5019477</li>
+<li>TokenPost, "Nasdaq Gains 2% as Chip Index Rallies 7%, CoreWeave Rises Over 25%" (12:04 PM): https://www.tokenpost.com/news/investing/54247</li>
+<li>Seeking Alpha via TradingView, "Chip, memory stocks rally after CoreWeave results ease AI demand worries": https://www.tradingview.com/news/seekingalpha:a64d6c214094b:0-chip-memory-stocks-rally-after-coreweave-results-ease-ai-demand-worries/</li>
+<li>StockMarketWatch movers (9:52 AM snapshot): https://stockmarketwatch.com/movers/today</li>
+<li>Benzinga, "What's Going On With Intel Stock Wednesday?" (search snippet): https://www.benzinga.com/markets/tech/26/11/63152158/whats-going-on-with-intel-stock-wednesday-10</li>
+<li>StreetInsider, "Intel stock jumps on AI infrastructure rally" (search snippet): https://www.streetinsider.com/Investing/Intel+stock+jumps+on+AI+infrastructure+rally/27327453.html</li>
+<li>CNBC live updates and CRWV article (search snippets only; TSM +2.2%, ASML +3%): https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html ; https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html</li>
+<li>Yahoo Finance Most Active (fetched; <i>not used</i> because the data was flagged delayed and inconsistent): https://finance.yahoo.com/markets/stocks/most-active/</li>
+<li>CNBC movers page (fetch failed): https://www.cnbc.com/2026/11/11/stocks-moving-the-most-today-live-updates.html</li>
+<li>Earlier editions: alpha_report_2026-11-11_premarket.html, alpha_report_2026-11-11_open.html (local archive)</li>
+</ul>
+
+<div class="disc"><b>Disclaimer:</b> This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
