@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-12 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Thursday, November 12, 2026 &middot; Huang resigns, Kress interim CEO &middot; NVDA recovers half of its opening drop &middot; AVGO and AMD rotation holds</div>
+<p class="note">This was an automated run. The task targets ~10:00 AM ET, but this session gathered data from about <b>10:50 to 11:05 AM ET</b>, so "since the open" covers roughly the first 90 minutes rather than the first 30. Intraday prices are snapshots from Yahoo Finance (quote strip at 11:02–11:03 AM ET; an earlier strip at ~9:39 AM ET), 24/7 Wall St. ticker widgets (~11:00 AM ET), Reuters via Kitco (premarket, 9:13 AM ET) and StockTitan (9:04 AM premarket; 10:05 AM regular session). <b>Yahoo's "Most Active" page served stale data</b> (quotes from about Nov. 4), so it was discarded, and this run has <b>no reliable volume figures</b>. Volume notes below are qualitative and come from news coverage. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 56 days old and outside the ~14-day window.</p>
+
+<h2>1. How the Open Traded</h2>
+<p><b>The open was a sharp, Nvidia-led gap down that buyers recovered within 90 minutes.</b> At about 8:59 AM ET, before the bell, Nvidia <b>confirmed that Jensen Huang had resigned</b> as president, CEO and director, effective immediately. CFO <b>Colette Kress</b> becomes interim CEO and keeps the CFO role. <b>Harvey C. Jones</b> becomes the board's first-ever chair. The board will consider internal and external candidates, and Nvidia said Q3 earnings remain on schedule for <b>Nov 17</b>. NVDA traded about −10.5% before the bell and fell as much as about 13–14% after the open, then recovered to about −5% (~$164–165) by 11:00 AM ET.</p>
+<p>The indexes followed the same path. At ~9:40 AM ET the S&amp;P 500 was <span class="dn">−0.32%</span> (7,594.90), the Nasdaq Composite <span class="dn">−0.52%</span> (25,334.88) and the Dow flat (52,498). At 11:03 AM ET the S&amp;P 500 was <span class="up">+0.08%</span> (7,625.50), the Nasdaq <span class="dn">−0.02%</span> (25,460.88) and the Dow <span class="up">+0.27%</span> (52,625.71). The Russell 2000 lagged at <span class="dn">−0.98%</span> (2,818.50). The VIX briefly rose above 18.9 and then eased to 17.92 (+2.5%).</p>
+<p>Rates and other assets: the 10-year Treasury yield is ~5.06% (+6 bp) as cash Treasuries reopen after the holiday. Gold fell sharply (−3.2%, ~$3,873) and bitcoin fell −3.5% (~$71.6K). Jobless claims came in at 200K vs. 195K expected, with continuing claims ~1.70M. <b>Tone:</b> the market is treating this as Nvidia-specific governance risk, not an AI-demand break. That shows up as rotation <i>within</i> AI: custom-silicon and GPU rivals are up, while Nvidia-financed neoclouds and the memory, storage and server supply chain are down. Small caps and rate-sensitive names are lagging as yields move toward 5.1%.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">This compares the names flagged in this morning's Pre-Market Edition (snapshots ~5:30–8:10 AM ET) with prices ~10:00–11:05 AM ET.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Pre-market (morning report)</th><th>After the open</th><th>Verdict</th></tr>
+<tr><td>NVDA</td><td class="dn">−5.6% to −8.6%</td><td>Confirmed resignation took it to −10.5% pre-bell. It fell as much as ~13–14% after the open, then recovered to <span class="dn">~−5%</span> (~$164–165) by 11:00.</td><td class="am">Gap extended at the open, then reversed about half of the drop</td></tr>
+<tr><td>AVGO</td><td class="up">~+2.5%</td><td><span class="up">+4.7% to +5%</span> (~$361–364). Yahoo reported it rose as much as 6%.</td><td class="up">Held and extended</td></tr>
+<tr><td>AMD</td><td class="up">+2.8% to +3.6%</td><td>Pared to ~+2% before the bell, then <span class="up">+2.9%</span> (~$569) by 11:00.</td><td class="up">Held</td></tr>
+<tr><td>MU</td><td class="dn">~−2.7%</td><td>−5.8% pre-bell (Reuters), about −3% early in the session (Yahoo).</td><td class="dn">Held lower; the decline deepened before the bell</td></tr>
+<tr><td>INTC</td><td class="dn">~−1.9%</td><td><span class="dn">−2.7%</span> (~$60.80) by 11:00. It was −3% early.</td><td class="dn">Held lower</td></tr>
+<tr><td>TSM / ASML</td><td>n/a (local −1.9% to −2.6%)</td><td>TSM −1.2% to −2%. ASML ~−1%.</td><td>Mild follow-through</td></tr>
+<tr><td>GOOGL</td><td>n/a</td><td><span class="up">+0.8%</span> (~$295.68)</td><td>Modest gain; analysts name TPUs as a beneficiary</td></tr>
+<tr><td>CTVA</td><td class="dn">−9% to −10%</td><td>−12.7% pre-bell, <span class="dn">−22% at 10:05</span> (StockTitan) and ~<span class="dn">−24%</span> (24/7 Wall St. widget).</td><td class="dn">Gap extended sharply</td></tr>
+<tr><td>CRWV</td><td>n/a (pressured after hours)</td><td>−10% to −13.6% pre-market, then <span class="dn">~−7%</span> (~$56.54) by ~11:00.</td><td class="am">Partial gap fill</td></tr>
+<tr><td>MSTR</td><td class="dn">~−5%</td><td>Fell as much as ~6% after MSCI confirmed its removal.</td><td class="dn">Held</td></tr>
+<tr><td>TTEK, AVEX, LLY</td><td class="up">+8–10%, +12%, +2.8%</td><td>AVEX was +10.3% at 9:04 pre-bell. No verified regular-session prints for these three.</td><td>Not verified</td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">% move vs. Wednesday's close, as of ~10:00–11:05 AM ET unless noted. Volume figures were not available this run (see note above). The "Volume / flow note" column relies on coverage, not exchange data.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move</th><th>Volume / flow note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="dn">~−5% (~$164–165); low ~−13–14%</td><td>Very heavy (CEO resignation). ORTEX estimates short-seller paper gains could reach ~$6.8B at $163. LSEG puts the stock at ~12x forward P/E, the lowest since Nov 2012.</td></tr>
+<tr><td>AVGO</td><td class="up">+4.7% to +5% (~$361–364)</td><td>Rotation flow into custom AI silicon (Google TPUs).</td></tr>
+<tr><td>AMD</td><td class="up">+2.9% (~$569)</td><td>William Blair upgrade to Outperform. BofA raised its PT to $700 (from $650).</td></tr>
+<tr><td>INTC</td><td class="dn">−2.2% to −2.7% (~$60.80)</td><td>Selling across the chip group. Nvidia is an investor in Intel.</td></tr>
+<tr><td>MU</td><td class="dn">~−3% (−5.8% pre-bell)</td><td>Memory/HBM weakness alongside SNDK (−7% to −8.5%) and WDC (−5.2%).</td></tr>
+<tr><td>TSM</td><td class="dn">−1.2% to −2%</td><td>Manufactures Nvidia's chips.</td></tr>
+<tr><td>ASML</td><td class="dn">~−1%</td><td>European semis −1%.</td></tr>
+<tr><td>GOOGL</td><td class="up">+0.8% (~$295.68)</td><td>Analysts name TPUs as a beneficiary.</td></tr>
+<tr><td>AAPL, MSFT, AMZN, META, ORCL, CRM, QCOM, TSLA</td><td>Not verified</td><td>No reliable intraday prints captured this run. No fresh company-specific catalysts found.</td></tr>
+<tr class="sec"><td colspan="3">Notable movers outside the watchlist</td></tr>
+<tr><td>CTVA</td><td class="dn">−22% to −24%</td><td>Cut its 2026 forecast on a weaker Brazil market. Q3 net sales −9%. One of the S&amp;P 500's biggest losers per 24/7 Wall St.</td></tr>
+<tr><td>NBIS</td><td class="dn">−14% to −20%</td><td>Q3 revenue beat ($980.8M), but 2026 revenue is at the low end of guidance. 2026 capex raised to $27B, and 2027 capex guided at $40–45B.</td></tr>
+<tr><td>CRWV</td><td class="dn">~−7% (−13.6% pre-market)</td><td>Gave back part of Wednesday's +25–27%. Reportedly raising ≥$4B via an investment-grade loan (Bloomberg).</td></tr>
+<tr><td>IREN, APLD</td><td class="dn">−7.6% to −8.8%</td><td>Sold off with the rest of the neocloud group.</td></tr>
+<tr><td>SMCI, DELL</td><td class="dn">SMCI −7.5%; DELL ~−4% to −7%</td><td>AI server makers are falling even though Gartner forecast $957B in AI server spending.</td></tr>
+<tr><td>MRVL, LITE, COHR</td><td class="dn">−4.5% to −7% (Reuters, pre-bell)</td><td>AI networking and optical names.</td></tr>
+<tr><td>SWKS</td><td class="up">+5.8%</td><td>Among the top S&amp;P gainers per 24/7 Wall St. widget; catalyst not verified.</td></tr>
+<tr><td>CTRA, PANW, KDP</td><td class="dn">−8.6%, −5.3%, −5.1%</td><td>Among the top S&amp;P losers per 24/7 Wall St. widget; catalysts not verified.</td></tr>
+<tr><td>MSTR</td><td class="dn">down as much as ~6%</td><td>MSCI confirmed its removal from US indexes. Bitcoin is below $72K.</td></tr>
+<tr><td>CHA (Chagee)</td><td class="up">+7.3% (pre-bell)</td><td>Special dividend of ~$1.95/ADS (~16% of its prior close).</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">These are names worth investigating further for informational research. None of them is a recommendation to buy or sell.</p>
+
+<div class="card">
+<h3>1. Nvidia (NVDA): ~−5% (~$164–165), up from an opening low of ~−13–14%; pre-market was −5.6% to −8.6% <span class="conf">Confidence: Medium (on volatility; Low on direction)</span></h3>
+<p><b>Thesis:</b> The board resolved the overhang faster and more cleanly than this morning's report expected: Huang is out, there is a named interim CEO (Kress) and a newly created independent chair (Jones), and the board says operations, customer commitments and the roadmap continue "without interruption." The market sold the confirmation at the open and then bought the dip hard. The stock recovered about half of the opening drop and is now trading <i>inside</i> its pre-market range. That looks like a capitulation-and-reversal pattern, not a trend day. Whether the recovery lasts into midday likely depends on (a) whether the ~$164 level, which held twice in 14 months and was broken after hours, now holds as support, and (b) any further commentary before the Nov 17 earnings report. Valuation is now historically low (~12x forward, the lowest since 2012 per LSEG), and Wolfe's Chris Caso argues that "Nvidia [is] sold out through the end of next year. The roadmap is set."</p>
+<p><b>Evidence:</b> Nvidia IR press release and 8-K (CEO transition). Yahoo Finance live blog (−14% at the open, trimmed to ~−7%, then −4.92% at 11:03 AM). 24/7 Wall St. (low −13%, now $164.32; Caso quote; earnings estimates $2.47 EPS on $109B revenue). Reuters via Kitco (−10.3% pre-market; ORTEX short data; LSEG valuation). Fool.com (intraday low −14.3%).</p>
+<p><b>Risks / what could flip it:</b> More revelations (the Chinese-intelligence angle could bring regulatory or export-policy fallout). A slow CEO search; Kress holding both the CEO and CFO roles is a stretch. Customers could accelerate diversification to TPUs and AMD. Questar's Richard Reyle calls the stock "uninvestable" without a succession plan. Earnings in three sessions add a second binary event. If the market turns, a reversal from deeply oversold levels can retrace.</p>
+</div>
+
+<div class="card">
+<h3>2. Broadcom (AVGO): +4.7% to +5% (~$361–364), up from ~+2.5% pre-market <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> This is the cleanest "has legs" candidate this morning. The pre-market gain roughly doubled after the open, while NVDA recovered. That suggests the rotation is not just a mirror image of Nvidia's selling. Broadcom designs Google's TPUs and other hyperscaler custom accelerators. Its Q3 FY26 AI semiconductor revenue was $16.7B (+221% y/y), and it guided Q4 AI revenue to $21.7B. Floodlines Research's Anna Wu: "Alphabet and Broadcom in the TPU space are natural beneficiaries in the short term."</p>
+<p><b>Evidence:</b> 24/7 Wall St. (AVGO $363.99, +5%; AI revenue figures; Wu quote via Bloomberg). Yahoo Finance (up as much as 6%). Reuters via Kitco (+1.4% pre-bell, so most of the gain came after the open).</p>
+<p><b>Risks / what could flip it:</b> If NVDA keeps recovering, the rotation trade could unwind intraday. Nvidia's sold-out roadmap limits how much near-term business can actually shift. Rising yields (~5.06%) weigh on high-multiple semis. Broadcom's own earnings in December are the real test.</p>
+</div>
+
+<div class="card">
+<h3>3. AMD: +2.9% (~$569); pre-market +2.8% to +3.6% <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> AMD's gain held, though it lagged Broadcom. That may be because the stock is already extended: it rose about 13% Monday and 7.3% Wednesday. AMD has two new sell-side supports today: William Blair's upgrade to Outperform and BofA's target raise to $700. It is the direct GPU alternative if customers hedge their Nvidia exposure. Lisa Su is scheduled at Yahoo Finance Invest today, but this run found no published comments from her yet, so her remarks remain a potential intraday catalyst.</p>
+<p><b>Evidence:</b> 24/7 Wall St. (AMD $562–569, +2–2.9%; BofA PT). Investing.com and CNBC (William Blair upgrade, from this morning's report). Reuters via Kitco (+2% pre-bell).</p>
+<p><b>Risks / what could flip it:</b> AMD is extended after a multi-day run, which raises the risk of profit-taking. Its gain is smaller than AVGO's, so it may be the weaker part of the rotation. Su could also take a measured tone and decline to comment on a competitor's turmoil.</p>
+</div>
+
+<div class="card">
+<h3>4. Corteva (CTVA): −22% to −24%, from −9% to −10% pre-market <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> This is the biggest open-vs-premarket divergence on the board, and it is unrelated to AI. This morning's question was whether Corteva would cut full-year guidance, and it did: it updated its 2026 forecast for a weaker Brazil market than expected, and Q3 net sales fell 9%. The selloff deepened after the open, which typically signals institutional repositioning rather than a one-off gap. Earlier previews flagged Brazil crop-protection pricing as the key risk after three straight quarters of guidance raises, so the reversal of that pattern matters.</p>
+<p><b>Evidence:</b> StockTitan (−12.69% pre-bell at 9:04; −21.95% at 10:05; Brazil forecast and −9% net sales). 24/7 Wall St. widget (−23.85%). Benzinga and CNBC (Q3 EPS miss, from the morning report).</p>
+<p><b>Risks / what could flip it:</b> A drop of more than 20% on a large-cap ag name can attract value buyers and short covering by the afternoon. This run did not read the company release directly, so the size of the guidance cut is unverified. The 24/7 widget price ($9.25) looks inconsistent with Corteva's usual price level, possibly because of a corporate action or a data error, so treat the percentage figures as approximate.</p>
+</div>
+
+<div class="card">
+<h3>5. Neoclouds: Nebius (NBIS) −14% to −20%, CoreWeave (CRWV) ~−7%, IREN and APLD −8% <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Thesis:</b> These names face two problems at once: their main GPU supplier and investor lost its CEO, and Nebius reported a capex-heavy outlook. 2026 revenue is at the low end of guidance while 2026 capex rose to $27B, and 2027 capex of $40–45B compares with $12–13B of revenue. That raises the "how much capacity is too much" question for the whole group. CoreWeave partly filled its pre-market gap, from −13.6% to ~−7%. Nebius has not recovered the same way, which suggests the selling there is about Nebius's own fundamentals, not just Nvidia. Reuters adds a political overhang: data-center restrictions passed in the recent midterm ballot measures.</p>
+<p><b>Evidence:</b> 24/7 Wall St. (Nebius results and guidance; CRWV $54.57 to $56.54; IREN and APLD prices). Reuters via Kitco (NBIS −20%, CRWV −13.6% pre-bell; Ten Cap's Jun Bei Liu on circular financing). Yahoo Finance (CRWV −12%, NBIS −19% early).</p>
+<p><b>Risks / what could flip it:</b> These are very high-beta stocks. Nebius's revenue beat was large, and management says capacity is effectively sold out, so dip buyers may step in if NVDA stabilizes. CoreWeave's $4B investment-grade loan could be read as easing financing risk.</p>
+</div>
+
+<div class="card">
+<h3>6. AI hardware supply chain: MU, INTC, SMCI, SNDK/WDC, MRVL <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Thesis:</b> Unlike Nvidia's rivals, the Nvidia-dependent supply chain did not bounce with NVDA. MU (~−3% after −5.8% pre-bell), INTC (−2.7%), SMCI (−7.5%) and the storage names (SNDK −7% to −8.5%, WDC −5%) remain lower. These were Wednesday's biggest gainers (MU +11.9%, INTC +7.5%), so part of the decline is profit-taking. The next hard data point is <b>Applied Materials (and Cisco) after today's close</b>. A strong AMAT capex read could reset the group into Friday's PPI.</p>
+<p><b>Evidence:</b> Reuters via Kitco (MU −5.8%, SNDK −8.5%, WDC −5.2%, MRVL/INTC/ARM/TXN −4.5% to −6.3%, LITE/COHR/DELL ~−7%). Yahoo Finance (MU ~−3%, INTC −3% early). 24/7 Wall St. (SMCI −7.46%; INTC $60.80).</p>
+<p><b>Risks / what could flip it:</b> AMAT tonight is a binary event. If NVDA keeps recovering, the supply chain could catch up later in the session. Rates near 5.06% and a hawkish Fed (a 25 bp December hike is largely priced in) limit multiple expansion.</p>
+</div>
+
+<p class="note"><b>What to watch into midday:</b> Whether NVDA holds ~$164 after its reversal from the open. Whether AVGO and AMD keep their gains if NVDA keeps recovering, which would show the rotation is more than a hedge. Whether the Russell 2000 recovers with yields at ~5.06%. The 30-year auction this afternoon is the long-end demand test. After the close: AMAT, CSCO, NBIS follow-through, and Cerebras (CBRS).</p>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used this edition. The only file found, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (56 days old), outside the ~14-day freshness window. Refreshing the WRDS extract would bring momentum, volume and earnings-surprise factors back into this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>C:\Users\phc220001\OneDrive\alpha\alpha_report_2026-11-12_premarket.html (this morning's Pre-Market Edition)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html</li>
+<li>https://finance.yahoo.com/markets/article/amd-broadcom-stocks-jump-as-nvidia-ceo-jensen-huang-resigns-143725561.html</li>
+<li>https://www.kitco.com/news/off-the-wire/2026-11-12/global-ai-stocks-sink-nvidia-ceos-exit-deepens-sector-selloff (Reuters)</li>
+<li>https://247wallst.com/investing/2026/11/12/broadcom-rallies-5-as-traders-bet-on-chip-rivals-after-jensen-huangs-exit-nvidia-falls-5-amd-climbs-2/</li>
+<li>https://247wallst.com/investing/2026/11/12/nebius-tumbles-14-on-soft-guidance-and-bigger-spending-plans-coreweave-sinks-10-iren-drops-7/</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-12-2026</li>
+<li>https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx (search snippet)</li>
+<li>https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm (search snippet)</li>
+<li>https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/ (search snippet)</li>
+<li>https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html (search snippet)</li>
+<li>https://www.fool.com/investing/2026/11/12/why-nvidia-stock-crashed-today/ (search snippet)</li>
+<li>https://www.techtimes.com/articles/330561/20261112/jensen-huang-resigns-nvidia-shares-tumble-interim-ceo-kress-keeps-cfo-job-before-earnings.htm (search snippet)</li>
+<li>https://www.benzinga.com/markets/tech/26/11/63196987/jim-cramer-says-jensen-huangs-nvidia-exit-had-to-happen (search snippet)</li>
+<li>https://www.cnbc.com/2026/11/12/stocks-moving-the-most-today-live-updates.html (search snippet)</li>
+<li>https://www.tipranks.com/news/why-coreweave-nebius-and-iren-stocks-are-falling-in-premarket-trading-today (search snippet)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (fetched; data stale, so not used)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
