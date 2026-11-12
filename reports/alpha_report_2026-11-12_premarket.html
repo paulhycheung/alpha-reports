@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-12 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Thursday, November 12, 2026 &middot; Nvidia board weighs ousting Huang &middot; AI rebound stalls &middot; Treasuries reopen</div>
+<p class="note">This was an automated run. The task targets ~7:30 AM ET, but this session ran from about <b>8:15 to 8:45 AM ET</b>. Pre-market quotes are snapshots from different outlets taken between ~5:30 and ~8:10 AM ET. Where they disagree, the table shows a range. Futures levels come from Yahoo Finance's quote strip (~8:08 AM ET). Wednesday closing prices come from Investing.com's market tables. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 56 days old and outside the ~14-day window. This edition is based on public research only.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>Setup:</b> Wednesday was a broad AI relief rally. The S&amp;P 500 rose <span class="up">+1.31%</span> to 7,619.38, the Nasdaq Composite <span class="up">+1.60%</span> to 25,466.19 and the Dow <span class="up">+0.49%</span> to 52,486.49. Cash Treasuries were closed for Veterans Day. CoreWeave jumped +24.7% after its beat-and-raise, Micron rose +11.9%, Intel +7.5%, AMD +7.3%, Broadcom +4.0% and Nvidia +2.9% to $173.73. Microsoft (−2.3%), Meta (−2.0%) and Amazon (−1.7%) lagged. <b>After the bell, the rally reversed.</b> The WSJ reported that Nvidia's board was preparing to remove CEO Jensen Huang, and the NYT reported a second affair, this one with Kimberly Powell, the Nvidia executive who runs its healthcare business. That adds to the case that began Sunday, when Huang admitted an affair with a woman US officials suspect of being a Chinese intelligence asset. A source told Reuters the board met late Wednesday. Bloomberg reported that Nvidia is working with an outside firm to identify possible successors. <b>As of this writing, no board decision or official statement has been published.</b> Nvidia fell ~8.6% after hours.</p>
+<p><b>Asia: the chip supply chain sold off.</b> Taiwan's Taiex fell <span class="dn">−2.6%</span>, giving back part of Wednesday's +3.6%. Japan's Nikkei fell <span class="dn">−0.70%</span> to 60,819.36, led by Nvidia suppliers: Ibiden −8.3%, Advantest −4.6% and SoftBank Group −3.0%. The broader Topix rose ~0.2%, so the selling was concentrated in tech. Korea's Kospi fell <span class="dn">−0.61%</span> to 5,342.73. SK Hynix fell 1.8% because it has more HBM exposure to Nvidia, while Samsung rose ~1%. Foreign investors were net buyers for a third straight day. The Hang Seng fell 1.3% and Shanghai 0.7%. <b>Europe is mixed.</b> Chip stocks fell at the open (ASML −2.5%, ASM International −2.9%, STMicro −2.6%) and recovered part of the loss by late morning (ASML −1.9% at 11:26 CET). Broader indexes rose: the DAX topped <b>27,000 for the first time</b> (+1%) after Siemens gained 4%+ on record profit driven by data-center demand. The FTSE rose ~0.3% and the CAC ~0.7%. UK Q3 GDP grew +0.7% on AI-related output.</p>
+<p><b>US futures show the Nasdaq lagging while the Dow holds flat</b> (~8:08 AM ET): S&amp;P 500 futures <span class="dn">−0.46%</span> (7,605), Nasdaq-100 <span class="dn">−1.05%</span> (28,173), Dow <span class="up">+0.05%</span> (52,606) and Russell 2000 <span class="dn">−0.21%</span>. The VIX is 18.33 (+4.8%). With cash Treasuries reopening after the holiday, Investing.com shows the 10-year at <b>~5.05%</b> (+4 bp) and the 5-year up ~9 bp. Yahoo's strip still shows 4.998%, which looks stale. The dollar index is ~102.9, its highest since April 2025. Fed funds futures price an 87% chance of a 25 bp hike on Dec 9 and a 13% chance of 50 bp (CME FedWatch via Reuters). Deutsche Bank now expects three straight hikes. Gold is ~$3,942 (−1.5%), WTI ~$85.9 (−0.8%), Brent ~$92 and bitcoin ~$72.6K (−1.5%). MSCI is removing Strategy (MSTR) from its indexes.</p>
+<p><b>Tone:</b> This is a single-stock shock hitting a fragile rebound. Yahoo Finance notes that the SOX was still below its 200-day moving average even after a ~17% bounce off last week's low, and that Nvidia broke below a ~$164 floor that had held twice in 14 months. Brokers are framing it as Nvidia-specific risk rather than weaker AI demand. Bernstein kept its earnings estimates and cut only the multiple. That favors a <b>rotation</b> (AMD and AVGO higher) over a broad AI de-rating, but Nvidia is the index's largest company (~$4T market value), so the index still takes the hit. Rates are the second headwind: Treasuries reprice today for the first time since Tuesday's hot CPI, with jobless claims and Friday's PPI still ahead.</p>
+
+<h2>2. Today's Economic Calendar / Key Events (ET)</h2>
+<div class="tbl"><table>
+<tr><th>When</th><th>Event</th><th>Consensus / Prior</th><th>Why it matters</th></tr>
+<tr><td class="n">8:30 AM</td><td><b>Initial jobless claims</b> (week ending Nov 7)</td><td>Prior 189K; continuing ~1.72M. No reliable consensus found.</td><td>A low print reinforces the case for Fed hikes. This is the first data point to hit a reopened Treasury market since Tuesday's CPI.</td></tr>
+<tr><td class="n">All day</td><td><b>Cash Treasury market reopens</b> after Veterans Day</td><td>10-yr ~5.0–5.05%</td><td>Bonds catch up to two days of hawkish Fed commentary (Waller has floated 50 bp). Long-duration tech is most exposed.</td></tr>
+<tr><td class="n">10:00 AM*</td><td>Existing home sales (Oct)</td><td>—</td><td>Rate-sensitive housing read. *Sources disagree on the release time.</td></tr>
+<tr><td class="n">Afternoon</td><td>30-year bond auction; delayed EIA oil inventories</td><td>—</td><td>These were on Thursday's schedule in earlier previews, but this run did not confirm the times. Tuesday's 10-year auction tailed, so long-end demand is the test.</td></tr>
+<tr><td class="n">Various</td><td>Fed speakers</td><td>—</td><td>Calendar sites list Hammack and others, but the listings looked stale and could not be verified. Watch for follow-ups to Waller, Logan and Bowman's hawkish remarks.</td></tr>
+<tr><td class="n">8:00 AM onward</td><td>Yahoo Finance Invest conference</td><td>—</td><td>Speakers include <b>AMD CEO Lisa Su</b> and <b>Intel CEO Lip-Bu Tan</b>. Any comments on Nvidia customers diversifying could move AMD and INTC intraday.</td></tr>
+<tr><td class="n">Pre-mkt</td><td>Earnings: Corteva (CTVA), Tetra Tech (TTEK), Aevex (AVEX), Brookfield (BN/BNT), Korea Electric Power (KEP), Dillard's (DDS), Stantec, Hudbay</td><td>—</td><td>CTVA and TTEK are the notable gappers (see table).</td></tr>
+<tr><td class="n">After close</td><td><b>Applied Materials (AMAT), Cisco (CSCO)</b>, Nebius (NBIS), Cerebras (CBRS), Nu Holdings (NU), QXO, Arrowhead (ARWR)</td><td>—</td><td>AMAT gives a semicap read-through to ASML, TSM, MU and INTC. CSCO gives an AI-networking read. NBIS is a neocloud peer of CoreWeave (NBIS rose 15% Wednesday).</td></tr>
+<tr class="sec"><td colspan="4">Next few sessions</td></tr>
+<tr><td class="n">Fri 8:30 AM</td><td><b>October PPI</b></td><td>—</td><td>Second inflation test before the Dec 8–9 FOMC.</td></tr>
+<tr><td class="n">Any time</td><td>Nvidia board decision on Huang</td><td>—</td><td>This is the dominant headline risk. A statement could land before the open or during the session.</td></tr>
+<tr><td class="n">Tue Nov 17</td><td><b>Nvidia fiscal Q3 earnings</b></td><td>—</td><td>Questions will cover both demand and leadership.</td></tr>
+<tr><td class="n">Next week</td><td>Anthropic IPO</td><td>Reportedly oversubscribed several times (~$90B raise)</td><td>A key test of AI sentiment, with NVDA, AMD, AVGO, MU, MSFT, GOOGL and TSM among cornerstone investors.</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">Moves are vs. Wednesday's (Nov. 11) close. Snapshots come from Investing.com (~5:32–6:48 AM), Yahoo Finance (~7:39 AM and ~8:08 AM), Benzinga, CNBC (search snippet), StockTitan (~8:04–8:06 AM, snippet) and Euronews (~4:00 AM ET). Ranges are shown where they differ. "n/a" means no verified pre-market print was found.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt</th><th>Catalyst note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="dn">−5.6% to −8.6% (~$159–164)</td><td>WSJ: the board is preparing to oust Huang. NYT: a second affair. Bernstein cut to Market Perform with a $200 PT (from $400). Oppenheimer cut to Perform and removed its PT. Baird cut to Neutral ($200). Closed $173.73 (+2.9%).</td></tr>
+<tr><td>AMD</td><td class="up">+2.8% to +3.6%</td><td>William Blair upgraded to Outperform, citing Nvidia's "leadership vacuum." Oppenheimer names AMD as a beneficiary. Closed $552.90 (+7.3%).</td></tr>
+<tr><td>AVGO</td><td class="up">~+2.5%</td><td>Custom-ASIC alternative to Nvidia GPUs. Oppenheimer names AVGO as a beneficiary. Closed +4.0%.</td></tr>
+<tr><td>MU</td><td class="dn">~−2.7% (one CNBC snippet says higher)</td><td>HBM exposure to Nvidia. SK Hynix fell 1.8% in Seoul and its US-listed shares ~3.2% pre-market. Closed $811.30 (+11.9%).</td></tr>
+<tr><td>INTC</td><td class="dn">~−1.9%</td><td>Sector beta after Wednesday's +7.5%. CEO Lip-Bu Tan speaks at Yahoo Finance Invest today.</td></tr>
+<tr><td>TSM (ADR)</td><td>n/a (Taiex −2.6%)</td><td>Supply-chain read from Taipei. AMAT reports after the close.</td></tr>
+<tr><td>ASML</td><td>n/a (Amsterdam −1.9% to −2.5%)</td><td>European chip selloff, partly recovered by late morning.</td></tr>
+<tr><td>GOOGL</td><td>n/a</td><td>investingLive says Alphabet benefited after hours. Bloomberg Intelligence says TPUs could take share from the Nvidia turmoil (headline cites ~$50B). Alphabet launched an Asia bond sale. Closed $293.45 (+2.1%).</td></tr>
+<tr><td>MSFT, META, AMZN</td><td>n/a</td><td>Wednesday closes: MSFT $521.13 (−2.3%), META $628.77 (−2.0%), AMZN $266.17 (−1.7%). They lagged Wednesday's rally, and no new catalysts were found.</td></tr>
+<tr><td>AAPL, TSLA</td><td>n/a</td><td>Closed AAPL $355.63 (+2.0%) and TSLA $390.84 (+2.9%). Musk publicly backed Huang. No direct catalyst.</td></tr>
+<tr><td>ORCL, CRM, QCOM</td><td>n/a</td><td>No verified pre-market prints or overnight catalysts. ORCL remains sensitive to AI-infrastructure and Nvidia headlines.</td></tr>
+<tr class="sec"><td colspan="3">Notable gappers (outside watchlist)</td></tr>
+<tr><td>CRWV</td><td>n/a (pressured after hours)</td><td>Closed $60.77 (+24.7%) after its Q3 beat-and-raise. investingLive says Nvidia's after-hours drop pulled CRWV and SMCI lower.</td></tr>
+<tr><td>CTVA</td><td class="dn">−9% to −10%</td><td>Q3 adj. EPS $0.06 vs. $0.10 estimate, plus a revenue miss (Benzinga, CNBC).</td></tr>
+<tr><td>TTEK</td><td class="up">+8.4% to +10% (~$40.8)</td><td>Fiscal Q4 adj. EPS $0.49 vs. $0.47 (FactSet). Revenue was either in line or a beat, depending on the source, so check the company release.</td></tr>
+<tr><td>AVEX</td><td class="up">+11.8% to +12.1% (~$13.56)</td><td>Aevex Q3 revenue $189.7M (+56.5% y/y), a beat. Full-year 2026 guidance raised "by a wide margin."</td></tr>
+<tr><td>LLY</td><td class="up">~+2.8%</td><td>China approved its oral GLP-1 orforglipron, ahead of Novo Nordisk.</td></tr>
+<tr><td>MSTR</td><td class="dn">~−5%</td><td>MSCI is removing it from its global indexes under a new rule for fund-like, non-operating companies.</td></tr>
+<tr><td>PLCE</td><td class="up">~+300% (~$0.80)</td><td>Children's Place. Sub-$1 stock with a Chapter 11 filing reported Nov. 8. Speculative and illiquid; listed only for completeness.</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">These are names worth watching for informational research. None of them is a recommendation to buy or sell.</p>
+
+<div class="card">
+<h3>1. Nvidia (NVDA): −5.6% to −8.6% pre-market (~$159–164 vs. $173.73) <span class="conf">Confidence: Medium (that volatility is high; direction is not)</span></h3>
+<p><b>Thesis:</b> This is the most important stock on the tape today. The question has moved from "will there be a probe" to "will the founder-CEO be removed." The board met Wednesday night (Reuters source) and is reportedly working with an outside search firm (Bloomberg). Three or more brokers stepped back in two days. Bernstein's framing matters most: Rasgon kept his earnings estimates and cut the multiple in half, to ~12.7x FY28 EPS. That treats the risk as governance, not demand. Opening price discovery will turn on whether the board says anything before 9:30. A decision in either direction (removal plus a credible interim CEO, or Huang staying in a reduced role) could narrow the uncertainty discount. Continued silence leaves the overhang in place into the Nov 17 earnings report.</p>
+<p><b>Evidence:</b> Yahoo Finance live blog (futures, −5.6% then ~−7.9%). Investing.com (−6% or more at ~5:30–6:00 AM). Benzinga (−8.6%). investingLive: Bernstein downgrade to Market Perform with a $200 PT, Baird to Neutral with a $200 PT, Morgan Stanley stepping back Nov 11. Investing.com: Oppenheimer downgrade to Perform. Euronews and Quilter Cheviot: "no natural successor," with CFO Colette Kress the most obvious choice. Yahoo/Blikre: the stock broke a ~$164 floor that had held twice in 14 months.</p>
+<p><b>Risks / fade factors:</b> The reporting is not confirmed by the company, and a denial or a "Huang stays" statement could spark a sharp short-covering bounce. Some summaries mention Evercore and KeyBanc downgrades, but this run did not verify them. A leadership change could also hurt customer and policy relationships (Huang's role in China export talks and AI financing). Earnings in three trading days add a second binary event, so option-implied volatility will be elevated. Even bearish brokers' $200 targets sit above current pre-market prices.</p>
+</div>
+
+<div class="card">
+<h3>2. AMD and Broadcom (AMD +2.8% to +3.6%, AVGO ~+2.5%) <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> These are the clearest "Nvidia-dislocation" beneficiaries, and the sell side is saying so explicitly. William Blair upgraded AMD to Outperform this morning, citing Instinct share gains and CPU attach while Nvidia "contends with a growing leadership and regulatory imbroglio." Oppenheimer's NVDA downgrade names AMD, MRVL and AVGO as perceived beneficiaries. If hyperscalers react to Nvidia's governance risk by diversifying suppliers, demand shifts toward AMD GPUs and Broadcom custom ASICs. Lisa Su's appearance at Yahoo Finance Invest today is a potential intraday catalyst.</p>
+<p><b>Evidence:</b> Investing.com (AMD +3.6%, AVGO +2.5% at ~5:57 AM; William Blair quote). CNBC snippet (AMD +2.8%). Both have shown relative strength across the past three sessions. AMD closed +7.3% Wednesday, extending a sharp run that began with Monday's +13% move on the Nov 9 Oppenheimer upgrade.</p>
+<p><b>Risks / fade factors:</b> AMD is extended after a sharp multi-day run, and a hawkish repricing in Treasuries (10-year ~5.05%) weighs on long-duration multiples. "Beneficiary" narratives take quarters to show up in orders. If the Nvidia headline resolves quickly, the rotation could reverse. A broad Nasdaq selloff can also overwhelm relative strength.</p>
+</div>
+
+<div class="card">
+<h3>3. Memory and semicap supply chain: MU (~−2.7%), INTC (~−1.9%), TSM and ASML (local markets −1.9% to −2.6%) <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Thesis:</b> These stocks posted Wednesday's biggest gains (MU +11.9%, INTC +7.5%) and are now giving some back. Exposure to Nvidia drives the pattern: SK Hynix (heavy Nvidia HBM exposure) fell while Samsung rose, and Nikkei losses were concentrated in Nvidia suppliers (Ibiden, Advantest). Applied Materials reports after the close and is the next hard data point for capex demand across ASML, TSM, MU and INTC. Two things to watch: whether the "Nvidia-specific" framing holds, keeping the supply chain stable, or whether the selloff spreads to the whole AI-hardware complex.</p>
+<p><b>Evidence:</b> Investing.com (MU −2.7%, INTC/MRVL/LRCX ~−1.9%, SK Hynix ADR −3.2%). Korea JoongAng Daily, MoneyToday and Business Recorder (Kospi and SK Hynix). Euronews (ASML, ASMI, STM, Taiex). Nikkei reports via ad-hoc-news. Yahoo Finance (SOX still below its 200-day moving average).</p>
+<p><b>Risks / fade factors:</b> One CNBC snippet described Micron as rising, so the pre-market direction is not settled. A strong AMAT print tonight could flip the sector narrative quickly. Memory names carry high beta to any Nvidia headline.</p>
+</div>
+
+<div class="card">
+<h3>4. Eli Lilly (LLY): ~+2.8% <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> This is a non-AI, fundamental catalyst. China's drug regulator approved orforglipron, Lilly's oral GLP-1, giving it a first-mover edge over Novo Nordisk's oral program in the world's second-largest pharma market. China's health commission projects overweight and obesity could exceed 65% of the population by 2030. Lilly also offers a large-cap way to rotate out of semiconductors on a risk-off tech day.</p>
+<p><b>Evidence:</b> Investing.com pre-market movers (Reuters-sourced).</p>
+<p><b>Risks / fade factors:</b> China pricing and reimbursement are uncertain, and domestic competitors (Innovent) are already in the market. A ~3% move on a mega-cap is modest and may already price in the news. Rising yields weigh on high-multiple defensives too.</p>
+</div>
+
+<div class="card">
+<h3>5. Corteva (CTVA): −9% to −10% <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Thesis:</b> This is a clean, idiosyncratic earnings miss. Q3 adjusted EPS was $0.06 vs. a $0.10 estimate, and revenue also missed. Q3 is seasonally small for Corteva, so guidance language matters more than the quarter itself. Whether the stock holds the gap depends on whether full-year guidance was cut.</p>
+<p><b>Evidence:</b> Benzinga (EPS miss). CNBC and StockTitan snippets (−9% to −10% at ~8:04 AM).</p>
+<p><b>Risks / fade factors:</b> This run could not verify guidance details. If full-year guidance held, a seasonally weak Q3 miss could be bought. Ag-commodity price moves add noise.</p>
+</div>
+
+<div class="card">
+<h3>6. Tetra Tech (TTEK): +8.4% to +10% <span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Thesis:</b> This is a non-AI, infrastructure and water-consulting beat. Adjusted EPS was $0.49 vs. $0.47, and Benzinga's headline flags it as one of the morning's larger gappers. Fiscal 2027 guidance is $0.36–0.38. That looks low next to $0.49 in a single quarter, which may reflect a basis change, so it is worth checking against the release before treating it as a strength signal.</p>
+<p><b>Evidence:</b> Benzinga ("20 stocks moving premarket": +8.5% to $40.81). CNBC snippet (~+10%, EPS vs. FactSet).</p>
+<p><b>Risks / fade factors:</b> Sources conflict on revenue ($1.15B in line per CNBC vs. $1.34B beat per Benzinga). The guidance figure is ambiguous. An ~8–10% gap on a modest EPS beat leaves room for retracement.</p>
+</div>
+
+<div class="card">
+<h3>7. Strategy (MSTR): ~−5% <span class="conf">Confidence: Low</span></h3>
+<p><b>Thesis:</b> MSCI is removing Strategy and similar fund-like companies from its global indexes. That creates mechanical passive selling at implementation and removes a structural source of demand. Bitcoin is also weak (~$72.6K, −1.5%) as markets price more Fed hikes.</p>
+<p><b>Evidence:</b> Investing.com pre-market movers. Yahoo Finance live blog (MSCI removal, with a link to MSCI's list). investingLive headline.</p>
+<p><b>Risks / fade factors:</b> The removal had been proposed for months and may be partly priced in. This run did not confirm the implementation date. The stock trades as a high-beta bitcoin proxy, so any crypto bounce can swamp the index effect.</p>
+</div>
+
+<p class="note"><b>Theme to monitor:</b> Today combines an Nvidia governance shock with the first Treasury repricing since the hot CPI. Watch whether NQ futures recover after the 8:30 claims print and the 9:30 open. Watch whether AMD and AVGO keep their relative strength. Then AMAT and CSCO after the close set the tone for AI hardware into Friday's PPI and Nvidia's Nov 17 earnings.</p>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used this edition. The only file found, alpha_wrds_signals.csv, has as_of_date <b>2026-09-17</b> (56 days old), outside the ~14-day freshness window. Refreshing the WRDS extract would bring momentum, volume and earnings-surprise factors back into this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/asian-stocks-fragile-nvidia-plummets-015524144.html (Reuters)</li>
+<li>https://www.investing.com/news/stock-market-news/premarket-movers-nvidia-sinks-lilly-gains-on-china-approval-5021050</li>
+<li>https://www.investing.com/news/stock-market-news/amd-broadcom-gain-after-reports-say-nvidia-board-preparing-to-oust-huang-5020894</li>
+<li>https://investinglive.com/stocks/bernstein-halves-nvidia-target-to-200-the-3rd-broker-in-2-days-to-step-back-over-huang/</li>
+<li>https://www.euronews.com/2026/11/12/nvidia-shares-fall-on-reports-board-may-oust-ceo-jensen-huang</li>
+<li>https://www.investing.com/news/analyst-ratings/oppenheimer-downgrades-nvidia-stock-rating-on-ceo-departure-reports-93CH-5020390 (search snippet)</li>
+<li>https://www.investing.com/news/stock-market-news/wall-street-reacts-to-nvidia-saga-bernstein-and-oppenheimer-downgrade-stock-5021136 (search snippet; fetch rate-limited)</li>
+<li>https://www.benzinga.com/markets/equities/26/11/63173709/nvidia-shares-fall-premarket-jensen-huang-affair-report (search snippet)</li>
+<li>https://www.benzinga.com/trading-ideas/movers/26/11/63173963/why-tetra-tech-shares-are-trading-higher-by-over-8-here-are-20-stocks-moving-premarket (search snippet; fetch failed)</li>
+<li>https://www.benzinga.com/trading-ideas/movers/26/11/63182030/corteva-posts-downbeat-q3-results-joins-nvidia-alvotech-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session (search snippet; fetch failed)</li>
+<li>https://www.cnbc.com/2026/11/12/stocks-moving-the-most-today-live-updates.html (search snippet; fetch failed)</li>
+<li>https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html (search snippet)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-12-2026 (search snippet; fetch failed)</li>
+<li>https://www.tokenpost.com/news/investing/55141 (search snippet)</li>
+<li>https://www.ad-hoc-news.de/boerse/news/marktberichte/nikkei-225-falls-0-70-prozent-to-60-819-36-as-nvidia-concerns-weigh-on-ai-stocks/70497603 (search snippet)</li>
+<li>https://mlq.ai/news/taiwans-taiex-drops-nearly-3-asian-stocks-close-lower-as-nvidias-ceo-turmoil-hits-chipmakers/ (search snippet; fetch failed)</li>
+<li>https://www.koreajoongangdaily.com/business/kospi-ends-twoday-rally-as-nvidia-leadership-uncertainty-rattles-tech-stocks/12970370 (search snippet)</li>
+<li>https://www.brecorder.com/news/40448578/south-korea-shares-close-down-amid-nvidia-leadership-uncertainty (search snippet)</li>
+<li>https://www.mt.co.kr/en/stock/2026/11/12/2026111215311553061 (search snippet)</li>
+<li>https://www.financecalendar.com/event/us-initial-jobless-claims-november-12-2026/ (search snippet)</li>
+<li>https://tradingeconomics.com/united-states/calendar (search snippet)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
