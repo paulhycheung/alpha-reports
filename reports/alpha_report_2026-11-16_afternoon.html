@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpha Report 2026-11-16 – Afternoon Edition</title>
+<style>
+  :root{--bg:#f7f8fa;--card:#fff;--ink:#1c2230;--muted:#5b6474;--line:#e2e6ec;--accent:#1f4fd1;--neg:#c0322b;--pos:#1a7f43;--warn:#9a6700;--note:#fff8e6;}
+  @media (prefers-color-scheme: dark){:root{--bg:#12151b;--card:#1a1f28;--ink:#e6e9ef;--muted:#9aa3b2;--line:#2b3240;--accent:#7ea2ff;--neg:#ff7b72;--pos:#56d364;--warn:#e3b341;--note:#2a2414;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:980px;margin:0 auto;padding:24px 16px 48px}
+  header h1{margin:0 0 4px;font-size:26px}
+  header .sub{color:var(--muted);font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:18px 0}
+  h2{font-size:19px;margin:0 0 12px;border-bottom:1px solid var(--line);padding-bottom:6px}
+  h3{font-size:16px;margin:0 0 6px}
+  .note{background:var(--note);border-left:4px solid var(--warn);padding:10px 14px;border-radius:6px;font-size:14px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:14px 0}
+  .kpi{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  .kpi .l{font-size:12px;color:var(--muted)} .kpi .v{font-size:17px;font-weight:600}
+  .neg{color:var(--neg)} .pos{color:var(--pos)}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+  .tw{overflow-x:auto}
+  .cand{border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0}
+  .cand .mv{color:var(--muted);font-size:14px;margin-bottom:8px}
+  .cand dl{margin:0;display:grid;grid-template-columns:120px 1fr;gap:6px 12px}
+  .cand dt{font-weight:600;color:var(--muted);font-size:13px}
+  .cand dd{margin:0}
+  @media (max-width:600px){.cand dl{grid-template-columns:1fr}}
+  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:10px;border:1px solid var(--line);margin-left:6px}
+  ul.src{font-size:13px;word-break:break-all;padding-left:18px}
+  .disc{font-size:13px;color:var(--muted)}
+  .badge-hit{color:var(--pos);font-weight:600} .badge-fade{color:var(--warn);font-weight:600} .badge-na{color:var(--muted);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Alpha Research Brief — Afternoon Edition</h1>
+  <div class="sub">Monday, November 16, 2026 · Afternoon window ≈ 12:45–3:00 PM ET · Generated automatically</div>
+</header>
+
+<div class="card note">
+  <strong>Run-timing note.</strong> This task targets ~2:00 PM ET, but this run executed at about <strong>6:55 PM ET</strong>, after the close. The afternoon picture below is rebuilt from timestamped intraday coverage: StockTitan's hourly ETF snapshots (1:01 PM and 3:01 PM ET) and Yahoo Finance's live blog (entries at 12:47, 1:35, 2:05 and 2:39 PM ET). No source gave a clean 2:00 PM index print, so the two snapshots that bracket it are shown instead. Closing figures appear only as "→ close" references. The full close write-up is in today's Close Edition.<br><br>
+  <strong>No FOMC decision today.</strong> The next meeting is Dec 8–9. The only Fed event in the window was Chair Warsh's opening remarks at the SF Fed productivity conference, around midday ET.<br><br>
+  <strong>WRDS signals not used.</strong> <code>alpha_wrds_signals.csv</code> has as_of_date 2026-09-17, which is 60 days old and outside the ~14-day window. This edition is based on public research only.
+</div>
+
+<!-- 1. HEADER SUMMARY -->
+<section class="card">
+  <h2>1. Afternoon Session Summary</h2>
+  <div class="kpis">
+    <div class="kpi"><div class="l">QQQ (Nasdaq-100) 1:01 → 3:01 PM</div><div class="v neg">−2.33% → −2.44%</div></div>
+    <div class="kpi"><div class="l">SPY (S&amp;P 500) 1:01 → 3:01 PM</div><div class="v neg">−1.59% → −1.89%</div></div>
+    <div class="kpi"><div class="l">DIA (Dow) 1:01 → 3:01 PM</div><div class="v neg">−1.02% → −1.41%</div></div>
+    <div class="kpi"><div class="l">VIX intraday high</div><div class="v neg">24.05 (+~25%)</div></div>
+    <div class="kpi"><div class="l">NVDA ~1:00–2:40 PM</div><div class="v neg">≈ −4.0% to −4.2%</div></div>
+  </div>
+  <p>Stocks did not stabilize in the afternoon; they kept falling. Between 1 PM and 3 PM, SPY's loss grew from −1.59% to −1.89% and the Dow fund's from −1.02% to −1.41%. The Dow's move was larger than the Nasdaq's. That means the selling spread beyond chips, while the Nasdaq-100 changed less (−2.33% to −2.44%). Three afternoon headlines drove it.</p>
+  <p>(1) At about 12:47 PM ET, CNBC reported that <strong>Nvidia's board is not considering bringing back Jensen Huang</strong> and is focused on a national-security investigation. NVDA fell to session lows and stayed near −4% through 2:39 PM, pulling GOOGL (−3%+), AMZN (−3%), META and TSLA down with it.</p>
+  <p>(2) At about 1:35 PM, <strong>bank-app outage reports</strong> (Chase, US Bank, Truist, Zelle) pushed BAC, C, WFC and JPM down about 2%. JPMorgan confirmed that some transactions were delayed. By 3 PM, Goldman and Morgan Stanley were also lower.</p>
+  <p>(3) Around 2:05 PM, BofA CEO Moynihan said Anthropic's IPO is pushing some smaller listings into 2027. That supports the view that this week's ~$60B Anthropic deal is pulling money from the rest of the market.</p>
+  <p><strong>Fed:</strong> Warsh's prepared remarks said nothing about near-term rates. One line stood out on a day like this, though: one of the staff's illustrative scenarios has AI investment disappointing, after which "expected returns could turn down and equity valuations could fall." He also said productivity "hasn't yet broken out definitively and structurally to the upside." Markets still price a December hike as near-certain. The 10-yr ended around 5.12–5.13%.</p>
+  <p><strong>Tone:</strong> Risk-off, with sellers in control into the last two hours. Consumer staples was the only S&amp;P sector higher at 3 PM.</p>
+  <p><em>→ Close:</em> S&amp;P 500 −1.92% (7,416.59), Nasdaq −2.49% (24,509.76), Dow −1.41% (51,608.17), QQQ −2.67%. The Nasdaq-100 lost a little more ground after 3 PM. NVDA was +0.67% after hours at 4:20 PM.</p>
+</section>
+
+<!-- 2. FOLLOW-UP -->
+<section class="card">
+  <h2>2. Follow-Up on Earlier Calls</h2>
+  <p>Today's Pre-Market and Midday editions were found and reviewed. No Open edition exists for today. All earlier editions were also late catch-up runs.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Name</th><th>Earlier call (edition)</th><th>Afternoon status</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr><td>NVDA</td><td>Leadership headlines would drive trading, not fundamentals (Pre-Mkt, Midday)</td><td>−2.2% at 11 AM → −4.21% at 1 PM → ≈ −4% at 2:39 PM (session lows on the CNBC board report)</td><td class="badge-hit">Played out / extended</td></tr>
+      <tr><td>MU</td><td>Highest-beta name if risk-off continued (Pre-Mkt, Midday)</td><td>−6.39% at 10 AM → −6.70% at 1 PM (→ −7.62% close)</td><td class="badge-hit">Played out / extended</td></tr>
+      <tr><td>INTC</td><td>Class action adding to sector pressure (Pre-Mkt, Midday)</td><td>−6.02% at 10 AM → −6.76% at 1 PM (→ −7.02% close)</td><td class="badge-hit">Played out / extended</td></tr>
+      <tr><td>AMD / AVGO</td><td>The "beneficiary" trade unwinding (Pre-Mkt)</td><td>No verified afternoon print (→ ≈ −5.6% / −3.8% close)</td><td class="badge-hit">Played out (by close)</td></tr>
+      <tr><td>TSM</td><td>ADR catching up to Taiex −6% (Pre-Mkt)</td><td>No verified intraday figure found</td><td class="badge-na">Unverified</td></tr>
+      <tr><td>TU</td><td>Merger-arb gap on Québecor proposal (Pre-Mkt)</td><td>+26% pre-mkt → +11.55% at ~3 PM (→ +12.37% close)</td><td class="badge-fade">Faded, held about half</td></tr>
+      <tr><td>CGON</td><td>Clean Phase 3; risk the big gap would fade (Pre-Mkt)</td><td>+32% pre-mkt → +16.92% at 1 PM (→ +13.95% close)</td><td class="badge-fade">Faded, held double digits</td></tr>
+    </tbody>
+  </table></div>
+  <p>The overall pattern held: AI-hardware selling got worse into the afternoon, and the event-driven gappers gave back roughly half their pre-market gains.</p>
+</section>
+
+<!-- 3. MOVERS -->
+<section class="card">
+  <h2>3. Afternoon Movers</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Ticker</th><th>Afternoon move (time ET)</th><th>→ Close</th><th>Volume / context note</th></tr></thead>
+    <tbody>
+      <tr><td>NVDA</td><td class="neg">−4.21% (1:01) · ≈ −4% (2:39) · −4.17% (3:01)</td><td class="neg">−4.12%</td><td>Heavy, headline-driven trading. Hit session lows after the CNBC board report. Earnings Tue ~4:20 PM.</td></tr>
+      <tr><td>MU</td><td class="neg">−6.70% (1:01)</td><td class="neg">−7.62%</td><td>Led watchlist losses. Export/remote-access rule plus the DRAM antitrust case.</td></tr>
+      <tr><td>INTC</td><td class="neg">−6.76% (1:01)</td><td class="neg">−7.02%</td><td>Class action (filed Nov 13) plus sector beta.</td></tr>
+      <tr><td>GOOGL</td><td class="neg">&gt; −3% (2:39)</td><td class="neg">≈ −4.1%</td><td>Holds &gt;5% of Anthropic. Second-worst Mag 7 name in the afternoon.</td></tr>
+      <tr><td>AMZN</td><td class="neg">≈ −3% (2:39)</td><td class="neg">≈ −3.4%</td><td>Holds &gt;5% of Anthropic. Vanda: call buying had rebounded last week.</td></tr>
+      <tr><td>META / TSLA</td><td class="neg">lower (2:39)</td><td class="neg">≈ −2.4% / −2.7%</td><td>Fell with the Mag 7. Musk is joining Trump's China trip.</td></tr>
+      <tr><td>MSFT / AAPL</td><td>small losses</td><td>≈ −1%</td><td>Relative strength among mega-caps.</td></tr>
+      <tr><td>JPM, BAC, C, WFC</td><td class="neg">≈ −2% (1:35)</td><td class="neg">JPM ≈ −2.3%</td><td>Bank-app outage reports. JPM confirmed transaction delays.</td></tr>
+      <tr><td>GS, MS</td><td class="neg">lower (3:01)</td><td class="neg">&gt; −2%</td><td>Selling spread from tech into financials after 3 PM.</td></tr>
+      <tr><td>SMMT</td><td class="neg">−17.31% (~3:00)</td><td class="neg">−16.47%</td><td>FDA complete response letter for ivonescimab + chemo.</td></tr>
+      <tr><td>CGON</td><td class="pos">+16.92% (1:01)</td><td class="pos">+13.95%</td><td>PIVOT-006 Phase 3 met its primary endpoint. Faded from +32% pre-market.</td></tr>
+      <tr><td>LXEO</td><td class="pos">+11.11% (1:01) → +14.11% (~3:00)</td><td class="pos">+12.54%</td><td>Interim LX2020 data. One of the few names that firmed in the afternoon.</td></tr>
+      <tr><td>TU</td><td class="pos">+11.55% (~3:00)</td><td class="pos">+12.37%</td><td>Unsolicited, non-binding Québecor proposal.</td></tr>
+      <tr><td>TRXB</td><td class="neg">−13.39% (2:45)</td><td class="neg">−21.21%</td><td>First quarterly print since October IPO. Selling sped up late.</td></tr>
+      <tr><td>NANO</td><td class="neg">−19.32% (1:00) → −15.69% (2:56)</td><td class="neg">−16.59%</td><td>Forge Nano Q3. Losses narrowed in the afternoon.</td></tr>
+      <tr><td>TSM, ASML, ORCL, CRM, QCOM, AMD, AVGO</td><td>n/a</td><td>see Close Edition</td><td>No verified afternoon prints in accessible sources. Likely lower with tech; confirm before relying on this.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="disc">Exact share volumes were not available in sources consulted, so volume notes are qualitative.</p>
+</section>
+
+<!-- 4. CANDIDATES -->
+<section class="card">
+  <h2>4. Afternoon Alpha Candidates</h2>
+  <p class="disc">These are names worth investigating further, not recommendations to buy or sell. Confidence describes how solid the setup and evidence are, not a predicted direction.</p>
+
+  <div class="cand">
+    <h3>NVDA — NVIDIA <span class="tag">Confidence: Medium (volatility) · Low (direction)</span></h3>
+    <div class="mv">−2.2% (11 AM) → −4.21% (1 PM) → ≈ −4% (2:39 PM) → −4.12% close; +0.67% after hours</div>
+    <dl>
+      <dt>Thesis</dt><dd>The afternoon removed one source of uncertainty: the board does not appear to be considering Huang's return. The stock went to session lows on that report and stayed there instead of bouncing. Into Tuesday's print, the stock now carries a "no founder" discount, the new remote-access rule and a December hike. The small after-hours uptick may mean afternoon sellers were done. Results and guidance from interim CEO Kress may now matter more than further governance headlines.</dd>
+      <dt>Evidence</dt><dd>Yahoo Finance live blog (CNBC board report at 12:47 PM ET; Mag 7 heatmap at 2:39 PM ET; Trump backing reinstatement at ~10:10 AM ET). StockTitan hourly tape. The stock is ≈10% below its last close before Huang resigned.</dd>
+      <dt>Risks</dt><dd>Further findings from the investigation, or a renewed reinstatement campaign (Musk/Kalanick "Bring Jensen Back" petition), could move the stock either way regardless of earnings. Guidance may exclude Southeast Asia/Brazil remote-access demand. Retail money may rotate into Anthropic on Thursday.</dd>
+    </dl>
+  </div>
+
+  <div class="cand">
+    <h3>MU — Micron (memory/AI-hardware proxy) <span class="tag">Confidence: Medium</span></h3>
+    <div class="mv">−6.39% (10 AM) → −6.70% (1 PM) → −7.62% close; roughly 1.8× NVDA's move</div>
+    <dl>
+      <dt>Thesis</dt><dd>MU kept falling steadily through the afternoon with no midday relief. That fits a market repricing AI capex sensitivity (memory, optics, servers) rather than reacting only to Nvidia's governance news. Warsh's "AI disappoints → valuations fall" scenario, though explicitly not a forecast, gave sellers a talking point. The question to research is whether Tuesday's Nvidia guide confirms or contradicts the slower-2027-capex view.</dd>
+      <dt>Evidence</dt><dd>StockTitan intraday prints. Warsh prepared remarks (federalreserve.gov). Close Edition notes SNDK, LITE, CIEN, MRVL and others −7–8.5%.</dd>
+      <dt>Risks</dt><dd>Very high beta. A clean NVDA print with strong HBM commentary could trigger a sharp reflex rally. The DRAM antitrust ruling is procedural, not a finding of liability.</dd>
+    </dl>
+  </div>
+
+  <div class="cand">
+    <h3>GOOGL &amp; AMZN — Anthropic's largest public holders <span class="tag">Confidence: Low–Medium</span></h3>
+    <div class="mv">GOOGL &gt; −3% and AMZN ≈ −3% at 2:39 PM → ≈ −4.1% / −3.4% close</div>
+    <dl>
+      <dt>Thesis</dt><dd>Each holds more than 5% of a company set to list Thursday at a valuation of about $1.4T. That stake could lead to a large mark-to-market gain. Yet both fell more than MSFT and AAPL in the afternoon. One reading: investors are selling these indirect Anthropic proxies to fund direct allocations, which is the Vanda thesis. If that is right, the pressure may ease once the IPO prices on Wednesday and trades on Thursday. The gap between each stake's implied value and the stock's price this week is worth tracking.</dd>
+      <dt>Evidence</dt><dd>Yahoo live blog: Vanda note (call buying in AMZN/GOOGL rebounded; MSFT bullish positioning lowest since Dec 2022); Anthropic IPO paperwork cited for &gt;5% holdings; BofA CEO comment at ~2:05 PM ET on the IPO crowding out other deals.</dd>
+      <dt>Risks</dt><dd>The moves may simply reflect Mag 7 beta to NVDA, not IPO flows. A weak Anthropic debut would hurt the "hidden value" argument. Both also carry exposure to the remote-access rule as cloud providers.</dd>
+    </dl>
+  </div>
+
+  <div class="cand">
+    <h3>JPM (and large-bank group) — outage-driven afternoon drop <span class="tag">Confidence: Low</span></h3>
+    <div class="mv">BAC / C / WFC / JPM ≈ −2% at 1:35 PM; GS, MS also lower by 3:01 PM; JPM ≈ −2.3% close</div>
+    <dl>
+      <dt>Thesis</dt><dd>The banks fell on an operational headline, not a change in credit or rates, and it came at the same time as a broad de-risking. If the outages turn out to be brief and isolated, the move may prove temporary. If the cause is a shared vendor or a cyber incident, more headlines could follow. Worth watching tonight for root-cause disclosures.</dd>
+      <dt>Evidence</dt><dd>Yahoo live blog (Downdetector spike across Chase, US Bank, Truist, Zelle; JPM spokesperson statement). StockTitan 3:01 PM update.</dd>
+      <dt>Risks</dt><dd>A cyber attribution or regulatory inquiry would extend the drop. Higher rates (10-yr above 5%, December hike priced) are a separate headwind for bank valuations.</dd>
+    </dl>
+  </div>
+
+  <div class="cand">
+    <h3>INTC — Intel <span class="tag">Confidence: Low–Medium</span></h3>
+    <div class="mv">−6.02% (10 AM) → −6.76% (1 PM) → −7.02% close</div>
+    <dl>
+      <dt>Thesis</dt><dd>A securities class action (filed Nov 13) adds to sector weakness. The selling did not let up in the afternoon. Intel is now well below its level before last month's 28.6% post-Q3 crash. The question is whether litigation headlines are adding a lasting discount or whether this is mostly beta that reverses if semis recover.</dd>
+      <dt>Evidence</dt><dd>Yahoo Finance (class action details; Q3 reaction context); StockTitan prints.</dd>
+      <dt>Risks</dt><dd>Plaintiff-firm press releases tend to repeat for weeks. The remote-access rule's foundry implications are unclear.</dd>
+    </dl>
+  </div>
+
+  <div class="cand">
+    <h3>TU &amp; CGON — event-driven names that held up <span class="tag">Confidence: Medium</span></h3>
+    <div class="mv">TU +26% pre → +11.55% (~3 PM) → +12.37% close · CGON +32% pre → +16.92% (1 PM) → +13.95% close</div>
+    <dl>
+      <dt>Thesis</dt><dd>Both gave back about half their pre-market gains but kept double-digit gains on a −1.9% S&amp;P day, so their moves were largely independent of the market. For TU, the settled price implies how much deal probability the market assigns to a non-binding Québecor bid. For CGON, the question is whether the post-fade level reflects a fair risk-adjusted value for a registrational win (68% recurrence-risk reduction) with a filing targeted for 2027.</dd>
+      <dt>Evidence</dt><dd>Company releases via StockTitan. StockTitan movers table and hourly updates.</dd>
+      <dt>Risks</dt><dd>TU: financing and Canadian regulatory review; the bid is non-binding. CGON: debate over the surveillance control arm; profit-taking after a large gap; the filing is months away.</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- 5. WRDS: omitted -->
+<section class="card">
+  <h2>5. WRDS Quant Signals</h2>
+  <p>Not used. The most recent file (<code>alpha_wrds_signals.csv</code>, as_of_date 2026-09-17) is about 60 days old, which is outside the ~14-day freshness window. Refreshing it with <code>wrds_alpha_screen.py</code> would restore this section.</p>
+</section>
+
+<!-- 6. SOURCES -->
+<section class="card">
+  <h2>6. Sources</h2>
+  <ul class="src">
+    <li>Yahoo Finance live blog, Nov 16 2026 — https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html</li>
+    <li>StockTitan, Stock Market Today Live, Nov 16 2026 (hourly updates and movers table) — https://www.stocktitan.net/articles/stock-market-today-live-november-16-2026</li>
+    <li>Federal Reserve Board, Opening remarks by Chairman Warsh, Productivity and Jobs Task Force Conference (Nov 16 2026) — https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm</li>
+    <li>Yahoo Finance, Warsh task force hearing coverage — https://finance.yahoo.com/economy/policy/article/warsh-kicks-off-first-task-force-hearing-on-how-ai-could-fuel-growth-or-disrupt-jobs-171720426.html (search result; not fetched)</li>
+    <li>Axios, "Warsh sees risk of stock bust if AI boom disappoints" — https://www.axios.com/2026/11/16/fed-warsh-ai-boom-stocks (fetch failed; used only via search summary)</li>
+    <li>Eurasia Business News, Nasdaq slides 2.5% (close figures) — https://eurasiabusinessnews.com/2026/11/17/stock-market-today-nasdaq-slides-2-5-as-nvidia-turmoil-and-chip-restrictions-hit-tech/ (search result)</li>
+    <li>JournalArta Global, Wall Street midday — https://journalarta.com/en/2026/11/17/wall-street-midday-nasdaq-leads-as-chip-shares-stay-under-pressure/ (search result; date ambiguous, not relied on)</li>
+    <li>Earlier editions in this archive: alpha_report_2026-11-16_premarket.html, _midday.html, _close.html</li>
+  </ul>
+  <p class="disc">Attempted but unavailable: Axios (client error); a StartupHub daily recap for Nov 16 (not found). No verified afternoon prints were found for TSM, ASML, ORCL, CRM, QCOM, AMD or AVGO.</p>
+</section>
+
+<!-- 7. DISCLAIMER -->
+<section class="card">
+  <h2>7. Disclaimer</h2>
+  <p class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</p>
+</section>
+
+</div>
+</body>
+</html>

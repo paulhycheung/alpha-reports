@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-16 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Monday, November 16, 2026 &middot; Chip supply chain sells off the day before Nvidia reports &middot; Huang-return reports &middot; Anthropic IPO week</div>
+<p class="note"><b>Late run.</b> This automated task targets ~7:30 AM ET, but this session actually ran at about <b>6:50 PM ET</b>, after the regular session had closed. The pre-market picture below is rebuilt from sources timestamped between ~6:00 and ~9:05 AM ET (CNBC via StockTitan's live blog, The Options Oracle at ~7:45 AM, TradingKey, Tokenpost/KuCoin). Where they disagree, the table shows a range. A clearly labeled <b>post-script</b> at the end of section 4 records how the session actually closed, so readers can see whether the pre-market setups held. <b>WRDS signals were not used:</b> alpha_wrds_signals.csv has as_of_date 2026-09-17, which is 60 days old and outside the ~14-day window. This edition is based on public research only.</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>Setup:</b> Friday split the market. The Dow added <span class="up">+0.10%</span> to 52,347.55, while the S&amp;P 500 slipped <span class="dn">−0.40%</span> to 7,561.67, the Nasdaq Composite fell <span class="dn">−0.91%</span> to 25,136.27 and the Nasdaq-100 fell <span class="dn">−1.22%</span> to 27,943.74 (intraday low 27,609.71). AMD dropped ~8–9% Friday and Nvidia ~2% to $162.85, below a $4T market value. Last week was still a winner (NDX +3.5%, S&amp;P +2.5%). Over the weekend, the <b>Financial Times reported that Jensen Huang is talking with allies about returning as Nvidia CEO</b>, four days after he resigned (CFO Colette Kress is interim CEO). Separately, CNBC reported that Treasury Secretary Bessent urged Nvidia's board to look <i>outside</i> the company for its next CEO. Nvidia reports fiscal Q3 on <b>Tuesday ~4:20 PM ET</b>.</p>
+<p><b>Asia sold the AI supply chain hard.</b> Taiwan's Taiex fell <span class="dn">~−6%</span>, the steepest drop in the region. Korea's Kospi fell <span class="dn">~−3.6%</span> to ~5,100 (third straight loss; SK Hynix −6% to −7%+), and Japan's Nikkei fell <span class="dn">~−2.4%</span> to ~59,662, back below 60,000 (Advantest, Taiyo Yuden and Kioxia among the laggards). Japan also reported a Q3 GDP contraction. Hang Seng rose ~0.5%; Shanghai fell ~0.9%. <b>Europe was mixed to slightly firmer</b> in early trade: FTSE 100 ~+0.4%, DAX roughly flat.</p>
+<p><b>US futures (~7:45 AM ET):</b> Dow just below flat, S&amp;P 500 <span class="dn">−0.6% to −0.7%</span>, Nasdaq-100 <span class="dn">−1.25% to −1.5%</span>, Russell 2000 ~−0.5%. (A CNBC snippet showing futures slightly higher appears to be a Sunday-evening reading and was not used.) The 10-year was ~5.13% (−2 bp after touching 5.174% Friday), the 2-year ~4.84% after its biggest weekly jump in 2+ years. CME FedWatch priced ~91% odds of a 25 bp <b>hike</b> in December after hot October CPI and core PPI (+0.5% m/m vs. +0.3% expected). Brent ~$93–95, WTI ~$87–88 (sliding as the IEA sees a Q4 surplus). Gold ~$3,856–3,870, its lowest in about a year. Bitcoin ~$64K after a $62.1K Sunday low; MSTR, COIN and IBIT were each down 6%+ pre-market.</p>
+<p><b>Tone:</b> Risk-off, concentrated in AI hardware. Last week's "rotation" idea (sell NVDA, buy AMD/AVGO/MU as beneficiaries) unwound: other chipmakers fell <i>more</i> than Nvidia pre-market. Three things are piling on: leadership uncertainty at the sector's anchor company, a 5%+ 10-year with a December hike priced in, and supply overhang from Thursday's ~$60B Anthropic IPO, which may pull money out of existing AI holdings. Defensive and idiosyncratic names (TTWO, JNJ, deal targets, biotech readouts) were where the green was.</p>
+
+<h2>2. Today's Economic Calendar / Key Events (ET)</h2>
+<div class="tbl"><table>
+<tr><th>When</th><th>Event</th><th>Consensus / Prior</th><th>Why it matters</th></tr>
+<tr><td class="n">8:30 AM</td><td><b>Empire State manufacturing (Nov)</b></td><td>Consensus ~16.7–19; prior 25.5</td><td>First November activity read. A weak print would ease some hike pressure on yields.</td></tr>
+<tr><td class="n">9:05 AM</td><td>NY Fed President John Williams, opening remarks</td><td>—</td><td>Said last week more hikes will likely be needed.</td></tr>
+<tr><td class="n">10:00 AM</td><td>Fed Governor Barr speaks</td><td>—</td><td>Hawkish/dovish tone check ahead of Dec 8–9 FOMC.</td></tr>
+<tr><td class="n">12:00 PM</td><td><b>Fed Chair Kevin Warsh</b> opens SF Fed productivity &amp; jobs conference</td><td>—</td><td>Any AI-productivity framing could matter for long-duration tech.</td></tr>
+<tr><td class="n">During day</td><td>Commerce/BIS rule on remote access to advanced chips</td><td>—</td><td>Targets Chinese firms renting Nvidia compute in overseas data centers. Negative read for NVDA/AMD cloud demand at the margin.</td></tr>
+<tr><td class="n">Pre-mkt</td><td>Earnings: Tyson (TSN), Aramark (ARMK), Baidu (BIDU), XPeng (XPEV), Ballard (BLDP)</td><td>—</td><td>TSN beat on EPS ($0.61) but guided FY27 revenue −3.5% to −5.5%. BIDU: AI cloud +94%, search ads −22%, revenue −1%.</td></tr>
+<tr><td class="n">After close</td><td>AECOM (ACM), XP, Powell Industries (POWL)</td><td>—</td><td>POWL is an AI-power/electrical-gear read-through.</td></tr>
+<tr class="sec"><td colspan="4">Rest of the week</td></tr>
+<tr><td class="n">Tue Nov 17</td><td><b>Oct retail sales</b> (8:30 AM); <b>Nvidia FQ3 earnings</b> (~4:20 PM)</td><td>—</td><td>Focus: data-center revenue, Blackwell shipments, gross margin, Q4 guide, and leadership continuity under interim CEO Kress.</td></tr>
+<tr><td class="n">Wed Nov 18</td><td>FOMC minutes; Anthropic IPO pricing</td><td>Range $70–78/sh; 825M shares</td><td>Valuation up to ~$1.41T, reportedly ~6x oversubscribed.</td></tr>
+<tr><td class="n">Thu Nov 19</td><td>Walmart earnings; <b>Anthropic (ANT) Nasdaq debut</b>; GTA VI release</td><td>—</td><td>Biggest AI listing ever. Cornerstone/private-placement buyers include GOOGL, NVDA and AMD.</td></tr>
+<tr><td class="n">This week (reported)</td><td>White House "AI national champions" list (WSJ)</td><td>Not yet official</td><td>Reportedly includes NVDA, AMZN, MSFT, OpenAI and Anthropic. Faster export licenses and federal financing.</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">Moves are vs. Friday's (Nov. 13) close, from snapshots taken ~6:40–9:05 AM ET. Ranges are shown where sources differ. "n/a" means no verified pre-market print was found.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt</th><th>Catalyst note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="dn">−2.6% to −4.0%</td><td>FT: Huang discussing a return; Bessent urged an outside CEO search; UBS and Mizuho trimmed price targets. FQ3 earnings Tue. Closed Fri $162.85. Down ~32% from its early-October high.</td></tr>
+<tr><td>AMD</td><td class="dn">−5.2% to −5.4%</td><td>Sympathy selling with Asian chips; extends Friday's ~8–9% drop. The "Nvidia-vacuum beneficiary" trade is unwinding.</td></tr>
+<tr><td>AVGO</td><td class="dn">−4.0% to −4.1%</td><td>Rothschild reportedly downgraded to Neutral; second straight down day.</td></tr>
+<tr><td>MU</td><td class="dn">−5.6% to −5.8%</td><td>SK Hynix −6%+ in Seoul; a US court on Nov 14 denied a motion to dismiss a DRAM antitrust suit against Micron, Samsung and SK Hynix.</td></tr>
+<tr><td>INTC</td><td class="dn">~−5%</td><td>Shareholder class action (filed Nov 13, San Jose) alleges Intel played down a PC slowdown and inventory build while selling ~$23B of stock at $95 in August.</td></tr>
+<tr><td>TSM</td><td class="dn">~−5.3%</td><td>Taiex −6%; TSMC's Taiwan shares fell ~5.7%.</td></tr>
+<tr><td>AMZN</td><td>n/a</td><td>Selling 75.1% of two AWS data-center JVs (13 sites, 647 MW) to Blackstone's BXDC at ~$5B valuation, with a 12-year leaseback. Capital-recycling signal.</td></tr>
+<tr><td>GOOGL</td><td>n/a</td><td>Anthropic private-placement participant; IPO-week read-through.</td></tr>
+<tr><td>AAPL, MSFT, META, ORCL, CRM, ASML, QCOM, TSLA</td><td>n/a</td><td>No stock-specific overnight catalyst found; trading with Nasdaq futures. ASML exposed to the Asian chip selloff.</td></tr>
+<tr class="sec"><td colspan="3">AI infrastructure (non-watchlist)</td></tr>
+<tr><td>CRWV</td><td class="dn">−5.5% to −7.7%</td><td>AI data-center financing worries; heavy GPU capex and debt.</td></tr>
+<tr><td>NBIS</td><td class="dn">~−5.5%</td><td>Neocloud peer of CoreWeave.</td></tr>
+<tr><td>DELL / HPQ / SMCI</td><td class="dn">~−5% / −5% / −3.8%</td><td>AI server supply chain.</td></tr>
+<tr><td>BXDC</td><td class="up">+8%+</td><td>~$5B AWS data-center JV stake acquisition (first deal since listing).</td></tr>
+<tr class="sec"><td colspan="3">Other notable gappers</td></tr>
+<tr><td>TU (Telus)</td><td class="up">~+26%</td><td>Confirmed unsolicited, non-binding takeover proposal from Québecor; board committee reviewing.</td></tr>
+<tr><td>CGON</td><td class="up">+32% (9:04 AM)</td><td>Phase 3 PIVOT-006 in NMIBC: 68% lower recurrence risk vs. surveillance; no grade ≥3 treatment-related AEs; BLA completion targeted Q2 2027.</td></tr>
+<tr><td>MOD (Modine)</td><td class="up">~+28%</td><td>Reports that Samsung may acquire it; no price set. Investor Day Wednesday.</td></tr>
+<tr><td>LXEO</td><td class="up">~+23%</td><td>Positive interim Ph I/II data for LX2020 gene therapy; FDA open to accelerated-approval endpoint.</td></tr>
+<tr><td>NU</td><td class="up">~+11.8%</td><td>Record $1.1B quarterly profit despite a small EPS miss.</td></tr>
+<tr><td>TTWO</td><td class="up">+3% to +4%</td><td>GTA VI launches Thursday; Jefferies reiterated Buy, $300 PT.</td></tr>
+<tr><td>JNJ</td><td class="up">~+1%</td><td>FT: may announce deal for Ollin Biosciences (up to $3.4B) as soon as today.</td></tr>
+<tr><td>TSN</td><td class="dn">−1% to −2%</td><td>EPS beat ($0.61, rev $14.59B), but FY27 revenue guided down 3.5–5.5% on cattle shortages.</td></tr>
+<tr><td>YETI</td><td class="dn">~−1.3%</td><td>Goldman downgrade to Neutral; PT $41 from $57.</td></tr>
+<tr><td>HELP (Helus)</td><td class="am">+15% → −30%</td><td>Ph3 APPROACH (HLP003, MDD) met primary endpoint, but the stock reversed hard after the 8 AM webcast; 3 drug-related serious AEs.</td></tr>
+<tr><td>SMMT</td><td class="dn">~−14%</td><td>FDA complete response letter for ivonescimab + chemo in NSCLC; OS not statistically significant.</td></tr>
+<tr><td>BLDP</td><td class="dn">~−12.9%</td><td>Q3 revenue −31% y/y to $22.5M.</td></tr>
+<tr><td>MSTR / COIN</td><td class="dn">−6%+</td><td>Bitcoin at a four-month low; ~$2B weekend liquidations; 7 straight days of spot-ETF outflows.</td></tr>
+<tr><td>GMM</td><td class="am">+340% to +370%</td><td>Micro-cap, no clear fundamental catalyst found; low-float spike. Excluded from candidates.</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">These are names worth watching at the open, not recommendations. Confidence describes how solid the setup and evidence look, not the expected direction.</p>
+
+<div class="card"><h3>1. NVDA — Nvidia &nbsp;<span class="dn">−2.6% to −4.0% pre-market</span> &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> The stock is caught between two leadership headlines pulling opposite ways (FT: Huang wants back in; Bessent: look outside) one day before earnings. With the board's direction unknown, the open is likely to trade on headlines rather than fundamentals, and the stock is now down ~32% from its October high, so an earnings-day setup is forming with uncertainty already partly priced.</p>
+<p><b>Evidence:</b> FT report via TradingKey/Options Oracle; UBS and Mizuho price-target trims; Nvidia's Nov 12 release naming Kress interim CEO; earnings confirmed Tue ~4:20 PM. Commerce issued a remote-access chip rule aimed at Chinese firms renting Nvidia compute abroad. A reported White House "AI national champions" list naming Nvidia is a potential offset.</p>
+<p><b>Risks / what could reverse:</b> A board statement either way could swing the stock several percent intraday. Pre-earnings de-risking tends to persist into the print. A Nasdaq-100 open below Friday's 27,610 low may trigger technical selling.</p></div>
+
+<div class="card"><h3>2. MU — Micron &nbsp;<span class="dn">−5.6% to −5.8%</span> &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> Memory is acting as the high-beta tail of the AI trade: SK Hynix and Kioxia fell 6–7%+ in Asia, and Micron adds a legal overhang. If the sector stays risk-off, MU has the most downside sensitivity on the watchlist; if Asia's drop proves an overreaction, it also has the most rebound potential.</p>
+<p><b>Evidence:</b> TradingKey/Tokenpost pre-market quotes; Kospi −3.6% led by SK Hynix; N.D. Cal. denial of motion to dismiss in the DRAM supply-curtailment antitrust case (Nov 14). The ruling is not a finding of liability.</p>
+<p><b>Risks:</b> Gaps of this size in a liquid large-cap can fill once Asia-driven selling is absorbed. Any positive HBM commentary around Nvidia's print could reverse sentiment quickly.</p></div>
+
+<div class="card"><h3>3. TSM — Taiwan Semiconductor (ADR) &nbsp;<span class="dn">~−5.3%</span> &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> The ADR inherits a ~6% Taiex rout that already happened in local trading. The question at the US open is whether US buyers treat it as a catch-up move (already in the price) or the start of foreign outflows from Taiwan.</p>
+<p><b>Evidence:</b> Taiex ~−6% (TradingKey, Asia Financial); TSMC local shares ~−5.7%; ADR ~−5.3% pre-market (Tokenpost).</p>
+<p><b>Risks:</b> No company-specific news found, so the move is flow-driven and can reverse with the Nasdaq. Nvidia's results Tuesday are the next real catalyst.</p></div>
+
+<div class="card"><h3>4. AMD &amp; AVGO — the unwinding "beneficiary" trade &nbsp;<span class="dn">AMD −5.2% to −5.4%; AVGO ~−4.1%</span> &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> Both rallied last week on the view that customers would diversify away from a leaderless Nvidia. That trade is now reversing for a second straight day (AMD ~−8–9% Friday), which suggests the market is pricing sector-wide AI-capex risk rather than share shift.</p>
+<p><b>Evidence:</b> TradingKey/Tokenpost quotes; Rothschild downgrade of AVGO to Neutral (reported by Invezz; article could not be fetched); AP notes both had climbed earlier on competitive-advantage hopes. AMD is an Anthropic private-placement participant, which adds IPO-week exposure.</p>
+<p><b>Risks:</b> Both are down sharply over two sessions, so the setup could flip if NVDA stabilizes. AMD carries more momentum-driven positioning than AVGO.</p></div>
+
+<div class="card"><h3>5. INTC — Intel &nbsp;<span class="dn">~−5%</span> &nbsp;<span class="conf">Confidence: Low–Medium</span></h3>
+<p><b>Thesis:</b> A securities class action tied to the August $23B equity raise at $95 adds idiosyncratic pressure on top of the sector selloff. The complaint names CEO Lip-Bu Tan and CFO Zinsner. Securities suits rarely change fundamentals, but they keep the August guidance credibility issue in the headlines.</p>
+<p><b>Evidence:</b> TradingKey summary of the complaint (filed Nov 13, led by City of Southfield Fire &amp; Police Retirement System); Options Oracle notes the stock later fell ~29% in one session per the complaint. Intel had not responded as of the reports.</p>
+<p><b>Risks:</b> Plaintiff-firm press releases tend to repeat for weeks with diminishing price impact. If chips rebound, the litigation discount may matter less than beta.</p></div>
+
+<div class="card"><h3>6. TU — Telus &nbsp;<span class="up">~+26%</span> &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> A confirmed but unsolicited and non-binding Québecor proposal turns this into an event/merger-arb situation. The open will show how much deal probability the market assigns, measured by the gap between the share price and implied offer value.</p>
+<p><b>Evidence:</b> Telus press release confirming receipt and a board committee review that also covers alternatives (via StockTitan).</p>
+<p><b>Risks:</b> Non-binding, with financing and Canadian regulatory (Competition Bureau/CRTC) hurdles. Gap-ups on non-binding bids often give back part of the move as the market discounts the odds of completion.</p></div>
+
+<div class="card"><h3>7. CGON — CG Oncology &nbsp;<span class="up">~+32% (9:04 AM)</span> &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> A clean registrational Phase 3 (68% recurrence-risk reduction, no grade ≥3 treatment-related AEs) materially de-risks cretostimogene in NMIBC, with a filing targeted for Q2 2027. It stands out from this morning's biotech readouts because the data look unambiguous.</p>
+<p><b>Evidence:</b> Company release at 8:00 AM ET (via StockTitan). Contrast with HELP, whose "positive" Phase 3 still sold off.</p>
+<p><b>Risks:</b> Large biotech gaps often fade as holders take profits; the control arm (surveillance) may draw debate; the filing is months away.</p></div>
+
+<h3>Post-script — how the session actually closed (added because this run finished after 4 PM)</h3>
+<div class="card"><p>The selling deepened after the open rather than fading. <b>S&amp;P 500 <span class="dn">−1.9%</span> to 7,416.59</b> (third straight loss), <b>Nasdaq <span class="dn">−2.5%</span> to 24,509.76</b>, <b>Dow <span class="dn">−739 pts (−1.4%)</span> to 51,608.17</b>; QQQ −2.67%. Selling spread into banks (GS, MS, JPM each −2%+). VIX rose as much as 25% to 24.05. Empire State came in at <b>7.8</b> vs. ~16.7 expected. CNBC reported that Nvidia's board is <i>not</i> discussing bringing Huang back as CEO.</p>
+<p>Watchlist closes: NVDA <span class="dn">−4.1%</span>, MU <span class="dn">−7.6%</span>, INTC <span class="dn">−7.0%</span>, AMD <span class="dn">−5.6%</span>, AVGO <span class="dn">−3.9%</span>; CRWV −6.1%. Others: CGON <span class="up">+13.95%</span> (gave back more than half its pre-market gap), TU <span class="up">+12.4%</span> (about half), LXEO +12.5%, <b>TSN <span class="up">+8.7%</span></b> (reversed from a pre-market loss), SMMT −16.5%, HELP −13.5%. Brent −3.5% to $92.44; 10-year 5.13%. <b>Takeaway:</b> chip gaps extended while biotech and deal gaps faded, consistent with the risk notes above.</p></div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. The only signals file (alpha_wrds_signals.csv) has as_of_date 2026-09-17, which is 60 days old and outside the ~14-day freshness window. Refresh the WRDS extract to re-enable this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://optionsoracle.substack.com/p/jensen-wants-back-in-nasdaq-futures (premarket briefing, futures ~7:45 AM ET)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-16-2026 (live blog citing CNBC, company releases, NY Fed, BIS)</li>
+<li>https://www.tradingkey.com/analysis/stocks/us-stocks/262307008-us-nvda-nasdaq-futures-nvidia-jensen-huang-anthropic-ipo-tradingkey</li>
+<li>https://www.bnnbloomberg.ca/markets/nasdaq/2026/11/16/stocks-decline-on-tech-sell-off-as-concerns-over-the-nvidia-fallout-persist/ (AP, closing figures)</li>
+<li>https://www.tokenpost.com/news/investing/58320 and https://www.kucoin.com/news/flash/semiconductor-stocks-drop-in-pre-market-nvidia-falls-4-01 (search snippets: chip pre-market quotes)</li>
+<li>https://www.tradingkey.com/analysis/stocks/more/262306489-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-nvda-tradingkey (search snippet: Asia)</li>
+<li>https://www.asiafinancial.com/xi-trump-putin-to-discuss-world-peace-asia-stocks-down (search snippet: Asia)</li>
+<li>https://newsonair.gov.in/asian-markets-decline-european-indices-show-mixed-trend/ (search snippet: Europe)</li>
+<li>https://www.chartmill.com/news/CLRO/Chartmill-58746-Premarket-Movers-on-Nov-16-2026-Gainers-and-Decliners (search snippet: small-cap gappers)</li>
+<li>https://benzinga.com/trading-ideas/movers/26/11/63280875/why-take-two-interactive-software-shares-are-trading-higher-here-are-20-stocks-moving-premarket (search snippet)</li>
+<li>https://www.tipranks.com/news/stock-market-today-nov-16-u-s-stocks-mixed-ahead-of-nvidia-results-and-anthropic-ipo (search snippet)</li>
+<li>https://finviz.com/news/408464/baidu-to-report-third-quarter-2026-financial-results-on-november-16-2026 (search snippet: BIDU timing)</li>
+<li>https://invezz.com/za/news/2026/11/16/why-are-amd-and-broadcom-stocks-falling-in-premarket-trading-on-monday/ (search snippet only; fetch failed)</li>
+<li>https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html (fetch failed; CNBC figures taken via StockTitan)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>

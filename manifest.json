@@ -1,5 +1,30 @@
 [
   {
+    "date": "2026-11-16",
+    "session": "close",
+    "filename": "alpha_report_2026-11-16_close.html"
+  },
+  {
+    "date": "2026-11-16",
+    "session": "afternoon",
+    "filename": "alpha_report_2026-11-16_afternoon.html"
+  },
+  {
+    "date": "2026-11-16",
+    "session": "midday",
+    "filename": "alpha_report_2026-11-16_midday.html"
+  },
+  {
+    "date": "2026-11-16",
+    "session": "open",
+    "filename": "alpha_report_2026-11-16_open.html"
+  },
+  {
+    "date": "2026-11-16",
+    "session": "premarket",
+    "filename": "alpha_report_2026-11-16_premarket.html"
+  },
+  {
     "date": "2026-11-12",
     "session": "midday",
     "filename": "alpha_report_2026-11-12_midday.html"
@@ -188,30 +213,5 @@
     "date": "2026-11-03",
     "session": "premarket",
     "filename": "alpha_report_2026-11-03_premarket.html"
-  },
-  {
-    "date": "2026-11-02",
-    "session": "close",
-    "filename": "alpha_report_2026-11-02_close.html"
-  },
-  {
-    "date": "2026-11-02",
-    "session": "afternoon",
-    "filename": "alpha_report_2026-11-02_afternoon.html"
-  },
-  {
-    "date": "2026-11-02",
-    "session": "midday",
-    "filename": "alpha_report_2026-11-02_midday.html"
-  },
-  {
-    "date": "2026-11-02",
-    "session": "open",
-    "filename": "alpha_report_2026-11-02_open.html"
-  },
-  {
-    "date": "2026-11-02",
-    "session": "premarket",
-    "filename": "alpha_report_2026-11-02_premarket.html"
   }
 ]
