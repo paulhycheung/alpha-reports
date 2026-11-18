@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-18 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Wednesday, November 18, 2026 &middot; Dow −1.1%, Nasdaq +0.4% &middot; Nvidia's fifth straight loss &middot; Anthropic reportedly prices at $83 &middot; Insurers' losses deepen &middot; PANW up after hours</div>
+<p class="note">Generated automatically <b>after the 4:00 PM ET close</b> (about 4:20–4:30 PM ET), later than the ~3:20 PM target. So this edition uses <b>final closing prints</b> where they were available: Yahoo Finance index levels (stamped 4:20 PM ET) and StockTitan regular-session closes. Exact closes for most watchlist megacaps (AMZN, AVGO, AAPL, MSFT and others) were <b>not</b> found in the sources consulted. Those rows use the latest intraday print, marked with its time. <b>WRDS signals were not used</b>: <code>alpha_wrds_signals.csv</code> is dated 2026-09-17, about 62 days old and outside the 14-day window. <span class="note">(Disclosure: this brief is written by Claude, an Anthropic model. Anthropic items come only from cited third-party sources.)</span></p>
+
+<h2>1. Session Summary</h2>
+<p><b>Mixed close. Narrow Dow damage, a Nasdaq bid tied to the Anthropic IPO, and a fifth straight S&amp;P loss.</b> At the close the S&amp;P 500 was <span class="dn">−0.23%</span> at 7,323.63, its fifth losing session in a row and its longest slide since June (CNBC, via StockTitan). The Dow was <span class="dn">−1.11%</span> at 50,198.17 (−561 pts). The Nasdaq Composite was <span class="up">+0.42%</span> at 24,429.89 and the Russell 2000 <span class="up">+0.46%</span> at 2,714.31. Rates and volatility eased into the bell: the 10-year yield was 5.07% (−4 bp) and the VIX 24.58 (<span class="up">−3.5%</span>). Commodities had a broadly risk-off day: gold <span class="dn">−3.5%</span> at $3,728, WTI <span class="dn">−3.0%</span> at $82.08, and bitcoin <span class="dn">−2.8%</span> near $62.5K.</p>
+<p><b>What drove it:</b> (1) Nvidia fell 2.89% after beating estimates, its fifth straight loss. The reasons were the CEO-succession overhang and a delayed 10-Q. (2) Managed care collapsed for a second day on the proposed CMS "CRUSH" audit rule. UNH fell 10.2% and is a large Dow weight. (3) Hawkish FOMC minutes landed without a new selloff. (4) Strong retail earnings: TJX and TGT gained but gave back part of their intraday highs. <b>After the bell:</b> Bloomberg (via Yahoo Finance) reports that Anthropic priced its IPO at <b>$83 per share</b>, above the $70–78 range, with an upsized offering. Palo Alto Networks was <span class="up">+6.5%</span> after hours on a revenue beat, a raised guide and a $4.5B acquisition.</p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Based on today's premarket, open, midday and afternoon editions. The afternoon edition's follow-up table already recaps the first three.</p>
+<div class="tbl"><table>
+<tr><th>Flagged earlier</th><th>Earlier path</th><th>Close</th><th>Verdict</th></tr>
+<tr><td>NVDA (gap fade)</td><td>+3% pre-mkt &rarr; −2% &rarr; −2.8% (3:09)</td><td class="dn">−2.89%</td><td><b>Played out.</b> It held just above the flagged $149.13 support area. Implied close is about $151 from the $155.46 prior close.</td></tr>
+<tr><td>AMZN / AVGO / GOOGL (Anthropic proxies)</td><td>AMZN +2.2% &rarr; +2.5% &rarr; +3.8%</td><td>Close not verified. Nasdaq +0.42%.</td><td><b>Held through the afternoon.</b> The $83 above-range pricing confirms the setup. Thursday's open is the test.</td></tr>
+<tr><td>TJX / TGT (earnings gaps)</td><td>+10.6–10.9% / +6.3–7.0% (afternoon)</td><td class="up">+8.04% / +3.99%</td><td><b>Faded late</b> but held most of the gap. TGT gave back about 40% of its intraday gain.</td></tr>
+<tr><td>UNH / HUM (CRUSH rule)</td><td>−6% &rarr; −9.0% / −10.7% (1:18)</td><td class="dn">−10.21% / −13.04%</td><td><b>Accelerated into the close.</b> The 3:06 Yahoo "−6%" text was stale. ELV −7.63%, CNC −7.06%.</td></tr>
+<tr><td>PANW (pre-earnings run, "beat-but-sell" risk)</td><td>+6.7% (1:01)</td><td class="up">+9.90%; +6.51% after hours</td><td><b>The risk did not play out</b>, at least initially. The guide raise extended the move.</td></tr>
+<tr><td>Gold / miners</td><td>−2.8% &rarr; −3.6%</td><td class="dn">−3.52%</td><td><b>Held at the lows.</b></td></tr>
+<tr><td>Macro: "hawkish minutes could retest lows"</td><td>Did not play out by 3:09</td><td>S&amp;P −0.23%; VIX −3.5%</td><td><b>Did not play out.</b> The minutes look priced in.</td></tr>
+<tr><td>TTWO (GTA VI launch Thursday)</td><td>+8.4% (11:05) &rarr; +7.7%</td><td>Close not verified</td><td><b>Held through the afternoon.</b> The launch is Thursday.</td></tr>
+</table></div>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">Regular-session % change vs. Tuesday's close. StockTitan closes unless noted.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="dn">−2.89%</td><td>Most active large cap: 180M shares by 11:58 AM, about 3.1x relative volume. Fifth straight loss. Yahoo's ticker strip shows −2.68% and Benzinga −2.1% (likely different timestamps).</td></tr>
+<tr><td>AMZN</td><td class="up">+3.8% (post-minutes, ~3 PM)</td><td>Close not verified. Largest Anthropic holder.</td></tr>
+<tr><td>AVGO / AMD / TSM</td><td class="up">"modestly higher"</td><td>Yahoo semis update. AVGO was +3.58% at 11:05. No close prints.</td></tr>
+<tr><td>GOOGL</td><td class="up">+0.61% (11:05)</td><td>No close print.</td></tr>
+<tr><td>MU / INTC</td><td class="dn">−2%+ (morning)</td><td>Intel is also cutting more jobs (Yahoo). No close print.</td></tr>
+<tr><td>AAPL, MSFT, META, ORCL, CRM, ASML, QCOM, TSLA</td><td>n/a</td><td>No verified prints in the sources consulted.</td></tr>
+<tr class="sec"><td colspan="3">Notable non-watchlist</td></tr>
+<tr><td>BRBR</td><td class="up">+24.14%</td><td>FQ4 sales +7% to $692M; FY27 guide $2.32–2.42B. 11x relative volume.</td></tr>
+<tr><td>CSHR / IIIV</td><td class="up">+12.38% / +12.35%</td><td>AUM rose to $7.4B / FY27 revenue guide $220–235M.</td></tr>
+<tr><td>PANW</td><td class="up">+9.90%; +6.51% after hours</td><td>FQ1 revenue +39% to $3.44B; FY guide raised; $4.5B Applied Compute deal.</td></tr>
+<tr><td>TJX / TGT</td><td class="up">+8.04% / +3.99%</td><td>Q3 beats. Tariff refunds were $0.05 of TJX's EPS and $0.50 of TGT's.</td></tr>
+<tr><td>HUM / UNH / ELV / CNC</td><td class="dn">−13.04 / −10.21 / −7.63 / −7.06%</td><td>Second day of losses on the CMS CRUSH proposal (an estimated $90.2B in recoveries over 2027–36).</td></tr>
+<tr><td>HY / JMIA</td><td class="dn">−41.79% / −40.60%</td><td>$125M convertible notes / FY guide cut after a weak start to Black Friday.</td></tr>
+<tr><td>KRNT / ARDT / AAOI</td><td class="dn">−22.89 / −19.04 / −9.80%</td><td>Q4 guide / secondary offering at $14.50 / $550M at-the-market program (~15% of market cap).</td></tr>
+<tr><td>CVX / XOM</td><td class="dn">−4.3% / −3.6% (1:01 PM)</td><td>Energy was the weakest S&amp;P sector as WTI fell 3%.</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates / What to Watch Tomorrow</h2>
+<p class="note">These are worth investigating further. They are not trade recommendations. Confidence describes how strong the evidence for the read is, not expected returns.</p>
+
+<div class="card">
+<h3>1. The Anthropic IPO read-through: AMZN, GOOGL, AVGO (and NVDA as an investor) into Thursday's ANT debut</h3>
+<p><b>Thesis:</b> The pricing came in above the range. Bloomberg reports $83/share, about 6% above the $78 top, with an <b>increased offering size</b>. That confirms the demand that drove AMZN's all-day climb (+2.2% &rarr; +3.8%). Tomorrow's key question is whether the stakeholders "sell the news" once ANT opens, or get re-marked on a strong first trade. Amazon holds about 23.8% of Anthropic's capital stock (as reported). Broadcom is an investor and a lender (up to $42B at 9%, as reported). Alphabet is also a large holder.</p>
+<p><b>Evidence:</b> Yahoo Finance live blog: "Anthropic has reportedly priced its IPO at $83 per share, according to Bloomberg ... the size of the offering has increased." Earlier reports: about 6–7x oversubscribed (Bloomberg), and the WSJ and CNBC flagged a possible price of $80 or more. The S-1/A shows Q3 revenue of $17B, about 12x year over year. The filing says trading is expected Thursday on Nasdaq under ANT, subject to effectiveness.</p>
+<p><b>Risks overnight / tomorrow:</b> The $83 price is a <i>report</i>, not a final filing, until the 424(b) prospectus is filed. Yahoo's Jared Blikre notes that 2026's three biggest US IPOs (SpaceX, SK hynix, Cerebras) all trade below their first trades. A listing of this size (about $68B+ at 825M+ shares) could pull money out of megacaps. Large IPOs often open late in the day, so the stakeholder reaction may come before price discovery.</p>
+<p><span class="conf">Confidence: Medium</span> on the setup. <span class="conf">Low</span> on the direction of Thursday's reaction.</p>
+</div>
+
+<div class="card">
+<h3>2. NVIDIA (NVDA): −2.89%, a fifth straight loss despite the beat</h3>
+<p><b>Thesis:</b> The post-earnings fade ran all day and closed near the lows, about $151, just above the <b>$149.13</b> support flagged this morning and the ~$148.80 52-week low. The market is looking past the numbers (revenue +103% to $115.8B, Q4 guide about $130B excluding China) to governance: an interim CEO, the board refusing to reinstate Huang, and a <b>delayed 10-Q</b>. Two catalysts land Thursday. First, ANT pricing above the range supports AI-demand optics, and Nvidia is reported to be a participant in Anthropic's concurrent placement. Second, any 10-Q timing or CEO-search headline could move the stock.</p>
+<p><b>Evidence:</b> StockTitan close table (−2.89%). Yahoo: "Nvidia stock notched its fifth day of losses." BofA reiterated Buy/$280 but flagged the 10-Q delay. Nvidia: "We plan to file our 10-Q in the coming weeks." FOMC minutes: "almost all participants commented on risks associated with a scenario in which the returns on AI investment turned out to be disappointing."</p>
+<p><b>Risks:</b> A break of $149 would put the 52-week low in play. Conversely, five down days into a strong print set up short covering if Thursday's AI sentiment is positive.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>3. Managed care (HUM −13.0%, UNH −10.2%, ELV −7.6%, CNC −7.1%): capitulation or a regime change?</h3>
+<p><b>Thesis:</b> The second-day selling <i>accelerated</i> into the close rather than bouncing. Over two days, UNH is down about 15% (−5.42% Tuesday) and HUM about 16% (−3.88% Tuesday). The rule publishes in the Federal Register <b>Thursday</b>. That could draw a third wave of sell-side cuts, or the first industry and legal pushback. The comment deadline is Jan 19, 2027.</p>
+<p><b>Evidence:</b> StockTitan close table and 1:19 PM update. The CMS proposed rule (public-inspection PDF) would extrapolate audit error rates to whole contracts starting with 2018 payments, an estimated $90.2B over 2027–2036. A Texas federal court previously set aside similar 2023 provisions on procedural grounds.</p>
+<p><b>Risks:</b> The rule is still a proposal, and litigation risk could cap it. Sharp two-day policy selloffs often see reflex bounces, but the retroactive back to 2018 element makes the damage hard to size until companies comment.</p>
+<p><span class="conf">Confidence: Low–Medium</span></p>
+</div>
+
+<div class="card">
+<h3>4. Palo Alto Networks (PANW): +9.9% regular session, then +6.5% after hours</h3>
+<p><b>Thesis:</b> The pre-earnings run did not turn into a "beat-but-sell". FQ1 revenue rose 39% to $3.44B, the full-year guide was raised to <b>$14.52–14.57B</b>, and it announced an all-stock <b>$4.5B</b> Applied Compute acquisition. A cumulative ~17% two-session move puts the focus on whether Thursday's regular session holds the after-hours gain once analyst notes digest the dilution from the deal.</p>
+<p><b>Evidence:</b> The Palo Alto Networks release and Applied Compute deal release (via StockTitan). StockTitan after-hours print at 4:13 PM ET.</p>
+<p><b>Risks:</b> Early after-hours prints are thin. The 4:30 PM webcast commentary (not reviewed here) could change the reaction. All-stock M&amp;A dilution and integration questions remain.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>5. Off-price and big-box retail (TJX +8.0%, TGT +4.0%) into Walmart Thursday before the open</h3>
+<p><b>Thesis:</b> Both stocks held most of their gains but faded from their highs: TJX peaked near +10.9% and TGT near +7%. The market may be discounting refund-boosted EPS. Tariff refunds were about 19% of TGT's $2.65, about 11% of Lowe's EPS, and only $0.05 of TJX's. <b>Walmart reports Thursday at ~7:00 AM ET</b> (EPS est. $0.64 vs. $0.62 a year ago). How it treats tariff refunds will be the key read-across for the whole group.</p>
+<p><b>Evidence:</b> StockTitan close table and tariff-refund breakdown. Target's comparable sales rose 5.6% and traffic 5.0%. TJX's comparable sales rose 4%, above plan. StockTitan earnings calendar (Walmart confirmed for Thursday, call at 8:00 AM).</p>
+<p><b>Risks:</b> A Walmart guide that bakes refunds into lower prices could squeeze peer margin expectations. Mortgage rates above 7% and record-low pending home sales (NAR) weigh on housing-linked retail.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>6. Rates and the Fed: the minutes were hawkish, but the VIX fell 3.5% into the close</h3>
+<p><b>Thesis:</b> Despite "almost all" participants seeing further hikes as appropriate, two hike dissents and Waller arguing for 50 bp in December, the 10-year closed lower at 5.07% and the VIX at 24.58. That points to the hawkish path being priced (CME FedWatch: 69% odds of 50 bp by end-January). The S&amp;P's five-day losing streak is now its longest since June. Breadth (Russell +0.46%) quietly improved.</p>
+<p><b>Evidence:</b> Federal Reserve minutes (Oct 27–28). Yahoo Waller interview and CME odds. Yahoo close strip.</p>
+<p><b>Risks:</b> Thursday's 8:30 AM jobless claims and the 10:00 AM Advance Services Report could reprice December. A disorderly ANT debut could hit risk appetite more broadly.</p>
+<p><span class="conf">Confidence: Medium</span> (on the "already priced" read)</p>
+</div>
+
+<h2>5. Tomorrow's Calendar (Thursday, Nov 19)</h2>
+<div class="tbl"><table>
+<tr><th>Time (ET)</th><th>Event</th><th>Why it matters</th></tr>
+<tr><td>Wed evening</td><td>Anthropic final pricing (reported $83, upsized). PANW webcast at 4:30 PM.</td><td>Sets up Thursday's AI-complex tone.</td></tr>
+<tr><td>~7:00 AM</td><td><b>Walmart (WMT)</b> Q3 (call at 8:00 AM; EPS est. $0.64). Also Alibaba, PDD and Williams-Sonoma before the open.</td><td>Retail and tariff-refund read-across. China consumer read via BABA/PDD.</td></tr>
+<tr><td>8:30 AM</td><td>Weekly jobless claims</td><td>December hike sizing (25 vs. 50 bp).</td></tr>
+<tr><td>10:00 AM</td><td>Census Advance Services Report</td><td>Services demand.</td></tr>
+<tr><td>Intraday</td><td><b>Anthropic (ANT) expected to begin trading on Nasdaq</b>, subject to effectiveness</td><td>AMZN, GOOGL, AVGO and NVDA read-through. Possibly the largest IPO ever.</td></tr>
+<tr><td>Thursday</td><td>CMS CRUSH proposed rule published in the Federal Register</td><td>Managed care (UNH, HUM, ELV, CNC).</td></tr>
+<tr><td>Thursday</td><td><i>Grand Theft Auto VI</i> launch</td><td>TTWO "sell-the-news" vs. early sales data.</td></tr>
+<tr><td>4:30 PM</td><td><b>Intuit (INTU)</b> FQ1 (EPS est. $2.47). Also Ross Stores and Gap after the close.</td><td>Software and AI monetization; off-price peer for TJX.</td></tr>
+<tr><td>Dec 8–9</td><td>FOMC meeting</td><td>A hike of 25 bp is about 95% priced; 50 bp is debated.</td></tr>
+</table></div>
+
+<h2>6. WRDS Quant Signals</h2>
+<p class="note">Not used. <code>alpha_wrds_signals.csv</code> has an as_of_date of <b>2026-09-17</b> (about 62 days old), outside the 14-day window. This analysis uses public research only. Refresh the WRDS pull to restore this section.</p>
+
+<h2>7. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html (closing index strip at 4:20 PM; Anthropic $83 report via Bloomberg; NVDA fifth loss, 10-Q delay, BofA; Waller and CME odds; semis; pending home sales; healthcare)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026 (4:14 PM close update; closing movers table; PANW results and after-hours move; CRUSH rule details; tariff-refund EPS math)</li>
+<li>https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-set-to-price-stock-between-70-and-78-as-trading-starts-thursday-174130523.html (range, WSJ/CNBC above-range reports, S-1/A revenue, "IPO could be a trap" note)</li>
+<li>https://www.stocktitan.net/rankings/stock-movers-today (11:58 AM snapshot: NVDA volume and relative volume)</li>
+<li>https://www.stocktitan.net/articles/earnings-calendar-week-of-november-16-2026 (Walmart, Intuit, Ross, Gap timing and estimates; jobless claims; Advance Services Report)</li>
+<li>https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm (minutes text, via the afternoon edition and StockTitan)</li>
+<li>https://public-inspection.federalregister.gov/2026-23461.pdf (CMS proposed rule, cited via StockTitan)</li>
+<li>https://www.cbsnews.com/news/anthropic-ipo-ai-boom-nasdaq-debut/ (search summary: high-end or above-$80 pricing possibility)</li>
+<li>https://www.fool.com/investing/2026/11/18/anthropics-14-trillion-ipo-the-ultimate-guide/ and https://finance.yahoo.com/markets/stocks/articles/amazon-alphabet-own-over-28-173002007.html (search summary: Amazon stake, Broadcom lending)</li>
+<li>https://www.benzinga.com/markets/equities/26/11/63404681/stock-market-today-dow-jones-nvidia-earnings-dollar-19-month-high-november-18 (search summary only; fetch failed)</li>
+<li>https://businessupturn.com/usa/money/us-markets/us-stocks-mixed-at-close-as-dow-falls-while-nasdaq-rises/ (search summary only; fetch failed)</li>
+<li>https://stockanalysis.com/markets/afterhours/ (attempted; the page served stale Nov 6 data and was not used)</li>
+<li>C:\Users\phc220001\OneDrive\alpha\alpha_report_2026-11-18_afternoon.html (earlier calls; recaps the premarket, open and midday editions)</li>
+<li>C:\Users\phc220001\OneDrive\alpha\alpha_wrds_signals.csv (checked; stale)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
