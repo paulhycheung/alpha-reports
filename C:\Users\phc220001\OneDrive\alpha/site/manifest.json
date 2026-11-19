@@ -213,30 +213,5 @@
     "date": "2026-11-05",
     "session": "premarket",
     "filename": "alpha_report_2026-11-05_premarket.html"
-  },
-  {
-    "date": "2026-11-04",
-    "session": "close",
-    "filename": "alpha_report_2026-11-04_close.html"
-  },
-  {
-    "date": "2026-11-04",
-    "session": "afternoon",
-    "filename": "alpha_report_2026-11-04_afternoon.html"
-  },
-  {
-    "date": "2026-11-04",
-    "session": "midday",
-    "filename": "alpha_report_2026-11-04_midday.html"
-  },
-  {
-    "date": "2026-11-04",
-    "session": "open",
-    "filename": "alpha_report_2026-11-04_open.html"
-  },
-  {
-    "date": "2026-11-04",
-    "session": "premarket",
-    "filename": "alpha_report_2026-11-04_premarket.html"
   }
 ]
