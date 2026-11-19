@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-19 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Close Edition</span> &nbsp; Thursday, November 19, 2026 &middot; S&amp;P 500 posts a sixth straight loss &middot; Dow closes below 50,000 &middot; Nasdaq &minus;2.25% &middot; Intuit &minus;12% after hours &middot; Monthly options expire tomorrow</div>
+<p class="note">Generated automatically at about <b>4:25 PM ET</b>, after the 4:00 PM close (the run started later than its ~3:20 PM target). So the index levels below are <b>official closing prints</b> (Yahoo Finance quote strip, Dow stamped "At close: 4:04:52 PM EST"). Most single-stock moves come from StockTitan's <b>3:02 PM ET</b> snapshot, the latest reliable per-stock data found. A later StockTitan version seen only in a search summary listed slightly different closing moves (AMZN &minus;3.87%, NVDA &minus;3.30%, AVGO &minus;2.09%, MSFT &minus;1.97%). Those could not be fetched directly, so they appear only as a secondary reference. <b>WRDS signals were not used:</b> <code>alpha_wrds_signals.csv</code> has as_of_date 2026-09-17 (~63 days old). (Disclosure: this brief is written by Claude, an Anthropic model. All Anthropic/ANT items, including the Intuit item that mentions a Claude product, come only from cited third-party sources. ANT is not listed as a candidate.)</p>
+
+<h2>1. How the Full Session Traded</h2>
+<p><b>A gap-up open became a broad, tech-led selloff that closed near the lows.</b> The <b>S&amp;P 500</b> closed at <span class="dn">7,175.83 (&minus;147.80, &minus;2.02%)</span>, its <b>sixth straight decline</b>, and CNBC said it was the index's lowest close since July. The <b>Dow</b> closed at <span class="dn">49,097.06 (&minus;1,101.11, &minus;2.19%)</span>, below 50,000 for the first time since June according to CNBC. The <b>Nasdaq Composite</b> closed at <span class="dn">23,879.20 (&minus;550.69, &minus;2.25%)</span> and the <b>Russell 2000</b> at <span class="dn">2,664.79 (&minus;1.82%)</span>. The morning looked very different. The S&amp;P opened about +1% and the Nasdaq about +1.6% ahead of Anthropic's debut. Healthcare and small caps sold off first, and after ANT's first trade at 11:48 AM the selling spread to large-cap AI names.</p>
+<p><b>Volatility picked up again in the last hour.</b> The <b>VIX closed at 27.98 (+13.8%)</b>, above the 27.06 reading in the Afternoon brief. That brief noted that implied volatility was <i>easing</i> as indexes fell, and this reversed into the close. The 10-year yield ended about flat at 5.05%, so rates were not the driver. Gold fell 2.06% ($3,664.70), WTI rose 0.9% ($83.08) and Bitcoin fell 0.7%. When gold and equities fall together and yields stay flat, it often points to de-leveraging or raising cash rather than a macro shock.</p>
+<p><b>Context: ANT.</b> Anthropic closed its first day at <b>$97.17 (+17.07% vs its $83 IPO price)</b> and traded at $95.69 after hours. Its first trade was at $111.50, the high was $114.99 and the low was $92.72 (StockTitan). <b>Tone:</b> risk-off with no Fed or rates catalyst, going into tomorrow's monthly options expiration. Shown for context only.</p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<div class="tbl"><table>
+<tr><th>Earlier flag (edition)</th><th>Verdict at close</th><th>What happened</th></tr>
+<tr><td>AI-proxy "sell the news" around ANT's debut (Open, Midday, Afternoon)</td><td class="n dn">Played out, accelerated</td><td>Nasdaq went from about +1.6% at the open to &minus;0.31% at 12:31 PM, &minus;2.22% at 3:03 PM and &minus;2.25% at the close. Midday said a close near the lows would point to more than a one-day flow, and that test was met.</td></tr>
+<tr><td>VIX easing as a sign of orderly de-risking (Afternoon)</td><td class="n am">Reversed</td><td>The VIX rose from 27.06 at 3:03 PM to 27.98 at the close (+13.8% on the day). Demand for hedges came back into the bell, which weakens the "orderly" reading.</td></tr>
+<tr><td>AMD: rebuttal, no bounce (Open, Midday, Afternoon)</td><td class="n dn">Played out</td><td>Closed down about 9% (Yahoo), the worst move on the watchlist. Never recovered after the Hunterbrook short disclosure.</td></tr>
+<tr><td>NVDA gap fade (Pre-market through Afternoon)</td><td class="n dn">Played out</td><td>About &minus;2.7% at 3:02 PM, after opening about +2&ndash;3%. This is the third straight session fading an opening gain.</td></tr>
+<tr><td>AMZN / GOOGL proxy unwind (Afternoon)</td><td class="n dn">Accelerated</td><td>At 3:02 PM, AMZN was &minus;4.05% and GOOGL &minus;2.53%. GOOGL had been +4.04% at 10:04 AM, a swing of about 6.6 points.</td></tr>
+<tr><td>Small caps vs tech rotation (Afternoon)</td><td class="n am">Partly faded</td><td>The Russell 2000 ended &minus;1.82%, worse than its &minus;1.58% at 3:03 PM, but still did better than the Nasdaq's &minus;2.25%.</td></tr>
+<tr><td>PDD vs PANW earnings gaps (Midday, Afternoon)</td><td class="n up">Both held</td><td>At 3:02 PM, PDD was +10.4% and PANW +5.6%. PANW held its reduced gain into the late session.</td></tr>
+<tr><td>INTU as an early read on software (Afternoon)</td><td class="n dn">Negative read</td><td>About &minus;12% after hours on a guidance cut (see Candidate 3).</td></tr>
+<tr><td>UNH policy slide (Midday)</td><td class="n am">No closing print found</td><td>Down 5% in the morning per Yahoo, on track for about &minus;18% over five days. No verified close was found.</td></tr>
+</table></div>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">The % change is vs Wednesday's close. "Close" means an official close (index quotes from Yahoo). Times shown are the latest reliable snapshot (StockTitan or Yahoo). "n/a" means no reliable print in the sources consulted.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Day move</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Indices &amp; macro (close)</td></tr>
+<tr><td>S&amp;P 500</td><td class="n dn">&minus;2.02% (7,175.83)</td><td>Sixth straight loss. Lowest close since July (CNBC).</td></tr>
+<tr><td>Nasdaq Comp.</td><td class="n dn">&minus;2.25% (23,879.20)</td><td>Weakest major index. It opened about +1.6%.</td></tr>
+<tr><td>Dow</td><td class="n dn">&minus;2.19% (49,097.06)</td><td>&minus;1,101 points. First close below 50,000 since June (CNBC).</td></tr>
+<tr><td>Russell 2000</td><td class="n dn">&minus;1.82% (2,664.79)</td><td>Ended weaker than its afternoon reading</td></tr>
+<tr><td>VIX</td><td class="n dn">27.98 (+13.79%)</td><td>Rose into the close</td></tr>
+<tr><td>10-yr yield</td><td class="n">5.05% (&minus;1 bp)</td><td>Flat. Not the driver.</td></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>AMD</td><td class="n dn">~&minus;9% (close, Yahoo)</td><td>Hunterbrook short (China/export questions). Led retail selling to fund ANT buys (Vanda).</td></tr>
+<tr><td>AMZN</td><td class="n dn">&minus;4.05% (3:02 PM)</td><td>Anthropic stakeholder. Was +2.15% in the morning.</td></tr>
+<tr><td>NVDA</td><td class="n dn">&minus;2.69% (3:02 PM)</td><td>Opening gain faded again. Moonshot AI reportedly scrapped a $150M B300 rental deal (The Information via Newsquawk).</td></tr>
+<tr><td>GOOGL</td><td class="n dn">&minus;2.53% (3:02 PM)</td><td>+4.04% at 10:04 AM</td></tr>
+<tr><td>AVGO</td><td class="n dn">&minus;2.31% (3:02 PM)</td><td>Anthropic proxy (CNBC)</td></tr>
+<tr><td>MSFT</td><td class="n dn">&minus;1.75% (3:02 PM)</td><td>Did relatively better than the rest of the watchlist</td></tr>
+<tr><td>MU</td><td class="n dn">~&minus;3% (midday); red at close</td><td>Gave up its early gains (CNBC via StockTitan)</td></tr>
+<tr><td>TSM</td><td class="n am">n/a (US ADR)</td><td>Taipei shares about &minus;5% since Monday after a new BIS rule. The FT reports TSMC and Samsung paused some China shipments.</td></tr>
+<tr><td>INTC, QCOM</td><td class="n am">Green around midday; no close found</td><td>Among the few chips in the green at 12:24 PM (Yahoo heat map)</td></tr>
+<tr><td>AAPL, META, TSLA, ORCL, CRM, ASML</td><td class="n">n/a</td><td>No reliable prints found. CRM is a read-through to watch after INTU.</td></tr>
+<tr class="sec"><td colspan="3">Notable non-watchlist</td></tr>
+<tr><td>ANT (IPO)</td><td class="n">$97.17, +17.07% vs IPO (close)</td><td>First trade $111.50. $95.69 after hours. Shown for context only.</td></tr>
+<tr><td>INTU</td><td class="n dn">~&minus;12% to &minus;13% (after hours)</td><td>Cut full-year revenue guidance (Credit Karma). Agreed to sell Mailchimp for $3.68B.</td></tr>
+<tr><td>SEAT</td><td class="n up">+51.95% (3:02 PM)</td><td>Debt-for-equity recapitalization</td></tr>
+<tr><td>PDD</td><td class="n up">+10.40% (3:02 PM)</td><td>Q3 profit beat. Held its gain all day.</td></tr>
+<tr><td>VVV</td><td class="n up">+8.33% (3:02 PM)</td><td>Q4 sales +22%</td></tr>
+<tr><td>P (Everpure)</td><td class="n up">+6.64% (3:01 PM)</td><td>Revenue +51%, guidance raised</td></tr>
+<tr><td>PANW</td><td class="n up">+5.62% (3:02 PM)</td><td>About +20% over two days</td></tr>
+<tr><td>SA (Seabridge)</td><td class="n dn">&minus;29.96% (3:02 PM)</td><td>BC court ruling on the KSM project's "substantially started" status</td></tr>
+<tr><td>SNEX</td><td class="n dn">&minus;26.56% (3:02 PM)</td><td>Q4 net income &minus;2%</td></tr>
+<tr><td>LQDT</td><td class="n dn">&minus;24.06% (3:02 PM)</td><td>Q4 revenue &minus;10%</td></tr>
+<tr><td>WSM</td><td class="n dn">&minus;15.24% (3:02 PM)</td><td>Kept its outlook, did not raise it</td></tr>
+<tr><td>NTES</td><td class="n dn">&minus;10.50% (3:02 PM)</td><td>Q3 revenue &minus;1.8%</td></tr>
+<tr><td>CRWV / NBIS</td><td class="n dn">&minus;5.39% / &minus;8.36% (3:02 PM)</td><td>CRWV was +8.57% at 10:04 AM</td></tr>
+<tr><td>WMT</td><td class="n dn">&minus;1.19% (3:02 PM)</td><td>Beat and raised, but fell with the market</td></tr>
+</table></div>
+
+<h2>4. Closing Alpha Candidates / What to Watch Tomorrow</h2>
+<p class="note">These are worth investigating further, not recommendations to buy or sell. Confidence describes how strong the evidence for the read is, not expected returns.</p>
+
+<div class="card">
+<h3>1. Nasdaq / AI complex: closing at the lows going into monthly options expiration</h3>
+<p><b>Move:</b> Nasdaq about +1.6% at the open, <span class="dn">&minus;2.25%</span> at the close. That is a reversal of nearly 4 points. The VIX rose to 27.98 into the bell.</p>
+<p><b>Thesis:</b> When an index closes at its session lows and implied volatility rises in the last hour, it usually means sellers were still active at the bell rather than finished. Friday is the <b>November monthly options expiration</b>. With the S&amp;P below several round strikes it held earlier in the week, dealer hedging could either speed up the move or pin prices near large open-interest levels. The S&amp;P has now fallen six days in a row. Streaks like this tend to end in either a sharp short-covering bounce or a capitulation day, and tomorrow's open will show which way positioning is leaning.</p>
+<p><b>Evidence:</b> Yahoo Finance closing quote strip (indexes, VIX, 10-year). Yahoo live blog (open +1%/+1.6%; stocks at session lows by midmorning). CNBC (lowest S&amp;P close since July; Dow below 50,000). Weekly calendar listing Nov. 20 monthly options expiration (DayTradingToolkit).</p>
+<p><b>Risks / what flips it:</b> Overnight Asia (Japan CPI, China LPR) or a calm ANT second session could steady sentiment. Positioning is already reduced after six down days, which raises the chance of a bounce. The size of the options pin is not measured here.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>2. AMD &amp; TSM: export-control risk is now driving chip stocks one by one</h3>
+<p><b>Move:</b> AMD <span class="dn">~&minus;9%</span> at the close. TSMC was about &minus;5% in Taipei since Monday (ADR close not verified).</p>
+<p><b>Thesis:</b> Two separate China-related headlines hit chips today. Hunterbrook disclosed a short in AMD over whether its chips reach a blacklisted Chinese server maker through intermediaries. Separately, the FT reported that <b>TSMC and Samsung paused some shipments to Chinese customers</b> while they seek licenses under a new BIS rule. The rule moves the "headquarters test" onto foundries, so designers headquartered in China can no longer clear advanced logic chips through approved packaging firms. China was 5% of TSMC's Q3 revenue (about $2.3B), down from 8% a year earlier. The APEC talks ended without progress on semiconductors (Yahoo). Together, these make AMD's drop look more like a pricing of policy risk than a one-off short report. Retail selling to fund ANT purchases (Vanda) may have added to the size of the move.</p>
+<p><b>Evidence:</b> Yahoo live blog (AMD &minus;9%; Hunterbrook; APEC stalemate; Vanda flow). Newsquawk headline (FT: TSMC/Samsung pause shipments). BeInCrypto via Yahoo (TSMC &minus;5% since Monday; 5% China revenue share; BIS rule mechanics).</p>
+<p><b>Risks / what flips it:</b> A quick BIS license approval for TSMC customers, or an AMD rebuttal backed by documents, could reverse part of the move. Hunterbrook itself said its findings "don't establish an export-law violation" (per the Midday edition). Flow-driven selling usually stops once the buying it funds is done.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>3. INTU (after hours): guidance cut cites AI, a read-through for software tomorrow</h3>
+<p><b>Move:</b> <span class="dn">&minus;12.0%</span> to $272.78 after the release (Seeking Alpha). Yahoo showed about &minus;13% after hours. The stock was already about &minus;7% on Tuesday.</p>
+<p><b>Thesis:</b> Q1 itself beat: revenue +12% to about $4.4B and non-GAAP EPS of $2.91 vs about $2.47 expected. But Intuit <b>cut its full-year revenue guide to $23.08B&ndash;$23.37B</b> because it now expects Credit Karma growth of 3%&ndash;7%, down from 11%&ndash;13%. Among the reasons it gave was "faster-than-expected effects from consumers engaging with AI." It also agreed to sell Mailchimp for about $3.68B and plans to use the proceeds for buybacks. A company putting AI disruption into its own guidance is a more concrete signal than the sentiment-driven software selloff on Tuesday (CRM &minus;9.45%, NOW &minus;6.51%). That makes CRM, and software ETFs more broadly, worth watching at tomorrow's open. Note that Startup Fortune linked part of Tuesday's selling to a Claude personal-finance feature (an Anthropic product, cited here as third-party reporting only).</p>
+<p><b>Evidence:</b> Seeking Alpha news item, 4:04 PM ET (results, guidance cut, Credit Karma reasons, Mailchimp). Startup Fortune (Tuesday's software rout; pre-print consensus; QuickBooks customer growth 3%). Investing.com (Q1 revenue +12%, Mailchimp sale).</p>
+<p><b>Risks / what flips it:</b> The cut is concentrated in Credit Karma, and core QuickBooks and TurboTax numbers may hold up on the call. Mailchimp proceeds plus the buyback could support the shares. After-hours prices on thin volume often move partway back by the next close.</p>
+<p><span class="conf">Confidence: Medium</span> on the read-through; Low on INTU's direction tomorrow</p>
+</div>
+
+<div class="card">
+<h3>4. AMZN &amp; GOOGL: the Anthropic proxy premium kept unwinding into the close</h3>
+<p><b>Move:</b> AMZN <span class="dn">&minus;4.05%</span> and GOOGL <span class="dn">&minus;2.53%</span> at 3:02 PM. GOOGL had been +4.04% at 10:04 AM.</p>
+<p><b>Thesis:</b> The Afternoon brief flagged a "proxy premium" unwind. It got bigger into the close: AMZN ended as one of the weakest megacaps. Investors who wanted Anthropic exposure can now own ANT directly. That removes one reason to hold the stakeholders, and ANT's slide from its first trade weakened the mark-to-market story. Tomorrow will show whether this unwind lasts several sessions or reverses as ANT settles into a trading range. The IPO also closes (settles) on Friday, Nov. 20, per Anthropic's release.</p>
+<p><b>Evidence:</b> StockTitan 3:02 PM snapshot and CNBC "proxies" quote. Yahoo live blog (AMZN/GOOGL as the largest public holders with disclosed stakes). Anthropic pricing release (closing expected Nov. 20).</p>
+<p><b>Risks / what flips it:</b> Both have large businesses unrelated to Anthropic. AMZN's Black Friday and AWS narrative could take over. Exact closing moves are not verified (a search summary showed AMZN &minus;3.87%).</p>
+<p><span class="conf">Confidence: Low&ndash;Medium</span></p>
+</div>
+
+<div class="card">
+<h3>5. NVDA: a third straight gap fade, plus a China demand headline</h3>
+<p><b>Move:</b> opened about +2&ndash;3%. <span class="dn">&minus;2.69%</span> at 3:02 PM (about &minus;3.3% at the close per a search summary, unverified).</p>
+<p><b>Thesis:</b> NVDA has sold off after an opening gain for three sessions in a row since its earnings beat. Today brought a new demand headline: <b>China's Moonshot AI reportedly scrapped a $150M deal to rent B300 chips</b> through an Indonesian data center (The Information via Newsquawk). Combined with the new BIS foundry rule and the APEC stalemate, that keeps the China and export overhang in focus. Governance questions remain after Huang's exit. The 52-week low near $148.80 (cited in the Open edition) is the level to watch. Large monthly open interest could pin the stock or speed up the move tomorrow.</p>
+<p><b>Evidence:</b> StockTitan 3:02 PM. Newsquawk related headline (Moonshot). Yahoo live blog (APEC: Trump and Xi ignored a question on Huang; Vanda: NVDA buying stalled). Earlier editions (gap pattern, 52-week low).</p>
+<p><b>Risks / what flips it:</b> Positioning was already very washed out (GS prime data cited in the Pre-market edition), so short-covering rallies can be sharp. The Moonshot deal is small relative to NVDA's revenue.</p>
+<p><span class="conf">Confidence: Medium</span></p>
+</div>
+
+<div class="card">
+<h3>6. ROST &amp; GAP vs WSM (non-watchlist): consumers are splitting by price point</h3>
+<p><b>Move:</b> ROST and GAP reported after the close (after-hours moves not verified). WSM was <span class="dn">&minus;15.24%</span> at 3:02 PM. WMT was &minus;1.19% despite beating and raising.</p>
+<p><b>Thesis:</b> Ross posted <b>comparable sales +8%</b>, sales +12% and EPS of $1.91, above its own $1.75&ndash;$1.83 guide. It raised full-year EPS to $8.75&ndash;$8.84 (about $0.60 of that is a tariff refund) and kept Q4 comps at +4&ndash;5%. Gap's comps were flat overall: the Gap brand was +9%, and Old Navy net sales were +1%. Williams-Sonoma, a higher-priced home retailer, fell 15% after keeping rather than raising its outlook. Off-price and value retail are holding up while discretionary spending at higher price points is not, which fits Yahoo's "consumers staying strong but seeking value" theme. ROST's reaction tomorrow will test whether strong retail numbers can hold up on a risk-off tape. WMT did not today.</p>
+<p><b>Evidence:</b> Ross Stores 8-K Exhibit 99.1 (SEC). Gap Inc. Q3 FY2026 release (PR Newswire). StockTitan (WSM, WMT). Yahoo live blog (WMT results; consumer piece).</p>
+<p><b>Risks / what flips it:</b> Ross's raise depends partly on a one-time tariff refund. Old Navy's comparable sales figure could not be confirmed. A broad market sell-off can outweigh stock-specific results, as WMT showed today.</p>
+<p><span class="conf">Confidence: Low&ndash;Medium</span></p>
+</div>
+
+<h2>5. Tomorrow's Calendar (Fri, Nov. 20)</h2>
+<div class="tbl"><table>
+<tr><th>When (ET)</th><th>Event</th><th>Why it matters</th></tr>
+<tr><td>After today's close</td><td><b>Intuit</b> (FQ1; call 4:30 PM), <b>Ross Stores</b> (~4:00 PM), <b>Gap</b> (~4:15 PM)</td><td>INTU about &minus;12% after hours on a guidance cut. ROST beat and raised. GAP comps flat. These set the tone for software and retail at the open.</td></tr>
+<tr><td>Overnight</td><td>Japan CPI (Oct), China LPR (Nov), UK retail sales (Oct), German PPI (Oct)</td><td>Global rates and FX backdrop (Newsquawk weekly)</td></tr>
+<tr><td>Pre-market</td><td>No confirmed US earnings before the open found</td><td>Check a broker earnings calendar</td></tr>
+<tr><td>10:00 AM</td><td>University of Michigan consumer sentiment, final November (per FinanceCalendar)</td><td>Consumer read after today's retail divergence. No consensus found.</td></tr>
+<tr><td>All day</td><td><b>Monthly options expiration</b></td><td>Pinning or a faster move after a close at the lows</td></tr>
+<tr><td>All day</td><td>Anthropic IPO closing (settlement) expected Nov. 20</td><td>ANT's second session. A read on the proxy unwind (context only)</td></tr>
+<tr><td>Speakers / events</td><td>ECB's Lagarde and Cipollone. UK&ndash;EU Summit. Moody's on the UK and Scope on China after hours.</td><td>No Fed speakers confirmed for Friday. No FOMC meeting.</td></tr>
+</table></div>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html (closing index, VIX, 10-year, gold, oil and BTC quotes; ANT close and after-hours; AMD &minus;9%; open, midday and chip entries; Vanda; APEC; WMT; calendar)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-19-2026 (3:02 PM ET watchlist and movers table; ANT intraday range; CNBC quotes; after-close earnings timing)</li>
+<li>https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html (search snippet: Dow below 50,000; S&amp;P lowest close since July)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/tsmc-stock-falls-5-china-112721933.html (TSMC China pause; BIS rule; 5% China revenue share)</li>
+<li>https://www.newsquawk.com/headlines/newsquawk-weekly-economic-release-16th---20th-november-2026 (Friday calendar; related headlines: FT TSMC/Samsung pause, Moonshot/NVDA)</li>
+<li>https://seekingalpha.com/news/4674847-intuit-meets-fq1-earnings-estimates-credit-karma-hits-guidance-mailchimp-sale-disclosed (INTU results, guidance cut, after-hours move)</li>
+<li>https://in.investing.com/news/stock-market-news/intuit-reports-q1-revenue-up-12-to-sell-mailchimp-for-368b-93CH-5716115 (search snippet)</li>
+<li>https://startupfortune.com/intuit-stock-drops-7-ahead-of-earnings-as-claudes-bank-linked-finance-tool-raises-turbotax-fears/ (Tuesday software rout; pre-print consensus)</li>
+<li>https://www.sec.gov/Archives/edgar/data/745732/000074573226000047/q326exhibit991.htm (Ross Stores Q3 results, via search)</li>
+<li>https://www.prnewswire.com/news-releases/gap-inc-reports-third-quarter-fiscal-2026-results-302946045.html (Gap Q3 results, via search)</li>
+<li>https://www.financecalendar.com/event/us-university-of-michigan-consumer-sentiment-november-2026/ (UMich final, Nov. 20; via search)</li>
+<li>https://daytradingtoolkit.com/market-insights/weekly-market-insights-november-16-20-2026 (Nov. 20 monthly options expiration; via search)</li>
+<li>https://www.tikr.com/blog/unitedhealth-sinks-5-on-medicare-advantage-audit-plan-as-cms-moves-to-crush-medical-fraud (search snippet; UNH context)</li>
+<li>Local: alpha_report_2026-11-19_afternoon.html (earlier-call follow-up, which also summarizes the Pre-market, Open and Midday editions); _premarket, _open and _midday found; alpha_wrds_signals.csv (checked, as_of 2026-09-17, stale, not used)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
