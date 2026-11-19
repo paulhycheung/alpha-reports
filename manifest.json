@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-11-19",
+    "session": "midday",
+    "filename": "alpha_report_2026-11-19_midday.html"
+  },
+  {
+    "date": "2026-11-19",
     "session": "open",
     "filename": "alpha_report_2026-11-19_open.html"
   },
