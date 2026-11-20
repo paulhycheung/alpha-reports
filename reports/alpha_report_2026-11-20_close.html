@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpha Report 2026-11-20 – Close Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body>
+<div class="w">
+
+<h1>Alpha Research Brief</h1>
+<p><span class="tag">Close Edition</span> &nbsp;Friday, November 20, 2026 · S&amp;P 500 and Dow close in correction · Nasdaq −5.3% wipes out its 2026 gain · NVDA −14% to $125.53 on the SEC accounting report · VIX 38.4 · Next session: Monday, Nov 23 (Thanksgiving week)</p>
+<p class="note">Generated automatically at about 4:25–4:45 PM ET, <b>after</b> the 4:00 PM close rather than at the ~3:20 PM target, so this edition uses closing prints where they could be found. Index and NVDA/AMD closes come from Yahoo Finance's quote strip and live blog. Most single-stock closes come from TECHi's table built from Nasdaq closing prices. Names marked "last print" had no closing quote available; their figures are the latest intraday reading from earlier briefs. Investing.com, CNBC quote pages and Benzinga could not be fetched (rate limit or client error). WRDS signals were not used: <code>alpha_wrds_signals.csv</code> is dated 2026-09-17, about 64 days old. (Disclosure: this brief is written by Claude, an Anthropic model. Anthropic/ANT figures are context only, from third-party sources, and ANT is not an alpha candidate.)</p>
+
+<h2>1. Session Summary</h2>
+<p><b>The selling sped up in the final hour, and Friday ended as the worst day of the sell-off.</b> At the close, the <b>S&amp;P 500</b> was at <b>6,910.39 (<span class="dn">−3.70%</span>)</b>, the <b>Nasdaq Composite</b> at <b>22,617.73 (<span class="dn">−5.28%</span>)</b>, the <b>Dow</b> at <b>48,147.33 (<span class="dn">−1.93%</span>)</b> and the <b>Russell 2000</b> at 2,587.57 (<span class="dn">−2.54%</span>). That compares with roughly −2.1% for the S&amp;P and −3.4% for the Nasdaq at Reuters' 2:28 PM snapshot. The S&amp;P 500 and Dow both <b>closed in correction</b>: the S&amp;P is about 10.7% below its Oct 6 record close of 7,818.93, and the Dow about 10.8% below its August record. The S&amp;P posted its <b>seventh straight loss</b>, the longest losing streak since early 2020. The Nasdaq Composite is now <b>negative for 2026</b>. The Nasdaq-100 was about 19% below its record, close to a bear market. Yahoo counted 71 of its 101 members in bear-market territory, including all 20 of its chip and memory names.</p>
+<p><b>Cross-asset:</b> The <b>VIX</b> closed at <b>38.40 (+34.9%)</b> after briefly touching 40, its highest level since April 2025. Treasuries rallied: the 10-year yield fell about 13–14 bp to <b>4.91%</b> and the 5-year fell 16 bp to 4.70%. Gold fell 4.5% to $3,518.70 and Bitcoin fell 5.2% to about $58,300, so even havens and crypto were sold as investors raised cash. WTI rose 1.7% to $83.86. Traders scaled back bets on a 50 bp Fed hike in December: CME FedWatch had about 92% odds of a 25 bp hike and about 8% odds of a hold, up from essentially none on Thursday. That came even after Governor Cook said waiting "risks getting behind the curve."</p>
+<p><b>Tone:</b> broad, forced de-risking led by AI hardware. TECHi's basket of ten AI hardware stocks fell <b>11.4%</b> on the day and <b>19.5%</b> on the week, its worst week in a series that starts in March 2025, and all ten fell. The hyperscalers that buy the hardware fell much less, averaging −3.9%. Outside tech, some defensives held up: General Mills was +4.7% and Lennar +3.1% at about 1:44 PM (AP). University of Michigan sentiment rose to 51.5 from 48. Dan Ives' list of seven drivers (via Yahoo) included political worries about data-centre build-outs after the midterms, Jensen Huang's exit, China and regulatory risk across semis, fund P&amp;L pain and a hawkish Fed.</p>
+
+<h2>2. Day in Review vs. Earlier Calls</h2>
+<p class="note">Tracks today's pre-market, open (~10:01 AM), midday (~1:10 PM) and afternoon (~3:10 PM) briefs through the close. "Played out" = closed in the direction flagged; "Faded" = the move shrank or the relative call weakened; "Accelerated" = the move grew into the close.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Open</th><th>Midday</th><th>Afternoon</th><th>Close</th><th>Verdict</th></tr>
+<tr><td>NVDA</td><td class="n dn">−3.0%</td><td class="n dn">−7.6%</td><td class="n dn">≈ −12.0%</td><td class="n dn">−14.01% ($125.53)</td><td><b>Accelerated all day.</b> Its worst day since Jan 27, 2025 and lowest close since May 12, 2025, plus a seventh straight weekly loss. Up 1.2% after hours ($127.00).</td></tr>
+<tr><td>MU</td><td class="n dn">−5.4%</td><td class="n dn">−13.3%</td><td class="n dn">−13.5%</td><td class="n dn">−13.9% ($594.51)</td><td><b>Played out, with no floor.</b> Closed at the lows; −23.6% on the week.</td></tr>
+<tr><td>AVGO</td><td class="n dn">−4.3%</td><td class="n dn">−12.1%</td><td class="n dn">−12.1%</td><td class="n dn">−12.2% ($304.41)</td><td><b>Played out and held.</b> No clarification on the Kuo TPU report.</td></tr>
+<tr><td>AMD</td><td class="n dn">−4.2%</td><td class="n dn">−11.6%</td><td class="n dn">−11.9%</td><td class="n dn">−13.25% ($424.39)</td><td><b>Reversal confirmed and extended.</b> Closed below TradingKey's $439 level and nearer its $404.75 marker. Up 1.6% after hours.</td></tr>
+<tr><td>GOOGL</td><td class="n">n/a</td><td class="n dn">−0.2%</td><td class="n">no print</td><td class="n dn">−2.7% ($265.29)</td><td><b>Relative strength faded</b> but held: it still beat the Nasdaq by about 2.6 points and ended worth more than Nvidia (~$3.25T vs ~$3.03T).</td></tr>
+<tr><td>TSM</td><td class="n">n/a</td><td class="n dn">−8.5%</td><td class="n">—</td><td class="n dn">−9.3% ($319.34)</td><td><b>Played out.</b> Lowest close since Mar 30.</td></tr>
+<tr><td>META / MSFT / AMZN</td><td class="n">—</td><td class="n dn">−4.9 / −2.1 / −3.2%</td><td class="n">—</td><td class="n dn">−5.9 / −2.8 / −4.1%</td><td>All drifted lower into the close but stayed far ahead of the semis.</td></tr>
+<tr><td>ORCL</td><td class="n">—</td><td class="n dn">≈ −6.7% (2:06)</td><td class="n dn">−8.1%</td><td class="n">last print −8.1%</td><td>No closing print found. The afternoon call that it was deepening was intact at the last reading.</td></tr>
+<tr><td>TSLA</td><td class="n">—</td><td class="n dn">−6.2%</td><td class="n dn">−7.2%</td><td class="n">last print −7.2%</td><td>No closing print found.</td></tr>
+<tr><td>GAP</td><td class="n up">+16.3%</td><td class="n up">+12.0%</td><td class="n up">~+12%</td><td class="n">no close found</td><td>Faded from the open but was holding about +12% in the afternoon. One of the day's few large-cap winners.</td></tr>
+<tr><td>Defensives (GIS etc.)</td><td class="n">—</td><td class="n up">+4% to +6%</td><td class="n">—</td><td class="n up">GIS +4.7% (1:44 PM)</td><td>Defensive rotation held through at least early afternoon; no closing confirmation found.</td></tr>
+</table></div>
+
+<h2>3. Today's Final Movers</h2>
+<p class="note">% change vs. the Nov 19 close. "Close" = closing price from Yahoo or TECHi (Nasdaq data). "Last" = latest intraday print found, not a close.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Day move</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="n dn">−14.01% (close $125.53)</td><td>Most active name all session (274M shares by 1:10 PM). About $400–500B of market value lost on the day. −22.9% on the week.</td></tr>
+<tr><td>MU</td><td class="n dn">−13.9% (close $594.51)</td><td>Day's biggest loser in TECHi's AI hardware basket. Lowest close since May 4.</td></tr>
+<tr><td>AMD</td><td class="n dn">−13.25% (close $424.39)</td><td>−20.5% on the week. Hunterbrook short report and BIS remote-access rule overhang.</td></tr>
+<tr><td>AVGO</td><td class="n dn">−12.2% (close $304.41)</td><td>Kuo: Google cutting 2027 TPU shipments by about a fifth. Earnings Dec 9.</td></tr>
+<tr><td>TSM</td><td class="n dn">−9.3% (close $319.34)</td><td>−19.9% on the week.</td></tr>
+<tr><td>ORCL</td><td class="n dn">last −8.1%</td><td>Closed Wednesday at $113.89, its lowest since April 2024 (Motley Fool). Now probably lower.</td></tr>
+<tr><td>TSLA</td><td class="n dn">last −7.2%</td><td>No close found.</td></tr>
+<tr><td>META</td><td class="n dn">−5.9% (close $560.84)</td><td>−12.6% on the week.</td></tr>
+<tr><td>AMZN</td><td class="n dn">−4.1% (close $246.82)</td><td>Large Anthropic investor; ANT closed about −9%.</td></tr>
+<tr><td>MSFT</td><td class="n dn">−2.8% (close $484.52)</td><td>Smallest decline among the mega-caps tracked.</td></tr>
+<tr><td>GOOGL</td><td class="n dn">−2.7% (close $265.29)</td><td>Now larger than NVDA by market value.</td></tr>
+<tr><td>AAPL</td><td class="n dn">last −1.0% (midday)</td><td>No afternoon or closing print found.</td></tr>
+<tr><td>ASML / INTC / QCOM / CRM</td><td class="n">n/a</td><td>No reliable US closing prints. ASML was −5.8% in Europe. Yahoo noted that INTC, TSM and ASML were lower.</td></tr>
+<tr class="sec"><td colspan="3">Other notable names</td></tr>
+<tr><td>CRWV</td><td class="n dn">−12.0% ($39.51)</td><td>Lowest close since its first month of trading. −25.6% on the week.</td></tr>
+<tr><td>MRVL</td><td class="n dn">−11.7% ($122.28)</td><td>−55.6% since Oct 9.</td></tr>
+<tr><td>ANET</td><td class="n dn">−11.6% ($167.65)</td><td>AI networking.</td></tr>
+<tr><td>DELL</td><td class="n dn">−11.1% ($277.98)</td><td><b>Reports Tue Nov 24 after the close.</b> −52.6% since Oct 9.</td></tr>
+<tr><td>VRT / SMCI</td><td class="n dn">−10.1% / −9.2%</td><td>Power/cooling and servers.</td></tr>
+<tr><td>APLD / IREN / NBIS</td><td class="n dn">−16% / −12% / −12.5%</td><td>Neoclouds, about 1:29 PM (Yahoo).</td></tr>
+<tr><td>ANT (context only)</td><td class="n dn">≈ −9%</td><td>Yahoo tag −9.11%, still just above the $83 IPO price.</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates / What to Watch Next Session (Mon Nov 23)</h2>
+<p class="note">Names worth investigating further, not buy/sell calls. Markets are closed for the weekend, so weekend headlines (company statements, regulatory leaks, Asia's Monday open) will set the tone. Thanksgiving week is short and liquidity will be thin.</p>
+
+<div class="card">
+<h3>1. Nvidia (NVDA): −14.0% to $125.53, +1.2% after hours &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Why it matters next week:</b> NVDA now faces a <b>disclosure test with a fixed deadline</b>. Its fiscal Q3 ended Oct 25, so the 10-Q is due within 40 days, by about <b>Dec 4</b>. Nvidia broke its practice of filing the 10-Q on earnings day and said only that it would file "in the coming weeks" (MarketWatch). The only earlier example MarketWatch found of a delay this meaningful was 2006, when Nvidia restated earnings over option grants. Friday's Reuters report that SEC enforcement staff are examining <i>accounting</i> matters makes that filing the key document: watch for changes to risk factors or legal proceedings, any disclosure of a material weakness in internal controls, or another delay. Other dates: Treasury Secretary Bessent asked on Nov 15 for answers on export controls within about 10 days (roughly Nov 25), and Jensen Huang is due to give a transcribed interview to House committees on Dec 1.</p>
+<p><b>Evidence:</b> Yahoo (close $125.53, −14.01%; after hours $127.00). TECHi (worst day since Jan 2025, lowest close since May 2025, seventh straight weekly loss, market value ~$3.03T vs Alphabet ~$3.25T). OfficeChai/TECHi summarising Reuters (accounting focus; SEC declined to comment; Nvidia did not respond). MarketWatch via Longbridge (10-Q delay; $118B in data-centre guarantees; guidance of about $130B for Q4).</p>
+<p><b>Risks / what could change the picture:</b> A filed 10-Q with no new issues, or a firm company denial, could set off a sharp short-covering rally from heavily oversold levels; the after-hours bounce hints that some investors are already positioning for one. On the downside, a Wells notice, a material-weakness disclosure, a restatement or a late filing would be a step-change in risk. Reuters noted that many SEC inquiries close without action.</p>
+</div>
+
+<div class="card">
+<h3>2. Dell (DELL), with HPE and HP: −11.1% to $277.98 into earnings &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Why it matters next week:</b> Dell is the <b>first major AI hardware earnings report after this week's collapse</b> (Tue Nov 24, after the close), with HPE reporting Monday after the close. Dell is −52.6% since Oct 9 and at its lowest close since May. The consensus cited in search results calls for very strong numbers (EPS about $6.61, revenue about $49.2B, +82% y/y), so the stock is pricing in a sharp slowdown that the reported numbers may not show. Its AI-server backlog and order commentary will be the first hard data on whether the sell-off reflects real demand or mainly positioning, and the read-across to NVDA, SMCI and ANET is direct.</p>
+<p><b>Evidence:</b> TECHi (DELL close and drawdown). Search summaries of Earnings Whispers and week-ahead previews (dates and consensus; not independently confirmed).</p>
+<p><b>Risks:</b> Report dates and consensus came from secondary summaries and should be checked. Weak margins on AI servers or customer-financing (receivables) issues could deepen the sector sell-off rather than ease it.</p>
+</div>
+
+<div class="card">
+<h3>3. Micron (MU) and memory: −13.9% to $594.51 &nbsp;<span class="conf">Confidence: Medium</span></h3>
+<p><b>Why it matters:</b> The afternoon brief asked whether memory would find a floor before the bell. It did not: MU closed at the lows, down 23.6% on the week and 42% since Oct 9, with no MU-specific negative news found. That looks like flow-driven liquidation in a crowded trade. Monday's Kospi and Japanese memory names (Samsung, SK Hynix, Kioxia) will be the first test. Further losses there would point to more pressure; a rebound would suggest Friday's selling exhausted itself.</p>
+<p><b>Evidence:</b> TECHi table; Yahoo live blog (MU −13% midday, about −22% over five sessions); afternoon brief (WDC/STX −11–12%).</p>
+<p><b>Risks:</b> Oversold, crowded trades can bounce violently, and Deutsche Bank's Chadha had already called the market "very oversold." Any new report on hyperscalers buying HBM directly would hit pricing power again.</p>
+</div>
+
+<div class="card">
+<h3>4. Broadcom (AVGO): −12.2% to $304.41 &nbsp;<span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Why it matters:</b> The day's moves suggest the market is treating the Kuo report (Google cutting 2027 TPU shipments by about a fifth) as fact even though neither company has confirmed it. A Google or Broadcom clarification is the single biggest potential catalyst before the Dec 9 earnings. AVGO is the basket's best performer since Oct 9 (−15.8%), so if the sell-off continues it has the most room left to fall.</p>
+<p><b>Evidence:</b> TECHi; midday and afternoon briefs (Goldman PT cut to $460 with Buy kept; Redburn downgrade).</p>
+<p><b>Risks:</b> The Kuo report is unconfirmed. Lower-margin pass-through revenue means the hit to profit may be smaller than the revenue figures suggest.</p>
+</div>
+
+<div class="card">
+<h3>5. AMD (AMD): −13.25% to $424.39, +1.6% after hours &nbsp;<span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Why it matters:</b> AMD has two company-specific risks on top of sector selling: the Hunterbrook China/firmware allegations and the BIS remote-access rule. It is −20.5% on the week and closed near its early-November lows. The next marker TradingKey cited is about $404.75. Any regulatory follow-up to the Hunterbrook claims, or a detailed company rebuttal, would be the next catalyst.</p>
+<p><b>Evidence:</b> Yahoo (close and after-hours prices); TECHi (weekly −20.5%); CNBC and Yahoo via earlier briefs (Hunterbrook; AMD says the claims "misrepresent" its business).</p>
+<p><b>Risks:</b> Hunterbrook says its findings do not establish a legal breach. Technical support levels are speculative.</p>
+</div>
+
+<div class="card">
+<h3>6. Alphabet (GOOGL) and the hyperscaler/hardware gap: GOOGL −2.7% &nbsp;<span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Why it matters:</b> The day's clearest pattern is the gap between AI <i>buyers</i> and AI <i>suppliers</i>. MSFT, GOOGL, AMZN and META fell 3.9% on average versus 11.4% for the hardware basket, and are down 15.5% versus 38.0% since Oct 9. GOOGL's midday strength faded but it still ended larger than Nvidia. Whether that gap holds next week (buyers gaining bargaining power) or closes (buyers' AI spending de-rated too, or a snap-back rally in chips) is the main relative-value question. Alphabet also sold C$6B of bonds, including a 40-year at 6%, at wider spreads than its May deal (TECHi). Its borrowing costs are a factor to watch.</p>
+<p><b>Evidence:</b> TECHi (closing prices, averages, bond deal); Yahoo and Stocktwits via the afternoon brief (market-value crossover).</p>
+<p><b>Risks:</b> A rally led by chips would likely rotate money out of the relatively "safe" names. GOOGL and AMZN are large Anthropic holders, and ANT is still falling. Midterm-driven political risk to data centres also hits the hyperscalers.</p>
+</div>
+
+<h2>5. Calendar: Next Session and Week Ahead</h2>
+<p class="note">Tomorrow is Saturday, so the next US session is <b>Monday, Nov 23</b>. Dates marked * come from search-result summaries of week-ahead previews and earnings calendars and were not checked against company IR or the BEA.</p>
+<div class="tbl"><table>
+<tr><th>When</th><th>Event</th><th>Why it matters</th></tr>
+<tr><td class="n">Weekend</td><td>Possible Nvidia statement or SEC/Reuters follow-ups; Asia opens Sunday evening ET</td><td>The most likely source of a Monday gap in either direction.</td></tr>
+<tr><td class="n">Mon Nov 23, after close*</td><td>Earnings: Hewlett Packard Enterprise, Zoom, Agilent, Jacobs</td><td>HPE's AI-server commentary is the first read on hardware demand.</td></tr>
+<tr><td class="n">Tue Nov 24, after close*</td><td>Earnings: <b>Dell</b>, HP Inc.</td><td>Main AI hardware report of the week (see candidate #2).</td></tr>
+<tr><td class="n">~Nov 25</td><td>About 10 days after Bessent's Nov 15 request for answers on Nvidia's export-control compliance</td><td>Informal deadline; could bring a board or counsel statement.</td></tr>
+<tr><td class="n">Wed Nov 25, 8:30 AM ET*</td><td>Q3 GDP (second estimate) and October PCE inflation</td><td>PCE is the Fed's preferred inflation gauge and comes after a hot October CPI. FedWatch is at ~92% for a Dec 9 hike.</td></tr>
+<tr><td class="n">Wed Nov 25, 2:00 PM ET*</td><td>Fed Beige Book</td><td>Regional read on inflation and AI-capex activity.</td></tr>
+<tr><td class="n">Thu Nov 26</td><td>US markets closed (Thanksgiving)</td><td>—</td></tr>
+<tr><td class="n">Fri Nov 27</td><td>Early close (1:00 PM ET); Black Friday</td><td>Thin liquidity can exaggerate moves.</td></tr>
+<tr><td class="n">Dec 1</td><td>Jensen Huang's transcribed interview with three House committees (per TECHi)</td><td>Headline risk for NVDA.</td></tr>
+<tr><td class="n">~Dec 4</td><td>Nvidia 10-Q 40-day deadline</td><td>See candidate #1.</td></tr>
+<tr><td class="n">Dec 9</td><td>FOMC decision; Broadcom earnings (per earlier briefs)</td><td>A rate hike is mostly priced in; AVGO's TPU outlook.</td></tr>
+</table></div>
+
+<h2>6. WRDS Quant Signals</h2>
+<p class="note">Not used. The only file, <code>alpha_wrds_signals.csv</code>, has an as_of_date of 2026-09-17, about 64 days old and outside the 14-day freshness window. Refreshing it would let these briefs add momentum, volume and earnings-surprise factors.</p>
+
+<h2>7. Sources</h2>
+<ul class="src">
+<li>Earlier briefs: alpha_report_2026-11-20_premarket.html, _open.html, _midday.html, _afternoon.html (local archive)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html (Yahoo Finance live blog: closing index strip, NVDA/AMD close and after-hours prices, VIX, bonds/FedWatch, Cook, Ives, Bespoke, UMich)</li>
+<li>https://www.techi.com/nvidia-falls-sec-accounting-probe-report-ai-hardware-stocks-week/ (closing-price table from Nasdaq data; weekly and since-Oct-9 changes; Huang Dec 1; 10-Q due Dec 4)</li>
+<li>https://www.inquirer.com/business/stock-market-sp-correction-ai-nvidia-anthropic-loss-20261120.html (AP, 1:44–2:59 PM: GIS, LEN, UMich, yields)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-slip-anthropic-104746137.html (Reuters premarket and headline update; next week's PCE)</li>
+<li>https://longbridge.com/news/305948432 (MarketWatch: Nvidia 10-Q delay, guarantees, Bessent deadline)</li>
+<li>https://ddindia.co.in/2026/11/nvidia-says-no-to-rehiring-huang-and-wsj-reports-sec-is-probing-the-chipmaker/ (Reuters: WSJ SEC probe, board, Megaspeed)</li>
+<li>https://247wallst.com/investing/2026/11/20/nvidia-stock-plunges-12-after-reuters-reports-an-sec-probe-of-its-accounting-its-nvidias-worst-day-since-deepseek-and-it-has-lost-2-7-trillion-since-october/ (search result only)</li>
+<li>https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html (search result only)</li>
+<li>https://www.fool.com/investing/2026/11/20/oracle-stock-just-closed-at-its-lowest-price-since-april-2024-is-it-a-buy-now/ (search result only: ORCL Nov 18 close)</li>
+<li>https://www.nacionale.com/en/articles/what-could-move-stock-market-next-week-thanksgiving-pce-gdp-dell-earnings-november-23 (search summary only; fetch failed)</li>
+<li>https://www.earningswhispers.com/ and https://www.schaeffersresearch.com/content/news/2026/11/19/the-week-ahead-thanksgiving-week-brings-more-inflation-data (search summaries only; Schaeffer's blocked by robots.txt)</li>
+<li>https://www.financecalendar.com/events/2026-11-25/ (search summary: GDP and Beige Book Nov 25)</li>
+<li>Could not fetch: benzinga.com (client error), cnbc.com/quotes (client error), investing.com movers article (rate limited), stocktitan.net live blog (not fetchable in this run)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+
+</div>
+</body>
+</html>
