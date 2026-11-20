@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-20 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Friday, November 20, 2026 &middot; Dow green, Nasdaq red &middot; chips extend losses after the open &middot; INTU fills most of its gap &middot; GAP +16% &middot; monthly options expiration</div>
+<p class="note">Generated automatically around 10:00&ndash;10:20 AM ET. Intraday figures are snapshots from 9:34 to 10:03 AM ET (CNBC via StockTitan, JournalArta, StockTitan data) and will have moved by the time you read this. Moves are vs. Thursday's Nov 19 close unless noted. <b>WRDS signals were not used:</b> the only file, <code>alpha_wrds_signals.csv</code>, is dated 2026-09-17 (about 64 days old, outside the 14-day window). Live most-active screeners (StockAnalysis) returned stale cached pages, so the movers list is built from news coverage. (Disclosure: this brief is written by Claude, an Anthropic model. Anthropic/ANT items come only from cited third-party sources, and ANT is not listed as an alpha candidate.)</p>
+
+<h2>1. First 30 Minutes: Summary</h2>
+<p><b>Mixed open that improved quickly, but the rotation out of AI hardware continued.</b> CNBC reported the Nasdaq Composite <span class="dn">&minus;1.3%</span>, S&amp;P 500 <span class="dn">&minus;0.5%</span> and Dow <span class="dn">&minus;0.1%</span> just after 9:30. By about 9:44 ET (JournalArta) the S&amp;P was 7,139.33 (<span class="dn">&minus;0.51%</span>), the Nasdaq 23,547.13 (<span class="dn">&minus;1.39%</span>), the Dow 49,290.12 (<span class="up">+0.39%</span>) and the Russell 2000 <span class="dn">&minus;2.18%</span>. By 10:01, DIA was <span class="up">+0.67%</span>, SPY was roughly flat and QQQ had narrowed to <span class="dn">&minus;0.69%</span> (about 5.8% below last Friday's close). Futures had pointed lower, with Nasdaq 100 futures at about &minus;1.8% to &minus;1.9% around 8:00 AM, so the cash session opened better than feared and kept improving. Chips did not join the recovery: NVDA, MU and AVGO fell further after the bell.</p>
+<p><b>Macro backdrop:</b> The 10-year yield dipped below 5% (about 4.99%) on haven buying. The VIX was around 29&ndash;31, near its highest since March. Brent fell about 3.7% and gold about 2.4%. University of Michigan sentiment (10:00) rose to 51.5 from 48.0; the survey director said the biggest stockholders reported weaker finances, &ldquo;consistent with continued AI-related agitation in stock markets.&rdquo; CME FedWatch was pricing about a 94% chance of a December 9 hike as of this morning (FXEmpire via Admirals). Fed Governor Cook speaks at 12:15 ET. Today's monthly opex can exaggerate swings. <b>Overall tone:</b> defensive rotation (Dow, retail, healthcare-ex-insurers) rather than broad capitulation; selling is concentrated in semis and small caps.</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Compares this morning's pre-market brief (snapshots about 5:40&ndash;8:00 AM ET) with the 10:01 AM ET StockTitan regular-session prints. &ldquo;Held&rdquo; = similar move; &ldquo;Extended&rdquo; = gap widened; &ldquo;Filled&rdquo; = gap largely closed.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-market</th><th>~10:01 AM</th><th>Read</th></tr>
+<tr><td>INTU</td><td class="dn n">&minus;8 to &minus;11%</td><td class="dn n">&minus;3.96%</td><td><b>Gap mostly filled.</b> It was still &minus;11.1% at 9:02, so roughly two-thirds of the gap was retraced in the first half hour.</td></tr>
+<tr><td>GAP</td><td class="up n">+2 to +4%</td><td class="up n">+16.31%</td><td><b>Extended sharply.</b> The biggest positive divergence on the board.</td></tr>
+<tr><td>MU</td><td class="dn n">&minus;2.5 to &minus;4%</td><td class="dn n">&minus;5.36%</td><td><b>Extended.</b> Memory kept catching down to Asia.</td></tr>
+<tr><td>AVGO</td><td class="dn n">&minus;2.5 to &minus;3%</td><td class="dn n">&minus;4.25%</td><td><b>Extended.</b> Underperforming NVDA and TSM.</td></tr>
+<tr><td>NVDA</td><td class="dn n">&minus;2.5%</td><td class="dn n">&minus;3.03% ($141.56)</td><td><b>Extended modestly.</b> Below the $145.81 pivot flagged pre-market; lowest since June 2025.</td></tr>
+<tr><td>AMD</td><td class="dn n">&minus;5 to &minus;6%</td><td class="dn n">&minus;4.16%</td><td><b>Partly filled.</b> Trimmed its loss vs. pre-market.</td></tr>
+<tr><td>AAPL</td><td class="up n">+0.3%</td><td class="up n">~+0.5% (CNBC, morning)</td><td><b>Held.</b> Relative strength intact.</td></tr>
+<tr><td>META, MSFT, TSLA, AMZN, GOOGL, INTC</td><td class="n">&minus;1.6 to &minus;5% (GOOGL +0.1%)</td><td class="note n">no reliable print</td><td>CNBC listed META and MSFT in the red after the open; no percentage figures captured.</td></tr>
+<tr><td>ROST, SNDK</td><td class="dn n">&minus;3 to &minus;5%</td><td class="note n">no print</td><td>Not captured in open coverage.</td></tr>
+<tr><td>ANT (context only)</td><td class="dn n">&minus;6 to &minus;10%</td><td class="dn n">&minus;5.21% ($92.11)</td><td>Pared losses (was &minus;9.9% at 9:02). Still about 11% above the $83 IPO price.</td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">Regular-session % change vs. Nov 19 close at about 10:01 AM ET (StockTitan data) unless noted. Volume figures were not available from a reliable live source this run.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move</th><th>Catalyst / volume note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>MU</td><td class="dn n">&minus;5.36%</td><td>Memory sell-off follows Kospi &minus;5.2% and Taiex &minus;5.65% to &minus;6.2% overnight</td></tr>
+<tr><td>AVGO</td><td class="dn n">&minus;4.25%</td><td>Google direct-HBM procurement report (unconfirmed) plus sector selling</td></tr>
+<tr><td>AMD</td><td class="dn n">&minus;4.16%</td><td>Day 2 after the Hunterbrook short report (&minus;7.7% Thursday)</td></tr>
+<tr><td>NVDA</td><td class="dn n">&minus;3.03%</td><td>$141.56; seventh straight decline if it closes lower. NVDA was the #2 most-active US name on recent sessions, so heavy volume is likely.</td></tr>
+<tr><td>TSM</td><td class="dn n">&minus;2.96%</td><td>Taiex worst week since 1991 (24/7 Wall St/Bloomberg). Reuters: TSMC is pausing some advanced orders from Chinese designers without US export licences under rules effective Nov 19.</td></tr>
+<tr><td>AAPL</td><td class="up n">~+0.5%</td><td>Report that Apple is building its own AI agent (CNBC/ZeroHedge)</td></tr>
+<tr class="sec"><td colspan="3">Other notable names</td></tr>
+<tr><td>GAP</td><td class="up n">+16.31%</td><td>Q3 profit beat its own plan (adj. EPS $0.82 vs $0.78 est.), even as it cut its FY sales outlook to roughly flat</td></tr>
+<tr><td>SVRA</td><td class="dn n">&minus;14.68%</td><td>FDA will not act on molgramostim by the Nov 22 PDUFA date; no new date given</td></tr>
+<tr><td>BLTE</td><td class="dn n">&minus;14.25%</td><td>FDA extended tinlarebant review three months to May 12, 2027</td></tr>
+<tr><td>WRD</td><td class="dn n">&minus;7.04%</td><td>Reversed a +4.75% pre-market gain despite Q3 revenue +88% y/y</td></tr>
+<tr><td>ASX / UMC</td><td class="dn n">&minus;5.97% / &minus;4.55%</td><td>Taiwan ADRs tracking the Taiex rout</td></tr>
+<tr><td>ANT</td><td class="dn n">&minus;5.21%</td><td>Day 2 after IPO; context only (see disclosure)</td></tr>
+<tr><td>INTU</td><td class="dn n">&minus;3.96%</td><td>Pared from &minus;11.1% at 9:02</td></tr>
+<tr><td>BJ</td><td class="dn n">&minus;3.89%</td><td>Raised FY EPS guide to $5.10&ndash;5.30, but the quarter included a ~$240M one-time legal-settlement benefit</td></tr>
+<tr><td>BILL</td><td class="dn n">&minus;3.82%</td><td>$61.63 vs. $63.25 TPG/Corpay cash deal price (about a 2.6% spread; close expected 1H27)</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">Framed as names worth investigating further, not as buy/sell calls. &ldquo;Legs&rdquo; vs. &ldquo;fade&rdquo; is an interpretive read on the next few hours, based on 30 minutes of data.</p>
+
+<div class="card">
+<h3>1. Intuit (INTU) &mdash; <span class="dn">&minus;3.96%</span> at 10:01 vs. <span class="dn">&minus;11.1%</span> at 9:02 <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> This is the clearest opening reversal of a pre-market gap on the board, with about two-thirds of the drop bought back within 30 minutes. The market looks to be treating the print as portfolio clean-up rather than a fundamental guide-down. Intuit <b>kept its full-year operating income and EPS forecasts</b>, its guidance excludes the Mailchimp sale, and it plans to put the ~$3.68B proceeds into buybacks once the deal closes in early 2027. A reversal this strong on a weak tape suggests the gap may have legs into midday as a relative-strength name, as long as it holds above the early-session lows.</p>
+<p><b>Evidence:</b> StockTitan live blog (&minus;9.35% at 6:31, &minus;8.07% at 8:01, &minus;11.11% at 9:02, &minus;3.96% at 10:01); Intuit release via StockTitan (Q1 revenue +12% to $4.4B; Credit Karma revenue now seen +3&ndash;7%; profit guidance maintained; buyback plan).</p>
+<p><b>Risks / what could flip it:</b> Some of the bounce may be opex-related short covering rather than real buying. Software is still under AI-disruption pressure (Intuit fell ~20% in May on job cuts and soft TurboTax data). The Credit Karma cut and the Mailchimp price (vs. ~$12B paid in 2021) are still real negatives. A retest of the 9:00 lows would undo the read.</p>
+</div>
+
+<div class="card">
+<h3>2. Gap Inc. (GAP) &mdash; <span class="up">+16.31%</span> vs. +2 to +4% pre-market <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> The move tripled-plus after the bell, which points to real institutional demand rather than a pre-market pop. The interesting tension: Gap <b>beat on profit but lowered its full-year sales outlook</b> to roughly flat (from +1&ndash;1.5%) and cut its adjusted EPS outlook. The market is rewarding margin execution and the Q4 commentary (a slow start that improved once weather normalized). With money rotating out of AI hardware into consumer and defensive names, the move could keep momentum, but a +16% gap on a guide-<i>cut</i> is also the kind of move that can partially fade once opening short covering is done.</p>
+<p><b>Evidence:</b> StockTitan (+16.31% at 10:01; Q3 net sales $4.0B +2%, comps flat; FY outlook lowered); pre-market brief (adj. EPS $0.82 vs $0.78 LSEG consensus; new Athleta CEO). JournalArta's screen flagged defensive retailers (TGT) holding uptrends.</p>
+<p><b>Risks / what could flip it:</b> Fundamentals were mixed, so the move leans on positioning. The holiday quarter depends on weather and consumer spending, and big stockholders are reporting weaker finances (UMich). A fade back toward +8&ndash;10% would suggest the open was mostly short covering.</p>
+</div>
+
+<div class="card">
+<h3>3. Micron (MU) &mdash; <span class="dn">&minus;5.36%</span>, extended from &minus;2.5 to &minus;4% pre-market <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> The memory sell-off <b>has legs</b> so far. MU widened its pre-market loss after the open while AMD and TSM were trimming theirs, which looks like continued de-risking rather than a one-off gap. The overnight drivers were global: Kospi &minus;5.2%, Nikkei &minus;5.1%, Tokyo Electron &minus;7.1%, ASML &minus;5.8% in Europe, and the Taiex down about 17.5% for the week, its worst since 1991. The Google direct-HBM procurement report is an extra variable for HBM pricing.</p>
+<p><b>Evidence:</b> StockTitan (&minus;5.36% at 10:01; overseas tech moves per CNBC); Admirals/24/7 Wall St (Taiex &minus;6.2%, worst week since 1991); pre-market brief (SK Hynix/Kioxia headlines; SNDK split).</p>
+<p><b>Risks / what could flip it:</b> No company-specific negative news for MU was found; this is sector and flow driven. Deutsche Bank's Chadha calls the market &ldquo;very oversold.&rdquo; An opex-driven reflex bounce in semis is possible this afternoon.</p>
+</div>
+
+<div class="card">
+<h3>4. Broadcom (AVGO) &mdash; <span class="dn">&minus;4.25%</span>, extended from &minus;2.5 to &minus;3% pre-market <span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Thesis:</b> The pre-market brief asked whether AVGO would underperform the chip group; so far it is. It is down more than NVDA (&minus;3.0%) and TSM (&minus;3.0%), which fits the market pricing a stock-specific risk from reports that Google may buy TPU HBM directly. If AVGO keeps lagging the group into midday, that would support the idea that investors see a lasting hit to TPU pass-through revenue, not just sector beta.</p>
+<p><b>Evidence:</b> StockTitan (&minus;4.25% at 10:01); pre-market brief / TradingKey (Google HBM procurement report, &ldquo;market sources&rdquo;).</p>
+<p><b>Risks / what could flip it:</b> The HBM report is unconfirmed. Pass-through HBM is typically low-margin, so the profit impact may be smaller than the revenue optics. A denial or clarification from either company could reverse the move.</p>
+</div>
+
+<div class="card">
+<h3>5. Nvidia (NVDA) &mdash; <span class="dn">&minus;3.03%</span> at $141.56 <span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Thesis:</b> NVDA broke below the $145.81 monthly pivot flagged pre-market and is trading below every close since June 5, 2025. Its decline is steady rather than a flush, which looks like continued de-risking, not capitulation. For midday, the question is whether NVDA starts to diverge from MU and AVGO; holding while those two fall would be an early sign of selling exhaustion in AI leadership. Upcoming: Jensen Huang is due to testify before three House committees on December 1 (Admirals), which is a known headline risk.</p>
+<p><b>Evidence:</b> StockTitan ($141.56 at 10:01; lowest since June 2025); pre-market brief (pivot level, Inception deal talks, SpaceX GPU financing).</p>
+<p><b>Risks / what could flip it:</b> Opex pinning, the VIX near 30 and strategist &ldquo;oversold&rdquo; calls set up conditions for a sharp short-covering rally. Cook's 12:15 remarks could swing rate-sensitive tech either way.</p>
+</div>
+
+<div class="card">
+<h3>6. AMD (AMD) &mdash; <span class="dn">&minus;4.16%</span>, trimmed from &minus;5 to &minus;6% pre-market <span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Thesis:</b> On day 2 after the Hunterbrook short report, AMD is doing <i>better</i> than its pre-market indication while MU and AVGO did worse. That partial gap fill suggests buyers are showing up near the $472 area flagged this morning. If it holds, this could be the first sign the short-report selling is being absorbed. Hunterbrook itself said its findings do not establish a breach of export law (Yahoo Finance, via Admirals), which limits how far the legal angle can run without new information.</p>
+<p><b>Evidence:</b> StockTitan (AMD &minus;4.42% at 9:02, &minus;4.16% at 10:01); Admirals (Hunterbrook allegation and caveat); pre-market brief ($489.19 close, ~$472 support).</p>
+<p><b>Risks / what could flip it:</b> A company response has still not been seen. More detail on export-licence exposure, such as the TSMC China order pause, or more scrutiny of AI customer financing could restart selling.</p>
+</div>
+
+<div class="card">
+<h3>7. Apple (AAPL) &mdash; about <span class="up">+0.5%</span>, relative strength held <span class="conf">Confidence: Low</span></h3>
+<p><b>Thesis:</b> AAPL is one of the few mega-caps in the green, and its pre-market strength held into the open. Its lower AI-capex exposure plus reports of an in-house AI agent make it a candidate funding destination as money rotates out of AI hardware. Its relative strength into midday is a useful gauge of whether the rotation <i>within</i> tech continues.</p>
+<p><b>Evidence:</b> CNBC live blog via search summary (+0.5% Friday morning); ZeroHedge pre-market (+0.2%, AI-agent report).</p>
+<p><b>Risks / what could flip it:</b> The move is small and the open print is less precisely sourced than the others. A broad de-grossing would likely drag AAPL down with the group.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. <code>alpha_wrds_signals.csv</code> has as_of_date 2026-09-17 (about 64 days old, outside the 14-day freshness window). This brief uses public research only. Refreshing the WRDS extract would restore momentum, volume-ratio and earnings-surprise factors here.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026 (StockTitan live blog, updated 10:20 AM ET; cites CNBC live coverage and company releases)</li>
+<li>https://journalarta.com/en/2026/11/20/stock-market-today-dow-rises-0-39-while-nasdaq-drops-1-39-at-open/ (index levels ~9:44 AM ET; note its AMD &minus;7.72% figure is Thursday's close)</li>
+<li>https://journalarta.com/en/2026/11/20/wall-street-open-target-and-babcock-hold-uptrends-as-meta-brent-slide/ (technical screen; META Thursday close $596.22)</li>
+<li>https://admiralmarkets.com/analytics/traders-blog/why-is-the-stock-market-down-today-20-november-2026 (FedWatch odds, Taiex, Hunterbrook caveat, TSMC/Reuters, calendar)</li>
+<li>https://www.zerohedge.com/markets/futures-tumble-anthropic-ipo-hangover-turns-ai-unwind-global-rout (search summary only; pre-market mega-cap moves)</li>
+<li>https://www.cnbc.com/2026/11/20/stocks-moving-the-most-today-live-updates.html (search snippet only; page fetch failed)</li>
+<li>https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html (search summary only; AAPL +0.5% Friday morning)</li>
+<li>C:\Users\phc220001\OneDrive\alpha\alpha_report_2026-11-20_premarket.html (this morning's pre-market brief, for gap comparison)</li>
+<li>Not usable this run: stockanalysis.com/markets/active and /gainers (stale cached pages from Nov 9&ndash;13); businessupturn.com open article (fetch error).</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
