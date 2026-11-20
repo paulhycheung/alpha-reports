@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-20 – Pre-Market Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Pre-Market Edition</span> &nbsp; Friday, November 20, 2026 &middot; Nasdaq futures &minus;1.8% after Thursday's 2%+ reversal &middot; VIX above 30 &middot; Nikkei and Kospi &minus;5% &middot; INTU &minus;8 to &minus;11% &middot; AMD, memory and optical names lower again &middot; monthly options expiration</div>
+<p class="note">Generated automatically at about <b>8:40 AM ET</b>, later than the ~7:30 AM target. Futures and pre-market figures are snapshots from about 5:40 to 8:00 AM ET and can change before the 9:30 AM open. Where sources disagree, a range is shown. <b>WRDS signals were not used:</b> <code>alpha_wrds_signals.csv</code> is dated 2026-09-17, about 64 days old and outside the 14-day window. (Disclosure: this brief is written by Claude, an Anthropic model. All Anthropic/ANT items come only from cited third-party sources, and ANT is not listed as an alpha candidate.)</p>
+
+<h2>1. Overnight &amp; Global Summary</h2>
+<p><b>US futures point to a second down day, led by tech.</b> As of about 8:00 AM ET (Yahoo Finance quote strip), S&amp;P 500 futures were <span class="dn">&minus;0.95%</span> (7,128.75), Nasdaq 100 futures <span class="dn">&minus;1.81%</span> (26,119), Dow futures <span class="dn">&minus;0.34%</span> (49,013) and Russell 2000 futures <span class="dn">&minus;0.33%</span>. Futures weakened through the morning: at 5:40 AM, TipRanks had Nasdaq 100 at &minus;1.10%, S&amp;P at &minus;0.38% and Dow at +0.16%. The <b>VIX was 30.8</b> (+8.4%), its highest level since late March. The 10-year yield was about 5.05%, with one report saying it briefly dipped below 5% on haven buying. Gold was about $3,569 (&minus;3.2%, at one point near $3,515, its lowest since September 2025). WTI was about $82.5 and Bitcoin about $61.5K, its lowest since July.</p>
+<p><b>Thursday was a sharp reversal.</b> The Nasdaq was up as much as 2.1% intraday before rolling over soon after Anthropic (ANT) began trading. It closed <span class="dn">&minus;2.25%</span> at 23,879.2. The S&amp;P 500 closed <span class="dn">&minus;2.02%</span> at 7,175.83, and the Dow fell 1,101 points (<span class="dn">&minus;2.19%</span>) to 49,097.06, its first close below 50,000 since June. For the week, the Dow is down about 6.2%, its worst week since April 2025, and the S&amp;P 500 and Nasdaq are each down about 5%. ANT closed at $97.17 (+17% vs. its $83 IPO price) after opening at $111.50, and was indicated 6&ndash;10% lower pre-market.</p>
+<p><b>Asia sold off hard, and Europe is mostly lower.</b> The <b>Nikkei 225 fell 5.06%</b> to 56,436.65 (Topix &minus;3.88%) and the <b>Kospi fell 5.2%</b>, both led by chip and memory names. The Hang Seng fell 1.89%, Shanghai fell 1.2&ndash;1.5%, Shenzhen fell 3.35%, and the ASX 200 fell 1.58%. India's Sensex rose 1.08%. In Europe, the DAX and Euro Stoxx 50 were each about &minus;2.0% and the FTSE 100 was &minus;0.6%. One wire showed the CAC 40 at +1.3%, which conflicts with other reports that all major European indexes were lower, so treat it as unconfirmed.</p>
+<p><b>Overall tone: risk-off, with possible capitulation.</b> Three worries are driving the selling: whether AI capex will pay off (UBS: &ldquo;persistent pressure on chipmakers and cloud companies&rdquo;), the chance of a <b>December Fed rate hike</b> with the 10-year still around 5%, and tightening liquidity, with gold, copper and crypto all falling together. Today is <b>monthly options expiration</b> and the VIX is above 30, so a large gamma unwind could exaggerate intraday swings in either direction. Mega-cap tech is mixed pre-market: NVDA &minus;2.5%, META &minus;2.4%, AMZN &minus;1.9%, MSFT &minus;1.7%, while AAPL is +0.3% and GOOGL +0.1%.</p>
+
+<h2>2. Today's Economic Calendar / Key Events (ET)</h2>
+<div class="tbl"><table>
+<tr><th>Time</th><th>Event</th><th>Note</th></tr>
+<tr><td class="n">8:25</td><td>Fed Governor Waller: welcoming remarks</td><td>Waller has recently been on the hawkish side. Any hint on December matters with hike odds live.</td></tr>
+<tr><td class="n">8:30</td><td>Canada retail sales (Sep)</td><td>0.7% exp. / 1.2% prior (TD)</td></tr>
+<tr><td class="n">10:00</td><td>U. Michigan consumer sentiment, final (Nov)</td><td>Watch the inflation-expectations components for read-through to Fed pricing</td></tr>
+<tr><td class="n">12:15</td><td>Fed Governor Cook on the US economy</td><td>&mdash;</td></tr>
+<tr><td class="n">All day</td><td>Monthly options expiration (third Friday)</td><td>VIX above 30, so pin and gamma effects can be large</td></tr>
+<tr><td class="n">Open</td><td>SanDisk (SNDK) 8-for-1 split goes effective</td><td>Quotes are split-adjusted from today. Check that any % change is vs. the adjusted close.</td></tr>
+<tr class="sec"><td colspan="3">Earnings</td></tr>
+<tr><td class="n">Pre-mkt today</td><td>BJ's Wholesale (BJ), WeRide (WRD), Buckle (BKE)</td><td>Per TipRanks' calendar</td></tr>
+<tr><td class="n">Reported Thu PM</td><td>INTU, ROST, GAP</td><td>See movers and candidates below</td></tr>
+<tr class="sec"><td colspan="3">Next week (holiday-shortened)</td></tr>
+<tr><td class="n">Tue Nov 24</td><td>ADI, MDT (pre-mkt); ADSK, WDAY (post-mkt)</td><td>Thanksgiving Thursday Nov 26: US exchanges closed</td></tr>
+</table></div>
+
+<h2>3. Pre-Market Movers</h2>
+<p class="note">Percentage change vs. Thursday's close. Sources and snapshot times vary (about 5:00&ndash;8:00 AM ET). Ranges reflect different reports.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-mkt</th><th>Catalyst note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>AMD</td><td class="dn n">&minus;5 to &minus;6%</td><td>Follows Thursday's &minus;7.7% close at $489.19. Hunterbrook disclosed a short questioning AMD's AI customer-financing support. New US export-licence rules. Overnight trading was near $472.</td></tr>
+<tr><td>INTC</td><td class="dn n">&minus;4 to &minus;5%</td><td>Chip-complex selling after the Asia rout</td></tr>
+<tr><td>MU</td><td class="dn n">&minus;2.5 to &minus;4%</td><td>Memory sold off globally (Kospi &minus;5.2%). SNDK and WDC were &minus;4 to &minus;5%.</td></tr>
+<tr><td>AVGO</td><td class="dn n">&minus;2.5 to &minus;3%</td><td>Report that Google is considering buying TPU HBM directly instead of through Broadcom</td></tr>
+<tr><td>NVDA</td><td class="dn n">&minus;2.5%</td><td>Indicated for a sixth straight decline. Closed Thursday at $145.98, a 52-week low and about &minus;29% in November. <i>The Information</i> reports it is in advanced talks to buy the AI startup Inception (&ge;$500M).</td></tr>
+<tr><td>META</td><td class="dn n">&minus;2.4%</td><td>Mega-cap AI-capex de-rating</td></tr>
+<tr><td>TSLA</td><td class="dn n">&minus;2.1%</td><td>HSBC upgraded it to Hold from Reduce, PT $359 (from $157). The target is still below the ~$374 price.</td></tr>
+<tr><td>AMZN</td><td class="dn n">&minus;1.9%</td><td>Tech beta. UBS separately argues META and AMZN may come out ahead as AI investing gets riskier.</td></tr>
+<tr><td>MSFT</td><td class="dn n">&minus;1.7%</td><td>Tech beta</td></tr>
+<tr><td>AAPL</td><td class="up n">+0.3%</td><td>Relative strength. A job posting points to an in-house agentic AI assistant.</td></tr>
+<tr><td>GOOGL</td><td class="n">+0.1%</td><td>Relative strength. Possible direct HBM procurement shifts TPU economics toward Google.</td></tr>
+<tr><td>TSM, ASML, QCOM, ORCL, CRM</td><td class="note n">n/a</td><td>No pre-market quotes captured. ASML/Europe semis are likely weak given the DAX and Euro Stoxx 50 at &minus;2%.</td></tr>
+<tr class="sec"><td colspan="3">Other notable gappers</td></tr>
+<tr><td>INTU</td><td class="dn n">&minus;8 to &minus;11.4%</td><td>Q1 beat (rev $4.354B, +12%; adj. EPS $2.91), but Q2 guidance was below consensus, the FY27 revenue guide was trimmed to $23.08&ndash;23.37B, Credit Karma's outlook was cut, and it is selling Mailchimp to Bending Spoons for ~$3.68B</td></tr>
+<tr><td>ANT</td><td class="dn n">&minus;6 to &minus;10%</td><td>Day 2 after the record IPO ($83 offer; $97.17 close). Listed for context only (see disclosure).</td></tr>
+<tr><td>COHR / LITE</td><td class="dn n">&minus;5%+</td><td>Optical/AI-networking selling spreads</td></tr>
+<tr><td>MRVL</td><td class="dn n">&minus;4%+</td><td>AI-semis selling</td></tr>
+<tr><td>SNDK</td><td class="dn n">&minus;5%+</td><td>Memory selling. First split-adjusted session (8-for-1).</td></tr>
+<tr><td>ROST</td><td class="dn n">&minus;3 to &minus;4%</td><td>Q3 beat (EPS $1.91 vs $1.87), but Q4 EPS guidance of $2.16&ndash;2.25 was below $2.27 consensus</td></tr>
+<tr><td>GAP</td><td class="up n">+2 to +4%</td><td>Q3 adj. EPS $0.82 vs $0.78 est. Athleta named a new CEO.</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates to Watch at the Open</h2>
+<p class="note">These are framed as names worth watching at the open, not as buy/sell calls. Thesis and risk notes are interpretive.</p>
+
+<div class="card">
+<h3>1. Intuit (INTU) &mdash; <span class="dn">&minus;8% to &minus;11%</span> pre-market <span class="conf">Confidence: Medium-High</span></h3>
+<p><b>Thesis:</b> This is the cleanest company-specific gap on the board. The quarter beat, but every forward-looking item disappointed: Q2 revenue guidance of $4.931&ndash;4.954B and adj. EPS of $3.17&ndash;3.22 were below consensus, FY27 revenue was trimmed to $23.08&ndash;23.37B (+8&ndash;9%), and Credit Karma's outlook was cut. The Mailchimp sale for about $3.68B is far below the roughly $12B Intuit paid in 2021, and the market may read it as an admission of a write-down. The open will show whether investors treat this as a guide-down or as portfolio clean-up. Note the proceeds go to buybacks.</p>
+<p><b>Evidence:</b> Investing.com/Yahoo (&minus;11% early, FY guide), TradingKey (Q2 guide details, Mailchimp terms, buyback use), Benzinga list ($274.53, &minus;11.4%), TradingKey technicals (overnight ~$279.96 near $279.66 support).</p>
+<p><b>Risks / fade:</b> The pre-market move narrowed from about &minus;11% to &minus;8% in later snapshots, so the gap may already be partly absorbed. Buyback support and the Q1 beat could draw dip buyers. On the other hand, broad software weakness and a tape with the VIX above 30 could extend the move.</p>
+</div>
+
+<div class="card">
+<h3>2. AMD (AMD) &mdash; <span class="dn">&minus;5% to &minus;6%</span> pre-market, after &minus;7.7% Thursday <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> Three overlapping hits make this the most stressed watchlist name heading into the open: (a) a Hunterbrook short report arguing AMD is exposed to an AI-spending slowdown through lease guarantees, compute-capacity commitments and equity stakes in customers; (b) new US export-licence rules and scrutiny of ties to Entity List firms; and (c) the global chip rout. A second down gap after a 7.7% drop tests whether there is a buyer at the $472&ndash;473 area, which TradingKey flags as support.</p>
+<p><b>Evidence:</b> TradingKey (Hunterbrook short, &minus;6% pre-market; $489.19 close, ~$471.78 overnight), JournalArta (Thursday &minus;7.72%), Investing.com/Yahoo (&minus;5%+).</p>
+<p><b>Risks / fade:</b> Short-report sell-offs often partly reverse once the company responds, and none had been seen as of this writing. Opex positioning and an oversold reading could produce a sharp reflex bounce. Downside risk: more detail on export-licence impact, or more scrutiny of customer financing across the sector.</p>
+</div>
+
+<div class="card">
+<h3>3. Memory complex: Micron (MU), with SNDK/WDC as read-through &mdash; <span class="dn">&minus;2.5% to &minus;5%</span> <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis:</b> The overnight epicenter was memory. The Kospi fell 5.2% and the Nikkei 5.1%, led by chip and memory names, and SK Hynix's possible move to lift its Kioxia stake was in the headlines. US memory names are catching down: MU &minus;2.5 to &minus;4%, SNDK &minus;5%+ on its first split-adjusted day, WDC &minus;4%. The open will show whether US memory is simply tracking Asia or whether there is new fundamental pressure. The Google-HBM procurement story (see AVGO) is also an HBM-pricing variable to watch.</p>
+<p><b>Evidence:</b> TradingKey (MU/WDC &minus;4%+, SNDK &minus;5%+, SNDK split, SK Hynix/Kioxia), KuCoin/Zhitong (Kospi &minus;5.2%, Nikkei &minus;5.1%), Investing.com/Yahoo (MU &minus;2.5 to &minus;4%).</p>
+<p><b>Risks / fade:</b> The SNDK split can distort screen-based % changes. A move driven by Asia can fade if US cash buyers step in after a 5% weekly drop. There is no company-specific negative datapoint for MU in the sources consulted.</p>
+</div>
+
+<div class="card">
+<h3>4. Broadcom (AVGO) &mdash; <span class="dn">&minus;2.5% to &minus;3%</span> <span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Thesis:</b> This is a stock-specific story inside the sector sell-off. Reports say Google is considering buying some TPU high-bandwidth memory directly instead of routing it all through Broadcom. That would reduce Broadcom's pass-through revenue and possibly its share of the TPU bill of materials. The question for the open is whether AVGO underperforms the SOX, which would suggest the market sees a durable share or margin issue.</p>
+<p><b>Evidence:</b> TradingKey (&ldquo;market sources,&rdquo; &minus;3% pre-market), Investing.com/Yahoo (AVGO in the &minus;2.5 to &minus;4% chip group).</p>
+<p><b>Risks / fade:</b> The report is unconfirmed and sourced to market chatter. Pass-through HBM is typically low-margin, so the profit impact may be smaller than the revenue optics. A denial or clarification could reverse the move.</p>
+</div>
+
+<div class="card">
+<h3>5. Nvidia (NVDA) &mdash; <span class="dn">&minus;2.5%</span>, sixth straight decline <span class="conf">Confidence: Low-Medium</span></h3>
+<p><b>Thesis:</b> NVDA closed at a 52-week low of $145.98, down about 29% in November despite a strong quarter. That makes it the bellwether for whether the AI-capex de-rating capitulates or extends. TradingKey flags $145.81 as the monthly pivot, so a gap below it at the open is a level traders will watch. Offsetting headlines: advanced talks to buy the diffusion-model startup Inception (&ge;$500M), and SpaceX's ~$32B bond sale to finance leased Nvidia GPUs, which is demand-positive but adds to worries about financing structures.</p>
+<p><b>Evidence:</b> KuCoin/Zhitong (&minus;2.46% pre-market, six-day slide), TradingKey (52-week low, Inception talks, SpaceX financing).</p>
+<p><b>Risks / fade:</b> Opex, VIX above 30 and a stretched monthly decline can produce violent short-covering bounces. Fed commentary (Waller 8:25, Cook 12:15) could swing rate-sensitive tech either way.</p>
+</div>
+
+<div class="card">
+<h3>6. Tesla (TSLA) &mdash; <span class="dn">&minus;2.1%</span> despite an HSBC upgrade <span class="conf">Confidence: Low</span></h3>
+<p><b>Thesis:</b> The headline sounds bullish (HSBC upgrades to Hold and more than doubles its target to $359), but the target is still about 4% below the ~$374 price. HSBC's $359 blends a $507 SpaceX-acquisition scenario (33% premium) with a $212 fundamental value. It calls the merger's business logic unclear and says the main motivation is control. The useful thing to watch is whether TSLA trades with tech beta or on merger optionality.</p>
+<p><b>Evidence:</b> Investing.com (HSBC upgrade, $359 PT), TipRanks/Blockonomi (valuation blend), KuCoin/Zhitong (&minus;2.07% pre-market).</p>
+<p><b>Risks / fade:</b> Musk has said that treating an acquisition as certain overstates it, and any deal would need shareholder approval. Headline-driven and high-beta.</p>
+</div>
+
+<div class="card">
+<h3>7. Relative-strength watch: Apple (AAPL) and Alphabet (GOOGL) &mdash; flat to +0.3% <span class="conf">Confidence: Low</span></h3>
+<p><b>Thesis:</b> These are the only two mega-caps green pre-market while Nasdaq futures are down about 1.8%. AAPL has less AI-capex exposure. GOOGL could gain if it buys HBM directly, cutting TPU costs at Broadcom's expense. If both hold up at the open, the market may be rotating within tech toward balance-sheet-funded AI users and away from suppliers and leveraged capex builders.</p>
+<p><b>Evidence:</b> KuCoin/Zhitong (AAPL +0.31%, GOOGL +0.09%), TradingKey (Google HBM report), UBS view via TipRanks (META/AMZN as potential relative winners).</p>
+<p><b>Risks / fade:</b> Small moves on light pre-market volume. A broad de-grossing at the open can drag every name down together.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used today. The only file, <code>alpha_wrds_signals.csv</code>, has as_of_date 2026-09-17 (about 64 days old, outside the 14-day freshness window). This brief is based on public research only. Refreshing the WRDS extract would restore momentum, volume and earnings-surprise factors to this section.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/stocks/articles/premarket-movers-anthropic-slides-debut-105600121.html (Investing.com via Yahoo Finance; futures quote strip)</li>
+<li>https://www.tradingkey.com/analysis/stocks/us-stocks/262315308-us-pre-market-anthropic-tradingkey</li>
+<li>https://www.tipranks.com/news/stock-market-today-nov-20-futures-wobble-as-anthropic-ipo-fails-to-lift-sentiment</li>
+<li>https://journalarta.com/en/2026/11/20/stock-market-today-nasdaq-sp-500-futures-slide-as-ai-selloff-deepens/</li>
+<li>https://www.kucoin.com/news/flash/u-s-stock-futures-mixed-as-vix-surpasses-30-anthropic-pre-market-dips-over-7 (Zhitong Caijing translation)</li>
+<li>https://economics.td.com/domains/economics.td.com/documents/reports/bottom-line/tables/2026-11-13/upcoming.htm (TD Economics calendar)</li>
+<li>https://www.investing.com/news/analyst-ratings/hsbc-upgrades-tesla-stock-rating-on-acquisition-potential-raises-price-target-to-359-93CH-5040834 (search result; summary only)</li>
+<li>https://www.tipranks.com/news/hsbc-upgrades-tesla-stock-to-hold-and-raises-price-target-to-359-heres-why (search result; summary only)</li>
+<li>https://www.benzinga.com/trading-ideas/movers/26/11/63465346/why-gap-shares-are-trading-higher-by-around-4-here-are-20-stocks-moving-premarket (search snippet only; page fetch failed)</li>
+<li>https://www.fxleaders.com/news/2026/11/20/dow-futures-tumble-toward-48-5k-support-as-nasdaq-futures-risk-slipping-below-25k/ (search result; summary only)</li>
+<li>Not retrievable this run: stocktitan.net live blog and the CNBC live updates page (fetch errors).</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
