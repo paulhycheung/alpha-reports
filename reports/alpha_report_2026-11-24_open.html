@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-24 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Tuesday, November 24, 2026 &middot; S&amp;P 500 <span class="dn">&minus;0.6%</span> &middot; Nasdaq <span class="dn">&minus;1.55%</span> &middot; Dow <span class="up">+0.37%</span> &middot; Russell 2000 <span class="up">+0.42%</span> &middot; VIX 27.4 &middot; NVDA <span class="dn">&minus;6.7%</span> <span class="note">(Yahoo header, ~10:17 AM ET)</span></div>
+<p class="note">Generated automatically at about <b>11:05 AM ET</b>, later than the ~10:00 AM target. Price data are snapshots from <b>9:49&ndash;10:31 AM ET</b> (times noted), not live. Yahoo's most-active screener returned stale data (from early November) and was discarded, so the "volume" notes below come from news reports, not a volume screen. <b>WRDS signals were not used</b>: the only file, <code>alpha_wrds_signals.csv</code>, has an as_of_date of 2026-09-17 (68 days old), outside the 14-day window. (Disclosure: this brief is written by Claude, an Anthropic model. ANT is not covered or listed as a candidate.)</p>
+
+<h2>1. How the First Hour Traded</h2>
+<p><b>A weak open that quickly turned into a rotation rather than a broad sell-off.</b> At the open, the Dow fell about 0.6%, the S&amp;P 500 1.3% and the Nasdaq 1.8% (Yahoo). Within 30&ndash;45 minutes the broad market recovered about half or more of that: by about 10:17 AM the <b>Dow was +0.37%, the Russell 2000 +0.42% and the S&amp;P 500 only &minus;0.6%</b>, while the Nasdaq was still &minus;1.55%. QQQ improved from &minus;2.07% at 9:01 AM to &minus;1.40% at 10:01 AM, and DIA was +0.53% (StockTitan). The VIX eased to about 27.4 from ~30 in pre-market. The 10-year yield was flat at about 4.92%.</p>
+<p><b>The selling was concentrated in AI hardware, and it got worse after the open.</b> AMD (&minus;8.0%), Micron (&minus;7.7%), Nvidia (&minus;5.6% at 10:01, &minus;6.7% by ~10:17), HPE (&minus;13 to &minus;14%), Dell (&minus;10.8%) and Analog Devices (&minus;15.6%) all traded below their pre-market levels. Retailers that beat went the other way: Abercrombie +22%, Dick's +14%, Kohl's +13%, Dollar Tree +10%, Burlington +9%. The <b>10:00 AM Conference Board consumer confidence index came in at 103.3</b> against 92.1 expected, up 11.4 points to its highest since January 2025, which supports the consumer side of the rotation. Fed-funds futures still price about a 95% chance of a 25 bp hike on Dec. 9 (Yahoo). UBS's Mark Haefele summed up the theme: expect "greater differentiation" between profitable AI platforms and companies that depend on debt or "continued speculative growth" (via StockTitan, citing CNBC).</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Names flagged in this morning's pre-market edition. "Extended" = the gap got bigger after the open; "held" = similar; "faded" / "reversed" = the gap shrank or flipped.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Pre-market (this morning)</th><th>After the open</th><th>Read</th></tr>
+<tr><td>NVDA</td><td class="dn n">&minus;3.6% (9:28) to &minus;5.5% (~8:30)</td><td class="dn n">&minus;5.64% ($155.74, 10:01); &minus;6.74% (~10:17)</td><td><b>Extended.</b> No opening dip-buying. Now inside the $150&ndash;155 zone flagged this morning, but not below $150.</td></tr>
+<tr><td>HPE</td><td class="dn n">&minus;9.6% to &minus;13%</td><td class="dn n">&minus;13.14% ($41.71, 10:01); &minus;14.26% (~9:49)</td><td><b>Extended.</b> Has given back ~90% of Monday's gain but is still above Friday's $40.91 close.</td></tr>
+<tr><td>DELL</td><td class="dn n">&minus;5.9% to &minus;7%</td><td class="dn n">&minus;10.78% (~9:49)</td><td><b>Extended.</b> The HPE margin worry is spreading to Dell before its report tonight.</td></tr>
+<tr><td>MU / AMD</td><td class="dn n">&minus;3 to &minus;6.5%</td><td class="dn n">&minus;7.67% / &minus;8.03% (10:01)</td><td><b>Extended.</b> MU has given back nearly half of Monday's +19%.</td></tr>
+<tr><td>ADI</td><td class="am n">lower; &minus;9.4% (8:00), &minus;11.6% (8:58)</td><td class="dn n">&minus;15.59% (10:01)</td><td><b>Extended sharply.</b> The biggest large-cap decline of the morning.</td></tr>
+<tr><td>SMTC</td><td class="dn n">&minus;7.4% to &minus;12.6%</td><td class="dn n">&minus;14.17% (10:01)</td><td><b>Extended.</b></td></tr>
+<tr><td>CRWV / IREN / NBIS</td><td class="dn n">&minus;4 to &gt;&minus;5%</td><td class="note n">not captured</td><td>No reliable post-open quotes found; carry-over unknown.</td></tr>
+<tr><td>INSM</td><td class="up n">+14.3%</td><td class="up n">+14.39% ($170.54, 10:01)</td><td><b>Held.</b> Trading as a deal spread ($4.46, ~2.6% below the $175 offer).</td></tr>
+<tr><td>DLTR</td><td class="up n">+10.8%</td><td class="up n">+9.86% (10:01)</td><td><b>Held.</b></td></tr>
+<tr><td>BBY</td><td class="up n">+5% to +5.7% (~8:00)</td><td class="am n">&minus;0.15% (10:01)</td><td><b>Gap filled</b> (fade began before the open: &minus;0.08% at 9:01).</td></tr>
+<tr><td>FLNC</td><td class="up n">+16.5% to +23.2% (9:01)</td><td class="up n">+10.79% (10:01)</td><td><b>Partly faded</b>: about half the gap given back.</td></tr>
+<tr><td>A (Agilent)</td><td class="up n">+5.7% (ATH)</td><td class="note n">not captured</td><td>&mdash;</td></tr>
+</table></div>
+<p class="note">Correction to this morning: the pre-market edition listed Huang's testimony as a House hearing on Dec. 1. Yahoo reports the Senate Banking Committee confirmed his testimony for <b>Dec. 3</b>.</p>
+
+<h2>3. Opening Movers</h2>
+<p class="note">% vs. Monday's close. Times are when the quote was recorded. Watchlist names not listed (GOOGL, AVGO beyond the figure shown, ORCL, CRM, ASML, QCOM, INTC, TSM) had no reliable post-open quote this run.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>Move</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Watchlist</td></tr>
+<tr><td>NVDA</td><td class="dn n">&minus;5.64% (10:01) &middot; &minus;6.74% (~10:17)</td><td>Led the chip decline; FT reports interim CEO Kress was kept out of the reinstatement talks</td></tr>
+<tr><td>AMD</td><td class="dn n">&minus;8.03% (10:01)</td><td>Worst of the large-cap chip names</td></tr>
+<tr><td>MU</td><td class="dn n">&minus;7.67% (10:01, $653.45)</td><td>Gave back nearly half of Monday's gain</td></tr>
+<tr><td>AVGO</td><td class="dn n">&minus;2.04% (10:01)</td><td>Holding up much better than other chips</td></tr>
+<tr><td>TSLA</td><td class="dn n">&minus;1.85% (~10:31)</td><td>Single source (Finnhub-based snapshot). SpaceX merger headline not confirmed by a primary source today.</td></tr>
+<tr><td>META / AMZN</td><td class="dn n">&minus;0.82% / &minus;0.62% (~10:31)</td><td>Single source</td></tr>
+<tr><td>AAPL / MSFT</td><td class="up n">+0.67% / +0.32% (~10:31)</td><td>Single source. Megacap software and devices are steady.</td></tr>
+<tr class="sec"><td colspan="3">Outside the watchlist: decliners</td></tr>
+<tr><td>SHOE</td><td class="dn n">&minus;21.92% (10:00)</td><td>Q3 sales fell to $280.0M; cut full-year guidance</td></tr>
+<tr><td>ADI</td><td class="dn n">&minus;15.59% (10:01)</td><td>Rev +42% to $4.37B; FQ1 guide $4.4B &plusmn; $150M</td></tr>
+<tr><td>HPE</td><td class="dn n">&minus;13.14% to &minus;14.26%</td><td>Cloud &amp; AI margin guided to ~14% in FY27 from 18.4%</td></tr>
+<tr><td>SMTC</td><td class="dn n">&minus;14.17% (10:01)</td><td>Record sales, +58% y/y; guide $480M for a 14-week quarter</td></tr>
+<tr><td>DY</td><td class="dn n">&minus;12.10% (10:01)</td><td>Rev +41.6% to $2.06B; updated FY outlook $7.66&ndash;7.73B</td></tr>
+<tr><td>DELL</td><td class="dn n">&minus;10.78% (~9:49)</td><td>Reports after the close; HPE read-through</td></tr>
+<tr class="sec"><td colspan="3">Outside the watchlist: gainers</td></tr>
+<tr><td>EMBC</td><td class="up n">+28.54% (10:01)</td><td>FQ4 rev +13.1% to $298.7M; first FY27 outlook. Gain doubled after the open.</td></tr>
+<tr><td>ANF</td><td class="up n">+22.47% (10:01)</td><td>Record Q3 sales $1.4B (+11%); FY EPS guide raised to $13.70&ndash;13.90. Gain doubled after the open (+10.9% at 9:00).</td></tr>
+<tr><td>COGT</td><td class="up n">+17.18% (10:01)</td><td>FDA approved Ekitna for GIST (released 9:27 AM)</td></tr>
+<tr><td>AMTM</td><td class="up n">+15.69% (10:01)</td><td>FY27 outlook; first buyback, up to $500M</td></tr>
+<tr><td>INSM</td><td class="up n">+14.39% (10:01)</td><td>Sanofi deal at $175 cash</td></tr>
+<tr><td>DKS</td><td class="up n">+14.28% (10:01)</td><td>FY EPS guide raised to $11.40&ndash;12.25</td></tr>
+<tr><td>KSS</td><td class="up n">+13.33% (10:01)</td><td>Sales +1.3%; FY outlook raised. EPS of $2.15 includes a $1.16 tax benefit.</td></tr>
+<tr><td>FLNC</td><td class="up n">+10.79% (10:01)</td><td>Record backlog ~$8.9B; down from +23% pre-open</td></tr>
+<tr><td>DLTR</td><td class="up n">+9.86% (10:01)</td><td>Beat and raise; comps +4.6%</td></tr>
+<tr><td>BURL</td><td class="up n">+9.05% (10:01)</td><td>Adj. EPS $1.73 above its own forecast; comps +1% ("disappointing," per CEO)</td></tr>
+<tr><td>SNY</td><td class="up n">+8.62% (10:01)</td><td>Acquirer of Insmed; the market welcomed the deal</td></tr>
+</table></div>
+
+<h2>4. Opening Alpha Candidates</h2>
+<p class="note">These are research observations worth investigating further, not recommendations. "Confidence" is how strongly the evidence supports the read, not a forecast of returns.</p>
+
+<div class="card">
+<h3>HPE / DELL &mdash; AI-server margin read-through &nbsp; <span class="dn">HPE &minus;13 to &minus;14% &middot; DELL &minus;10.8%</span> &nbsp; <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis (opening move looks like it has legs into midday):</b> Both stocks fell <b>further</b> after the open than in pre-market, even as the broad market recovered. That pattern (an extended gap while the index improves) points to real repricing rather than a beta sell-off. The market is treating HPE's guide to a ~14% Cloud &amp; AI margin (from 18.4%) as an industry problem, not an HPE one: both companies face rising memory costs, and suppliers reportedly sought 25&ndash;45% price increases on agreed AI-server contracts. Dell has now given back roughly two-thirds of Monday's ~20% gain <b>before</b> it reports. That lowers the bar somewhat, but the market wants proof on margins, not revenue. Analysts expect revenue of ~$49.3B and adjusted EPS of $6.55&ndash;6.62. Options implied about &plusmn;13% before today's drop.</p>
+<p><b>Evidence:</b> StockTitan (HPE &minus;13.14% at $41.71; Q4 rev +50%; adj. gross margin &minus;2.2 pts q/q). Yahoo/InvestorsHub (DELL &minus;10.78%, HPE &minus;14.26%; contract-price increases; MS PT $403, Citi PT $550). Yahoo live blog (HPE margin guide; Dell &minus;7% pre-market).</p>
+<p><b>Key risks / what could flip this read:</b> If Dell guides ISG margins steady or explains away memory costs, today's drop would leave room for a sharp post-earnings rebound. HPE is near Friday's close ($40.91), a level where buyers may step in. Thin holiday-week liquidity can make moves bigger in both directions.</p>
+</div>
+
+<div class="card">
+<h3>NVDA &mdash; NVIDIA &nbsp; <span class="dn">&minus;5.6% (10:01) to &minus;6.7% (~10:17)</span>; pre-market &minus;3.6% at 9:28 &nbsp; <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis (continued give-back, not yet a breakdown):</b> The pre-market edition asked whether dip-buyers would appear at the open. They didn't. NVDA traded below its 9:28 AM pre-market price and kept falling into 10:15. At about $154 it has given back roughly a quarter to a third of Monday's $39.52 gain, and it sits inside the $150&ndash;155 zone flagged this morning. The governance story is not over: the FT reports that interim CEO and CFO Colette Kress was kept out of the talks that brought Huang back, and Senate Banking testimony is set for Dec. 3. The Entity List additions (Alibaba's Singapore unit, Megaspeed-linked firms) take effect tomorrow. A close below $150 would suggest Monday was mostly short covering. Holding $150&ndash;155 into the afternoon would point to normal "Turnaround Tuesday" profit-taking. Yahoo's Jared Blikre notes that in 20 cases since 1993 where SPY opened Monday up 2%+, it rose the next day only 9 times.</p>
+<p><b>Evidence:</b> StockTitan ($155.74 at 10:01; closes $165.05 Mon / $125.53 Fri). Yahoo NVDA live blog ($159.08 pre-market at 9:28; Kress/FT; Dec. 3 hearing; Blikre statistic). Yahoo market blog (quote tag &minus;6.74%).</p>
+<p><b>Key risks:</b> The sell-side is supportive (Bernstein back to Outperform, PT $200). AAPL and MSFT holding up suggests big-cap tech isn't being dumped wholesale, so a midday bounce is plausible. Headline risk from Washington cuts both ways.</p>
+</div>
+
+<div class="card">
+<h3>ADI &mdash; Analog Devices &nbsp; <span class="dn">&minus;15.6%</span> (10:01); &minus;9.4% at 8:00, &minus;11.6% at 8:58 &nbsp; <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis (momentum lower; the sharpest "beat but sold" move of the day):</b> Each check this morning showed a deeper loss, and the stock fell another 4 points after the open. That steady decline is unusual for a large-cap analog name and suggests institutional selling, not a one-off gap. Revenue rose 42% to $4.37B, but it was only marginally above consensus, and the FQ1 guide of <b>$4.4B &plusmn; $150M</b> implies almost no sequential growth at the midpoint. The pre-market edition noted a secondary-source EPS guide of $3.82 &plusmn; $0.20, below the $4.06 just reported. ADI rose sharply in the AI-optics and power trade (communications +81%), so the market is now questioning that premium. Semtech (&minus;14%) shows the same pattern.</p>
+<p><b>Evidence:</b> StockTitan (time series of moves; FQ1 revenue guide from the release). Pre-market edition (segment growth; EPS guide from a single secondary source, not confirmed against the 8-K).</p>
+<p><b>Key risks:</b> A 15% drop in a high-quality large cap often attracts value buyers by the afternoon. The EPS-guide figure is still unconfirmed. If the rest of the chip group bounces, ADI could rebound with it.</p>
+</div>
+
+<div class="card">
+<h3>ANF / DKS / KSS / DLTR / BURL &mdash; Retail beats, plus a consumer-confidence surprise &nbsp; <span class="up">+9% to +22%</span>; BBY faded to flat &nbsp; <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis (gains mostly have legs, but the group is splitting):</b> Unlike the chips, most retail gains <b>grew</b> after the open. Abercrombie went from +10.9% at 9:00 to +22.5% at 10:01, and Burlington rebounded to +9% after fading to +2.3% before the open. The 10:00 AM consumer confidence print (<b>103.3 vs 92.1 expected</b>; present situation 132.8, expectations 83.6) gives this rotation a macro reason beyond earnings. The split matters: <b>Best Buy</b> posted its best comps in five years yet gave up its whole 5&ndash;6% pre-market gain. Beats with a clear margin or guidance surprise (ANF, DKS, DLTR) are holding; a beat in a lower-margin, tech-dependent business (BBY) is not. Kohl's gain deserves scrutiny: its EPS includes a $1.16 tax benefit.</p>
+<p><b>Evidence:</b> StockTitan (time series; guidance figures from releases). Conference Board via PR Newswire, FXStreet and Advisor Perspectives (103.3, +11.4 pts, highest since Jan. 2025). Yahoo (BBY results).</p>
+<p><b>Key risks:</b> A strong confidence print also supports the case for a Fed hike, which could hurt the whole market later. Holiday-week liquidity can exaggerate moves. Wednesday's October PCE could change the macro story.</p>
+</div>
+
+<div class="card">
+<h3>MU / AMD &mdash; Memory and GPU give-back &nbsp; <span class="dn">&minus;7.7% / &minus;8.0%</span> (10:01) &nbsp; <span class="conf">Confidence: Low&ndash;Medium</span></h3>
+<p><b>Thesis (biggest losses in the chip group, likely tied to HPE/Dell):</b> Micron has given back nearly half of Monday's +19%, much more than Nvidia's share. That fits the HPE story: if AI-server makers are squeezed by memory costs, the market may expect pushback on memory pricing or simply be locking in profits on the biggest winner. AMD is weaker than NVDA despite HPE's $1.2B Vultr deal for AMD Helios racks. The pre-market edition noted a headline about AMD registering 337M shares for resale; details are still unreviewed and could be a supply overhang. Broadcom (&minus;2.0%) is holding up much better, which suggests the selling is targeted rather than sector-wide.</p>
+<p><b>Evidence:</b> StockTitan (MU $653.45 vs $707.70 Monday close; AMD &minus;8.03%; AVGO &minus;2.04%). Yahoo/InvestorsHub (memory-cost pressure on server makers).</p>
+<p><b>Key risks:</b> The memory shortage (HPE's CEO said it could last into 2H 2028) supports MU's pricing power, which argues for buying the dip rather than a lasting reversal. The AMD share-registration detail is unverified.</p>
+</div>
+
+<div class="card">
+<h3>INSM &mdash; Insmed (Sanofi deal) &nbsp; <span class="up">+14.39%</span> ($170.54 vs $175 offer) &nbsp; <span class="conf">Confidence: High (that it trades as a deal spread)</span></h3>
+<p><b>Thesis:</b> The pre-market gap held exactly, and INSM is now trading as merger arbitrage. The $4.46 spread (~2.6%) against a first-half 2027 close suggests the market sees little regulatory risk and is not betting on a rival bid. Sanofi (+8.6%) rising on the news is a sign of a well-received deal, which makes a rival bid less likely. The opportunity now is in the spread, not the stock's direction.</p>
+<p><b>Evidence:</b> StockTitan (price, spread, deal terms from the Sanofi release: shareholder vote and US/foreign approvals needed; funded with cash and new debt; expected to add to EPS by the end of 2028).</p>
+<p><b>Key risks:</b> Antitrust or timing delays would widen the spread. Higher rates make waiting until 2027 more costly, which also widens it.</p>
+</div>
+
+<h2>5. Sources</h2>
+<ul class="src">
+<li>https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html (index levels at open and ~10:17 AM; VIX; Fed odds; HPE/DELL pre-market; BBY)</li>
+<li>https://stocktitan.net/articles/stock-market-today-live-november-24-2026 (time-stamped moves at 6:35, 8:00, 9:01 and 10:01 AM; movers table; Sanofi/Insmed terms; UBS quote)</li>
+<li>https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html (NVDA $159.08 pre-market at 9:28; FT/Kress; Dec. 3 Senate hearing; Blikre "Turnaround Tuesday" statistic; Bernstein)</li>
+<li>https://finance.yahoo.com/markets/stocks/articles/why-dell-technologies-stock-falling-134017599.html (DELL &minus;10.78%, HPE &minus;14.26% quote tags; contract-price increases; MS/Citi targets; consensus)</li>
+<li>https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html; https://www.fxstreet.com/news/us-cb-consumer-confidence-index-improves-to-1033-in-november-202611241512; https://www.advisorperspectives.com/dshort/updates/2026/11/24/consumer-confidence-conference-board-november-2026 (consumer confidence 103.3, via search summary)</li>
+<li>https://www.marketalleys.com/post/meta-platforms-trades-at-592-71-down-in-us-session-2026-11-24 (AAPL/MSFT/AMZN/META/TSLA ~10:31 AM snapshot, via search summary; single source)</li>
+<li>https://www.trefis.com/stock/hpe/articles/628212/hpe-expects-thinner-ai-margins-is-dell-next/2026-11-24; https://blockonomi.com/dell-stock-slips-before-earnings-as-hpe-margin-warning-hits/ (HPE&rarr;Dell read-through, via search summary)</li>
+<li>https://sellthenews.org/catalyx/market/2026-11-24; https://www.techflowpost.com/en-US/newsletter/146576 (index color, via search summary; timing unclear, not relied on for figures)</li>
+<li>Prior edition: alpha_report_2026-11-24_premarket.html (local archive)</li>
+<li class="note">Checked but not usable: finance.yahoo.com/markets/stocks/most-active (served stale early-November data); neocloud (CRWV/IREN/NBIS) searches returned only older-dated articles; searches for INTC/ORCL/TSM/QCOM returned no Nov. 24 quotes; Tesla/SpaceX search returned only October coverage. WRDS file alpha_wrds_signals.csv (as of 2026-09-17) was stale and not used.</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
