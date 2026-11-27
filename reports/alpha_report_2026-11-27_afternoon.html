@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-27 – Afternoon Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.banner{background:var(--card);border:2px solid var(--amber);border-radius:8px;padding:10px 14px;margin:14px 0}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Afternoon Edition</span> &nbsp; Friday, November 27, 2026 (Black Friday half-day, <b>closed 1:00 PM ET</b>) &middot; S&amp;P 500 <span class="up">+1.61%</span> (7,298.34) &middot; Nasdaq <span class="up">+2.31%</span> (24,129.50) &middot; Dow <span class="up">+1.19%</span> (50,780.64) &middot; Nasdaq-100 <span class="up">+2.61%</span> &middot; VIX 23.81</div>
+
+<div class="banner"><b class="am">Timing note:</b> this edition normally runs into a live afternoon session, but today <b>equities closed at 1:00 PM ET</b> (bonds at 2:00 PM). Everything below is a <b>post-close read</b> of the final hour and a setup view for Monday, Nov 30. Index closes are Reuters figures (via World Today Journal) and they match The Glass Desk's weekly review. Single-stock closes are from StockTitan's 1:03 PM update and The Glass Desk, unless noted. All moves are vs. <b>Wednesday, Nov. 25</b> closes. <b>No FOMC statement today</b>: the next meeting is Dec 8&ndash;9, and the Fed's pre-meeting blackout starts tomorrow (Nov 28). <b>WRDS signals not used</b>: <code>alpha_wrds_signals.csv</code> is dated 2026-09-17, 71 days old.</div>
+
+<h2>1. Session Summary</h2>
+<p><b>Stocks closed at the session highs.</b> The rally kept building after midday. Between 12:32 PM and the bell, the S&amp;P went from +1.39% to <span class="up">+1.61%</span> and the Nasdaq from +1.86% to <span class="up">+2.31%</span>. QQQ closed <span class="up">+2.69%</span> at $650.99, about where it closed Monday ($651.03). That means it recovered almost all of its Tuesday&ndash;Wednesday drop. SPY ended above its Monday close.</p>
+<p><b>Weekly results</b> (The Glass Desk):</p>
+<ul>
+<li>S&amp;P 500 <b>+5.61%</b>, its best week since April 2025. That recovers about 60% of the prior week's 8.6% drop.</li>
+<li>Nasdaq Composite +6.68%.</li>
+<li>Dow +5.47%, its best week since October 2022.</li>
+<li>Russell 2000 +6.53%.</li>
+</ul>
+<p>The S&amp;P is still 6.66% below its Oct 6 record. Reuters says November is on track to be the worst for the S&amp;P and Nasdaq since 2008.</p>
+<p><b>Fed:</b> no 2 PM statement or Fed speeches today. The main macro point remains that markets are pricing a <b>December rate <i>hike</i></b> as near-certain:</p>
+<ul>
+<li>CME FedWatch was about 97&ndash;98% for a 25 bp hike at Dec 8&ndash;9, and about 60&ndash;66% for another hike in January (Reuters, Yahoo, via The Glass Desk).</li>
+<li>That follows core PCE at 3.3% y/y and Q3 GDP revised to 4.3%.</li>
+<li>Governor Waller has floated a 50 bp move.</li>
+</ul>
+<p>The 10-year was about 4.93% at midday, and TLT closed down 1.18%. <b>Tone:</b> a strong, broad close, but on thin holiday volume. The equity rally and the rate-hike pricing point in opposite directions, and that conflict is still open. Gold +3.9% and Bitcoin roughly flat point to hedging under the risk-on move.</p>
+
+<h2>2. Follow-up on Earlier Calls</h2>
+<p class="note">Compares this morning's pre-market, open and midday briefs with the 1:00 PM close.</p>
+<div class="tbl"><table>
+<tr><th>Name</th><th>Open (~11 AM)</th><th>Midday (~12:10 PM)</th><th>Close (1:00 PM)</th><th>Read</th></tr>
+<tr><td>NVDA</td><td class="n dn">&minus;1% to &minus;2%</td><td class="n">&minus;0.2%</td><td class="n up">+0.80% ($150.49)</td><td><b class="am">The fade call reversed in absolute terms but held in relative terms.</b> NVDA turned positive in the last hour, but still trailed QQQ by about 1.9 points. It closed 8.8% below Monday's close.</td></tr>
+<tr><td>SNDK</td><td class="n up">+10% to +14%</td><td class="n up">+12.7% to +13.7%</td><td class="n up">+15.96%</td><td><b class="up">Played out and extended</b> into the bell. Top large-cap chip gainer.</td></tr>
+<tr><td>MU</td><td class="n up">+4% to +6%</td><td class="n up">~+7%</td><td class="n up">+7.60%</td><td><b class="up">Played out.</b> Up 8.82% for the week.</td></tr>
+<tr><td>MRVL</td><td class="n up">~+6.5%</td><td class="n">n/q</td><td class="n up">+7.34%</td><td><b class="up">Played out.</b> Up 14.93% for the week. Earnings are Tuesday (Dec 1) after the close; see the source note below.</td></tr>
+<tr><td>AMZN</td><td class="n up">+2.8%</td><td class="n up">+3.9%</td><td class="n up">~+4.0% ($254.16)*</td><td><b class="up">Held near the highs.</b></td></tr>
+<tr><td>TSLA</td><td class="n up">~+3.5%</td><td class="n up">+4.9%</td><td class="n up">~+5.2% (~$400)*</td><td><b class="up">Extended</b> to round-number $400. Up 15.67% for the week.</td></tr>
+<tr><td>DELL</td><td class="n up">+6.0%</td><td class="n up">+6.0% to +6.3%</td><td class="n up">~+5.1% ($312.24)*</td><td><b class="am">Faded slightly</b> from midday (late read not confirmed). Up 12.47% for the week. AI backlog is now confirmed at $132.3B.</td></tr>
+<tr><td>VRTX</td><td class="n dn">&minus;6.65%</td><td class="n dn">&minus;5.56%</td><td class="n dn">&minus;5.24%</td><td><b class="am">Gap kept slowly filling</b>, about 2 points off the pre-market low.</td></tr>
+</table></div>
+<p class="note">* Finnhub/Chartmill snapshot taken near or just after the bell, not a confirmed official close.</p>
+
+<h2>3. Afternoon / Closing Movers</h2>
+<p class="note">% vs. Wednesday close. ★ = fixed watchlist. Volume was thin across the market (Reuters). No reliable per-ticker volume screen was available.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move (close)</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Gainers</td></tr>
+<tr><td>XP</td><td class="n up">+18.07%</td><td>Top S&amp;P gainer. Driven by Brazil's finance minister pick (see card).</td></tr>
+<tr><td>INTR / BBD</td><td class="n up">+16.21% / ~+15.6%</td><td>Brazil financials. EWZ ended about +9.8%.</td></tr>
+<tr><td>SNDK</td><td class="n up">+15.96%</td><td>Extended from about +13% at midday.</td></tr>
+<tr><td>ANT (Anthropic)</td><td class="n up">+10.98% ($91.88)</td><td>Back above its $83 IPO price. <i>Disclosure: this report is written by Claude, an Anthropic model. ANT is listed only as a data point and is deliberately not an alpha candidate.</i></td></tr>
+<tr><td>AXON</td><td class="n up">~+7.7% (12:35 PM)</td><td>Body 5 camera and AI &ldquo;Guardian&rdquo; launch (Finexus aggregator, unverified).</td></tr>
+<tr><td>★ MU</td><td class="n up">+7.60%</td><td>Memory leadership held.</td></tr>
+<tr><td>MRVL</td><td class="n up">+7.34%</td><td>Rebound ahead of Tuesday's earnings.</td></tr>
+<tr><td>★ TSLA</td><td class="n up">~+5.2%</td><td>About $400. Moving with SpaceX and Musk headlines.</td></tr>
+<tr><td>DELL</td><td class="n up">~+5.1%*</td><td>Slightly off its midday level.</td></tr>
+<tr><td>★ AMZN</td><td class="n up">~+4.0%*</td><td>Black Friday / Cyber Week story.</td></tr>
+<tr><td>★ NVDA</td><td class="n up">+0.80%</td><td>Last-hour turn positive. Still the clear AI laggard.</td></tr>
+<tr class="sec"><td colspan="3">Losers</td></tr>
+<tr><td>ALVO</td><td class="n dn">&minus;12.35%</td><td>Janssen won a preliminary injunction blocking the U.S. launch of AVT05, a biosimilar of Simponi. Alvotech will appeal.</td></tr>
+<tr><td>VRTX</td><td class="n dn">&minus;5.24%</td><td>FDA decision date (PDUFA) for povetacicept moved to Feb 28, 2027.</td></tr>
+<tr><td>ERO</td><td class="n dn">~&minus;5% (10 AM)</td><td>Tucum&atilde; mine suspended by the Par&aacute; state environment agency.</td></tr>
+<tr class="sec"><td colspan="3">No confirmed same-day close</td></tr>
+<tr><td>★ AAPL, MSFT, GOOGL, META, AVGO, AMD, TSM, ORCL, CRM, ASML, QCOM, INTC</td><td class="n">n/q</td><td>Only intraday or weekly figures found. Weekly: META +12.15%, INTC +11.93%, ORCL +5.26%, AAPL +4.66%, GOOGL +3.65%, AVGO +2.61%, MSFT +1.72%, AMD +0.04% (Glass Desk). StockTitan says AMD and AVGO closed higher Friday.</td></tr>
+</table></div>
+
+<h2>4. Afternoon Alpha Candidates</h2>
+<p class="note">Framed as &ldquo;worth investigating further,&rdquo; not as recommendations. With the cash session already over, each card focuses on how the name sets up for Monday's full-volume session.</p>
+
+<div class="card">
+<h3>NVDA &mdash; Nvidia <span class="up">+0.80% ($150.49)</span> <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis: positive close, but the relative weakness is the signal, and next week is crowded with event risk.</b> NVDA was flat at midday and turned positive in the last hour. It still lagged QQQ by about 1.9 points and the Nasdaq-100 by about 1.8 points on a strong risk-on day. Over the week it is up about 20% but has given back 8.8% from Monday's close and sits 37% below its Oct 6 record. The market is still discounting governance and China/export risk, and that will be tested quickly.</p>
+<p><b>Evidence:</b> StockTitan close data. The Glass Desk reports:</p>
+<ul>
+<li>S&amp;P Global put Nvidia's AA rating on CreditWatch negative on Wednesday, citing board independence, succession and export controls.</li>
+<li>Closed-door House committee interviews are set for <b>Tue Dec 1</b> (per CNBC).</li>
+<li>Senate Banking testimony is set for <b>Thu Dec 3</b> (per Reuters). This confirms the hearing dates that midday flagged as unverified.</li>
+</ul>
+<p>Separately, CNBC, citing Bloomberg, reported barred Blackwell chips installed at a Shanghai data center.</p>
+<p><b>Risks:</b> A clean hearing could close the gap with peers quickly. A credit downgrade, or new diversion findings, could widen it. The rate-hike backdrop weighs on all long-duration tech.</p>
+</div>
+
+<div class="card">
+<h3>SNDK / MU &mdash; Memory <span class="up">SNDK +15.96%, MU +7.60%</span> <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis: the day's strongest follow-through. It extended rather than faded into the bell.</b> SNDK added about 2&ndash;3 more points after midday. Closing at the highs on a half-day suggests buyers were still active at the bell rather than taking profits. Morgan Stanley IM's Andrew Slimmon says fast money that has deleveraged out of tech may be &ldquo;forced to chase back in&rdquo; next week. That argues for persistence.</p>
+<p><b>Evidence:</b> Close data from StockTitan and The Glass Desk. MU is up 8.82% for the week. The memory catalyst is a Kioxia/Nvidia flash test (TipRanks headline; Finexus mentions a 3D NAND demo). Sandisk trades at about 5x trailing earnings (midday edition, Fool).</p>
+<p><b>Risks:</b></p>
+<ul>
+<li>TrendForce warns that DRAM contract price gains will narrow.</li>
+<li>BNP downgraded MU on Nov 24.</li>
+<li>A 16% one-day move on holiday volume is the kind of move Monday's full session often retraces in part.</li>
+<li>Record SOXL inflows ($12.7B over Oct&ndash;Nov) mean leveraged retail positioning is heavy.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>XP / Brazil financials (XP, INTR, BBD, EWZ) <span class="up">XP +18.07%, INTR +16.21%, BBD ~+15.6%, EWZ ~+9.8%</span> <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis: a new macro catalyst that this morning's briefs did not cover.</b> President Lula named Bradesco chairman Luiz Carlos Trabuco Cappi as finance minister (starting 2027). The market read the pick as a turn toward fiscal pragmatism, and it set off a broad re-rating of U.S.-listed Brazilian assets. That included banks, brokers, Petrobras, Vale and utilities. The gains held all session. The question for next week is whether this is a one-day risk-premium compression or the start of a multi-week rotation as funds re-weight underweight positions.</p>
+<p><b>Evidence:</b> The appointment is confirmed by a primary source: Bradesco's Form 6-K, filed at 7:40 AM ET, says Trabuco accepted. Bloomberg reporting (via StockTitan) shows a Tokyo-listed Brazil fund up as much as 8.3%. Close data from StockTitan. Finexus, an unverified aggregator, says JPMorgan and Goldman see possible re-rating for Brazilian financials.</p>
+<p><b>Risks:</b></p>
+<ul>
+<li>He does not take office until 2027, so this is an expectations trade.</li>
+<li>A proposed U.S. tariff on Brazil (10% on Embraer jets, per StockTitan Nov 25) adds trade friction.</li>
+<li>Brazilian local markets and FX will have the first say over the weekend and Monday.</li>
+<li>Gains of 15&ndash;18% in one day on thin U.S. volume can partly reverse.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>AMZN &mdash; Amazon <span class="up">~+4.0% ($254.16)*</span> <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis: the consumer-data catalyst continues through Cyber Monday.</b> AMZN held its midday gain into the close. Weekend and Cyber Monday spending data are the next scheduled catalysts. Finexus, citing Adobe, says Black Friday online spending is forecast at $12.9B (+9.2% y/y). Mastercard SpendingPulse forecasts holiday retail sales +5.5%.</p>
+<p><b>Evidence:</b> Finnhub snapshot via search ($254.16, +3.98%). The Fool midday report credits &ldquo;strong Black Friday demand.&rdquo; AMZN is up only 2.96% for the week, behind META (+12%) and TSLA (+16%). It participated less on Monday's spike, so it has less to give back.</p>
+<p><b>Risks:</b> Forecasts are not results; actual Adobe and Salesforce tallies will arrive over the weekend. Planned Amazon worker strikes. Rising yields under December-hike pricing.</p>
+</div>
+
+<div class="card">
+<h3>TSLA &mdash; Tesla <span class="up">~+5.2% (~$400)*</span> <span class="conf">Confidence: Low</span></h3>
+<p><b>Thesis: a momentum move to a round number with no company-specific catalyst.</b> TSLA extended slightly after midday to about $400 and is up 15.67% for the week, the best among the mega-caps. The drivers are still Musk and SpaceX headlines (the share-giveaway pledge and merger speculation), not Tesla fundamentals.</p>
+<p><b>Evidence:</b> Search snapshots (400.00 / $400.04, +5.22&ndash;5.23%). Weekly figure from The Glass Desk.</p>
+<p><b>Risks:</b> No fundamental catalyst. $400 is an obvious level for profit-taking. High beta into a Fed-hike week.</p>
+</div>
+
+<div class="card">
+<h3>VRTX / ALVO &mdash; Biotech regulatory and legal setbacks <span class="dn">VRTX &minus;5.24%, ALVO &minus;12.35%</span> <span class="conf">Confidence: Low&ndash;Medium</span></h3>
+<p><b>Thesis: two different kinds of setback, worth watching for divergence.</b></p>
+<ul>
+<li><b>VRTX:</b> The FDA <i>extended</i> its review rather than rejecting the drug. VRTX kept recovering all day, about 2 points off its pre-market low. William Blair (via Finexus) calls it a procedural &ldquo;major amendment.&rdquo;</li>
+<li><b>ALVO:</b> A preliminary injunction adds to fundamental stress. Q3 revenue was $111.6M vs. about $125M expected. Cash fell to $61.5M from $172.4M.</li>
+</ul>
+<p><b>Evidence:</b> StockTitan close data and linked company releases. World Today Journal (Reuters-sourced) for Alvotech financials.</p>
+<p><b>Risks:</b></p>
+<ul>
+<li><b>VRTX:</b> No detail on what the amendment contains.</li>
+<li><b>ALVO:</b> The timing of the appeal is uncertain, and the low cash balance raises the risk of a dilutive raise.</li>
+</ul>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. <code>alpha_wrds_signals.csv</code> (10 tickers) has an as_of_date of <b>2026-09-17</b>, 71 days old and outside the 14-day window. Refresh the WRDS export to bring momentum, volume and earnings-surprise factors back into these briefs.</p>
+
+<h2>Source-quality notes</h2>
+<ul class="note">
+<li>Finexus (12:35 PM) described the S&amp;P as at &ldquo;record highs.&rdquo; That is <b>incorrect</b>: the index closed 6.66% below its Oct 6 record. Its figures were used only for intraday color.</li>
+<li>HuggingNews gave the Dow at +0.66%. That conflicts with Reuters' +1.19%, and Reuters' number reconciles exactly with Wednesday's close plus 597.69 points. Reuters was used.</li>
+<li>World Today Journal says Marvell reported Thursday evening. The Glass Desk (citing Marvell) and StockTitan's earnings calendar both put Marvell's report on <b>Tuesday, Dec 1</b>. The Dec 1 date is treated as correct.</li>
+<li>Several per-stock figures in that article are pre-market numbers.</li>
+</ul>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>Local: C:\Users\phc220001\OneDrive\alpha\alpha_report_2026-11-27_midday.html (earlier calls; it summarizes the pre-market and open editions)</li>
+<li>Local: C:\Users\phc220001\OneDrive\alpha\alpha_wrds_signals.csv (stale, not used)</li>
+<li>https://www.stocktitan.net/articles/stock-market-today-live-november-27-2026 (1:03 PM close update; QQQ/SPY/NVDA/SNDK/MU/ANT/XP/INTR/BBD/EWZ/VRTX/ALVO; Bradesco 6-K)</li>
+<li>https://www.sec.gov/Archives/edgar/data/1160330/000129281426005412/bbd20261127_6k.htm (Bradesco 6-K, referenced via StockTitan)</li>
+<li>https://theglassdesk.substack.com/p/weekly-market-review-nov-27-2026 (index closes and weekly returns, Fed pricing, NVDA CreditWatch and hearing dates, Dell backlog, VIX, cross-asset)</li>
+<li>https://world-today-journal.com/wall-street-indexes-close-holiday-week-with-gains-on-ai-rebound/ (Reuters index closes, trade data, Slimmon and Cox quotes, Fed-hike pricing, Alvotech financials)</li>
+<li>https://api.finexus.net/api/news/earnings/130144/html (12:35 PM intraday color: XP, SNDK, AXON, VRTX, sector ETFs, Adobe and Mastercard forecasts; aggregator, partly unreliable)</li>
+<li>https://huggingnews.com/us-markets/us-stock-market-adds-1-trillion-on-black-friday-to-hit-highest-close-sin-e192e3c7 (about $1T added in market value; SOXL inflows; Dow figure inconsistent)</li>
+<li>https://blockonomi.com/todays-market-movers-sandisk-marvell-nvidia-lead-black-friday-tech-rebound/ (pre-market movers; 3Fourteen's Pies on a &ldquo;2018 replay&rdquo; rate risk)</li>
+<li>https://www.tradingnews.com/news/stock-market-today-sp-500-spx-targets-7500-usd-nasdaq-ixic-rises-1-5-dow-dji-tops-50600-micron-mu-gains (intraday snapshot)</li>
+<li>WebSearch summaries: marketalleys.com (AMZN $254.16), chartmill.com gap movers (DELL $312.24), particle.news, kalkine.com and marketintellabs.com (December-hike odds), tipranks.com (memory / Nvidia flash test headline)</li>
+<li>Fetch failed: https://www.cnbc.com/2026/11/27/stocks-moving-the-most-today-live-updates.html and https://www.chartmill.com/news/SJM/Chartmill-59253-SP-500-Top-Movers-Semiconductor-and-Tech-Stocks-Lead-Todays-Session. Blocked (not in provenance set): Yahoo live blog and fool.com market-coverage index.</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
