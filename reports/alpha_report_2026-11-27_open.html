@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report 2026-11-27 – Open Edition</title>
+<style>
+:root{--bg:#f5f6f8;--fg:#1c2330;--card:#fff;--line:#d5d9e0;--th:#e8ebf0;--muted:#555;--dn:#b3261e;--up:#1b7a3d;--tag:#1c2330;--tagfg:#fff;--amber:#8a5a00}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e4e7ec;--card:#1d2128;--line:#343a44;--th:#262b33;--muted:#a7adb7;--dn:#ff8a80;--up:#7fd99a;--tag:#e4e7ec;--tagfg:#14171c;--amber:#f2c46b}}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:24px 16px;line-height:1.5}
+.w{max-width:960px;margin:0 auto}
+h1{margin:0 0 4px}h2{border-bottom:2px solid var(--fg);padding-bottom:4px;margin-top:32px}h3{margin:20px 0 6px;font-size:16px}
+.tag{display:inline-block;background:var(--tag);color:var(--tagfg);padding:2px 10px;border-radius:12px;font-size:13px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--th)}
+td.n{white-space:nowrap}
+tr.sec td{background:var(--th);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.dn{color:var(--dn);font-weight:600}.up{color:var(--up);font-weight:600}.am{color:var(--amber);font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.banner{background:var(--card);border:2px solid var(--amber);border-radius:8px;padding:10px 14px;margin:14px 0}
+.conf{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:0 8px;font-size:12px}
+ul.src{font-size:13px;color:var(--muted);word-break:break-all}
+.disc{margin-top:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="w">
+<h1>Alpha Research Brief</h1>
+<div><span class="tag">Open Edition</span> &nbsp; Friday, November 27, 2026 (Black Friday half-day, close 1:00 PM ET) &middot; S&amp;P 500 opened <span class="up">+1.11%</span> (7,262.61) &middot; Nasdaq opened <span class="up">+1.58%</span> (23,958.46) &middot; Dow opened <span class="up">+0.55%</span> (50,458.86)</div>
+
+<div class="banner"><b class="am">Timing note:</b> this edition was compiled at about <b>11:05&ndash;11:20 AM ET</b>, later than the usual ~10:00 AM slot, so it covers roughly the first 90 minutes of trading. All moves are vs. <b>Wednesday, Nov. 25</b> closes (S&amp;P 7,182.78, Dow 50,182.95, Nasdaq 23,585.80). Intraday quotes come from several outlets taken at different times and often disagree, so they are shown as ranges. Yahoo's screener pages returned stale data (dated early November) and were <b>not</b> used. <b>WRDS signals were not used</b>: <code>alpha_wrds_signals.csv</code> is dated 2026-09-17, 71 days old and outside the 14-day window.</div>
+
+<h2>1. How the First Stretch Traded</h2>
+<p><b>The pre-market gap partly filled straight away, and chips led the fade.</b> Futures implied an S&amp;P open of about +1.7% and a Nasdaq-100 open of about +2.4%. The cash open was weaker: S&amp;P <span class="up">+1.11%</span>, Nasdaq <span class="up">+1.58%</span>, Dow <span class="up">+0.55%</span> (Reuters print via Economic Times). Within 15 minutes gains had roughly halved. At 9:42&ndash;9:44 AM the S&amp;P was <span class="up">+0.77%</span>, the Nasdaq <span class="up">+0.73%</span> and the <b>PHLX Semiconductor index only +0.86%</b> (JBizNews, from Nasdaq index quotes). That is a sharp give-back for a group that was up 4&ndash;7% pre-market. Later readings put the S&amp;P at about +0.5% to +0.7% and the Nasdaq at about +0.8% to +1.2% (TokenPost 10:40 AM: Dow +0.46%, S&amp;P +0.53%, Nasdaq +1.16%; other snapshots S&amp;P +0.61&ndash;0.66%, Nasdaq +0.72&ndash;0.82%). <b>The defining move was Nvidia reversing</b> from about +2&ndash;4% pre-market to <span class="dn">&minus;1% to &minus;2%</span> (~$146&ndash;148). Memory stocks held and extended their gains, and mega-cap platforms (AMZN, META) held about +2&ndash;3%. <b>Tone:</b> a selective, low-volume bounce rather than broad risk-on. Buyers are favouring the most oversold AI suppliers and platforms while avoiding the name carrying export-control headlines. The VIX was reported anywhere from about 25.6 (&minus;4.6%) to about 27 (+4.6%) depending on timestamp, so it does not give a clean read. Gold was up about 2.9% (~$3,666).</p>
+
+<h2>2. Pre-Market vs. Open</h2>
+<p class="note">Compares this morning's pre-market brief with trading after the open.</p>
+<div class="tbl"><table>
+<tr><th>Name (flagged pre-market)</th><th>Pre-market</th><th>After the open</th><th>Read</th></tr>
+<tr><td>NVDA</td><td class="n up">+2.2% to +4.7%</td><td class="n dn">&minus;0.9% to &minus;2.0% (~$146&ndash;148)</td><td><b class="dn">Reversed.</b> Opened green, then flipped negative within the first half hour.</td></tr>
+<tr><td>MU</td><td class="n up">+5% to +6%</td><td class="n up">+4% to +6% (~$625&ndash;635)</td><td><b class="up">Held.</b></td></tr>
+<tr><td>SNDK</td><td class="n up">+8% to +11%</td><td class="n up">+8% to +14% (~$81&ndash;84)</td><td><b class="up">Held / extended.</b> The latest snapshot is the high end.</td></tr>
+<tr><td>AMD / AVGO</td><td class="n up">+4.4% to +7% / +4.7%</td><td class="n">AVGO ~+2% to +2.3%; AMD n/q intraday</td><td><b class="am">Partly filled.</b> No reliable intraday AMD quote was found.</td></tr>
+<tr><td>MRVL</td><td class="n up">+7.3% to +8.6%</td><td class="n up">~+6.5% early</td><td><b class="up">Mostly held.</b></td></tr>
+<tr><td>Mega-caps (AMZN, META, GOOGL, MSFT, ORCL)</td><td class="n up">+2.3% to +5.3%</td><td class="n up">AMZN, META &gt;+2% at the open; AMZN +2.8% and META +2.7% later</td><td><b class="up">Held</b> for AMZN/META. No intraday quotes were found for the others.</td></tr>
+<tr><td>VRTX</td><td class="n dn">&minus;7.3% to &minus;7.4%</td><td class="n dn">&minus;6.65% ($526.60)</td><td><b class="am">Gap held</b>, with a small bounce off the lows.</td></tr>
+<tr><td>MO</td><td class="n dn">~&minus;2%</td><td class="n dn">&minus;0.9%</td><td><b class="am">Gap about half filled.</b></td></tr>
+<tr><td>ASML / TSM</td><td class="n up">ASML +5&ndash;6% (Amsterdam)</td><td class="n">n/q</td><td>No US intraday quote was found. With the SOX only +0.86% early, the ADRs probably lagged their overseas moves; this is not confirmed.</td></tr>
+</table></div>
+
+<h2>3. Opening Movers</h2>
+<p class="note">% vs. Wednesday close at the latest snapshot found (mostly 9:45&ndash;11:10 AM ET). ★ = fixed watchlist name. Volume notes are qualitative: no reliable intraday volume screen was available, and holiday volume is expected to be light overall.</p>
+<div class="tbl"><table>
+<tr><th>Ticker</th><th>% move</th><th>Volume / note</th></tr>
+<tr class="sec"><td colspan="3">Gainers</td></tr>
+<tr><td>SNDK</td><td class="n up">+10% to +14%</td><td>Led the S&amp;P pre-market and kept its gains; strong follow-through on a light-volume day.</td></tr>
+<tr><td>AXON</td><td class="n up">+6.9%</td><td>24/7 Wall St. top-winners list. No catalyst found.</td></tr>
+<tr><td>DELL</td><td class="n up">+6.0%</td><td>Same list. No catalyst found; see the Dell card below.</td></tr>
+<tr><td>SWKS / IP</td><td class="n up">+6.0% / +5.8%</td><td>Same list. No catalysts found.</td></tr>
+<tr><td>★ MU / SKHY / WDC</td><td class="n up">+4% to +6% / ~+5% / ~+5%</td><td>Memory complex moving together. STX is the exception at about &minus;2%.</td></tr>
+<tr><td>MRVL</td><td class="n up">~+6.5%</td><td>Early-trading figure. Results are still due Dec 1.</td></tr>
+<tr><td>★ TSLA</td><td class="n up">~+3.5%</td><td>From a single roundup with an unclear timestamp; treat with caution.</td></tr>
+<tr><td>★ AMZN / ★ META / ★ AVGO</td><td class="n up">+2.8% / +2.7% / +2.3%</td><td>Among the top mega-cap gainers. AMZN has a possible distraction: Amazon workers planned strikes for Friday and Cyber Monday (CNBC via search).</td></tr>
+<tr class="sec"><td colspan="3">Losers</td></tr>
+<tr><td>CTRA</td><td class="n dn">&minus;8.6%</td><td>Largest S&amp;P loser on the 24/7 list. No same-day catalyst was found. Possibly related to the reported Devon all-stock deal or gas prices; unverified.</td></tr>
+<tr><td>VRTX</td><td class="n dn">&minus;6.65%</td><td>Delay of the FDA decision date (PDUFA) for povetacicept to Feb 28, 2027.</td></tr>
+<tr><td>EQR / DLTR / TJX</td><td class="n dn">&minus;3.5% / &minus;3.2% / &minus;2.5%</td><td>Defensives and retailers lag on Black Friday as money rotates into beaten-down tech.</td></tr>
+<tr><td>★ NVDA</td><td class="n dn">&minus;0.9% to &minus;2.0%</td><td>Reversed its gap; the most-watched name of the morning.</td></tr>
+<tr><td>MO</td><td class="n dn">&minus;0.9%</td><td>Acquirer discount narrowing (Imperial Brands).</td></tr>
+<tr class="sec"><td colspan="3">Watchlist with no reliable intraday quote</td></tr>
+<tr><td>★ AAPL, MSFT, GOOGL, AMD, TSM, ORCL, CRM, ASML, QCOM, INTC</td><td class="n">n/q</td><td>Not quoted in the sources consulted. (Yahoo's screener page listed some of these, but its data was stale, so it was excluded.)</td></tr>
+</table></div>
+
+<h2>4. Alpha Candidates</h2>
+<p class="note">Framed as "worth investigating further," not as recommendations. Only about two hours of trading remain after this snapshot, and early-close sessions can see erratic moves into 1:00 PM.</p>
+
+<div class="card">
+<h3>NVDA &mdash; Nvidia <span class="dn">&minus;1% to &minus;2% (pre-market +2% to +4.7%)</span> <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis: fade, with relative weakness likely to persist into the close.</b> Nvidia is the only major AI name to fully reverse its gap while memory and platform names held. That points to stock-specific selling, not a market-wide failure of the bounce. The market appears to be pricing a new, concrete revenue risk on top of the governance story.</p>
+<p><b>Evidence:</b> The New York Times and FT, via Semafor and Yahoo, report that Nvidia froze server orders for buyers in <b>Malaysia, Singapore, Thailand and Indonesia</b>. Dell and Supermicro told customers the orders would not ship. Semafor notes Nvidia's Singapore arm booked $104B in 2025. Reuters says it is unclear whether the halt is temporary while compliance work is done. A Bloomberg report (pre-market brief) separately found Blackwell racks at a Shanghai site linked to a blacklisted firm. Economic Times reports: "Nvidia shares failed to sustain their early recovery&hellip; rose more than 2% in premarket trading." A search summary says S&amp;P Global put Nvidia's AA rating on CreditWatch negative; this was not verified against an S&amp;P release.</p>
+<p><b>What could flip this read:</b> A clarification from Nvidia or Commerce that the halt is a short licensing pause, or a sign that the stock has stabilised and short sellers are covering into a thin close, could produce a sharp late reclaim. The stock has moved +31% and &minus;10% within a single week, so neither direction is reliable.</p>
+</div>
+
+<div class="card">
+<h3>SNDK / MU (with WDC, SKHY) &mdash; Memory <span class="up">SNDK +10% to +14%, MU +4% to +6%</span> <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis: has legs into midday.</b> Memory was this morning's top pick for "most oversold, highest beta," and it is the one group where the pre-market gap held and extended after the open. SanDisk is still down about 48% over a month and Micron about 30%, which leaves plenty of room for short-covering.</p>
+<p><b>Evidence:</b> 24/7 Wall St. quotes SNDK at $80.99 (+10%), with a later widget showing $84.00 (+14.1%). MU is quoted at $633&ndash;635 (+5&ndash;6%), WDC +5% and SKHY +5%. Micron's CFO said in September that more than 75% of 2027 shipments are committed and that he expects the market to stay tight through 2028.</p>
+<p><b>Risks:</b> TrendForce published a report <b>today</b> (Nov 27) saying DRAM contract price increases could narrow through 2027 and prices could decline in 2028. BNP Paribas downgraded MU on Nov 24. XTB's Kathleen Brooks calls the recovery "technical." STX is down about 2%, so storage is not moving uniformly. Holiday liquidity could amplify a late reversal.</p>
+</div>
+
+<div class="card">
+<h3>AMZN / META / AVGO &mdash; Platforms over Nvidia <span class="up">+2.3% to +2.8%</span> <span class="conf">Confidence: Low&ndash;Medium</span></h3>
+<p><b>Thesis: a within-AI rotation worth tracking.</b> Hyperscalers and custom-silicon names are holding about +2&ndash;3% while NVDA is negative. If that spread lasts into the close, it would support a story of money moving toward AI spenders and ASIC suppliers and away from the export-exposed GPU vendor. Watch the NVDA&ndash;AVGO spread in particular.</p>
+<p><b>Evidence:</b> A Reuters-based report says Meta and Amazon rose more than 2% and Broadcom about 2% at the open. A later roundup lists AMZN +2.8%, META +2.7% and AVGO +2.3% among the top mega-cap gainers.</p>
+<p><b>Risks:</b> AVGO gave back about half its pre-market gain, so the bid is not unconditional. Amazon strike headlines could weigh on AMZN, and Black Friday sales data could swing it either way. These are thin-volume quotes.</p>
+</div>
+
+<div class="card">
+<h3>MRVL &mdash; Marvell <span class="up">~+6.5% (pre-market +7.3% to +8.6%)</span> <span class="conf">Confidence: Low</span></h3>
+<p><b>Thesis: mostly held, but the catalyst is still unclear.</b> MRVL kept most of its gap even as the SOX faded, which suggests real demand. The catalyst is still unresolved: Marvell IR schedules Q3 FY27 results for <b>Dec 1</b>, so reports of a "beat" look wrong.</p>
+<p><b>Evidence:</b> Blockonomi, citing Barron's, has MRVL +8.6% pre-market. An early-trading report has it +6.48%.</p>
+<p><b>Risks:</b> The Dec 1 print is a binary event. The reported Lumentum all-stock deal remains unconfirmed on Marvell's IR site. A position held into the weekend carries headline risk.</p>
+</div>
+
+<div class="card">
+<h3>VRTX &mdash; Vertex <span class="dn">&minus;6.65% ($526.60; pre-market &minus;7.3%)</span> <span class="conf">Confidence: Medium</span></h3>
+<p><b>Thesis: the gap is holding, with no dip-buying yet.</b> The stock bounced only about 0.7 points off the pre-market level. That suggests the market is not yet treating the PDUFA extension as a non-event, even though it is a delay rather than a rejection.</p>
+<p><b>Evidence:</b> 24/7 Wall St. biggest-losers list. Background: the FDA classified a submission as a major amendment and moved the PDUFA date from Nov 30 to no later than Feb 28, 2027 (pre-market brief).</p>
+<p><b>Risks:</b> Company commentary on what the amendment covered could trigger a rebound. Rotation into tech today is starving defensive and healthcare names of flows, which makes today's tape a poor signal of fundamentals.</p>
+</div>
+
+<div class="card">
+<h3>DELL &mdash; Dell Technologies <span class="up">+6.0% ($315.01)</span> <span class="conf">Confidence: Low</span></h3>
+<p><b>Thesis: unexplained strength that looks inconsistent with the news.</b> Dell is one of the server makers that reportedly told Southeast Asian buyers their Nvidia-based orders would not ship. A +6% move on that backdrop is unexpected. It may simply be AI-hardware beta (SMCI-type names bounce hard on rebound days), or it may reflect a catalyst not found in this research.</p>
+<p><b>Evidence:</b> 24/7 Wall St. top-winners widget only. Searches found no Dell-specific news dated Nov 27.</p>
+<p><b>Risks:</b> The price comes from a single, unverified source. If the Southeast Asia halt lasts, Dell's AI server backlog in the region is directly exposed.</p>
+</div>
+
+<h2>5. WRDS Quant Signals</h2>
+<p class="note">Not used. <code>alpha_wrds_signals.csv</code> (10 tickers) has an as_of_date of <b>2026-09-17</b>, 71 days old and outside the 14-day window. Refresh the WRDS export to bring momentum, volume and earnings-surprise factors back into these briefs.</p>
+
+<h2>6. Sources</h2>
+<ul class="src">
+<li>Local: C:\Users\phc220001\OneDrive\alpha\alpha_report_2026-11-27_premarket.html (pre-market flags)</li>
+<li>Local: C:\Users\phc220001\OneDrive\alpha\alpha_wrds_signals.csv (stale, not used)</li>
+<li>https://fvbb.com/ns/why-is-the-us-stock-market-rising-today-dow/333034 (Economic Times syndication: Reuters opening prints, NVDA reversal)</li>
+<li>https://jbiznews.com/stocks-open-sharply-higher-on-black-friday-dow-jones-industrial-average-up-0-76-sp-500-up-0-77-nasdaq-composite-up-0-73/ (9:42&ndash;9:44 AM index and SOX levels)</li>
+<li>https://www.tokenpost.com/news/investing/63757 (10:40 AM index snapshot)</li>
+<li>https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html (live blog, index ticker, oil, Sozzi/NVDA)</li>
+<li>https://finance.yahoo.com/technology/articles/nvidia-halts-chip-shipments-southeast-221523356.html (Semafor: Southeast Asia shipment freeze)</li>
+<li>https://247wallst.com/investing/2026/11/27/stock-market-today-markets-off-to-a-strong-black-friday-start/ (opening context, biggest winners/losers widget)</li>
+<li>https://247wallst.com/investing/2026/11/27/sandisk-jumps-10-as-investors-return-to-beaten-down-memory-stocks-micron-and-sk-hynix-rise-6-despite-trendforce-dram-warning/ (memory quotes, TrendForce, BNP)</li>
+<li>https://blockonomi.com/todays-market-movers-sandisk-marvell-nvidia-lead-black-friday-tech-rebound/ (pre-market movers via Barron's/CNBC, MO, HPQ)</li>
+<li>https://www.coindesk.com/markets/2026/11/26/nvidia-shipment-freeze-and-u-s-chip-curbs-put-ai-stocks-under-pressure (via search summary)</li>
+<li>https://blockonomi.com/nvidia-nvda-stock-slide-4-as-ai-chip-shipments-reportedly-halted-in-four-southeast-asian-markets/ (via search summary)</li>
+<li>https://aroundprague.cz/en/news/us/stock-market-today-dow-gains-344-points-s-p-500-up-0-66-and-nasdaq-rises-0-82 (via search summary; fetch failed)</li>
+<li>https://upstox.com/news/market-news/us-stocks/us-stocks-rebound-on-friday-nasdaq-100-jumps-400-points-s-and-p-500-rises-1/article-204115/ and https://tradersunion.com/news/stocks/show/4443712-us-stocks-rise-spacex-amazon-tech/ (mega-cap opening moves, via search summary)</li>
+<li>https://tickeron.com/blogs/why-is-sandisk-corporation-sndk-stock-up-10-30-today-48400/ and https://www.tokenpost.com/news/investing/63693 (SNDK/MU/MRVL early trading, via search summary)</li>
+<li>https://finance.yahoo.com/markets/stocks/most-active/ (fetched; data stale, excluded)</li>
+<li>https://mlq.ai/news/wall-street-opens-higher-on-black-friday-as-ai-stocks-rebound/ (fetch failed)</li>
+</ul>
+
+<div class="disc">This report is generated automatically for informational and research purposes only. It is not personalized investment advice, and nothing here should be interpreted as a recommendation to buy or sell any security. Do your own due diligence and consult a licensed financial advisor before making investment decisions.</div>
+</div></body></html>
